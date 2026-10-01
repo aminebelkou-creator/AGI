@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 33% 97%;
+    --foreground: 229 57% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 229 57% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 229 57% 16%;
+    --primary: 229 62% 24%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 351 78% 41%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 36 20% 92%;
+    --muted-foreground: 229 20% 42%;
+    --accent: 40 96% 54%;
+    --accent-foreground: 229 62% 16%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 229 20% 88%;
+    --input: 229 20% 85%;
+    --ring: 351 78% 41%;
+    --radius: 0.75rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Archivo', 'Noto Sans Arabic', system-ui, sans-serif;
+  }
+
+  html[dir='rtl'] body {
+    font-family: 'Noto Sans Arabic', 'Archivo', system-ui, sans-serif;
+  }
+
+  .font-display {
+    font-family: 'Playfair Display', 'Noto Sans Arabic', Georgia, serif;
+  }
+}
+
+@layer components {
+  /* ---- bold & vibrant helpers ---- */
+  .kicker {
+    @apply inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.22em];
+  }
+  .kicker::before {
+    content: '';
+    @apply block h-[3px] w-8 bg-secondary rounded-full;
+  }
+  html[dir='rtl'] .kicker {
+    letter-spacing: 0.05em;
+  }
+
+  .stars-divider {
+    background-image: repeating-linear-gradient(
+      to right,
+      hsl(var(--accent)) 0 10px,
+      transparent 10px 22px
+    );
+    height: 3px;
+  }
+
+  .diagonal-navy {
+    background: linear-gradient(135deg, hsl(229 62% 20%) 0%, hsl(232 70% 30%) 60%, hsl(236 65% 38%) 100%);
+  }
+
+  .stripes-bg {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      hsl(351 78% 41% / 0.06) 0 14px,
+      transparent 14px 28px
+    );
+  }
+
+  /* navy band with subtle stripes overlay (combined class) */
+  .band-navy {
+    position: relative;
+    background: linear-gradient(135deg, hsl(229 62% 20%) 0%, hsl(232 70% 30%) 60%, hsl(236 65% 38%) 100%);
+  }
+  .band-navy::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      hsl(351 78% 55% / 0.08) 0 14px,
+      transparent 14px 28px
+    );
+  }
+  .band-navy > * {
+    position: relative;
+  }
+
+  /* markdown content rendering */
+  .content-md {
+    @apply text-[1.05rem] leading-relaxed text-foreground/90;
+  }
+  .content-md h1 { @apply font-display text-3xl md:text-4xl font-bold text-primary mt-10 mb-5 first:mt-0; }
+  .content-md h2 { @apply font-display text-2xl md:text-[1.75rem] font-bold text-primary mt-10 mb-4 pb-2 border-b-2 border-accent/60; }
+  .content-md h3 { @apply text-xl font-bold text-primary mt-8 mb-3; }
+  .content-md h4 { @apply text-lg font-bold text-secondary mt-6 mb-2; }
+  .content-md h5 { @apply text-base font-bold text-primary mt-5 mb-2 uppercase tracking-wide; }
+  .content-md h6 { @apply text-sm font-bold text-muted-foreground mt-4 mb-1 uppercase tracking-wider; }
+  .content-md p { @apply my-4; }
+  .content-md ul { @apply my-4 space-y-2 ps-1; }
+  .content-md ul li { @apply relative ps-6; }
+  .content-md ul li::before {
+    content: '';
+    @apply absolute start-0 top-[0.6em] h-2 w-2 rounded-[2px] bg-secondary rotate-45;
+  }
+  .content-md ol { @apply my-4 list-decimal ps-7 space-y-2 marker:font-bold marker:text-secondary; }
+  .content-md a { @apply font-semibold text-secondary underline decoration-accent decoration-2 underline-offset-4 hover:text-primary transition-colors; }
+  .content-md strong { @apply font-bold text-primary; }
+  .content-md blockquote { @apply my-6 border-s-4 border-secondary bg-muted/60 px-6 py-4 rounded-e-xl italic text-muted-foreground; }
+  .content-md table { @apply my-6 w-full border-collapse overflow-hidden rounded-xl text-sm shadow-sm; }
+  .content-md thead th { @apply bg-primary text-primary-foreground font-bold px-4 py-3 text-start; }
+  .content-md tbody td { @apply border-b border-border bg-card px-4 py-3 align-top; }
+  .content-md tbody tr:nth-child(even) td { @apply bg-muted/40; }
+  .content-md img { @apply rounded-xl my-5 max-w-full h-auto shadow-md; }
+  .content-md hr { @apply my-8 border-0 h-[3px] stars-divider; }
+  .content-md code { @apply rounded bg-muted px-1.5 py-0.5 text-sm; }
+
+  /* compact markdown for chat */
+  .content-md-compact { @apply text-sm leading-relaxed; }
+  .content-md-compact p { @apply my-2 first:mt-0 last:mb-0; }
+  .content-md-compact ul { @apply my-2 list-disc ps-5; }
+  .content-md-compact ol { @apply my-2 list-decimal ps-5; }
+  .content-md-compact h1, .content-md-compact h2, .content-md-compact h3,
+  .content-md-compact h4, .content-md-compact h5, .content-md-compact h6 {
+    @apply mt-2 mb-1 text-sm font-bold text-primary;
+  }
+  .content-md-compact img { @apply hidden; }
+  .content-md-compact table { @apply my-2 w-full border-collapse text-xs; }
+  .content-md-compact th, .content-md-compact td { @apply border border-border px-2 py-1 text-start; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
+
+/* ================= design-first motion layer ================= */
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* Infinite marquee */
+@keyframes agi-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: agi-marquee 36s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+
+/* Slow spin for decorative star */
+@keyframes agi-spin { to { transform: rotate(360deg); } }
+.spin-slow { animation: agi-spin 18s linear infinite; }
+
+/* Gentle float for badges */
+@keyframes agi-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.float-soft { animation: agi-float 5s ease-in-out infinite; }
+
+/* Scroll cue dot */
+@keyframes agi-scroll-dot {
+  0% { transform: translateY(0); opacity: 1; }
+  70% { transform: translateY(16px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+.scroll-dot { animation: agi-scroll-dot 1.8s ease-in-out infinite; }
+
+/* Hero headline word mask (GSAP animates the inner span up) */
+.word-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+.word-mask > span {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* Big editorial outline text */
+.text-outline {
+  -webkit-text-stroke: 1.5px hsl(0 0% 100% / 0.22);
+  color: transparent;
+}
+.text-outline-navy {
+  -webkit-text-stroke: 1.5px hsl(229 62% 24% / 0.18);
+  color: transparent;
+}
+
+/* Grain / noise overlay for hero richness */
+.noise-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Arabic has deep descenders — drop the hand-drawn underline a bit lower */
+html[dir='rtl'] .hero-underline {
+  bottom: -1.5rem;
+}
+
+/* Reduced motion: everything settles instantly */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track, .spin-slow, .float-soft { animation: none !important; }
+}

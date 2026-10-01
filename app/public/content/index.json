@@ -1,0 +1,410 @@
+{
+ "/about": {
+  "title": "About",
+  "fullTitle": "About Us",
+  "section": "about",
+  "file": "about.json"
+ },
+ "/about/vision": {
+  "title": "Our Vision",
+  "fullTitle": "Our Vision",
+  "section": "about",
+  "file": "about__vision.json"
+ },
+ "/about/agi-school": {
+  "title": "AGI School – Agadir",
+  "fullTitle": "American Group International  School - Agadir",
+  "section": "about",
+  "file": "about__agi-school.json"
+ },
+ "/about/partners-network": {
+  "title": "Network of Partners",
+  "fullTitle": "Network of Partners",
+  "section": "about",
+  "file": "about__partners-network.json"
+ },
+ "/academics/k12-micro-school": {
+  "title": "K–12 Micro-School",
+  "fullTitle": "Academic English K to12th, Inclusive Education Grade Micro-School",
+  "section": "academics",
+  "file": "academics__k12-micro-school.json"
+ },
+ "/academics/student-life": {
+  "title": "Student Life",
+  "fullTitle": "Student Life",
+  "section": "academics",
+  "file": "academics__student-life.json"
+ },
+ "/academics/homework-guidelines": {
+  "title": "Homework Guidelines",
+  "fullTitle": "Homework Guidelines Policy AGI",
+  "section": "academics",
+  "file": "academics__homework-guidelines.json"
+ },
+ "/academics/volunteer-hours": {
+  "title": "Volunteer Hours",
+  "fullTitle": "In-Service Volunteer Hours for High School",
+  "section": "academics",
+  "file": "academics__volunteer-hours.json"
+ },
+ "/academics/supplies-list": {
+  "title": "Supplies List",
+  "fullTitle": "AGI Academic School Supplies List",
+  "section": "academics",
+  "file": "academics__supplies-list.json"
+ },
+ "/academics/independent-studies": {
+  "title": "Independent Course Studies",
+  "fullTitle": "INDEPENDENT Course STUDIES (Modules and Program)",
+  "section": "academics",
+  "file": "academics__independent-studies.json"
+ },
+ "/special-education": {
+  "title": "Special Education Services",
+  "fullTitle": "Special Education Services",
+  "section": "special-ed",
+  "file": "special-education.json"
+ },
+ "/special-education/adhd-coaching": {
+  "title": "ADHD Holistic Coaching",
+  "fullTitle": "ADHD Holistic Practitioner Coaching",
+  "section": "special-ed",
+  "file": "special-education__adhd-coaching.json"
+ },
+ "/special-education/play-therapy": {
+  "title": "Holistic Play Therapy",
+  "fullTitle": "Holistic Play Therapy Practitioner",
+  "section": "special-ed",
+  "file": "special-education__play-therapy.json"
+ },
+ "/special-education/i-heart-counselling": {
+  "title": "i-Heart Counselling",
+  "fullTitle": "i-Heart Holistic Therapeutic Services and Counselling",
+  "section": "special-ed",
+  "file": "special-education__i-heart-counselling.json"
+ },
+ "/anglia": {
+  "title": "Anglia Examinations",
+  "fullTitle": "Anglia Examinations of England",
+  "section": "anglia",
+  "file": "anglia.json"
+ },
+ "/anglia/cite-teacher-training": {
+  "title": "C.I.T.E Teacher Training",
+  "fullTitle": "Teacher Training Program for English/Anglia C.I.T.E Certificate of International Teachers-TESOL",
+  "section": "anglia",
+  "file": "anglia__cite-teacher-training.json"
+ },
+ "/anglia/business-examinations": {
+  "title": "Business Examinations",
+  "fullTitle": "Business Examinations",
+  "section": "anglia",
+  "file": "anglia__business-examinations.json"
+ },
+ "/anglia/aim-accreditation": {
+  "title": "AIM Accreditation",
+  "fullTitle": "Anglia Examinations Accreditation with AIM",
+  "section": "anglia",
+  "file": "anglia__aim-accreditation.json"
+ },
+ "/anglia/saturday-schedule": {
+  "title": "Saturday Classes Schedule",
+  "fullTitle": "Anglia Examinations Saturday Classes Yearly Schedule 2025-2026",
+  "section": "anglia",
+  "file": "anglia__saturday-schedule.json"
+ },
+ "/anglia/class-pricing": {
+  "title": "Class Pricing",
+  "fullTitle": "Anglia Language Class Pricing and Details",
+  "section": "anglia",
+  "file": "anglia__class-pricing.json"
+ },
+ "/anglia/practice-test": {
+  "title": "Free Practice Test",
+  "fullTitle": "AngliaMorocco English Test",
+  "section": "anglia",
+  "file": "anglia__practice-test.json"
+ },
+ "/anglia/network-centers": {
+  "title": "Anglia Morocco Network",
+  "fullTitle": "AngliaMorocco Network- 12 Regions",
+  "section": "anglia",
+  "file": "anglia__network-centers.json"
+ },
+ "/anglia/cefr-benchmarks": {
+  "title": "CEFR Benchmarks",
+  "fullTitle": "Benchmarks for Natives and Language Learners on the CEFR (Common European Frame).",
+  "section": "anglia",
+  "file": "anglia__cefr-benchmarks.json"
+ },
+ "/anglia/learning-pods": {
+  "title": "Anglia Learning Pods",
+  "fullTitle": "Anglia Morocco Learning Pods....",
+  "section": "anglia",
+  "file": "anglia__learning-pods.json"
+ },
+ "/programs/adult-high-school-diploma": {
+  "title": "Adult HS Diploma (16+)",
+  "fullTitle": "Adult High School Diploma Program- 16+",
+  "section": "programs",
+  "file": "programs__adult-high-school-diploma.json"
+ },
+ "/programs/document-editing": {
+  "title": "Document Editing",
+  "fullTitle": "Document Editing In English",
+  "section": "programs",
+  "file": "programs__document-editing.json"
+ },
+ "/programs/proctoring-services": {
+  "title": "Proctoring Services",
+  "fullTitle": "Proctoring Services",
+  "section": "programs",
+  "file": "programs__proctoring-services.json"
+ },
+ "/programs/teacher-sponsorship": {
+  "title": "USA Teacher Sponsorship",
+  "fullTitle": "USA Private School Teacher Sponsorship",
+  "section": "programs",
+  "file": "programs__teacher-sponsorship.json"
+ },
+ "/programs/learning-pods": {
+  "title": "AGI Learning Pods",
+  "fullTitle": "AGI Learning Pods",
+  "section": "programs",
+  "file": "programs__learning-pods.json"
+ },
+ "/programs/english-castle-workshop": {
+  "title": "English Castle Workshop",
+  "fullTitle": "Educational Workshop English Castle",
+  "section": "programs",
+  "file": "programs__english-castle-workshop.json"
+ },
+ "/efl-classes": {
+  "title": "EFL Classes",
+  "fullTitle": "EFL Classes",
+  "section": "efl",
+  "file": "efl-classes.json"
+ },
+ "/efl-classes/one-on-one": {
+  "title": "One-on-One EFL",
+  "fullTitle": "One-On-One EFL Classes",
+  "section": "efl",
+  "file": "efl-classes__one-on-one.json"
+ },
+ "/efl-classes/medical-efl": {
+  "title": "Medical EFL",
+  "fullTitle": "Medical EFL For Professionals.",
+  "section": "efl",
+  "file": "efl-classes__medical-efl.json"
+ },
+ "/efl-classes/corporate-business": {
+  "title": "Corporate & Business EFL",
+  "fullTitle": "Corporate EFL Trainings/ Business English",
+  "section": "efl",
+  "file": "efl-classes__corporate-business.json"
+ },
+ "/efl-classes/self-helps": {
+  "title": "English Self-Helps",
+  "fullTitle": "English Self Helps",
+  "section": "efl",
+  "file": "efl-classes__self-helps.json"
+ },
+ "/efl-classes/nursery-rhymes": {
+  "title": "Nursery Rhymes Pre-K",
+  "fullTitle": "Nursery Rhymes for Pre-K",
+  "section": "efl",
+  "file": "efl-classes__nursery-rhymes.json"
+ },
+ "/efl-classes/sight-words": {
+  "title": "McGuffey's Sight Words",
+  "fullTitle": "McGuffey's Online Tutor/Sight Words Helps for Reading/Spelling",
+  "section": "efl",
+  "file": "efl-classes__sight-words.json"
+ },
+ "/admissions": {
+  "title": "Admissions Procedure",
+  "fullTitle": "Admissions Procedure",
+  "section": "admissions",
+  "file": "admissions.json"
+ },
+ "/admissions/enrollment": {
+  "title": "Enrollment",
+  "fullTitle": "Enrollment",
+  "section": "admissions",
+  "file": "admissions__enrollment.json"
+ },
+ "/admissions/fees": {
+  "title": "Admission Fees",
+  "fullTitle": "Admission Fees",
+  "section": "admissions",
+  "file": "admissions__fees.json"
+ },
+ "/admissions/document-request": {
+  "title": "Document Request",
+  "fullTitle": "Document Request Form",
+  "section": "admissions",
+  "file": "admissions__document-request.json"
+ },
+ "/admissions/handbook": {
+  "title": "Academic Handbook",
+  "fullTitle": "AGI Mission Statement and Academic Handbook",
+  "section": "admissions",
+  "file": "admissions__handbook.json"
+ },
+ "/admissions/attendance-policy": {
+  "title": "Attendance Policy",
+  "fullTitle": "American Group International of Agadir Attendance Policy",
+  "section": "admissions",
+  "file": "admissions__attendance-policy.json"
+ },
+ "/admissions/promotion-retention": {
+  "title": "Promotion & Retention",
+  "fullTitle": "Promotion and Retention  Procedures Policy",
+  "section": "admissions",
+  "file": "admissions__promotion-retention.json"
+ },
+ "/admissions/parent-policy": {
+  "title": "Parent Policy",
+  "fullTitle": "Parent Policy and Responsibility",
+  "section": "admissions",
+  "file": "admissions__parent-policy.json"
+ },
+ "/admissions/placement-assessment": {
+  "title": "Placement & Assessment",
+  "fullTitle": "American Group International – Provisional Placement & Assessment Policy",
+  "section": "admissions",
+  "file": "admissions__placement-assessment.json"
+ },
+ "/admissions/refunds-complaints": {
+  "title": "Refunds & Complaints",
+  "fullTitle": "Policies & Procedures American Group International & Divisions, Refunds and Complaints",
+  "section": "admissions",
+  "file": "admissions__refunds-complaints.json"
+ },
+ "/admissions/media-policy": {
+  "title": "Media Policy",
+  "fullTitle": "Media Policy",
+  "section": "admissions",
+  "file": "admissions__media-policy.json"
+ },
+ "/admissions/calendar": {
+  "title": "Academic Calendar",
+  "fullTitle": "Academic School Calendar 2026-2027",
+  "section": "admissions",
+  "file": "admissions__calendar.json"
+ },
+ "/admissions/important-dates": {
+  "title": "Important Dates",
+  "fullTitle": "Last Day for Students- Other Important Dates!",
+  "section": "admissions",
+  "file": "admissions__important-dates.json"
+ },
+ "/admissions/why-attendance": {
+  "title": "Why Attendance Matters",
+  "fullTitle": "The Importance of School Attendance",
+  "section": "admissions",
+  "file": "admissions__why-attendance.json"
+ },
+ "/usa": {
+  "title": "American Group USA",
+  "fullTitle": "American Group USA, LLC",
+  "section": "usa",
+  "file": "usa.json"
+ },
+ "/usa/tutoring-session-length": {
+  "title": "Tutoring Session Length",
+  "fullTitle": "How Long Should a Tutoring Session Last?",
+  "section": "usa",
+  "file": "usa__tutoring-session-length.json"
+ },
+ "/usa/tutoring-prices": {
+  "title": "Online Tutoring Prices",
+  "fullTitle": "Online Tutoring Session Prices for AGI USA",
+  "section": "usa",
+  "file": "usa__tutoring-prices.json"
+ },
+ "/usa/zoom-teams-instructions": {
+  "title": "Zoom/Teams Instructions",
+  "fullTitle": "Online Applications Zoom/Teams Instructions",
+  "section": "usa",
+  "file": "usa__zoom-teams-instructions.json"
+ },
+ "/usa/teachers-database": {
+  "title": "Online Teachers Database",
+  "fullTitle": "Online Teachers Database",
+  "section": "usa",
+  "file": "usa__teachers-database.json"
+ },
+ "/usa/education-consultancy": {
+  "title": "Education Consultancy",
+  "fullTitle": "AGI Education Consultancy",
+  "section": "usa",
+  "file": "usa__education-consultancy.json"
+ },
+ "/usa/university-agent": {
+  "title": "University Agent Worldwide",
+  "fullTitle": "English University Agent Worldwide",
+  "section": "usa",
+  "file": "usa__university-agent.json"
+ },
+ "/forms": {
+  "title": "Forms",
+  "fullTitle": "Forms",
+  "section": "resources",
+  "file": "forms.json"
+ },
+ "/book-appointment": {
+  "title": "Book an Appointment",
+  "fullTitle": "Book An Appointment",
+  "section": "resources",
+  "file": "book-appointment.json"
+ },
+ "/partnerships": {
+  "title": "Partnerships",
+  "fullTitle": "Partnerships",
+  "section": "resources",
+  "file": "partnerships.json"
+ },
+ "/partners/rb-college-uk": {
+  "title": "RB College UK",
+  "fullTitle": "RB College of the United Kingdom",
+  "section": "resources",
+  "file": "partners__rb-college-uk.json"
+ },
+ "/cite": {
+  "title": "C.I.T.E Certificate",
+  "fullTitle": "Elevate Your Teaching Career",
+  "section": "anglia",
+  "file": "cite.json"
+ },
+ "/contact": {
+  "title": "Contact",
+  "fullTitle": "Contact",
+  "section": "resources",
+  "file": "contact.json"
+ },
+ "/privacy-policy": {
+  "title": "Privacy Policy",
+  "fullTitle": "Privacy Policy",
+  "section": "resources",
+  "file": "privacy-policy.json"
+ },
+ "/terms": {
+  "title": "Terms & Conditions",
+  "fullTitle": "TERMS AND CONDITIONS",
+  "section": "resources",
+  "file": "terms.json"
+ },
+ "/apply": {
+  "title": "Free Consultation",
+  "fullTitle": "SCHEDULE YOUR FREE CONSULTATION",
+  "section": "admissions",
+  "file": "apply.json"
+ },
+ "/programs/stem-educators-workshop": {
+  "title": "STEM Educators Workshop",
+  "fullTitle": "STEM Educators Workshop Job Interviews",
+  "section": "programs",
+  "file": "programs__stem-educators-workshop.json"
+ }
+}
