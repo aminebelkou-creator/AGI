@@ -30,7 +30,7 @@
 
 | Audience | What they need | Main page | Primary action |
 |---|---|---|---|
-| **Parents** (priority) | Trust, a fair price, support for their child, clear admissions | `parents.html`, `our-story.html`, home | Book a visit · WhatsApp · Apply |
+| **Parents** (priority) | Trust, a fair price, support for their child, clear admissions | `parents.html` (single landing page); `our-story.html` for the longer story | Book a visit · WhatsApp · Apply |
 | **Students & English learners** | Certified English, classes, prices | `english-anglia.html` | Book a free level test |
 | **Teachers** | C.I.T.E. certificate, training, internship | `teachers.html` | Register for C.I.T.E. · Ask about the internship |
 | **Professionals & clinicians** | Business / medical English, proctoring | `professional.html` | Book a level test · Request a team course |
@@ -46,7 +46,7 @@
 ```
 Home (index.html)
 ├── About (about.html)
-│   ├── Our story (our-story.html)              ← landing page, linked from the home popup
+│   ├── Our story (our-story.html)              ← long-form brand story; links to the parents page
 │   └── A letter from our founder (founder-letter.html)
 ├── Programs (programs.html)
 │   ├── K–12 school (k12.html)
@@ -58,7 +58,7 @@ Home (index.html)
 │   └── University pathways (pathways.html)
 ├── Admissions (admissions.html)  – incl. tuition & fees (#fees)
 │   └── Policies (policies.html)
-├── For parents (parents.html)
+├── For parents (parents.html)               ← THE parent landing page (target of the home popup)
 ├── Student life (student-life.html)
 ├── Journal (journal.html)
 │   ├── journal/<slug>.html  (59 articles from the old site)
@@ -92,9 +92,11 @@ Home (index.html)
 ### 3.4 Global elements and behaviors
 
 - **WhatsApp contact** available on every page (link `https://wa.me/212688739393` with a pre-filled "Hello AGI," message, opens in a new tab), labelled "WhatsApp"; on small screens it may show an icon only but must keep an accessible label.
-- **Story popup (home page only).** A modal dialog inviting parents to the Our story page.
-  - Content: kicker "Our story" · heading **"Your child, known by name."** · text *"Since 2013, AGI has grown from one small classroom into a school trusted by families from more than 46 nations. Discover why parents choose us."* · three labels: Affordable, Creative, Inclusive · [PHOTO NEEDED – AGI's early days, or Julie with students] · actions **Discover our story** (→ our-story.html) and **Not now** (closes).
-  - Behavior: opens once, 6 seconds after load **or** when the visitor has scrolled 25% of the page, whichever comes first; then not again for 7 days (remembered in the browser). Closes with the close button, "Not now", the Escape key, or a click outside. Must trap focus while open and return focus afterwards. Must not open if another dialog is open. [TO CONFIRM: timing and frequency with Julie]
+- **Parents popup (home page only).** Invites parents to the parent landing page (`parents.html`); its headline matches that page's headline.
+  - Content: kicker "For parents" · heading **"Your child, known by name."** · text *"Since 2013, AGI has grown from one small classroom into a school trusted by families from more than 46 nations. Discover why parents choose us."* · three labels: Affordable, Creative, Inclusive · [PHOTO NEEDED – AGI's early days, or Julie with students] · actions **See why parents choose AGI** (→ parents.html) and **Not now** (closes).
+  - Behavior: never on the first screen. Opens once the visitor has scrolled past half of the page, or – on desktop – when the pointer leaves the window (exit intent). Then not again for 7 days (remembered in the browser).
+  - **Phones:** a compact, non-blocking bar at the bottom of the screen (headline, one sentence, the two actions; no photo, no backdrop) – the page stays usable. **Desktop:** a modal dialog that traps focus and returns it afterwards.
+  - Closes with the close button, "Not now", the Escape key, or (desktop) a click outside. Must not open if another dialog is open. [TO CONFIRM: behavior with Julie]
   - The home hero also contains a permanent "Our story" link.
 - **Map** of the school (20 Rue Baalabek, Hay Nahda, Agadir) on the home and contact pages, plus an "Open in Google Maps" link. [TO CONFIRM: pin location]
 - **Breadcrumbs** on inner pages (e.g. Home / Programs / English & Anglia exams).

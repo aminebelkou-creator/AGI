@@ -295,6 +295,7 @@ The site is plain files – any web host works; `.htaccess` assumes **Apache** (
 |---|---|
 | `website-content-spec.md` | **Design-neutral specification of the whole website** (structure, requirements, content rules, key facts, every page's sections and copy, all form fields, journal list) – give it to an agent or developer to rebuild the site. Regenerate with `python v2/_build/export_spec.py`; intro in `_spec-intro.md` |
 | `growth-plan.md` | **Proposed growth plan** for the website: 16 additions in three phases (before launch, first months, growth) with effort, dependencies, roadmap, success measures and decisions needed from Julie |
+| `agent-prompt.md` | **Ready-to-paste prompt** for an AI agent or developer to rebuild the site from `website-content-spec.md` (full and short versions, follow-up prompts for French, Arabic, forms backend) |
 | `marketing-strategy.md` | Positioning, audiences, channels, core package, calendar to registration (Aug 2027), assets, metrics, rules |
 | `founder-film-script.md` | 90 s founder film (+30 s/15 s), EN/FR/AR subtitles, interview questions, shot list, production checklist |
 | `parent-stories-guide.md` | Three parent stories, interview guide, editing rules, tracking, consent form templates (EN/FR; AR to translate; legal review needed) |
