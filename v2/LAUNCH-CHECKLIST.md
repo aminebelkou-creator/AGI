@@ -86,3 +86,13 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] Test every form end-to-end on a phone
 - [ ] Google Search Console: submit `sitemap.xml`; Google Business Profile address/phone match the site
 - [ ] Remove "Design preview" wording if any remains; run `python _build/prelaunch.py` → READY
+
+## 10. Consistency with angliamorocco.org — AGI / Anglia Morocco
+- [ ] Founding wording: angliamorocco.org says AGI has been "an educational brand since **2012**"; this site says the school was founded in **2013** (first classes). Use both? (about, home)
+- [ ] Open Anglia representative positions listed on angliamorocco.org: **Oujda, Fès, Agadir, Taroudant** — name them on this site? (english-anglia, partnerships)
+- [ ] Mention Anglia Morocco's history (introduced in Morocco in **2010** by Suzanne Linsen)? (about, english-anglia)
+- [ ] Business English: this site says four levels **A2+ to C1**; angliamorocco.org says four steps "accredited by AIM" without levels — confirm (english-anglia, professional)
+- [ ] Anglia Morocco contact emails shown: **j.wilburn@angliamorocco.org**, **a.lam@angliamorocco.org** (english-anglia)
+- [ ] *On angliamorocco.org*: the FAQ says Anglia is "dependant on the Ministry of Education of the United Kingdom" — inaccurate (Anglia is owned by Chichester College Group; qualifications regulated by Ofqual via AIM). Correct it there.
+- [ ] *On angliamorocco.org*: "Club Anglia" page still says "Coming soon"; "Country Manager" title differs from the signature used here
+- [ ] Should the two sites share branding (logo, colors) and link to each other in the header/footer?

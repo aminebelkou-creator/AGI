@@ -422,6 +422,17 @@ program_page("english-anglia.html", "English & Anglia exams", "English & Anglia 
     <div><dt>Business &amp; medical English</dt><dd>For organizations and clinicians – see <a class="link" href="professional.html">professional programs</a>.</dd></div>
   </dl>
 </div></section>
+<section class="section" id="anglia-morocco"><div class="wrap">
+  <div class="section-head"><h2>Anglia Morocco online</h2><p>Exam dates, books and practice material are published on the official Anglia Morocco website.</p></div>
+  <div class="cards">
+    <a class="card" href="https://angliamorocco.org/anglia-exam-dates-2/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>Exam dates</h3><p>The year's exam sessions for every level, from First Step to Masters.</p><span class="more">See the dates</span></a>
+    <a class="card" href="https://angliamorocco.org/step-to-books-2/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>Step To books &amp; audio</h3><p>Preparation books for each level, the book order form and the audio files.</p><span class="more">Order books</span></a>
+    <a class="card" href="https://angliamorocco.org/practice-resources/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>Practice resources</h3><p>Sample papers and practice material to prepare for the exams.</p><span class="more">Practice</span></a>
+    <a class="card" href="https://angliamorocco.org/citem/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>C.I.T.E. for teachers</h3><p>Register for the Certificate for International Teachers of English.</p><span class="more">Register</span></a>
+    <a class="card" href="https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>Network &amp; centers</h3><p>The Anglia Morocco network across the twelve regions, and open representative positions.</p><span class="more">See the network</span></a>
+    <a class="card" href="https://angliamorocco.org/faq/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>Questions about the exams</h3><p>How long each exam lasts, what it assesses and how levels are grouped.</p><span class="more">Read the FAQ</span></a>
+  </div>
+</div></section>
 <section class="section" id="cefr"><div class="wrap">
   <div class="section-head"><h2>English benchmarks at AGI</h2><p>How English develops through the K–12 school. Students who don't speak English at home often start half a level lower and catch up by middle school.</p></div>
   <div class="table-wrap"><table><thead><tr><th>Grade</th><th>Age</th><th>CEFR level</th><th>What students can do</th></tr></thead><tbody>{cefr}</tbody></table></div>
@@ -429,7 +440,8 @@ program_page("english-anglia.html", "English & Anglia exams", "English & Anglia 
 <section class="section bg-white"><div class="wrap split">
   <div class="intro"><h2>Anglia across Morocco</h2></div>
   <div class="prose"><p>From its Agadir headquarters, Anglia Morocco works with schools, language centers and teachers in the Kingdom's twelve regions. Schools can become Anglia exam centers, and franchise opportunities are open in several regions.</p>
-  <p><a class="link" href="partnerships.html">Partnerships &amp; franchise</a></p></div>
+  <p>Anglia Morocco contacts: <a href="mailto:j.wilburn@angliamorocco.org">j.wilburn@angliamorocco.org</a> · <a href="mailto:a.lam@angliamorocco.org">a.lam@angliamorocco.org</a></p>
+  <p><a class="link" href="partnerships.html">Partnerships &amp; franchise</a> &nbsp; <a class="link" href="https://angliamorocco.org/" target="_blank" rel="noopener">angliamorocco.org</a></p></div>
 </div></section>
 """, "Find your level.", "Book a free Anglia level test – the office will suggest the right class afterwards.",
  '<a class="btn btn-gold" href="forms.html#enquiry/anglia">Book a level test</a><a class="btn btn-light" href="forms.html#tutor-request">Request a tutor</a>')
