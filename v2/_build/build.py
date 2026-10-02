@@ -80,7 +80,7 @@ def footer(page):
     <div><h2>School</h2><ul><li><a href="about.html">About AGI</a></li><li><a href="our-story.html">Our story</a></li><li><a href="parents.html">For parents</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="admissions.html#fees">Tuition &amp; fees</a></li><li><a href="policies.html">Policies</a></li><li><a href="student-life.html">Student life</a></li><li><a href="journal.html">Journal</a></li></ul></div>
     <div><h2>Services</h2><ul><li><a href="forms.html">Forms &amp; requests</a></li><li><a href="forms.html#absence">Report an absence</a></li><li><a href="forms.html#documents">Request a document</a></li><li><a href="forms.html#visit">Book a visit</a></li><li><a href="partnerships.html">Partnerships &amp; franchise</a></li><li><a href="investors.html">Partners &amp; investors</a></li><li><a href="connect.html">AGI Connect (preview)</a></li><li><a href="https://angliamorocco.org/" target="_blank" rel="noopener">Anglia Morocco ↗</a></li></ul></div>
     <div><h2>Contact</h2><address>Number 20, Rue Baalabek<br>Hay Nahda, Agadir 80000<br>Morocco</address>
-      <ul style="margin-top:14px"><li><a href="tel:+212528843349">+212 528 843 349</a></li><li><a href="tel:+212618639911">+212 618 639 911</a> <span style="color:rgba(255,255,255,.45);font-size:13px">Arabic</span></li><li><a href="https://wa.me/212688739393">WhatsApp +212 688 739 393</a></li><li><a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a></li></ul></div>
+      <ul style="margin-top:14px"><li><a href="tel:+212528843349">+212 528 843 349</a></li><li><a href="tel:+212618639911">+212 618 639 911</a> <span style="color:rgba(255,255,255,.7);font-size:13px">Arabic</span></li><li><a href="https://wa.me/212688739393">WhatsApp +212 688 739 393</a></li><li><a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a></li></ul></div>
   </div>
   <div class="wrap bottom"><span>© 2026 American Group International · Agadir, Morocco</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="contact.html">Contact</a></span></div>
 </footer>
@@ -110,6 +110,14 @@ def prefixed(block, prefix):
     if not prefix: return block
     return re.sub(r'(href|src)="(?!https?:|mailto:|tel:|#|/|\.\./)', lambda m: f'{m.group(1)}="{prefix}', block)
 
+def preload_fonts(s):
+    """Load Google Fonts without blocking rendering (preload + swap to stylesheet)."""
+    def rep(m):
+        href = re.search(r'href="([^"]+)"', m.group(0)).group(1)
+        return (f'<link rel="preload" as="style" href="{href}" onload="this.onload=null;this.rel=\'stylesheet\'">'
+                f'<noscript><link rel="stylesheet" href="{href}"></noscript>')
+    return re.sub(r'<link\b(?=[^>]*fonts\.googleapis\.com/css2)(?=[^>]*rel="stylesheet")[^>]*>', rep, s)
+
 def stamp(path):
     rel = os.path.relpath(path, ROOT).replace(os.sep, "/")
     depth = rel.count("/"); prefix = "../" * depth
@@ -131,6 +139,7 @@ def stamp(path):
         s = s.replace("</head>", block + "\n</head>", 1)
     if 'site.css"' not in s:
         s = s.replace("</head>", HEAD_LINKS.replace('href="site', f'href="{prefix}site').replace('src="site', f'src="{prefix}site') + "\n</head>", 1)
+    s = preload_fonts(s)
     open(path, "w", encoding="utf-8", newline="").write(s)
     return page
 

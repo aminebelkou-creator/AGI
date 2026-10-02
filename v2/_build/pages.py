@@ -7,6 +7,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel
 PAGES = {}
 
 def page(name, title, desc, body, extra_css=""):
+    if len(title) > 65: title = title.replace(" – American Group International, Agadir", " – AGI Agadir")
     PAGES[name] = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,7 +182,7 @@ page("index.html", "American Group International – American school in Agadir, 
       <p class="lede">American Group International is the first American school in Agadir – a K–12 micro-school with programs for adults, English learners and educators, and the headquarters of Anglia Examinations in Morocco.</p>
       <div class="btn-row">{GOLD_APPLY}{LIGHT_VISIT}<a class="link" href="our-story.html">Our story</a></div>
     </div>
-    <div class="seal"><img src="assets/web/agi-seal-520.png" alt="The AGI seal: American and Moroccan flags, Agadir, established 2013" width="520" height="520" fetchpriority="high"></div>
+    <div class="seal"><img src="assets/web/agi-seal-520.webp" alt="The AGI seal: American and Moroccan flags, Agadir, established 2013" width="520" height="520" fetchpriority="high"></div>
     <p class="enroll"><b>Now enrolling</b> Academic year 2026–27, all programs. Registration days are August 28 and 31.</p>
   </div>
 </section>
@@ -220,7 +221,7 @@ page("index.html", "American Group International – American school in Agadir, 
 </div></section>
 
 <section class="section"><div class="wrap director">
-  <img src="assets/web/director-julie-wilburn.jpg" alt="Julie A. Wilburn, CEO and Educational Director" width="576" height="720" loading="lazy">
+  <img src="assets/web/director-julie-wilburn.webp" alt="Julie A. Wilburn, CEO and Educational Director" width="576" height="720" loading="lazy">
   <div>
     <p class="kicker">From the director</p>
     <p class="quote">“AGI is a child-centered school where students take responsibility for their learning.”</p>
@@ -261,17 +262,17 @@ page("index.html", "American Group International – American school in Agadir, 
 <section class="section bg-white"><div class="wrap">
   <div class="section-head"><h2>Recognized in the United States</h2><p>Accredited by the American Council of Training and Development, recognized by four state departments of education, and in compliance with NCAA, NAIA, College Board and Meridian Learning standards.</p></div>
   <div class="marks">
-    <figure><img src="assets/web/seal-tennessee-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Tennessee</b>Department of Education</figcaption></figure>
-    <figure><img src="assets/web/seal-florida-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Florida</b>Department of Education</figcaption></figure>
-    <figure><img src="assets/web/seal-colorado-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Colorado</b>Department of Education</figcaption></figure>
-    <figure><img src="assets/web/seal-alabama-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Alabama</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-tennessee-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Tennessee</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-florida-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Florida</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-colorado-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Colorado</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-alabama-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Alabama</b>Department of Education</figcaption></figure>
   </div>
   <h3 style="margin:44px 0 16px">Our programs are in compliance with</h3>
   <div class="marks">
-    <figure><img src="assets/web/mark-ncaa-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>NCAA</b>Eligibility Center</figcaption></figure>
-    <figure><img src="assets/web/mark-naia-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>NAIA</b>Eligibility Center</figcaption></figure>
-    <figure><img src="assets/web/mark-collegeboard-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>College Board</b>AP &amp; SAT programs</figcaption></figure>
-    <figure><img src="assets/web/mark-meridian-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>Meridian Learning</b>Curriculum standards</figcaption></figure>
+    <figure><img src="assets/web/mark-ncaa-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>NCAA</b>Eligibility Center</figcaption></figure>
+    <figure><img src="assets/web/mark-naia-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>NAIA</b>Eligibility Center</figcaption></figure>
+    <figure><img src="assets/web/mark-collegeboard-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>College Board</b>AP &amp; SAT programs</figcaption></figure>
+    <figure><img src="assets/web/mark-meridian-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>Meridian Learning</b>Curriculum standards</figcaption></figure>
   </div>
   <div class="note" style="margin:36px 0 0;background:#fff;border-left-color:var(--navy)"><strong style="color:var(--navy)">Official partner in Morocco of Chichester College Group, UK.</strong> AGI is the Anglia franchise holder for Morocco and home of Anglia Morocco. Anglia Examinations is a wholly owned subsidiary of the Chichester College Group, award winning and Ofsted Outstanding. <a href="english-anglia.html">English &amp; Anglia exams</a></div>
   <p style="margin-top:24px"><a class="link" href="about.html#accreditation">All accreditation and memberships</a></p>
@@ -337,7 +338,7 @@ page("about.html", "About AGI – American Group International, Agadir",
 </div></section>
 
 <section class="section bg-white"><div class="wrap director">
-  <img src="assets/web/director-julie-wilburn.jpg" alt="Julie A. Wilburn" width="576" height="720" loading="lazy">
+  <img src="assets/web/director-julie-wilburn.webp" alt="Julie A. Wilburn" width="576" height="720" loading="lazy">
   <div>
     <p class="kicker">Founder &amp; leadership</p>
     <h2 style="margin-bottom:20px">Julie A. Wilburn</h2>
@@ -354,7 +355,7 @@ page("about.html", "About AGI – American Group International, Agadir",
 <section class="section"><div class="wrap">
   <div class="section-head"><h2>The team</h2><p>A small team, so families always know who to call.</p></div>
   <div class="people">
-    <div class="person"><figure class="photo" style="--ratio:4/5"><img src="assets/web/director-julie-wilburn.jpg" alt="" loading="lazy"></figure><h3>Julie A. Wilburn</h3><p>CEO &amp; Educational Director</p></div>
+    <div class="person"><figure class="photo" style="--ratio:4/5"><img src="assets/web/director-julie-wilburn.webp" alt="" loading="lazy"></figure><h3>Julie A. Wilburn</h3><p>CEO &amp; Educational Director</p></div>
     <div class="person">{ph("team-abdelhak-lam", "Portrait", "4/5")}<h3>Abdelhak Lam</h3><p>Sales Coordinator, main headquarters</p></div>
     <div class="person">{ph("team-teacher-1", "Portrait", "4/5")}<h3 class="ph-text" data-placeholder="team:teacher-1">Teacher name</h3><p>Lower school · grades K–5</p></div>
     <div class="person">{ph("team-teacher-2", "Portrait", "4/5")}<h3 class="ph-text" data-placeholder="team:teacher-2">Teacher name</h3><p>Middle &amp; upper school · English</p></div>
@@ -368,18 +369,18 @@ page("about.html", "About AGI – American Group International, Agadir",
 <section class="section bg-white" id="accreditation"><div class="wrap">
   <div class="section-head"><h2>Accreditation &amp; memberships</h2><p>Where AGI's standards come from, and who holds us to them.</p></div>
   <div class="marks" style="margin-bottom:40px">
-    <figure><img src="assets/web/seal-tennessee-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Tennessee</b>Department of Education</figcaption></figure>
-    <figure><img src="assets/web/seal-florida-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Florida</b>Department of Education</figcaption></figure>
-    <figure><img src="assets/web/seal-colorado-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Colorado</b>Department of Education</figcaption></figure>
-    <figure><img src="assets/web/seal-alabama-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Alabama</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-tennessee-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Tennessee</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-florida-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Florida</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-colorado-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Colorado</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-alabama-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Alabama</b>Department of Education</figcaption></figure>
   </div>
   <dl class="rows">{acc}</dl>
   <h3 style="margin-top:48px">Our programs are in compliance with</h3>
   <div class="marks" style="margin-top:16px">
-    <figure><img src="assets/web/mark-ncaa-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>NCAA</b>Eligibility Center</figcaption></figure>
-    <figure><img src="assets/web/mark-naia-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>NAIA</b>Eligibility Center</figcaption></figure>
-    <figure><img src="assets/web/mark-meridian-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>Meridian Learning</b>Curriculum standards</figcaption></figure>
-    <figure><img src="assets/web/mark-collegeboard-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>College Board</b>AP &amp; SAT programs</figcaption></figure>
+    <figure><img src="assets/web/mark-ncaa-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>NCAA</b>Eligibility Center</figcaption></figure>
+    <figure><img src="assets/web/mark-naia-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>NAIA</b>Eligibility Center</figcaption></figure>
+    <figure><img src="assets/web/mark-meridian-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>Meridian Learning</b>Curriculum standards</figcaption></figure>
+    <figure><img src="assets/web/mark-collegeboard-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>College Board</b>AP &amp; SAT programs</figcaption></figure>
   </div>
 </div></section>
 
@@ -393,7 +394,7 @@ page("programs.html", "Programs – American Group International, Agadir",
  "AGI programs: K–12 school, special education, adult high school diploma, English and Anglia exams, teacher training and university pathways.",
  hero("<span>Programs</span>", "Programs for every stage.",
       "Every AGI program shares one American academic standard. Each has its own curriculum, calendar and admission requirements – and every learner starts with a free placement test.") + f"""
-<section class="section bg-white"><div class="wrap">{program_cards(cols=2)}</div></section>
+<section class="section bg-white"><div class="wrap"><div class="section-head"><h2>Choose a program</h2><p>Each program page explains who it is for, how it works and how to apply.</p></div>{program_cards(cols=2)}</div></section>
 """ + cta("Not sure which program fits?", "Book a visit or send a question – the office will help you choose and arrange a free placement test.",
            GOLD_APPLY + '<a class="btn btn-light" href="forms.html#enquiry/programs">Ask a question</a>'))
 

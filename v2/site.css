@@ -1,5 +1,5 @@
 /* AGI v2 – shared site styles (header, footer, page components). */
-:root{--navy:#0A3161;--navy-deep:#061529;--red:#B22234;--gold:#C9A227;--paper:#F6F5F1;--stone:#EDEDE8;--ink:#0A0A0A;--text:#3A4150;--grey:#5B6472;--muted:#8A8F98;--line:rgba(10,49,97,.15);--line-dark:rgba(255,255,255,.15);--serif:'Newsreader',Georgia,serif;--sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--pad:clamp(20px,4vw,56px);--header:76px}
+:root{--navy:#0A3161;--navy-deep:#061529;--red:#B22234;--gold:#C9A227;--paper:#F6F5F1;--stone:#EDEDE8;--ink:#0A0A0A;--text:#3A4150;--grey:#5B6472;--muted:#646A75;--line:rgba(10,49,97,.15);--line-dark:rgba(255,255,255,.15);--serif:'Newsreader',Georgia,serif;--sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--pad:clamp(20px,4vw,56px);--header:76px}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 16px)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
@@ -154,11 +154,11 @@ td b{color:var(--navy);font-weight:600}
 .site-footer .cols{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(4,minmax(0,1fr));gap:36px clamp(24px,3vw,56px);padding-block:clamp(56px,7vw,88px) 48px}
 .site-footer .about p{font-size:13.5px;line-height:1.7;color:rgba(255,255,255,.6);margin:14px 0 0;max-width:34ch}
 .site-footer .about .brand{color:#fff}
-.site-footer h2{font:500 10.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.45);margin:4px 0 18px}
+.site-footer h2{font:500 10.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.7);margin:4px 0 18px}
 .site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 .site-footer a{color:rgba(255,255,255,.78);font-size:14px}.site-footer a:hover{color:#fff}
 .site-footer address{font-style:normal;font-size:14px;line-height:1.75;color:rgba(255,255,255,.78)}
-.site-footer .bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line-dark);padding-block:26px;font-size:12px;color:rgba(255,255,255,.45)}
+.site-footer .bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line-dark);padding-block:26px;font-size:12px;color:rgba(255,255,255,.7)}
 .site-footer .bottom a{font-size:12px;color:rgba(255,255,255,.6)}
 
 @media (max-width:1000px){
@@ -225,3 +225,6 @@ td b{color:var(--navy);font-weight:600}
 
 /* last card fills the rest of its row (no empty cells) */
 .cards>:last-child{grid-column:auto / -1}
+
+/* contrast: numbers on dark backgrounds */
+.bg-navy .num,.bg-deep .num{color:var(--gold)}

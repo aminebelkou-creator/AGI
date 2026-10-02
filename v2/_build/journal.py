@@ -35,13 +35,18 @@ for i, p in enumerate(posts):
     body = re.sub(r'href="/(contact|forms|admissions)/?"', lambda m: f'href="../{m.group(1)}.html"', body)  # ROOT_LINKS
     body = re.sub(r'href="/([^"]*)"', r'href="https://www.americangroup-international.com/\1"', body)
     for _u, _local in IMAGES.items(): body = body.replace(_u, "../" + _local)   # local copies of old-site images
+    body = re.sub(r"<(/?)h([1-5])\b", lambda m: f"<{m.group(1)}h{int(m.group(2)) + 1}", body)   # page title is the only h1
     body = re.sub(r"<img ", '<img loading="lazy" ', body)
     newer = posts[i - 1] if i > 0 else None; older = posts[i + 1] if i + 1 < len(posts) else None
     def nav(q, label):
         if not q: return "<span></span>"
         t = clean_title(q["title"]); d = next((v for k, v in DESIGNED.items() if k in t.lower()), None)
         return f'<a href="{d or q["slug"] + ".html"}"><small>{label}</small>{html.escape(t)}</a>'
-    doc = (TPL.replace("{{TITLE}}", html.escape(title)).replace("{{DESC}}", html.escape(re.sub(r"<[^>]+>", " ", body)[:155].strip()))
+    plain = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body)).strip()
+    desc = plain[:155].rsplit(" ", 1)[0] + "…" if len(plain) > 155 else plain
+    if len(desc) < 70: desc = f"{title} – news from American Group International and Anglia Morocco, Agadir."[:160]
+    page_title = title if len(title) > 56 else f"{title} – AGI Journal"
+    doc = (TPL.replace("<title>{{TITLE}} – AGI Journal</title>", f"<title>{html.escape(page_title)}</title>").replace("{{TITLE}}", html.escape(title)).replace("{{DESC}}", html.escape(desc))
            .replace("{{DATE}}", nice_date(p["date"])).replace("{{KIND}}", kind_of(title)).replace("{{BODY}}", body)
            .replace("{{NEWER}}", nav(newer, "Newer")).replace("{{OLDER}}", nav(older, "Older")))
     open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8", newline="").write(doc)

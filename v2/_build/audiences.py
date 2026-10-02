@@ -17,7 +17,7 @@ FAQ_CSS = """
 
 # ------------------------------------------------------------------ PARENTS
 page("parents.html", "For parents – American Group International, Agadir",
- "An affordable, creative and inclusive American school in Agadir: small classes, support for every learner, and a placement policy that never lowers a grade because of language gaps.",
+ "An affordable, creative and inclusive American school in Agadir: small classes, support for every learner, and no child held back for a language gap.",
  hero("<span>For parents</span>", "An education built around your child.",
       "Affordable, creative and inclusive: a K–12 micro-school in Agadir where your child is known by name, supported where they need it, and prepared for a world without borders.",
       '<a class="btn btn-primary" href="forms.html#visit">Book a visit</a>' + WA)
@@ -121,8 +121,8 @@ page("founder-letter.html", "A letter from our founder – American Group Intern
 
 # ------------------------------------------------------------------ TEACHERS
 AM = "https://angliamorocco.org"
-program_page("teachers.html", "For teachers", "For teachers – C.I.T.E. & teacher training",
- "Teach English with a lifelong credential: the Anglia C.I.T.E. (TESOL) certificate, teacher training in AGI classrooms, a 30-day internship and U.S. private-school sponsorship.",
+program_page("teachers.html", "For teachers", "For teachers – C.I.T.E. & training",
+ "Teach English with a lifelong credential: Anglia C.I.T.E. (TESOL), teacher training in Agadir, a 30-day internship and U.S. private-school sponsorship.",
  "Teach English with a lifelong credential.",
  "Earn the C.I.T.E. from Anglia Examinations England, practice in AGI classrooms, and open a path to teaching abroad – with support from Morocco's Anglia headquarters.", f"""
 <section class="section bg-white" id="cite"><div class="wrap split">
@@ -160,8 +160,8 @@ program_page("teachers.html", "For teachers", "For teachers – C.I.T.E. & teach
  f'<a class="btn btn-gold" href="{AM}/citem/" target="_blank" rel="noopener">Register for C.I.T.E.</a><a class="btn btn-light" href="forms.html#enquiry/programs">Ask about the internship</a>')
 
 # ------------------------------------------------------------------ PROFESSIONALS (replaces the old professional.html)
-program_page("professional.html", "Professional & medical English", "English for professionals & clinicians",
- "Business and medical English in Agadir and online: Anglia Business English, courses for teams, medical English for clinicians, exam proctoring and ADHD coaching.",
+program_page("professional.html", "Professional & medical English", "Professional & medical English",
+ "Business and medical English in Agadir and online: Anglia Business English, team courses, medical English, exam proctoring and ADHD coaching.",
  "Speak the language of your profession.",
  "Practical English for the way you work – in business, in medicine and across borders – certified with Anglia Examinations England.", """
 <section class="section bg-white"><div class="wrap split">
@@ -285,7 +285,7 @@ page("our-story.html", "Our story – American Group International, Agadir",
 </div></section>
 
 <section class="section"><div class="wrap director">
-  <img src="assets/web/director-julie-wilburn.jpg" alt="Julie A. Wilburn, founder of AGI" width="576" height="720" loading="lazy">
+  <img src="assets/web/director-julie-wilburn.webp" alt="Julie A. Wilburn, founder of AGI" width="576" height="720" loading="lazy">
   <div>
     <p class="kicker">In her words</p>
     <p class="quote" data-placeholder="fact:story-quote-1">“Children only thrive when they feel safe, valued – and known.”</p>
@@ -332,14 +332,14 @@ page("our-story.html", "Our story – American Group International, Agadir",
 <section class="section bg-white"><div class="wrap">
   <div class="section-head"><h2>Recognized and accredited</h2><p><a class="link" href="about.html#accreditation">All accreditation</a></p></div>
   <div class="marks" style="--cols:4">
-    <figure><img src="assets/web/seal-tennessee-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Tennessee</b>Department of Education</figcaption></figure>
-    <figure><img src="assets/web/seal-florida-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Florida</b>Department of Education</figcaption></figure>
-    <figure><img src="assets/web/seal-colorado-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Colorado</b>Department of Education</figcaption></figure>
-    <figure><img src="assets/web/seal-alabama-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Alabama</b>Department of Education</figcaption></figure>
-    <figure><img src="assets/web/mark-ncaa-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>NCAA</b>Eligibility Center</figcaption></figure>
-    <figure><img src="assets/web/mark-naia-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>NAIA</b>Eligibility Center</figcaption></figure>
-    <figure><img src="assets/web/mark-collegeboard-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>College Board</b>AP &amp; SAT programs</figcaption></figure>
-    <figure><img src="assets/web/mark-meridian-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>Meridian Learning</b>Curriculum standards</figcaption></figure>
+    <figure><img src="assets/web/seal-tennessee-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Tennessee</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-florida-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Florida</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-colorado-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Colorado</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-alabama-clean.webp" alt="" width="120" height="120" loading="lazy"><figcaption><b>Alabama</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/mark-ncaa-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>NCAA</b>Eligibility Center</figcaption></figure>
+    <figure><img src="assets/web/mark-naia-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>NAIA</b>Eligibility Center</figcaption></figure>
+    <figure><img src="assets/web/mark-collegeboard-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>College Board</b>AP &amp; SAT programs</figcaption></figure>
+    <figure><img src="assets/web/mark-meridian-clean.webp" alt="" width="160" height="84" loading="lazy"><figcaption><b>Meridian Learning</b>Curriculum standards</figcaption></figure>
   </div>
   <p class="note" style="margin-top:28px;background:#fff;border-left-color:var(--navy)"><strong style="color:var(--navy)">Official partner in Morocco of Chichester College Group, UK.</strong> Accredited by the American Council of Training and Development. Anglia Examinations franchise holder for Morocco.</p>
 </div></section>
