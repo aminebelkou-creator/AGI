@@ -119,6 +119,7 @@ a:hover{color:#B22234}
       <a href="#stories" style="font-size:13px;font-weight:500;letter-spacing:0.04em;padding:28px 0">Stories</a>
       <a href="AGI Partnerships.dc.html" style="font-size:13px;font-weight:500;letter-spacing:0.04em;padding:28px 0">Partnerships</a>
       <a href="AGI Connect.dc.html" style="font-size:13px;font-weight:500;letter-spacing:0.04em;padding:28px 0">AGI Connect</a>
+      <a href="AGI Forms.html" style="font-size:13px;font-weight:500;letter-spacing:0.04em;padding:28px 0">Forms</a>
     </nav>
     <div style="display:flex;align-items:center;gap:20px">
       <span class="agi-hide-md" title="Search" style="cursor:pointer;color:#0A3161;font-size:15px">⌕</span>
@@ -126,7 +127,7 @@ a:hover{color:#B22234}
         <span style="color:#0A3161;font-weight:600;cursor:pointer">EN</span><span style="cursor:pointer">FR</span><span style="cursor:pointer">AR</span>
       </div>
       <span class="agi-hide-md" style="display:flex;align-items:center;gap:6px;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#5B6472"><span style="width:6px;height:6px;border-radius:50%;background:#B22234;display:inline-block"></span>{{ campus }}</span>
-      <a href="AGI Admissions.dc.html" style="background:#0A3161;color:#fff;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:11px 22px;transition:background .25s" style-hover="background:#B22234;color:#fff">Apply</a>
+      <a href="AGI Forms.html#enrollment" style="background:#0A3161;color:#fff;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:11px 22px;transition:background .25s" style-hover="background:#B22234;color:#fff">Apply</a>
       <span class="agi-burger" onClick="{{ toggleNav }}" role="button" tabIndex="{{ zero }}" aria-label="Menu" style="display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;align-items:flex-end;cursor:pointer">
         <span style="display:block;width:24px;height:1.5px;background:#0A3161"></span>
         <span style="display:block;width:18px;height:1.5px;background:#0A3161"></span>
@@ -173,13 +174,14 @@ a:hover{color:#B22234}
         <a onClick="{{ closeNav }}" href="#stories" style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(25px,6.4vw,34px);color:#fff;padding:12px 0;border-top:1px solid rgba(255,255,255,0.18)">Stories</a>
         <a onClick="{{ closeNav }}" href="AGI Partnerships.dc.html" style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(25px,6.4vw,34px);color:#fff;padding:12px 0;border-top:1px solid rgba(255,255,255,0.18)">Partnerships</a>
         <a onClick="{{ closeNav }}" href="AGI Connect.dc.html" style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(25px,6.4vw,34px);color:#C9A227;padding:12px 0;border-top:1px solid rgba(255,255,255,0.18);border-bottom:1px solid rgba(255,255,255,0.18)">AGI Connect</a>
+        <a onClick="{{ closeNav }}" href="AGI Forms.html" style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(25px,6.4vw,34px);color:#C9A227;padding:12px 0;border-top:1px solid rgba(255,255,255,0.18);border-bottom:1px solid rgba(255,255,255,0.18)">Forms</a>
       </nav>
       <div style="margin-top:auto;padding-top:28px;display:flex;flex-direction:column;gap:18px">
         <div style="display:flex;gap:18px;font-size:12px;letter-spacing:0.14em;color:rgba(255,255,255,0.5)">
           <span style="color:#fff">EN</span><span>FR</span><span>AR</span>
           <span style="margin-left:auto;letter-spacing:0.1em;text-transform:uppercase">{{ campus }}</span>
         </div>
-        <a onClick="{{ closeNav }}" href="AGI Admissions.dc.html" style="background:linear-gradient(180deg,#D8B34A,#C9A227);color:#061529;text-align:center;font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:18px">Apply to AGI</a>
+        <a onClick="{{ closeNav }}" href="AGI Forms.html#enrollment" style="background:linear-gradient(180deg,#D8B34A,#C9A227);color:#061529;text-align:center;font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:18px">Apply to AGI</a>
       </div>
     </div>
   </sc-if>
@@ -383,6 +385,7 @@ a:hover{color:#B22234}
       <div style="display:flex;gap:14px;margin-top:36px">
         <span onClick="{{ openAdmissionsForm }}" style="background:#0A3161;color:#fff;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:16px 30px;cursor:pointer;transition:background .25s" style-hover="background:#B22234">Begin an Application</span>
         <a href="AGI Connect.dc.html" style="border:1px solid rgba(10,49,97,0.3);color:#0A3161;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:16px 30px" style-hover="border-color:#0A3161;background:rgba(10,49,97,0.05);color:#0A3161">Ask AGI Connect</a>
+        <a href="AGI Forms.html#visit" style="border:1px solid rgba(10,49,97,0.3);color:#0A3161;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:16px 30px" style-hover="border-color:#0A3161;background:rgba(10,49,97,0.05);color:#0A3161">Book a Visit</a>
       </div>
     </div>
     <aside style="background:#0A3161;color:#fff;padding:clamp(28px,3vw,44px)">
@@ -393,7 +396,7 @@ a:hover{color:#B22234}
           <span style="font-family:'Newsreader',serif;font-style:italic;font-size:14px;color:#C9A227;white-space:nowrap">{{ d.date }}</span>
         </div>
       </sc-for>
-      <p style="font-size:11px;color:rgba(255,255,255,0.4);margin:24px 0 0">Dates follow the AGI academic calendar for Agadir; movable religious holidays are confirmed each term. Tuition schedules and document requests are available through the AGI Services directory below.</p>
+      <p style="font-size:11px;color:rgba(255,255,255,0.4);margin:24px 0 0">Dates follow the AGI academic calendar for Agadir; movable religious holidays are confirmed each term. Tuition schedules and document requests are on the <a href="AGI Forms.html" style="color:rgba(255,255,255,0.75);text-decoration:underline;text-underline-offset:3px">Forms page</a>.</p>
     </aside>
   </div>
 </section>
@@ -442,7 +445,7 @@ a:hover{color:#B22234}
   <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;border-bottom:2px solid #0A3161;padding-bottom:18px;margin-bottom:clamp(32px,4vw,52px)">
       <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,4vw,56px);line-height:1;margin:0;letter-spacing:-0.015em">Policies for families</h2>
-      <p style="font-size:14px;line-height:1.7;color:#5B6472;max-width:34ch;margin:0;text-align:right">The rules we hold ourselves and our families to. Full texts are available on request.</p>
+      <p style="font-size:14px;line-height:1.7;color:#5B6472;max-width:34ch;margin:0;text-align:right">The rules we hold ourselves and our families to. Full texts are available <a href="AGI Forms.html#enquiry" style="text-decoration:underline;text-underline-offset:3px">on request</a>. Away from school? <a href="AGI Forms.html#absence" style="text-decoration:underline;text-underline-offset:3px">Report an absence</a>.</p>
     </div>
     <div class="agi-servindex" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(32px,5vw,90px)">
       <sc-for list="{{ policies }}" as="po" hint-placeholder-count="7">
@@ -506,7 +509,8 @@ a:hover{color:#B22234}
           <p style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 8px">Summer school — high school</p>
           <p style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.85);margin:0">3,000 MAD for a one-month programme, for students catching up or enrolling late.</p>
         </div>
-        <span onClick="{{ openAdmissionsForm }}" style="display:block;margin-top:28px;background:#B22234;color:#fff;text-align:center;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:15px 24px;cursor:pointer;transition:background .25s" style-hover="background:#8E1A28">Request the fee schedule</span>
+        <a href="AGI Forms.html#enquiry/programs" style="display:block;margin-top:28px;background:#B22234;color:#fff;text-align:center;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:15px 24px;cursor:pointer;transition:background .25s" style-hover="background:#8E1A28;color:#fff">Request the fee schedule</a>
+        <a href="AGI Forms.html#payment" style="display:block;margin-top:14px;text-align:center;font-size:13px;color:rgba(255,255,255,0.75);text-decoration:underline;text-underline-offset:3px" style-hover="color:#fff">Already paid? Send a payment notice</a>
       </aside>
     </div>
   </div>
@@ -872,7 +876,7 @@ a:hover{color:#B22234}
         <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Community</span>
         <a href="#experience" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Student Life</a>
         <a href="#stories" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">News &amp; Journal</a>
-        <a href="#services" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Documents</a>
+        <a href="AGI Forms.html" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Forms &amp; requests</a>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
         <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Network</span>
@@ -884,7 +888,7 @@ a:hover{color:#B22234}
         <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Legal</span>
         <a href="#top" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Privacy</a>
         <a href="#top" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Terms</a>
-        <a href="#services" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Contact</a>
+        <a href="AGI Forms.html#enquiry" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Contact</a>
       </div>
     </div>
     <div class="agi-stack2" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,3vw,48px);border-top:1px solid rgba(255,255,255,0.15);padding:32px 0;margin-bottom:8px;font-size:13px;line-height:1.7">
@@ -993,8 +997,8 @@ class Component extends DCLogic {
       drawerFormVisible: !!this.state.drawer && !this.state.drawerSent,
       closeDrawer: () => this.setState({ drawer: null, drawerSent: false }),
       submitDrawer: () => this.setState({ drawerSent: true }),
-      openAdmissionsForm: () => this.setState({ drawer: "Admissions Application", drawerSent: false }),
-      openPartnerForm: () => this.setState({ drawer: "Partnership Enquiry", drawerSent: false }),
+      openAdmissionsForm: () => { window.location.href = "AGI Forms.html#enrollment"; },
+      openPartnerForm: () => { window.location.href = "AGI Forms.html#enquiry/partnership"; },
       voiceQuote: v.quote, voiceName: v.name, voiceRole: v.role,
       voiceDots: this.VOICES.map((v, i) => ({
         ord: "0" + (i + 1),
@@ -1081,7 +1085,7 @@ class Component extends DCLogic {
         { name: "Campus Visit", desc: "Book a guided visit at any AGI campus." },
         { name: "Partnership Enquiry", desc: "Franchise and institutional partnership discussions." },
         { name: "General Contact", desc: "Anything else — routed to the right office." }
-      ].map(f => ({ ...f, open: () => this.setState({ drawer: f.name, drawerSent: false }) })),
+      ].map(f => ({ ...f, open: () => { window.location.href = "AGI Forms.html#" + ({ "Admissions Application": "enrollment", "Document Request": "documents", "Transcript Request": "documents/transcript", "Campus Visit": "visit", "Partnership Enquiry": "enquiry/partnership", "General Contact": "enquiry" }[f.name] || ""); } })),
       regions: [
         { name: "Souss-Massa", status: "Headquarters · Agadir", color: "#7BC98A" },
         { name: "Casablanca-Settat", status: "Anglia centres", color: "#C9A227" },

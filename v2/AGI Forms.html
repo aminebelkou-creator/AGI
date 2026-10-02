@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forms &amp; requests – American Group International, Agadir</title>
+<meta name="description" content="Apply for a place, report an absence, request a document, give consent, book tutoring or tell the AGI office about a payment.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A3161;--red:#B22234;--gold:#C9A227;--paper:#F6F5F1;--ink:#0A0A0A;--grey:#5B6472;--muted:#8A8F98;--line:rgba(10,49,97,.15);--field:rgba(10,49,97,.28);--errbg:#FBEDEE;--serif:'Newsreader',Georgia,serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--navy);text-decoration:none}a:hover{color:var(--red)}
+::selection{background:var(--navy);color:#fff}
+:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+.wrap{max-width:1440px;margin:0 auto;padding-inline:clamp(20px,4vw,56px)}
+/* header – same as the other v2 pages */
+.top{position:sticky;top:0;z-index:60;background:rgba(246,245,241,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--navy)}
+.brand img{height:44px;width:44px;object-fit:contain;display:block}
+.brand b{font-family:var(--serif);font-weight:500;font-size:26px;letter-spacing:.02em}
+.brand small{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--grey)}
+.nav{display:flex;align-items:center;gap:32px}.nav a{font-size:13px;font-weight:500;letter-spacing:.04em;white-space:nowrap}
+.nav a[aria-current]{color:var(--red)}
+.cta{background:var(--navy);color:#fff;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:11px 22px;transition:background .25s}
+.cta:hover{background:var(--red);color:#fff}
+@media (max-width:1100px){.brand small{display:none}.nav{gap:16px}}
+@media (max-width:800px){.nav{display:none}}
+/* hero */
+.hero{padding-block:clamp(56px,7vw,100px) clamp(40px,5vw,72px)}
+.crumb{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 32px}.crumb a{color:var(--muted)}.crumb span{color:var(--navy)}
+h1{font-family:var(--serif);font-weight:300;font-size:clamp(44px,5.2vw,80px);line-height:1.04;margin:0 0 28px;color:var(--navy);letter-spacing:-.01em}
+.lede{font-family:var(--serif);font-style:italic;font-size:clamp(19px,1.6vw,24px);line-height:1.5;color:#3A4150;margin:0;max-width:660px}
+/* layout */
+.layout{display:grid;grid-template-columns:minmax(260px,340px) minmax(0,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.index{position:sticky;top:76px;align-self:start;max-height:calc(100vh - 76px);overflow:auto;padding:clamp(24px,3vw,40px) clamp(20px,2.4vw,32px) 40px 0;border-right:1px solid var(--line)}
+.index h2{font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:28px 0 4px}.index h2:first-child{margin-top:0}
+.index ul{list-style:none;margin:0;padding:0}
+.index li a{display:block;padding:10px 0 10px 16px;border-left:2px solid transparent}
+.index li a .t{display:block;font-family:var(--serif);font-size:19px;line-height:1.3;color:var(--navy)}
+.index li a .d{display:block;font-size:12.5px;line-height:1.5;color:var(--grey);margin-top:2px}
+.index li a:hover .t,.index li a[aria-current] .t{color:var(--red)}
+.index li a[aria-current]{border-left-color:var(--red)}
+.help{margin-top:32px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;line-height:1.7;color:var(--grey)}
+.help p{margin:0 0 8px}.help a{white-space:nowrap}.help strong{display:block;color:var(--ink);font-weight:600;margin-bottom:4px}
+.panel{background:#fff;padding:clamp(28px,4.5vw,72px);min-width:0}
+.sheet{max-width:780px}
+.sheet[hidden],.done[hidden],form[hidden]{display:none}
+.sheet h2{font-family:var(--serif);font-weight:300;font-size:clamp(32px,3.2vw,48px);line-height:1.1;color:var(--navy);margin:0 0 10px}
+.sheet h2:focus{outline:none}
+.meta{font-size:13px;color:var(--muted);margin:0 0 22px}
+.intro{font-family:var(--serif);font-size:clamp(18px,1.4vw,21px);line-height:1.6;color:#3A4150;margin:0 0 32px;max-width:62ch}
+.brief{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin:0 0 40px}
+.brief>div{background:var(--paper);padding:20px 24px}
+.brief h3{font-size:13px;font-weight:600;color:var(--navy);margin:0 0 8px}
+.brief ul{margin:0;padding-left:18px}.brief li,.brief p{font-size:13.5px;line-height:1.65;color:var(--grey);margin:0 0 4px}
+.notice{border-left:3px solid var(--gold);background:#FBF7EA;padding:16px 20px;font-size:14px;line-height:1.6;margin:0 0 36px}
+.notice a{text-decoration:underline;text-underline-offset:3px}
+/* steps on the start panel – a real sequence */
+.steps{list-style:none;counter-reset:s;margin:0 0 40px;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.steps li{counter-increment:s;background:var(--paper);padding:22px 24px 22px 76px;position:relative}
+.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:24px;top:16px;font-family:var(--serif);font-size:32px;font-weight:300;color:var(--red)}
+.steps h3{font-size:15px;font-weight:600;color:var(--navy);margin:0 0 4px}.steps p{font-size:14px;color:var(--grey);margin:0}
+.quick{display:flex;flex-wrap:wrap;gap:10px}
+.quick a{border:1px solid var(--field);padding:10px 16px;font-size:14px}
+.quick a:hover{border-color:var(--red)}
+</style>
+<style>
+/* form controls */
+fieldset{border:0;padding:0;margin:0;min-width:0}
+.group{margin:0 0 40px}
+.group>legend{display:block;width:100%;font-family:var(--serif);font-size:23px;font-weight:400;color:var(--navy);padding:0 0 12px;margin:0 0 22px;border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 24px;align-items:end}
+.grid>.full{align-self:start}
+.full{grid-column:1/-1}
+.field>label,.choice>legend{display:block;font-size:14px;font-weight:500;color:var(--ink);margin:0 0 6px;padding:0}
+.opt{font-weight:400;font-size:12.5px;color:var(--muted);margin-left:6px}
+.hint{display:block;font-size:12.5px;line-height:1.5;color:var(--grey);margin:-2px 0 8px}
+input,select,textarea{width:100%;font:inherit;font-size:15px;color:var(--ink);background:#fff;border:1px solid var(--field);border-radius:0;padding:11px 13px;min-height:48px}
+textarea{min-height:120px;resize:vertical;line-height:1.55}
+select{appearance:none;-webkit-appearance:none;padding-right:40px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%230A3161' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--navy);outline-offset:1px;border-color:var(--navy)}
+input:user-invalid,select:user-invalid,textarea:user-invalid{border-color:var(--red);background-color:var(--errbg)}
+.err{display:none;font-size:12.5px;color:var(--red);margin:6px 0 0}
+.field:has(:user-invalid)>.err{display:block}
+.opts{display:flex;flex-wrap:wrap;gap:8px 10px}
+.pill{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--field);padding:10px 15px;font-size:14px;cursor:pointer;background:#fff;min-height:44px}
+.pill input{width:18px;height:18px;min-height:0;margin:0;accent-color:var(--navy);flex:none}
+.pill:has(input:checked){border-color:var(--navy);background:#EEF2F8;color:var(--navy)}
+.pill:has(input:focus-visible){outline:2px solid var(--navy);outline-offset:2px}
+.choice:has(:user-invalid) .pill{border-color:var(--red)}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;line-height:1.55;cursor:pointer}
+.check input{width:20px;height:20px;min-height:0;margin:2px 0 0;accent-color:var(--navy);flex:none}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;border-top:1px solid var(--line);padding-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--navy);color:#fff;border:1px solid var(--navy);font:600 12px/1 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:16px 28px;min-height:50px;cursor:pointer;transition:background .2s,border-color .2s}
+.btn:hover{background:var(--red);border-color:var(--red);color:#fff}
+.btn[disabled]{opacity:.6;cursor:progress}
+.btn.ghost{background:transparent;color:var(--navy)}.btn.ghost:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.actions small{font-size:12.5px;line-height:1.55;color:var(--grey);max-width:46ch}
+.done{border:1px solid var(--line);border-top:3px solid var(--navy);background:var(--paper);padding:clamp(24px,3vw,36px)}
+.done:focus{outline:none}
+.done h3{font-family:var(--serif);font-weight:400;font-size:28px;color:var(--navy);margin:0 0 10px}
+.done p{font-size:15px;color:#3A4150;margin:0 0 12px;max-width:60ch}
+.done .actions{border:0;padding-top:12px}
+/* footer – same as the other v2 pages */
+footer{background:var(--navy);color:#fff}
+.fcontact{display:flex;gap:10px 28px;flex-wrap:wrap;font-size:12px;color:rgba(255,255,255,.6);padding-top:24px}
+.fcontact a{color:rgba(255,255,255,.6)}.fcontact a:hover{color:#fff}
+.fbar{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-block:28px;font-size:11px;color:rgba(255,255,255,.4)}
+.fbar a{color:rgba(255,255,255,.6);letter-spacing:.18em;text-transform:uppercase}.fbar a:hover{color:#fff}
+@media (max-width:900px){
+.layout{grid-template-columns:minmax(0,1fr)}
+.index{position:static;max-height:none;border-right:0;border-bottom:1px solid var(--line);padding:28px 0}
+.brief,.grid{grid-template-columns:minmax(0,1fr)}
+.panel{padding:32px clamp(20px,4vw,56px)}
+.layout.wrap{padding-inline:0}.index{padding-inline:clamp(20px,4vw,56px)}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="AGI Preview.dc.html"><img src="assets/agi-seal.png" alt="AGI seal"><b>AGI</b><small>American Group International School · Agadir</small></a>
+  <nav class="nav" aria-label="Main">
+    <a href="AGI Preview.dc.html#programs">Programs</a>
+    <a href="AGI Admissions.dc.html">Admissions</a>
+    <a href="AGI Forms.html" aria-current="page">Forms</a>
+    <a href="AGI Connect.dc.html">AGI Connect</a>
+  </nav>
+  <a class="cta" href="#enrollment">Apply</a>
+</div></header>
+
+<main>
+<section class="hero wrap">
+  <p class="crumb"><a href="AGI Preview.dc.html">Home</a> / <span>Forms</span></p>
+  <h1>Forms &amp; requests</h1>
+  <p class="lede">Apply for a place, report an absence, request a document or tell the office about a payment. Every form explains what to have ready and what happens after you send it.</p>
+</section>
+
+<div class="layout wrap">
+  <nav class="index" id="index" aria-label="Forms"></nav>
+  <div class="panel" id="panel">
+    <section class="sheet" id="start" aria-labelledby="start-title">
+      <h2 id="start-title" tabindex="-1">How it works</h2>
+      <p class="intro">Choose the request from the list. Each form takes two to five minutes and goes straight to the AGI office in Agadir.</p>
+      <ol class="steps">
+        <li><h3>Choose a form</h3><p>Pick the request that matches what you need. If nothing fits, use the general enquiry.</p></li>
+        <li><h3>Fill it in</h3><p>Every field is required unless it says optional. Your browser can fill in your name and contact details for you.</p></li>
+        <li><h3>The office replies</h3><p>Requests are answered within one working day, Monday to Friday. Urgent? Call or send a WhatsApp message.</p></li>
+      </ol>
+      <h3 style="font-size:14px;font-weight:600;color:var(--navy);margin:0 0 12px">Most used</h3>
+      <div class="quick"><a href="#absence">Report an absence</a><a href="#enrollment">Apply for a place</a><a href="#payment">Payment notice</a><a href="#documents/transcript">Request a transcript</a></div>
+    </section>
+    <noscript><p class="notice">The forms need JavaScript to work. You can also email <a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a> or call +212 528 843 349.</p></noscript>
+  </div>
+</div>
+</main>
+
+<footer><div class="wrap">
+  <div class="fcontact"><span>Number 20, Rue Baalabek, Hay Nahda, Agadir</span><a href="tel:+212528843349">+212 528 843 349</a><a href="https://wa.me/212688739393">WhatsApp +212 688 739 393</a><a href="tel:+212618639911">Arabic +212 618 639 911</a><a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a></div>
+  <div class="fbar"><span>© 2026 American Group International School · Agadir, Morocco — Design preview.</span><a href="AGI Preview.dc.html">← Back to Overview</a></div>
+</div></footer>
+<script>
+/* ------------------------------------------------------------------
+   AGI forms. Settings:
+   endpoint – when the AGI API is live, set to "/api/trpc/forms.submit"
+              (tRPC + superjson, see app/api/forms-router.ts). While it is
+              null, each form opens the visitor's email app, pre-filled.
+   ------------------------------------------------------------------ */
+const CONFIG = {
+  endpoint: null,
+  email: "americanecoleagadir@gmail.com",
+  whatsapp: "+212 688 739 393",
+  cardPayment: "https://omella.com/ti26c"
+};
+
+const GRADES = ["Kindergarten", ...Array.from({ length: 12 }, (_, i) => "Grade " + (i + 1))];
+const PARENT_REL = ["Mother", "Father", "Guardian", "Other"];
+function contact({ rel = null, optional = false } = {}) {
+  const r = !optional, f = [];
+  f.push({ n: "contact_name", l: "Full name", req: r, ac: "name", role: "name", w: rel ? "" : "full" });
+  if (rel) f.push({ n: "relationship", l: "Relationship to the student", t: "select", req: 1, opts: rel });
+  f.push({ n: "email", l: "Email", t: "email", req: r, ac: "email", role: "email" });
+  f.push({ n: "phone", l: "Phone or WhatsApp", t: "tel", req: r, ac: "tel", role: "phone", h: "Include the country code, for example +212" });
+  return f;
+}
+
+const FORMS = [
+{ id: "enrollment", group: "Admissions", title: "Enrollment application", short: "Apply for a place in any AGI program", mins: 5,
+  intro: "Apply for a place at AGI, from kindergarten to grade 12, the adult high school diploma, Anglia English or special education. Send one application per student.",
+  have: ["The student's previous school records and a behaviour report", "Proof of age and residency", "Immunization and physical examination records", "For an IEP or special-needs support: documentation from a licensed practitioner"],
+  next: "Admissions contacts you to arrange the free placement test and a visit. Registration days for 2026–27 are August 28 and 31. The annual inscription is paid once at enrolment and is non-refundable.",
+  submit: "Send application", sent: "Application sent",
+  sections: [
+    { legend: "Student", fields: [
+      { n: "student_name", l: "Student's full name", req: 1, w: "full" },
+      { n: "student_dob", l: "Date of birth", t: "date", req: 1 },
+      { n: "nationality", l: "Nationality" },
+      { n: "program", l: "Program", t: "select", req: 1, opts: ["K–12 school", "Adult high school diploma (16+)", "English & Anglia exams", "Special education (SEN)", "Teacher training & C.I.T.E.", "Education consultancy"] },
+      { n: "grade", l: "Grade applying for", t: "select", opts: [...GRADES, "Not applicable"], h: "For the K–12 school" },
+      { n: "start", l: "Preferred start", t: "select", req: 1, opts: ["September 2026", "January 2027", "As soon as possible"] },
+      { n: "previous_school", l: "Current or previous school" },
+      { n: "home_languages", l: "Languages spoken at home", w: "full", h: "Helps us plan English support" },
+      { n: "support_needs", l: "Learning support or health needs", t: "textarea", h: "Tell us about any IEP, diagnosis, allergy or condition we should know about." } ] },
+    { legend: "Parent or guardian", fields: contact({ rel: [...PARENT_REL.slice(0, 3), "Self (adult learner)", "Other"] }) },
+    { legend: "Confirm", fields: [
+      { n: "confirm", t: "checkbox", req: 1, short: "Information confirmed", l: "I confirm the information is accurate and understand that the annual inscription is non-refundable." } ] } ] },
+
+{ id: "visit", group: "Admissions", title: "Visit the school", short: "Book a tour of the Agadir campus", mins: 2,
+  intro: "Tours are arranged individually so you can meet the team, see the classrooms and ask about the application process.",
+  have: ["Two or three dates that suit you", "The program you are interested in"],
+  next: "The office confirms a time by phone or email. Visits take place Monday to Friday at 20 Rue Baalabek, Hay Nahda.",
+  submit: "Request a visit", sent: "Visit requested",
+  sections: [
+    { legend: "Your visit", fields: [
+      { n: "visit_date", l: "Preferred date", t: "date", req: 1, future: 1 },
+      { n: "visit_time", l: "Preferred time", t: "select", req: 1, opts: ["Morning (9:00–12:00)", "Afternoon (14:00–17:00)"] },
+      { n: "visitors", l: "Number of visitors", t: "number", min: 1, max: 6, v: 2, req: 1 },
+      { n: "interest", l: "Program of interest", t: "select", req: 1, opts: ["K–12 school", "Adult high school diploma", "English & Anglia exams", "Special education (SEN)", "Not sure yet"] },
+      { n: "message", l: "Anything we should know", t: "textarea" } ] },
+    { legend: "Your details", fields: contact() } ] },
+
+{ id: "absence", group: "Families", title: "Report an absence", short: "Absence, late arrival or early pick-up", mins: 2,
+  intro: "Let the office know before 9:00 on the day if your child will be absent, arrive late or leave early.",
+  have: ["Your child's name and grade", "The dates, and the reason for the absence"],
+  next: "The office records your notice. School policy still asks for a dated, signed excuse within two days of your child's return. Arriving after 10:00 counts as a full-day absence, and promotion requires 90% attendance.",
+  submit: "Send absence notice", sent: "Absence notice sent",
+  sections: [
+    { legend: "Student", fields: [
+      { n: "student_name", l: "Student's full name", req: 1 },
+      { n: "grade", l: "Grade", t: "select", req: 1, opts: GRADES } ] },
+    { legend: "Absence", fields: [
+      { n: "kind", l: "Type of notice", t: "radio", req: 1, opts: ["Full-day absence", "Late arrival", "Early pick-up"] },
+      { n: "date_from", l: "Date", t: "date", req: 1, h: "First day of the absence" },
+      { n: "date_to", l: "Last day", t: "date", h: "Leave empty for a single day" },
+      { n: "time", l: "Arrival or pick-up time", t: "time", h: "For a late arrival or early pick-up" },
+      { n: "reason", l: "Reason", t: "select", req: 1, opts: ["Illness", "Medical appointment", "Family reason", "Religious observance", "Travel", "Other"] },
+      { n: "details", l: "Details", t: "textarea" } ] },
+    { legend: "Parent or guardian", fields: contact({ rel: PARENT_REL }) } ] },
+
+{ id: "consent", group: "Families", title: "Park & outdoor activity consent", short: "Permission for park visits and outings", mins: 2,
+  intro: "Give permission for your child to join a park visit or outdoor microschool activity. Send one form per child, per activity, before the activity date.",
+  have: ["The name and date of the activity", "An emergency phone number for the day", "Any allergies, medication or health notes"],
+  next: "Teachers receive your consent before the activity. If anything changes on the day, call the office.",
+  submit: "Give consent", sent: "Consent sent",
+  sections: [
+    { legend: "Student & activity", fields: [
+      { n: "student_name", l: "Student's full name", req: 1 },
+      { n: "grade", l: "Grade", t: "select", req: 1, opts: GRADES },
+      { n: "activity", l: "Activity", req: 1, h: "For example: park visit, nature walk" },
+      { n: "activity_date", l: "Activity date", t: "date", req: 1, future: 1 },
+      { n: "emergency_name", l: "Emergency contact name", req: 1 },
+      { n: "emergency_phone", l: "Emergency phone", t: "tel", req: 1, h: "Reachable during the activity" },
+      { n: "health", l: "Allergies, medication or health notes", t: "textarea" } ] },
+    { legend: "Parent or guardian", fields: contact({ rel: PARENT_REL }) },
+    { legend: "Consent", fields: [
+      { n: "consent", t: "checkbox", req: 1, short: "Consent given", l: "I give permission for my child to take part in this activity, supervised by AGI staff." },
+      { n: "signature", l: "Signature", req: 1, ac: "name", h: "Type your full name as your signature" },
+      { n: "signed_on", l: "Date", t: "date", req: 1, today: 1 } ] } ] },
+
+{ id: "feedback", group: "Families", title: "Parent feedback", short: "Suggestions, praise or a concern", mins: 2,
+  intro: "Tell us what is working, what could be better, or a concern you want the administration to know about. You can stay anonymous.",
+  have: ["A specific example helps us act on your feedback"],
+  next: "The administration reviews all feedback every week. If you ask for a reply, we contact you.",
+  submit: "Send feedback", sent: "Feedback sent",
+  sections: [
+    { legend: "Your feedback", fields: [
+      { n: "topic", l: "Topic", t: "select", req: 1, opts: ["Teaching & learning", "Communication", "Safety & wellbeing", "Facilities", "Fees & administration", "Other"] },
+      { n: "grade", l: "Grade it concerns", t: "select", opts: [...GRADES, "Whole school"] },
+      { n: "message", l: "Your feedback", t: "textarea", req: 1 },
+      { n: "reply", l: "Would you like a reply?", t: "radio", req: 1, opts: ["Yes, please reply", "No reply needed"] } ] },
+    { legend: "Your details", fields: [
+      { n: "contact_name", l: "Full name", ac: "name", role: "name", h: "Leave empty to stay anonymous" },
+      { n: "email", l: "Email", t: "email", ac: "email", role: "email", reqIf: ["reply", "Yes, please reply"], h: "Needed if you want a reply" } ] } ] },
+
+{ id: "payment", group: "Payments", title: "Payment notice", short: "Tell the office about a payment you made", mins: 3,
+  intro: "Let the office know about a payment you have made, so it is matched to the right student and a receipt is issued.",
+  have: ["Your transfer reference, cheque number or receipt number", "The student's name and the months the payment covers"],
+  next: "The office checks the payment and confirms by email. As a reminder: the annual inscription is paid once at enrolment, then tuition is 2,600 MAD a month over ten months.",
+  notice: "Never type card numbers into this or any other form. To pay by card, use AGI's <a href=\"" + CONFIG.cardPayment + "\" target=\"_blank\" rel=\"noopener\">secure online payment page</a>, then send this notice with the receipt number.",
+  submit: "Send payment notice", sent: "Payment notice sent",
+  sections: [
+    { legend: "Payment", fields: [
+      { n: "student_name", l: "Student's full name", req: 1 },
+      { n: "paid_for", l: "Payment for", t: "select", req: 1, opts: ["Annual inscription", "Monthly tuition", "Summer school", "Anglia examination", "Graduation fee", "Tutoring", "Other"] },
+      { n: "months", l: "Months covered", t: "checks", opts: ["Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun"], h: "For monthly tuition" },
+      { n: "amount", l: "Amount (MAD)", t: "number", req: 1, min: 1, step: "0.01" },
+      { n: "paid_on", l: "Date paid", t: "date", req: 1 },
+      { n: "method", l: "Payment method", t: "select", req: 1, opts: ["Bank transfer", "Cash at the office", "Cheque", "Card (online payment page)"] },
+      { n: "reference", l: "Reference or receipt number", req: 1, h: "Transfer reference, cheque number or online receipt number" },
+      { n: "note", l: "Note", t: "textarea" } ] },
+    { legend: "Payer", fields: contact() } ] },
+
+{ id: "tutor-request", group: "Tutoring", title: "Request a tutor", short: "One-to-one support in Agadir or online", mins: 2,
+  intro: "Ask for one-to-one tutoring in English, mathematics or another subject, in Agadir or online.",
+  have: ["The subject and the learner's current level or grade", "What you want to achieve", "When the learner is free"],
+  next: "The office matches you with a qualified tutor, usually within 48 hours, and confirms the price and schedule with you.",
+  submit: "Request a tutor", sent: "Tutor requested",
+  sections: [
+    { legend: "Learner", fields: [
+      { n: "learner_name", l: "Learner's full name", req: 1 },
+      { n: "level", l: "Grade or level", req: 1, h: "For example: Grade 7, Anglia Intermediate, adult" },
+      { n: "subjects", l: "Subjects", t: "checks", minOne: 1, opts: ["English", "Mathematics", "Science", "Anglia exam preparation", "Reading & phonics", "French", "Arabic", "Other"] },
+      { n: "goals", l: "What would you like to achieve?", t: "textarea", req: 1 },
+      { n: "format", l: "Where", t: "radio", req: 1, opts: ["In person in Agadir", "Online", "Either"] },
+      { n: "availability", l: "Availability", t: "textarea", h: "Days and times the learner is free" } ] },
+    { legend: "Your details", fields: contact() } ] },
+
+{ id: "tutor-schedule", group: "Tutoring", title: "Schedule tutoring sessions", short: "Set or change your session times", mins: 3,
+  intro: "Already matched with a tutor? Set the days and times of your sessions, or change an existing schedule.",
+  have: ["Your tutor's name, if you know it", "The days and times that work for you"],
+  next: "Your tutor confirms the schedule, or proposes another time if a slot is taken.",
+  submit: "Send schedule", sent: "Schedule sent",
+  sections: [
+    { legend: "Sessions", fields: [
+      { n: "learner_name", l: "Learner's full name", req: 1 },
+      { n: "tutor_name", l: "Tutor's name" },
+      { n: "request_type", l: "This is", t: "radio", req: 1, opts: ["A new schedule", "A change to my schedule"] },
+      { n: "subject", l: "Subject", req: 1 },
+      { n: "start", l: "Start date", t: "date", req: 1, future: 1 },
+      { n: "days", l: "Preferred days", t: "checks", minOne: 1, opts: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] },
+      { n: "time_from", l: "Preferred start time", t: "time", req: 1 },
+      { n: "frequency", l: "Frequency", t: "select", req: 1, opts: ["One session", "Once a week", "Twice a week", "Three times a week"] },
+      { n: "length", l: "Session length", t: "select", req: 1, opts: ["45 minutes", "60 minutes", "90 minutes"] },
+      { n: "notes", l: "Notes", t: "textarea" } ] },
+    { legend: "Your details", fields: contact() } ] },
+
+{ id: "documents", group: "Records", title: "Request a document", short: "Transcripts, certificates and attestations", mins: 3,
+  intro: "Order a transcript, enrolment certificate, attestation or diploma copy for a current or former student.",
+  have: ["The student's full name and date of birth as on school records", "The years the student attended", "Where the document needs to go"],
+  next: "The office confirms the processing time and any fee before preparing the document.",
+  submit: "Request document", sent: "Document requested",
+  sections: [
+    { legend: "Student", fields: [
+      { n: "student_name", l: "Student's full name", req: 1 },
+      { n: "student_dob", l: "Date of birth", t: "date", req: 1 },
+      { n: "years", l: "Years attended", req: 1, h: "For example: 2019–2024" },
+      { n: "last_grade", l: "Last grade completed", t: "select", opts: [...GRADES, "Adult high school diploma"] } ] },
+    { legend: "Document", fields: [
+      { n: "doc_type", l: "Document", t: "select", req: 1, opts: ["Academic transcript", "Enrolment certificate", "Attendance attestation", "Diploma copy", "Apostille-legalised copy", "Other"] },
+      { n: "copies", l: "Number of copies", t: "number", req: 1, min: 1, max: 10, v: 1 },
+      { n: "language", l: "Language", t: "select", req: 1, opts: ["English", "French", "Arabic"] },
+      { n: "purpose", l: "Purpose", h: "For example: university application, visa, transfer" },
+      { n: "delivery", l: "Delivery", t: "radio", req: 1, opts: ["Collect at the office", "By email (PDF)", "By courier"] },
+      { n: "address", l: "Courier address", t: "textarea", ac: "street-address", reqIf: ["delivery", "By courier"], h: "Only needed for courier delivery" } ] },
+    { legend: "Requested by", fields: contact({ rel: ["Former student (myself)", "Current student (myself)", "Parent or guardian", "Other"] }) } ] },
+
+{ id: "enquiry", group: "Contact", title: "General enquiry", short: "Anything else, including partnerships", mins: 2,
+  intro: "A question that doesn't fit another form: programs, Anglia examinations, partnerships and franchise, careers or anything else.",
+  have: ["Your question, with as much detail as you can give"],
+  next: "The office passes your message to the right person and replies by email or phone within one working day.",
+  submit: "Send enquiry", sent: "Enquiry sent",
+  sections: [
+    { legend: "Your enquiry", fields: [
+      { n: "topic", l: "Topic", t: "select", req: 1, opts: ["Programs & admissions", "Anglia examinations", "Partnership or franchise", "Careers at AGI", "Other"] },
+      { n: "organisation", l: "Organisation", ac: "organization", h: "For partnership and franchise enquiries" },
+      { n: "message", l: "Message", t: "textarea", req: 1 } ] },
+    { legend: "Your details", fields: contact() } ] }
+];
+
+/* ---------------- rendering ---------------- */
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const pad = n => String(n).padStart(2, "0");
+const now = new Date();
+const TODAY = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
+
+function errText(t, f) {
+  if (f.minOne) return "Choose at least one option";
+  return ({ email: "Enter an email address, for example name@example.com",
+    tel: "Enter a phone number with the country code, for example +212 6 12 34 56 78",
+    date: "Choose a date", time: "Choose a time", select: "Choose an option", radio: "Choose one option",
+    checkbox: "Tick this box to continue",
+    number: "Enter a number" + (f.min != null ? " from " + f.min : "") + (f.max != null ? " to " + f.max : "")
+  })[t] || "Fill in this field";
+}
+
+function renderField(f, fid) {
+  const t = f.t || "text", id = fid + "-" + f.n, req = !!f.req;
+  const full = f.w === "full" || ["textarea", "checks", "radio", "checkbox"].includes(t);
+  const optTag = (!req && !f.minOne && !f.reqIf && t !== "checkbox") ? '<span class="opt">optional</span>' : "";
+  const hint = f.h ? '<span class="hint" id="' + id + '-h">' + esc(f.h) + "</span>" : "";
+  const desc = 'aria-describedby="' + (f.h ? id + "-h " : "") + id + '-e"';
+  const err = '<p class="err" id="' + id + '-e">' + esc(errText(t, f)) + "</p>";
+  const rq = req ? " required" : "";
+  const extra = (f.reqIf ? ' data-req-if="' + esc(f.reqIf.join("|")) + '"' : "");
+  if (t === "checkbox")
+    return '<div class="field full"><label class="check"><input type="checkbox" id="' + id + '" name="' + f.n + '" value="Yes"' + rq + " " + desc + "><span>" + esc(f.l) + "</span></label>" + err + "</div>";
+  if (t === "radio" || t === "checks") {
+    const type = t === "radio" ? "radio" : "checkbox";
+    const opts = f.opts.map((o, i) => '<label class="pill"><input type="' + type + '" name="' + f.n + '" value="' + esc(o) + '"' + (type === "radio" && req && i === 0 ? " required" : "") + (f.v === o ? " checked" : "") + "> " + esc(o) + "</label>").join("");
+    return '<fieldset class="field choice full"' + (f.minOne ? " data-min-one" : "") + ' ' + desc + "><legend>" + esc(f.l) + optTag + "</legend>" + hint + '<div class="opts">' + opts + "</div>" + err + "</fieldset>";
+  }
+  let control;
+  const base = 'id="' + id + '" name="' + f.n + '"' + rq + extra + ' autocomplete="' + (f.ac || "off") + '" ' + desc;
+  if (t === "select") {
+    control = "<select " + base + '><option value="">Choose…</option>' + f.opts.map(o => "<option" + (f.v === o ? " selected" : "") + ">" + esc(o) + "</option>").join("") + "</select>";
+  } else if (t === "textarea") {
+    control = "<textarea " + base + ' rows="4" maxlength="3000"></textarea>';
+  } else {
+    let a = ' type="' + t + '"';
+    if (t === "tel") a += ' inputmode="tel" pattern="\\+?[0-9 \\-]{8,20}"';
+    if (t === "number") a += ' inputmode="decimal"';
+    if (f.min != null) a += ' min="' + f.min + '"';
+    if (f.max != null) a += ' max="' + f.max + '"';
+    if (f.step) a += ' step="' + f.step + '"';
+    if (f.future) a += ' min="' + TODAY + '"';
+    const v = f.today ? TODAY : f.v;
+    if (v != null) a += ' value="' + esc(v) + '"';
+    if (t === "text" || t === "email") a += ' maxlength="255"';
+    control = "<input " + base + a + ">";
+  }
+  return '<div class="field' + (full ? " full" : "") + '"><label for="' + id + '">' + esc(f.l) + optTag + "</label>" + hint + control + err + "</div>";
+}
+
+function renderForm(F) {
+  const secs = F.sections.map(s => '<fieldset class="group"><legend>' + esc(s.legend) + '</legend><div class="grid">' + s.fields.map(f => renderField(f, F.id)).join("") + "</div></fieldset>").join("");
+  return '<section class="sheet" id="' + F.id + '" hidden aria-labelledby="' + F.id + '-title">' +
+    '<h2 id="' + F.id + '-title" tabindex="-1">' + esc(F.title) + "</h2>" +
+    '<p class="meta">Takes about ' + F.mins + " minutes</p>" +
+    '<p class="intro">' + esc(F.intro) + "</p>" +
+    '<div class="brief"><div><h3>Have ready</h3><ul>' + F.have.map(h => "<li>" + esc(h) + "</li>").join("") + "</ul></div>" +
+    "<div><h3>What happens next</h3><p>" + esc(F.next) + "</p></div></div>" +
+    (F.notice ? '<p class="notice">' + F.notice + "</p>" : "") +
+    '<form data-form="' + F.id + '" autocomplete="on">' + secs +
+    '<div class="actions"><button class="btn" type="submit">' + esc(F.submit) + "</button>" +
+    "<small>Your details go only to the AGI office in Agadir and are used to handle this request.</small></div></form>" +
+    '<div class="done" hidden role="status" tabindex="-1"></div></section>';
+}
+
+function renderIndex() {
+  const groups = [...new Set(FORMS.map(f => f.group))];
+  return groups.map(g => "<h2>" + esc(g) + "</h2><ul>" + FORMS.filter(f => f.group === g).map(f =>
+    '<li><a href="#' + f.id + '" data-id="' + f.id + '"><span class="t">' + esc(f.title) + '</span><span class="d">' + esc(f.short) + "</span></a></li>").join("") + "</ul>").join("") +
+    '<div class="help"><p><strong>Prefer to talk?</strong>Call <a href="tel:+212528843349">+212 528 843 349</a>, or <a href="tel:+212618639911">+212 618 639 911</a> in Arabic.</p>' +
+    '<p>WhatsApp <a href="https://wa.me/212688739393">+212 688 739 393</a></p><p>The office is closed on Sundays.</p></div>';
+}
+
+/* ---------------- behaviour ---------------- */
+const panel = document.getElementById("panel"), index = document.getElementById("index");
+panel.insertAdjacentHTML("beforeend", FORMS.map(renderForm).join(""));
+index.innerHTML = renderIndex();
+const byId = Object.fromEntries(FORMS.map(f => [f.id, f]));
+
+// Rules the browser can't express on its own: "at least one" and "required if".
+function syncRules(form) {
+  form.querySelectorAll("[data-min-one]").forEach(fs => {
+    const boxes = [...fs.querySelectorAll("input")];
+    boxes[0].setCustomValidity(boxes.some(b => b.checked) ? "" : "Choose at least one option");
+  });
+  form.querySelectorAll("[data-req-if]").forEach(el => {
+    const [name, val] = el.dataset.reqIf.split("|");
+    const ctl = form.elements[name];
+    el.required = !!ctl && ctl.value === val;
+  });
+}
+// Keep aria-invalid in step with the visual :user-invalid state.
+const syncAria = el => { if (el && el.matches && el.matches("input,select,textarea")) el.setAttribute("aria-invalid", el.matches(":user-invalid") ? "true" : "false"); };
+document.addEventListener("blur", e => syncAria(e.target), true);
+document.addEventListener("input", e => { if (e.target.hasAttribute && e.target.hasAttribute("aria-invalid")) syncAria(e.target); });
+
+function collect(F, form) {
+  const fd = new FormData(form), lines = [], payload = {};
+  const d = { name: "", email: "", phone: "", who: "" };
+  for (const s of F.sections) {
+    lines.push("", s.legend.toUpperCase());
+    for (const f of s.fields) {
+      const val = fd.getAll(f.n).map(v => String(v).trim()).filter(Boolean).join(", ");
+      if (!val) continue;
+      lines.push((f.t === "checkbox" ? f.short : f.l) + ": " + (f.t === "checkbox" ? "Yes" : val));
+      payload[f.n] = val;
+      if (f.role) d[f.role] = val;
+      if (f.n === "student_name" || f.n === "learner_name") d.who = val;
+    }
+  }
+  return { ...d, who: d.who || d.name, lines, payload };
+}
+
+async function send(F, form) {
+  const btn = form.querySelector('button[type="submit"]');
+  const d = collect(F, form);
+  btn.disabled = true; btn.textContent = "Sending…";
+  if (CONFIG.endpoint) {
+    try {
+      const res = await fetch(CONFIG.endpoint, { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ json: { type: F.id, name: d.name || "Anonymous", email: d.email, phone: d.phone || undefined, payload: d.payload } }) });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const out = await res.json();
+      return done(F, form, { ref: out && out.result && out.result.data && out.result.data.json && out.result.data.json.id });
+    } catch (e) { console.warn("AGI forms: the API did not accept the request, falling back to email.", e); }
+  }
+  const subject = F.title + " – " + (d.who || "AGI website");
+  const text = [F.title, "Sent from the AGI website forms page", ...d.lines].join("\n");
+  const href = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(text);
+  window.location.href = href;
+  done(F, form, { href, text: subject + "\n" + text });
+}
+
+function done(F, form, r) {
+  const box = form.nextElementSibling, btn = form.querySelector('button[type="submit"]');
+  form.hidden = true; box.hidden = false;
+  box.innerHTML = r.ref != null
+    ? "<h3>" + esc(F.sent) + "</h3><p>Your reference number is " + esc(r.ref) + ". " + esc(F.next) + '</p><div class="actions"><button class="btn ghost" type="button" data-again>Send another</button></div>'
+    : "<h3>Check your email app</h3><p>Your email app has opened with this " + esc(F.title.toLowerCase()) + " filled in. Press Send to deliver it to the AGI office at " + esc(CONFIG.email) + ".</p>" +
+      "<p>No email app opened? Copy the details and send them by email, or by WhatsApp to " + esc(CONFIG.whatsapp) + ".</p>" +
+      '<div class="actions"><a class="btn" href="' + esc(r.href) + '">Open email again</a><button class="btn ghost" type="button" data-copy>Copy details</button><button class="btn ghost" type="button" data-again>Start over</button></div>';
+  box.focus();
+  const copy = box.querySelector("[data-copy]");
+  if (copy) copy.addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(r.text); copy.textContent = "Copied"; }
+    catch { copy.textContent = "Copy failed – select and copy manually"; }
+  });
+  box.querySelector("[data-again]").addEventListener("click", () => {
+    form.reset(); syncRules(form); form.hidden = false; box.hidden = true;
+    btn.disabled = false; btn.textContent = F.submit;
+    form.querySelectorAll("[aria-invalid]").forEach(el => el.removeAttribute("aria-invalid"));
+    document.getElementById(F.id + "-title").focus();
+  });
+  btn.disabled = false; btn.textContent = F.submit;
+}
+
+document.querySelectorAll("form[data-form]").forEach(form => {
+  const F = byId[form.dataset.form];
+  syncRules(form);
+  form.addEventListener("change", () => syncRules(form));
+  form.addEventListener("submit", e => { e.preventDefault(); syncRules(form); if (form.reportValidity()) send(F, form); });
+});
+
+/* ---------------- routing: #form-id or #form-id/preset ---------------- */
+function route(scroll) {
+  let [id, preset] = decodeURIComponent(location.hash.slice(1)).split("/");
+  if (id === "transcript") { id = "documents"; preset = "transcript"; }
+  const target = byId[id] ? id : "start";
+  document.querySelectorAll(".sheet").forEach(s => { s.hidden = s.id !== target; });
+  index.querySelectorAll("a[data-id]").forEach(a => a.toggleAttribute("aria-current", a.dataset.id === target));
+  if (target !== "start" && preset) {
+    const form = document.querySelector('form[data-form="' + target + '"]');
+    for (const sel of form.querySelectorAll("select")) {
+      const opt = [...sel.options].find(o => o.value && o.textContent.toLowerCase().includes(preset.toLowerCase()));
+      if (opt) { sel.value = opt.value; break; }
+    }
+  }
+  document.title = (target === "start" ? "" : byId[target].title + " – ") + "Forms & requests – AGI";
+  if (scroll) {
+    panel.scrollIntoView({ block: "start" });
+    document.getElementById(target + "-title").focus({ preventScroll: true });
+  }
+}
+window.addEventListener("hashchange", () => route(true));
+route(!!location.hash);
+</script>
+</body>
+</html>
