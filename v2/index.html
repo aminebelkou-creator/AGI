@@ -71,7 +71,7 @@
       <p class="kicker">Affordable · Creative · Inclusive — since 2013</p>
       <h1>An American education, <em>close to home.</em></h1>
       <p class="lede">American Group International is the first American school in Agadir – a K–12 micro-school with programs for adults, English learners and educators, and the headquarters of Anglia Examinations in Morocco.</p>
-      <div class="btn-row"><a class="btn btn-gold" href="forms.html#enrollment">Apply</a><a class="btn btn-light" href="forms.html#visit">Book a visit</a><a class="link" href="programs.html">Explore programs</a></div>
+      <div class="btn-row"><a class="btn btn-gold" href="forms.html#enrollment">Apply</a><a class="btn btn-light" href="forms.html#visit">Book a visit</a><a class="link" href="our-story.html">Our story</a></div>
     </div>
     <div class="seal"><img src="assets/web/agi-seal-520.png" alt="The AGI seal: American and Moroccan flags, Agadir, established 2013" width="520" height="520" fetchpriority="high"></div>
     <p class="enroll"><b>Now enrolling</b> Academic year 2026–27, all programs. Registration days are August 28 and 31.</p>
@@ -182,6 +182,61 @@
     <p style="margin-top:16px"><a class="link" style="color:#fff" href="https://www.google.com/maps/search/?api=1&amp;query=20+Rue+Baalabek+Hay+Nahda+Agadir">Open in Google Maps</a></p>
     <div style="margin-top:24px"><div class="map" data-verify="map-location"><iframe title="Map: AGI, Number 20, Rue Baalabek, Hay Nahda, Agadir" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=20%20Rue%20Baalabek%2C%20Hay%20Nahda%2C%20Agadir%2C%20Morocco&amp;output=embed"></iframe></div></div></div>
 </div></section>
+<style>
+.story-popup{padding:0;border:0;max-width:min(880px,calc(100vw - 32px));width:100%;background:#fff;color:var(--ink);box-shadow:0 30px 80px -20px rgba(6,21,41,.6)}
+.story-popup[open]{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+.story-popup::backdrop{background:rgba(6,21,41,.55);backdrop-filter:blur(3px)}
+.sp-photo .photo{height:100%;min-height:340px;aspect-ratio:auto;border:0}
+.sp-body{position:relative;padding:clamp(28px,4vw,52px)}
+.sp-body h2{font-family:var(--serif);font-weight:300;font-size:clamp(30px,3.4vw,46px);line-height:1.06;color:var(--navy);margin:0 0 16px}
+.sp-body p{color:var(--text);font-size:15.5px;line-height:1.7;margin:0 0 14px}
+.sp-body ul{margin:0 0 26px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.sp-body li{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--navy);border:1px solid var(--line);padding:7px 11px}
+.sp-close{position:absolute;top:10px;right:10px;width:44px;height:44px;border:0;background:none;font-size:28px;line-height:1;color:var(--grey);cursor:pointer}
+.sp-close:hover{color:var(--red)}
+.sp-body .btn-row form{margin:0;display:contents}
+.sp-body .btn-ghost{background:transparent}
+@media (max-width:700px){.story-popup[open]{grid-template-columns:minmax(0,1fr);margin:auto 0 0;max-width:100vw;max-height:88vh;overflow:auto}.sp-photo{display:none}}
+@media (prefers-reduced-motion:no-preference){.story-popup[open]{animation:sp-in .35s ease-out}}
+@keyframes sp-in{from{opacity:0;transform:translateY(18px)}}
+</style>
+<dialog id="story-popup" class="story-popup" closedby="any" aria-labelledby="story-popup-title">
+  <div class="sp-photo"><figure class="photo" data-placeholder="photo:popup-story" style="--ratio:4/5"><figcaption><b>Photo</b>AGI's early days, or Julie with students</figcaption></figure></div>
+  <div class="sp-body">
+    <form method="dialog"><button class="sp-close" aria-label="Close">×</button></form>
+    <p class="kicker">Our story</p>
+    <h2 id="story-popup-title">One room. Five children. 2013.</h2>
+    <p>How a small classroom in Agadir became a school for families from more than 46 nations – and why parents trust it with their children.</p>
+    <ul><li>Affordable</li><li>Creative</li><li>Inclusive</li></ul>
+    <div class="btn-row"><a class="btn btn-primary" href="our-story.html">Discover our story</a><form method="dialog"><button class="btn btn-ghost" value="later">Not now</button></form></div>
+  </div>
+</dialog>
+<script>
+(function () {
+  var d = document.getElementById("story-popup");
+  if (!d || typeof d.showModal !== "function") return;
+  var KEY = "agi-story-popup", WEEK = 7 * 864e5;
+  try { if (Date.now() - (+localStorage.getItem(KEY) || 0) < WEEK) return; } catch (e) {}
+  var shown = false;
+  function open() {
+    if (shown || document.querySelector("dialog[open]")) return;
+    shown = true; window.removeEventListener("scroll", onScroll);
+    try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}
+    d.showModal();
+  }
+  function onScroll() { if (window.scrollY > document.documentElement.scrollHeight * 0.25) open(); }
+  setTimeout(open, 6000);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  if (!("closedBy" in HTMLDialogElement.prototype)) {          // light-dismiss fallback (Safari)
+    d.addEventListener("click", function (e) {
+      if (e.target !== d) return;
+      var r = d.getBoundingClientRect();
+      if (r.top <= e.clientY && e.clientY <= r.bottom && r.left <= e.clientX && e.clientX <= r.right) return;
+      d.close();
+    });
+  }
+})();
+</script>
 </main>
 <!--site:footer-->
 <footer class="site-footer">
@@ -191,7 +246,7 @@
       <p>American Group International – the first American school in Agadir, since 2013, and headquarters of Anglia Examinations in Morocco.</p>
     </div>
     <div><h2>Programs</h2><ul><li><a href="k12.html">K–12 school</a></li><li><a href="special-education.html">Special education (SEN)</a></li><li><a href="adult-diploma.html">Adult high school diploma</a></li><li><a href="english-anglia.html">English & Anglia exams</a></li><li><a href="teachers.html">For teachers (C.I.T.E.)</a></li><li><a href="professional.html">Professional & medical English</a></li><li><a href="pathways.html">University pathways</a></li></ul></div>
-    <div><h2>School</h2><ul><li><a href="about.html">About AGI</a></li><li><a href="parents.html">For parents</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="admissions.html#fees">Tuition &amp; fees</a></li><li><a href="policies.html">Policies</a></li><li><a href="student-life.html">Student life</a></li><li><a href="journal.html">Journal</a></li></ul></div>
+    <div><h2>School</h2><ul><li><a href="about.html">About AGI</a></li><li><a href="our-story.html">Our story</a></li><li><a href="parents.html">For parents</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="admissions.html#fees">Tuition &amp; fees</a></li><li><a href="policies.html">Policies</a></li><li><a href="student-life.html">Student life</a></li><li><a href="journal.html">Journal</a></li></ul></div>
     <div><h2>Services</h2><ul><li><a href="forms.html">Forms &amp; requests</a></li><li><a href="forms.html#absence">Report an absence</a></li><li><a href="forms.html#documents">Request a document</a></li><li><a href="forms.html#visit">Book a visit</a></li><li><a href="partnerships.html">Partnerships &amp; franchise</a></li><li><a href="investors.html">Partners &amp; investors</a></li><li><a href="connect.html">AGI Connect (preview)</a></li><li><a href="https://angliamorocco.org/" target="_blank" rel="noopener">Anglia Morocco ↗</a></li></ul></div>
     <div><h2>Contact</h2><address>Number 20, Rue Baalabek<br>Hay Nahda, Agadir 80000<br>Morocco</address>
       <ul style="margin-top:14px"><li><a href="tel:+212528843349">+212 528 843 349</a></li><li><a href="tel:+212618639911">+212 618 639 911</a> <span style="color:rgba(255,255,255,.45);font-size:13px">Arabic</span></li><li><a href="https://wa.me/212688739393">WhatsApp +212 688 739 393</a></li><li><a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a></li></ul></div>

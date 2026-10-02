@@ -223,3 +223,135 @@ page("investors.html", "Partners & investors – American Group International, A
 </div></section>
 """ + cta("Let's talk.", "Request the partner brief and we'll arrange a conversation.",
            '<a class="btn btn-gold" href="forms.html#enquiry/partnership">Request the partner brief</a><a class="btn btn-light" href="contact.html">Contact</a>'))
+
+# ------------------------------------------------------------------ OUR STORY (photo-led landing page)
+_jdir = os.path.join(V2, "journal")
+_first_adult = next((f for f in sorted(os.listdir(_jdir)) if "first-adult" in f), None) if os.path.isdir(_jdir) else None
+ADULT_GRAD = f"journal/{_first_adult}" if _first_adult else "journal.html"
+STORY_CSS = FAQ_CSS + """
+.story-hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--navy-deep)}
+.story-hero>.photo{position:absolute;inset:0;aspect-ratio:auto;border:0}
+.story-hero>.photo figcaption{position:absolute;top:16px;right:16px;margin:0}
+.story-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,21,41,.15) 0%,rgba(6,21,41,.55) 45%,rgba(6,21,41,.92) 100%)}
+.story-hero .wrap{position:relative;z-index:1;padding-block:clamp(120px,14vw,200px) clamp(48px,6vw,88px);width:100%}
+.story-hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(44px,6.2vw,96px);line-height:1;letter-spacing:-.015em;margin:0 0 24px;max-width:14ch}
+.story-hero h1 em{color:var(--gold)}
+.story-hero p{font-size:clamp(16px,1.3vw,19px);line-height:1.65;color:rgba(255,255,255,.85);max-width:56ch;margin:0}
+.story-hero .btn-row{margin-top:32px}
+.story-hero .crumb,.story-hero .crumb a{color:rgba(255,255,255,.65)}.story-hero .crumb span{color:#fff}
+.timeline{display:grid;gap:clamp(48px,7vw,104px)}
+.moment{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,5vw,88px);align-items:center}
+.moment:nth-child(even) .photo{order:2}
+.moment .year{font-family:var(--serif);font-weight:300;font-size:clamp(56px,7vw,104px);line-height:.9;color:var(--red);margin:0 0 14px}
+.moment h3{font-size:clamp(26px,2.4vw,34px)}
+.moment p{font-size:16px;line-height:1.75;color:var(--text);max-width:52ch}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,28px)}
+.pillar .photo{--ratio:4/5;margin-bottom:22px}
+.pillar .tag{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.pillar h3{color:#fff;font-size:clamp(26px,2.4vw,34px);margin:8px 0 10px}
+.pillar p{color:rgba(255,255,255,.75);font-size:15px;line-height:1.7;margin:0}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.stats>div{background:#fff;padding:clamp(24px,3vw,40px)}
+.stats b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(40px,4.4vw,64px);line-height:1;color:var(--navy)}
+.stats span{display:block;margin-top:10px;font-size:14px;color:var(--grey);line-height:1.55}
+.stats a{font-size:13px;font-weight:600}
+@media (max-width:900px){.moment{grid-template-columns:minmax(0,1fr)}.moment:nth-child(even) .photo{order:0}.pillars,.stats{grid-template-columns:minmax(0,1fr)}}
+"""
+MOMENTS = [
+ ("2013", "One room, five children", "AGI's first classes began in a single room in Agadir with five children. The idea was simple: an American education that working families could afford.", "story-2013", "The first classroom, or a photo from AGI's early years"),
+ ("Hay Nahda", "A school of its own", "The school soon outgrew its first room and moved to Hay Nahda, where kindergarten to grade 12 is now taught in eight multi-grade classrooms.", "story-nahda", "The school building in Hay Nahda"),
+ ("46+", "A world in one school", "Over eleven years, children of more than 46 nationalities have learned side by side – Moroccan families and families from across the world.", "story-nations", "Students of different backgrounds working together"),
+ ("2021", "Home of Anglia in Morocco", "AGI became the Anglia Examinations franchise holder for Morocco and the official partner in Morocco of Chichester College Group, UK – bringing certified English to the Kingdom's twelve regions.", "story-anglia", "An Anglia exam day or certificate ceremony"),
+ ("Today", "The same promise", "A K–12 school, programs for adults, teachers and professionals, and the same founding promise: affordable, creative and inclusive.", "story-today", "Julie with students or teachers today"),
+]
+moments = "".join(f'<article class="moment">{ph(pid, cap, "4/3")}<div><p class="year">{y}</p><h3>{t}</h3><p>{d}</p></div></article>' for y, t, d, pid, cap in MOMENTS)
+
+page("our-story.html", "Our story – American Group International, Agadir",
+ "How AGI began with five children in one room in Agadir in 2013, and why parents trust it today: affordable, creative and inclusive, accredited, and focused on every child.",
+ f"""
+<section class="story-hero">
+  {ph("story-hero", "Hero photo: children arriving at school in the morning, or Julie with students", "auto")}
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Home</a> / <a href="about.html">About</a> / <span>Our story</span></p>
+    <h1>It started with one room and <em>five children.</em></h1>
+    <p>In 2013, Julie Wilburn opened a small classroom in Agadir with a conviction: an American education shouldn't be only for the wealthy. This is the story of the school that grew from it – and why families trust it with their children.</p>
+    <div class="btn-row"><a class="btn btn-gold" href="forms.html#visit">Book a visit</a><a class="btn btn-light" href="#journey">Read the story</a></div>
+  </div>
+</section>
+
+<section class="section bg-white" id="journey"><div class="wrap">
+  <div class="section-head"><h2>From one room to a school for the world</h2><p>Eleven years, one promise.</p></div>
+  <div class="timeline">{moments}</div>
+</div></section>
+
+<section class="section"><div class="wrap director">
+  <img src="assets/web/director-julie-wilburn.jpg" alt="Julie A. Wilburn, founder of AGI" width="576" height="720" loading="lazy">
+  <div>
+    <p class="kicker">In her words</p>
+    <p class="quote" data-placeholder="fact:story-quote-1">“Children only thrive when they feel safe, valued – and known.”</p>
+    <p class="prose" data-placeholder="fact:story-quote-2">“I kept meeting wonderful families who were shut out – by fees they couldn't pay, or by schools that held a child back because they were still learning a language. So we built something different.”</p>
+    <p class="cite"><b>Julie A. Wilburn</b>Founder · CEO &amp; Educational Director</p>
+    <p style="margin-top:22px"><a class="link" href="founder-letter.html">Read Julie's letter to parents</a></p>
+  </div>
+</div></section>
+
+<section class="section bg-deep"><div class="wrap">
+  <div class="section-head"><h2>Affordable. Creative. Inclusive.</h2><p>The three words Julie chose for AGI – and what they mean for your child.</p></div>
+  <div class="pillars">
+    <div class="pillar">{ph("pillar-affordable", "A family at the school gate", "4/5")}<span class="tag">Affordable</span><h3>Within reach</h3><p>2,600 MAD a month over ten months, with books, mathematics and Anglia exams included. An international standard for working families.</p></div>
+    <div class="pillar">{ph("pillar-creative", "A hands-on project in class", "4/5")}<span class="tag">Creative</span><h3>Learning with imagination</h3><p>Small multi-grade classes, American pedagogy enriched by Montessori and Waldorf ideas, critical thinking and independent research.</p></div>
+    <div class="pillar">{ph("pillar-inclusive", "Students of different backgrounds together", "4/5")}<span class="tag">Inclusive</span><h3>No one held back</h3><p>Grade placement is never lowered for missing documents, language gaps or academic gaps. Every child gets the support they need.</p></div>
+  </div>
+</div></section>
+
+<section class="section bg-white"><div class="wrap">
+  <div class="section-head"><h2>Why parents trust AGI</h2><p>Six commitments families can check for themselves.</p></div>
+  <div class="cards">
+    <div><span class="num">01</span><h3>Your child is known by name</h3><p>Small multi-grade classes where teachers know every child and every family.</p></div>
+    <div><span class="num">02</span><h3>Never held back for a language gap</h3><p>“Grade placement is not lowered due to missing documents, language gaps, or academic gaps.” – AGI placement policy.</p></div>
+    <div><span class="num">03</span><h3>The whole child</h3><p>Individual plans, a founder who is an accredited Holistic Therapeutic Coach, and membership of the American School Counselor Association.</p></div>
+    <div><span class="num">04</span><h3>Clear, fair fees</h3><p>One monthly fee, an annual inscription, and the essentials included. <a class="link" href="admissions.html#fees">See tuition</a></p></div>
+    <div><span class="num">05</span><h3>Recognized standards</h3><p>Accredited by the American Council of Training and Development and recognized by four U.S. state departments of education.</p></div>
+    <div><span class="num">06</span><h3>A partnership with you</h3><p>School + Home + Community = Student Success. You're part of your child's plan from the first day.</p></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>What your child gains</h2></div>
+  <div class="gallery" style="margin-bottom:28px">{ph("gains-1", "A student presenting in English", "4/3", "wide")}{ph("gains-2", "Friends from different countries", "4/3")}</div>
+  <dl class="rows">
+    <div><dt>English for life</dt><dd>Certified progress with Anglia Examinations of England, from First Step to Masters (C2), benchmarked on the CEFR every year.</dd></div>
+    <div><dt>An American education</dt><dd>An American curriculum from kindergarten to grade 12, with two routes to a U.S. high school diploma.</dd></div>
+    <div><dt>Friends from 46+ nations</dt><dd>Confidence and openness that come from learning alongside the world.</dd></div>
+    <div><dt>Doors to university</dt><dd>Guidance and partners in the UK and beyond, including Chichester College Group. <a class="link" href="pathways.html">University pathways</a></dd></div>
+    <div><dt>Character and service</dt><dd>Respect, responsibility and 40 hours of community service before graduation.</dd></div>
+    <div><dt>Support when it's needed</dt><dd>Individualized Education Plans and small-group support. <a class="link" href="special-education.html">Special education</a></dd></div>
+  </dl>
+</div></section>
+
+<section class="section bg-white"><div class="wrap">
+  <div class="section-head"><h2>Recognized and accredited</h2><p><a class="link" href="about.html#accreditation">All accreditation</a></p></div>
+  <div class="marks" style="--cols:4">
+    <figure><img src="assets/web/seal-tennessee-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Tennessee</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-florida-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Florida</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-colorado-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Colorado</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/seal-alabama-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Alabama</b>Department of Education</figcaption></figure>
+    <figure><img src="assets/web/mark-ncaa-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>NCAA</b>Eligibility Center</figcaption></figure>
+    <figure><img src="assets/web/mark-naia-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>NAIA</b>Eligibility Center</figcaption></figure>
+    <figure><img src="assets/web/mark-collegeboard-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>College Board</b>AP &amp; SAT programs</figcaption></figure>
+    <figure><img src="assets/web/mark-meridian-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>Meridian Learning</b>Curriculum standards</figcaption></figure>
+  </div>
+  <p class="note" style="margin-top:28px;background:#fff;border-left-color:var(--navy)"><strong style="color:var(--navy)">Official partner in Morocco of Chichester College Group, UK.</strong> Accredited by the American Council of Training and Development. Anglia Examinations franchise holder for Morocco.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Success, one student at a time</h2><p><a class="link" href="journal.html">The journal</a></p></div>
+  <div class="stats">
+    <div><b>Hundreds</b><span>of students placed into the American educational system with low-cost programs.</span></div>
+    <div><b>2019</b><span>AGI's first adult high school graduate. <a href="{ADULT_GRAD}">Read the story</a></span></div>
+    <div><b>Tangier</b><span>AGI students in the American National Spelling Bee of Morocco. <a href="journal/american-national-spelling-bee-in-morocco.html">Read the story</a></span></div>
+  </div>
+  <div style="margin-top:40px">{testimonials()}</div>
+</div></section>
+""" + cta("Come and see the school.", "Meet the team, see the classrooms, and ask every question you have. Tours are arranged individually, Monday to Friday.",
+           '<a class="btn btn-gold" href="forms.html#visit">Book a visit</a>' + WA_LIGHT), STORY_CSS)

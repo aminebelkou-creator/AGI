@@ -79,6 +79,66 @@ def testimonials(items=TESTIMONIALS, cols=3):
     return f'<div class="testimonials" style="--cols:{cols}">{cards}</div>'
 
 PH_TXT = lambda key, text: f'<span class="ph-text" data-placeholder="fact:{key}">{text}</span>'
+
+# ---------------- home: story popup (native <dialog>, once every 7 days) ----------------
+STORY_POPUP_CSS = """<style>
+.story-popup{padding:0;border:0;max-width:min(880px,calc(100vw - 32px));width:100%;background:#fff;color:var(--ink);box-shadow:0 30px 80px -20px rgba(6,21,41,.6)}
+.story-popup[open]{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+.story-popup::backdrop{background:rgba(6,21,41,.55);backdrop-filter:blur(3px)}
+.sp-photo .photo{height:100%;min-height:340px;aspect-ratio:auto;border:0}
+.sp-body{position:relative;padding:clamp(28px,4vw,52px)}
+.sp-body h2{font-family:var(--serif);font-weight:300;font-size:clamp(30px,3.4vw,46px);line-height:1.06;color:var(--navy);margin:0 0 16px}
+.sp-body p{color:var(--text);font-size:15.5px;line-height:1.7;margin:0 0 14px}
+.sp-body ul{margin:0 0 26px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.sp-body li{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--navy);border:1px solid var(--line);padding:7px 11px}
+.sp-close{position:absolute;top:10px;right:10px;width:44px;height:44px;border:0;background:none;font-size:28px;line-height:1;color:var(--grey);cursor:pointer}
+.sp-close:hover{color:var(--red)}
+.sp-body .btn-row form{margin:0;display:contents}
+.sp-body .btn-ghost{background:transparent}
+@media (max-width:700px){.story-popup[open]{grid-template-columns:minmax(0,1fr);margin:auto 0 0;max-width:100vw;max-height:88vh;overflow:auto}.sp-photo{display:none}}
+@media (prefers-reduced-motion:no-preference){.story-popup[open]{animation:sp-in .35s ease-out}}
+@keyframes sp-in{from{opacity:0;transform:translateY(18px)}}
+</style>"""
+STORY_POPUP_JS = """<script>
+(function () {
+  var d = document.getElementById("story-popup");
+  if (!d || typeof d.showModal !== "function") return;
+  var KEY = "agi-story-popup", WEEK = 7 * 864e5;
+  try { if (Date.now() - (+localStorage.getItem(KEY) || 0) < WEEK) return; } catch (e) {}
+  var shown = false;
+  function open() {
+    if (shown || document.querySelector("dialog[open]")) return;
+    shown = true; window.removeEventListener("scroll", onScroll);
+    try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}
+    d.showModal();
+  }
+  function onScroll() { if (window.scrollY > document.documentElement.scrollHeight * 0.25) open(); }
+  setTimeout(open, 6000);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  if (!("closedBy" in HTMLDialogElement.prototype)) {          // light-dismiss fallback (Safari)
+    d.addEventListener("click", function (e) {
+      if (e.target !== d) return;
+      var r = d.getBoundingClientRect();
+      if (r.top <= e.clientY && e.clientY <= r.bottom && r.left <= e.clientX && e.clientX <= r.right) return;
+      d.close();
+    });
+  }
+})();
+</script>"""
+STORY_POPUP = (STORY_POPUP_CSS + f"""
+<dialog id="story-popup" class="story-popup" closedby="any" aria-labelledby="story-popup-title">
+  <div class="sp-photo">{ph("popup-story", "AGI's early days, or Julie with students", "4/5")}</div>
+  <div class="sp-body">
+    <form method="dialog"><button class="sp-close" aria-label="Close">×</button></form>
+    <p class="kicker">Our story</p>
+    <h2 id="story-popup-title">One room. Five children. 2013.</h2>
+    <p>How a small classroom in Agadir became a school for families from more than 46 nations – and why parents trust it with their children.</p>
+    <ul><li>Affordable</li><li>Creative</li><li>Inclusive</li></ul>
+    <div class="btn-row"><a class="btn btn-primary" href="our-story.html">Discover our story</a><form method="dialog"><button class="btn btn-ghost" value="later">Not now</button></form></div>
+  </div>
+</dialog>
+""" + STORY_POPUP_JS)
+
 # ------------------------------------------------------------------ HOME
 HOME_CSS = """
 .home-hero{background:radial-gradient(120% 90% at 78% 40%,#0f3a72 0%,#061529 62%);color:#fff;overflow:hidden}
@@ -119,7 +179,7 @@ page("index.html", "American Group International – American school in Agadir, 
       <p class="kicker">Affordable · Creative · Inclusive — since 2013</p>
       <h1>An American education, <em>close to home.</em></h1>
       <p class="lede">American Group International is the first American school in Agadir – a K–12 micro-school with programs for adults, English learners and educators, and the headquarters of Anglia Examinations in Morocco.</p>
-      <div class="btn-row">{GOLD_APPLY}{LIGHT_VISIT}<a class="link" href="programs.html">Explore programs</a></div>
+      <div class="btn-row">{GOLD_APPLY}{LIGHT_VISIT}<a class="link" href="our-story.html">Our story</a></div>
     </div>
     <div class="seal"><img src="assets/web/agi-seal-520.png" alt="The AGI seal: American and Moroccan flags, Agadir, established 2013" width="520" height="520" fetchpriority="high"></div>
     <p class="enroll"><b>Now enrolling</b> Academic year 2026–27, all programs. Registration days are August 28 and 31.</p>
@@ -230,7 +290,7 @@ page("index.html", "American Group International – American school in Agadir, 
     <p style="margin-top:16px"><a class="link" style="color:#fff" href="https://www.google.com/maps/search/?api=1&amp;query=20+Rue+Baalabek+Hay+Nahda+Agadir">Open in Google Maps</a></p>
     <div style="margin-top:24px">{MAP}</div></div>
 </div></section>
-""", HOME_CSS)
+""" + STORY_POPUP, HOME_CSS)
 
 NETWORK = [("net-agi-seal", "K–12 division", "American Group International School", "The American school of Agadir: a micro-school and K–12 campus, established 2013."),
  ("net-awa", "U.S. registered", "AWA High School for Adults", "Our U.S.-registered company, offering support programs to clients worldwide."),
@@ -258,7 +318,7 @@ page("about.html", "About AGI – American Group International, Agadir",
  hero("<span>About</span>", "The first American school in Agadir.",
       "AGI began in 2013 with five children in one room. Today it is a K–12 micro-school, a center for adult and English education, and the home of Anglia Examinations in Morocco.") + f"""
 <section class="section bg-white"><div class="wrap split">
-  <div class="intro"><h2>Our story</h2>{ph("about-campus", "The school building in Hay Nahda", "4/3")}</div>
+  <div class="intro"><h2>Our story</h2>{ph("about-campus", "The school building in Hay Nahda", "4/3")}<p style="margin-top:20px"><a class="link" href="our-story.html">The full story, in pictures</a></p></div>
   <div class="prose">
     <p>American Group International School is a small private school in the Berber community of the Souss, in Agadir. The first classes started in 2013 with five children. The school soon outgrew its one-room beginnings and moved to Hay Nahda, where kindergarten to grade 12 is now taught in eight multi-grade classrooms.</p>
     <p>Over eleven years, AGI has welcomed students of more than 46 nationalities. Its enrollment is open: the school was created for students who need a program the Moroccan system may not offer – an American curriculum, English immersion, or support for learning differences.</p>

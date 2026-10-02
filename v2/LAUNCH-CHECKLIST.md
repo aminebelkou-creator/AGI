@@ -113,4 +113,7 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] Julie's dual citizenship: say **"American-Moroccan"**? (about)
 - [ ] Founder's letter includes the expansion sentence (other Moroccan cities, Mauritania, United States) — keep only if confirmed (founder-letter)
 - [ ] "AGI has placed **hundreds of students** into the American educational system" — Julie's wording on angliamorocco.org; still accurate? (investors)
+- [ ] **Our story page** (our-story.html): Julie approves the two quotes in "In her words" (taken from the draft founder's letter) and the timeline wording
+- [ ] Story photos: hero, 2013 / early years, Hay Nahda building, students together, Anglia exam day, Julie today, three pillar photos, popup photo
+- [ ] Home popup: keep the 6-second / 25%-scroll timing and once-a-week frequency?
 
