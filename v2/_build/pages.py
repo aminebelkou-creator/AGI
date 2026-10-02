@@ -161,12 +161,19 @@ page("index.html", "American Group International – American school in Agadir, 
 </div></section>
 
 <section class="section bg-white"><div class="wrap">
-  <div class="section-head"><h2>Recognized in the United States</h2><p>Accredited by the American Council of Training and Development, and recognized by four state departments of education.</p></div>
+  <div class="section-head"><h2>Recognized in the United States</h2><p>Accredited by the American Council of Training and Development, recognized by four state departments of education, and in compliance with NCAA, NAIA, College Board and Meridian Learning standards.</p></div>
   <div class="marks">
     <figure><img src="assets/web/seal-tennessee-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Tennessee</b>Department of Education</figcaption></figure>
     <figure><img src="assets/web/seal-florida-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Florida</b>Department of Education</figcaption></figure>
     <figure><img src="assets/web/seal-colorado-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Colorado</b>Department of Education</figcaption></figure>
     <figure><img src="assets/web/seal-alabama-clean.png" alt="" width="120" height="120" loading="lazy"><figcaption><b>Alabama</b>Department of Education</figcaption></figure>
+  </div>
+  <h3 style="margin:44px 0 16px">Our programs are in compliance with</h3>
+  <div class="marks">
+    <figure><img src="assets/web/mark-ncaa-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>NCAA</b>Eligibility Center</figcaption></figure>
+    <figure><img src="assets/web/mark-naia-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>NAIA</b>Eligibility Center</figcaption></figure>
+    <figure><img src="assets/web/mark-collegeboard-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>College Board</b>AP &amp; SAT programs</figcaption></figure>
+    <figure><img src="assets/web/mark-meridian-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>Meridian Learning</b>Curriculum standards</figcaption></figure>
   </div>
   <p style="margin-top:24px"><a class="link" href="about.html#accreditation">All accreditation and memberships</a></p>
 </div></section>
@@ -504,29 +511,91 @@ page("policies.html", "Policies – American Group International, Agadir",
 <section class="section bg-white"><div class="wrap"><dl class="rows">{pol}</dl></div></section>
 """)
 
+CONTACT_JS = """
+(function () {
+  var CONFIG = { endpoint: null, email: "americanecoleagadir@gmail.com" };  // endpoint: "/api/trpc/forms.submit" once the API is live
+  var form = document.getElementById("contact-form"), done = document.getElementById("contact-done");
+  if (!form) return;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    var d = Object.fromEntries(new FormData(form).entries());
+    var btn = form.querySelector("button[type=submit]"); btn.disabled = true; btn.textContent = "Sending…";
+    function finish(html) { form.hidden = true; done.innerHTML = html; done.hidden = false; done.focus(); btn.disabled = false; btn.textContent = "Send message"; }
+    function viaEmail() {
+      var subject = "Website message – " + d.topic + " – " + d.name;
+      var body = ["Name: " + d.name, "Email: " + d.email, "Phone: " + (d.phone || "–"), "Topic: " + d.topic, "", d.message].join("\\n");
+      var href = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      location.href = href;
+      finish("<h3>Check your email app</h3><p>Your email app has opened with your message filled in. Press Send to deliver it to " + CONFIG.email + ".</p>" +
+             "<p>No email app? Write to us on WhatsApp at +212 688 739 393.</p><p><a class='btn btn-primary' href='" + href.replace(/'/g, '%27') + "'>Open email again</a></p>");
+    }
+    if (!CONFIG.endpoint) return viaEmail();
+    fetch(CONFIG.endpoint, { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ json: { type: "contact", name: d.name, email: d.email, phone: d.phone || undefined, payload: { topic: d.topic, message: d.message } } }) })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function () { finish("<h3>Message sent</h3><p>Thank you. The office replies within one working day, Monday to Friday.</p>"); })
+      .catch(viaEmail);
+  });
+})();
+"""
+CONTACT_CSS = """
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(32px,5vw,88px);align-items:start}
+.cform{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 24px}
+.cform .full{grid-column:1/-1}
+.cform label{display:block;font-size:14px;font-weight:500;margin:0 0 6px}
+.cform .opt{font-weight:400;font-size:12.5px;color:var(--muted);margin-left:6px}
+.cform input,.cform select,.cform textarea{width:100%;font:inherit;font-size:15px;color:var(--ink);background:#fff;border:1px solid rgba(10,49,97,.28);border-radius:0;padding:11px 13px;min-height:48px}
+.cform textarea{min-height:150px;resize:vertical}
+.cform select{appearance:none;-webkit-appearance:none;padding-right:40px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%230A3161' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.cform :focus{outline:2px solid var(--navy);outline-offset:1px;border-color:var(--navy)}
+.cform :user-invalid{border-color:var(--red);background:#FBEDEE}
+.cform .err{display:none;font-size:12.5px;color:var(--red);margin:6px 0 0}
+.cform div:has(:user-invalid)>.err{display:block}
+.cform .actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.cform small{font-size:12.5px;color:var(--grey);max-width:44ch}
+#contact-done{border:1px solid var(--line);border-top:3px solid var(--navy);background:var(--paper);padding:28px 32px}
+#contact-done:focus{outline:none}
+.details dt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin:0 0 6px}
+.details dd{margin:0 0 24px;font-family:var(--serif);font-size:21px;line-height:1.45;color:var(--navy)}
+.details dd small{display:block;font-family:var(--sans);font-size:13.5px;color:var(--grey)}
+@media (max-width:900px){.contact-grid,.cform{grid-template-columns:minmax(0,1fr)}}
+"""
+TOPICS = ["Programs & admissions", "Anglia examinations", "Fees & payments", "Documents & records", "Partnership or franchise", "Other"]
+topics = "".join(f"<option>{t}</option>" for t in TOPICS)
 page("contact.html", "Contact – American Group International, Agadir",
  "Contact AGI in Agadir: 20 Rue Baalabek, Hay Nahda. Phone +212 528 843 349, WhatsApp +212 688 739 393, americanecoleagadir@gmail.com.",
- hero("<span>Contact</span>", "Contact AGI.", "Call, write or visit. The office replies within one working day and is closed on Sundays.") + """
-<section class="section bg-white"><div class="wrap">
-  <div class="cards" style="--cols:4">
-    <div><span class="tag">Visit</span><h3>Number 20, Rue Baalabek</h3><p>Hay Nahda, Agadir 80000, Morocco</p><a class="more" href="https://www.google.com/maps/search/?api=1&amp;query=20+Rue+Baalabek+Hay+Nahda+Agadir">Open in Google Maps</a></div>
-    <div><span class="tag">Call</span><h3><a href="tel:+212528843349">+212 528 843 349</a></h3><p>Administration. In Arabic: <a href="tel:+212618639911">+212 618 639 911</a></p></div>
-    <div><span class="tag">WhatsApp</span><h3><a href="https://wa.me/212688739393">+212 688 739 393</a></h3><p>For quick questions in English.</p></div>
-    <div><span class="tag">Email</span><h3 style="word-break:break-all;font-size:20px"><a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a></h3><p>The official AGI address.</p></div>
+ hero("<span>Contact</span>", "Contact AGI.", "Send a message, call or visit. The office replies within one working day and is closed on Sundays.") + f"""
+<section class="section bg-white"><div class="wrap contact-grid">
+  <div>
+    <h2 style="margin-bottom:28px">Send us a message</h2>
+    <form id="contact-form" class="cform" autocomplete="on">
+      <div><label for="c-name">Full name</label><input id="c-name" name="name" required autocomplete="name" maxlength="255" aria-describedby="c-name-e"><p class="err" id="c-name-e">Enter your name</p></div>
+      <div><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email" maxlength="255" aria-describedby="c-email-e"><p class="err" id="c-email-e">Enter an email address, for example name@example.com</p></div>
+      <div><label for="c-phone">Phone or WhatsApp<span class="opt">optional</span></label><input id="c-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="\\+?[0-9 \\-]{{8,20}}" aria-describedby="c-phone-e"><p class="err" id="c-phone-e">Enter a phone number with the country code, for example +212 6 12 34 56 78</p></div>
+      <div><label for="c-topic">Topic</label><select id="c-topic" name="topic" required aria-describedby="c-topic-e"><option value="">Choose…</option>{topics}</select><p class="err" id="c-topic-e">Choose a topic</p></div>
+      <div class="full"><label for="c-message">Message</label><textarea id="c-message" name="message" required maxlength="3000" aria-describedby="c-message-e"></textarea><p class="err" id="c-message-e">Write your message</p></div>
+      <div class="full actions"><button class="btn btn-primary" type="submit">Send message</button><small>Your message goes only to the AGI office in Agadir. See our <a href="privacy.html">privacy policy</a>.</small></div>
+    </form>
+    <div id="contact-done" hidden role="status" tabindex="-1"></div>
   </div>
+  <dl class="details">
+    <dt>Visit</dt><dd>Number 20, Rue Baalabek<br>Hay Nahda, Agadir 80000<small><a href="https://www.google.com/maps/search/?api=1&amp;query=20+Rue+Baalabek+Hay+Nahda+Agadir">Open in Google Maps</a></small></dd>
+    <dt>Call</dt><dd><a href="tel:+212528843349">+212 528 843 349</a><small>Administration · in Arabic: <a href="tel:+212618639911">+212 618 639 911</a></small></dd>
+    <dt>WhatsApp</dt><dd><a href="https://wa.me/212688739393">+212 688 739 393</a></dd>
+    <dt>Email</dt><dd style="word-break:break-all"><a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a></dd>
+  </dl>
 </div></section>
 <section class="section"><div class="wrap">
-  <div class="section-head"><h2>Send a request</h2><p>Use a form and your request goes straight to the right person.</p></div>
+  <div class="section-head"><h2>Looking for a specific request?</h2><p>These forms go straight to the right person.</p></div>
   <div class="cards">
     <a class="card" href="forms.html#visit"><h3>Book a visit</h3><p>Tours are arranged individually, Monday to Friday.</p><span class="more">Open form</span></a>
     <a class="card" href="forms.html#enrollment"><h3>Apply</h3><p>Apply for a place in any AGI program.</p><span class="more">Open form</span></a>
     <a class="card" href="forms.html#documents"><h3>Request a document</h3><p>Transcripts, certificates and attestations.</p><span class="more">Open form</span></a>
-    <a class="card" href="forms.html#absence"><h3>Report an absence</h3><p>Before 9:00 on the day.</p><span class="more">Open form</span></a>
-    <a class="card" href="forms.html#enquiry/partnership"><h3>Partnerships</h3><p>Franchise and institutional enquiries.</p><span class="more">Open form</span></a>
-    <a class="card" href="forms.html#enquiry"><h3>Anything else</h3><p>A general question for the office.</p><span class="more">Open form</span></a>
   </div>
 </div></section>
-""")
+<script>{CONTACT_JS}</script>
+""", CONTACT_CSS)
 
 LEGAL_CSS = ".prose h2{font-size:clamp(24px,2.2vw,30px);margin:1.8em 0 .5em;color:var(--navy)}"
 page("privacy.html", "Privacy policy – American Group International, Agadir", "How American Group International and Anglia Morocco handle personal information on this website.",
