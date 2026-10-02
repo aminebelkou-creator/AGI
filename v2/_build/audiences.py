@@ -238,7 +238,7 @@ STORY_CSS = FAQ_CSS + """
 .story-hero h1 em{color:var(--gold)}
 .story-hero p{font-size:clamp(16px,1.3vw,19px);line-height:1.65;color:rgba(255,255,255,.85);max-width:56ch;margin:0}
 .story-hero .btn-row{margin-top:32px}
-.story-hero .crumb,.story-hero .crumb a{color:rgba(255,255,255,.65)}.story-hero .crumb span{color:#fff}
+.story-hero .crumb{font-size:11px;margin:0 0 30px}.story-hero .crumb,.story-hero .crumb a{color:rgba(255,255,255,.65)}.story-hero .crumb span{color:#fff}
 .timeline{display:grid;gap:clamp(48px,7vw,104px)}
 .moment{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,5vw,88px);align-items:center}
 .moment:nth-child(even) .photo{order:2}
@@ -267,20 +267,20 @@ MOMENTS = [
 moments = "".join(f'<article class="moment">{ph(pid, cap, "4/3")}<div><p class="year">{y}</p><h3>{t}</h3><p>{d}</p></div></article>' for y, t, d, pid, cap in MOMENTS)
 
 page("our-story.html", "Our story – American Group International, Agadir",
- "How AGI began with five children in one room in Agadir in 2013, and why parents trust it today: affordable, creative and inclusive, accredited, and focused on every child.",
+ "A school built for families like yours: why parents in Agadir trust AGI – affordable, creative and inclusive, accredited, and focused on every child since 2013.",
  f"""
 <section class="story-hero">
   {ph("story-hero", "Hero photo: children arriving at school in the morning, or Julie with students", "auto")}
   <div class="wrap">
     <p class="crumb"><a href="index.html">Home</a> / <a href="about.html">About</a> / <span>Our story</span></p>
-    <h1>It started with one room and <em>five children.</em></h1>
-    <p>In 2013, Julie Wilburn opened a small classroom in Agadir with a conviction: an American education shouldn't be only for the wealthy. This is the story of the school that grew from it – and why families trust it with their children.</p>
+    <h1>A school built for families <em>like yours.</em></h1>
+    <p>Julie Wilburn started AGI in 2013 with five children in one room, because she believed every child deserves an American education – not only the children of the wealthy. Today, parents from more than 46 nations trust us with what matters most to them.</p>
     <div class="btn-row"><a class="btn btn-gold" href="forms.html#visit">Book a visit</a><a class="btn btn-light" href="#journey">Read the story</a></div>
   </div>
 </section>
 
 <section class="section bg-white" id="journey"><div class="wrap">
-  <div class="section-head"><h2>From one room to a school for the world</h2><p>Eleven years, one promise.</p></div>
+  <div class="section-head"><h2>How a small classroom became your child's school</h2><p>Eleven years, one promise to parents.</p></div>
   <div class="timeline">{moments}</div>
 </div></section>
 
