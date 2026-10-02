@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} – AGI Journal</title>
+<meta name="description" content="{{DESC}}">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<script src="../site.js" defer></script>
+<style>
+.article .prose img{display:block;max-width:100%;height:auto;margin:1.4em 0;border:1px solid var(--line)}
+.article .prose h1,.article .prose h2,.article .prose h3{font-family:var(--serif);font-weight:400;color:var(--navy);line-height:1.25;margin:1.6em 0 .5em}
+.article .prose h1{font-size:30px}.article .prose h2{font-size:26px}.article .prose h3{font-size:21px}
+.article .prose table{min-width:0;font-size:14px}
+.article-meta{font-size:13px;letter-spacing:.06em;color:var(--grey);margin:0}
+.article-meta b{color:var(--red);font-weight:500;letter-spacing:.16em;text-transform:uppercase;font-size:11px;margin-right:10px}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:56px}
+.pager a,.pager span{background:#fff;padding:22px 26px;font-family:var(--serif);font-size:19px;line-height:1.35;color:var(--navy)}
+.pager a:last-child{text-align:right}.pager a small{display:block;font:500 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.pager a:hover{color:var(--red)}
+@media (max-width:620px){.pager{grid-template-columns:1fr}.pager a:last-child{text-align:left}}
+</style>
+</head>
+<body>
+<!--site:header-->
+<!--/site:header-->
+<main id="main" class="article np">
+<section class="page-hero wrap">
+  <p class="crumb"><a href="../index.html">Home</a> / <a href="../journal.html">Journal</a> / <span>{{KIND}}</span></p>
+  <h1 style="max-width:22ch;font-size:clamp(36px,4.4vw,64px)">{{TITLE}}</h1>
+  <p class="article-meta"><b>{{KIND}}</b>{{DATE}}</p>
+</section>
+<section class="section bg-white"><div class="wrap">
+  <div class="prose">{{BODY}}</div>
+  <nav class="pager" aria-label="More journal entries">{{NEWER}}{{OLDER}}</nav>
+  <p style="margin-top:28px"><a class="link" href="../journal.html">All journal entries</a></p>
+</div></section>
+</main>
+<!--site:footer-->
+<!--/site:footer-->
+</body>
+</html>
