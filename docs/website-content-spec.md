@@ -396,33 +396,58 @@ Tangier AGI students in the American National Spelling Bee of Morocco. Read the 
 Meet the team, see the classrooms, and ask every question you have. Tours are arranged individually, Monday to Friday.
 → **Book a visit** (`forms.html#visit`)
 → **WhatsApp us** (`https://wa.me/212688739393?text=Hello%20AGI%2C%20`)
+→ **For parents: how to join** (`parents.html`)
 
 ---
 
 ### 4.3 `parents.html`
 
 - **Browser title:** For parents – American Group International, Agadir
-- **Meta description:** An affordable, creative and inclusive American school in Agadir: small classes, support for every learner, and no child held back for a language gap.
+- **Meta description:** Your child, known by name: an affordable, creative and inclusive American school in Agadir since 2013. Small classes, no child held back, accredited in the USA.
 
 Home / For parents [link: “Home” → `index.html`]
-**Page title (H1):** An education built around your child.
-Affordable, creative and inclusive: a K–12 micro-school in Agadir where your child is known by name, supported where they need it, and prepared for a world without borders.
+**Page title (H1):** Your child, known by name.
+An affordable, creative and inclusive American school in Agadir – where your child is known by every teacher, supported where they need it, and never held back for a language gap.
 → **Book a visit** (`forms.html#visit`)
 → **WhatsApp us** (`https://wa.me/212688739393?text=Hello%20AGI%2C%20`)
+- Since 2013
+- Students of 46+ nationalities
+- Accredited by the American Council of Training and Development
+- Recognized by 4 U.S. state departments of education
 [PHOTO NEEDED – Parents and children arriving at school in the morning]
 
 #### Section: Is your child thriving – or just fitting in?
 Many families know the feeling: classrooms too crowded for a teacher to notice your child, grades that punish a child for still learning a language, and international schools with fees that are simply out of reach.
-AGI was created to change that. The school opened in 2013 with five children in a single room in Agadir. The idea was simple then and it is the same today: an American education should not be a privilege for a few families.
+AGI was created for these families – and for children who deserve to be known, not just counted.
 
-#### Section: Affordable, creative and inclusive.
-Three words that guide every decision we make for your child.
+#### Section: A school that began with five children
+→ **The full story** (`our-story.html`)
+[PHOTO NEEDED – AGI's early years]
+2013
+**One room, five children**
+Julie Wilburn opened AGI's first classroom in Agadir with a conviction: an American education shouldn't be only for the wealthy.
+[PHOTO NEEDED – Students of different backgrounds together]
+46+
+**A world in one school**
+Since then, children of more than 46 nationalities have learned side by side in Hay Nahda.
+[PHOTO NEEDED – Julie with students or teachers today]
+Today
+**The same promise**
+A K–12 school and the home of Anglia Examinations in Morocco – still small enough to know every child by name.
+[IMAGE: Julie A. Wilburn, founder of AGI]
+From our founder
+[TO CONFIRM: “Children only thrive when they feel safe, valued – and known.”]
+Julie A. Wilburn Founder · CEO & Educational Director
+→ **Read Julie's letter to parents** (`founder-letter.html`)
+
+#### Section: Affordable. Creative. Inclusive.
+Three words Julie chose for AGI – and what they mean for your child.
 _Affordable_
-**Within reach of working families**
-Tuition of 2,600 MAD a month over ten months, with books, mathematics and Anglia exams included. No hidden extras for the essentials.
+**Within reach**
+2,600 MAD a month over ten months, with books, mathematics and Anglia exams included. No hidden extras for the essentials.
 _Creative_
 **Learning with imagination**
-Small multi-grade classes, American pedagogy enriched by Montessori and Waldorf ideas, and room for critical thinking and independent research.
+Small multi-grade classes, American pedagogy enriched by Montessori and Waldorf ideas, room for critical thinking and independent research.
 _Inclusive_
 **Every learner belongs**
 Students of more than 46 nationalities, mainstream and special-needs learners side by side, with individual plans where they need them.
@@ -431,23 +456,51 @@ Our placement promise
 #### Section: No child is held back for a language gap.
 “Grade placement is not lowered due to missing documents, language gaps, or academic gaps.”
 AGI Provisional Placement Policy Every new student sits a free placement assessment
-Instead of moving your child down a year, we keep them with their age group and give targeted support: English as a second language, extra help in the subjects where they are behind, and regular reviews with you.
-Our motto
-School + Home + Community = Student Success
-Children do best when the adults around them work together. You'll know your child's teachers, take part in their plan, and have an open door to the office. New students begin with a 90-day adjustment period so that you, your child and the school can settle in together.
+Instead of moving your child down a year, we keep them with their age group and give targeted support: English as a second language, extra help where they are behind, and regular reviews with you.
 
-#### Section: Caring for the whole child
-Academic progress depends on feeling safe and understood.
-- **Individual plans** — Individualized Education Plans for students who need them, built with you and, where needed, with your child's doctors and therapists. Special education [link: “Special education” → `special-education.html`]
-- **Emotional wellbeing** — AGI's founder, Julie Wilburn, is an accredited Holistic Therapeutic Coach, and the school is a member of the American School Counselor Association.
-- **Time for family** — [TO CONFIRM: Limited homework, so children have time to bond with their families.] Homework is planned by grade so that learning at home stays balanced. Homework guide [link: “Homework guide” → `student-life.html`]
-- **English for life** — Every grade is benchmarked on the CEFR and certified with Anglia Examinations of England. English & Anglia [link: “English & Anglia” → `english-anglia.html`]
+#### Section: Why parents trust AGI
+Six commitments you can check for yourself.
+Step 01
+**Known by name**
+Small multi-grade classes where teachers know every child and every family.
+Step 02
+**Never held back**
+No child moves down a grade for a language gap or a missing document.
+Step 03
+**The whole child**
+Individual plans, a founder who is an accredited Holistic Therapeutic Coach, and membership of the American School Counselor Association.
+Step 04
+**Clear, fair fees**
+One monthly fee, an annual inscription, and the essentials included.
+Step 05
+**Recognized standards**
+Accredited by the American Council of Training and Development; official partner in Morocco of Chichester College Group, UK.
+Step 06
+**A partnership with you**
+School + Home + Community = Student Success. You are part of your child's plan from day one, starting with a 90-day adjustment period.
+[IMAGE: seal-tennessee-clean.webp]
+Tennessee Department of Education
+[IMAGE: seal-florida-clean.webp]
+Florida Department of Education
+[IMAGE: seal-colorado-clean.webp]
+Colorado Department of Education
+[IMAGE: seal-alabama-clean.webp]
+Alabama Department of Education
+[IMAGE: mark-ncaa-clean.webp]
+NCAA Eligibility Center
+[IMAGE: mark-naia-clean.webp]
+NAIA Eligibility Center
+[IMAGE: mark-collegeboard-clean.webp]
+College Board AP & SAT programs
+[IMAGE: mark-meridian-clean.webp]
+Meridian Learning Curriculum standards
 
-#### Section: Programs for your child
-→ **All programs** (`programs.html`)
-- Link card → `k12.html`: Ages 5–18 · K–12 school · An American-curriculum micro-school from kindergarten to grade 12, with English support through the Anglia system for children who don't speak English at home.
-- Link card → `special-education.html`: Inclusive · Special education (SEN) · Individualized Education Plans, small-group classes and support from occupational therapy to speech-language and behavioral care.
-- Link card → `english-anglia.html`: All ages · English & Anglia exams · AGI is the Anglia Examinations headquarters for Morocco: ten CEFR-mapped levels, Saturday classes for children and courses for adults.
+#### Section: What your child gains
+- **English for life** — Certified progress with Anglia Examinations of England, benchmarked on the CEFR every year. English & Anglia [link: “English & Anglia” → `english-anglia.html`]
+- **An American education** — An American curriculum from kindergarten to grade 12, with routes to a U.S. high school diploma. K–12 school [link: “K–12 school” → `k12.html`]
+- **Care for the whole child** — Individualized Education Plans and small-group support when needed. Special education [link: “Special education” → `special-education.html`]
+- **Friends from 46+ nations** — Confidence and openness that come from learning alongside the world.
+- **Doors to university** — Guidance and partners in the UK and beyond. University pathways [link: “University pathways” → `pathways.html`]
 
 #### Section: What parents say
 > “Our daughter arrived speaking almost no English. Two years later she reads chapter books and corrects my pronunciation.” — Parent of a grade 3 student [SAMPLE – replace with a real testimonial]
@@ -465,13 +518,17 @@ Meet the team, see the classrooms, and let your child sit a free, friendly place
 Step 03
 **Enroll**
 Pay the annual inscription and confirm the monthly plan. Registration days for 2026–27 are August 28 and 31.
-→ **Admissions, fees & calendar** (`admissions.html`)
+Tuition is 2,600 MAD a month over ten months, plus an annual inscription (6,500 MAD for kindergarten–grade 1, rising to 11,000 MAD for grade 12). Books, mathematics and Anglia exams are included. Tuition & fees [link: “Tuition & fees” → `admissions.html#fees`]
 
 #### Section: Questions parents ask
 - **Q: My child doesn't speak English yet. Can they join?** — A: Yes. Many of our students start with little English. They join their age group, receive ESL support, and are benchmarked with the Anglia levels as they progress.
 - **Q: Can my child join in the middle of the year?** — A: Yes. We welcome students at any stage. Your child sits the placement assessment and starts with the right support.
 - **Q: My child has special needs. How do you support them?** — A: We build an Individualized Education Plan with you. To put the right support in place we need documentation from a licensed practitioner, along with previous school records.
 - **Q: What does it cost?** — A: Tuition is 2,600 MAD a month over ten months, plus an annual inscription paid at enrollment. Books, mathematics and Anglia exams are included. See tuition & fees.
+- **Q: Is there a discount for brothers and sisters?** — A: [TO CONFIRM: Answer to confirm with the office.]
+- **Q: What are the school hours?** — A: [TO CONFIRM: School day start and end times to confirm.] Arrival after 9:00 counts as late, and after 10:00 as a full-day absence.
+- **Q: Do you offer transport or lunch?** — A: [TO CONFIRM: Answer to confirm with the office.]
+- **Q: Is there a uniform?** — A: [TO CONFIRM: Answer to confirm with the office.]
 - **Q: What do we need to bring?** — A: Previous school records and a behavior report, proof of age and residency, and immunization and physical examination records.
 
 #### Section: Come and see the school.

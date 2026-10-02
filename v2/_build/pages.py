@@ -99,6 +99,13 @@ STORY_POPUP_CSS = """<style>
 @media (max-width:700px){.story-popup[open]{grid-template-columns:minmax(0,1fr);margin:auto 0 0;max-width:100vw;max-height:88vh;overflow:auto}.sp-photo{display:none}}
 @media (prefers-reduced-motion:no-preference){.story-popup[open]{animation:sp-in .35s ease-out}}
 @keyframes sp-in{from{opacity:0;transform:translateY(18px)}}
+/* phones: non-blocking bottom bar (no backdrop) */
+.story-popup.sheet{position:fixed;inset:auto 0 0 0;margin:0;width:100%;max-width:100vw;max-height:none;z-index:90;display:block;border-top:3px solid var(--navy);box-shadow:0 -12px 40px -12px rgba(6,21,41,.45)}
+.story-popup.sheet .sp-photo,.story-popup.sheet ul,.story-popup.sheet .kicker{display:none}
+.story-popup.sheet .sp-body{padding:18px 20px 16px}
+.story-popup.sheet .sp-body h2{font-size:25px;margin:0 40px 6px 0}
+.story-popup.sheet .sp-body p{font-size:14px;margin:0 0 12px}
+.story-popup.sheet .btn{padding:12px 16px;min-height:44px}
 </style>"""
 STORY_POPUP_JS = """<script>
 (function () {
@@ -106,19 +113,24 @@ STORY_POPUP_JS = """<script>
   if (!d || typeof d.showModal !== "function") return;
   var KEY = "agi-story-popup", WEEK = 7 * 864e5;
   try { if (Date.now() - (+localStorage.getItem(KEY) || 0) < WEEK) return; } catch (e) {}
-  var shown = false;
+  var small = window.matchMedia("(max-width: 700px)").matches, shown = false;
   function open() {
     if (shown || document.querySelector("dialog[open]")) return;
-    shown = true; window.removeEventListener("scroll", onScroll);
+    shown = true;
+    window.removeEventListener("scroll", onScroll); document.removeEventListener("mouseout", onLeave);
     try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}
-    d.showModal();
+    if (small) { d.classList.add("sheet"); d.show(); }   /* phones: bottom bar, page stays usable */
+    else { d.showModal(); }                                /* desktop: dialog */
   }
-  function onScroll() { if (window.scrollY > document.documentElement.scrollHeight * 0.25) open(); }
-  setTimeout(open, 6000);
+  /* only after the visitor has read half the page, or (desktop) is about to leave */
+  function onScroll() { if (window.scrollY + window.innerHeight > document.documentElement.scrollHeight * 0.5) open(); }
+  function onLeave(e) { if (!e.relatedTarget && e.clientY <= 0) open(); }
   window.addEventListener("scroll", onScroll, { passive: true });
-  if (!("closedBy" in HTMLDialogElement.prototype)) {          // light-dismiss fallback (Safari)
+  if (!small) document.addEventListener("mouseout", onLeave);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && d.open && !d.matches(":modal")) d.close(); });
+  if (!("closedBy" in HTMLDialogElement.prototype)) {          /* light-dismiss fallback (Safari) */
     d.addEventListener("click", function (e) {
-      if (e.target !== d) return;
+      if (e.target !== d || !d.matches(":modal")) return;
       var r = d.getBoundingClientRect();
       if (r.top <= e.clientY && e.clientY <= r.bottom && r.left <= e.clientX && e.clientX <= r.right) return;
       d.close();
@@ -131,11 +143,11 @@ STORY_POPUP = (STORY_POPUP_CSS + f"""
   <div class="sp-photo">{ph("popup-story", "AGI's early days, or Julie with students", "4/5")}</div>
   <div class="sp-body">
     <form method="dialog"><button class="sp-close" aria-label="Close">×</button></form>
-    <p class="kicker">Our story</p>
+    <p class="kicker">For parents</p>
     <h2 id="story-popup-title">Your child, known by name.</h2>
     <p>Since 2013, AGI has grown from one small classroom into a school trusted by families from more than 46 nations. Discover why parents choose us.</p>
     <ul><li>Affordable</li><li>Creative</li><li>Inclusive</li></ul>
-    <div class="btn-row"><a class="btn btn-primary" href="our-story.html">Discover our story</a><form method="dialog"><button class="btn btn-ghost" value="later">Not now</button></form></div>
+    <div class="btn-row"><a class="btn btn-primary" href="parents.html">See why parents choose AGI</a><form method="dialog"><button class="btn btn-ghost" value="later">Not now</button></form></div>
   </div>
 </dialog>
 """ + STORY_POPUP_JS)

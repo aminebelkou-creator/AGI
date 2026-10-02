@@ -15,12 +15,24 @@ FAQ_CSS = """
 .letter p{margin:0 0 1.2em}.letter .sign{margin-top:2em;font-family:var(--sans);font-size:14px;color:var(--grey)}.letter .sign b{display:block;font-family:var(--serif);font-size:24px;font-weight:400;color:var(--navy)}
 """
 
-# ------------------------------------------------------------------ PARENTS
+# ------------------------------------------------------------------ PARENTS (single parent landing page – popup target)
+SEALS = "".join(f'<figure><img src="assets/web/{i}.webp" alt="" width="{w}" height="{h}" loading="lazy"><figcaption><b>{n}</b>{d}</figcaption></figure>' for i, w, h, n, d in [
+ ("seal-tennessee-clean", 120, 120, "Tennessee", "Department of Education"), ("seal-florida-clean", 120, 120, "Florida", "Department of Education"),
+ ("seal-colorado-clean", 120, 120, "Colorado", "Department of Education"), ("seal-alabama-clean", 120, 120, "Alabama", "Department of Education"),
+ ("mark-ncaa-clean", 160, 84, "NCAA", "Eligibility Center"), ("mark-naia-clean", 160, 84, "NAIA", "Eligibility Center"),
+ ("mark-collegeboard-clean", 160, 84, "College Board", "AP &amp; SAT programs"), ("mark-meridian-clean", 160, 84, "Meridian Learning", "Curriculum standards")])
+PARENTS_CSS = FAQ_CSS + """
+.proof{display:flex;flex-wrap:wrap;gap:8px 22px;margin:22px 0 0;padding:0;list-style:none;font-size:13.5px;color:var(--grey)}
+.proof li::before{content:"✓ ";color:var(--red);font-weight:600}
+.mini-story .photo{margin-bottom:18px}
+.mini-story .year{font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;color:var(--red);margin:0 0 8px}
+"""
 page("parents.html", "For parents – American Group International, Agadir",
- "An affordable, creative and inclusive American school in Agadir: small classes, support for every learner, and no child held back for a language gap.",
- hero("<span>For parents</span>", "An education built around your child.",
-      "Affordable, creative and inclusive: a K–12 micro-school in Agadir where your child is known by name, supported where they need it, and prepared for a world without borders.",
+ "Your child, known by name: an affordable, creative and inclusive American school in Agadir since 2013. Small classes, no child held back, accredited in the USA.",
+ hero("<span>For parents</span>", "Your child, known by name.",
+      "An affordable, creative and inclusive American school in Agadir – where your child is known by every teacher, supported where they need it, and never held back for a language gap.",
       '<a class="btn btn-primary" href="forms.html#visit">Book a visit</a>' + WA)
+ .replace("</section>", '<ul class="proof"><li>Since 2013</li><li>Students of 46+ nationalities</li><li>Accredited by the American Council of Training and Development</li><li>Recognized by 4 U.S. state departments of education</li></ul></section>', 1)
  + f"""
 <div class="wrap" style="padding-bottom:clamp(40px,5vw,72px)">{ph("parents-hero", "Parents and children arriving at school in the morning", "21/8")}</div>
 
@@ -28,15 +40,33 @@ page("parents.html", "For parents – American Group International, Agadir",
   <div class="intro"><h2>Is your child thriving – or just fitting in?</h2></div>
   <div class="prose">
     <p>Many families know the feeling: classrooms too crowded for a teacher to notice your child, grades that punish a child for still learning a language, and international schools with fees that are simply out of reach.</p>
-    <p>AGI was created to change that. The school opened in 2013 with five children in a single room in Agadir. The idea was simple then and it is the same today: an American education should not be a privilege for a few families.</p>
+    <p>AGI was created for these families – and for children who deserve to be known, not just counted.</p>
   </div>
 </div></section>
 
 <section class="section"><div class="wrap">
-  <div class="section-head"><h2>Affordable, creative and inclusive.</h2><p>Three words that guide every decision we make for your child.</p></div>
+  <div class="section-head"><h2>A school that began with five children</h2><p><a class="link" href="our-story.html">The full story</a></p></div>
+  <div class="cards mini-story">
+    <div>{ph("story-2013", "AGI's early years", "4/3")}<p class="year">2013</p><h3>One room, five children</h3><p>Julie Wilburn opened AGI's first classroom in Agadir with a conviction: an American education shouldn't be only for the wealthy.</p></div>
+    <div>{ph("story-nations", "Students of different backgrounds together", "4/3")}<p class="year">46+</p><h3>A world in one school</h3><p>Since then, children of more than 46 nationalities have learned side by side in Hay Nahda.</p></div>
+    <div>{ph("story-today", "Julie with students or teachers today", "4/3")}<p class="year">Today</p><h3>The same promise</h3><p>A K–12 school and the home of Anglia Examinations in Morocco – still small enough to know every child by name.</p></div>
+  </div>
+  <div class="director" style="margin-top:clamp(40px,5vw,72px)">
+    <img src="assets/web/director-julie-wilburn.webp" alt="Julie A. Wilburn, founder of AGI" width="576" height="720" loading="lazy">
+    <div>
+      <p class="kicker">From our founder</p>
+      <p class="quote" data-placeholder="fact:story-quote-1">“Children only thrive when they feel safe, valued – and known.”</p>
+      <p class="cite"><b>Julie A. Wilburn</b>Founder · CEO &amp; Educational Director</p>
+      <p style="margin-top:20px"><a class="link" href="founder-letter.html">Read Julie's letter to parents</a></p>
+    </div>
+  </div>
+</div></section>
+
+<section class="section bg-deep"><div class="wrap">
+  <div class="section-head"><h2>Affordable. Creative. Inclusive.</h2><p>Three words Julie chose for AGI – and what they mean for your child.</p></div>
   <div class="cards">
-    <div><span class="tag">Affordable</span><h3>Within reach of working families</h3><p>Tuition of 2,600 MAD a month over ten months, with books, mathematics and Anglia exams included. No hidden extras for the essentials.</p></div>
-    <div><span class="tag">Creative</span><h3>Learning with imagination</h3><p>Small multi-grade classes, American pedagogy enriched by Montessori and Waldorf ideas, and room for critical thinking and independent research.</p></div>
+    <div><span class="tag">Affordable</span><h3>Within reach</h3><p>2,600 MAD a month over ten months, with books, mathematics and Anglia exams included. No hidden extras for the essentials.</p></div>
+    <div><span class="tag">Creative</span><h3>Learning with imagination</h3><p>Small multi-grade classes, American pedagogy enriched by Montessori and Waldorf ideas, room for critical thinking and independent research.</p></div>
     <div><span class="tag">Inclusive</span><h3>Every learner belongs</h3><p>Students of more than 46 nationalities, mainstream and special-needs learners side by side, with individual plans where they need them.</p></div>
   </div>
 </div></section>
@@ -46,29 +76,32 @@ page("parents.html", "For parents – American Group International, Agadir",
   <div>
     <p class="quote" style="max-width:none">“Grade placement is not lowered due to missing documents, language gaps, or academic gaps.”</p>
     <p class="cite"><b>AGI Provisional Placement Policy</b>Every new student sits a free placement assessment</p>
-    <p class="prose" style="margin-top:24px">Instead of moving your child down a year, we keep them with their age group and give targeted support: English as a second language, extra help in the subjects where they are behind, and regular reviews with you.</p>
+    <p class="prose" style="margin-top:24px">Instead of moving your child down a year, we keep them with their age group and give targeted support: English as a second language, extra help where they are behind, and regular reviews with you.</p>
   </div>
 </div></section>
 
-<section class="section bg-navy"><div class="wrap">
-  <p class="kicker">Our motto</p>
-  <p class="promise">School + Home + Community = Student Success</p>
-  <p style="color:rgba(255,255,255,.75);max-width:60ch;margin:0">Children do best when the adults around them work together. You'll know your child's teachers, take part in their plan, and have an open door to the office. New students begin with a 90-day adjustment period so that you, your child and the school can settle in together.</p>
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Why parents trust AGI</h2><p>Six commitments you can check for yourself.</p></div>
+  <div class="cards">
+    <div><span class="num">01</span><h3>Known by name</h3><p>Small multi-grade classes where teachers know every child and every family.</p></div>
+    <div><span class="num">02</span><h3>Never held back</h3><p>No child moves down a grade for a language gap or a missing document.</p></div>
+    <div><span class="num">03</span><h3>The whole child</h3><p>Individual plans, a founder who is an accredited Holistic Therapeutic Coach, and membership of the American School Counselor Association.</p></div>
+    <div><span class="num">04</span><h3>Clear, fair fees</h3><p>One monthly fee, an annual inscription, and the essentials included.</p></div>
+    <div><span class="num">05</span><h3>Recognized standards</h3><p>Accredited by the American Council of Training and Development; official partner in Morocco of Chichester College Group, UK.</p></div>
+    <div><span class="num">06</span><h3>A partnership with you</h3><p>School + Home + Community = Student Success. You are part of your child's plan from day one, starting with a 90-day adjustment period.</p></div>
+  </div>
+  <div class="marks" style="margin-top:28px">{SEALS}</div>
 </div></section>
 
-<section class="section"><div class="wrap split">
-  <div class="intro"><h2>Caring for the whole child</h2><p>Academic progress depends on feeling safe and understood.</p></div>
+<section class="section bg-white"><div class="wrap split">
+  <div class="intro"><h2>What your child gains</h2></div>
   <dl class="rows">
-    <div><dt>Individual plans</dt><dd>Individualized Education Plans for students who need them, built with you and, where needed, with your child's doctors and therapists. <a class="link" href="special-education.html">Special education</a></dd></div>
-    <div><dt>Emotional wellbeing</dt><dd>AGI's founder, Julie Wilburn, is an accredited Holistic Therapeutic Coach, and the school is a member of the American School Counselor Association.</dd></div>
-    <div><dt>Time for family</dt><dd>{PH_TXT('limited-homework', 'Limited homework, so children have time to bond with their families.')} Homework is planned by grade so that learning at home stays balanced. <a class="link" href="student-life.html">Homework guide</a></dd></div>
-    <div><dt>English for life</dt><dd>Every grade is benchmarked on the CEFR and certified with Anglia Examinations of England. <a class="link" href="english-anglia.html">English &amp; Anglia</a></dd></div>
+    <div><dt>English for life</dt><dd>Certified progress with Anglia Examinations of England, benchmarked on the CEFR every year. <a class="link" href="english-anglia.html">English &amp; Anglia</a></dd></div>
+    <div><dt>An American education</dt><dd>An American curriculum from kindergarten to grade 12, with routes to a U.S. high school diploma. <a class="link" href="k12.html">K–12 school</a></dd></div>
+    <div><dt>Care for the whole child</dt><dd>Individualized Education Plans and small-group support when needed. <a class="link" href="special-education.html">Special education</a></dd></div>
+    <div><dt>Friends from 46+ nations</dt><dd>Confidence and openness that come from learning alongside the world.</dd></div>
+    <div><dt>Doors to university</dt><dd>Guidance and partners in the UK and beyond. <a class="link" href="pathways.html">University pathways</a></dd></div>
   </dl>
-</div></section>
-
-<section class="section bg-white"><div class="wrap">
-  <div class="section-head"><h2>Programs for your child</h2><p><a class="link" href="programs.html">All programs</a></p></div>
-  <div class="cards">{"".join(f'<a class="card" href="{h}"><span class="tag">{t}</span><h3>{n}</h3><p>{d}</p><span class="more">Learn more</span></a>' for h, t, n, d in PROGRAM_CARDS if h in ("k12.html", "special-education.html", "english-anglia.html"))}</div>
 </div></section>
 
 <section class="section"><div class="wrap">
@@ -83,7 +116,7 @@ page("parents.html", "For parents – American Group International, Agadir",
     <div><span class="num">02</span><h3>Visit &amp; placement test</h3><p>Meet the team, see the classrooms, and let your child sit a free, friendly placement assessment.</p></div>
     <div><span class="num">03</span><h3>Enroll</h3><p>Pay the annual inscription and confirm the monthly plan. Registration days for 2026–27 are August 28 and 31.</p></div>
   </div>
-  <p style="margin-top:22px"><a class="link" href="admissions.html">Admissions, fees &amp; calendar</a></p>
+  <p class="note" style="margin-top:28px;background:#fff">Tuition is <strong>2,600 MAD a month</strong> over ten months, plus an annual inscription (6,500 MAD for kindergarten–grade 1, rising to 11,000 MAD for grade 12). Books, mathematics and Anglia exams are included. <a href="admissions.html#fees">Tuition &amp; fees</a></p>
 </div></section>
 
 <section class="section"><div class="wrap split">
@@ -93,11 +126,15 @@ page("parents.html", "For parents – American Group International, Agadir",
     <details><summary>Can my child join in the middle of the year?</summary><p>Yes. We welcome students at any stage. Your child sits the placement assessment and starts with the right support.</p></details>
     <details><summary>My child has special needs. How do you support them?</summary><p>We build an Individualized Education Plan with you. To put the right support in place we need documentation from a licensed practitioner, along with previous school records.</p></details>
     <details><summary>What does it cost?</summary><p>Tuition is 2,600 MAD a month over ten months, plus an annual inscription paid at enrollment. Books, mathematics and Anglia exams are included. <a href="admissions.html#fees">See tuition &amp; fees</a>.</p></details>
+    <details><summary>Is there a discount for brothers and sisters?</summary><p>{PH_TXT("faq-siblings", "Answer to confirm with the office.")}</p></details>
+    <details><summary>What are the school hours?</summary><p>{PH_TXT("faq-hours", "School day start and end times to confirm.")} Arrival after 9:00 counts as late, and after 10:00 as a full-day absence.</p></details>
+    <details><summary>Do you offer transport or lunch?</summary><p>{PH_TXT("faq-transport-lunch", "Answer to confirm with the office.")}</p></details>
+    <details><summary>Is there a uniform?</summary><p>{PH_TXT("faq-uniform", "Answer to confirm with the office.")}</p></details>
     <details><summary>What do we need to bring?</summary><p>Previous school records and a behavior report, proof of age and residency, and immunization and physical examination records.</p></details>
   </div>
 </div></section>
 """ + cta("Come and see the school.", "The best way to know AGI is to visit during the school day. Tours are arranged individually, Monday to Friday.",
-           '<a class="btn btn-gold" href="forms.html#visit">Book a visit</a>' + WA_LIGHT), FAQ_CSS)
+           '<a class="btn btn-gold" href="forms.html#visit">Book a visit</a>' + WA_LIGHT), PARENTS_CSS)
 
 # ------------------------------------------------------------------ FOUNDER'S LETTER
 page("founder-letter.html", "A letter from our founder – American Group International, Agadir",
@@ -354,4 +391,4 @@ page("our-story.html", "Our story – American Group International, Agadir",
   <div style="margin-top:40px">{testimonials()}</div>
 </div></section>
 """ + cta("Come and see the school.", "Meet the team, see the classrooms, and ask every question you have. Tours are arranged individually, Monday to Friday.",
-           '<a class="btn btn-gold" href="forms.html#visit">Book a visit</a>' + WA_LIGHT), STORY_CSS)
+           '<a class="btn btn-gold" href="forms.html#visit">Book a visit</a>' + WA_LIGHT + '<a class="btn btn-light" href="parents.html">For parents: how to join</a>'), STORY_CSS)

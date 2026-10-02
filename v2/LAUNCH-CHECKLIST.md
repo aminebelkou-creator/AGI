@@ -116,4 +116,6 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] **Our story page** (our-story.html): Julie approves the two quotes in "In her words" (taken from the draft founder's letter) and the timeline wording
 - [ ] Story photos: hero, 2013 / early years, Hay Nahda building, students together, Anglia exam day, Julie today, three pillar photos, popup photo
 - [ ] Home popup: keep the 6-second / 25%-scroll timing and once-a-week frequency?
+- [ ] Parents page FAQ – answers needed: sibling discount, school day hours, transport and lunch, uniform (parents)
+- [ ] Popup: phones = bottom bar after half the page; desktop = dialog after half the page or when leaving; once a week – OK?
 
