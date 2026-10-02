@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
 <x-dc>
@@ -136,7 +137,7 @@ a:hover{color:#B22234}
     <div onMouseEnter="{{ openMega }}" onMouseLeave="{{ closeMega }}" style="position:absolute;left:0;right:0;top:76px;background:#0A3161;color:#fff;box-shadow:0 30px 60px rgba(10,10,10,0.25)">
       <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:48px;max-width:1440px;margin:0 auto;padding:48px clamp(20px,4vw,56px)">
         <div>
-          <p style="font-family:'Newsreader',serif;font-size:28px;font-weight:400;margin:0 0 12px;line-height:1.25">Five academic divisions.<br>One institution.</p>
+          <p style="font-family:'Newsreader',serif;font-size:28px;font-weight:400;margin:0 0 12px;line-height:1.25">Six academic divisions.<br>One institution.</p>
           <p style="font-size:13px;color:rgba(255,255,255,0.6);margin:0;max-width:280px">From early learning to university pathways, AGI programs share one American academic standard.</p>
         </div>
         <div style="display:flex;flex-direction:column;gap:14px">
@@ -350,7 +351,7 @@ a:hover{color:#B22234}
   <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:clamp(24px,4vw,72px);flex-wrap:wrap;border-bottom:2px solid #0A3161;padding-bottom:18px;margin-bottom:clamp(40px,5vw,64px)">
       <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(34px,4.4vw,68px);line-height:0.95;margin:0;letter-spacing:-0.015em">Programs<br><em style="font-style:italic">of study</em></h2>
-      <p style="font-size:14px;line-height:1.7;color:#5B6472;max-width:38ch;margin:0;text-align:right">Five divisions, one academic standard. Each publishes its own curriculum, calendar and admission requirements.</p>
+      <p style="font-size:14px;line-height:1.7;color:#5B6472;max-width:38ch;margin:0;text-align:right">Six divisions, one academic standard. Each publishes its own curriculum, calendar and admission requirements.</p>
     </div>
     <div style="border-top:1px solid rgba(10,49,97,0.15)">
       <sc-for list="{{ programs }}" as="p" hint-placeholder-count="5">
@@ -643,7 +644,7 @@ a:hover{color:#B22234}
       <sc-for list="{{ network }}" as="n" hint-placeholder-count="8">
         <div style="background:#061529;padding:clamp(22px,2.2vw,32px);display:flex;flex-direction:column;gap:16px">
           <div style="background:rgba(255,255,255,0.05);height:88px;display:flex;align-items:center;justify-content:center;padding:14px 18px;border:1px solid rgba(255,255,255,0.12)">
-            <img src="{{ n.src }}" alt="{{ n.name }}" style="height:100%;width:auto;max-width:100%;object-fit:contain;display:block">
+            <img sc-camel-src="{{ n.src }}" alt="{{ n.name }}" style="height:100%;width:auto;max-width:100%;object-fit:contain;display:block">
           </div>
           <div>
             <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#C9A227;margin:0 0 8px">{{ n.kind }}</p>
@@ -661,7 +662,7 @@ a:hover{color:#B22234}
 <section data-screen-label="Director" style="background:#fff">
   <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(40px,5vw,90px);max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px);align-items:center">
     <div style="position:relative">
-      <img src="assets/director-julie-wilburn.jpg" alt="Julie Wilburn, Educational Director of American Group International" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;display:block;border:1px solid rgba(10,49,97,0.18)">
+      <img src="assets/director-julie-wilburn.jpg" alt="Julie A. Wilburn, CEO and Educational Director of American Group International" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;display:block;border:1px solid rgba(10,49,97,0.18)">
       <span style="position:absolute;bottom:-14px;left:-14px;background:#B22234;color:#fff;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;padding:10px 16px">Julie Wilburn</span>
     </div>
     <div>
@@ -672,7 +673,7 @@ a:hover{color:#B22234}
         <span style="font-family:'Newsreader',serif;font-style:italic;font-size:30px;color:#0A0A0A;white-space:nowrap">— J. Wilburn</span>
         <div style="border-left:1px solid rgba(10,49,97,0.2);padding-left:20px">
           <p style="font-size:13px;font-weight:600;margin:0;color:#0A3161">Julie Wilburn</p>
-          <p style="font-size:12px;color:#5B6472;margin:0">Educational Director, AGI · Country Manager, Anglia Morocco</p>
+          <p style="font-size:12px;color:#5B6472;margin:0">CEO &amp; Educational Director · Anglia Examinations Morocco, American Group International of Agadir</p>
         </div>
       </div>
     </div>
@@ -829,7 +830,7 @@ a:hover{color:#B22234}
     <div style="background:#0A2140;border:1px solid rgba(255,255,255,0.12);padding:32px">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:28px">
         <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5)">Front Desk — Today</span>
-        <span style="display:flex;align-items:center;gap:8px;font-size:11px;color:#7BC98A"><span style="width:6px;height:6px;border-radius:50%;background:#7BC98A"></span>Live · Sample Session</span>
+        <span style="display:flex;align-items:center;gap:8px;font-size:11px;color:#7BC98A"><span style="width:6px;height:6px;border-radius:50%;background:#7BC98A"></span>Demo · Sample data</span>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1)">
         <sc-for list="{{ connectStats }}" as="c" hint-placeholder-count="4">
@@ -885,6 +886,12 @@ a:hover{color:#B22234}
         <a href="#top" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Terms</a>
         <a href="#services" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Contact</a>
       </div>
+    </div>
+    <div class="agi-stack2" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,3vw,48px);border-top:1px solid rgba(255,255,255,0.15);padding:32px 0;margin-bottom:8px;font-size:13px;line-height:1.7">
+      <div><span style="display:block;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:8px">Visit</span><span style="color:rgba(255,255,255,0.75)">Number 20, Rue Baalabek<br>Hay Nahda, Agadir 80000<br>Morocco</span></div>
+      <div><span style="display:block;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:8px">Call</span><a href="tel:+212528843349" style="color:rgba(255,255,255,0.75)" style-hover="color:#fff">+212 528 843 349</a><br><a href="tel:+212618639911" style="color:rgba(255,255,255,0.75)" style-hover="color:#fff">+212 618 639 911</a> <span style="color:rgba(255,255,255,0.45)">(Arabic)</span></div>
+      <div><span style="display:block;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:8px">WhatsApp</span><a href="https://wa.me/212688739393" style="color:rgba(255,255,255,0.75)" style-hover="color:#fff">+212 688 739 393</a></div>
+      <div><span style="display:block;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:8px">Email</span><a href="mailto:americanecoleagadir@gmail.com" style="color:rgba(255,255,255,0.75);word-break:break-all" style-hover="color:#fff">americanecoleagadir@gmail.com</a></div>
     </div>
     <div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.15);padding-top:28px;font-size:11px;color:rgba(255,255,255,0.4)">
       <span>© 2026 American Group International School · Agadir, Morocco — Design preview.</span>
@@ -1024,18 +1031,18 @@ class Component extends DCLogic {
         { no: "01", title: "Enquire & Tour", desc: "Tours are scheduled individually — call for an appointment to meet us and visit the school in Agadir city limits." },
         { no: "02", title: "Placement Test", desc: "A free placement assessment appropriate to the program, including the Anglia level test for language learners." },
         { no: "03", title: "Submit Documents", desc: "Age and residency verification, immunization and physical examination records, and records from the previous school." },
-        { no: "04", title: "Enroll", desc: "Confirm enrolment from mid-August; a child aged 5 by September 1 and under 21 on the first day is eligible." }
+        { no: "04", title: "Enroll", desc: "Confirm enrolment on registration days (August 28 & 31); a child aged 5 by September 1 and under 21 on the first day is eligible." }
       ],
       keyDates: [
-        { label: "Anglia examinations", date: "April 2026" },
-        { label: "Graduation exercises", date: "June 2026" },
-        { label: "Enrolments & book orders", date: "From mid-August" },
-        { label: "First day of classes", date: "September 8" }
+        { label: "Registration days", date: "August 28 & 31, 2026" },
+        { label: "First day of classes", date: "September 7, 2026" },
+        { label: "Anglia examinations", date: "April 2027 · TBA" },
+        { label: "Last day & graduation", date: "June 17, 2027" }
       ],
       stats: [
         { value: "2013", label: "Established in Agadir" },
         { value: "12", label: "Anglia Morocco regions" },
-        { value: "10", label: "Anglia levels, CEFR-mapped" },
+        { value: "46+", label: "Nationalities hosted" },
         { value: "4", label: "U.S. state recognitions" }
       ],
       network: [
@@ -1060,12 +1067,11 @@ class Component extends DCLogic {
         { kind: "Partnership", title: "Leverage Edu and AGI join forces in the South of Morocco", date: "March 4, 2026" },
         { kind: "Announcement", title: "Julie Wilburn officially accredited as a Holistic Therapeutic Coach", date: "April 6, 2026" },
         { kind: "Partnership", title: "Empowering educators in Morocco: our partnership with Bridge Education Group", date: "November 11, 2025" },
-        { kind: "Student Story", title: "American National Spelling Bee in Morocco", date: "June 16, 2026" }
+        { kind: "Student Story", title: "American National Spelling Bee in Morocco", date: "May 2023" }
       ],
       team: [
-        { name: "Julie Wilburn", role: "Educational Director · Country Manager, Anglia Morocco", dept: "Agadir HQ" },
+        { name: "Julie Wilburn", role: "CEO & Educational Director · Anglia Examinations Morocco, American Group International of Agadir", dept: "Agadir HQ" },
         { name: "Abdelhak Lam", role: "Sales Coordinator, Main Headquarters", dept: "Mainland Morocco" },
-        { name: "Rachid Oussalh", role: "Regional Representative", dept: "Casablanca" },
         { name: "Admissions Office", role: "Enrolment, records & placement testing", dept: "Agadir" }
       ],
       forms: [
@@ -1078,7 +1084,7 @@ class Component extends DCLogic {
       ].map(f => ({ ...f, open: () => this.setState({ drawer: f.name, drawerSent: false }) })),
       regions: [
         { name: "Souss-Massa", status: "Headquarters · Agadir", color: "#7BC98A" },
-        { name: "Casablanca-Settat", status: "Regional representative", color: "#7BC98A" },
+        { name: "Casablanca-Settat", status: "Anglia centres", color: "#C9A227" },
         { name: "Tanger-Tetouan-Al Hoceima", status: "Anglia centres", color: "#C9A227" },
         { name: "Rabat-Salé-Kénitra", status: "Anglia centres", color: "#C9A227" },
         { name: "Fès-Meknès", status: "Anglia centres", color: "#C9A227" },
@@ -1087,6 +1093,7 @@ class Component extends DCLogic {
         { name: "Southern Provinces", status: "Open for franchise", color: "rgba(255,255,255,0.5)" }
       ],
       accreditations: [
+        { name: "American Council of Training and Development", kind: "Accreditation", desc: "AGI's institutional accreditor for the American-curriculum school and its programmes." },
         { name: "Global Schools Program", kind: "Membership", desc: "An initiative of the UN Sustainable Development Solutions Network, supporting UNESCO's Global Action Programme on Education for Sustainable Development." },
         { name: "AIM Qualifications · Ofqual", kind: "Regulation", desc: "Anglia's English qualifications are delivered with AIM Qualifications and Assessment Group, regulated by Ofqual in England." },
         { name: "UCAS listed", kind: "Recognition", desc: "The Anglia Proficiency examination is listed by UCAS as evidence of English competence for British universities." },
