@@ -170,6 +170,7 @@ Every page contains marker blocks that `build.py` replaces on each run – **nev
 | `export_docs.py` | Copies the founder's letter to `docs/founder-letter.md` |
 | `convert_dc.py`, `relink.py` | One-time migration scripts (already run; kept for history) |
 | `shots.ps1` | Headless Chrome screenshots for visual checks |
+| `export_spec.py` | Writes `docs/website-content-spec.md` (design-neutral content spec) from the built pages |
 
 ---
 
@@ -292,6 +293,7 @@ The site is plain files – any web host works; `.htaccess` assumes **Apache** (
 
 | File | Content |
 |---|---|
+| `website-content-spec.md` | **Design-neutral specification of the whole website** (structure, requirements, content rules, key facts, every page's sections and copy, all form fields, journal list) – give it to an agent or developer to rebuild the site. Regenerate with `python v2/_build/export_spec.py`; intro in `_spec-intro.md` |
 | `marketing-strategy.md` | Positioning, audiences, channels, core package, calendar to registration (Aug 2027), assets, metrics, rules |
 | `founder-film-script.md` | 90 s founder film (+30 s/15 s), EN/FR/AR subtitles, interview questions, shot list, production checklist |
 | `parent-stories-guide.md` | Three parent stories, interview guide, editing rules, tracking, consent form templates (EN/FR; AR to translate; legal review needed) |
