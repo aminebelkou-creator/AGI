@@ -13,7 +13,8 @@ PROGRAMS = [
     ("special-education.html", "Special education (SEN)", "IEPs, small groups, therapy support"),
     ("adult-diploma.html", "Adult high school diploma", "U.S. diploma for learners 16 and over"),
     ("english-anglia.html", "English & Anglia exams", "Anglia Morocco headquarters, classes and exams"),
-    ("professional.html", "Teacher training & professional", "C.I.T.E., proctoring, business and medical English"),
+    ("teachers.html", "For teachers (C.I.T.E.)", "Lifelong certificate, training, 30-day internship"),
+    ("professional.html", "Professional & medical English", "Business and medical English, proctoring, coaching"),
     ("pathways.html", "University pathways", "Admissions agent for universities abroad"),
 ]
 NAV = [("about.html", "About"), ("PROGRAMS", "Programs"), ("admissions.html", "Admissions"),
@@ -22,7 +23,7 @@ NAV = [("about.html", "About"), ("PROGRAMS", "Programs"), ("admissions.html", "A
 # which menu item each page belongs to
 SECTION = {p: "PROGRAMS" for p, _, _ in PROGRAMS}
 SECTION.update({"programs.html": "PROGRAMS", "policies.html": "admissions.html", "journal-ccgi-partnership.html": "journal.html",
-                "connect.html": "contact.html", "privacy.html": None, "terms.html": None, "forms.html": "FORMS", "index.html": None})
+                "connect.html": "contact.html", "parents.html": None, "founder-letter.html": "about.html", "investors.html": "partnerships.html", "privacy.html": None, "terms.html": None, "forms.html": "FORMS", "index.html": None})
 
 def cur(page, href):
     return ' aria-current="page"' if page == href else ""
@@ -76,8 +77,8 @@ def footer(page):
       <p>American Group International – the first American school in Agadir, since 2013, and headquarters of Anglia Examinations in Morocco.</p>
     </div>
     <div><h2>Programs</h2><ul>{progs}</ul></div>
-    <div><h2>School</h2><ul><li><a href="about.html">About AGI</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="admissions.html#fees">Tuition &amp; fees</a></li><li><a href="policies.html">Policies</a></li><li><a href="student-life.html">Student life</a></li><li><a href="journal.html">Journal</a></li></ul></div>
-    <div><h2>Services</h2><ul><li><a href="forms.html">Forms &amp; requests</a></li><li><a href="forms.html#absence">Report an absence</a></li><li><a href="forms.html#documents">Request a document</a></li><li><a href="forms.html#visit">Book a visit</a></li><li><a href="partnerships.html">Partnerships &amp; franchise</a></li><li><a href="connect.html">AGI Connect (preview)</a></li><li><a href="https://angliamorocco.org/" target="_blank" rel="noopener">Anglia Morocco ↗</a></li></ul></div>
+    <div><h2>School</h2><ul><li><a href="about.html">About AGI</a></li><li><a href="parents.html">For parents</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="admissions.html#fees">Tuition &amp; fees</a></li><li><a href="policies.html">Policies</a></li><li><a href="student-life.html">Student life</a></li><li><a href="journal.html">Journal</a></li></ul></div>
+    <div><h2>Services</h2><ul><li><a href="forms.html">Forms &amp; requests</a></li><li><a href="forms.html#absence">Report an absence</a></li><li><a href="forms.html#documents">Request a document</a></li><li><a href="forms.html#visit">Book a visit</a></li><li><a href="partnerships.html">Partnerships &amp; franchise</a></li><li><a href="investors.html">Partners &amp; investors</a></li><li><a href="connect.html">AGI Connect (preview)</a></li><li><a href="https://angliamorocco.org/" target="_blank" rel="noopener">Anglia Morocco ↗</a></li></ul></div>
     <div><h2>Contact</h2><address>Number 20, Rue Baalabek<br>Hay Nahda, Agadir 80000<br>Morocco</address>
       <ul style="margin-top:14px"><li><a href="tel:+212528843349">+212 528 843 349</a></li><li><a href="tel:+212618639911">+212 618 639 911</a> <span style="color:rgba(255,255,255,.45);font-size:13px">Arabic</span></li><li><a href="https://wa.me/212688739393">WhatsApp +212 688 739 393</a></li><li><a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a></li></ul></div>
   </div>

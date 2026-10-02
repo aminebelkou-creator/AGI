@@ -97,3 +97,17 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] *On angliamorocco.org*: the FAQ says Anglia is "dependant on the Ministry of Education of the United Kingdom" — inaccurate (Anglia is owned by Chichester College Group; qualifications regulated by Ofqual via AIM). Correct it there.
 - [ ] *On angliamorocco.org*: "Club Anglia" page still says "Coming soon"; "Country Manager" title differs from the signature used here
 - [ ] Should the two sites share branding (logo, colors) and link to each other in the header/footer?
+
+## 11. Brand story and audience pages — AGI
+- [ ] Slogan **"Affordable, Creative and Inclusive"** used in the home hero, home, parents, about, founder letter
+- [ ] **Founder's letter** (founder-letter.html) — Julie to read and approve the wording, or edit it
+- [ ] Expansion beyond Agadir: **other Moroccan cities? Mauritania? a center in the United States?** — placeholders on about and investors; not stated anywhere else
+- [ ] Julie's title: signature says "CEO & Educational Director"; another draft used "Director of Global Operations" — which is correct?
+- [ ] American Group USA LLC: where is it registered (Maryland?) and may we name it on the investors page?
+- [ ] "Exclusive" Anglia franchise for Morocco — can we say exclusive? (currently "franchise holder")
+- [ ] Homework: K–12 page says "limited homework – time for family bonding"; the homework policy goes up to 2–3 hours a night in grades 11–12 — which applies?
+- [ ] C.I.T.E. specializations (General English, Young Learners, Very Young Learners) and internship weeks 2–3 content (teachers)
+- [ ] Partner universities to list on pathways (RB College, Britts Imperial, UCAM, University of London, SIST, Geneva Business School) — still active?
+- [ ] Investors page: no financial claims are made; add figures only if Julie wants and can document them
+- [ ] Testimonials on the parents page are the same samples as home — replace with real ones
+

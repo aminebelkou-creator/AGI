@@ -222,3 +222,6 @@ td b{color:var(--navy);font-weight:600}
 .wa-float svg{width:24px;height:24px;flex:none}
 @media (max-width:620px){.wa-float span{display:none}.wa-float{padding:14px}}
 @media print{.wa-float{display:none}}
+
+/* last card fills the rest of its row (no empty cells) */
+.cards>:last-child{grid-column:auto / -1}

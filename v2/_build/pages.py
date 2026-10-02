@@ -50,7 +50,8 @@ PROGRAM_CARDS = [
  ("special-education.html", "Inclusive", "Special education (SEN)", "Individualized Education Plans, small-group classes and support from occupational therapy to speech-language and behavioral care."),
  ("adult-diploma.html", "Age 16+", "Adult high school diploma", "A self-paced U.S. high school completion program with American Worldwide Academy, with every test proctored on site in Agadir."),
  ("english-anglia.html", "All ages", "English & Anglia exams", "AGI is the Anglia Examinations headquarters for Morocco: ten CEFR-mapped levels, Saturday classes for children and courses for adults."),
- ("professional.html", "Educators & professionals", "Teacher training & professional", "The C.I.T.E. teaching certificate, exam proctoring, business and medical English, and ADHD holistic coaching."),
+ ("teachers.html", "Educators", "For teachers (C.I.T.E.)", "The lifelong Anglia C.I.T.E. teaching certificate, teacher training, a 30-day internship and U.S. private-school sponsorship."),
+ ("professional.html", "Professionals", "Professional & medical English", "Business and medical English for working adults and teams, exam proctoring and ADHD holistic coaching."),
  ("pathways.html", "Next steps", "University pathways", "An authorized admissions agent for universities and colleges in the UK, the United States and beyond."),
 ]
 def program_cards(cols=3, current=None):
@@ -77,6 +78,7 @@ def testimonials(items=TESTIMONIALS, cols=3):
     cards = "".join(f'<figure class="testimonial" data-placeholder="testimonial:{i}"><blockquote>{q}</blockquote><figcaption><b>{w}</b>{n}</figcaption></figure>' for i, q, w, n in items)
     return f'<div class="testimonials" style="--cols:{cols}">{cards}</div>'
 
+PH_TXT = lambda key, text: f'<span class="ph-text" data-placeholder="fact:{key}">{text}</span>'
 # ------------------------------------------------------------------ HOME
 HOME_CSS = """
 .home-hero{background:radial-gradient(120% 90% at 78% 40%,#0f3a72 0%,#061529 62%);color:#fff;overflow:hidden}
@@ -114,7 +116,7 @@ page("index.html", "American Group International – American school in Agadir, 
 <section class="home-hero">
   <div class="wrap">
     <div>
-      <p class="kicker">Established 2013 · Agadir, Morocco</p>
+      <p class="kicker">Affordable · Creative · Inclusive — since 2013</p>
       <h1>An American education, <em>close to home.</em></h1>
       <p class="lede">American Group International is the first American school in Agadir – a K–12 micro-school with programs for adults, English learners and educators, and the headquarters of Anglia Examinations in Morocco.</p>
       <div class="btn-row">{GOLD_APPLY}{LIGHT_VISIT}<a class="link" href="programs.html">Explore programs</a></div>
@@ -130,19 +132,30 @@ page("index.html", "American Group International – American school in Agadir, 
   <div><b>12</b><span>Regions served by Anglia Morocco from Agadir</span></div>
 </div></section>
 
+<section class="section tight bg-white" aria-label="Find your path"><div class="wrap">
+  <div class="section-head" style="margin-bottom:28px"><h2>Find your path</h2><p>Information for each of the people AGI serves.</p></div>
+  <div class="cards" style="--cols:5">
+    <a class="card" href="parents.html"><span class="tag">Parents</span><h3>For your child</h3><p>Admissions, support and what makes AGI different.</p><span class="more">For parents</span></a>
+    <a class="card" href="english-anglia.html"><span class="tag">Students</span><h3>Learn &amp; certify English</h3><p>Anglia levels, classes and free level tests.</p><span class="more">English &amp; Anglia</span></a>
+    <a class="card" href="teachers.html"><span class="tag">Teachers</span><h3>C.I.T.E. &amp; training</h3><p>A lifelong credential and a 30-day internship.</p><span class="more">For teachers</span></a>
+    <a class="card" href="professional.html"><span class="tag">Professionals</span><h3>Business &amp; medical English</h3><p>English for work, for you or your team.</p><span class="more">For professionals</span></a>
+    <a class="card" href="investors.html"><span class="tag">Partners</span><h3>Grow with AGI</h3><p>Franchise, representation and partnership.</p><span class="more">Partners &amp; investors</span></a>
+  </div>
+</div></section>
+
 <section class="section"><div class="wrap">
-  <div class="section-head"><h2>Six programs, one American standard.</h2><p>From a child's first day of kindergarten to an adult's diploma or teaching certificate.</p></div>
+  <div class="section-head"><h2>One American standard, for every stage.</h2><p>From a child's first day of kindergarten to an adult's diploma or teaching certificate.</p></div>
   {program_cards()}
 </div></section>
 
 <section class="section bg-white"><div class="wrap">
-  <div class="section-head"><h2>Why families choose AGI</h2><p>A small school where every learner is known by name.</p></div>
+  <div class="section-head"><h2>Affordable, creative and inclusive.</h2><p>Our promise to every family since 2013. School + Home + Community = Student Success.</p></div>
   <div class="gallery" style="margin-bottom:28px">{ph("home-classroom", "A multi-grade classroom during a lesson", "4/3", "wide")}{ph("home-reading", "A student reading or presenting", "4/3")}</div>
   <div class="cards" style="--cols:4">
-    <div><h3>Inclusive by design</h3><p>Mainstream and special-needs learners study side by side, with individual plans where they need them.</p></div>
-    <div><h3>Creative curriculum</h3><p>American pedagogy taught with imagination, drawing on Montessori and Waldorf ideas.</p></div>
-    <div><h3>Genuinely affordable</h3><p>An international standard within reach of Moroccan families, with books and exams included.</p></div>
-    <div><h3>English for life</h3><p>Every grade is benchmarked on the CEFR and assessed with Anglia Examinations of England.</p></div>
+    <div><span class="tag">Affordable</span><h3>Within reach</h3><p>An international standard for working families, with books, mathematics and Anglia exams included.</p></div>
+    <div><span class="tag">Creative</span><h3>Learning with imagination</h3><p>American pedagogy in small multi-grade classes, enriched by Montessori and Waldorf ideas.</p></div>
+    <div><span class="tag">Inclusive</span><h3>No one held back</h3><p>Grade placement is never lowered for missing documents, language gaps or academic gaps.</p></div>
+    <div><span class="tag">English for life</span><h3>Certified progress</h3><p>Every grade is benchmarked on the CEFR and assessed with Anglia Examinations of England.</p></div>
   </div>
 </div></section>
 
@@ -250,11 +263,12 @@ page("about.html", "About AGI – American Group International, Agadir",
     <p>American Group International School is a small private school in the Berber community of the Souss, in Agadir. The first classes started in 2013 with five children. The school soon outgrew its one-room beginnings and moved to Hay Nahda, where kindergarten to grade 12 is now taught in eight multi-grade classrooms.</p>
     <p>Over eleven years, AGI has welcomed students of more than 46 nationalities. Its enrollment is open: the school was created for students who need a program the Moroccan system may not offer – an American curriculum, English immersion, or support for learning differences.</p>
     <p>In 2021 AGI became the Anglia Examinations franchise holder for Morocco, and it now runs the Anglia network across the Kingdom's twelve regions from its Agadir headquarters. Its mission remains the same: an international education that working families in Morocco can afford.</p>
+    <p>{PH_TXT('expansion-about', 'Today AGI also works beyond Agadir [to confirm with AGI: other Moroccan cities, Mauritania, and the United States through American Group USA LLC].')}</p>
   </div>
 </div></section>
 
 <section class="section"><div class="wrap">
-  <div class="section-head"><h2>Mission, philosophy and vision</h2></div>
+  <div class="section-head"><h2>Mission, philosophy and vision</h2><p>Affordable, creative and inclusive. “Global Minds with a Global Perspective.” School + Home + Community = Student Success.</p></div>
   <div class="cards">
     <div><span class="tag">Mission</span><p>To serve the Agadir region by giving children a strong educational foundation following American philosophy and practice, so that they become independent, critical thinkers and caring, contributing members of society.</p></div>
     <div><span class="tag">Philosophy</span><p>Academic excellence, discipline, ethical standards and respect for others. We develop the whole child – intellectual, social, emotional, character and physical – and foster a general respect for all humanity.</p></div>
@@ -265,13 +279,14 @@ page("about.html", "About AGI – American Group International, Agadir",
 <section class="section bg-white"><div class="wrap director">
   <img src="assets/web/director-julie-wilburn.jpg" alt="Julie A. Wilburn" width="576" height="720" loading="lazy">
   <div>
-    <p class="kicker">Leadership</p>
+    <p class="kicker">Founder &amp; leadership</p>
     <h2 style="margin-bottom:20px">Julie A. Wilburn</h2>
     <p class="cite" style="margin-bottom:24px">CEO &amp; Educational Director · Anglia Examinations Morocco, American Group International of Agadir</p>
     <div class="prose">
-      <p>Julie Wilburn leads all of AGI's educational programs: the primary and high school, curriculum, testing and assessment, staff training and the social-skills program. She also teaches in the classroom.</p>
+      <p>Julie Wilburn founded AGI and leads all of its educational programs: the primary and high school, curriculum, testing and assessment, staff training and the social-skills program. She also teaches in the classroom.</p>
       <p>She has lived in Morocco for many years and holds dual citizenship. In 2026 she was accredited as a Holistic Therapeutic Coach by IPHM and ICAHP, and she offers ADHD holistic coaching for children and adults.</p>
       <p><em>“We believe in equality, and that an international education empowers students to open global opportunities for their personal growth and success.”</em></p>
+      <p><a class="link" href="founder-letter.html">Read Julie's letter to parents</a></p>
     </div>
   </div>
 </div></section>
@@ -317,7 +332,7 @@ page("about.html", "About AGI – American Group International, Agadir",
 page("programs.html", "Programs – American Group International, Agadir",
  "AGI programs: K–12 school, special education, adult high school diploma, English and Anglia exams, teacher training and university pathways.",
  hero("<span>Programs</span>", "Programs for every stage.",
-      "Six programs share one American academic standard. Each has its own curriculum, calendar and admission requirements – and every learner starts with a free placement test.") + f"""
+      "Every AGI program shares one American academic standard. Each has its own curriculum, calendar and admission requirements – and every learner starts with a free placement test.") + f"""
 <section class="section bg-white"><div class="wrap">{program_cards(cols=2)}</div></section>
 """ + cta("Not sure which program fits?", "Book a visit or send a question – the office will help you choose and arrange a free placement test.",
            GOLD_APPLY + '<a class="btn btn-light" href="forms.html#enquiry/programs">Ask a question</a>'))
@@ -669,6 +684,8 @@ page("terms.html", "Terms of use – American Group International, Agadir", "Ter
 <h2>Links</h2><p>Links to other websites are provided for convenience; we are not responsible for their content.</p>
 <h2>Contact</h2><p>Questions about these terms: <a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a>.</p>
 </div></div></section>""", LEGAL_CSS)
+
+exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "audiences.py"), encoding="utf-8").read())
 
 if __name__ == "__main__":
     for name, doc in PAGES.items():
