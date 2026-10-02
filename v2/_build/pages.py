@@ -47,7 +47,7 @@ LIGHT_VISIT = '<a class="btn btn-light" href="forms.html#visit">Book a visit</a>
 
 PROGRAM_CARDS = [
  ("k12.html", "Ages 5–18", "K–12 school", "An American-curriculum micro-school from kindergarten to grade 12, with English support through the Anglia system for children who don't speak English at home."),
- ("special-education.html", "Inclusive", "Special education (SEN)", "Individualized Education Plans, small-group classes and support from occupational therapy to speech-language and behavioural care."),
+ ("special-education.html", "Inclusive", "Special education (SEN)", "Individualized Education Plans, small-group classes and support from occupational therapy to speech-language and behavioral care."),
  ("adult-diploma.html", "Age 16+", "Adult high school diploma", "A self-paced U.S. high school completion program with American Worldwide Academy, with every test proctored on site in Agadir."),
  ("english-anglia.html", "All ages", "English & Anglia exams", "AGI is the Anglia Examinations headquarters for Morocco: ten CEFR-mapped levels, Saturday classes for children and courses for adults."),
  ("professional.html", "Educators & professionals", "Teacher training & professional", "The C.I.T.E. teaching certificate, exam proctoring, business and medical English, and ADHD holistic coaching."),
@@ -72,8 +72,8 @@ HOME_CSS = """
 .seal img{position:absolute;inset:12%;width:76%;height:76%;object-fit:contain;filter:drop-shadow(0 30px 50px rgba(0,0,0,.45))}
 .seal::before,.seal::after{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid rgba(201,162,39,.35)}
 .seal::after{inset:-9%;border-color:rgba(255,255,255,.1)}
-.enrol{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;border-top:1px solid var(--line-dark);padding-top:22px;font-size:14px;color:rgba(255,255,255,.75)}
-.enrol b{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.enroll{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;border-top:1px solid var(--line-dark);padding-top:22px;font-size:14px;color:rgba(255,255,255,.75)}
+.enroll b{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:500}
 .home-facts{background:var(--navy-deep);padding-bottom:clamp(48px,6vw,80px)}
 .dates{border-top:1px solid var(--line-dark);margin:0}
 .dates div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-dark);font-size:14.5px}
@@ -101,7 +101,7 @@ page("index.html", "American Group International – American school in Agadir, 
       <div class="btn-row">{GOLD_APPLY}{LIGHT_VISIT}<a class="link" href="programs.html">Explore programs</a></div>
     </div>
     <div class="seal"><img src="assets/web/agi-seal-520.png" alt="The AGI seal: American and Moroccan flags, Agadir, established 2013" width="520" height="520" fetchpriority="high"></div>
-    <p class="enrol"><b>Now enrolling</b> Academic year 2026–27, all programs. Registration days are August 28 and 31.</p>
+    <p class="enroll"><b>Now enrolling</b> Academic year 2026–27, all programs. Registration days are August 28 and 31.</p>
   </div>
 </section>
 <section class="home-facts" aria-label="AGI in numbers"><div class="wrap facts">
@@ -143,7 +143,7 @@ page("index.html", "American Group International – American school in Agadir, 
     <div class="cards" style="--cols:2">
       <div><span class="num">01</span><h3>Enquire &amp; visit</h3><p>Tours are arranged individually, so you can meet the team and see the classrooms.</p></div>
       <div><span class="num">02</span><h3>Placement test</h3><p>A free assessment, including the Anglia level test for language learners.</p></div>
-      <div><span class="num">03</span><h3>Documents</h3><p>Previous school records, a behaviour report, and proof of age, residency and immunization.</p></div>
+      <div><span class="num">03</span><h3>Documents</h3><p>Previous school records, a behavior report, and proof of age, residency and immunization.</p></div>
       <div><span class="num">04</span><h3>Enroll</h3><p>Pay the annual inscription and confirm the monthly plan on registration days.</p></div>
     </div>
     <div>
@@ -197,10 +197,10 @@ NETWORK = [("net-agi-seal", "K–12 division", "American Group International Sch
  ("net-anglia", "Examinations", "Anglia Examinations England", "AGI is the Anglia franchise holder and headquarters for Morocco."),
  ("net-pods", "Learning pods", "AGI Learning Pods & Fast Track", "Small-group programs led by teacherpreneurs."),
  ("net-ahs", "Online partner", "American High School Online", "A Cognia-accredited online high school for grades 9–12."),
- ("net-iheart", "Wellbeing", "I-Heart Women & Family Institute", "Emotional and behavioural support, accredited by IPHM and ICAHP."),
+ ("net-iheart", "Wellbeing", "I-Heart Women & Family Institute", "Emotional and behavioral support, accredited by IPHM and ICAHP."),
  ("net-ccg", "UK partner", "Chichester College Group", "Seven colleges in the south of England, with UK progression routes."),
  ("net-leverage", "University pathways", "Leverage Edu", "University placement with housing assistance.")]
-net = "".join(f'<figure><img src="assets/web/{i}.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>{n}</b>{k} – {d}</figcaption></figure>' for i, k, n, d in NETWORK)
+net = "".join(f'<figure><img src="assets/web/{i}.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>{n}</b>{d}</figcaption></figure>' for i, k, n, d in NETWORK)
 ACC = [("American Council of Training and Development", "Accreditation", "AGI's institutional accreditor for the American-curriculum school and its programs."),
  ("U.S. state departments of education", "Recognition", "Recognized by the departments of education of Tennessee, Florida, Colorado and Alabama."),
  ("Cognia", "Accreditation", "The American High School Online program for grades 9–12 is Cognia accredited; the high school books program is Florida accredited."),
@@ -209,7 +209,7 @@ ACC = [("American Council of Training and Development", "Accreditation", "AGI's 
  ("AIM Qualifications · Ofqual", "Regulation", "Anglia's English qualifications are delivered with AIM Qualifications and Assessment Group, regulated by Ofqual in England."),
  ("UCAS", "Recognition", "The Anglia Proficiency examination is listed by UCAS as evidence of English competence for British universities."),
  ("Global Schools Program", "Membership", "An initiative of the UN Sustainable Development Solutions Network, supporting education for sustainable development. Member since 2023."),
- ("American School Counselor Association", "Membership", "AGI joined ASCA in 2026, bringing U.S. school-counselling standards to student guidance.")]
+ ("American School Counselor Association", "Membership", "AGI joined ASCA in 2026, bringing U.S. school-counseling standards to student guidance.")]
 acc = "".join(f'<div><dt>{n}<small style="display:block;font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-top:6px">{k}</small></dt><dd>{d}</dd></div>' for n, k, d in ACC)
 
 page("about.html", "About AGI – American Group International, Agadir",
@@ -252,8 +252,8 @@ page("about.html", "About AGI – American Group International, Agadir",
   <div class="section-head"><h2>The team</h2><p>A small team, so families always know who to call.</p></div>
   <dl class="rows">
     <div><dt>Julie A. Wilburn</dt><dd>CEO &amp; Educational Director. Admissions, curriculum, student plans and Anglia Morocco.</dd></div>
-    <div><dt>Abdelhak Lam</dt><dd>Sales Coordinator, main headquarters, Agadir. Payments and the Anglia Morocco centres.</dd></div>
-    <div><dt>Admissions office</dt><dd>Enrolment, records, placement testing and document requests. <a class="link" href="forms.html">Forms &amp; requests</a></dd></div>
+    <div><dt>Abdelhak Lam</dt><dd>Sales Coordinator, main headquarters, Agadir. Payments and the Anglia Morocco centers.</dd></div>
+    <div><dt>Admissions office</dt><dd>Enrollment, records, placement testing and document requests. <a class="link" href="forms.html">Forms &amp; requests</a></dd></div>
   </dl>
 </div></section>
 
@@ -303,7 +303,7 @@ program_page("special-education.html", "Special education", "Special education (
   <dl class="rows">
     <div><dt>Individualized Education Plans</dt><dd>Each student's plan sets goals and accommodations for their needs and abilities, and is reviewed with parents through the year.</dd></div>
     <div><dt>Small-group classrooms</dt><dd>Small classes mean personal attention and a calm, supportive place to learn.</dd></div>
-    <div><dt>Therapy and behavioural support</dt><dd>From occupational therapy to speech-language pathology and behavioural care, working with professional caregivers.</dd></div>
+    <div><dt>Therapy and behavioral support</dt><dd>From occupational therapy to speech-language pathology and behavioral care, working with professional caregivers.</dd></div>
     <div><dt>An inclusive community</dt><dd>Every student is valued, respected and given the chance to thrive alongside their classmates.</dd></div>
   </dl>
 </div></section>
@@ -313,8 +313,8 @@ program_page("special-education.html", "Special education", "Special education (
     <p>The high school program focuses on life skills, vocational training and preparing for independence, so students leave with the tools to succeed after graduation.</p>
     <p>Subjects follow the AGI spine with individual accommodations: English, mathematics, science, history, reading, spelling, Arabic, physical education, fine arts and ESL.</p>
     <h3>Before you apply</h3>
-    <p>To provide an IEP or special-needs support, AGI needs documentation from a licensed practitioner, together with the student's previous school records and a behaviour report. A parent's description alone isn't enough to put the right support in place.</p>
-    <p>Related services: <a href="professional.html#adhd">ADHD holistic coaching</a> for children and adults, and emotional and behavioural support through our partner, the I-Heart Women &amp; Family Institute.</p>
+    <p>To provide an IEP or special-needs support, AGI needs documentation from a licensed practitioner, together with the student's previous school records and a behavior report. A parent's description alone isn't enough to put the right support in place.</p>
+    <p>Related services: <a href="professional.html#adhd">ADHD holistic coaching</a> for children and adults, and emotional and behavioral support through our partner, the I-Heart Women &amp; Family Institute.</p>
   </div>
 </div></section>
 """, "Talk to us about your child.", "Book a visit to meet the team, or send a question first – everything you share is handled in confidence.",
@@ -328,9 +328,9 @@ program_page("adult-diploma.html", "Adult high school diploma", "Adult high scho
   <div class="intro"><h2>How it works</h2><p>Offered in partnership with American Worldwide Academy. AGI's first adult graduate received their diploma in 2019.</p></div>
   <dl class="rows">
     <div><dt>Study at your own pace</dt><dd>Work through each course independently, online or by correspondence, with tutorial help when you need it.</dd></div>
-    <div><dt>Tests in Agadir</dt><dd>Every test is proctored on site at the AGI centre. Graduation requires a passing score of 80 percent.</dd></div>
+    <div><dt>Tests in Agadir</dt><dd>Every test is proctored on site at the AGI center. Graduation requires a passing score of 80 percent.</dd></div>
     <div><dt>English included</dt><dd>All students learn English and sit an English exam as part of the program.</dd></div>
-    <div><dt>Support after graduation</dt><dd>Enrolment and graduation verification, letters of recommendation and official transcripts for further study.</dd></div>
+    <div><dt>Support after graduation</dt><dd>Enrollment and graduation verification, letters of recommendation and official transcripts for further study.</dd></div>
   </dl>
 </div></section>
 <section class="section"><div class="wrap split">
@@ -350,7 +350,7 @@ program_page("adult-diploma.html", "Adult high school diploma", "Adult high scho
 CEFR = [("Kindergarten", "5–6", "Pre-A1 / A1", "Understands simple classroom instructions and basic vocabulary."),
  ("Grades 1–2", "6–8", "A1 – A2", "Speaks in simple sentences; reads short stories and writes simple sentences."),
  ("Grades 3–4", "8–10", "A2 – A2+", "Follows lessons, writes short paragraphs and explains ideas in discussion."),
- ("Grade 5", "10–11", "B1", "Reads chapter books and writes organised paragraphs. Elementary graduation benchmark."),
+ ("Grade 5", "10–11", "B1", "Reads chapter books and writes organized paragraphs. Elementary graduation benchmark."),
  ("Grades 6–8", "11–14", "B1+ – B2", "Understands academic vocabulary and lectures; writes essays and analyses texts."),
  ("Grades 9–11", "14–17", "B2 – C1", "Handles academic reading, research, debate and complex presentations."),
  ("Grade 12", "17–18", "C1", "University-level reading and academic writing.")]
@@ -387,7 +387,7 @@ program_page("english-anglia.html", "English & Anglia exams", "English & Anglia 
     <div><dt>Conversation</dt><dd>Speaking practice and new vocabulary.</dd></div>
     <div><dt>ESL 100 – 300</dt><dd>From beginner to advanced (B2): academic reading, essays and research writing.</dd></div>
     <div><dt>English writing</dt><dd>Narrative and descriptive writing, job applications and CVs.</dd></div>
-    <div><dt>Business &amp; medical English</dt><dd>For organisations and clinicians – see <a class="link" href="professional.html">professional programs</a>.</dd></div>
+    <div><dt>Business &amp; medical English</dt><dd>For organizations and clinicians – see <a class="link" href="professional.html">professional programs</a>.</dd></div>
   </dl>
 </div></section>
 <section class="section" id="cefr"><div class="wrap">
@@ -396,7 +396,7 @@ program_page("english-anglia.html", "English & Anglia exams", "English & Anglia 
 </div></section>
 <section class="section bg-white"><div class="wrap split">
   <div class="intro"><h2>Anglia across Morocco</h2></div>
-  <div class="prose"><p>From its Agadir headquarters, Anglia Morocco works with schools, language centres and teachers in the Kingdom's twelve regions. Schools can become Anglia exam centres, and franchise opportunities are open in several regions.</p>
+  <div class="prose"><p>From its Agadir headquarters, Anglia Morocco works with schools, language centers and teachers in the Kingdom's twelve regions. Schools can become Anglia exam centers, and franchise opportunities are open in several regions.</p>
   <p><a class="link" href="partnerships.html">Partnerships &amp; franchise</a></p></div>
 </div></section>
 """, "Find your level.", "Book a free Anglia level test – the office will suggest the right class afterwards.",
@@ -407,9 +407,9 @@ PRO = [("cite", "C.I.T.E. / TESOL", "For English teachers", "Anglia's Certificat
  ("sponsorship", "USA teacher sponsorship", "For aspiring educators", "Certification sponsorship for private-school teaching in the United States. Requires a bachelor's degree, a clear background check and a sponsoring school. Fee: $60. Not valid for U.S. public schools."),
  ("courses", "Independent course studies", "Self-paced", "Graduate-level, self-taught modules using books and journals; certificates approved by the American Canadian Board."),
  ("proctoring", "Proctoring services", "Exam invigilation", "Paper and online exams invigilated at AGI for distance learners of North American and British universities, companies and certification bodies. Monday to Thursday, 9:00–17:00. A 200 MAD (15 EUR) administration fee plus 200 MAD (15 EUR) per exam hour."),
- ("business", "Corporate & business English", "For organisations", "Anglia Business English in four steps from A2+ to C1, on site at your company or at AGI."),
+ ("business", "Corporate & business English", "For organizations", "Anglia Business English in four steps from A2+ to C1, on site at your company or at AGI."),
  ("medical", "Medical English", "For clinicians", "English for medical professionals: patient communication, handovers, seminars and medical papers."),
- ("adhd", "ADHD holistic coaching", "In Agadir and online", "One-to-one coaching for children and adults on focus, organisation and time management, with Julie Wilburn, an accredited Holistic Therapeutic Coach (IPHM, ICAHP).")]
+ ("adhd", "ADHD holistic coaching", "In Agadir and online", "One-to-one coaching for children and adults on focus, organization and time management, with Julie Wilburn, an accredited Holistic Therapeutic Coach (IPHM, ICAHP).")]
 pro = "".join(f'<div id="{i}"><dt>{n}<small style="display:block;font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-top:6px">{w}</small></dt><dd>{d}</dd></div>' for i, n, w, d in PRO)
 program_page("professional.html", "Teacher training & professional", "Teacher training & professional programs",
  "Teacher training and professional services at AGI Agadir: C.I.T.E./TESOL, exam proctoring, U.S. teacher sponsorship, business and medical English, ADHD coaching.",
@@ -430,7 +430,7 @@ program_page("pathways.html", "University pathways", "University pathways",
     <div><dt>Moving abroad</dt><dd>Accommodation, visa applications, health insurance and support for families.</dd></div>
     <div><dt>Funding</dt><dd>Help with scholarship and financial-aid applications.</dd></div>
     <div><dt>More than one diploma</dt><dd>Double-diploma programs and language training alongside your studies.</dd></div>
-    <div><dt>Career guidance</dt><dd>Career counselling and cultural orientation before you leave.</dd></div>
+    <div><dt>Career guidance</dt><dd>Career counseling and cultural orientation before you leave.</dd></div>
   </dl>
 </div></section>
 <section class="section"><div class="wrap">
@@ -496,9 +496,9 @@ page("student-life.html", "Student life – American Group International, Agadir
 POL = [("attendance", "Attendance", "K–12 students must attend 90% of the school year to be promoted. Parents give a dated, signed excuse for any absence within two days of the student's return. Arriving after 9:00 is a late arrival; after 10:00 it counts as a full-day absence. Five unexcused late arrivals equal one unexcused absence."),
  ("promotion", "Promotion & retention", "Promotion follows the grade-level criteria: at least 64% (D) in each core subject – mathematics, science, language arts and social studies – 90% attendance, maturity shown through the year and the English assessment. Students who are not promoted may attend summer remediation and be retested."),
  ("placement", "Provisional placement", "Every new student sits English/ESL and academic assessments before admission, whatever system they come from, so placement holds even when previous records are incomplete."),
- ("parents", "Parent responsibility", "Enrolment begins with a 90-day adjustment period and shared expectations on attendance, participation, safeguarding and following up on learning at home."),
- ("refunds", "Refunds & complaints", "One procedure across all divisions – the school, AGI Learning Pods, iHeart therapeutic services and Anglia Morocco – covering enrolment, refunds, complaints and counselling. The annual inscription is non-refundable."),
- ("counselling", "School counselling", "Guidance from the school counselor is advisory: it supports academic success and personal growth but is not medical diagnosis or therapy."),
+ ("parents", "Parent responsibility", "Enrollment begins with a 90-day adjustment period and shared expectations on attendance, participation, safeguarding and following up on learning at home."),
+ ("refunds", "Refunds & complaints", "One procedure across all divisions – the school, AGI Learning Pods, iHeart therapeutic services and Anglia Morocco – covering enrollment, refunds, complaints and counseling. The annual inscription is non-refundable."),
+ ("counseling", "School counseling", "Guidance from the school counselor is advisory: it supports academic success and personal growth but is not medical diagnosis or therapy."),
  ("media", "Media", "How photos, video and live streams of school events may be used on the website, social media and print – always with consent and safeguarding first."),
  ("service", "Service hours", "High school graduation requires 40 documented volunteer hours, ten each year, approved by the school."),
  ("homework", "Homework", "Nightly homework grows from 10–20 minutes in kindergarten to 2–3 hours in the last years of high school.")]
@@ -614,7 +614,7 @@ page("terms.html", "Terms of use – American Group International, Agadir", "Ter
  hero("<span>Terms</span>", "Terms of use.", "The terms that apply to using this website. Last updated October 2026.") + """
 <section class="section bg-white"><div class="wrap"><div class="prose">
 <h2>About this website</h2><p>This website is published by American Group International and Anglia Morocco, Number 20, Rue Baalabek, Hay Nahda, Agadir, Morocco.</p>
-<h2>Information on the site</h2><p>We work to keep program details, dates and fees accurate, but they can change. The office confirms fees, dates and availability before enrolment. Enrolment in any program is governed by the enrolment agreement and the AGI policies provided by the office.</p>
+<h2>Information on the site</h2><p>We work to keep program details, dates and fees accurate, but they can change. The office confirms fees, dates and availability before enrollment. Enrollment in any program is governed by the enrollment agreement and the AGI policies provided by the office.</p>
 <h2>Using the forms</h2><p>Please provide accurate information in our forms. Sending a form is a request; it does not by itself confirm a place, a booking or a payment.</p>
 <h2>Content and marks</h2><p>Text and images on this site belong to AGI or are used with permission. Partner names, seals and logos belong to their respective institutions.</p>
 <h2>Links</h2><p>Links to other websites are provided for convenience; we are not responsible for their content.</p>

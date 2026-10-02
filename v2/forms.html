@@ -212,8 +212,8 @@ function contact({ rel = null, optional = false } = {}) {
 const FORMS = [
 { id: "enrollment", group: "Admissions", title: "Enrollment application", short: "Apply for a place in any AGI program", mins: 5,
   intro: "Apply for a place at AGI, from kindergarten to grade 12, the adult high school diploma, Anglia English or special education. Send one application per student.",
-  have: ["The student's previous school records and a behaviour report", "Proof of age and residency", "Immunization and physical examination records", "For an IEP or special-needs support: documentation from a licensed practitioner"],
-  next: "Admissions contacts you to arrange the free placement test and a visit. Registration days for 2026–27 are August 28 and 31. The annual inscription is paid once at enrolment and is non-refundable.",
+  have: ["The student's previous school records and a behavior report", "Proof of age and residency", "Immunization and physical examination records", "For an IEP or special-needs support: documentation from a licensed practitioner"],
+  next: "Admissions contacts you to arrange the free placement test and a visit. Registration days for 2026–27 are August 28 and 31. The annual inscription is paid once at enrollment and is non-refundable.",
   submit: "Send application", sent: "Application sent",
   sections: [
     { legend: "Student", fields: [
@@ -300,7 +300,7 @@ const FORMS = [
 { id: "payment", group: "Payments", title: "Payment notice", short: "Tell the office about a payment you made", mins: 3,
   intro: "Let the office know about a payment you have made, so it is matched to the right student and a receipt is issued.",
   have: ["Your transfer reference, cheque number or receipt number", "The student's name and the months the payment covers"],
-  next: "The office checks the payment and confirms by email. As a reminder: the annual inscription is paid once at enrolment, then tuition is 2,600 MAD a month over ten months.",
+  next: "The office checks the payment and confirms by email. As a reminder: the annual inscription is paid once at enrollment, then tuition is 2,600 MAD a month over ten months.",
   notice: "Never type card numbers into this or any other form. To pay by card, use AGI's <a href=\"" + CONFIG.cardPayment + "\" target=\"_blank\" rel=\"noopener\">secure online payment page</a>, then send this notice with the receipt number.",
   submit: "Send payment notice", sent: "Payment notice sent",
   sections: [
@@ -350,7 +350,7 @@ const FORMS = [
     { legend: "Your details", fields: contact() } ] },
 
 { id: "documents", group: "Records", title: "Request a document", short: "Transcripts, certificates and attestations", mins: 3,
-  intro: "Order a transcript, enrolment certificate, attestation or diploma copy for a current or former student.",
+  intro: "Order a transcript, enrollment certificate, attestation or diploma copy for a current or former student.",
   have: ["The student's full name and date of birth as on school records", "The years the student attended", "Where the document needs to go"],
   next: "The office confirms the processing time and any fee before preparing the document.",
   submit: "Request document", sent: "Document requested",
@@ -361,7 +361,7 @@ const FORMS = [
       { n: "years", l: "Years attended", req: 1, h: "For example: 2019–2024" },
       { n: "last_grade", l: "Last grade completed", t: "select", opts: [...GRADES, "Adult high school diploma"] } ] },
     { legend: "Document", fields: [
-      { n: "doc_type", l: "Document", t: "select", req: 1, opts: ["Academic transcript", "Enrolment certificate", "Attendance attestation", "Diploma copy", "Apostille-legalised copy", "Other"] },
+      { n: "doc_type", l: "Document", t: "select", req: 1, opts: ["Academic transcript", "Enrollment certificate", "Attendance attestation", "Diploma copy", "Apostille-legalised copy", "Other"] },
       { n: "copies", l: "Number of copies", t: "number", req: 1, min: 1, max: 10, v: 1 },
       { n: "language", l: "Language", t: "select", req: 1, opts: ["English", "French", "Arabic"] },
       { n: "purpose", l: "Purpose", h: "For example: university application, visa, transfer" },
@@ -377,7 +377,7 @@ const FORMS = [
   sections: [
     { legend: "Your enquiry", fields: [
       { n: "topic", l: "Topic", t: "select", req: 1, opts: ["Programs & admissions", "Anglia examinations", "Partnership or franchise", "Careers at AGI", "Other"] },
-      { n: "organisation", l: "Organisation", ac: "organization", h: "For partnership and franchise enquiries" },
+      { n: "organization", l: "Organization", ac: "organization", h: "For partnership and franchise enquiries" },
       { n: "message", l: "Message", t: "textarea", req: 1 } ] },
     { legend: "Your details", fields: contact() } ] }
 ];
@@ -459,7 +459,7 @@ function renderIndex() {
     '<p>WhatsApp <a href="https://wa.me/212688739393">+212 688 739 393</a></p><p>The office is closed on Sundays.</p></div>';
 }
 
-/* ---------------- behaviour ---------------- */
+/* ---------------- behavior ---------------- */
 const panel = document.getElementById("panel"), index = document.getElementById("index");
 panel.insertAdjacentHTML("beforeend", FORMS.map(renderForm).join(""));
 index.innerHTML = renderIndex();
