@@ -281,10 +281,10 @@ page("about.html", "About AGI – American Group International, Agadir",
   <div>
     <p class="kicker">Founder &amp; leadership</p>
     <h2 style="margin-bottom:20px">Julie A. Wilburn</h2>
-    <p class="cite" style="margin-bottom:24px">CEO &amp; Educational Director · Anglia Examinations Morocco, American Group International of Agadir</p>
+    <p class="cite" style="margin-bottom:24px">CEO &amp; Educational Director · Anglia Examinations Morocco, American Group International of Agadir {PH_TXT('title-global-ops', '· Director of Global Operations')}</p>
     <div class="prose">
       <p>Julie Wilburn founded AGI and leads all of its educational programs: the primary and high school, curriculum, testing and assessment, staff training and the social-skills program. She also teaches in the classroom.</p>
-      <p>She has lived in Morocco for many years and holds dual citizenship. In 2026 she was accredited as a Holistic Therapeutic Coach by IPHM and ICAHP, and she offers ADHD holistic coaching for children and adults.</p>
+      <p>She has lived in Morocco for many years and holds dual {PH_TXT('dual-citizenship', 'American-Moroccan')} citizenship. In 2026 she was accredited as a Holistic Therapeutic Coach by IPHM and ICAHP, and she offers ADHD holistic coaching for children and adults.</p>
       <p><em>“We believe in equality, and that an international education empowers students to open global opportunities for their personal growth and success.”</em></p>
       <p><a class="link" href="founder-letter.html">Read Julie's letter to parents</a></p>
     </div>
@@ -409,7 +409,7 @@ program_page("english-anglia.html", "English & Anglia exams", "English & Anglia 
  "English, measured step by step.",
  "AGI is the headquarters of Anglia Examinations in Morocco. Children and adults learn English in small groups and certify their level with exams from England – starting with a free level test.", f"""
 <section class="section bg-white"><div class="wrap split">
-  <div class="intro"><h2>Anglia Examinations</h2><p>Based in Chichester, England, since 1993. AGI has used the Anglia system in its language programs since 2013, and in 2021 became the Anglia franchise holder for Morocco. AGI is proud to be the official partner in Morocco of Chichester College Group, UK.</p></div>
+  <div class="intro"><h2>Anglia Examinations</h2><p>Based in Chichester, England, since 1993. AGI has used the Anglia system in its language programs since 2013, and in 2021 became the {PH_TXT('exclusive-franchise', 'exclusive')} Anglia franchise holder for Morocco. AGI is proud to be the official partner in Morocco of Chichester College Group, UK. {PH_TXT('anglia-history', 'Anglia was first introduced in Morocco in 2010 by Suzanne Linsen.')}</p></div>
   <dl class="rows">
     <div><dt>Ten levels</dt><dd>From young learner to expert user, mapped to the Common European Framework (CEFR). There is no minimum age; young learners start at about four.</dd></div>
     <div><dt>All four skills</dt><dd>Every level tests listening, reading, writing and speaking.</dd></div>
@@ -456,7 +456,7 @@ program_page("english-anglia.html", "English & Anglia exams", "English & Anglia 
 </div></section>
 <section class="section bg-white"><div class="wrap split">
   <div class="intro"><h2>Anglia across Morocco</h2></div>
-  <div class="prose"><p>From its Agadir headquarters, Anglia Morocco works with schools, language centers and teachers in the Kingdom's twelve regions. Schools can become Anglia exam centers, and franchise opportunities are open in several regions.</p>
+  <div class="prose"><p>From its Agadir headquarters, Anglia Morocco works with schools, language centers and teachers in the Kingdom's twelve regions. Schools can become Anglia exam centers, and franchise opportunities are open in several regions, {PH_TXT('open-regions', 'including Oujda, Fès, Agadir and Taroudant')}.</p>
   <p>Anglia Morocco contacts: <a href="mailto:j.wilburn@angliamorocco.org">j.wilburn@angliamorocco.org</a> · <a href="mailto:a.lam@angliamorocco.org">a.lam@angliamorocco.org</a></p>
   <p><a class="link" href="partnerships.html">Partnerships &amp; franchise</a> &nbsp; <a class="link" href="https://angliamorocco.org/" target="_blank" rel="noopener">angliamorocco.org</a></p></div>
 </div></section>
@@ -500,6 +500,15 @@ program_page("pathways.html", "University pathways", "University pathways",
     <div><span class="tag">United Kingdom</span><h3>Chichester College Group</h3><p>Seven colleges in the south of England – Chichester, Crawley, Worthing, Brinsbury, Brighton MET, Northbrook and Haywards Heath – with UK progression routes for AGI learners.</p><a class="more" href="journal-ccgi-partnership.html">Read about the partnership</a></div>
     <div><span class="tag">Placement</span><h3>Leverage Edu</h3><p>Our regional partner for the Souss and southern Morocco: private and public university placement, with housing assistance.</p></div>
     <div><span class="tag">English requirement</span><h3>Anglia Proficiency</h3><p>Listed by UCAS as evidence of English for British universities – and taken right here in Agadir.</p><a class="more" href="english-anglia.html">English &amp; Anglia exams</a></div>
+  </div>
+  <h3 style="margin:48px 0 16px">Partner universities and colleges</h3>
+  <div class="cards" data-placeholder="fact:partner-universities">
+    <div><span class="tag">United Kingdom</span><h3 class="ph-text">Royale Business College (RB College)</h3><p>Academic and vocational programs.</p></div>
+    <div><span class="tag">United Kingdom</span><h3 class="ph-text">Britts Imperial University College</h3><p>Undergraduate and postgraduate pathways.</p></div>
+    <div><span class="tag">United Kingdom</span><h3 class="ph-text">University of London</h3><p>Distance-learning degrees.</p></div>
+    <div><span class="tag">Spain</span><h3 class="ph-text">UCAM</h3><p>Catholic University of Murcia.</p></div>
+    <div><span class="tag">Switzerland</span><h3 class="ph-text">Geneva Business School</h3><p>Business degrees.</p></div>
+    <div><span class="tag">British education</span><h3 class="ph-text">SIST British Education</h3><p>British-curriculum pathways.</p></div>
   </div>
 </div></section>
 """, "Plan your next step.", "Tell us where you'd like to study. The office will reply within one working day.",

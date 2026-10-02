@@ -61,7 +61,7 @@ page("parents.html", "For parents – American Group International, Agadir",
   <dl class="rows">
     <div><dt>Individual plans</dt><dd>Individualized Education Plans for students who need them, built with you and, where needed, with your child's doctors and therapists. <a class="link" href="special-education.html">Special education</a></dd></div>
     <div><dt>Emotional wellbeing</dt><dd>AGI's founder, Julie Wilburn, is an accredited Holistic Therapeutic Coach, and the school is a member of the American School Counselor Association.</dd></div>
-    <div><dt>Time for family</dt><dd>Homework is planned by grade so that learning at home stays balanced. <a class="link" href="student-life.html">Homework guide</a></dd></div>
+    <div><dt>Time for family</dt><dd>{PH_TXT('limited-homework', 'Limited homework, so children have time to bond with their families.')} Homework is planned by grade so that learning at home stays balanced. <a class="link" href="student-life.html">Homework guide</a></dd></div>
     <div><dt>English for life</dt><dd>Every grade is benchmarked on the CEFR and certified with Anglia Examinations of England. <a class="link" href="english-anglia.html">English &amp; Anglia</a></dd></div>
   </dl>
 </div></section>
@@ -111,9 +111,10 @@ page("founder-letter.html", "A letter from our founder – American Group Intern
   <p>Having lived in Morocco for many years, I saw how often good families were shut out – by fees that were out of reach, or by systems that held children back because they learned differently or were still learning a language. So we built something else: a school that is <strong>affordable, creative and inclusive</strong>.</p>
   <p>At AGI, a child is never moved down a grade because of a language gap or a missing document. We welcome them, assess what they can do, and give them the support they need. As a Holistic Therapeutic Coach, I care as much about how our students feel as about what they learn, because children only thrive when they feel safe and valued.</p>
   <p>Since that first room, students of more than 46 nationalities have learned together with us. We outgrew our beginnings, moved to Hay Nahda, and in 2021 AGI became the Anglia Examinations franchise holder for Morocco, bringing internationally recognized English certification to students across the Kingdom.</p>
+  <p>{PH_TXT('letter-expansion', 'Today we also serve families beyond Agadir – in other Moroccan cities, in Mauritania and in the United States.')}</p>
   <p>Our motto says what we believe: <em>School + Home + Community = Student Success</em>. Trusting a school with your child is trusting it with what matters most to you. We take that trust seriously, every day.</p>
   <p>I would be delighted to welcome you, show you our classrooms and introduce you to our team.</p>
-  <p class="sign"><b>Julie A. Wilburn</b>Founder · CEO &amp; Educational Director, American Group International of Agadir · Anglia Examinations Morocco</p>
+  <p class="sign"><b>Julie A. Wilburn</b>Founder · CEO &amp; Educational Director, American Group International of Agadir · Anglia Examinations Morocco {PH_TXT('letter-title', '· Director of Global Operations')}</p>
 </article>
 </div></section>
 """ + cta("Visit AGI.", "Meet Julie and the team, and see the school for yourself.", GOLD_APPLY + LIGHT_VISIT), FAQ_CSS)
@@ -198,14 +199,14 @@ page("investors.html", "Partners & investors – American Group International, A
     <div><span class="tag">Educators</span><h3>Teacher certification</h3><p>C.I.T.E. (TESOL), teacher training, a 30-day internship and U.S. private-school sponsorship.</p></div>
     <div><span class="tag">Professionals</span><h3>Professional English &amp; services</h3><p>Business and medical English, team courses and exam proctoring.</p></div>
     <div><span class="tag">Pathways</span><h3>University placement</h3><p>An authorized admissions agent with partners including Chichester College Group and Leverage Edu.</p></div>
-    <div><span class="tag">International</span><h3>American Group USA LLC</h3><p>AGI's U.S.-registered company, offering programs and coaching to clients worldwide.</p></div>
+    <div><span class="tag">International</span><h3>American Group USA LLC</h3><p>AGI's U.S.-registered company {PH_TXT('usa-llc-state', '(Maryland)')}, offering programs and coaching to clients worldwide.</p></div>
   </div>
 </div></section>
 
 <section class="section"><div class="wrap split">
   <div class="intro"><h2>Why the model works</h2></div>
   <dl class="rows">
-    <div><dt>Built for working families</dt><dd>An international standard at an accessible price reaches families that traditional international schools do not.</dd></div>
+    <div><dt>Built for working families</dt><dd>An international standard at an accessible price reaches families that traditional international schools do not. AGI has placed hundreds of students into the American educational system with low-cost programs.</dd></div>
     <div><dt>Recognized standards</dt><dd>Accredited by the American Council of Training and Development, recognized by four U.S. state departments of education, and official partner in Morocco of Chichester College Group, UK. <a class="link" href="about.html#accreditation">Accreditation</a></dd></div>
     <div><dt>A format that travels</dt><dd>Micro-schools and learning pods – small groups of about ten students – can open where demand is, without large campuses.</dd></div>
     <div><dt>Presence today</dt><dd>{PH_TXT("expansion", "Agadir headquarters; Anglia network across Morocco's twelve regions; [to confirm: other Moroccan cities, Mauritania, United States]")}</dd></div>

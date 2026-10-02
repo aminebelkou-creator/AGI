@@ -110,4 +110,7 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] Partner universities to list on pathways (RB College, Britts Imperial, UCAM, University of London, SIST, Geneva Business School) — still active?
 - [ ] Investors page: no financial claims are made; add figures only if Julie wants and can document them
 - [ ] Testimonials on the parents page are the same samples as home — replace with real ones
+- [ ] Julie's dual citizenship: say **"American-Moroccan"**? (about)
+- [ ] Founder's letter includes the expansion sentence (other Moroccan cities, Mauritania, United States) — keep only if confirmed (founder-letter)
+- [ ] "AGI has placed **hundreds of students** into the American educational system" — Julie's wording on angliamorocco.org; still accurate? (investors)
 
