@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F6F5F1;color:#0A0A0A;-webkit-font-smoothing:antialiased}
+a{color:#0A3161;text-decoration:none}
+a:hover{color:#B22234}
+::selection{background:#0A3161;color:#fff}
+.agi-nav a,.agi-nav span{white-space:nowrap}
+@keyframes agiSpin{to{transform:rotate(360deg)}}
+@keyframes agiSpinRev{to{transform:rotate(-360deg)}}
+@keyframes agiBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.018)}}
+@keyframes agiSheen{0%{transform:translateX(0) rotate(18deg)}100%{transform:translateX(420%) rotate(18deg)}}
+@keyframes agiStageIn{from{opacity:0}to{opacity:1}}
+@keyframes agiWords{0%,14%{transform:translateY(0)}20%,34%{transform:translateY(-1.1em)}40%,54%{transform:translateY(-2.2em)}60%,74%{transform:translateY(-3.3em)}80%,94%{transform:translateY(-4.4em)}100%{transform:translateY(-5.5em)}}
+.agi-wordreel{animation:agiWords 15s cubic-bezier(.7,0,.2,1) infinite}
+@keyframes agiGlow{0%,100%{opacity:.5}50%{opacity:.9}}
+@keyframes agiTilt{0%,100%{transform:rotateY(-15deg) rotateX(5deg)}50%{transform:rotateY(-2deg) rotateX(8deg)}}
+@keyframes agiNode{0%,100%{opacity:.45;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}
+@keyframes agiArc{0%,100%{opacity:.35}50%{opacity:.8}}
+.agi-medallion{animation:agiTilt 16s ease-in-out infinite}
+.agi-node{animation:agiNode 3.4s ease-in-out infinite}
+.agi-arc-1{animation:agiArc 9s ease-in-out infinite}
+.agi-arc-2{animation:agiArc 12s ease-in-out infinite reverse}
+.agi-still .agi-medallion,.agi-still .agi-node,.agi-still .agi-arc-1,.agi-still .agi-arc-2{animation:none !important}
+.agi-plinth{animation:agiGlow 7s ease-in-out infinite}
+.agi-pillars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(255,255,255,0.10)}
+@media (max-width:900px){.agi-pillars{grid-template-columns:repeat(2,minmax(0,1fr))}.agi-wordreel{animation-duration:15s}}
+@media (prefers-reduced-motion: reduce){.agi-wordreel,.agi-plinth,.agi-medallion,.agi-node,.agi-arc-1,.agi-arc-2{animation:none !important}}
+@media (max-width:900px){
+  .agi-arc-1,.agi-arc-2,.agi-marker{display:none !important}
+  .agi-herogrid{min-height:auto !important}
+  .agi-heroleft{padding-bottom:clamp(24px,5vw,40px) !important}
+  .agi-herostage{min-height:0 !important;padding-top:0 !important}
+  .agi-stage{width:min(78%,340px) !important}
+  .agi-plinth{width:min(70%,300px) !important;height:52px !important;margin-top:-20px !important}
+}
+@media (max-width:620px){
+  .agi-pillars{grid-template-columns:minmax(0,1fr) !important}
+  .agi-statgrid > div:first-child{grid-column:span 2}
+  .agi-drawer{width:100vw !important}
+  .agi-sealband{gap:18px !important}
+}
+@media (max-width:420px){
+  .agi-stage{width:min(84%,280px) !important}
+}
+.agi-roster > div:nth-child(2){margin-top:clamp(0px,5vw,72px)}
+.agi-roster > div:nth-child(3){margin-top:clamp(0px,1.6vw,24px)}
+.agi-roster > div:nth-child(4){margin-top:clamp(0px,7vw,100px)}
+.agi-roster > div:nth-child(even) .agi-portrait{aspect-ratio:4/5}
+.agi-roster > div:nth-child(3) .agi-portrait{aspect-ratio:1/1}
+.agi-statgrid > div:first-child{grid-column:span 2}
+.agi-statgrid > div:first-child p:first-child{font-size:clamp(52px,7vw,112px) !important;letter-spacing:-0.02em}
+@media (max-width:900px){.agi-triad{grid-template-columns:minmax(0,1fr) !important}.agi-triad > div{margin-top:0 !important}.agi-servindex{grid-template-columns:minmax(0,1fr) !important}.agi-roster > div{margin-top:0 !important}}
+@media (max-width:1100px){.agi-netgrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+@media (max-width:620px){.agi-netgrid{grid-template-columns:minmax(0,1fr) !important}}
+.agi-stage{animation:agiStageIn 1.2s ease both}
+.agi-still .agi-ring-a,.agi-still .agi-ring-b,.agi-still .agi-ring-c,.agi-still .agi-orbit,.agi-still .agi-seal-wrap,.agi-still .agi-sheen{animation:none !important}
+.agi-ring-a{animation:agiSpin 90s linear infinite}
+.agi-ring-b{animation:agiSpinRev 140s linear infinite}
+.agi-ring-c{animation:agiSpin 200s linear infinite}
+.agi-orbit{animation:agiSpin 60s linear infinite}
+.agi-seal-wrap{animation:agiBreathe 9s ease-in-out infinite}
+.agi-sheen{animation:agiSheen 7s cubic-bezier(.45,0,.3,1) infinite}
+@media (prefers-reduced-motion: reduce){.agi-ring-a,.agi-ring-b,.agi-ring-c,.agi-orbit,.agi-seal-wrap,.agi-sheen{animation:none !important}}
+@media (max-width:1200px){.agi-hide-md{display:none !important}}
+@media (max-width:1100px){.agi-hide-sm{display:none !important}.agi-nav{gap:16px !important}}
+@media (max-width:800px){.agi-nav{display:none !important}.agi-burger{display:flex !important}}
+@media (max-width:900px){
+.agi-stack{grid-template-columns:minmax(0,1fr) !important}
+.agi-stack2{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+.agi-progrow{grid-template-columns:48px 1fr !important;gap:8px 20px !important}
+.agi-cefrrow{grid-template-columns:minmax(0,1fr) auto !important;gap:6px 16px !important}
+.agi-cefrrow > span:nth-child(3){text-align:right}
+.agi-cefrrow > span:nth-child(4){grid-column:1 / -1}
+.agi-currow{grid-template-columns:minmax(0,1fr) !important}
+.agi-accgrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+.agi-progrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+.agi-pdesc{grid-column:2 !important}
+.agi-ptag{display:none !important}
+}
+
+
+@keyframes agiFadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes agiMsgIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes agiDot{0%,60%,100%{opacity:.25}30%{opacity:1}}
+@keyframes agiTicker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}html{scroll-behavior:auto}}
+  @keyframes agiPing { 0% { transform:scale(0.5); opacity:0.7 } 70% { transform:scale(1.35); opacity:0 } 100% { opacity:0 } }
+</style>
+</helmet>
+
+<div style="font-family:'Inter',sans-serif;font-size:16px;line-height:1.6;background:#F6F5F1">
+
+<!-- ============ NAV ============ -->
+<header style="position:sticky;top:0;z-index:60;background:rgba(246,245,241,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(10,49,97,0.12)">
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1440px;margin:0 auto;padding:0 clamp(20px,4vw,56px);height:76px">
+    <a href="#top" style="display:flex;align-items:center;gap:12px;color:#0A3161">
+      <img src="assets/agi-seal.png" alt="AGI seal" style="height:44px;width:44px;object-fit:contain;display:block"><span style="font-family:'Newsreader',serif;font-weight:500;font-size:26px;letter-spacing:0.02em">AGI</span>
+      <span class="agi-hide-sm" style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#5B6472">American Group International School · Agadir</span>
+    </a>
+    <nav class="agi-nav" style="display:flex;align-items:center;gap:32px" onMouseLeave="{{ closeMega }}">
+      <span onMouseEnter="{{ openMega }}" style="font-size:13px;font-weight:500;letter-spacing:0.04em;color:#0A3161;cursor:pointer;padding:28px 0;border-bottom:2px solid transparent" style-hover="border-bottom:2px solid #B22234">Programs</span>
+      <a href="AGI Admissions.dc.html" style="font-size:13px;font-weight:500;letter-spacing:0.04em;padding:28px 0">Admissions</a>
+      <a href="#experience" style="font-size:13px;font-weight:500;letter-spacing:0.04em;padding:28px 0">Student Life</a>
+      <a href="#stories" style="font-size:13px;font-weight:500;letter-spacing:0.04em;padding:28px 0">Stories</a>
+      <a href="AGI Partnerships.dc.html" style="font-size:13px;font-weight:500;letter-spacing:0.04em;padding:28px 0">Partnerships</a>
+      <a href="AGI Connect.dc.html" style="font-size:13px;font-weight:500;letter-spacing:0.04em;padding:28px 0">AGI Connect</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:20px">
+      <span class="agi-hide-md" title="Search" style="cursor:pointer;color:#0A3161;font-size:15px">⌕</span>
+      <div class="agi-hide-md" style="display:flex;gap:8px;font-size:11px;letter-spacing:0.1em;color:#5B6472">
+        <span style="color:#0A3161;font-weight:600;cursor:pointer">EN</span><span style="cursor:pointer">FR</span><span style="cursor:pointer">AR</span>
+      </div>
+      <span class="agi-hide-md" style="display:flex;align-items:center;gap:6px;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#5B6472"><span style="width:6px;height:6px;border-radius:50%;background:#B22234;display:inline-block"></span>{{ campus }}</span>
+      <a href="AGI Admissions.dc.html" style="background:#0A3161;color:#fff;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:11px 22px;transition:background .25s" style-hover="background:#B22234;color:#fff">Apply</a>
+      <span class="agi-burger" onClick="{{ toggleNav }}" role="button" tabIndex="{{ zero }}" aria-label="Menu" style="display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;align-items:flex-end;cursor:pointer">
+        <span style="display:block;width:24px;height:1.5px;background:#0A3161"></span>
+        <span style="display:block;width:18px;height:1.5px;background:#0A3161"></span>
+      </span>
+    </div>
+  </div>
+  <sc-if value="{{ megaOpen }}" hint-placeholder-val="{{ false }}">
+    <div onMouseEnter="{{ openMega }}" onMouseLeave="{{ closeMega }}" style="position:absolute;left:0;right:0;top:76px;background:#0A3161;color:#fff;box-shadow:0 30px 60px rgba(10,10,10,0.25)">
+      <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:48px;max-width:1440px;margin:0 auto;padding:48px clamp(20px,4vw,56px)">
+        <div>
+          <p style="font-family:'Newsreader',serif;font-size:28px;font-weight:400;margin:0 0 12px;line-height:1.25">Five academic divisions.<br>One institution.</p>
+          <p style="font-size:13px;color:rgba(255,255,255,0.6);margin:0;max-width:280px">From early learning to university pathways, AGI programs share one American academic standard.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.45)">School</span>
+          <a href="AGI Program K12.dc.html" style="color:#fff;font-size:14px" style-hover="color:#C9A227">K–12 Education</a>
+          <a href="#programs" style="color:#fff;font-size:14px" style-hover="color:#C9A227">Special Education</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.45)">Adults</span>
+          <a href="#programs" style="color:#fff;font-size:14px" style-hover="color:#C9A227">Adult Education</a>
+          <a href="#programs" style="color:#fff;font-size:14px" style-hover="color:#C9A227">English &amp; EFL</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.45)">Beyond</span>
+          <a href="#programs" style="color:#fff;font-size:14px" style-hover="color:#C9A227">University Pathways</a>
+          <a href="AGI Partnerships.dc.html" style="color:#fff;font-size:14px" style-hover="color:#C9A227">Global Network</a>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+</header>
+
+  <sc-if value="{{ navOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;inset:0;z-index:80;background:#061529;color:#fff;display:flex;flex-direction:column;padding:clamp(20px,5vw,32px);overflow-y:auto;-webkit-overflow-scrolling:touch;animation:agiFadeUp .35s ease both">
+      <div style="display:flex;justify-content:space-between;align-items:center;height:44px;margin-bottom:clamp(20px,5vw,40px)">
+        <span style="font-family:'Newsreader',serif;font-size:24px;color:#fff">AGI</span>
+        <span onClick="{{ closeNav }}" role="button" aria-label="Close menu" style="width:44px;height:44px;display:flex;align-items:center;justify-content:flex-end;font-size:26px;line-height:1;color:rgba(255,255,255,0.7);cursor:pointer">×</span>
+      </div>
+      <nav style="display:flex;flex-direction:column">
+        <a onClick="{{ closeNav }}" href="#programs" style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(25px,6.4vw,34px);color:#fff;padding:12px 0;border-top:1px solid rgba(255,255,255,0.18)">Programs</a>
+        <a onClick="{{ closeNav }}" href="AGI Admissions.dc.html" style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(25px,6.4vw,34px);color:#fff;padding:12px 0;border-top:1px solid rgba(255,255,255,0.18)">Admissions</a>
+        <a onClick="{{ closeNav }}" href="#experience" style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(25px,6.4vw,34px);color:#fff;padding:12px 0;border-top:1px solid rgba(255,255,255,0.18)">Student Life</a>
+        <a onClick="{{ closeNav }}" href="#stories" style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(25px,6.4vw,34px);color:#fff;padding:12px 0;border-top:1px solid rgba(255,255,255,0.18)">Stories</a>
+        <a onClick="{{ closeNav }}" href="AGI Partnerships.dc.html" style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(25px,6.4vw,34px);color:#fff;padding:12px 0;border-top:1px solid rgba(255,255,255,0.18)">Partnerships</a>
+        <a onClick="{{ closeNav }}" href="AGI Connect.dc.html" style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(25px,6.4vw,34px);color:#C9A227;padding:12px 0;border-top:1px solid rgba(255,255,255,0.18);border-bottom:1px solid rgba(255,255,255,0.18)">AGI Connect</a>
+      </nav>
+      <div style="margin-top:auto;padding-top:28px;display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;gap:18px;font-size:12px;letter-spacing:0.14em;color:rgba(255,255,255,0.5)">
+          <span style="color:#fff">EN</span><span>FR</span><span>AR</span>
+          <span style="margin-left:auto;letter-spacing:0.1em;text-transform:uppercase">{{ campus }}</span>
+        </div>
+        <a onClick="{{ closeNav }}" href="AGI Admissions.dc.html" style="background:linear-gradient(180deg,#D8B34A,#C9A227);color:#061529;text-align:center;font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:18px">Apply to AGI</a>
+      </div>
+    </div>
+  </sc-if>
+
+<!-- ============ HERO ============ -->
+<section id="top" data-screen-label="Hero" style="position:relative;background:#061529;color:#fff;overflow:hidden">
+  <div aria-hidden="true" style="position:absolute;top:-10%;right:-5%;width:70%;height:110%;background:radial-gradient(circle at 60% 45%,rgba(10,49,97,0.85) 0%,rgba(6,21,41,0) 62%);pointer-events:none"></div>
+  <div aria-hidden="true" style="position:absolute;top:0;right:0;width:60%;height:100%;z-index:0;opacity:0.5;pointer-events:none;mask-image:radial-gradient(ellipse at 62% 45%,#000 40%,transparent 76%),linear-gradient(90deg,transparent 0%,#000 26%);-webkit-mask-image:radial-gradient(ellipse at 62% 45%,#000 40%,transparent 76%),linear-gradient(90deg,transparent 0%,#000 26%);mask-composite:intersect;-webkit-mask-composite:source-in">
+    <x-import component-from-global-scope="world-dots" from="./world-dots.js" step="14" dot-radius="1.6" color="91,155,224" hint-size="100%,100%" style="position:absolute;inset:0;width:100%;height:100%"></x-import>
+  </div>
+  <div class="agi-arc agi-arc-1" aria-hidden="true" style="position:absolute;top:6%;right:2%;width:56%;height:74%;border-radius:50%;border:1px solid transparent;border-top-color:rgba(201,162,39,0.45);transform:rotate(-14deg);pointer-events:none;z-index:0"></div>
+  <div class="agi-arc agi-arc-2" aria-hidden="true" style="position:absolute;top:16%;right:-6%;width:70%;height:88%;border-radius:50%;border:1px solid transparent;border-top-color:rgba(91,155,224,0.4);transform:rotate(9deg);pointer-events:none;z-index:0"></div>
+  <div class="agi-marker" aria-hidden="true" style="position:absolute;top:17%;right:34%;display:flex;align-items:center;gap:8px;z-index:2;pointer-events:none">
+    <span class="agi-node" style="width:9px;height:9px;border-radius:50%;background:#C9A227;box-shadow:0 0 14px 3px rgba(201,162,39,0.7);display:block"></span>
+    <span style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.75)">USA</span>
+  </div>
+  <div class="agi-marker" aria-hidden="true" style="position:absolute;top:76%;right:5%;display:flex;align-items:center;gap:8px;z-index:2;pointer-events:none">
+    <span class="agi-node" style="width:9px;height:9px;border-radius:50%;background:#5B9BE0;box-shadow:0 0 14px 3px rgba(91,155,224,0.7);display:block;animation-delay:1.4s"></span>
+    <span style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.75)">Agadir · Morocco</span>
+  </div>
+
+  <div class="agi-stack agi-herogrid" style="position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);max-width:1440px;margin:0 auto;min-height:min(88vh,860px)">
+    <div class="agi-heroleft" style="display:flex;flex-direction:column;justify-content:center;padding:clamp(44px,7vw,110px) clamp(20px,4vw,56px);animation:agiFadeUp .9s ease both">
+      <p style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#C9A227;margin:0 0 28px">Established 2013 · Agadir, Morocco</p>
+      <h1 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(40px,5.2vw,78px);line-height:1.06;margin:0 0 32px;letter-spacing:-0.01em">An American education —
+        <span class="agi-wordbox" style="display:block;height:1.1em;overflow:hidden">
+          <span class="agi-wordreel" style="display:block">
+            <span style="display:block;height:1.1em;color:#C9A227;font-style:italic">inclusive.</span>
+            <span style="display:block;height:1.1em;color:#C9A227;font-style:italic">creative.</span>
+            <span style="display:block;height:1.1em;color:#C9A227;font-style:italic">affordable.</span>
+            <span style="display:block;height:1.1em;color:#C9A227;font-style:italic">fearless.</span>
+            <span style="display:block;height:1.1em;color:#C9A227;font-style:italic">without borders.</span>
+            <span style="display:block;height:1.1em;color:#C9A227;font-style:italic">inclusive.</span>
+          </span>
+        </span>
+      </h1>
+      <p style="font-size:clamp(15px,1.2vw,18px);line-height:1.65;color:rgba(255,255,255,0.72);max-width:480px;margin:0 0 44px">American Group International brings K–12 schooling, adult education, English programs and university pathways to a growing international network.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px">
+        <a href="#programs" style="background:linear-gradient(180deg,#D8B34A,#C9A227);color:#061529;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:16px 30px;transition:all .25s" style-hover="background:#fff;color:#061529">Explore Programs</a>
+        <a href="AGI Admissions.dc.html" style="border:1px solid rgba(255,255,255,0.4);color:#fff;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:16px 30px;transition:all .25s" style-hover="border-color:#fff;background:rgba(255,255,255,0.08);color:#fff">Admissions</a>
+        <a href="AGI Connect.dc.html" style="display:inline-flex;align-items:center;gap:10px;color:#fff;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:16px 8px;border-bottom:1px solid rgba(255,255,255,0.35)" style-hover="border-bottom:1px solid #B22234;color:#C9A227">Meet AGI Connect <span style="font-size:16px">→</span></a>
+      </div>
+    </div>
+    <div class="agi-herostage" style="position:relative;min-height:420px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(32px,4vw,64px) clamp(20px,3vw,40px);overflow:hidden">
+      <div ref="{{ stageRef }}" class="agi-stage {{ motionClass }}" style="position:relative;z-index:1;width:min(100%,520px);aspect-ratio:1;perspective:1400px;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.8,.2,1)">
+        <div class="agi-ring agi-ring-a" style="position:absolute;inset:0;border-radius:50%;border:1px solid rgba(255,255,255,0.10);border-top-color:#C9A227"></div>
+        <div class="agi-ring agi-ring-b" style="position:absolute;inset:7%;border-radius:50%;border:1px solid rgba(255,255,255,0.08);border-left-color:rgba(178,34,52,0.85)"></div>
+        <div class="agi-ring agi-ring-c" style="position:absolute;inset:14%;border-radius:50%;border:1px dashed rgba(255,255,255,0.10)"></div>
+        <div class="agi-orbit" style="position:absolute;inset:0">
+          <span style="position:absolute;top:-4px;left:50%;width:7px;height:7px;margin-left:-3.5px;border-radius:50%;background:#C9A227"></span>
+          <span style="position:absolute;bottom:-4px;left:50%;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:rgba(255,255,255,0.55)"></span>
+          <span style="position:absolute;top:50%;right:-4px;width:5px;height:5px;margin-top:-2.5px;border-radius:50%;background:rgba(178,34,52,0.9)"></span>
+        </div>
+        <div class="agi-medallion" style="position:absolute;inset:17%;transform-style:preserve-3d">
+          <div aria-hidden="true" style="position:absolute;inset:-5%;border-radius:50%;background:linear-gradient(145deg,#F2DD9A 0%,#C9A227 28%,#7A5C10 55%,#C9A227 78%,#F2DD9A 100%);box-shadow:0 22px 46px rgba(0,0,0,0.55),inset 0 2px 4px rgba(255,255,255,0.6),inset 0 -3px 6px rgba(0,0,0,0.45);transform:translateZ(-14px)"></div>
+          <div aria-hidden="true" style="position:absolute;inset:-3.4%;border-radius:50%;background:linear-gradient(145deg,#8C6B14,#5C4409);transform:translateZ(-9px)"></div>
+          <div aria-hidden="true" style="position:absolute;inset:-1.8%;border-radius:50%;background:linear-gradient(145deg,#D8BE5E,#8C6B14);transform:translateZ(-4px)"></div>
+          <div class="agi-seal-wrap" style="position:absolute;inset:0;border-radius:50%;overflow:hidden;box-shadow:inset 0 6px 18px rgba(0,0,0,0.45),inset 0 -6px 14px rgba(255,255,255,0.10)">
+            <img src="assets/agi-seal.png" alt="American Group International School seal" style="width:100%;height:100%;object-fit:contain;display:block">
+            <div aria-hidden="true" style="position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 32% 26%,rgba(255,255,255,0.30) 0%,rgba(255,255,255,0) 46%),linear-gradient(120deg,rgba(255,255,255,0.14) 0%,rgba(0,0,0,0) 38%,rgba(0,0,0,0.42) 100%);pointer-events:none"></div>
+            <div class="agi-sheen" style="position:absolute;top:-50%;left:-60%;width:45%;height:200%;background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0.42) 50%,rgba(255,255,255,0) 100%);transform:rotate(18deg);pointer-events:none"></div>
+          </div>
+        </div>
+      </div>
+      <div class="agi-plinth" aria-hidden="true" style="width:min(88%,470px);height:70px;margin-top:-26px;border-radius:50%;border:1px solid rgba(201,162,39,0.45);box-shadow:0 0 60px rgba(10,49,97,0.9),inset 0 0 40px rgba(201,162,39,0.10);background:radial-gradient(ellipse at 50% 40%,rgba(10,49,97,0.55) 0%,rgba(6,21,41,0) 70%)"></div>
+      <div style="display:flex;gap:24px;align-items:baseline;margin-top:clamp(16px,2vw,28px);flex-wrap:wrap;justify-content:center;text-align:center">
+        <span style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#C9A227">Now Enrolling</span>
+        <span style="font-family:'Newsreader',serif;font-size:16px;font-style:italic;color:#fff">Academic Year 2026–2027 · All divisions</span>
+      </div>
+    </div>
+  </div>
+  <div class="agi-pillars" style="position:relative;z-index:1;max-width:1440px;margin:0 auto;border-top:1px solid rgba(255,255,255,0.10)">
+    <div style="background:#061529;padding:clamp(24px,2.4vw,34px) clamp(20px,2.4vw,36px)">
+      <p style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#fff;margin:0 0 8px">Inclusive by design</p>
+      <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.5);margin:0">Every learner supported, mainstream and specialist alike.</p>
+    </div>
+    <div style="background:#061529;padding:clamp(24px,2.4vw,34px) clamp(20px,2.4vw,36px)">
+      <p style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#fff;margin:0 0 8px">Creative curriculum</p>
+      <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.5);margin:0">American pedagogy taught with imagination, not recitation.</p>
+    </div>
+    <div style="background:#061529;padding:clamp(24px,2.4vw,34px) clamp(20px,2.4vw,36px)">
+      <p style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#fff;margin:0 0 8px">Genuinely affordable</p>
+      <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.5);margin:0">An international standard within reach of Moroccan families.</p>
+    </div>
+    <div style="background:#061529;padding:clamp(24px,2.4vw,34px) clamp(20px,2.4vw,36px)">
+      <p style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#fff;margin:0 0 8px">Turning lives around</p>
+      <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.5);margin:0">Since 2013 — students who arrive uncertain and leave ready.</p>
+    </div>
+  </div>
+  <div style="position:relative;z-index:1;border-top:1px solid rgba(255,255,255,0.10);overflow:hidden;white-space:nowrap;padding:14px 0">
+    <div style="display:inline-flex;gap:64px;animation:agiTicker 40s linear infinite;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(255,255,255,0.45)">
+      <span>United States</span><span>·</span><span>Agadir</span><span>·</span><span>Morocco</span><span>·</span><span>Global Network</span><span>·</span><span>United States</span><span>·</span><span>Agadir</span><span>·</span><span>Morocco</span><span>·</span><span>Global Network</span><span>·</span><span>United States</span><span>·</span><span>Agadir</span><span>·</span><span>Morocco</span><span>·</span><span>Global Network</span><span>·</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IDENTITY: USA → MOROCCO → WORLD ============ -->
+<section data-screen-label="Identity" style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+  <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,72px);align-items:end;margin-bottom:clamp(32px,4vw,56px)">
+    <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,4.4vw,68px);line-height:1.1;margin:0;max-width:15ch;letter-spacing:-0.015em">One institution,<br>three geographies.</h2>
+    <p style="font-size:14px;line-height:1.75;color:#5B6472;margin:0;max-width:44ch">An American academic standard, operated from Agadir, extended outward through partners and pathways. One chain of custody from curriculum to diploma.</p>
+  </div>
+
+  <div style="position:relative;background:#061529;overflow:hidden;border:1px solid rgba(10,49,97,0.2)">
+    <div style="position:relative;width:100%;aspect-ratio:21/9;min-height:300px">
+      <div aria-hidden="true" style="position:absolute;inset:0;opacity:0.55;mask-image:radial-gradient(ellipse at 40% 50%,#000 45%,transparent 82%)">
+        <x-import component-from-global-scope="world-dots" from="./world-dots.js" step="13" dot-radius="1.5" color="91,155,224" hint-size="100%,100%" style="position:absolute;inset:0;width:100%;height:100%"></x-import>
+      </div>
+      <svg aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none">
+        <path d="M28.9 24.7 Q38 16 48.1 30.1" fill="none" stroke="#B22234" stroke-width="0.35" stroke-dasharray="1.6 1.6" vector-effect="non-scaling-stroke"></path>
+        <path d="M48.1 30.1 Q58 14 67.7 35.4" fill="none" stroke="#C9A227" stroke-width="0.35" stroke-dasharray="1.6 1.6" vector-effect="non-scaling-stroke"></path>
+        <path d="M48.1 30.1 Q56 48 64 56" fill="none" stroke="#C9A227" stroke-width="0.3" stroke-dasharray="1.6 1.6" opacity="0.6" vector-effect="non-scaling-stroke"></path>
+        <path d="M48.1 30.1 Q42 52 33 62" fill="none" stroke="#C9A227" stroke-width="0.3" stroke-dasharray="1.6 1.6" opacity="0.6" vector-effect="non-scaling-stroke"></path>
+      </svg>
+      <div style="position:absolute;left:28.9%;top:24.7%;width:0;height:0">
+        <span style="position:absolute;left:0;top:0;width:9px;height:9px;margin-left:-4.5px;margin-top:-4.5px;border-radius:50%;background:#B22234;box-shadow:0 0 0 4px rgba(6,21,41,0.55)"></span>
+        <span style="position:absolute;left:0;top:0;width:30.599999999999998px;height:30.599999999999998px;margin-left:-15.299999999999999px;margin-top:-15.299999999999999px;border-radius:50%;border:1px solid #B22234;opacity:0.5;animation:agiPing 3.2s ease-out 0s infinite"></span>
+        <div style="position:absolute;left:0;top:9px;transform:translateX(-50%);text-align:center;white-space:nowrap">
+          <p style="font-family:'Newsreader',serif;font-size:clamp(15px,1.5vw,21px);margin:0;color:#fff;line-height:1.1">United States</p>
+          <p style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:4px 0 0">Curriculum origin</p>
+        </div>
+      </div>
+      <div style="position:absolute;left:48.1%;top:30.1%;width:0;height:0">
+        <span style="position:absolute;left:0;top:0;width:11px;height:11px;margin-left:-5.5px;margin-top:-5.5px;border-radius:50%;background:#C9A227;box-shadow:0 0 0 4px rgba(6,21,41,0.55)"></span>
+        <span style="position:absolute;left:0;top:0;width:37.4px;height:37.4px;margin-left:-18.7px;margin-top:-18.7px;border-radius:50%;border:1px solid #C9A227;opacity:0.5;animation:agiPing 3.2s ease-out 1.1s infinite"></span>
+        <div style="position:absolute;left:0;top:11px;transform:translateX(-50%);text-align:center;white-space:nowrap">
+          <p style="font-family:'Newsreader',serif;font-size:clamp(15px,1.5vw,21px);margin:0;color:#fff;line-height:1.1">Agadir, Morocco</p>
+          <p style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:4px 0 0">Operational base</p>
+        </div>
+      </div>
+      <div style="position:absolute;left:67.7%;top:35.4%;width:0;height:0">
+        <span style="position:absolute;left:0;top:0;width:6px;height:6px;margin-left:-3px;margin-top:-3px;border-radius:50%;background:rgba(201,162,39,0.75)"></span>
+        <span style="position:absolute;left:12px;top:0;transform:translateY(-50%);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.55);white-space:nowrap">Partner regions</span>
+      </div>
+      <p style="position:absolute;left:clamp(16px,2vw,28px);bottom:clamp(14px,1.6vw,22px);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin:0">Schematic — not to scale</p>
+    </div>
+  </div>
+
+  <div class="agi-triad" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(10,49,97,0.16);border:1px solid rgba(10,49,97,0.16);border-top:0">
+    <div style="background:#F6F5F1;padding:clamp(24px,2.6vw,38px)">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(10,49,97,0.2);padding-bottom:12px;margin-bottom:18px">
+        <span style="font-family:'Newsreader',serif;font-size:clamp(24px,2.4vw,34px);font-weight:300;line-height:1;color:#0A3161">USA</span>
+        <span style="font-size:10px;letter-spacing:0.22em;color:#B22234">I</span>
+      </div>
+      <p style="font-size:14px;line-height:1.75;color:#3A4150;margin:0 0 16px">American curriculum, pedagogy and academic culture — the philosophical foundation of every AGI program.</p>
+      <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">Four state recognitions</p>
+    </div>
+    <div style="background:#F6F5F1;padding:clamp(24px,2.6vw,38px)">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(10,49,97,0.2);padding-bottom:12px;margin-bottom:18px">
+        <span style="font-family:'Newsreader',serif;font-size:clamp(24px,2.4vw,34px);font-weight:300;line-height:1;color:#0A3161">Morocco</span>
+        <span style="font-size:10px;letter-spacing:0.22em;color:#B22234">II</span>
+      </div>
+      <p style="font-size:14px;line-height:1.75;color:#3A4150;margin:0 0 16px">Our operational base — Agadir campuses, faculty and community, serving learners of every age.</p>
+      <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">Established 2013</p>
+    </div>
+    <div style="background:#F6F5F1;padding:clamp(24px,2.6vw,38px)">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(10,49,97,0.2);padding-bottom:12px;margin-bottom:18px">
+        <span style="font-family:'Newsreader',serif;font-size:clamp(24px,2.4vw,34px);font-weight:300;line-height:1;color:#0A3161;font-style:italic">Global</span>
+        <span style="font-size:10px;letter-spacing:0.22em;color:#B22234">III</span>
+      </div>
+      <p style="font-size:14px;line-height:1.75;color:#3A4150;margin:0 0 16px">Partnerships, university pathways and a franchise network extending the AGI standard to new regions.</p>
+      <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">UK · India · Expanding</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROGRAMS ============ -->
+<section id="programs" data-screen-label="Programs" style="background:#fff;border-top:1px solid rgba(10,49,97,0.12);border-bottom:1px solid rgba(10,49,97,0.12)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:clamp(24px,4vw,72px);flex-wrap:wrap;border-bottom:2px solid #0A3161;padding-bottom:18px;margin-bottom:clamp(40px,5vw,64px)">
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(34px,4.4vw,68px);line-height:0.95;margin:0;letter-spacing:-0.015em">Programs<br><em style="font-style:italic">of study</em></h2>
+      <p style="font-size:14px;line-height:1.7;color:#5B6472;max-width:38ch;margin:0;text-align:right">Five divisions, one academic standard. Each publishes its own curriculum, calendar and admission requirements.</p>
+    </div>
+    <div style="border-top:1px solid rgba(10,49,97,0.15)">
+      <sc-for list="{{ programs }}" as="p" hint-placeholder-count="5">
+        <a class="agi-progrow" href="#admissions" style="display:grid;grid-template-columns:80px minmax(0,1.2fr) minmax(0,1.6fr) 120px;align-items:center;gap:32px;padding:clamp(24px,2.6vw,40px) 12px;border-bottom:1px solid rgba(10,49,97,0.15);color:#0A0A0A;transition:all .25s" style-hover="background:#0A3161;color:#fff;padding-left:28px">
+          <span style="font-family:'Newsreader',serif;font-size:15px;font-style:italic;opacity:0.5">{{ p.no }}</span>
+          <span style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(24px,2.4vw,38px);line-height:1.1">{{ p.name }}</span>
+          <span class="agi-pdesc" style="font-size:13px;line-height:1.6;opacity:0.65">{{ p.desc }}</span>
+          <span class="agi-ptag" style="display:flex;justify-content:flex-end;align-items:center;gap:8px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;opacity:0.7">{{ p.tag }} <span style="font-size:16px">→</span></span>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ADMISSIONS ============ -->
+<section id="admissions" data-screen-label="Admissions" style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+  <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(44px,7vw,120px);line-height:0.92;margin:0 0 clamp(40px,5vw,72px);letter-spacing:-0.02em;color:#0A3161">Joining AGI</h2>
+  <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(32px,4vw,72px);align-items:start">
+    <div>
+      <sc-for list="{{ admissionSteps }}" as="s" hint-placeholder-count="4">
+        <div style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:24px;padding:28px 0;border-bottom:1px solid rgba(10,49,97,0.15)">
+          <span style="font-family:'Newsreader',serif;font-size:28px;font-weight:300;color:#B22234">{{ s.no }}</span>
+          <div>
+            <h3 style="font-size:16px;font-weight:600;margin:0 0 6px;color:#0A3161">{{ s.title }}</h3>
+            <p style="font-size:14px;color:#5B6472;margin:0;line-height:1.65">{{ s.desc }}</p>
+          </div>
+        </div>
+      </sc-for>
+      <div style="display:flex;gap:14px;margin-top:36px">
+        <span onClick="{{ openAdmissionsForm }}" style="background:#0A3161;color:#fff;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:16px 30px;cursor:pointer;transition:background .25s" style-hover="background:#B22234">Begin an Application</span>
+        <a href="AGI Connect.dc.html" style="border:1px solid rgba(10,49,97,0.3);color:#0A3161;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:16px 30px" style-hover="border-color:#0A3161;background:rgba(10,49,97,0.05);color:#0A3161">Ask AGI Connect</a>
+      </div>
+    </div>
+    <aside style="background:#0A3161;color:#fff;padding:clamp(28px,3vw,44px)">
+      <p style="font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 24px">Academic Calendar — Key Dates</p>
+      <sc-for list="{{ keyDates }}" as="d" hint-placeholder-count="4">
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.15)">
+          <span style="font-size:14px">{{ d.label }}</span>
+          <span style="font-family:'Newsreader',serif;font-style:italic;font-size:14px;color:#C9A227;white-space:nowrap">{{ d.date }}</span>
+        </div>
+      </sc-for>
+      <p style="font-size:11px;color:rgba(255,255,255,0.4);margin:24px 0 0">Dates follow the AGI academic calendar for Agadir; movable religious holidays are confirmed each term. Tuition schedules and document requests are available through the AGI Services directory below.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ CURRICULUM ============ -->
+<section id="curriculum" data-screen-label="Curriculum" style="background:#fff;border-top:1px solid rgba(10,49,97,0.12)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+    <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,72px);align-items:end;margin-bottom:clamp(40px,5vw,64px)">
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,4.4vw,64px);line-height:1.05;margin:0;letter-spacing:-0.015em;max-width:18ch">The course of study, grade by grade.</h2>
+      <p style="font-size:14px;line-height:1.75;color:#5B6472;margin:0;max-width:46ch">AGI curriculum standards set a fixed set of subjects for each year, with ESL alongside for language learners. Subjects can be adjusted to the child; electives and AP courses are planned from Grade 9.</p>
+    </div>
+    <div style="border-top:1px solid rgba(10,49,97,0.2)">
+      <sc-for list="{{ curriculum }}" as="cu" hint-placeholder-count="7">
+        <div class="agi-currow" style="display:grid;grid-template-columns:170px 260px minmax(0,1fr);align-items:baseline;gap:20px 32px;padding:24px 0;border-bottom:1px solid rgba(10,49,97,0.15)">
+          <span style="font-family:'Newsreader',serif;font-size:clamp(20px,1.9vw,28px);color:#0A3161">{{ cu.band }}</span>
+          <span style="font-family:monospace;font-size:11px;letter-spacing:0.06em;color:#8A8F98;line-height:1.7">{{ cu.codes }}</span>
+          <span style="font-size:14px;line-height:1.7;color:#3A4150">{{ cu.subjects }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <p style="font-size:12px;line-height:1.75;color:#5B6472;margin:24px 0 0;max-width:80ch">High school students complete ten in-service learning hours per year — forty across the four-year plan. Special education follows the same subject spine with individualised accommodations.</p>
+  </div>
+</section>
+
+<!-- ============ PROFESSIONAL & SERVICES ============ -->
+<section id="professional" data-screen-label="Professional" style="background:#061529;color:#fff">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+    <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,72px);align-items:end;margin-bottom:clamp(40px,5vw,64px)">
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,4.4vw,64px);line-height:1.05;margin:0;letter-spacing:-0.015em;max-width:20ch">For teachers, clinicians <em style="font-style:italic">and professionals.</em></h2>
+      <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.65);margin:0;max-width:46ch">AGI's work extends past the school day — certification for teachers, English for professional practice, invigilation for distance learners, and coaching.</p>
+    </div>
+    <div class="agi-stack2 agi-progrid" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.12)">
+      <sc-for list="{{ professional }}" as="pr" hint-placeholder-count="8">
+        <div style="background:#0A2140;padding:clamp(22px,2.2vw,32px);display:flex;flex-direction:column;gap:12px">
+          <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#C9A227;margin:0">{{ pr.who }}</p>
+          <p style="font-family:'Newsreader',serif;font-size:20px;line-height:1.25;margin:0;color:#fff">{{ pr.name }}</p>
+          <p style="font-size:12px;line-height:1.65;color:rgba(255,255,255,0.6);margin:0">{{ pr.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POLICIES ============ -->
+<section id="policies" data-screen-label="Policies" style="background:#fff;border-top:1px solid rgba(10,49,97,0.12)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;border-bottom:2px solid #0A3161;padding-bottom:18px;margin-bottom:clamp(32px,4vw,52px)">
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,4vw,56px);line-height:1;margin:0;letter-spacing:-0.015em">Policies for families</h2>
+      <p style="font-size:14px;line-height:1.7;color:#5B6472;max-width:34ch;margin:0;text-align:right">The rules we hold ourselves and our families to. Full texts are available on request.</p>
+    </div>
+    <div class="agi-servindex" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(32px,5vw,90px)">
+      <sc-for list="{{ policies }}" as="po" hint-placeholder-count="7">
+        <div style="display:grid;grid-template-columns:minmax(0,1fr);gap:8px;padding:22px 0;border-top:1px solid rgba(10,49,97,0.2)">
+          <h3 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(19px,1.7vw,25px);margin:0;color:#0A3161">{{ po.name }}</h3>
+          <p style="font-size:13px;line-height:1.7;color:#5B6472;margin:0">{{ po.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACCREDITATION ============ -->
+<section id="accreditation" data-screen-label="Accreditation" style="background:#EDEDE8;border-top:1px solid rgba(10,49,97,0.12)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;border-bottom:2px solid #0A3161;padding-bottom:18px;margin-bottom:clamp(40px,5vw,64px)">
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(34px,4.4vw,68px);line-height:0.95;margin:0;letter-spacing:-0.015em">Accreditation<br><em style="font-style:italic">&amp; membership</em></h2>
+      <p style="font-size:14px;line-height:1.7;color:#5B6472;max-width:36ch;margin:0;text-align:right">Where AGI's standards come from, and who holds us to them.</p>
+    </div>
+    <div class="agi-stack2 agi-accgrid" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(10,49,97,0.16);border:1px solid rgba(10,49,97,0.16)">
+      <sc-for list="{{ accreditations }}" as="ac" hint-placeholder-count="8">
+        <div style="background:#F6F5F1;padding:clamp(22px,2.2vw,32px);display:flex;flex-direction:column;gap:12px">
+          <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#B22234;margin:0">{{ ac.kind }}</p>
+          <p style="font-family:'Newsreader',serif;font-size:19px;line-height:1.25;margin:0;color:#0A3161">{{ ac.name }}</p>
+          <p style="font-size:12px;line-height:1.65;color:#5B6472;margin:0">{{ ac.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEES ============ -->
+<section id="fees" data-screen-label="Fees" style="background:#fff;border-top:1px solid rgba(10,49,97,0.12)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:clamp(24px,4vw,72px);flex-wrap:wrap;border-bottom:2px solid #0A3161;padding-bottom:18px;margin-bottom:clamp(40px,5vw,64px)">
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(34px,4.4vw,68px);line-height:0.95;margin:0;letter-spacing:-0.015em">Tuition<br><em style="font-style:italic">&amp; fees</em></h2>
+      <p style="font-size:14px;line-height:1.7;color:#5B6472;max-width:40ch;margin:0;text-align:right">One annual inscription, then ten monthly payments. Books, mathematics examinations, Anglia English examinations, dual enrolment in the USA and Morocco, and student insurance are included.</p>
+    </div>
+    <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(32px,4vw,72px);align-items:start">
+      <div>
+        <p style="font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:#8A8F98;margin:0 0 4px">Annual inscription — paid once at enrolment</p>
+        <div style="border-top:1px solid rgba(10,49,97,0.15)">
+          <sc-for list="{{ fees }}" as="fe" hint-placeholder-count="6">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:20px 0;border-bottom:1px solid rgba(10,49,97,0.15)">
+              <span style="font-family:'Newsreader',serif;font-size:clamp(19px,1.8vw,26px);color:#0A3161">{{ fe.band }}</span>
+              <span style="font-size:15px;font-weight:600;color:#0A0A0A;white-space:nowrap">{{ fe.amount }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <p style="font-size:12px;line-height:1.7;color:#5B6472;margin:20px 0 0;max-width:60ch">Inscription is annual and non-refundable. Enrolling students must provide prior school paperwork and a behaviour report; IEP or special-needs provision requires documentation from a licensed practitioner. Grade 12 pays a separate graduation fee covering diploma, apostille legalisation, gown and shipping.</p>
+      </div>
+      <aside style="background:#0A3161;color:#fff;padding:clamp(28px,3vw,44px)">
+        <p style="font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 20px">Monthly tuition</p>
+        <p style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(44px,5vw,72px);line-height:1;margin:0 0 8px">2,600<span style="font-size:0.35em;letter-spacing:0.14em;margin-left:10px">MAD</span></p>
+        <p style="font-size:14px;color:rgba(255,255,255,0.7);margin:0 0 28px">Paid over ten months — 26,000 MAD per academic year.</p>
+        <div style="border-top:1px solid rgba(255,255,255,0.2);padding-top:20px;display:flex;flex-direction:column;gap:12px">
+          <p style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0">Included</p>
+          <p style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.85);margin:0">Books and learning materials · Mathematics examinations · Anglia English examinations · Enrolment in the USA and Morocco · Student insurance</p>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.2);margin-top:24px;padding-top:20px">
+          <p style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 8px">Summer school — high school</p>
+          <p style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.85);margin:0">3,000 MAD for a one-month programme, for students catching up or enrolling late.</p>
+        </div>
+        <span onClick="{{ openAdmissionsForm }}" style="display:block;margin-top:28px;background:#B22234;color:#fff;text-align:center;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:15px 24px;cursor:pointer;transition:background .25s" style-hover="background:#8E1A28">Request the fee schedule</span>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENGLISH PROGRESSION ============ -->
+<section id="english" data-screen-label="English Progression" style="background:#F6F5F1;border-top:1px solid rgba(10,49,97,0.12)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+    <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,72px);align-items:end;margin-bottom:clamp(40px,5vw,64px)">
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,4.4vw,64px);line-height:1.05;margin:0;letter-spacing:-0.015em;max-width:18ch">English, measured every year.</h2>
+      <p style="font-size:14px;line-height:1.75;color:#5B6472;margin:0;max-width:46ch">AGI benchmarks every grade against the Common European Framework and assesses it with Anglia Examinations of England — ten levels, all four skills, no minimum age. Graduation target is C1.</p>
+    </div>
+    <div style="border-top:1px solid rgba(10,49,97,0.2)">
+      <sc-for list="{{ cefr }}" as="c" hint-placeholder-count="7">
+        <div class="agi-cefrrow" style="display:grid;grid-template-columns:minmax(0,1fr) 110px 120px minmax(0,1.6fr);align-items:baseline;gap:24px;padding:22px 0;border-bottom:1px solid rgba(10,49,97,0.15)">
+          <span style="font-family:'Newsreader',serif;font-size:clamp(20px,1.9vw,28px);color:#0A3161">{{ c.grade }}</span>
+          <span style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#8A8F98">{{ c.age }}</span>
+          <span style="font-size:13px;font-weight:600;letter-spacing:0.06em;color:#B22234">{{ c.level }}</span>
+          <span style="font-size:13px;line-height:1.65;color:#3A4150">{{ c.skill }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <p style="font-size:12px;line-height:1.75;color:#5B6472;margin:24px 0 0;max-width:80ch">Students who do not speak English at home typically sit half a level to a full level lower in the early grades and catch up by middle school where immersion is consistent. Learners below benchmark receive accommodations or additional lessons to reach university readiness.</p>
+  </div>
+</section>
+
+<!-- ============ CREDENTIALS ============ -->
+<section data-screen-label="Credentials" style="background:#061529;color:#fff">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+    <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:48px;margin-bottom:clamp(48px,6vw,80px)">
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,3.6vw,56px);line-height:1.12;margin:0;color:#fff;grid-column:1 / -1;max-width:24ch">Held to an <em style="font-style:italic;color:#C9A227">international</em> standard.</h2>
+    </div>
+    <div class="agi-stack2 agi-statgrid" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.12);margin-bottom:56px">
+      <sc-for list="{{ stats }}" as="st" hint-placeholder-count="4">
+        <div style="background:#061529;padding:clamp(28px,3vw,44px)">
+          <p style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(40px,4vw,64px);margin:0 0 8px;color:#fff">{{ st.value }}</p>
+          <p style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0">{{ st.label }}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div style="background:#F6F5F1;color:#0A0A0A;padding:clamp(32px,4vw,56px);margin-bottom:1px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;margin-bottom:clamp(28px,3vw,44px)">
+        <h3 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(22px,2.2vw,32px);margin:0;color:#0A3161">Recognition from U.S. State Departments of Education</h3>
+        <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#8A8F98">Four states</span>
+      </div>
+      <div class="agi-stack2 agi-sealband" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(10,49,97,0.14);border:1px solid rgba(10,49,97,0.14)">
+        <figure style="margin:0;background:#F6F5F1;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;align-items:center;gap:18px">
+          <div style="background:rgba(10,49,97,0.045);border:1px solid rgba(10,49,97,0.12);width:100%;height:128px;display:flex;align-items:center;justify-content:center;padding:14px">
+            <img src="assets/seal-tennessee-clean.png" alt="Great Seal of the State of Tennessee" style="max-height:100%;max-width:100%;object-fit:contain;display:block">
+          </div>
+          <figcaption style="text-align:center">
+            <p style="font-family:'Newsreader',serif;font-size:17px;margin:0 0 6px;color:#0A3161">Tennessee</p>
+            <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">Department of Education</p>
+          </figcaption>
+        </figure>
+        <figure style="margin:0;background:#F6F5F1;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;align-items:center;gap:18px">
+          <div style="background:rgba(10,49,97,0.045);border:1px solid rgba(10,49,97,0.12);width:100%;height:128px;display:flex;align-items:center;justify-content:center;padding:14px">
+            <img src="assets/seal-florida-clean.png" alt="Great Seal of the State of Florida" style="max-height:100%;max-width:100%;object-fit:contain;display:block">
+          </div>
+          <figcaption style="text-align:center">
+            <p style="font-family:'Newsreader',serif;font-size:17px;margin:0 0 6px;color:#0A3161">Florida</p>
+            <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">Department of Education</p>
+          </figcaption>
+        </figure>
+        <figure style="margin:0;background:#F6F5F1;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;align-items:center;gap:18px">
+          <div style="background:rgba(10,49,97,0.045);border:1px solid rgba(10,49,97,0.12);width:100%;height:128px;display:flex;align-items:center;justify-content:center;padding:14px">
+            <img src="assets/seal-colorado-clean.png" alt="Seal of the State of Colorado" style="max-height:100%;max-width:100%;object-fit:contain;display:block">
+          </div>
+          <figcaption style="text-align:center">
+            <p style="font-family:'Newsreader',serif;font-size:17px;margin:0 0 6px;color:#0A3161">Colorado</p>
+            <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">Department of Education</p>
+          </figcaption>
+        </figure>
+        <figure style="margin:0;background:#F6F5F1;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;align-items:center;gap:18px">
+          <div style="background:rgba(10,49,97,0.045);border:1px solid rgba(10,49,97,0.12);width:100%;height:128px;display:flex;align-items:center;justify-content:center;padding:14px">
+            <img src="assets/seal-alabama-clean.png" alt="Great Seal of the State of Alabama" style="max-height:100%;max-width:100%;object-fit:contain;display:block">
+          </div>
+          <figcaption style="text-align:center">
+            <p style="font-family:'Newsreader',serif;font-size:17px;margin:0 0 6px;color:#0A3161">Alabama</p>
+            <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">Department of Education</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div style="background:#EDEDE8;color:#0A0A0A;padding:clamp(28px,3vw,44px) clamp(32px,4vw,56px);margin-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:clamp(22px,2.4vw,32px)">
+        <h3 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(19px,1.8vw,26px);margin:0;color:#0A3161">Our programs are in compliance with</h3>
+      </div>
+      <div class="agi-stack2" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(10,49,97,0.14);border:1px solid rgba(10,49,97,0.14)">
+        <figure style="margin:0;background:#EDEDE8;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;align-items:center;gap:18px">
+          <div style="background:rgba(10,49,97,0.045);border:1px solid rgba(10,49,97,0.12);width:100%;height:86px;display:flex;align-items:center;justify-content:center;padding:14px">
+            <img src="assets/mark-ncaa-clean.png" alt="NCAA" style="max-height:100%;max-width:100%;object-fit:contain;display:block">
+          </div>
+          <figcaption style="text-align:center">
+            <p style="font-family:'Newsreader',serif;font-size:17px;margin:0 0 6px;color:#0A3161">NCAA</p>
+            <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">Eligibility Center</p>
+          </figcaption>
+        </figure>
+        <figure style="margin:0;background:#EDEDE8;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;align-items:center;gap:18px">
+          <div style="background:rgba(10,49,97,0.045);border:1px solid rgba(10,49,97,0.12);width:100%;height:86px;display:flex;align-items:center;justify-content:center;padding:14px">
+            <img src="assets/mark-naia-clean.png" alt="NAIA" style="max-height:100%;max-width:100%;object-fit:contain;display:block">
+          </div>
+          <figcaption style="text-align:center">
+            <p style="font-family:'Newsreader',serif;font-size:17px;margin:0 0 6px;color:#0A3161">NAIA</p>
+            <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">Eligibility Center</p>
+          </figcaption>
+        </figure>
+        <figure style="margin:0;background:#EDEDE8;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;align-items:center;gap:18px">
+          <div style="background:rgba(10,49,97,0.045);border:1px solid rgba(10,49,97,0.12);width:100%;height:86px;display:flex;align-items:center;justify-content:center;padding:14px">
+            <img src="assets/mark-meridian-clean.png" alt="Meridian Learning" style="max-height:100%;max-width:100%;object-fit:contain;display:block">
+          </div>
+          <figcaption style="text-align:center">
+            <p style="font-family:'Newsreader',serif;font-size:17px;margin:0 0 6px;color:#0A3161">Meridian Learning</p>
+            <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">Curriculum Standards</p>
+          </figcaption>
+        </figure>
+        <figure style="margin:0;background:#EDEDE8;padding:clamp(20px,2vw,28px);display:flex;flex-direction:column;align-items:center;gap:18px">
+          <div style="background:rgba(10,49,97,0.045);border:1px solid rgba(10,49,97,0.12);width:100%;height:86px;display:flex;align-items:center;justify-content:center;padding:14px">
+            <img src="assets/mark-collegeboard-clean.png" alt="College Board" style="max-height:100%;max-width:100%;object-fit:contain;display:block">
+          </div>
+          <figcaption style="text-align:center">
+            <p style="font-family:'Newsreader',serif;font-size:17px;margin:0 0 6px;color:#0A3161">College Board</p>
+            <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A8F98;margin:0">AP &amp; SAT Programs</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.25);padding-top:28px;margin-bottom:clamp(28px,3vw,44px)">
+      <h3 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(24px,2.6vw,38px);margin:0;color:#fff">The AGI institutional network</h3>
+      <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.45)">Divisions, accreditors &amp; partners</span>
+    </div>
+    <div class="agi-netgrid" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.12)">
+      <sc-for list="{{ network }}" as="n" hint-placeholder-count="8">
+        <div style="background:#061529;padding:clamp(22px,2.2vw,32px);display:flex;flex-direction:column;gap:16px">
+          <div style="background:rgba(255,255,255,0.05);height:88px;display:flex;align-items:center;justify-content:center;padding:14px 18px;border:1px solid rgba(255,255,255,0.12)">
+            <img src="{{ n.src }}" alt="{{ n.name }}" style="height:100%;width:auto;max-width:100%;object-fit:contain;display:block">
+          </div>
+          <div>
+            <p style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#C9A227;margin:0 0 8px">{{ n.kind }}</p>
+            <p style="font-family:'Newsreader',serif;font-size:18px;line-height:1.25;margin:0 0 8px;color:#fff">{{ n.name }}</p>
+            <p style="font-size:12px;line-height:1.6;color:rgba(255,255,255,0.5);margin:0">{{ n.desc }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <p style="font-size:11px;color:rgba(255,255,255,0.35);margin:32px 0 0">Figures reflect the AGI network as published by the institution. Seals, marks and partner identities are the property of their respective institutions.</p>
+  </div>
+</section>
+
+<!-- ============ DIRECTOR ============ -->
+<section data-screen-label="Director" style="background:#fff">
+  <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(40px,5vw,90px);max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px);align-items:center">
+    <div style="position:relative">
+      <img src="assets/director-julie-wilburn.jpg" alt="Julie Wilburn, Educational Director of American Group International" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;display:block;border:1px solid rgba(10,49,97,0.18)">
+      <span style="position:absolute;bottom:-14px;left:-14px;background:#B22234;color:#fff;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;padding:10px 16px">Julie Wilburn</span>
+    </div>
+    <div>
+      <p style="font-family:'Newsreader',serif;font-style:italic;font-size:17px;color:#B22234;margin:0 0 28px">From the Director</p>
+      <blockquote style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(26px,2.8vw,42px);line-height:1.3;margin:0 0 36px;color:#0A3161;text-wrap:pretty">“AGI is a child-centered school where students take responsibility for their learning — we prepare them to be independent, critical thinkers and <em style="font-style:italic">caring, contributing members of society</em>.”</blockquote>
+      <p style="font-size:14px;line-height:1.75;color:#5B6472;max-width:520px;margin:0 0 36px">Our mission is to serve the Agadir region of Morocco by providing children with a strong educational foundation following American philosophy and practice. We hold high the value of respect — of oneself, of others, and of the environment — and we believe the family is an integral component of the program.</p>
+      <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+        <span style="font-family:'Newsreader',serif;font-style:italic;font-size:30px;color:#0A0A0A;white-space:nowrap">— J. Wilburn</span>
+        <div style="border-left:1px solid rgba(10,49,97,0.2);padding-left:20px">
+          <p style="font-size:13px;font-weight:600;margin:0;color:#0A3161">Julie Wilburn</p>
+          <p style="font-size:12px;color:#5B6472;margin:0">Educational Director, AGI · Country Manager, Anglia Morocco</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STUDENT EXPERIENCE ============ -->
+<section id="experience" data-screen-label="Student Experience" style="background:#0A3161;color:#fff;padding:clamp(80px,10vw,140px) 0;overflow:hidden">
+  <div style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:48px">
+    <div>
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(40px,6vw,104px);line-height:0.92;margin:0;color:#fff;letter-spacing:-0.02em">Life at AGI</h2>
+    </div>
+    <p style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0;white-space:nowrap">Scroll →</p>
+  </div>
+  <div style="display:flex;gap:20px;overflow-x:auto;padding:0 clamp(20px,4vw,56px) 24px;scroll-snap-type:x mandatory;scrollbar-width:thin">
+    <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="5">
+      <figure style="flex:0 0 auto;width:min(420px,78vw);margin:0;scroll-snap-align:start">
+        <div style="width:100%;aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#12407A,#12407A 16px,#0E3A6F 16px,#0E3A6F 32px);border:1px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center">
+          <span style="font-family:monospace;font-size:11px;letter-spacing:0.08em;color:rgba(255,255,255,0.75);border:1px dashed rgba(255,255,255,0.35);padding:8px 14px">image: {{ g.label }}</span>
+        </div>
+        <figcaption style="display:flex;justify-content:space-between;gap:16px;padding:14px 2px 0;font-size:12px;color:rgba(255,255,255,0.6)">
+          <span style="font-family:'Newsreader',serif;font-style:italic;font-size:14px;color:#fff">{{ g.caption }}</span>
+          <span style="letter-spacing:0.14em;text-transform:uppercase">{{ g.tag }}</span>
+        </figcaption>
+      </figure>
+    </sc-for>
+  </div>
+</section>
+
+<!-- ============ STORIES ============ -->
+<section id="stories" data-screen-label="Stories" style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+  <div style="display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:clamp(48px,6vw,72px);flex-wrap:wrap">
+    <div>
+      <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(36px,5vw,80px);line-height:1;margin:0;letter-spacing:0.02em">The AGI Journal</h2>
+      <p style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:#8A8F98;margin:14px 0 0">Stories · Announcements · Insight</p>
+    </div>
+    <a href="AGI Journal Article.dc.html" style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;border-bottom:1px solid #0A3161;padding-bottom:4px">Read a sample article →</a>
+  </div>
+  <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(32px,4vw,64px)">
+    <article style="cursor:pointer">
+      <div style="width:100%;aspect-ratio:16/10;background:repeating-linear-gradient(45deg,#E7E9EE,#E7E9EE 14px,#DEE2EA 14px,#DEE2EA 28px);border:1px solid rgba(10,49,97,0.18);display:flex;align-items:center;justify-content:center">
+        <span style="font-family:monospace;font-size:11px;letter-spacing:0.08em;color:#5B6472;border:1px dashed rgba(10,49,97,0.3);padding:8px 14px">image: CCGi partnership signing</span>
+      </div>
+      <p style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#B22234;margin:22px 0 10px">Feature · August 22, 2025</p>
+      <h3 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(24px,2.4vw,36px);line-height:1.2;margin:0 0 12px;color:#0A3161">AGI and Anglia Morocco join forces with Chichester College Group International</h3>
+      <p style="font-size:14px;color:#5B6472;line-height:1.7;margin:0;max-width:560px">CCGi is the international arm of Chichester College Group, a seven-college group in the south of England. The partnership opens UK progression routes for AGI learners across the Souss and southern Morocco.</p>
+    </article>
+    <div style="display:flex;flex-direction:column">
+      <sc-for list="{{ journal }}" as="j" hint-placeholder-count="4">
+        <article style="padding:22px 0;border-bottom:1px solid rgba(10,49,97,0.15);cursor:pointer;transition:padding-left .25s" style-hover="padding-left:12px">
+          <p style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#B22234;margin:0 0 8px">{{ j.kind }}</p>
+          <h4 style="font-family:'Newsreader',serif;font-weight:400;font-size:20px;line-height:1.3;margin:0 0 6px;color:#0A0A0A">{{ j.title }}</h4>
+          <p style="font-size:12px;color:#8A8F98;margin:0">{{ j.date }}</p>
+        </article>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VOICES ============ -->
+<section data-screen-label="Voices" style="background:#fff;border-top:1px solid rgba(10,49,97,0.12);border-bottom:1px solid rgba(10,49,97,0.12)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+    <div class="agi-stack" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.4fr);gap:clamp(28px,4vw,72px);align-items:start">
+      <div>
+        <p style="font-family:'Newsreader',serif;font-style:italic;font-size:19px;color:#B22234;margin:0 0 28px">Voices of AGI</p>
+        <div style="display:flex;flex-direction:column">
+          <sc-for list="{{ voiceDots }}" as="v" hint-placeholder-count="4">
+            <span onClick="{{ v.select }}" style="display:flex;align-items:baseline;gap:12px;padding:11px 0;border-top:1px solid rgba(10,49,97,0.15);cursor:pointer;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:{{ v.color }};transition:color .3s">{{ v.ord }} <span style="font-size:11px">{{ v.who }}</span></span>
+          </sc-for>
+        </div>
+      </div>
+      <div style="min-height:clamp(240px,26vw,300px)">
+        <blockquote style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(26px,3.4vw,50px);line-height:1.24;margin:0 0 36px;color:#0A3161;text-wrap:pretty;letter-spacing:-0.01em">“{{ voiceQuote }}”</blockquote>
+        <p style="font-size:14px;font-weight:600;margin:0;color:#0A0A0A">{{ voiceName }}</p>
+        <p style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#8A8F98;margin:6px 0 0">{{ voiceRole }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section data-screen-label="Team" style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;margin-bottom:clamp(40px,5vw,72px)">
+    <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,3.6vw,56px);line-height:1.1;margin:0">The people of AGI</h2>
+    <span style="font-family:'Newsreader',serif;font-style:italic;font-size:16px;color:#5B6472">Faculty &amp; leadership</span>
+  </div>
+  <div class="agi-stack2 agi-roster" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,2.4vw,36px);align-items:start">
+    <sc-for list="{{ team }}" as="t" hint-placeholder-count="4">
+      <div>
+        <div class="agi-portrait" style="width:100%;aspect-ratio:3/4;background:repeating-linear-gradient(45deg,#E7E9EE,#E7E9EE 14px,#DEE2EA 14px,#DEE2EA 28px);border:1px solid rgba(10,49,97,0.18);display:flex;align-items:center;justify-content:center">
+          <span style="font-family:monospace;font-size:11px;letter-spacing:0.08em;color:#5B6472;border:1px dashed rgba(10,49,97,0.3);padding:8px 14px">image: portrait</span>
+        </div>
+        <p style="font-size:14px;font-weight:600;margin:16px 0 2px;color:#0A3161">{{ t.name }}</p>
+        <p style="font-size:12px;color:#5B6472;margin:0">{{ t.role }}</p>
+        <p style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#B22234;margin:8px 0 0">{{ t.dept }}</p>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<!-- ============ FORMS DIRECTORY ============ -->
+<section id="services" data-screen-label="Services" style="background:#fff;border-top:1px solid rgba(10,49,97,0.12)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin-bottom:clamp(32px,4vw,56px);max-width:760px">
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(28px,3.2vw,48px);line-height:1.1;margin:0 0 14px">Documents &amp; requests</h2>
+      <p style="font-size:15px;color:#5B6472;margin:0">Every administrative request begins here — handled digitally, acknowledged within one working day.</p>
+    </div>
+    <div class="agi-servindex" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(32px,5vw,90px)">
+      <sc-for list="{{ forms }}" as="f" hint-placeholder-count="6">
+        <div onClick="{{ f.open }}" style="display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:8px 20px;padding:22px 0;border-top:1px solid rgba(10,49,97,0.2);cursor:pointer;transition:border-color .25s" style-hover="border-top-color:#0A3161">
+          <h3 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(19px,1.7vw,25px);margin:0;color:#0A3161">{{ f.name }}</h3>
+          <span style="font-size:15px;color:#B22234">↗</span>
+          <p style="font-size:13px;line-height:1.6;margin:0;color:#5B6472;grid-column:1 / -1;max-width:42ch">{{ f.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTNERSHIPS ============ -->
+<section id="partners" data-screen-label="Partnerships" style="background:#0A3161;color:#fff">
+  <div class="agi-stack" style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(40px,5vw,90px)">
+    <div>
+      <p style="font-family:'Newsreader',serif;font-style:italic;font-size:18px;color:#C9A227;margin:0 0 24px">The global network</p>
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(34px,4vw,64px);line-height:1.1;margin:0 0 28px;color:#fff;text-wrap:balance">Bring the AGI standard to your region.</h2>
+      <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,0.7);max-width:520px;margin:0 0 40px">AGI partners with investors, institutions and educators to establish accredited American-curriculum campuses through franchise and institutional partnership models.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <span onClick="{{ openPartnerForm }}" style="background:#B22234;color:#fff;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:16px 30px;cursor:pointer;transition:background .25s" style-hover="background:#fff;color:#0A3161">Partnership Enquiry</span>
+        <a href="AGI Connect.dc.html" style="border:1px solid rgba(255,255,255,0.4);color:#fff;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:16px 30px" style-hover="border-color:#fff;background:rgba(255,255,255,0.08);color:#fff">Talk to AGI Connect</a>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content:center">
+      <sc-for list="{{ regions }}" as="r" hint-placeholder-count="4">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,0.18)">
+          <span style="font-family:'Newsreader',serif;font-size:clamp(20px,1.8vw,28px);font-weight:300">{{ r.name }}</span>
+          <span style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:{{ r.color }}">{{ r.status }}</span>
+        </div>
+      </sc-for>
+      <p style="font-size:11px;color:rgba(255,255,255,0.4);margin:20px 0 0">Anglia Morocco operates across the Kingdom's 12 regions from the Agadir headquarters.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AGI CONNECT ============ -->
+<section id="connect" data-screen-label="AGI Connect" style="background:#061529;color:#fff;overflow:hidden">
+  <div class="agi-stack" style="max-width:1440px;margin:0 auto;padding:clamp(72px,9vw,140px) clamp(20px,4vw,56px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(40px,5vw,90px);align-items:center">
+    <div>
+      <p style="font-family:'Newsreader',serif;font-style:italic;font-size:18px;color:#C9A227;margin:0 0 24px">Introducing</p>
+      <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(40px,5vw,80px);line-height:1.02;margin:0 0 28px;color:#fff">AGI <em style="font-style:italic;color:#C9A227">Connect</em></h2>
+      <p style="font-size:16px;line-height:1.7;color:rgba(255,255,255,0.7);max-width:480px;margin:0 0 20px">AGI's digital front desk. A virtual receptionist that welcomes families, answers questions, books visits and prepares documents — in any language, at any hour.</p>
+      <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.45);max-width:480px;margin:0 0 40px">Built as an institutional service, designed for a real AI backend.</p>
+      <a href="AGI Connect.dc.html" style="display:inline-flex;align-items:center;gap:12px;background:#fff;color:#0A0A0A;font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:18px 34px;transition:all .25s" style-hover="background:#B22234;color:#fff">Discover AGI Connect <span style="font-size:16px">→</span></a>
+    </div>
+    <div style="background:#0A2140;border:1px solid rgba(255,255,255,0.12);padding:32px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:28px">
+        <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5)">Front Desk — Today</span>
+        <span style="display:flex;align-items:center;gap:8px;font-size:11px;color:#7BC98A"><span style="width:6px;height:6px;border-radius:50%;background:#7BC98A"></span>Live · Sample Session</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1)">
+        <sc-for list="{{ connectStats }}" as="c" hint-placeholder-count="4">
+          <div style="background:#0A2140;padding:24px">
+            <p style="font-family:'Newsreader',serif;font-size:40px;font-weight:300;margin:0;color:#fff">{{ c.value }}</p>
+            <p style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin:6px 0 0">{{ c.label }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:24px;border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,0.65)"><span>“Do you offer EFL evening classes?”</span><span style="color:rgba(255,255,255,0.35)">2m ago</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,0.65)"><span>Visit booked — Thursday 10:00</span><span style="color:rgba(255,255,255,0.35)">9m ago</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,0.65)"><span>Transcript request · Grade 11</span><span style="color:rgba(255,255,255,0.35)">14m ago</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer data-screen-label="Footer" style="background:#0A3161;color:#fff;border-top:1px solid rgba(255,255,255,0.15)">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(56px,7vw,96px) clamp(20px,4vw,56px)">
+    <div class="agi-stack2" style="display:grid;grid-template-columns:minmax(0,1.6fr) repeat(4,minmax(0,1fr));gap:clamp(28px,3vw,56px);margin-bottom:64px">
+      <div>
+        <p style="font-family:'Newsreader',serif;font-size:34px;font-weight:400;margin:0 0 12px">AGI</p>
+        <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.55);max-width:280px;margin:0 0 24px">American Group International.<br>USA → Morocco → World.</p>
+        <div style="display:flex;gap:16px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5)">
+          <a href="#top" style="color:rgba(255,255,255,0.5)" style-hover="color:#fff">Instagram</a>
+          <a href="#top" style="color:rgba(255,255,255,0.5)" style-hover="color:#fff">LinkedIn</a>
+          <a href="#top" style="color:rgba(255,255,255,0.5)" style-hover="color:#fff">YouTube</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Institution</span>
+        <a href="#top" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">About AGI</a>
+        <a href="#programs" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Programs</a>
+        <a href="#admissions" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Admissions</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Community</span>
+        <a href="#experience" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Student Life</a>
+        <a href="#stories" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">News &amp; Journal</a>
+        <a href="#services" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Documents</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Network</span>
+        <a href="AGI Partnerships.dc.html" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Partnerships</a>
+        <a href="AGI Partnerships.dc.html" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Franchise</a>
+        <a href="AGI Connect.dc.html" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">AGI Connect</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Legal</span>
+        <a href="#top" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Privacy</a>
+        <a href="#top" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Terms</a>
+        <a href="#services" style="color:rgba(255,255,255,0.75);font-size:13px" style-hover="color:#fff">Contact</a>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.15);padding-top:28px;font-size:11px;color:rgba(255,255,255,0.4)">
+      <span>© 2026 American Group International School · Agadir, Morocco — Design preview.</span>
+      <span style="letter-spacing:0.18em;text-transform:uppercase">USA · Morocco · World</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FORMS DRAWER ============ -->
+<sc-if value="{{ drawerOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;inset:0;z-index:100;display:flex;justify-content:flex-end;background:rgba(10,10,10,0.5);backdrop-filter:blur(6px)" onClick="{{ closeDrawer }}">
+    <div class="agi-drawer" onClick="{{ stopProp }}" style="width:min(480px,100vw);height:100%;background:#fff;display:flex;flex-direction:column;box-shadow:-30px 0 80px rgba(0,0,0,0.35);animation:agiMsgIn .35s ease both">
+      <div style="padding:32px;border-bottom:1px solid rgba(10,49,97,0.12);display:flex;justify-content:space-between;align-items:start">
+        <div>
+          <p style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#B22234;margin:0 0 8px">AGI Services</p>
+          <h3 style="font-family:'Newsreader',serif;font-weight:400;font-size:28px;margin:0;color:#0A3161">{{ drawerTitle }}</h3>
+        </div>
+        <span onClick="{{ closeDrawer }}" style="font-size:22px;cursor:pointer;color:#8A8F98;line-height:1" style-hover="color:#0A0A0A">×</span>
+      </div>
+      <sc-if value="{{ drawerSent }}" hint-placeholder-val="{{ false }}">
+        <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;padding:48px;text-align:center">
+          <span style="font-family:'Newsreader',serif;font-size:44px;color:#0A3161">✓</span>
+          <p style="font-family:'Newsreader',serif;font-size:24px;margin:0;color:#0A3161">Request received</p>
+          <p style="font-size:13px;color:#5B6472;margin:0;max-width:280px">Our team will respond within one working day. (Preview form — not submitted.)</p>
+          <span onClick="{{ closeDrawer }}" style="margin-top:12px;border:1px solid #0A3161;color:#0A3161;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:12px 24px;cursor:pointer" style-hover="background:#0A3161;color:#fff">Close</span>
+        </div>
+      </sc-if>
+      <sc-if value="{{ drawerFormVisible }}" hint-placeholder-val="{{ true }}">
+        <div style="flex:1;overflow-y:auto;padding:32px;display:flex;flex-direction:column;gap:22px">
+          <label style="display:flex;flex-direction:column;gap:8px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#5B6472">Full name
+            <input placeholder="Your name" style="border:none;border-bottom:1px solid rgba(10,49,97,0.3);background:transparent;padding:12px 0;font-size:16px;font-family:'Inter',sans-serif;outline:none;color:#0A0A0A">
+          </label>
+          <label style="display:flex;flex-direction:column;gap:8px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#5B6472">Email
+            <input placeholder="name@example.com" style="border:none;border-bottom:1px solid rgba(10,49,97,0.3);background:transparent;padding:12px 0;font-size:16px;font-family:'Inter',sans-serif;outline:none;color:#0A0A0A">
+          </label>
+          <label style="display:flex;flex-direction:column;gap:8px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#5B6472">Campus
+            <input placeholder="Agadir / Online / Other" style="border:none;border-bottom:1px solid rgba(10,49,97,0.3);background:transparent;padding:12px 0;font-size:16px;font-family:'Inter',sans-serif;outline:none;color:#0A0A0A">
+          </label>
+          <label style="display:flex;flex-direction:column;gap:8px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#5B6472">Message
+            <textarea placeholder="Tell us briefly what you need…" rows="4" style="border:1px solid rgba(10,49,97,0.2);background:transparent;padding:12px;font-size:16px;font-family:'Inter',sans-serif;outline:none;resize:vertical;color:#0A0A0A"></textarea>
+          </label>
+          <span onClick="{{ submitDrawer }}" style="margin-top:8px;background:#0A3161;color:#fff;text-align:center;font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:16px;cursor:pointer;transition:background .25s" style-hover="background:#B22234">Submit Request</span>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;campus&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;Agadir&quot;, &quot;Casablanca&quot;, &quot;Rabat&quot;, &quot;Marrakech&quot;], &quot;default&quot;: &quot;Agadir&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Context&quot;}, &quot;heroMotion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Hero&quot;}}">
+class Component extends DCLogic {
+  state = { megaOpen: false, navOpen: false, drawer: null, drawerSent: false, voice: 0 };
+  VOICES = [
+    { quote: "We believe in equality, and that an international education empowers students to open global opportunities for their personal growth and success.", name: "Julie Wilburn", role: "Director · About AGI" },
+    { quote: "We are a community of learners — students, faculty and parents — working together to build a safe, supportive and challenging environment for educational excellence.", name: "AGI Academic Handbook", role: "Institution · We Believe" },
+    { quote: "Your time has come. Congratulations and hats off to each and every one of you on this remarkable achievement.", name: "Note from the Principal", role: "Graduation · Class of 2022" },
+    { quote: "While we offer a complete education from age five through grade 12, we welcome students at any stage and help them adapt to the AGI curriculum and language immersion.", name: "Admissions Office", role: "Admissions · Agadir" }
+  ];
+
+  stageRef = React.createRef();
+
+  componentDidMount() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    this.onMove = (e) => {
+      const el = this.stageRef.current;
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > window.innerHeight) return;
+      const dx = (e.clientX - (r.left + r.width / 2)) / r.width;
+      const dy = (e.clientY - (r.top + r.height / 2)) / r.height;
+      const cl = (n) => Math.max(-1, Math.min(1, n));
+      el.style.transform = "perspective(1100px) rotateY(" + (cl(dx) * 7).toFixed(2) + "deg) rotateX(" + (-cl(dy) * 7).toFixed(2) + "deg) translateZ(0)";
+    };
+    window.addEventListener("mousemove", this.onMove, { passive: true });
+  }
+
+  componentWillUnmount() {
+    if (this.onMove) window.removeEventListener("mousemove", this.onMove);
+  }
+
+  renderVals() {
+    const v = this.VOICES[this.state.voice];
+    return {
+      campus: this.props.campus ?? "Agadir",
+      motionClass: (this.props.heroMotion ?? true) ? "" : "agi-still",
+      stageRef: this.stageRef,
+      zero: 0,
+      navOpen: this.state.navOpen,
+      toggleNav: () => this.setState(s => ({ navOpen: !s.navOpen })),
+      closeNav: () => this.setState({ navOpen: false }),
+      megaOpen: this.state.megaOpen,
+      openMega: () => this.setState({ megaOpen: true }),
+      closeMega: () => this.setState({ megaOpen: false }),
+      stopProp: (e) => e.stopPropagation(),
+      drawerOpen: !!this.state.drawer,
+      drawerTitle: this.state.drawer || "",
+      drawerSent: this.state.drawerSent,
+      drawerFormVisible: !!this.state.drawer && !this.state.drawerSent,
+      closeDrawer: () => this.setState({ drawer: null, drawerSent: false }),
+      submitDrawer: () => this.setState({ drawerSent: true }),
+      openAdmissionsForm: () => this.setState({ drawer: "Admissions Application", drawerSent: false }),
+      openPartnerForm: () => this.setState({ drawer: "Partnership Enquiry", drawerSent: false }),
+      voiceQuote: v.quote, voiceName: v.name, voiceRole: v.role,
+      voiceDots: this.VOICES.map((v, i) => ({
+        ord: "0" + (i + 1),
+        who: v.role.split("·")[0].trim(),
+        color: i === this.state.voice ? "#B22234" : "#8A8F98",
+        select: () => this.setState({ voice: i })
+      })),
+      fees: [
+        { band: "Kindergarten – Grade 1", amount: "6,500 MAD" },
+        { band: "Grade 2 – Grade 6", amount: "7,500 MAD" },
+        { band: "Grade 7 – Grade 8", amount: "7,800 MAD" },
+        { band: "Grade 9 – Grade 11", amount: "10,000 MAD" },
+        { band: "Grade 12", amount: "11,000 MAD" },
+        { band: "American High School Online (Cognia)", amount: "$2,500 / year" }
+      ],
+      cefr: [
+        { grade: "Kindergarten", age: "Age 5–6", level: "Pre-A1 / A1", skill: "Understands simple classroom instructions and basic vocabulary." },
+        { grade: "Grades 1–2", age: "Age 6–8", level: "A1 – A2", skill: "Speaks in simple sentences; reads short stories and writes simple sentences." },
+        { grade: "Grades 3–4", age: "Age 8–10", level: "A2 – A2+", skill: "Follows lessons, writes short paragraphs and explains ideas in discussion." },
+        { grade: "Grade 5", age: "Age 10–11", level: "B1 target", skill: "Reads chapter books and writes organised paragraphs — elementary graduation benchmark." },
+        { grade: "Grades 6–8", age: "Age 11–14", level: "B1+ – B2", skill: "Understands academic vocabulary and lectures; writes essays and analyses texts." },
+        { grade: "Grades 9–11", age: "Age 14–17", level: "B2 – C1", skill: "Handles academic reading, research, debate and complex presentations." },
+        { grade: "Grade 12", age: "Age 17–18", level: "C1 ideal", skill: "University-level reading and academic writing; Anglia Proficiency is UCAS-listed." }
+      ],
+      programs: [
+        { no: "01", name: "Academic English K–12", desc: "American-curriculum micro-school from Grade K through 12, with ESL for language learners through the Anglia Examinations system of England.", tag: "Micro-School" },
+        { no: "02", name: "Adult High School Diploma", desc: "A nationally accredited, self-directed completion program for learners 16 and older, proctored on site in Agadir with American Worldwide Academy.", tag: "Age 16+" },
+        { no: "03", name: "English & Anglia Exams", desc: "Ten Anglia levels from young learner to expert user, mapped to the CEFR and testing listening, reading, writing and speaking. Free placement test.", tag: "Language" },
+        { no: "04", name: "Education Consultancy", desc: "Authorized admission agent for partner universities — applications, accommodation, visas, insurance and double-diplomation pathways.", tag: "Pathways" },
+        { no: "05", name: "Special Education (SEN)", desc: "Individualized Education Plans, small-group settings and support from occupational therapy to speech-language pathology and behavioural care.", tag: "Inclusive" },
+        { no: "06", name: "Teacher Training & C.I.T.E.", desc: "Anglia's Certificate for International Teachers of English (TESOL) — a lifelong qualification, plus classroom training for English teachers.", tag: "Educators" }
+      ],
+      admissionSteps: [
+        { no: "01", title: "Enquire & Tour", desc: "Tours are scheduled individually — call for an appointment to meet us and visit the school in Agadir city limits." },
+        { no: "02", title: "Placement Test", desc: "A free placement assessment appropriate to the program, including the Anglia level test for language learners." },
+        { no: "03", title: "Submit Documents", desc: "Age and residency verification, immunization and physical examination records, and records from the previous school." },
+        { no: "04", title: "Enroll", desc: "Confirm enrolment from mid-August; a child aged 5 by September 1 and under 21 on the first day is eligible." }
+      ],
+      keyDates: [
+        { label: "Anglia examinations", date: "April 2026" },
+        { label: "Graduation exercises", date: "June 2026" },
+        { label: "Enrolments & book orders", date: "From mid-August" },
+        { label: "First day of classes", date: "September 8" }
+      ],
+      stats: [
+        { value: "2013", label: "Established in Agadir" },
+        { value: "12", label: "Anglia Morocco regions" },
+        { value: "10", label: "Anglia levels, CEFR-mapped" },
+        { value: "4", label: "U.S. state recognitions" }
+      ],
+      network: [
+        { src: "assets/net-agi-seal.png", kind: "K–12 Division", name: "American Group International School", desc: "The American School of Agadir — micro-school and K–12 campus, established 2013." },
+        { src: "assets/net-awa.png", kind: "U.S. Registered", name: "AWA High School for Adults", desc: "Our U.S.-registered company, offering support programs to clients worldwide." },
+        { src: "assets/net-anglia.png", kind: "Examinations", name: "Anglia Examinations England", desc: "Main headquarters of Anglia Examinations in Morocco." },
+        { src: "assets/net-pods.png", kind: "Learning Pods", name: "AGI Learning Pods & Fast Track", desc: "Small-group programs led by teacherpreneurs — inclusive, creative, affordable." },
+        { src: "assets/net-ahs.png", kind: "LMS Partnership", name: "American High School Online", desc: "AHS diploma accepted both in the U.S. and internationally." },
+        { src: "assets/net-iheart.png", kind: "Wellbeing", name: "I-Heart Women & Family Institute", desc: "Accredited by IPHM and ICAHP — emotional and behavioral support for students." },
+        { src: "assets/net-ccg.png", kind: "UK Partner", name: "Chichester College Group", desc: "Seven UK colleges: Chichester, Crawley, Worthing, Brinsbury, Brighton MET, Northbrook, Haywards Heath." },
+        { src: "assets/net-leverage.png", kind: "University Pathways", name: "Leverage Edu", desc: "Private and public university placement, with housing assistance." }
+      ],
+      gallery: [
+        { label: "classroom, candid", caption: "In the classroom", tag: "K–12" },
+        { label: "study group", caption: "Study groups", tag: "Campus" },
+        { label: "commencement", caption: "Commencement", tag: "Achievement" },
+        { label: "students, corridor", caption: "Between classes", tag: "Community" },
+        { label: "library interior", caption: "The library", tag: "Campus" },
+        { label: "early years", caption: "Early years", tag: "K–12" }
+      ],
+      journal: [
+        { kind: "Partnership", title: "Leverage Edu and AGI join forces in the South of Morocco", date: "March 4, 2026" },
+        { kind: "Announcement", title: "Julie Wilburn officially accredited as a Holistic Therapeutic Coach", date: "April 6, 2026" },
+        { kind: "Partnership", title: "Empowering educators in Morocco: our partnership with Bridge Education Group", date: "November 11, 2025" },
+        { kind: "Student Story", title: "American National Spelling Bee in Morocco", date: "June 16, 2026" }
+      ],
+      team: [
+        { name: "Julie Wilburn", role: "Educational Director · Country Manager, Anglia Morocco", dept: "Agadir HQ" },
+        { name: "Abdelhak Lam", role: "Sales Coordinator, Main Headquarters", dept: "Mainland Morocco" },
+        { name: "Rachid Oussalh", role: "Regional Representative", dept: "Casablanca" },
+        { name: "Admissions Office", role: "Enrolment, records & placement testing", dept: "Agadir" }
+      ],
+      forms: [
+        { name: "Admissions Application", desc: "Begin a new application for any AGI division." },
+        { name: "Document Request", desc: "Official letters, certificates and attestations." },
+        { name: "Transcript Request", desc: "Academic transcripts for current and former students." },
+        { name: "Campus Visit", desc: "Book a guided visit at any AGI campus." },
+        { name: "Partnership Enquiry", desc: "Franchise and institutional partnership discussions." },
+        { name: "General Contact", desc: "Anything else — routed to the right office." }
+      ].map(f => ({ ...f, open: () => this.setState({ drawer: f.name, drawerSent: false }) })),
+      regions: [
+        { name: "Souss-Massa", status: "Headquarters · Agadir", color: "#7BC98A" },
+        { name: "Casablanca-Settat", status: "Regional representative", color: "#7BC98A" },
+        { name: "Tanger-Tetouan-Al Hoceima", status: "Anglia centres", color: "#C9A227" },
+        { name: "Rabat-Salé-Kénitra", status: "Anglia centres", color: "#C9A227" },
+        { name: "Fès-Meknès", status: "Anglia centres", color: "#C9A227" },
+        { name: "Marrakech-Safi", status: "Anglia centres", color: "#C9A227" },
+        { name: "Oriental · Béni Mellal-Khénifra · Drâa-Tafilalet", status: "Open for franchise", color: "rgba(255,255,255,0.5)" },
+        { name: "Southern Provinces", status: "Open for franchise", color: "rgba(255,255,255,0.5)" }
+      ],
+      accreditations: [
+        { name: "Global Schools Program", kind: "Membership", desc: "An initiative of the UN Sustainable Development Solutions Network, supporting UNESCO's Global Action Programme on Education for Sustainable Development." },
+        { name: "AIM Qualifications · Ofqual", kind: "Regulation", desc: "Anglia's English qualifications are delivered with AIM Qualifications and Assessment Group, regulated by Ofqual in England." },
+        { name: "UCAS listed", kind: "Recognition", desc: "The Anglia Proficiency examination is listed by UCAS as evidence of English competence for British universities." },
+        { name: "Cognia", kind: "Accreditation", desc: "The American High School Online in-school programme for Grades 9–12 is Cognia accredited; the books programme is Florida accredited." },
+        { name: "QAHE", kind: "Accreditation", desc: "Quality Assurance in Higher Education accreditation covering AGI's independent course studies and professional programmes." },
+        { name: "American Canadian Board", kind: "Certification", desc: "Professional training certificates, including the Early Childhood Education and Care diploma, are approved by the American Canadian Board." },
+        { name: "American School Counselor Association", kind: "Membership", desc: "AGI joined the ASCA network in 2026, bringing U.S. school-counselling standards to student guidance in Agadir." },
+        { name: "U.S. State Departments of Education", kind: "Recognition", desc: "Recognition from four state departments — Tennessee, Florida, Colorado and Alabama." }
+      ],
+      professional: [
+        { name: "C.I.T.E. / TESOL", who: "For English teachers", desc: "Anglia's Certificate for International Teachers of English — no entry qualifications required, mapped to the CEFR, and a lifelong recognition of teaching competence." },
+        { name: "Teacher Training Program", who: "For classroom practice", desc: "English-field teachers test and train in AGI classrooms to strengthen their language and instructional performance." },
+        { name: "USA Teacher Sponsorship", who: "For aspiring educators", desc: "Certification sponsorship for private-school teaching positions in the United States; requires a bachelor's degree, a clear background check and a sponsoring school." },
+        { name: "Independent Course Studies", who: "Self-paced", desc: "Graduate-level, self-taught modules using books and journals as the research focus; materials are free and certificates are approved by the American Canadian Board." },
+        { name: "Proctoring Services", who: "Invigilation", desc: "Paper-based and online exams invigilated on site for North American and British university distance learners, companies and certification bodies — Monday to Thursday, 9am–5pm." },
+        { name: "Corporate & Business English", who: "For organisations", desc: "Anglia Business English across four steps from A2+ to C1, testing reading, writing, listening and speaking for the professional workplace." },
+        { name: "Medical EFL", who: "For clinicians", desc: "English for medical professionals — patient communication, colleague handover, seminars and reading or writing medical papers." },
+        { name: "ADHD Holistic Coaching", who: "In Agadir & online", desc: "One-to-one coaching for children and adults on focus, organisation and time management, delivered by Julie Wilburn as an accredited holistic practitioner." }
+      ],
+      policies: [
+        { name: "Attendance", desc: "K–12 students must attend 90% of the year to qualify for promotion. Absences need a dated, signed parental excuse within two days of return; arrival after 10:00 counts as a full-day absence." },
+        { name: "Promotion & Retention", desc: "Promotion follows completion of grade-level criteria, with a minimum 64% pass in each core subject — mathematics, science, language arts and social studies." },
+        { name: "Provisional Placement", desc: "Every new student sits English/ESL and academic assessments before admission, whatever system they arrive from, so placement holds even when prior records are incomplete." },
+        { name: "Parent Responsibility", desc: "Enrolment carries a 90-day adjustment period and shared expectations on attendance, participation, safeguarding and academic follow-through." },
+        { name: "Refunds & Complaints", desc: "One published procedure across all divisions — AGI Learning Pods, iHeart Therapeutic Services and Anglia Morocco — covering enrolment, refunds, complaints and counselling support." },
+        { name: "Media Policy", desc: "How photographs, video and live streaming of school events may be used on the website, social media and printed materials, with consent and safeguarding at the centre." },
+        { name: "Service Hours", desc: "High school graduation requires 40 documented volunteer hours — ten per year — benefiting the community and approved by the school." }
+      ],
+      curriculum: [
+        { band: "Kindergarten", codes: "F100 · E100 · L100 · M100 · S100 · V702", subjects: "Foreign Language, English, Reading Phonics, Math, Science, Penmanship, ESL" },
+        { band: "Grades 1–4", codes: "F105–F120 · E105–E120 · L105–L120 · M105–M120 · S105–S120", subjects: "Foreign Language, English & Spelling, Literature, Mathematics, Natural Science, U.S. history strands, Penmanship (Grades 2–4), ESL" },
+        { band: "Grades 5–8", codes: "F125–F140 · E125–E140 · H125–H140 · L125–L140 · M125–M140 · S125–S140", subjects: "Foreign Language, English & Spelling, American / World / Islamic history, Literature, Mathematics through Pre-Algebra, Earth & Biological Science, ESL" },
+        { band: "Grade 9", codes: "F145 · E145 · H145 · M145 · S145 · V730 · PE", subjects: "English I, U.S. History, Algebra I, Physical Science, Principles of Music, Physical Education, ESL" },
+        { band: "Grade 10", codes: "F150 · E150 · H150 · M150 · S150 · EL", subjects: "English II, World History, Geometry, Biology, one elective, ESL" },
+        { band: "Grade 11", codes: "F155 · E155 · M155 · S155 · EL · EL", subjects: "English III, Algebra II, Health, two electives, ESL" },
+        { band: "Grade 12", codes: "F160 · E160 · H160 · M160 · S160", subjects: "English IV, U.S. Government & Economics, Business Math, Science, ESL" }
+      ],
+      connectStats: [
+        { value: "128", label: "Conversations" },
+        { value: "43", label: "Enquiries" },
+        { value: "17", label: "Qualified Leads" },
+        { value: "9", label: "Visits Booked" }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
