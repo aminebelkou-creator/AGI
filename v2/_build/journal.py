@@ -22,6 +22,8 @@ def clean_md(md):
     return md.strip()
 
 posts = sorted(json.load(open(EXPORT, encoding="utf-8"))["news"], key=lambda p: p["date"], reverse=True)
+IMG_MAP = os.path.join(V2, "_build", "journal-images.json")
+IMAGES = json.load(open(IMG_MAP, encoding="utf-8")) if os.path.exists(IMG_MAP) else {}
 TPL = open(os.path.join(V2, "_build", "article.tpl.html"), encoding="utf-8").read()
 links = {}
 for i, p in enumerate(posts):
@@ -32,6 +34,7 @@ for i, p in enumerate(posts):
     body = markdown.markdown(clean_md(p.get("markdown", "")), extensions=["extra", "sane_lists"])
     body = re.sub(r'href="/(contact|forms|admissions)/?"', lambda m: f'href="../{m.group(1)}.html"', body)  # ROOT_LINKS
     body = re.sub(r'href="/([^"]*)"', r'href="https://www.americangroup-international.com/\1"', body)
+    for _u, _local in IMAGES.items(): body = body.replace(_u, "../" + _local)   # local copies of old-site images
     body = re.sub(r"<img ", '<img loading="lazy" ', body)
     newer = posts[i - 1] if i > 0 else None; older = posts[i + 1] if i + 1 < len(posts) else None
     def nav(q, label):

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /_build/
+Disallow: /_legacy/
+
+Sitemap: https://www.americangroup-international.com/sitemap.xml

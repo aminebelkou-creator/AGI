@@ -1,0 +1,88 @@
+# AGI v2 – Launch checklist
+
+Everything on the new site that is **assumed, a placeholder, or not yet confirmed**.
+Tick an item (`- [x]`) once it is confirmed or corrected on the site. `python _build/prelaunch.py` lists what is still open and says **READY FOR LAUNCH** only when nothing is left (photos, sample testimonials and team placeholders are detected automatically from the pages).
+
+Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chichester) or Anglia Morocco HQ · **Legal** = a qualified reviewer · **Tech** = whoever deploys the site.
+
+---
+
+## 1. Fees and dates — AGI
+- [ ] Monthly tuition **2,600 MAD over ten months** (home, admissions)
+- [ ] Annual inscription **6,500 MAD (K–Grade 1) rising to 11,000 MAD (Grade 12)**, non-refundable (admissions)
+- [ ] "Books, mathematics and Anglia exams, dual enrollment and insurance included" in tuition (home, admissions)
+- [ ] 2026–27 calendar: registration **Aug 28 & 31**, first day **Sept 7**, fall break **Oct 12–18**, winter break **Dec 18 – Jan 3**, second semester **Jan 5**, Anglia exams **April (date TBA)**, last day & graduation **June 17, 2027** (home, admissions)
+- [ ] Eligibility: aged **5 by September 1**, **under 21** on the first day (admissions)
+- [ ] Office hours **Monday–Friday 9:00–17:00, closed Sunday** — and is the office open on Saturdays? (contact)
+- [ ] Visits/tours **Monday to Friday** (home, forms, contact)
+- [ ] "The office replies **within one working day**" — a promise on several pages (contact, forms, pathways, professional)
+
+## 2. School facts — AGI
+- [ ] Founded **2013** with **five children**; moved to **Hay Nahda**; **eight multi-grade classrooms** (home, about)
+- [ ] **46+ nationalities** over **eleven years** (home, about, student life)
+- [ ] "**The first American school in Agadir**" — used in the hero, footer and About; confirm it can be claimed
+- [ ] Mission, philosophy and vision wording (about) — the old "Our Vision" page was Lorem Ipsum; text taken from the school page
+- [ ] Course of study by grade (k12 curriculum table)
+- [ ] English benchmarks by grade (CEFR table on english-anglia)
+- [ ] Homework minutes per grade; **40 service hours** (ten a year) (student life, policies)
+- [ ] Policy summaries: attendance **90%**, late after **9:00**, absent after **10:00**, **5 tardies = 1 absence**, pass mark **64% (D)**, **90-day** adjustment period (policies)
+- [ ] Two high-school routes: **Florida-accredited books program** or **American High School Online (Cognia)**, US$2,500/year (k12, admissions)
+- [ ] Student-life calendar highlights: Global Play Day, Spelling Bee at the American Legation in Tangier, Moroccan & American holidays (student life)
+
+## 3. People — AGI
+- [ ] Julie A. Wilburn title: **CEO & Educational Director · Anglia Examinations Morocco, American Group International of Agadir**
+- [ ] Julie bio: "lived in Morocco for many years, dual citizenship", "teaches in the classroom", IPHM & ICAHP accreditation 2026 (about)
+- [ ] Abdelhak Lam: **Sales Coordinator, main headquarters** — role description "Payments and the Anglia Morocco centers" (about)
+- [ ] Teacher names, subjects and portraits — 4 teacher slots + Anglia coordinator + admissions contact (about › team) — *placeholders*
+- [ ] Permission from every person shown or named
+
+## 4. Accreditation and partners — AGI (with documents on file)
+- [x] Four U.S. state departments of education: Tennessee, Florida, Colorado, Alabama — *confirmed by AGI*
+- [x] NCAA, NAIA, College Board, Meridian Learning "in compliance with" — *confirmed by AGI*
+- [x] American Council of Training and Development as accreditor — *confirmed by AGI*
+- [ ] Cognia (American High School Online), QAHE, American Canadian Board, Global Schools Program (member since 2023), ASCA (joined 2026) (about)
+- [ ] Credit-transfer disclaimer: add back "AGI does not guarantee that credits or the diploma will be accepted by other institutions"? (about, admissions)
+- [ ] Partner logos and wording: AWA, Learning Pods, American High School Online, I-Heart Women & Family Institute, Chichester College Group, Leverage Edu (about › network)
+- [ ] Adult diploma: partner **American Worldwide Academy**, **80%** passing score, first adult graduate **2019**, course list & credits (adult-diploma)
+
+## 5. Anglia — Anglia / Anglia Morocco HQ
+- [ ] Anglia "based in **Chichester since 1993**"; AGI used Anglia since **2013**; **franchise holder for Morocco since 2021** (about, english-anglia, partnerships)
+- [ ] **Ten levels** mapped to CEFR; **no minimum age**, young learners from about **four** (english-anglia)
+- [ ] **Anglia International Business English, four levels A2+ to C1** (english-anglia, professional)
+- [ ] Qualifications delivered with **AIM Qualifications, regulated by Ofqual** — wording approved by Anglia (english-anglia, about)
+- [ ] **Proficiency listed by UCAS** as evidence of English for UK universities — wording approved by Anglia (english-anglia, pathways, about)
+- [ ] **C.I.T.E.** description: no entry qualifications, CEFR-mapped, lifelong recognition (professional)
+- [ ] Anglia Morocco covers **twelve regions**; franchise "open in several regions" — which ones? (home, english-anglia, partnerships)
+- [ ] Use of the Anglia name and logo on the site approved
+- [ ] Class prices (effective Nov 2024 — still current?): Saturday classes **500 MAD/month** ages 5–18 Sat 14:00–16:00 Oct–June incl. yearly exam; one-to-one **200 MAD**; small group **150 MAD/person**; group course **100 MAD/week (1,200 MAD for 12 weeks)**; level test **free**; groups max **10** (english-anglia)
+
+## 6. Professional services — AGI
+- [ ] Proctoring: **Mon–Thu 9:00–17:00**, **200 MAD (15 EUR)** admin fee + **200 MAD (15 EUR) per exam hour** (professional)
+- [ ] USA teacher sponsorship: **US$60**, bachelor's degree, background check, private schools only (professional)
+- [ ] Bridge Education Group TEFL/TESOL partnership still active (professional)
+- [ ] ADHD holistic coaching offered in Agadir and online (professional, special education)
+- [ ] University pathways: "authorized admissions agent"; Leverage Edu regional partner for the Souss; CCG's seven colleges (pathways)
+
+## 7. Content still to supply — AGI
+- [ ] **Photos** (all `Photo` slots on the site — see `prelaunch.py` output): home ×2, about campus, team portraits, K-12 ×3, student life ×6, one per program page ×5
+- [ ] A **social share image** 1200×630 (currently the seal) — set `OG_IMAGE` in `_build/build.py`
+- [ ] **Real testimonials** with written permission (3 on home, 3 on student life — currently samples)
+- [ ] Social media accounts to link (Instagram / Facebook / LinkedIn / YouTube), if any
+- [ ] Old journal announcements to hide (e.g. "Inscriptions 2019–2020", "Back to School 2021")
+- [ ] 5 journal images already missing on the old site (404): ASCA logo, two 2026 posts, one 2020 header — supply replacements or leave out
+- [ ] French version: translation help for the main pages (home, admissions, programs, contact)
+
+## 8. Legal — Legal reviewer
+- [ ] Privacy policy (new draft) — Moroccan law 09-08 / CNDP requirements for personal data
+- [ ] Terms of use (new draft) — replaces the old goods-sales "Terms and Conditions"
+- [ ] Consent wording on the park/outing consent form and the enrollment form
+- [ ] Photo/media consent for students shown on the site
+
+## 9. Technical — Tech
+- [ ] Final domain (currently `https://www.americangroup-international.com`) — `SITE_URL` in `_build/build.py`; regenerate sitemap
+- [ ] Map pin location correct (Google Maps search for 20 Rue Baalabek, Hay Nahda) (home, contact)
+- [ ] Hosting chosen; `.htaccess` redirects work on it (Apache) — review `_build/redirects.csv` (old pages sent to the home page)
+- [ ] Forms backend live (`app/`): accept the 10 form types + contact, set `endpoint` in forms.html and contact.html, office email alerts
+- [ ] Test every form end-to-end on a phone
+- [ ] Google Search Console: submit `sitemap.xml`; Google Business Profile address/phone match the site
+- [ ] Remove "Design preview" wording if any remains; run `python _build/prelaunch.py` → READY

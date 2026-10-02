@@ -58,6 +58,25 @@ def program_cards(cols=3, current=None):
                     for h, t, n, d in PROGRAM_CARDS if h != current)
     return f'<div class="cards" style="--cols:{cols}">{items}</div>'
 
+
+# ---------------- placeholders (tracked by _build/prelaunch.py) ----------------
+def ph(pid, label, ratio="4/3", cls=""):
+    """A photo slot. Replace with <figure class="photo"><img ...></figure> when the real photo arrives."""
+    c = f' class="photo {cls}"' if cls else ' class="photo"'
+    return f'<figure{c} data-placeholder="photo:{pid}" style="--ratio:{ratio}"><figcaption><b>Photo</b>{label}</figcaption></figure>'
+
+MAP = ('<div class="map" data-verify="map-location"><iframe title="Map: AGI, Number 20, Rue Baalabek, Hay Nahda, Agadir" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
+       'src="https://www.google.com/maps?q=20%20Rue%20Baalabek%2C%20Hay%20Nahda%2C%20Agadir%2C%20Morocco&amp;output=embed"></iframe></div>')
+
+TESTIMONIALS = [  # SAMPLE quotes – replace with real, permission-cleared testimonials before launch
+ ("parent-1", "Our daughter arrived speaking almost no English. Two years later she reads chapter books and corrects my pronunciation.", "Parent of a grade 3 student", "Sample testimonial"),
+ ("parent-2", "The teachers know every child. When our son needed extra support, the plan was in place within weeks, and we were part of it.", "Parent of a grade 7 student", "Sample testimonial"),
+ ("alumni-1", "AGI gave me an American diploma and the English to use it. I'm now studying at university abroad.", "AGI graduate", "Sample testimonial"),
+]
+def testimonials(items=TESTIMONIALS, cols=3):
+    cards = "".join(f'<figure class="testimonial" data-placeholder="testimonial:{i}"><blockquote>{q}</blockquote><figcaption><b>{w}</b>{n}</figcaption></figure>' for i, q, w, n in items)
+    return f'<div class="testimonials" style="--cols:{cols}">{cards}</div>'
+
 # ------------------------------------------------------------------ HOME
 HOME_CSS = """
 .home-hero{background:radial-gradient(120% 90% at 78% 40%,#0f3a72 0%,#061529 62%);color:#fff;overflow:hidden}
@@ -118,6 +137,7 @@ page("index.html", "American Group International – American school in Agadir, 
 
 <section class="section bg-white"><div class="wrap">
   <div class="section-head"><h2>Why families choose AGI</h2><p>A small school where every learner is known by name.</p></div>
+  <div class="gallery" style="margin-bottom:28px">{ph("home-classroom", "A multi-grade classroom during a lesson", "4/3", "wide")}{ph("home-reading", "A student reading or presenting", "4/3")}</div>
   <div class="cards" style="--cols:4">
     <div><h3>Inclusive by design</h3><p>Mainstream and special-needs learners study side by side, with individual plans where they need them.</p></div>
     <div><h3>Creative curriculum</h3><p>American pedagogy taught with imagination, drawing on Montessori and Waldorf ideas.</p></div>
@@ -135,6 +155,11 @@ page("index.html", "American Group International – American school in Agadir, 
     <p class="cite"><b>Julie A. Wilburn</b>CEO &amp; Educational Director · Anglia Examinations Morocco, American Group International of Agadir</p>
     <p style="margin-top:22px"><a class="link" href="about.html">About AGI</a></p>
   </div>
+</div></section>
+
+<section class="section bg-white"><div class="wrap">
+  <div class="section-head"><h2>What families say</h2><p>Parents, students and graduates in their own words.</p></div>
+  {testimonials()}
 </div></section>
 
 <section class="section bg-navy"><div class="wrap">
@@ -188,7 +213,8 @@ page("index.html", "American Group International – American school in Agadir, 
     <div class="btn-row" style="margin-top:28px">{GOLD_APPLY}<a class="btn btn-light" href="forms.html#visit">Book a visit</a></div></div>
   <div><address>Number 20, Rue Baalabek<br>Hay Nahda, Agadir 80000, Morocco</address>
     <p style="color:rgba(255,255,255,.75);font-size:15px;line-height:1.9;margin:0"><a style="color:#fff" href="tel:+212528843349">+212 528 843 349</a> · <a style="color:#fff" href="https://wa.me/212688739393">WhatsApp</a> · <a style="color:#fff" href="mailto:americanecoleagadir@gmail.com">Email</a><br>The office is closed on Sundays.</p>
-    <p style="margin-top:16px"><a class="link" style="color:#fff" href="https://www.google.com/maps/search/?api=1&amp;query=20+Rue+Baalabek+Hay+Nahda+Agadir">Open in Google Maps</a></p></div>
+    <p style="margin-top:16px"><a class="link" style="color:#fff" href="https://www.google.com/maps/search/?api=1&amp;query=20+Rue+Baalabek+Hay+Nahda+Agadir">Open in Google Maps</a></p>
+    <div style="margin-top:24px">{MAP}</div></div>
 </div></section>
 """, HOME_CSS)
 
@@ -217,7 +243,7 @@ page("about.html", "About AGI – American Group International, Agadir",
  hero("<span>About</span>", "The first American school in Agadir.",
       "AGI began in 2013 with five children in one room. Today it is a K–12 micro-school, a center for adult and English education, and the home of Anglia Examinations in Morocco.") + f"""
 <section class="section bg-white"><div class="wrap split">
-  <div class="intro"><h2>Our story</h2></div>
+  <div class="intro"><h2>Our story</h2>{ph("about-campus", "The school building in Hay Nahda", "4/3")}</div>
   <div class="prose">
     <p>American Group International School is a small private school in the Berber community of the Souss, in Agadir. The first classes started in 2013 with five children. The school soon outgrew its one-room beginnings and moved to Hay Nahda, where kindergarten to grade 12 is now taught in eight multi-grade classrooms.</p>
     <p>Over eleven years, AGI has welcomed students of more than 46 nationalities. Its enrollment is open: the school was created for students who need a program the Moroccan system may not offer – an American curriculum, English immersion, or support for learning differences.</p>
@@ -250,11 +276,16 @@ page("about.html", "About AGI – American Group International, Agadir",
 
 <section class="section"><div class="wrap">
   <div class="section-head"><h2>The team</h2><p>A small team, so families always know who to call.</p></div>
-  <dl class="rows">
-    <div><dt>Julie A. Wilburn</dt><dd>CEO &amp; Educational Director. Admissions, curriculum, student plans and Anglia Morocco.</dd></div>
-    <div><dt>Abdelhak Lam</dt><dd>Sales Coordinator, main headquarters, Agadir. Payments and the Anglia Morocco centers.</dd></div>
-    <div><dt>Admissions office</dt><dd>Enrollment, records, placement testing and document requests. <a class="link" href="forms.html">Forms &amp; requests</a></dd></div>
-  </dl>
+  <div class="people">
+    <div class="person"><figure class="photo" style="--ratio:4/5"><img src="assets/web/director-julie-wilburn.jpg" alt="" loading="lazy"></figure><h3>Julie A. Wilburn</h3><p>CEO &amp; Educational Director</p></div>
+    <div class="person">{ph("team-abdelhak-lam", "Portrait", "4/5")}<h3>Abdelhak Lam</h3><p>Sales Coordinator, main headquarters</p></div>
+    <div class="person">{ph("team-teacher-1", "Portrait", "4/5")}<h3 class="ph-text" data-placeholder="team:teacher-1">Teacher name</h3><p>Lower school · grades K–5</p></div>
+    <div class="person">{ph("team-teacher-2", "Portrait", "4/5")}<h3 class="ph-text" data-placeholder="team:teacher-2">Teacher name</h3><p>Middle &amp; upper school · English</p></div>
+    <div class="person">{ph("team-teacher-3", "Portrait", "4/5")}<h3 class="ph-text" data-placeholder="team:teacher-3">Teacher name</h3><p>Mathematics &amp; science</p></div>
+    <div class="person">{ph("team-teacher-4", "Portrait", "4/5")}<h3 class="ph-text" data-placeholder="team:teacher-4">Teacher name</h3><p>Special education support</p></div>
+    <div class="person">{ph("team-anglia", "Portrait", "4/5")}<h3 class="ph-text" data-placeholder="team:anglia-coordinator">Name</h3><p>Anglia Morocco coordinator</p></div>
+    <div class="person">{ph("team-admissions", "Portrait", "4/5")}<h3 class="ph-text" data-placeholder="team:admissions">Name</h3><p>Admissions office · <a class="link" href="forms.html">Forms &amp; requests</a></p></div>
+  </div>
 </div></section>
 
 <section class="section bg-white" id="accreditation"><div class="wrap">
@@ -292,7 +323,8 @@ page("programs.html", "Programs – American Group International, Agadir",
 def program_page(name, crumb, title, desc, h1, lede, body, cta_title, cta_text, cta_buttons):
     others = f'<section class="section"><div class="wrap"><div class="section-head"><h2>Other programs</h2><p><a class="link" href="programs.html">All programs</a></p></div>{program_cards(current=name)}</div></section>'
     page(name, f"{title} – American Group International, Agadir", desc,
-         hero(f'<a href="programs.html">Programs</a> / <span>{crumb}</span>', h1, lede, APPLY + VISIT) + body + cta(cta_title, cta_text, cta_buttons) + others)
+         hero(f'<a href="programs.html">Programs</a> / <span>{crumb}</span>', h1, lede, APPLY + VISIT)
+         + f'<div class="wrap" style="padding-bottom:clamp(40px,5vw,72px)">{ph("program-" + name.replace(".html", ""), crumb + " – students in class or activity", "21/8")}</div>' + body + cta(cta_title, cta_text, cta_buttons) + others)
 
 program_page("special-education.html", "Special education", "Special education (SEN)",
  "Special education at AGI Agadir: Individualized Education Plans, small groups, therapy support and a special-needs high school program.",
@@ -447,13 +479,14 @@ program_page("pathways.html", "University pathways", "University pathways",
 page("student-life.html", "Student life – American Group International, Agadir",
  "Life at AGI: a small international community in Agadir, service hours, homework, Saturday classes and events through the year.",
  hero("<span>Student life</span>", "A small school with a big world inside.",
-      "Students from more than 46 nationalities learn together in small multi-grade classes, where teachers know every child and every family.") + """
+      "Students from more than 46 nationalities learn together in small multi-grade classes, where teachers know every child and every family.") + f"""
 <section class="section bg-white"><div class="wrap">
-  <div class="section-head"><h2>Voices of AGI</h2></div>
-  <div class="cards" style="--cols:2">
-    <div><p class="quote" style="font-size:clamp(20px,1.8vw,26px)">“We are a community of learners – students, faculty and parents – working together to build a safe, supportive and challenging environment.”</p><p class="cite"><b>AGI Academic Handbook</b>We believe</p></div>
-    <div><p class="quote" style="font-size:clamp(20px,1.8vw,26px)">“We offer a complete education from age five through grade 12, and we welcome students at any stage.”</p><p class="cite"><b>Admissions office</b>Agadir</p></div>
-  </div>
+  <div class="section-head"><h2>Life at AGI</h2><p>A school day in Hay Nahda.</p></div>
+  <div class="gallery">{ph("life-1", "Morning circle or classroom discussion", "4/3", "wide")}{ph("life-2", "Science or art project", "4/3")}{ph("life-3", "Saturday Anglia class", "4/3")}{ph("life-4", "Students at a park outing", "4/3")}{ph("life-5", "Graduation day", "4/3")}{ph("life-6", "Spelling bee or school event", "4/3", "wide")}</div>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Voices of AGI</h2><p>Parents, students and graduates.</p></div>
+  {testimonials()}
 </div></section>
 <section class="section"><div class="wrap split">
   <div class="intro"><h2>The school year</h2><p>Highlights from the AGI calendar.</p></div>
@@ -584,8 +617,10 @@ page("contact.html", "Contact – American Group International, Agadir",
     <dt>Call</dt><dd><a href="tel:+212528843349">+212 528 843 349</a><small>Administration · in Arabic: <a href="tel:+212618639911">+212 618 639 911</a></small></dd>
     <dt>WhatsApp</dt><dd><a href="https://wa.me/212688739393">+212 688 739 393</a></dd>
     <dt>Email</dt><dd style="word-break:break-all"><a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a></dd>
+    <dt>Opening hours</dt><dd><span class="ph-text" data-placeholder="fact:office-hours">Monday to Friday, 9:00–17:00</span><small>Closed on Sundays</small></dd>
   </dl>
 </div></section>
+<section class="section tight"><div class="wrap">{MAP}</div></section>
 <section class="section"><div class="wrap">
   <div class="section-head"><h2>Looking for a specific request?</h2><p>These forms go straight to the right person.</p></div>
   <div class="cards">

@@ -83,7 +83,25 @@ def footer(page):
   </div>
   <div class="wrap bottom"><span>© 2026 American Group International · Agadir, Morocco</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="contact.html">Contact</a></span></div>
 </footer>
+<a class="wa-float" href="https://wa.me/212688739393?text=Hello%20AGI%2C%20" target="_blank" rel="noopener" aria-label="Message AGI on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg><span>WhatsApp</span></a>
 <!--/site:footer-->"""
+
+
+SITE_URL = "https://www.americangroup-international.com"   # VERIFY: final domain for the new site
+OG_IMAGE = "assets/web/agi-seal-520.png"                      # VERIFY: replace with a real campus photo (1200x630)
+SCHOOL_JSONLD = """<script type="application/ld+json">{"@context":"https://schema.org","@type":"School","name":"American Group International School","alternateName":"AGI","url":"%s/","logo":"%s/assets/web/agi-seal-520.png","foundingDate":"2013","telephone":"+212528843349","email":"americanecoleagadir@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Number 20, Rue Baalabek, Hay Nahda","addressLocality":"Agadir","postalCode":"80000","addressCountry":"MA"},"sameAs":[]}</script>""" % (SITE_URL, SITE_URL)
+
+def seo_block(rel, s):
+    title = re.search(r"<title>(.*?)</title>", s, re.S); desc = re.search(r'<meta name="description" content="([^"]*)"', s)
+    t = title.group(1).strip() if title else "American Group International"; d = desc.group(1) if desc else ""
+    url = SITE_URL + "/" + ("" if rel == "index.html" else rel)
+    tags = [f'<link rel="canonical" href="{url}">', '<meta property="og:site_name" content="American Group International">',
+            f'<meta property="og:type" content="{"article" if rel.startswith("journal/") else "website"}">',
+            f'<meta property="og:title" content="{t}">', f'<meta property="og:description" content="{d}">',
+            f'<meta property="og:url" content="{url}">', f'<meta property="og:image" content="{SITE_URL}/{OG_IMAGE}">',
+            '<meta name="twitter:card" content="summary_large_image">']
+    if rel == "index.html": tags.append(SCHOOL_JSONLD)
+    return "<!--site:seo-->\n" + "\n".join(tags) + "\n<!--/site:seo-->"
 
 HEAD_LINKS = '<link rel="stylesheet" href="site.css">\n<script src="site.js" defer></script>'
 
@@ -105,6 +123,11 @@ def stamp(path):
         if depth:  # in sub-folders nothing is the current page itself, only its section
             block = block.replace(' aria-current="page"', "") if name == "footer" else block
         s = pat.sub(lambda m: prefixed(block, prefix), s, count=1)
+    block = seo_block(rel, s)
+    if "<!--site:seo-->" in s:
+        s = re.sub(r"<!--site:seo-->.*?<!--/site:seo-->", lambda m: block, s, count=1, flags=re.S)
+    else:
+        s = s.replace("</head>", block + "\n</head>", 1)
     if 'site.css"' not in s:
         s = s.replace("</head>", HEAD_LINKS.replace('href="site', f'href="{prefix}site').replace('src="site', f'src="{prefix}site') + "\n</head>", 1)
     open(path, "w", encoding="utf-8", newline="").write(s)
