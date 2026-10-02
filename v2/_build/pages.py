@@ -200,6 +200,7 @@ page("index.html", "American Group International – American school in Agadir, 
     <figure><img src="assets/web/mark-collegeboard-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>College Board</b>AP &amp; SAT programs</figcaption></figure>
     <figure><img src="assets/web/mark-meridian-clean.png" alt="" width="160" height="84" loading="lazy"><figcaption><b>Meridian Learning</b>Curriculum standards</figcaption></figure>
   </div>
+  <div class="note" style="margin:36px 0 0;background:#fff;border-left-color:var(--navy)"><strong style="color:var(--navy)">Official partner in Morocco of Chichester College Group, UK.</strong> AGI is the Anglia franchise holder for Morocco and home of Anglia Morocco. Anglia Examinations is a wholly owned subsidiary of the Chichester College Group, award winning and Ofsted Outstanding. <a href="english-anglia.html">English &amp; Anglia exams</a></div>
   <p style="margin-top:24px"><a class="link" href="about.html#accreditation">All accreditation and memberships</a></p>
 </div></section>
 
@@ -232,7 +233,8 @@ ACC = [("American Council of Training and Development", "Accreditation", "AGI's 
  ("Cognia", "Accreditation", "The American High School Online program for grades 9–12 is Cognia accredited; the high school books program is Florida accredited."),
  ("QAHE", "Accreditation", "Quality Assurance in Higher Education covers AGI's independent course studies and professional programs."),
  ("American Canadian Board", "Certification", "Professional training certificates, including the Early Childhood Education and Care diploma, are approved by the American Canadian Board."),
- ("AIM Qualifications · Ofqual", "Regulation", "Anglia's English qualifications are delivered with AIM Qualifications and Assessment Group, regulated by Ofqual in England."),
+ ("Chichester College Group, UK", "Official partner", "AGI is proud to be the official partner in Morocco of Chichester College Group, UK – award winning and Ofsted Outstanding – which owns Anglia Examinations. AGI became the Anglia franchise holder for Morocco in 2021."),
+ ("AIM Qualifications · Ofqual", "Regulation", "Anglia's four highest levels of exam are awarded by AIM Qualifications and Assessment Group, regulated by Ofqual in England."),
  ("UCAS", "Recognition", "The Anglia Proficiency examination is listed by UCAS as evidence of English competence for British universities."),
  ("Global Schools Program", "Membership", "An initiative of the UN Sustainable Development Solutions Network, supporting education for sustainable development. Member since 2023."),
  ("American School Counselor Association", "Membership", "AGI joined ASCA in 2026, bringing U.S. school-counseling standards to student guidance.")]
@@ -392,12 +394,12 @@ program_page("english-anglia.html", "English & Anglia exams", "English & Anglia 
  "English, measured step by step.",
  "AGI is the headquarters of Anglia Examinations in Morocco. Children and adults learn English in small groups and certify their level with exams from England – starting with a free level test.", f"""
 <section class="section bg-white"><div class="wrap split">
-  <div class="intro"><h2>Anglia Examinations</h2><p>Based in Chichester, England, since 1993. AGI has used Anglia in its language programs since 2013 and became the franchise holder for Morocco in 2021.</p></div>
+  <div class="intro"><h2>Anglia Examinations</h2><p>Based in Chichester, England, since 1993. AGI has used the Anglia system in its language programs since 2013, and in 2021 became the Anglia franchise holder for Morocco. AGI is proud to be the official partner in Morocco of Chichester College Group, UK.</p></div>
   <dl class="rows">
     <div><dt>Ten levels</dt><dd>From young learner to expert user, mapped to the Common European Framework (CEFR). There is no minimum age; young learners start at about four.</dd></div>
     <div><dt>All four skills</dt><dd>Every level tests listening, reading, writing and speaking.</dd></div>
     <div><dt>Business English</dt><dd>Anglia International Business English, at four levels from A2+ to C1.</dd></div>
-    <div><dt>Recognized in the UK</dt><dd>Delivered with AIM Qualifications, regulated by Ofqual. The Proficiency level is listed by UCAS as evidence of English for British universities.</dd></div>
+    <div><dt>Recognized in the UK</dt><dd>Anglia Examinations is a wholly owned subsidiary of the Chichester College Group, award winning and Ofsted Outstanding. The four highest levels are awarded by AIM Qualifications and Assessment Group, regulated by Ofqual. The Proficiency level is listed by UCAS as evidence of English for British universities.</dd></div>
   </dl>
 </div></section>
 <section class="section" id="classes"><div class="wrap">
