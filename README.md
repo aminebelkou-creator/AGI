@@ -31,6 +31,7 @@ New website for **American Group International (AGI)**, the American school in A
 13. [The first rebuild (`app/`)](#13-the-first-rebuild-app)
 14. [Old site content (`data/`)](#14-old-site-content-data)
 15. [Troubleshooting](#15-troubleshooting)
+16. [v3 – complete content from both sites](#16-v3--complete-content-from-both-sites-how-it-works)
 
 ---
 
@@ -341,3 +342,56 @@ Known issues in `app/` (from the original notes): chatbot contact details and ke
 | Fonts look unstyled with JavaScript off | Expected: fonts load via `<noscript>` fallback; system fonts are used briefly |
 | Popup never shows again while testing | It shows once every 7 days: clear `agi-story-popup` from the browser's local storage |
 | Map blank in headless screenshots | Google Maps embed needs a normal browser with network |
+
+---
+
+## 16. v3 – complete content from both sites (how it works)
+
+v3 rebuilt the content of the site from a **live crawl of americangroup-international.com (148 items) and angliamorocco.org (36 items)**, so that no program, service, fact, calendar date, policy or event is lost. Plan: `docs/rebuild-plan-v3.md`.
+
+### Pipeline (run from `v2/`)
+
+```bash
+powershell -File _build/crawl_sites.ps1     # 1. download every page of both sites -> data/crawl/{agi,anglia}/ (not in git)
+python _build/inventory.py                  # 2. clean text (menus/sidebars removed), facts, coverage -> data/crawl/inventory.json, docs/content-inventory.csv
+python _build/content_map.py                # 3. every source page -> destination page + action + reason -> docs/content-map.csv (181/181 mapped)
+python _build/facts_build.py                # 4. first run only: fact register v2/_build/facts.json + claims register claims.json
+python _build/pages.py                      # 5. generate pages (pages.py + audiences.py + content_pages.py + i18n_pages.py)
+python _build/journal.py                    #    journal articles (export + crawl-only posts)
+python _build/launch_assets.py              #    .htaccess (147 redirects from the content map), sitemap (139 URLs), robots.txt
+python _build/build.py                      #    header/footer/SEO/language switch on every page – always last
+python _build/coverage_gate.py              # 6. GATE: every source fact present on its page, or excluded with a reason
+python _build/linkcheck.py ; python _build/site_audit.py ; python _build/prelaunch.py
+python _build/julie_questions.py            # 7. docs/julie-questions.md from the registers
+python _build/export_spec.py                #    docs/website-content-spec.md (all pages)
+```
+
+### Rules
+- **Content map first.** A source page is never "forgotten": `docs/content-map.csv` gives each one a destination and an action (keep / merge / expand / translate / drop + reason). Generators take their sources from the map (`MAPPED(dest)`).
+- **Coverage gate.** `coverage_gate.py --phase N` exits 1 until every fact (prices, dates, emails, phones, numbers) of the phase's sources is on the destination page. Deliberate omissions go in `docs/content-exclusions.csv` with a reason (privacy, copyright, outdated, third-party text, extraction artifact).
+- **Registers.** `facts.json` (fees, dates, contacts, numbers, each with source and status) and `claims.json` (claims to verify). Status `to-confirm` items appear on pages as gold placeholders and in `docs/julie-questions.md`.
+- **Full texts.** Policies, handbook, programs and services keep AGI's published text in full (`render()` in `content_pages.py`), with a source note.
+
+### Results (October 2026)
+
+| Phase | Content | Gate |
+|---|---|---|
+| 1 Parents' essentials | fees, calendar 2026–27, admissions, 10 full policies incl. handbook, FAQ hub | PASS 136 + 5 excluded |
+| 2 Anglia Morocco | hub, exams & levels, CEFR, special arrangements, practice packs, books, placement, classes, network (12 regions), FAQ, about | PASS 21 |
+| 3 Teachers, adults, wellbeing, online, pathways | C.I.T.E., sponsorship, careers, independent studies, learning pods, editing, proctoring, i-Heart, online tutoring, AGI USA | PASS 72 |
+| 4 Journal & resources | 66 articles + Anglia news, resources (nursery rhymes, McGuffey) | PASS 68 + 2 |
+| 5 About, legal, forms | Julie's account, cookies notice, attestation form | PASS 8 + 8 |
+| 6 Quality | subheadings/tables, exam-dates table, headings, menu; Lighthouse 100×4 | – |
+| 7 Languages | fr/ and ar/ (home, parents, fees, contact), RTL, hreflang | review pending |
+
+Site: 139 pages (65 + 66 journal + 8 translated), 13,344 links, 0 broken.
+
+### Languages
+`fr/` and `ar/` pages come from `_build/i18n_pages.py`. In those pages, `./x.html` links to the same language and `x.html` to English (made `../x.html`). `build.py` adds the language switch (EN · FR · ع), `lang`/`dir`, translated menu labels (`T` dictionary) and `hreflang` links. Arabic uses `dir="rtl"` and Noto Naskh Arabic. Every translated page is marked `data-verify="translation-review:<lang>"` until a native speaker checks it.
+
+### Preview (Vercel)
+```bash
+python v2/_build/prepare_preview.py                     # clean copy in ~/agi-preview-deploy (outside the repo)
+cd ~/agi-preview-deploy && vercel deploy --prod --scope medderhem-9357s-projects
+```
+The copy must stay **outside the git repo**: Vercel's Hobby plan blocks deployments whose git commit author is not a team member. Preview: https://agi-preview.vercel.app (noindex).
