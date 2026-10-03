@@ -253,3 +253,7 @@ td b{color:var(--navy);font-weight:600}
 .archived-note{background:#fff8e1;border-left:3px solid var(--gold);padding:12px 16px;font-size:14px;color:var(--ink);margin:0 0 24px}
 [dir="rtl"] .archived-note{border-left:0;border-right:3px solid var(--gold)}
 .photo-hidden{display:flex;align-items:center;justify-content:center;min-height:120px;margin:12px 0;border:1px dashed var(--line);background:var(--paper);color:var(--grey);font-size:13px;padding:16px;text-align:center}
+
+/* imported posts: long code/pre lines must wrap on phones */
+.prose pre,.prose code,.doc pre,.doc code{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;max-width:100%}
+.prose img,.doc img{max-width:100%;height:auto}

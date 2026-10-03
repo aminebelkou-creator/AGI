@@ -184,7 +184,7 @@ if _cc and _cc["url"] in INV:
     open(os.path.join(V2, "journal-ccgi-partnership.html"), "w", encoding="utf-8", newline="").write(_root_page(_main, f"{_title[:60]} – AGI Journal", "AGI and Anglia Morocco join Chichester College Group International to empower global learners."))
 # journal list: every article, newest first, grouped by year
 _items = []
-for _f in os.listdir(os.path.join(V2, "journal")):
+for _f in [x for x in os.listdir(os.path.join(V2, "journal")) if x.endswith(".html") and not x.startswith("_")]:
     _t = open(os.path.join(V2, "journal", _f), encoding="utf-8").read()
     _ti = html.unescape(re.sub(r"<[^>]+>", "", (re.search(r"<h1[^>]*>(.*?)</h1>", _t, re.S) or [None, _f])[1])).strip()
     _mm = re.search(r'<p class="article-meta"><b>([^<]*)</b>([^<]*)</p>', _t); _kind = _mm.group(1) if _mm else "News"; _d = (_mm.group(2) if _mm else "").strip()
