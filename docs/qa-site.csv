@@ -7,5 +7,5 @@ connect.html,structure,No breadcrumb,
 connect.html,design,Many inline styles (design drift),51 style attributes
 forms.html,structure,No page hero,
 index.html,design,Many inline styles (design drift),26 style attributes
-journal.html,design,Many inline styles (design drift),77 style attributes
+journal.html,design,Many inline styles (design drift),76 style attributes
 connect.html,design,Hard-coded colors outside the palette,"#0a0a0a, #141414, #1e1e1e, #7bc98a, #e8b4b4"

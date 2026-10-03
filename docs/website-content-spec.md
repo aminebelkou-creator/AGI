@@ -275,6 +275,11 @@ Number 20, Rue Baalabek Hay Nahda, Agadir 80000, Morocco
 +212 528 843 349 · WhatsApp · Email The office is closed on Sundays. [link: “WhatsApp” → `https://wa.me/212688739393`]
 → **Open in Google Maps** (`https://www.google.com/maps/search/?api=1&query=20+Rue+Baalabek+Hay+Nahda+Agadir`)
 
+#### Section: Come and meet us.
+The best way to know AGI is to visit during the school day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Contact** (`contact.html`)
+
 ---
 
 ### 4.2 `our-story.html`
@@ -689,15 +694,7 @@ We also offer programs for adults, associations, small groups, and one-on-one st
 Thank you,
 
 #### Section: Julie Wilburn, Director
-بصفتي المدير التربوي ومدير الامتياز في AngliaMorocco ، فأنا مسؤول عن التطوير الشامل للبرنامج والإدارة والإشراف وجميع البرامج التعليمية في المركز. أشرف أيضًا على برنامج مراسلة في المدرسة الثانوية والمدارس الابتدائية الدولية بدوام كامل. أنا رئيس تطوير المناهج الشاملة والاختبار وتقييمات الطلاب والموظفين. أنا أيضًا ، رئيس تدريب طاقم التخطيط ، وتقييمات المعلمين ، والتطوير المهني. أنا أشرف على خطط توظيف الطلاب ، وبرامج التواصل مع المجتمع ، والعلاقات بين الموظفين والطلاب. أنا أيضا أدير برنامج المهارات الاجتماعية والانضباط. أنا أيضًا أشارك كمدرس بدوام كامل في الفصل الدراسي أيضًا.
-نحن نؤمن أيضًا بالمساواة ونعتقد أن التعليم في برنامج دولي يمنح الطلاب القدرة على فتح الأبواب الدولية لتحسين الطالب ونجاح الحياة.
-على الرغم من أننا نقدم تعليمًا كاملاً - من سن الثالثة إلى الصف الثاني عشر - إلا أننا نقبل الطلاب الوافدين في أي مرحلة من مراحل العملية التعليمية ونعمل بجد لتكييفهم مع منهج AGI وعملية الانغماس اللغوي. وهذا يساعدهم على الاندماج في أسرع لغات اللغة الإنجليزية نموًا مع الحفاظ على لغتهم الأم.
-نأمل أن تلقي نظرة فاحصة وتتعرف على برامجنا الدولية. حدد موعدًا لتقييم لغتك مجانًا.
-برنامجنا متنوع مع العديد من الجنسيات. نحن نهدف إلى إسعاد الطلاب. إذا لم يكن الطفل سعيدًا في المدرسة ، يكون النجاح منخفضًا. نعلم المهارات الاجتماعية لتنمية الطفل بالكامل. نحن نؤمن بشدة بنظريات مونتيسوري والدورف ونحاول دمجها في برنامج المراسلات المدرسية الأمريكية.
-لدينا أيضًا برامج للبالغين والجمعيات والمجموعات الصغيرة والشخصية في دراسات واحدة. نحن نقدم برامج المراسلة لبرامج تعليم الكبار بينما نساعدك على تحقيق النجاح في آليات اللغة الإنجليزية لتلك البرامج.
-تفضل بزيارتنا ونحن ننطلق في رحلة رائعة والتوسع في مدينة أكادير ومدن أخرى في بلد المغرب الجميل. الاحتمالات لا حصر لها.
 شكرا لك،
-جولي ويلبورن ، مديرة
 About
 - Our story [link: “Our story” → `our-story.html`]
 - Founder's letter [link: “Founder's letter” → `founder-letter.html`]
@@ -749,51 +746,48 @@ For teachers, adults, families and professionals.
 ### 4.7 `k12.html`
 
 - **Browser title:** K–12 school – American Group International, Agadir
-- **Meta description:** An American-curriculum micro-school in Agadir, from kindergarten to grade 12, with English support through Anglia.
+- **Meta description:** AGI's American-curriculum micro-school in Agadir, kindergarten to grade 12: lower, middle and upper school, inclusive education, course of study by grade.
 
-Home / Programs / K–12 Education [link: “Home” → `index.html`] [link: “Programs” → `programs.html`]
-**Page title (H1):** K–12 Education
+Home / Programs / K–12 school [link: “Home” → `index.html`] [link: “Programs” → `programs.html`]
+**Page title (H1):** K–12 school.
 An American-curriculum school, from the first day of kindergarten to the last day of grade twelve.
+→ **Start admissions** (`admissions.html`)
+→ **Book a visit** (`forms.html#visit`)
+
+#### Section: At a glance
 AGI is a child-centered micro-school in Agadir, established in 2013. Small classes, American curriculum standards, and ESL through the Anglia Examinations system of England for children who do not speak English at home. Students are welcomed at any stage and supported to adapt to the curriculum and the language immersion.
-At a Glance
-Ages 5 – 18
-Curriculum AGI · American
-Languages EN · FR · AR
-Campus Agadir · Hay Nahda
+- **Ages** — 5–18
+- **Curriculum** — American
+- **Languages** — English · French · Arabic
+- **Campus** — Agadir · Hay Nahda
 
 #### Section: Three schools, one journey
 [PHOTO NEEDED – Lower school classroom]
-K – Grade 5
+_K – Grade 5_
 **Lower School**
-English and spelling, literature, mathematics, natural science and foreign language — with penmanship in Grades 2 to 4 and ESL alongside. The elementary benchmark is CEFR B1 by the end of Grade 5.
+English and spelling, literature, mathematics, natural science and foreign language – with penmanship in grades 2 to 4 and ESL alongside. The elementary benchmark is CEFR B1 by the end of grade 5.
 [PHOTO NEEDED – Middle school class]
-Grades 6 – 8
+_Grades 6 – 8_
 **Middle School**
-American, world and Islamic history, earth and biological science, and mathematics through Foundations and Pre-Algebra. Middle school graduates at Grade 8 target CEFR B2.
+American, world and Islamic history, earth and biological science, and mathematics through Foundations and Pre-Algebra. Middle school graduates at grade 8 target CEFR B2.
 [PHOTO NEEDED – Upper school students]
-Grades 9 – 12
+_Grades 9 – 12_
 **Upper School**
 English I–IV, U.S. History, Algebra I and II, Geometry, Biology, Government and Economics. Two routes: the Florida-accredited books program or the Cognia-accredited American High School Online. Forty service hours are required to graduate.
 
 #### Section: Inclusive by design
 AGI welcomes students with a range of special needs, learning differences and mental-health challenges, physical and developmental alike. Documentation from a licensed practitioner is required so provision can be planned properly.
-Individualised plans
-Individualized Education Plans written to each student's needs and abilities.
-Small groups
-Class sizes that allow personalised attention within mainstream school life.
-Therapeutic support
-Occupational therapy, speech-language pathology and behavioral support.
-Cognitive programs
-Energia SOI, customised for students with reading and mathematics difficulties.
-How the year is measured
-90%
-Minimum attendance to qualify for promotion, K–12.
-64%
-Pass mark in each core subject — math, science, language arts, social studies.
-April
-Anglia English assessment, required of every enrolled student.
-40
-Service hours across four years of high school — ten per year.
+→ **Special education** (`special-education.html`)
+- **Individualized plans** — Individualized Education Plans written to each student's needs and abilities.
+- **Small groups** — Class sizes that allow personalized attention within mainstream school life.
+- **Therapeutic support** — Occupational therapy, speech-language pathology and behavioral support.
+- **Cognitive programs** — Energia SOI, customized for students with reading and mathematics difficulties.
+
+#### Section: How the year is measured
+90% Minimum attendance to qualify for promotion, K–12.
+64% Pass mark in each core subject – math, science, language arts, social studies.
+April Anglia English assessment, required of every enrolled student.
+40 Service hours across four years of high school – ten per year.
 Every new student sits English/ESL and academic placement assessments before admission, whatever system they arrive from. Grades 9 to 11 also take the CAT assessment.
 
 #### Section: The course of study, grade by grade
@@ -808,261 +802,23 @@ A fixed set of subjects each year, with ESL alongside for language learners. Ele
 | Grade 11 | English III, algebra II, health, two electives, ESL |
 | Grade 12 | English IV, U.S. government & economics, business math, science, ESL |
 High school students complete 40 service hours (ten a year). For grades 9–12 there are two routes: the Florida-accredited books program, or American High School Online (Cognia accredited). See
-→ **tuition & fees** (`admissions.html#fees`)
+→ **tuition & fees** (`fees.html#high-school`)
 and
 → **English benchmarks** (`english-anglia.html#cefr`)
 .
 
-#### Section: Ready to meet the school?
-Start Admissions Ask AGI Connect Book a Visit [link: “Start Admissions” → `admissions.html`] [link: “Ask AGI Connect” → `connect.html`] [link: “Book a Visit” → `forms.html#visit`]
-
 #### Section: About the school in detail
-*School Subjects can change depending on the child. We also include ESL for non-native English speakers using the Anglia Examinations of England System.* Native means that the main language in the home is English. If you do not use English in the home your child is considered a language learner.
-
-#### Section: American Group International Curriculum Standards
-**Elementary/Junior High Subjects**
-Students in elementary and junior high have a standard set of subjects to take each year. Below is a list of the normal schedule for each of these grade levels.
-1 st Grade
-5 th Grade
-F105
-E105
-L105
-M105
-S105
-Foreign Language
-English and Spelling 1
-Literature 1
-Mathematics 1
-Natural Science
-ESL
-F125
-E125
-H125
-L125
-M125
-S125
-English and Spelling 5
-The Beginner’s Amer. Hist.
-Literature 5
-Mathematics 5
-Beginner’s Phys. & Health
-2 nd Grade
-6 th Grade
-F110
-E110
-H110
-L110
-M110
-S110
-V702
-English and Spelling 2
-The U.S. Presidents
-Literature 2
-Mathematics 2
-Penmanship*
-F130
-E130
-H130
-L130
-M130
-S130
-English and Spelling 6
-U.S. Geography/Moroccan History
-Literature 6
-Mathematics 6
-Earth Science
-3 rd Grade
-7 th Grade
-F115
-E115
-H115
-L115
-M115
-S115
-English and Spelling 3
-Great American Heroes
-Literature 3
-Mathematics 3
-Creation
-F135
-E135
-H135
-L135
-M135
-S135
-English and Spelling 7
-World Geography/Islamic History
-Literature
-Math 7
-Biological Science
-4 th Grade
-8 th Grade
-F120
-E120
-H120
-L120
-M120
-S120
-English and Spelling 4
-Our Fifty United States
-Literature 4
-Mathematics 4
-F140
-E140
-H140
-L140
-M140
-S140
-English and Spelling 8
-Intro. World /European History
-Math Foundations. /Pre-Algebra
-**General Science/**
-*Penmanship is recommended to be taken each year from 2 nd grade through 4 th grade.
-**High School Graduation Plan**
-For our high school students, we have a plan of what classes are needed to be able to obtain a high school diploma. We have included the plan below broken down by grade level. Students are placed into the program for high school that fits the student’s needs.
-9 th Grade
-F145
-E145
-H145
-M145
-S145
-V730
-PE
-English I
-U.S. History
-Algebra I
-Physical Science
-Principles of Music
-Physical Education
-10 th Grade
-Kindergarten
-F150
-E150
-H150
-M150
-S150
-EL
-English II
-World History
-Geometry
-Biology
-Elective
-F100
-E100
-L100
-M100
-S100
-English
-Reading Phonics
-Math
-Science
-11 th Grade
-F155
-E155
-M155
-S155
-English III
-Algebra II
-Health
-High School Learning service hours are 10 per year at 40 over the 4-year high school plan.
-12 th Grade
-F160
-E160
-H160
-M160
-S160
-English IV
-U.S. Government/Economics
-Business Math
-**Scientific Creationism**
-Other electives and AP courses are available for students to take, but this should be planned out starting in Grade 9. Students and parents, she be involved in the type of high school program they need the student to be enrolled in. This will be important for the type of studies they would like to obtain.
-***Special Education***
-English / Arabic
-Math / ESL
-Science / Electives
-History / Electives
-Our Schools Techniques and Vision:
-Montessori/Forest Practices
-3 to 6-year-old- early learning through work play.
-Learner led explorations
-Skill teaching and curious learners are driven.
-Personal development
-Guide children in self-directed activity/activities.
-Community based program
-Children’s freedom in the classroom.
-Holistic
-Positive discipline
-Student leading activities are encouraged
-Children learn at their pace.
-Inclusive learning/Diversity
-Waldorf Practices
-3 to 7 learning by play.
-Importance of home native language.
-Children wait till age 7 to start formal education.
-Anglia Examinations Exams, UK.
-Spirituality
-World University Partnerships.
-The use of art in language learning formation in painting and drawing.
-Free thinking is encouraged.
-Social Skills learning from Boys Town, USA
-American Curriculum
-36 Week program.
-No focusing on major testing until after the 8 th grade.
-180 school days
-CAT Testing after the 8 th grade. California Achievement Test
-10 month/2 month summer
-Traditional American Grading system.
-Summer school for challenged students.
-American Transcripts
-K3-Grade 12. Ages 3 to 18.
-Yearly Language Testing
-No child left behind/ Small class ratio.
-Limited Homework-Homework policy posted
-Additional Techniques
-Working with special needs children.
-Global love and respect for all people.
-Learning love and respect for animals and nature.
-Chores for learning responsibility.
-Small class ratio.
-Enforce critical thinking skills.
-No lecture teaching.
-Micro-school pod environment.
-Exploration of the activities, emphasis on critical thinking, and independent research.
-AP classes, SAT and ACT prep.
-Limited homework- mostly prefers children to have bonding time with family.
-Sports Diploma Available for Athletes.
-Online Franchise School through our institution throughout Morocco
-- American High School
-- American Worldwide Academy
-Online School LMS for High School
-Online for High School Fast Track. One Year.
-Preferred for Ivy League student/ Cognia
-Both Programs Must know English of B1 or higher.
-We combined these principles for our own specialized program! Assessment of each individual child. We are a supporter of Inclusive Education. All children deserve a chance at an education.
-Our Institution’s accreditation is currently with The American Council of Training and Development and Meridian Learning Micro School Grassroots movement.
-AGI does not guarantee the transferability of its credits to any other institution or acceptance of its diploma to meet college/university entrance requirements or requirements of potential employers or in other language systems. The acceptance of transfer academic credits and academic credentials to another institution is determined by the receiving institution. Courses in AGIs high school program may or may not transfer to other institutions and depends solely on the receiving institution’s criteria and determination. It is advisable that parents talk with our educational consultant to see what programs our institution offers for your situation.
-
-#### Section: - School + Home + Community = Student Success
-- AGIC School in Agadir is a customized private school nestled in the Berber community of Souss Draa in Morocco, North Africa. The first classes of the small school were started in 2013 with five children. In the last 11 years, our program has hosted more than 46+ nationalities. We soon outgrew the one-room school so we moved to our location in Nahda, Agadir. Our institution has an open enrollment policy as we are a specialized school for students that need special programs that the Moroccan system might not fill.
-Today American Group International School hosts Kindergarten through 12th-grade students and they are taught in eight multi-grade classrooms.
-- AGI Philosophy
-The philosophy of AGI stresses on academic excellence, discipline, ethical standards, and respect for others and for AGI. This philosophy encompasses the intellectual, social, emotional, character, and physical development of students. We want students to foster a general respect for all humanity.
-**AGI Vision**
-Since 2013, American Group Internationals faculty and staff have provided students and families with an educational culture best described in our Vision Statement.
-AGI inspires students to become Inclusive students through language.
-lifelong learners who pursue excellence,
-model integrity, and honor cultural diversity.
-We educate the whole person by
-equipping minds and building character,
-empowering students to serve their local community,
-in Morocco and the global world community,
-with wisdom and compassion and understanding.
-American Group International is a K-12 American International School which has served students from over 46+ plus different countries. AGI is the first American school in Agadir. Currently our mission focuses on affordability for the local community and programs in place that will help the normal working class in the Kingdom.
+- **Q: Full text as published by AGI** — A: *School Subjects can change depending on the child. We also include ESL for non-native English speakers using the Anglia Examinations of England System.* Native means that the main language in the home is English. If you do not use English in the home your child is considered a language learner. American Group International Curriculum Standards Elementary/Junior High Subjects Students in elementary and junior high have a standard set of subjects to take each year. Below is a list of the normal schedule for each of these grade levels. 1 st Grade 5 th Grade F105 E105 L105 M105 S105 Foreign Language English and Spelling 1 Literature 1 Mathematics 1 Natural Science ESL F125 E125 H125 L125 M125 S125 English and Spelling 5 The Beginner’s Amer. Hist. Literature 5 Mathematics 5 Beginner’s Phys. & Health 2 nd Grade 6 th Grade F110 E110 H110 L110 M110 S110 V702 English and Spelling 2 The U.S. Presidents Literature 2 Mathematics 2 Penmanship* F130 E130 H130 L130 M130 S130 English and Spelling 6 U.S. Geography/Moroccan History Literature 6 Mathematics 6 Earth Science 3 rd Grade 7 th Grade F115 E115 H115 L115 M115 S115 English and Spelling 3 Great American Heroes Literature 3 Mathematics 3 Creation F135 E135 H135 L135 M135 S135 English and Spelling 7 World Geography/Islamic History Literature Math 7 Biological Science 4 th Grade 8 th Grade F120 E120 H120 L120 M120 S120 English and Spelling 4 Our Fifty United States Literature 4 Mathematics 4 F140 E140 H140 L140 M140 S140 English and Spelling 8 Intro. World /European History Math Foundations. /Pre-Algebra General Science/ *Penmanship is recommended to be taken each year from 2 nd grade through 4 th grade. High School Graduation Plan For our high school students, we have a plan of what classes are needed to be able to obtain a high school diploma. We have included the plan below broken down by grade level. Students are placed into the program for high school that fits the student’s needs. 9 th Grade F145 E145 H145 M145 S145 V730 PE English I U.S. History Algebra I Physical Science Principles of Music Physical Education 10 th Grade Kindergarten F150 E150 H150 M150 S150 EL English II World History Geometry Biology Elective F100 E100 L100 M100 S100 English Reading Phonics Math Science 11 th Grade F155 E155 M155 S155 English III Algebra II Health High School Learning service hours are 10 per year at 40 over the 4-year high school plan. 12 th Grade F160 E160 H160 M160 S160 English IV U.S. Government/Economics Business Math Scientific Creationism Other electives and AP courses are available for students to take, but this should be planned out starting in Grade 9. Students and parents, she be involved in the type of high school program they need the student to be enrolled in. This will be important for the type of studies they would like to obtain. *Special Education* English / Arabic Math / ESL Science / Electives History / Electives Our Schools Techniques and Vision: Montessori/Forest Practices 3 to 6-year-old- early learning through work play. Learner led explorations Skill teaching and curious learners are driven. Personal development Guide children in self-directed activity/activities. Community based program Children’s freedom in the classroom. Holistic Positive discipline Student leading activities are encouraged Children learn at their pace. Inclusive learning/Diversity Waldorf Practices 3 to 7 learning by play. Importance of home native language. Children wait till age 7 to start formal education. Anglia Examinations Exams, UK. Spirituality World University Partnerships. The use of art in language learning formation in painting and drawing. Free thinking is encouraged. Social Skills learning from Boys Town, USA American Curriculum 36 Week program. No focusing on major testing until after the 8 th grade. 180 school days CAT Testing after the 8 th grade. California Achievement Test 10 month/2 month summer Traditional American Grading system. Summer school for challenged students. American Transcripts K3-Grade 12. Ages 3 to 18. Yearly Language Testing No child left behind/ Small class ratio. Limited Homework-Homework policy posted Additional Techniques Working with special needs children. Global love and respect for all people. Learning love and respect for animals and nature. Chores for learning responsibility. Small class ratio. Enforce critical thinking skills. No lecture teaching. Micro-school pod environment. Exploration of the activities, emphasis on critical thinking, and independent research. AP classes, SAT and ACT prep. Limited homework- mostly prefers children to have bonding time with family. Sports Diploma Available for Athletes. Online Franchise School through our institution throughout Morocco American High School American Worldwide Academy Online School LMS for High School Online for High School Fast Track. One Year. Preferred for Ivy League student/ Cognia Both Programs Must know English of B1 or higher. We combined these principles for our own specialized program! Assessment of each individual child. We are a supporter of Inclusive Education. All children deserve a chance at an education. Our Institution’s accreditation is currently with The American Council of Training and Development and Meridian Learning Micro School Grassroots movement. AGI does not guarantee the transferability of its credits to any other institution or acceptance of its diploma to meet college/university entrance requirements or requirements of potential employers or in other language systems. The acceptance of transfer academic credits and academic credentials to another institution is determined by the receiving institution. Courses in AGIs high school program may or may not transfer to other institutions and depends solely on the receiving institution’s criteria and determination. It is advisable that parents talk with our educational consultant to see what programs our institution offers for your situation. - School + Home + Community = Student Success AGIC School in Agadir is a customized private school nestled in the Berber community of Souss Draa in Morocco, North Africa. The first classes of the small school were started in 2013 with five children. In the last 11 years, our program has hosted more than 46+ nationalities. We soon outgrew the one-room school so we moved to our location in Nahda, Agadir. Our institution has an open enrollment policy as we are a specialized school for students that need special programs that the Moroccan system might not fill. Today American Group International School hosts Kindergarten through 12th-grade students and they are taught in eight multi-grade classrooms. AGI Philosophy The philosophy of AGI stresses on academic excellence, discipline, ethical standards, and respect for others and for AGI. This philosophy encompasses the intellectual, social, emotional, character, and physical development of students. We want students to foster a general respect for all humanity. AGI Vision Since 2013, American Group Internationals faculty and staff have provided students and families with an educational culture best described in our Vision Statement. AGI inspires students to become Inclusive students through language. lifelong learners who pursue excellence, model integrity, and honor cultural diversity. We educate the whole person by equipping minds and building character, empowering students to serve their local community, in Morocco and the global world community, with wisdom and compassion and understanding. American Group International is a K-12 American International School which has served students from over 46+ plus different countries. AGI is the first American school in Agadir. Currently our mission focuses on affordability for the local community and programs in place that will help the normal working class in the Kingdom.
 Related
 - Academic handbook [link: “Academic handbook” → `handbook.html`]
 - Supplies list [link: “Supplies list” → `supplies.html`]
 - Homework [link: “Homework” → `homework.html`]
-- High school options [link: “High school options” → `fees.html#high-school`]
+- Special education [link: “Special education” → `special-education.html`]
+
+#### Section: Ready to meet the school?
+Start admissions, or book a visit during the school day.
+→ **Start admissions** (`admissions.html`)
+→ **Book a visit** (`forms.html#visit`)
 
 ---
 
@@ -1108,55 +864,7 @@ Book a visit to meet the team, or send a question first – everything you share
 - Link card → `pathways.html`: Next steps · University pathways · An authorized admissions agent for universities and colleges in the UK, the United States and beyond.
 
 #### Section: Special education services in detail
-
-#### Section: Embracing Diversity: Our Commitment to Special Education (SEN)
-At American Group International, we are proud to offer a warm and inclusive environment that welcomes students with a wide range of special needs, learning differences, mental health challenges, and specific disabilities—both physical and developmental. We understand that each child is unique, and we are dedicated to providing the support and resources necessary for their success.
-
-#### Section: Our Approach
-– Individualized Support: We create Individualized Education Plans (IEPs) tailored to the specific needs and abilities of each student.
-– Small Group Settings: Our small class sizes ensure personalized attention and a supportive learning environment.
-– Comprehensive Services: From occupational therapy to speech-language pathology and behavioural support, we provide a holistic approach to education and development.
-– Inclusive Education: We believe in fostering an inclusive community where every student feels valued, respected, and empowered to thrive.
-
-#### Section: Special Needs High School Program (SEN)
-Our high school program is specially designed to meet the academic, social, and emotional needs of high school students with special needs. With a focus on life skills, vocational training, and preparing for independence, we aim to equip students with the tools they need to succeed beyond graduation.
-
-#### Section: Join Our Community
-Whether you’re exploring educational options for your child or seeking a supportive environment that understands and celebrates diversity, American Group International is here for you. Contact us today to learn more about how we can support your child’s educational journey.
-Please see us if you know a child who could benefit from our Special Education Services.
-Physical Education
-Arabic
-English
-Math
-Science
-History
-Reading
-Spelling
-Fine Arts-Random
-ESL
-Thank you,
-Julie Wilburn
-**Educational Director**
-تم توجيه خدماتنا في American Group International للطلاب ذوي الاحتياجات الخاصة ، مثل اختلافات التعلم ، وقضايا الصحة العقلية ، والإعاقات المحددة (الجسدية أو التنموية) ، والموهبة هي تلك التي يتم تلبية احتياجاتها في إطار الفصل الدراسي لمجموعة صغيرة. نقوم بتنفيذ IEP = خطة تعليمية فردية) للآباء ونعمل أيضًا مع مقدمي رعاية / أطباء محترفين من أجل التقدم والمستوى التعليمي طوال كل عام دراسي. نقدم حاليًا برنامج المدرسة الثانوية لذوي الاحتياجات الخاصة.
-يرجى زيارتنا إذا كنت تعرف طفلاً يمكنه الاستفادة من خدمات التعليم الخاص لدينا.
-
-#### Section: References of Services
-American Group International School
-Attn: Mr. Julie Wilburn, Director
-Agadir, Morocco
-May 24, 2024
-Dear Mrs. Julie Wilburn,
-I am writing to express my profound gratitude and appreciation for the exceptional education and care provided by the American International Correspondence School in Agadir to our son, Ismail.
-In 2017, our family made a significant move from Saudi Arabia to Morocco after spending 25 years in the Middle East. Ismail had been attending Jeddah American School from primary school until Grade 8. As parents of a special needs child with Down syndrome, we were anxious about this major transition and how Ismail would adapt to the new environment.
-However, our concerns were alleviated upon meeting you and your dedicated team. Your immediate and compassionate enrollment of Ismail into your school demonstrated a deep understanding and commitment to his needs. Under your guidance and with the support of your team, Ismail not only adapted but thrived. The love, care, and special attention you all provided played a crucial role in his successful transition and eventual graduation from high school in 2022. This achievement is a testament to your dedication and the nurturing environment you foster at your school.
-Ismail’s progress did not stop at high school. He also benefited immensely from the Anglia English classes and your initiative to enroll him in a university hotel management program. Currently, he continues to pursue his education in the hospitality sector at the OFPPT center for special needs, further building on the strong foundation laid by your institution.
-Your school has had a significant positive impact on our lives, particularly Ismail’s. We are immensely grateful for the extraordinary efforts you, your husband Mr. Abdelhak, an expert in Mathematics, and your son Matthew, an expert in English grammar, have put into ensuring Ismail’s educational and personal development.
-I wholeheartedly recommend the American Group International School in Agadir. It is undoubtedly one of the best schools in Morocco, providing an inclusive, supportive, and high-quality education for all its students.
-Thank you once again for your unwavering support and dedication.
-Warm regards,
-Brahim Robio
-Managing Partner
-Antal International
+- **Q: Full text as published by AGI** — A: Embracing Diversity: Our Commitment to Special Education (SEN) At American Group International, we are proud to offer a warm and inclusive environment that welcomes students with a wide range of special needs, learning differences, mental health challenges, and specific disabilities—both physical and developmental. We understand that each child is unique, and we are dedicated to providing the support and resources necessary for their success. Our Approach – Individualized Support: We create Individualized Education Plans (IEPs) tailored to the specific needs and abilities of each student. – Small Group Settings: Our small class sizes ensure personalized attention and a supportive learning environment. – Comprehensive Services: From occupational therapy to speech-language pathology and behavioural support, we provide a holistic approach to education and development. – Inclusive Education: We believe in fostering an inclusive community where every student feels valued, respected, and empowered to thrive. Special Needs High School Program (SEN) Our high school program is specially designed to meet the academic, social, and emotional needs of high school students with special needs. With a focus on life skills, vocational training, and preparing for independence, we aim to equip students with the tools they need to succeed beyond graduation. Join Our Community Whether you’re exploring educational options for your child or seeking a supportive environment that understands and celebrates diversity, American Group International is here for you. Contact us today to learn more about how we can support your child’s educational journey. Please see us if you know a child who could benefit from our Special Education Services. Physical Education Arabic English Math Science History Reading Spelling Fine Arts-Random ESL Thank you, Julie Wilburn Educational Director References of Services American Group International School Attn: Mr. Julie Wilburn, Director Agadir, Morocco May 24, 2024
 Related
 - Placement policy [link: “Placement policy” → `placement-policy.html`]
 - For parents [link: “For parents” → `parents.html`]
@@ -1207,52 +915,7 @@ Apply online and the office will explain the next steps, fees and test dates.
 - Link card → `pathways.html`: Next steps · University pathways · An authorized admissions agent for universities and colleges in the UK, the United States and beyond.
 
 #### Section: Program details and courses
-
-#### Section: 
-
-#### Section: American Worldwide Academy
-American Worldwide Academy in partnership with American Group International School. Wants to give you success and……
-All the students will learn English and be required to take an English Exam. We will not fraud the American Educational System.
-
-#### Section: Make your dreams come true….
-
-#### Section: We proctor all tests onsite in our centre.
-Available in English!
-AGI seeks to serve individuals 16 years or older.
-18 or older in age, and older who terminated their secondary education prior to matriculating by offering a nationally accredited, low-cost, self-directed, independent-study high school completion program through correspondence-based or online-based studies.
-We provide this service at a very modest fee that is inclusive of all support to ensure success; tutorial assistance, and post-graduation services such as official enrolment or graduation verification; letters of recommendation to authorized third parties, and official academic transcripts on behalf of those graduates seeking to pursue higher education.
-Pictured below is the first student that graduated from the program and received a diploma from the USA. This program is supported by the Department of Education in Florida.
-**Course Description**
-**ENGLISH LANGUAGE WRITING SKILLS (2 Credits)**
-English Usage, Essentials of Grammar, Sentence Structure, English Mechanics, Punctuation, Rules of Spelling,
-**ENGLISH LITERATURE (2 Credits)**
-Classical Literature: Fictional Novels, Poetry, and Prose Contemporary Literature: Non-Fiction – Biographies and Commentaries
-**GENERAL MATHEMATICS (3 Credits)**
-Arithmetic: Basic functions using whole numbers, fractions, decimals, and percentages; Consumer Mathematics: standard measurements- perimeter, area & volume, distance, interest, and cost; Number Relationships: ratio and proportion, using the percent triangle; Comparing and Ordering Numbers; Number Relationships: using order of operations to solve multi-step problems: Data Analysis: tables and charts, bar graphs, line graphs, and pie charts, mean and median, ratio and probability; Algebra & Geometry.
-**SOCIAL SCIENCE I – AMERICAN HISTORY (2 Credits)**
-Early American History: Pre-colonial, Colonial, British rule of the Colonies, the American Revolution, French-Indian Wars, The Louisiana Purchase, The Texas Revolution and Mexican War, The American Civil War: Overview, Slavery and its role in the Civil War, Cessation of Southern States, Fighting the War. World War I – An American Historical Perspective. The Great Depression – causes and solutions, FDR and The New Deal. World War II – Rise of Fascism and formation of the Axis powers, United States’ involvement, Allied powers’ victory, the defeat of Japan, Birth of the United Nations, IMF, and World Bank. Post-World War II and the beginnings of the Cold War – The rise of Communism and the arms race, the NATO Alliance, the expansion of Communism and the growing threat to the US. Contemporary American History – The Korean War; the Civil Rights Movement; The Kennedy Era; End of the Civil Rights Movement; Crises in Southeast Asia- The Vietnam War; Invasion of Laos, Conflicts in Cambodia, US withdrawal, Nixon’s resignation and a final end to the war.
-**SOCIAL SCIENCE II – AMERICAN GOVERNMENT (2 Credits)**
-Structure and functions of City, County, and State Governments. The Federal Government: Office of the President, Executive Powers, the Executive Cabinet structure and functions. United States Congress: structure and functions of the US Senate and the US House of Representatives. The Supreme Court: structure and functions of the federal judiciary, Supreme Court procedures, historical “landmark” cases.
-**SOCIAL SCIENCE III – WORLD HISTORY (3 Credits)**
-Ancient Egypt, Mesopotamia, Phoenicians, Hebrews, The Persian Empire, Ancient Greece, Macedonia, The Roman Empire: the conquest of Italy, early Roman government, the Punic Wars, Roman Law. India and Southeast Asia – Buddhism, Hinduism, and Islam; History of the Far-East: China, Japan, and Korea; Origins of the Chinese Feudal system, unification of China’s regions and development of a “Great Civilization”, the final dynasties, Chinese philosophers, the “People’s Revolution, Communist rule of China. History of South America: Native Ancestry, the Mayas, the Aztecs, the Incas. History of Africa: Early North Africa, Ancient Africa, contact between the Ancient World and Africa, the spread of Christianity, how Islam influenced Africa, Empires of West Africa, the Atlantic Slave Trade, Early East Africa, Early Central Africa, Kongo, and Portuguese influence, Early Southern Africa, formation of states in Southern Africa, the discovery of South Africa’s mineral wealth, European influences and exploits, abolition of the slave trade, Africa and the World Wars. Rise and Fall of The Byzantine Empire, Western Europe, and the Middle Ages, Early history of England, the influence of the Catholic Church in Medieval Europe, and the Crusades. Modern History- the Renaissance and the Reformation, the Age of Discovery, the rise of nation-states and the expansion of empires, How Russia became a nation, the Age of Absolutism, the Age of Reason – Enlightenment and the birth of the Scientific Method, the French Revolution, the Agricultural and Industrial Revolutions, Communism, the Triumph of Democracy and the struggle for equality
-**SCIENCE I – BIOLOGY (2 Credits)**
-Cellular biology, comparisons between plans and animal cells, function of organized cells and tissues, compounds in living cells, cell division, reproduction and differentiation, the Animal Kingdom – descriptions of phyla: vertebrates and invertebrates,
-**SCIENCE II – HUMAN BIOLOGY (2 Credits)**
-The Skeletal System, the Muscular System, the Nervous System, the Endocrine System, the Respiratory System, the Circulatory System, the Digestive and Excretory Systems, and the Reproductive System.
-The above outlines the subject matter comprising our nationally accredited high school diploma program designed for individuals who prefer home schooling or an online high school completion program. Upon successful completion of these subjects, students will be administered a proctored final exam whose results will be factored into the student’s cumulative academic record.
-This is an accredited program in the USA and approved by the Department of Education in the State of Florida.
-
-#### Section: American Worlwide Academy (Awa) High School Diploma Programs
-Students will have the option of choosing either the Standard High School Diploma with Career Training Certificate (24 credits) or the Standard High School Diploma (24 credits). Each course is worth either one (1) credit or half (.5) credit. STANDARD HIGH SCHOOL DIPLOMA WITH CAREER TRAINING CERTIFICATE
-This 24 credit program prepares students for entry for careers in various fields, while earning a high school diploma. The program emphasizes: customer service, retail sales, sales, hospitality, marketing, and management. Students will be provided with all books, supplies, study materials, class schedule, and direct teacher and counsellor contact information. Each semester must be concluded with a final exam to ensure understanding of course materials. Students must complete: 4 credits in English, 4 credits in Math (including Algebra 1 & Geometry), 3 credits in Natural Science, 3 credits in Social Studies (with 1 credit American History, 1 credit in World History, and 1/2 credit each in US Government and Economics), 1 credit of Health, 5 credits of electives, and 4 credits of focus on Career Certificate. Additionally, students must complete a capstone workshop to earn the Career Certificate. A minimum GPA of a 2.0 on a 4.0 scale is required for graduation.NOTE: Students are required to meet with their school counsellor at least once per month.
-Evening and Weekend classes available. If you are not 18 you need to attend classes as a regular school student.
-
-#### Section: Standard High School Diploma
-This 24 credit program prepares students for life after high school for those seeking to continue their education or enter into the job market. Students will be provided with all books, supplies, study materials, class schedule, and direct teacher and counsellor contact information. Each semester must be concluded with a final exam to ensure understanding of course materials. Students must complete: 4 credits in English, 4 credits in Math (including Algebra 1 & Geometry), 3 credits in Natural Science, 3 credits in Social Studies (with 1 credit American History, 1 credit in World History, and 1/2 credit each in US Government and Economics), 1 credit of Health, and 9 credits of electives. A minimum GPA of a 2.0 on a 4.0 scale is required for graduation.
-NOTE: Students are required to meet with their school counsellor at least once per month.
-
-#### Section: Credit Recovery Program
-Students can take credits from AWA and transfer them back to the secondary institution (i.e. High School) that he or she currently attends. The student bears the responsibility to verify that the credits will be accepted and approved by the secondary institution prior to enrolling into AWA. A maximum of 2 credits can be taken for this program.
+- **Q: Full text as published by AGI** — A: American Worldwide Academy American Worldwide Academy in partnership with American Group International School. Wants to give you success and…… All the students will learn English and be required to take an English Exam. We will not fraud the American Educational System. Make your dreams come true…. We proctor all tests onsite in our centre. Available in English! AGI seeks to serve individuals 16 years or older. 18 or older in age, and older who terminated their secondary education prior to matriculating by offering a nationally accredited, low-cost, self-directed, independent-study high school completion program through correspondence-based or online-based studies. We provide this service at a very modest fee that is inclusive of all support to ensure success; tutorial assistance, and post-graduation services such as official enrolment or graduation verification; letters of recommendation to authorized third parties, and official academic transcripts on behalf of those graduates seeking to pursue higher education. Pictured below is the first student that graduated from the program and received a diploma from the USA. This program is supported by the Department of Education in Florida. ENGLISH LANGUAGE WRITING SKILLS (2 Credits) English Usage, Essentials of Grammar, Sentence Structure, English Mechanics, Punctuation, Rules of Spelling, ENGLISH LITERATURE (2 Credits) Classical Literature: Fictional Novels, Poetry, and Prose Contemporary Literature: Non-Fiction – Biographies and Commentaries GENERAL MATHEMATICS (3 Credits) Arithmetic: Basic functions using whole numbers, fractions, decimals, and percentages; Consumer Mathematics: standard measurements- perimeter, area & volume, distance, interest, and cost; Number Relationships: ratio and proportion, using the percent triangle; Comparing and Ordering Numbers; Number Relationships: using order of operations to solve multi-step problems: Data Analysis: tables and charts, bar graphs, line graphs, and pie charts, mean and median, ratio and probability; Algebra & Geometry. SOCIAL SCIENCE I – AMERICAN HISTORY (2 Credits) Early American History: Pre-colonial, Colonial, British rule of the Colonies, the American Revolution, French-Indian Wars, The Louisiana Purchase, The Texas Revolution and Mexican War, The American Civil War: Overview, Slavery and its role in the Civil War, Cessation of Southern States, Fighting the War. World War I – An American Historical Perspective. The Great Depression – causes and solutions, FDR and The New Deal. World War II – Rise of Fascism and formation of the Axis powers, United States’ involvement, Allied powers’ victory, the defeat of Japan, Birth of the United Nations, IMF, and World Bank. Post-World War II and the beginnings of the Cold War – The rise of Communism and the arms race, the NATO Alliance, the expansion of Communism and the growing threat to the US. Contemporary American History – The Korean War; the Civil Rights Movement; The Kennedy Era; End of the Civil Rights Movement; Crises in Southeast Asia- The Vietnam War; Invasion of Laos, Conflicts in Cambodia, US withdrawal, Nixon’s resignation and a final end to the war. SOCIAL SCIENCE II – AMERICAN GOVERNMENT (2 Credits) Structure and functions of City, County, and State Governments. The Federal Government: Office of the President, Executive Powers, the Executive Cabinet structure and functions. United States Congress: structure and functions of the US Senate and the US House of Representatives. The Supreme Court: structure and functions of the federal judiciary, Supreme Court procedures, historical “landmark” cases. SOCIAL SCIENCE III – WORLD HISTORY (3 Credits) Ancient Egypt, Mesopotamia, Phoenicians, Hebrews, The Persian Empire, Ancient Greece, Macedonia, The Roman Empire: the conquest of Italy, early Roman government, the Punic Wars, Roman Law. India and Southeast Asia – Buddhism, Hinduism, and Islam; History of the Far-East: China, Japan, and Korea; Origins of the Chinese Feudal system, unification of China’s regions and development of a “Great Civilization”, the final dynasties, Chinese philosophers, the “People’s Revolution, Communist rule of China. History of South America: Native Ancestry, the Mayas, the Aztecs, the Incas. History of Africa: Early North Africa, Ancient Africa, contact between the Ancient World and Africa, the spread of Christianity, how Islam influenced Africa, Empires of West Africa, the Atlantic Slave Trade, Early East Africa, Early Central Africa, Kongo, and Portuguese influence, Early Southern Africa, formation of states in Southern Africa, the discovery of South Africa’s mineral wealth, European influences and exploits, abolition of the slave trade, Africa and the World Wars. Rise and Fall of The Byzantine Empire, Western Europe, and the Middle Ages, Early history of England, the influence of the Catholic Church in Medieval Europe, and the Crusades. Modern History- the Renaissance and the Reformation, the Age of Discovery, the rise of nation-states and the expansion of empires, How Russia became a nation, the Age of Absolutism, the Age of Reason – Enlightenment and the birth of the Scientific Method, the French Revolution, the Agricultural and Industrial Revolutions, Communism, the Triumph of Democracy and the struggle for equality SCIENCE I – BIOLOGY (2 Credits) Cellular biology, comparisons between plans and animal cells, function of organized cells and tissues, compounds in living cells, cell division, reproduction and differentiation, the Animal Kingdom – descriptions of phyla: vertebrates and invertebrates, SCIENCE II – HUMAN BIOLOGY (2 Credits) The Skeletal System, the Muscular System, the Nervous System, the Endocrine System, the Respiratory System, the Circulatory System, the Digestive and Excretory Systems, and the Reproductive System. The above outlines the subject matter comprising our nationally accredited high school diploma program designed for individuals who prefer home schooling or an online high school completion program. Upon successful completion of these subjects, students will be administered a proctored final exam whose results will be factored into the student’s cumulative academic record. This is an accredited program in the USA and approved by the Department of Education in the State of Florida. American Worlwide Academy (Awa) High School Diploma Programs Students will have the option of choosing either the Standard High School Diploma with Career Training Certificate (24 credits) or the Standard High School Diploma (24 credits). Each course is worth either one (1) credit or half (.5) credit. STANDARD HIGH SCHOOL DIPLOMA WITH CAREER TRAINING CERTIFICATE This 24 credit program prepares students for entry for careers in various fields, while earning a high school diploma. The program emphasizes: customer service, retail sales, sales, hospitality, marketing, and management. Students will be provided with all books, supplies, study materials, class schedule, and direct teacher and counsellor contact information. Each semester must be concluded with a final exam to ensure understanding of course materials. Students must complete: 4 credits in English, 4 credits in Math (including Algebra 1 & Geometry), 3 credits in Natural Science, 3 credits in Social Studies (with 1 credit American History, 1 credit in World History, and 1/2 credit each in US Government and Economics), 1 credit of Health, 5 credits of electives, and 4 credits of focus on Career Certificate. Additionally, students must complete a capstone workshop to earn the Career Certificate. A minimum GPA of a 2.0 on a 4.0 scale is required for graduation.NOTE: Students are required to meet with their school counsellor at least once per month. Evening and Weekend classes available. If you are not 18 you need to attend classes as a regular school student. Standard High School Diploma This 24 credit program prepares students for life after high school for those seeking to continue their education or enter into the job market. Students will be provided with all books, supplies, study materials, class schedule, and direct teacher and counsellor contact information. Each semester must be concluded with a final exam to ensure understanding of course materials. Students must complete: 4 credits in English, 4 credits in Math (including Algebra 1 & Geometry), 3 credits in Natural Science, 3 credits in Social Studies (with 1 credit American History, 1 credit in World History, and 1/2 credit each in US Government and Economics), 1 credit of Health, and 9 credits of electives. A minimum GPA of a 2.0 on a 4.0 scale is required for graduation. NOTE: Students are required to meet with their school counsellor at least once per month. Credit Recovery Program Students can take credits from AWA and transfer them back to the secondary institution (i.e. High School) that he or she currently attends. The student bears the responsibility to verify that the credits will be accepted and approved by the secondary institution prior to enrolling into AWA. A maximum of 2 credits can be taken for this program.
 Related
 - Independent course studies [link: “Independent course studies” → `programs-independent-studies.html`]
 - Business & medical English [link: “Business & medical English” → `professional.html`]
@@ -1459,30 +1122,7 @@ Book a free level test, or tell us what your team needs and we'll reply within o
 - Link card → `pathways.html`: Next steps · University pathways · An authorized admissions agent for universities and colleges in the UK, the United States and beyond.
 
 #### Section: Business and medical English in detail
-
-#### Section: 
-
-#### Section: Corporate EFL Trainings/ Business English
-دروس اللغة الإنجليزية للأعمال والامتحانات الدولية
-اللغة الإنجليزية هي لغة مشتركة للأعمال. بغض النظر عن مكان إقامتك أو عملك في العالم ، تعد القدرة على التواصل الفعال باللغة الإنجليزية ميزة أكيدة عند إجراء الأعمال. في عالم تزداد فيه العولمة ، يمنحك إتقان اللغة الإنجليزية للأعمال ميزة تنافسية.
-تختبر الخطوات الأربع لاختبارات Anglia Business English ، والتي تتراوح في المستوى من A2 + إلى C1 في CEFR ، مستوى إتقان اللغة الإنجليزية للطلاب الذين يهتمون بالأعمال بشكل خاص. قد يفكر المرشحون في المستقبل في مكان عمل دولي أو ربما يعملون بالفعل في العالم المهني ويكونون حريصين على تقييم كفاءتهم اللغوية.
-مع التركيز على التطبيق العملي للأعمال في مواقف واقعية ، تقدم اختبارات التواصل لدينا اختيارًا تدريجيًا للمستويات: A2 + و B1 و B2 و C1 ، واختبار المهارات الأربع للقراءة والكتابة والاستماع والتحدث.
-اللغة الإنجليزية هي اللغة الأولى التي تربط المتحدثين بلغات مختلفة ، ومن المستحيل التقليل من أهمية اللغة الإنجليزية للأعمال في فتح الباب أمام عدد كبير من الأسواق والعملاء المحتملين.
-إن سوء الاتصال عبر الأعمال التجارية العالمية يكلف الشركات مليارات الدولارات كل عام. يمكن أن يكون الحل مباشرًا مثل تدريب المندوبين من خلال برنامج "اللغة الإنجليزية العامة" القياسي - بدلاً من ذلك ، قد يكون من الضروري تدريب معلمي اللغة الإنجليزية كلغة ثانية في جوانب اللغة الإنجليزية التقنية أو اللغة الإنجليزية الخاصة بالصناعة ، في مجال عملك أو عملك.
-لا يمكن التقليل من عائد الاستثمار من دورة تدريب اللغة الإنجليزية للأعمال ، فراقب تحسن كفاءة الموظفين والتواصل بشكل كبير ، مما يتيح لك المزيد من الوقت والمال للتركيز على القرارات التي تهمك حقًا.
-يمكننا عمل جدول زمني لاستيعاب احتياجات شركاتك من خلال التدريبات الوظيفية في الموقع أو استخدام مساحة الفصل الدراسي المتاحة في مؤسستنا.
-تمتد خبرتنا إلى الواردات والصادرات والزراعة والعمل مع الشركات العالمية الموجودة في ميناء أغادير.
-
-#### Section: Business English Classes and International Exams
-English is the lingua-franca of business. No matter where in the world you live or work, the ability to communicate effectively in English is a definite advantage when conducting business. In an increasingly globalised world, being proficient in business English gives you a competitive edge.
-The four steps of the Anglia Business English exams, ranging in level from A2+ to C1 on the CEFR, test the English proficiency level of students whose special interest is business. Candidates may be considering a future in an international workplace or may already be working in the professional world and be keen to evaluate their linguistic competence.
-With an emphasis on practical business application in realistic situations, our communicative exams offer a progressive choice of levels: A2+, B1, B2 and C1, and test all four skills of reading, writing, listening and speaking.
-English is the number one language that connects speakers of different languages, and it is impossible to underestimate the importance of business English in opening the door to a vast number of potential markets and clients.
-Miscommunication across global business costs companies billions of dollars each year. The solution could be as straightforward as training delegates through a standard ‘General English’ program – alternatively, it may be necessary to train ESL teachers in aspects of technical English or industry specific English, to your industry or business.
-The return on investment from a business English training course cannot be underrated, watch as employee efficiency and communication dramatically improves, allowing you more time and money to focus on the decisions that really matter.
-We can make a time table to accommodate your companies’ needs with on-site job training or using the classroom space available in our institution.
-Our experience extends into Imports and Exports, Agriculture, and working with international companies located in the Agadir Port.
-No matter your specialty, as a medical professional your foremost concern should always be the tongue. It is the tongue – and the language that is generated by it – that allows health providers to communicate with patients and medical colleagues, speak at seminars and medical meetings – ultimately – how to read and write medical papers. Though patients – and their mother tongues – come in all different shapes and sizes, more and more it is English that is on the tips of the tongues of patients around the world. That is because even though in today’s increasingly globalized world a doctor’s patients may speak many different languages, the special status that English enjoys as the 21st Century’s lingua franca means that it is increasingly called upon to unite doctor and patient in examining rooms around the world. After all, in addition to the 500 million people worldwide who speak English natively, more than a billion more – or all together a quarter of the world’s population – speak it as a second language. Thus the role of English in medicine cannot be overstated. So whether you are working in an English-speaking country or even in your own home country, there will come a time when you will need to rely on English to communicate. All this, then, explains why it is important to learn medical English. In so doing, medical professionals of all types – be they general practice physicians, specialists, nurses, pharmacists, paramedics, and even medical volunteers – will be able to meet the needs of their patients, be better equipped to console the loved ones of their patients, and be better prepared to communicate with other medical professionals who speak English. Given the obvious advantages, it is easier to understand why you learn medical English than it is to understand exactly how. Fortunately, a growing number of English language programs are offered throughout the English-speaking world to meet the needs of aspiring medical professionals. Be forewarned, however: such medical English courses are not like normal intensive English programs. As specialized programs, designed to foster the ability to communicate in English in a hospital or clinical setting, students should already have mastery of general (conversational) English at an intermediate or advanced level and be ready to add to their working knowledge of the language. In much the same way, because the focus is on language and not science, students should have an understanding of anatomy, physiology, and indeed of their medical concentration in general in their native language, as well. Students will be best able to learn medical English by using a strong foundation in both conversational English and medical science as a springboard for success. Though courses may vary depending on the provider, when it comes time to choose a medical English course, there are certain things to look for. A quality program, for example, will help international students comes to terms with the intricacies of medical terminology in areas as diverse as history-taking, trauma care, and treatment procedures. In addition to a focus on industry-specific vocabulary, good programs should highlight commonly used grammatical structures used in the field of medicine and help candidates master the kind of medical idioms that are at the heart of doctor-to-doctor and doctor-to-patient interaction. Finally, with an eye on advancement, comprehensive may even provide modules that explain the inner workings of the U.S. healthcare system and contribute to the growth of medical writing skills. Upon completion of such a course, providers should feel comfortable working not just on tongue but in the English tongue. After all, as both working and aspiring medical professionals both know, no matter our mother tongue, all tongues themselves are the same and deserving of the same standard of care.
+- **Q: Full text as published by AGI** — A: Corporate EFL Trainings/ Business English Business English Classes and International Exams English is the lingua-franca of business. No matter where in the world you live or work, the ability to communicate effectively in English is a definite advantage when conducting business. In an increasingly globalised world, being proficient in business English gives you a competitive edge. The four steps of the Anglia Business English exams, ranging in level from A2+ to C1 on the CEFR, test the English proficiency level of students whose special interest is business. Candidates may be considering a future in an international workplace or may already be working in the professional world and be keen to evaluate their linguistic competence. With an emphasis on practical business application in realistic situations, our communicative exams offer a progressive choice of levels: A2+, B1, B2 and C1, and test all four skills of reading, writing, listening and speaking. English is the number one language that connects speakers of different languages, and it is impossible to underestimate the importance of business English in opening the door to a vast number of potential markets and clients. Miscommunication across global business costs companies billions of dollars each year. The solution could be as straightforward as training delegates through a standard ‘General English’ program – alternatively, it may be necessary to train ESL teachers in aspects of technical English or industry specific English, to your industry or business. The return on investment from a business English training course cannot be underrated, watch as employee efficiency and communication dramatically improves, allowing you more time and money to focus on the decisions that really matter. We can make a time table to accommodate your companies’ needs with on-site job training or using the classroom space available in our institution. Our experience extends into Imports and Exports, Agriculture, and working with international companies located in the Agadir Port. No matter your specialty, as a medical professional your foremost concern should always be the tongue. It is the tongue – and the language that is generated by it – that allows health providers to communicate with patients and medical colleagues, speak at seminars and medical meetings – ultimately – how to read and write medical papers. Though patients – and their mother tongues – come in all different shapes and sizes, more and more it is English that is on the tips of the tongues of patients around the world. That is because even though in today’s increasingly globalized world a doctor’s patients may speak many different languages, the special status that English enjoys as the 21st Century’s lingua franca means that it is increasingly called upon to unite doctor and patient in examining rooms around the world. After all, in addition to the 500 million people worldwide who speak English natively, more than a billion more – or all together a quarter of the world’s population – speak it as a second language. Thus the role of English in medicine cannot be overstated. So whether you are working in an English-speaking country or even in your own home country, there will come a time when you will need to rely on English to communicate. All this, then, explains why it is important to learn medical English. In so doing, medical professionals of all types – be they general practice physicians, specialists, nurses, pharmacists, paramedics, and even medical volunteers – will be able to meet the needs of their patients, be better equipped to console the loved ones of their patients, and be better prepared to communicate with other medical professionals who speak English. Given the obvious advantages, it is easier to understand why you learn medical English than it is to understand exactly how. Fortunately, a growing number of English language programs are offered throughout the English-speaking world to meet the needs of aspiring medical professionals. Be forewarned, however: such medical English courses are not like normal intensive English programs. As specialized programs, designed to foster the ability to communicate in English in a hospital or clinical setting, students should already have mastery of general (conversational) English at an intermediate or advanced level and be ready to add to their working knowledge of the language. In much the same way, because the focus is on language and not science, students should have an understanding of anatomy, physiology, and indeed of their medical concentration in general in their native language, as well. Students will be best able to learn medical English by using a strong foundation in both conversational English and medical science as a springboard for success. Though courses may vary depending on the provider, when it comes time to choose a medical English course, there are certain things to look for. A quality program, for example, will help international students comes to terms with the intricacies of medical terminology in areas as diverse as history-taking, trauma care, and treatment procedures. In addition to a focus on industry-specific vocabulary, good programs should highlight commonly used grammatical structures used in the field of medicine and help candidates master the kind of medical idioms that are at the heart of doctor-to-doctor and doctor-to-patient interaction. Finally, with an eye on advancement, comprehensive may even provide modules that explain the inner workings of the U.S. healthcare system and contribute to the growth of medical writing skills. Upon completion of such a course, providers should feel comfortable working not just on tongue but in the English tongue. After all, as both working and aspiring medical professionals both know, no matter our mother tongue, all tongues themselves are the same and deserving of the same standard of care.
 Related
 - Adult high school diploma [link: “Adult high school diploma” → `adult-diploma.html`]
 - Independent course studies [link: “Independent course studies” → `programs-independent-studies.html`]
@@ -1561,129 +1201,7 @@ Tell us where you'd like to study. The office will reply within one working day.
 - Link card → `professional.html`: Professionals · Professional & medical English · Business and medical English for working adults and teams, exam proctoring and ADHD holistic coaching.
 
 #### Section: Consultancy services and partner institutions
-
-#### Section: 
-
-#### Section: Empowering Your Global Academic Journey
-
-#### Section: Navigating Your Future: From Admission to Achievement!
-**What is AGI Education Consultancy?**
-AGI Education Consultancy offers a comprehensive suite of personalized education consultancy and enrollment solutions for students and professionals. As an authorized admission agent representing a wide array of prestigious institutions, we streamline your application process for higher education, whether it’s locally, abroad, or online. Our services extend beyond administrative tasks; we provide holistic support tailored to your unique circumstances. From accommodation arrangements and visa applications to health insurance and family support for international students, we’ve got you covered. Additionally, AGI facilitates double diplomation programs, offers language training, assists with scholarships and financial aid applications, and provides career counseling and cultural orientation workshops. Our goal is to empower you to maximize your educational experience at every stage of your journey.
-Check our Network of Partners
-apply Now
-
-#### Section: Why Choose AGI Education Consultancy?
-**Tailored Guidance for Individual Success**
-At AGI, we understand that every student has unique aspirations, strengths, and circumstances. Our personalized approach means we take the time to listen to your goals and craft a customized educational plan that aligns with your academic and career objectives. We study each case individually, collaborating with you to identify the best pathways for your success.
-**Authorized Admission Agency**
-As an authorized admission agency, AGI Education Consultancy is officially recognized to facilitate student placements in various educational institutions worldwide. Our status ensures that we are well-equipped to guide you through the entire admission process, providing you with the latest information and resources to make informed decisions about your education.
-**Expertise of Our Professional Team**
-Led by Julie Wilburn, our CEO who has lived in Morocco for many years and holds dual citizenship, AGI boasts an expert team with extensive experience in the education consultancy field. Julie has successfully guided hundreds of students in achieving their academic dreams. Her deep understanding of the local education system, combined with international insights, ensures you receive unparalleled support throughout your educational journey.
-**Extensive University Network**
-With established partnerships with numerous prestigious universities worldwide, AGI offers a diverse selection of programs across various fields of study. This extensive network allows you to choose an institution that best fits your academic interests, budget, and career aspirations, ensuring you receive a high-quality education.
-**Comprehensive Application Support**
-Navigating the application process can be overwhelming. AGI provides end-to-end assistance, from reviewing and refining your application materials to providing interview preparation and ensuring that your submissions meet all requirements. Our experienced consultants guide you through every step, maximizing your chances of acceptance.
-**Expertise in Scholarships and Financial Aid**
-Higher education can be financially challenging. AGI helps you identify scholarship opportunities, grants, and financial aid packages tailored to your profile. We assist in preparing applications and gathering necessary documentation, allowing you to secure funding and reduce financial burdens.
-**Language Training and Preparation**
-Proficiency in the required language is essential for success in an international academic environment. AGI provides specialized language training programs and resources for exams like IELTS, TOEFL, GMAT, and GRE. Our training ensures you are fully prepared to meet the language requirements of your chosen institution.
-**Visa and Legal Assistance**
-Understanding visa regulations can be daunting. AGI’s experienced consultants guide you through the visa application process, ensuring you have the correct documentation and understanding of legal requirements for studying abroad. Our support minimizes the complexities associated with obtaining a student visa.
-**Accommodation Solutions**
-AGI recognizes the importance of a safe and comfortable living environment during your studies. We assist in finding suitable accommodation options—whether on-campus or off-campus—tailored to your preferences and budget. Our goal is to ensure you feel at home in your new environment.
-**Cultural Orientation Programs**
-Transitioning to a new country can be challenging. AGI offers cultural orientation programs designed to familiarize you with the local customs, social norms, and academic expectations of your destination. These programs help ease your transition, enhancing your study experience and enabling you to adapt quickly.
-**Career Counseling and Internship Opportunities**
-Our commitment to your future extends beyond education. AGI provides career counseling services to help you align your academic pursuits with long-term career goals. We connect you with internship opportunities and job placement services, ensuring you gain relevant experience and professional connections in your field.
-24/7 Support and Emergency Services
-Studying abroad can present unexpected challenges. AGI offers round-the-clock support to address your needs—whether it’s an urgent health issue, housing problem, or academic concern. Our local representatives are always available to provide assistance and guidance, ensuring your peace of mind.
-**Ongoing Post-Study Support**
-Your journey doesn’t end with graduation. AGI continues to support you after your studies, offering guidance on post-study work visas and connecting you with job opportunities in your field. We are dedicated to helping you successfully transition from academia to your professional career.
-**Proven Track Record of Success**
-AGI Education Consultancy has a strong history of successfully assisting students in achieving their academic goals. Our clients’ testimonials reflect our commitment to excellence and the impactful results of our services. We take pride in the positive experiences of our students and their successful transitions into the world of higher education.
-**Community and Networking Opportunities**
-Joining AGI means becoming part of a broader community of students, alumni, and professionals. Our networking events, workshops, and mentorship programs foster connections that can benefit you throughout your academic and professional journey.
-**Holistic Approach to Education**
-At AGI, we believe in nurturing the whole student. We focus not only on academic success but also on your personal development and well-being. Our holistic approach ensures that you are supported in all aspects of your educational journey.
-
-#### Section: Ready to Take the Next Step in Your Educational Journey?
-we are here to guide you every step of the way.
-With our expert team, personalized approach, and comprehensive support services, we’ll ensure you make the most of your educational opportunities. Get started today
-
-#### Section: Schedule Your Free Consultation
-American Group USA LLC and American Group International is proud to announce our official role as an English University agent for the following esteemed institutions:
-Explore Global Education Opportunities with Our University Partnerships
-Welcome to American Group USA LLC your gateway to world-class English education in Agadir, Morocco, and beyond. We proudly partner with universities across the United States, Europe, and Asia to offer students in Morocco and around the world an opportunity to pursue higher education with international standards and recognition.
-Whether you’re based in Agadir, elsewhere in Morocco, or anywhere in the world, our team is here to help you discover the best educational path. As an authorized agent and admissions counselling centre, we guide students in selecting the university that best matches their career goals, academic needs, and personal ambitions.
-Our mission is to make English education accessible to everyone. Through our partnerships, we offer a range of programs, from on-campus experiences to fully online degrees, allowing you to study from the comfort of your home. Our dedicated counsellors provide personalized support throughout the application process, helping you make informed decisions and ensuring a smooth journey into higher education.
-Join us in shaping your future with a globally recognized degree and access to a world of opportunities.
-Start Your Journey Today!
-Contact us to learn more about our university partnerships and how we can help you find the right fit for your academic dreams.
-Cardiff Metropolitan University
-Chichester College Group International
-SIST in Morocco
-International Institute of Engineering and Management
-Coventry University
-Brits Imperial University College
-Geneva Business School
-College de Paris
-We are excited to partner with these prestigious universities to help students access world-class education and opportunities for academic and professional growth. Through our partnerships, we provide guidance and support for students seeking to study at these institutions, ensuring a smooth admissions process and an enriching educational journey.
-Thank you for choosing American Group USA / American Group International as your trusted educational partner!
-Ms. Julie Wilburn
-Educational Consultant and CEO
-
-#### Section: Network of Partners
-
-#### Section: Our Prestigious Network of Partners
-At AGI Education Consultancy, we take pride in our extensive network of partnerships with leading universities and institutions around the globe. These trusted relationships allow us to offer our students access to a wide range of high-quality programs and study opportunities. From undergraduate degrees to postgraduate programs, our partner institutions are committed to academic excellence and provide the perfect environment for personal and professional growth.
-By partnering with these respected institutions, AGI ensures that you have access to the best educational pathways tailored to your unique aspirations. Explore the endless possibilities through our diverse partner network and take the next step in shaping your future!
-
-#### Section: Royale Business College UK
-RB College, a prestigious UK institution, offers a variety of academic and vocational programs focused on student success and career readiness. As a trusted AGI Education Consultancy partner, RB College provides top-quality education and hands-on training, ensuring students achieve their academic and professional aspirations.
-apply now
-See details
-
-#### Section: Britts Imperial College University
-Britts Imperial University College is a dynamic academic center and an education partner of top British and European universities. Offering globally recognized Undergraduate, Postgraduate, and Doctorate degree programs, Britts Imperial empowers students from over 31 countries to achieve their academic and professional goals. With hybrid learning, campus transfer options, and post-study work opportunities, the university provides a globally accessible and practical education experience.
-
-#### Section: UCAM Universidad Católica San Antonio de Murcia
-UCAM (Universidad Católica de Murcia) in Spain is offering a wide range of English-taught programs and promoting both academic excellence and values-based education. With a campus in the beautiful region of Murcia and over 340 international partnerships, including UC Berkeley and Stanford, UCAM provides students with a globally enriched learning experience. Its focus on combining theoretical and practical knowledge prepares students for success in both academic and professional spheres.
-
-#### Section: Eucléa Business School
-Eucléa Business School, part of the Collège de Paris, specializes in commerce and management through work-study programs. With campuses in Strasbourg, Metz, Mulhouse, and Reims, Eucléa offers a comprehensive range of programs from Post-Bac to Bac+5. The school is committed to educational excellence, with recognized professional certifications from the RNCP.
-
-#### Section: University of London
-The University of London is a globally recognized institution offering a wide range of flexible undergraduate and postgraduate programs. Known for its academic excellence, it provides both on-campus and distance learning opportunities to over 50,000 students worldwide. With a strong emphasis on accessibility, the university partners with leading institutions to deliver high-quality education across the globe.
-
-#### Section: SIST British Education
-SIST (Superior Institute of Science and Technology) has been offering British education in Morocco for 20 years, providing undergraduate, master's, and MBA degrees in partnership with Cardiff Metropolitan University. As a unique higher education institution in Morocco that operates entirely in English, SIST students benefit from globally recognized degrees. The institute is also accredited by the Moroccan Ministry of Higher Education. Graduates from SIST stand out in the global business world, equipped with proficiency in three languages and high-level professional skills imparted by the rigorous British curriculum
-
-#### Section: geneva business school
-Geneva Business School stands as a globally recognized Swiss institution, offering top-tier education with students from over 80 nationalities and partnerships across all continents. Through our four Educational Pillars, we aim to shape a sustainable society, ensuring quality through a rigorous Assurance Model. Ranked in the top 100 business schools worldwide, we continue to foster excellence and innovation.
-
-#### Section: Coventry University
-Coventry University is a modern, global institution known for shaping future leaders and fostering innovation. With a Gold rating in the 2023 Teaching Excellence Framework (TEF), the university excels in teaching, learning, and student outcomes. Students benefit from immersive, real-life learning experiences, strong career support, and multiple entry dates throughout the year. Ranked as a top student city, Coventry provides a rich academic environment with guaranteed accommodation and a dedicated success coach for each student.
-
-#### Section: College de Paris
-Founded in 2010, the Collège de Paris is a network of higher education institutions and training organizations focused on making academic excellence accessible. With an emphasis on international openness, personalized support, and pedagogical excellence, the network spans across France and internationally. The Digital Campus offers an online learning platform with the same rigor as physical schools, featuring digital modules, videos, and interactive content. Students benefit from personalized guidance and have access to masterclasses, graduation ceremonies, and more, ensuring a comprehensive educational experience.
-
-#### Section: Nest Academy of Management Education Dubai
-Innovative Learning Hub: Nest Academy of Management Education Dubai offers cutting-edge programs designed to equip students with essential skills for today's dynamic job market.
-Career-Focused Approach: We emphasize practical training and real-world experiences, enabling students to seamlessly transition from education to successful careers.
-Empowering Future Leaders: Committed to fostering talent, we support students in turning their passions into professions through mentorship, scholarships, and industry connections.
-We are continuously expanding our network of academic partnerships, and while we’ve highlighted a few of our esteemed collaborators here, we are proud to work with dozens more institutions around the world. Stay tuned as we update our list to reflect the full range of universities and educational bodies that we collaborate with to provide the best opportunities for our students.
-back to AGI Education Consultancy
-schedule your free consultation
-
-#### Section: RB College of the United Kingdom
-The UK degree is an internationally recognised and respected academic qualification and many of our graduates come from outside the European Union. Employers across the world recognise and value the quality of a UK university education, however, it is up to the student to ensure that their potential employers in their respective countries recognise the professional doctorate qualification.
-Students may need to obtain equivalence certification at their own expense in order for their degree to be recognised outside of the European Union.
-The UK’s higher education provision is among the best in the world and it’s universities consistently perform well in world rankings. As published in the Times Higher Education World Rankings 2018 with 3 UK universities in the top 10 across the world and a further 7 UK universities are in the top 50.
-We are thrilled to announce that RBC is UCAS registered, which means that all international students can apply to one of our courses via the largest UK admissions portal.
-UCAS, the Universities and Colleges Admissions Service, and the UK’s shared admissions service for higher education.
-UCAS supports 1.5 million students every year to explore entering higher education, employment and apprenticeships and manage almost three million applications, from around 700,000 people each year, for full-time undergraduate courses at over 380 universities and colleges across the UK.
-Together with RB College and American Group International we will offer these programs at our institution in Agadir, Morocco.
-RB College – Welcome (rb-college.co.uk)
+- **Q: Full text as published by AGI** — A: Empowering Your Global Academic Journey Navigating Your Future: From Admission to Achievement! What is AGI Education Consultancy? AGI Education Consultancy offers a comprehensive suite of personalized education consultancy and enrollment solutions for students and professionals. As an authorized admission agent representing a wide array of prestigious institutions, we streamline your application process for higher education, whether it’s locally, abroad, or online. Our services extend beyond administrative tasks; we provide holistic support tailored to your unique circumstances. From accommodation arrangements and visa applications to health insurance and family support for international students, we’ve got you covered. Additionally, AGI facilitates double diplomation programs, offers language training, assists with scholarships and financial aid applications, and provides career counseling and cultural orientation workshops. Our goal is to empower you to maximize your educational experience at every stage of your journey. Check our Network of Partners Why Choose AGI Education Consultancy? Tailored Guidance for Individual Success At AGI, we understand that every student has unique aspirations, strengths, and circumstances. Our personalized approach means we take the time to listen to your goals and craft a customized educational plan that aligns with your academic and career objectives. We study each case individually, collaborating with you to identify the best pathways for your success. Authorized Admission Agency As an authorized admission agency, AGI Education Consultancy is officially recognized to facilitate student placements in various educational institutions worldwide. Our status ensures that we are well-equipped to guide you through the entire admission process, providing you with the latest information and resources to make informed decisions about your education. Expertise of Our Professional Team Led by Julie Wilburn, our CEO who has lived in Morocco for many years and holds dual citizenship, AGI boasts an expert team with extensive experience in the education consultancy field. Julie has successfully guided hundreds of students in achieving their academic dreams. Her deep understanding of the local education system, combined with international insights, ensures you receive unparalleled support throughout your educational journey. Extensive University Network With established partnerships with numerous prestigious universities worldwide, AGI offers a diverse selection of programs across various fields of study. This extensive network allows you to choose an institution that best fits your academic interests, budget, and career aspirations, ensuring you receive a high-quality education. Comprehensive Application Support Navigating the application process can be overwhelming. AGI provides end-to-end assistance, from reviewing and refining your application materials to providing interview preparation and ensuring that your submissions meet all requirements. Our experienced consultants guide you through every step, maximizing your chances of acceptance. Expertise in Scholarships and Financial Aid Higher education can be financially challenging. AGI helps you identify scholarship opportunities, grants, and financial aid packages tailored to your profile. We assist in preparing applications and gathering necessary documentation, allowing you to secure funding and reduce financial burdens. Language Training and Preparation Proficiency in the required language is essential for success in an international academic environment. AGI provides specialized language training programs and resources for exams like IELTS, TOEFL, GMAT, and GRE. Our training ensures you are fully prepared to meet the language requirements of your chosen institution. Visa and Legal Assistance Understanding visa regulations can be daunting. AGI’s experienced consultants guide you through the visa application process, ensuring you have the correct documentation and understanding of legal requirements for studying abroad. Our support minimizes the complexities associated with obtaining a student visa. Accommodation Solutions AGI recognizes the importance of a safe and comfortable living environment during your studies. We assist in finding suitable accommodation options—whether on-campus or off-campus—tailored to your preferences and budget. Our goal is to ensure you feel at home in your new environment. Cultural Orientation Programs Transitioning to a new country can be challenging. AGI offers cultural orientation programs designed to familiarize you with the local customs, social norms, and academic expectations of your destination. These programs help ease your transition, enhancing your study experience and enabling you to adapt quickly. Career Counseling and Internship Opportunities Our commitment to your future extends beyond education. AGI provides career counseling services to help you align your academic pursuits with long-term career goals. We connect you with internship opportunities and job placement services, ensuring you gain relevant experience and professional connections in your field. 24/7 Support and Emergency Services Studying abroad can present unexpected challenges. AGI offers round-the-clock support to address your needs—whether it’s an urgent health issue, housing problem, or academic concern. Our local representatives are always available to provide assistance and guidance, ensuring your peace of mind. Ongoing Post-Study Support Your journey doesn’t end with graduation. AGI continues to support you after your studies, offering guidance on post-study work visas and connecting you with job opportunities in your field. We are dedicated to helping you successfully transition from academia to your professional career. Proven Track Record of Success AGI Education Consultancy has a strong history of successfully assisting students in achieving their academic goals. Our clients’ testimonials reflect our commitment to excellence and the impactful results of our services. We take pride in the positive experiences of our students and their successful transitions into the world of higher education. Community and Networking Opportunities Joining AGI means becoming part of a broader community of students, alumni, and professionals. Our networking events, workshops, and mentorship programs foster connections that can benefit you throughout your academic and professional journey. Holistic Approach to Education At AGI, we believe in nurturing the whole student. We focus not only on academic success but also on your personal development and well-being. Our holistic approach ensures that you are supported in all aspects of your educational journey. Ready to Take the Next Step in Your Educational Journey? we are here to guide you every step of the way. With our expert team, personalized approach, and comprehensive support services, we’ll ensure you make the most of your educational opportunities. Get started today American Group USA LLC and American Group International is proud to announce our official role as an English University agent for the following esteemed institutions: Explore Global Education Opportunities with Our University Partnerships Welcome to American Group USA LLC your gateway to world-class English education in Agadir, Morocco, and beyond. We proudly partner with universities across the United States, Europe, and Asia to offer students in Morocco and around the world an opportunity to pursue higher education with international standards and recognition. Whether you’re based in Agadir, elsewhere in Morocco, or anywhere in the world, our team is here to help you discover the best educational path. As an authorized agent and admissions counselling centre, we guide students in selecting the university that best matches their career goals, academic needs, and personal ambitions. Our mission is to make English education accessible to everyone. Through our partnerships, we offer a range of programs, from on-campus experiences to fully online degrees, allowing you to study from the comfort of your home. Our dedicated counsellors provide personalized support throughout the application process, helping you make informed decisions and ensuring a smooth journey into higher education. Join us in shaping your future with a globally recognized degree and access to a world of opportunities. Start Your Journey Today! Contact us to learn more about our university partnerships and how we can help you find the right fit for your academic dreams. Cardiff Metropolitan University Chichester College Group International SIST in Morocco International Institute of Engineering and Management Coventry University Brits Imperial University College Geneva Business School College de Paris We are excited to partner with these prestigious universities to help students access world-class education and opportunities for academic and professional growth. Through our partnerships, we provide guidance and support for students seeking to study at these institutions, ensuring a smooth admissions process and an enriching educational journey. Thank you for choosing American Group USA / American Group International as your trusted educational partner! Ms. Julie Wilburn Educational Consultant and CEO Network of Partners Our Prestigious Network of Partners At AGI Education Consultancy, we take pride in our extensive network of partnerships with leading universities and institutions around the globe. These trusted relationships allow us to offer our students access to a wide range of high-quality programs and study opportunities. From undergraduate degrees to postgraduate programs, our partner institutions are committed to academic excellence and provide the perfect environment for personal and professional growth. By partnering with these respected institutions, AGI ensures that you have access to the best educational pathways tailored to your unique aspirations. Explore the endless possibilities through our diverse partner network and take the next step in shaping your future! Royale Business College UK RB College, a prestigious UK institution, offers a variety of academic and vocational programs focused on student success and career readiness. As a trusted AGI Education Consultancy partner, RB College provides top-quality education and hands-on training, ensuring students achieve their academic and professional aspirations. See details Britts Imperial College University Britts Imperial University College is a dynamic academic center and an education partner of top British and European universities. Offering globally recognized Undergraduate, Postgraduate, and Doctorate degree programs, Britts Imperial empowers students from over 31 countries to achieve their academic and professional goals. With hybrid learning, campus transfer options, and post-study work opportunities, the university provides a globally accessible and practical education experience. UCAM Universidad Católica San Antonio de Murcia UCAM (Universidad Católica de Murcia) in Spain is offering a wide range of English-taught programs and promoting both academic excellence and values-based education. With a campus in the beautiful region of Murcia and over 340 international partnerships, including UC Berkeley and Stanford, UCAM provides students with a globally enriched learning experience. Its focus on combining theoretical and practical knowledge prepares students for success in both academic and professional spheres. Eucléa Business School Eucléa Business School, part of the Collège de Paris, specializes in commerce and management through work-study programs. With campuses in Strasbourg, Metz, Mulhouse, and Reims, Eucléa offers a comprehensive range of programs from Post-Bac to Bac+5. The school is committed to educational excellence, with recognized professional certifications from the RNCP. University of London The University of London is a globally recognized institution offering a wide range of flexible undergraduate and postgraduate programs. Known for its academic excellence, it provides both on-campus and distance learning opportunities to over 50,000 students worldwide. With a strong emphasis on accessibility, the university partners with leading institutions to deliver high-quality education across the globe. SIST British Education SIST (Superior Institute of Science and Technology) has been offering British education in Morocco for 20 years, providing undergraduate, master's, and MBA degrees in partnership with Cardiff Metropolitan University. As a unique higher education institution in Morocco that operates entirely in English, SIST students benefit from globally recognized degrees. The institute is also accredited by the Moroccan Ministry of Higher Education. Graduates from SIST stand out in the global business world, equipped with proficiency in three languages and high-level professional skills imparted by the rigorous British curriculum geneva business school Geneva Business School stands as a globally recognized Swiss institution, offering top-tier education with students from over 80 nationalities and partnerships across all continents. Through our four Educational Pillars, we aim to shape a sustainable society, ensuring quality through a rigorous Assurance Model. Ranked in the top 100 business schools worldwide, we continue to foster excellence and innovation. Coventry University Coventry University is a modern, global institution known for shaping future leaders and fostering innovation. With a Gold rating in the 2023 Teaching Excellence Framework (TEF), the university excels in teaching, learning, and student outcomes. Students benefit from immersive, real-life learning experiences, strong career support, and multiple entry dates throughout the year. Ranked as a top student city, Coventry provides a rich academic environment with guaranteed accommodation and a dedicated success coach for each student. College de Paris Founded in 2010, the Collège de Paris is a network of higher education institutions and training organizations focused on making academic excellence accessible. With an emphasis on international openness, personalized support, and pedagogical excellence, the network spans across France and internationally. The Digital Campus offers an online learning platform with the same rigor as physical schools, featuring digital modules, videos, and interactive content. Students benefit from personalized guidance and have access to masterclasses, graduation ceremonies, and more, ensuring a comprehensive educational experience. Nest Academy of Management Education Dubai Innovative Learning Hub: Nest Academy of Management Education Dubai offers cutting-edge programs designed to equip students with essential skills for today's dynamic job market. Career-Focused Approach: We emphasize practical training and real-world experiences, enabling students to seamlessly transition from education to successful careers. Empowering Future Leaders: Committed to fostering talent, we support students in turning their passions into professions through mentorship, scholarships, and industry connections. We are continuously expanding our network of academic partnerships, and while we’ve highlighted a few of our esteemed collaborators here, we are proud to work with dozens more institutions around the world. Stay tuned as we update our list to reflect the full range of universities and educational bodies that we collaborate with to provide the best opportunities for our students. back to AGI Education Consultancy schedule your free consultation RB College of the United Kingdom The UK degree is an internationally recognised and respected academic qualification and many of our graduates come from outside the European Union. Employers across the world recognise and value the quality of a UK university education, however, it is up to the student to ensure that their potential employers in their respective countries recognise the professional doctorate qualification. Students may need to obtain equivalence certification at their own expense in order for their degree to be recognised outside of the European Union. The UK’s higher education provision is among the best in the world and it’s universities consistently perform well in world rankings. As published in the Times Higher Education World Rankings 2018 with 3 UK universities in the top 10 across the world and a further 7 UK universities are in the top 50. We are thrilled to announce that RBC is UCAS registered, which means that all international students can apply to one of our courses via the largest UK admissions portal. UCAS, the Universities and Colleges Admissions Service, and the UK’s shared admissions service for higher education. UCAS supports 1.5 million students every year to explore entering higher education, employment and apprenticeships and manage almost three million applications, from around 700,000 people each year, for full-time undergraduate courses at over 380 universities and colleges across the UK. Together with RB College and American Group International we will offer these programs at our institution in Agadir, Morocco. RB College – Welcome (rb-college.co.uk)
 Related
 - Anglia & UCAS [link: “Anglia & UCAS” → `anglia-about.html`]
 - Chichester College Group [link: “Chichester College Group” → `journal-ccgi-partnership.html`]
@@ -1693,158 +1211,66 @@ Related
 ### 4.14 `admissions.html`
 
 - **Browser title:** Admissions – American Group International, Agadir
-- **Meta description:** How to apply to American Group International in Agadir: steps, calendar, tuition and documents.
+- **Meta description:** How to join AGI in Agadir: visit, placement assessment, documents, enrollment. Registration days Aug 28 & 31, first day Sept 7; tuition 2,600 MAD a month.
 
-Home / Admissions [link: “Home” → `index.html`]
-**Page title (H1):** Admissions
-Tours are scheduled individually, so call for an appointment to meet us and see the school. Every new student sits placement assessments before admission — whatever system they arrive from — and registration for the coming year takes place on August 28 and 31.
+Home / Parents / Admissions [link: “Home” → `index.html`] [link: “Parents” → `parents.html`]
+**Page title (H1):** Admissions.
+Tours are arranged individually – call or write for an appointment to meet us and see the school. Every new student sits placement assessments before admission, whatever system they arrive from, and registration for 2026–27 takes place on August 28 and 31.
+→ **Apply online** (`forms.html#enrollment`)
+→ **Book a visit** (`forms.html#visit`)
 
 #### Section: The application journey
-01
+Four steps, with the office beside you at each one.
+Step 01
 **Enquire**
 Call or email the admissions team to arrange a visit; tours are individual and include the school and the application process.
-02
-**Visit & Assess**
+Step 02
+**Visit & assess**
 English/ESL proficiency and academic assessments, including the free Anglia placement test for language learners.
-03
+Step 03
 **Apply**
 Prior school records and a behavior report, age and residency verification, immunization and physical examination records.
-04
+Step 04
 **Enroll**
 Pay the annual inscription, confirm the monthly tuition plan, and order books from the beginning of August.
 
-#### Section: Academic calendar
-Registration days Aug 28 & 31
-First day of classes September 7
-Second semester begins January 5
-Anglia examinations April
-Graduation exercises June 17
-Movable religious holidays — Eid al Mouloud, Ramadan, Eid al Fitr and Eid al Adha — are confirmed each term. Fall break runs October 12–18 and winter break December 18 – January 3.
-Tuition & Fees
-2,600 MAD per month, paid over ten months.
-Plus one annual inscription at enrollment: 6,500 MAD for Kindergarten–Grade 1, rising to 11,000 MAD for Grade 12. Books, mathematics and Anglia English examinations, dual enrollment in the USA and Morocco, and student insurance are included. Inscription is non-refundable; fees are not negotiable.
-Request the Tuition Guide
+#### Section: Key dates 2026–27
+Movable religious holidays – Eid al Mouloud, Ramadan, Eid al Fitr and Eid al Adha – are confirmed each term. Fall break runs October 12–18 and winter break December 18 – January 3.
+→ **Full calendar** (`calendar.html`)
+- **Registration days** — August 28 & 31
+- **First day of classes** — September 7
+- **Second semester begins** — January 5
+- **Anglia examinations** — April
+- **Last day & graduation** — June 17, 2027
+Tuition & fees
+
+#### Section: 2,600 MAD a month, paid over ten months.
+Plus one annual inscription at enrollment: 6,500 MAD for kindergarten–grade 1, rising to 11,000 MAD for grade 12. Books, mathematics and Anglia English examinations, dual enrollment in the USA and Morocco, and student insurance are included. The inscription is non-refundable; fees are not negotiable.
+→ **Tuition & fees in full** (`fees.html`)
+→ **Request the tuition guide** (`forms.html#enquiry/programs`)
 
 #### Section: What to bring
-A child aged 5 by September 1 and under 21 on the first day of school is eligible for enrollment. AGI admits students of any race, religion, color, national or ethnic origin.
-Apply Online Book a Visit [link: “Apply Online” → `forms.html#enrollment`] [link: “Book a Visit” → `forms.html#visit`]
-Age
-Birth certificate, hospital or physician certificate, passport or visa, or birth registration.
-Residency
-Lease or mortgage statement, utility bill, tax statement or deed, or a job contract — dated within three months.
-Health
-Immunization certification and a physical examination record.
-Academic
-Records from the previous school (or its address), plus a behavior report. IEP or special-needs provision requires practitioner documentation.
+A child aged 5 by September 1 and under 21 on the first day of school is eligible. AGI admits students of any race, religion, color, national or ethnic origin.
+- **Age** — Birth certificate, hospital or physician certificate, passport or visa, or birth registration.
+- **Residency** — Lease or mortgage statement, utility bill, tax statement or deed, or a job contract – dated within three months.
+- **Health** — Immunization certification and a physical examination record.
+- **Academic** — Records from the previous school (or its address), plus a behavior report. IEP or special-needs provision requires practitioner documentation.
 
-#### Section: Before you enroll
-- **Family policies** — Attendance, promotion, placement, refunds and more, in brief. Read the policies [link: “Read the policies” → `policies.html`]
-- **Ready to apply?** — Apply online in about five minutes, or book a visit first. Apply Book a visit [link: “Apply” → `forms.html#enrollment`] [link: “Book a visit” → `forms.html#visit`]
-
-#### Section: Admissions procedure in full
-
-#### Section: Welcome to American Group International of Agadir
-We are thrilled that you are considering our school as a potential educational home for your child, and we are excited to embark on this journey together.
-We are delighted to extend a warm welcome to you and your family and to invite you to our small school located in Agadir city limits.
-We invite prospective parents, guardians, and applicants to visit our school. Our tours are scheduled on an individual basis and include information about the school and the application process. We strongly encourage all prospective parents to call us for an appointment to meet with us and tour the school.
-Should you have any questions or require any assistance, please do not hesitate to contact our admissions team at americanecoleagadir@gmail.com. We are here to support you every step of the way.
-We look forward to meeting you and your family and making our school family, your school family.
-Sincerely,
-American Group International
-The procedure for admission consists of the following:
-- Application for Admission
-You are required to fill out an application form and submit it along with a deposit of Enrollment fees that are non-refundable to the Institution or Academy. Fees vary depending on program and grade level. Please talk to Administration regarding this. Upon receipt, we will acknowledge your application, and you will be advised about an interview date when we can meet with you and your child/children.
-- Interview with Parent and Child
-All prospective parents are required to come for an interview, accompanied by the child. We will set a date and time that is convenient for both parties. At the time of the interview, please feel free to ask any questions you may have concerning our programs.
-- Offer of Admission
-Following the interview, the Institution will offer your child/children admission. We will ask you to submit the following:
-- Tuition Agreement-email for updates or visit to the school.
-- Photocopy of birth certificate
-- Three recent photographs
-- Fee payment and schedule signed and agreed with the first payment.
-Past educational papers which should include 2 years, and attached a behaviour report and any information on IEPs or regards to other SEN needs in children. All files must have a complete file and email, phone, address and information and fees paid in full, or the child cannot enter the classroom.
-- Papers of transfer from other schools must be given and all of them must be translated in English! All returning students must pay for their books between June 15th and August 1st to have them the first day of school.
-The admission process will be considered complete at this stage. You than will be asked to sign the contract of enrolment.
-Thank you,
-Julie Wilburn, Director
-Americanecoleagadir@gmail.com
-Please copy these forms and fill them out and return to us in a PDF format with all the documents below.
-Students Name ________________________________________
-Phone ______________Grade __________________Age_______________
-Address __________________________________________________________
-Parents’ Email ________________________________________
-Birthday _____________Passport Number___________________
-Mother’s Name _____________________________________________________
-Place of Employment __________________________________________
-Work Phone ________________________ Other ____________________
-Father’s Name _____________________________________________________
-Emergency Contact _________________________________________________
-Relationship ________________________ Phone ___________________
-Medical Concerns or Special Needs _____________________________________
-Please list any activities you are involved in:
-Please list your Native language and Country of Origin:
-Please return to American Group International at: americanecoleagadir@gmail.com
-
-#### Section: Enrollment documents
-
-#### Section: Verification of Age
-A child age 5, Grade K, by September 1 and under age 21 on the first day of school is eligible for enrollment. Acceptable age verification includes:
-- Birth certificate
-- Hospital certificate
-- Physician certificate
-- Passport/Visa
-- Birth registration
-**Verification of Residency**
-**Acceptable residency verification includes:**
-- Lease or mortgage bill/statement
-- Utility bill (water/sewer/gas/electric/oil)
-- Real estate tax bill/statement/Deed
-- Job Contract
-Current within 3 months of enrollment; must include name, address, and date; to be provided for each change of address.
-**Required Health Related Documents**
-**• Immunization Certification**
-- Physical Examination Record
-Students’ records from past school must be given or the address of the school to obtain records!
-**For further information**
-AGI admits students of any race, religion, color, national or ethnic origin to all of the rights, privileges, programs, and activities generally accorded or made available to the students of AGI. It does not discriminate on the basis of race, religion, color, or national or ethnic origin in the administration of its educational policies, admissions policies, or other school-administered programs.
-All student life
-christmas party
-hindfood
-ahmedpic
-ismail birthday
-food
-30174036_10213910121298915_1836017196_o
-30231984_10213910120018883_1248752093_o
-30126101_10213910123018958_1979677544_o
-30125991_10213910120418893_759334676_o
-30020187_10213910126259039_2007277076_n
-30179936_10213910126299040_744583440_n
-30126240_10213910119938881_1618735788_o
-halloween
-30020072_10213910121698925_1886695374_n
-julidaniel
-brahim
-assem
-matt
-duke
-all
-mattrachida
-smile
-adam2
-mansour
-smile2
-yass
-18281028_10211025290019936_22732804_n
-423479_3223011502942_582713296_n
-class1
-adamjulie18
-one on one
-Next steps
+#### Section: In AGI’s own words
+The steps above summarize the procedure. Here is the full text, and the full list of enrollment documents.
+- **Q: The admissions procedure in full** — A: Welcome to American Group International of Agadir We are thrilled that you are considering our school as a potential educational home for your child, and we are excited to embark on this journey together. We are delighted to extend a warm welcome to you and your family and to invite you to our small school located in Agadir city limits. We invite prospective parents, guardians, and applicants to visit our school. Our tours are scheduled on an individual basis and include information about the school and the application process. We strongly encourage all prospective parents to call us for an appointment to meet with us and tour the school. Should you have any questions or require any assistance, please do not hesitate to contact our admissions team at americanecoleagadir@gmail.com. We are here to support you every step of the way. We look forward to meeting you and your family and making our school family, your school family. Sincerely, American Group International The procedure for admission consists of the following: Application for Admission You are required to fill out an application form and submit it along with a deposit of Enrollment fees that are non-refundable to the Institution or Academy. Fees vary depending on program and grade level. Please talk to Administration regarding this. Upon receipt, we will acknowledge your application, and you will be advised about an interview date when we can meet with you and your child/children. Interview with Parent and Child All prospective parents are required to come for an interview, accompanied by the child. We will set a date and time that is convenient for both parties. At the time of the interview, please feel free to ask any questions you may have concerning our programs. Offer of Admission Following the interview, the Institution will offer your child/children admission. We will ask you to submit the following: Tuition Agreement-email for updates or visit to the school. Photocopy of birth certificate Three recent photographs Fee payment and schedule signed and agreed with the first payment. Past educational papers which should include 2 years, and attached a behaviour report and any information on IEPs or regards to other SEN needs in children. All files must have a complete file and email, phone, address and information and fees paid in full, or the child cannot enter the classroom. Papers of transfer from other schools must be given and all of them must be translated in English! All returning students must pay for their books between June 15th and August 1st to have them the first day of school. The admission process will be considered complete at this stage. You than will be asked to sign the contract of enrolment. Thank you, Julie Wilburn, Director Americanecoleagadir@gmail.com Please copy these forms and fill them out and return to us in a PDF format with all the documents below. The application form is now online: apply on the forms page.
+- **Q: Enrollment documents in full** — A: Verification of Age A child age 5, Grade K, by September 1 and under age 21 on the first day of school is eligible for enrollment. Acceptable age verification includes: • Birth certificate • Hospital certificate • Physician certificate • Passport/Visa • Birth registration Acceptable residency verification includes: Lease or mortgage bill/statement Utility bill (water/sewer/gas/electric/oil) Real estate tax bill/statement/Deed Job Contract Current within 3 months of enrollment; must include name, address, and date; to be provided for each change of address. • Immunization Certification Physical Examination Record Students’ records from past school must be given or the address of the school to obtain records! For further information AGI admits students of any race, religion, color, national or ethnic origin to all of the rights, privileges, programs, and activities generally accorded or made available to the students of AGI. It does not discriminate on the basis of race, religion, color, or national or ethnic origin in the administration of its educational policies, admissions policies, or other school-administered programs.
+Before you enroll
 - Tuition & fees [link: “Tuition & fees” → `fees.html`]
 - Calendar 2026–27 [link: “Calendar 2026–27” → `calendar.html`]
+- Family policies [link: “Family policies” → `policies.html`]
 - Placement policy [link: “Placement policy” → `placement-policy.html`]
-- Apply [link: “Apply” → `forms.html#enrollment`]
 - Questions & answers [link: “Questions & answers” → `faq.html`]
+
+#### Section: Ready to apply?
+Apply online in about five minutes, or book a visit first.
+→ **Apply** (`forms.html#enrollment`)
+→ **Book a visit** (`forms.html#visit`)
 
 ---
 
@@ -1880,6 +1306,11 @@ Every policy as published by AGI.
 - Link card → `homework.html`: Homework
 - Link card → `volunteer-hours.html`: Volunteer hours
 - Link card → `supplies.html`: School supplies list
+
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
 
 ---
 
@@ -1947,11 +1378,11 @@ The best way to know AGI is to visit during the school day.
 ### 4.17 `journal.html`
 
 - **Browser title:** Journal – American Group International, Agadir
-- **Meta description:** News, announcements and stories from American Group International and Anglia Morocco.
+- **Meta description:** News from American Group International and Anglia Morocco: 66 posts on graduations, partnerships, Anglia exams, events and school life.
 
-Home / The AGI Journal [link: “Home” → `index.html`]
-**Page title (H1):** The AGI Journal
-Announcements, partnerships, graduations and campus news, from the school's first years in Agadir to today.
+Home / Journal [link: “Home” → `index.html`]
+**Page title (H1):** Journal.
+News from AGI and Anglia Morocco since 2017: graduations, partnerships, exams, events and school life. Posts older than a year are archived – fees and dates in them may have changed.
 
 #### Section: Archive
 All 60 posts, grouped by year (newest first). Each row: date, category (Partnership, Achievement, Admissions, Programs, News), title, link to the article page. Full list in Appendix B.
@@ -1960,199 +1391,130 @@ All 60 posts, grouped by year (newest first). Each row: date, category (Partners
 
 ### 4.18 `journal-ccgi-partnership.html`
 
-- **Browser title:** AGI and Anglia Morocco partner with Chichester College Group – AGI Journal
-- **Meta description:** AGI and Anglia Morocco partner with Chichester College Group International, opening UK progression routes.
+- **Browser title:** American Group International and Anglia Morocco Join Forces – AGI Journal
+- **Meta description:** AGI and Anglia Morocco join Chichester College Group International to empower global learners.
 
-Home / The AGI Journal / Article [link: “Home” → `index.html`] [link: “The AGI Journal” → `journal.html`]
-Partnership · Agadir & Chichester
-**Page title (H1):** AGI and Anglia Morocco join forces with Chichester College Group International
-A new agreement links AGI's Agadir campuses to a seven-college group in the south of England — and opens a UK progression route for learners across the Souss and southern Morocco.
-Anglia Morocco Newsroom · August 22, 2025 · 4 min read
-C hichester College Group International is the international arm of Chichester College Group, which runs seven colleges in the south of England — Chichester, Crawley, Worthing, Brinsbury, Brighton MET, Northbrook and Haywards Heath. It is a familiar name in Agadir: Anglia Examinations has been based in Chichester since 1993, and AGI has used the Anglia system in its language programs since 2013.
-The agreement gives AGI and Anglia Morocco learners a defined route into UK further and higher education, and gives CCGi a partner on the ground in the south of Morocco. AGI has held the Anglia franchise for the Kingdom since 2021 and manages the network's twelve regions from the Agadir headquarters.
-“Anglia’s Proficiency examination is listed by UCAS — which means the English our students sit for in Agadir is the English a British university will recognize.”
-For families, the practical effect is continuity: one English standard, assessed each April, that carries from a Grade 5 benchmark through to a UK college application. Enquiries about the pathway run through the Agadir admissions office.
-Partnerships Anglia Morocco United Kingdom
-
-#### Section: More from the Journal
-Announcement
-**Empowering educators in Morocco: our partnership with Bridge Education Group**
-November 11, 2025
+Home / Journal / Partnership [link: “Home” → `index.html`] [link: “Journal” → `journal.html`]
+**Page title (H1):** American Group International and Anglia Morocco Join Forces with Chichester College Group International (CCGi) to Empower Global Learners
 Partnership
-**Leverage Edu and AGI join forces in the south of Morocco**
-March 4, 2026
-News
-**Anglia Examinations celebrates thirty years**
-October 1, 2023
-All journal entries
+
+#### Section: Chichester College Group International
+
+#### Section: (CCGi) – Overview
+
+#### Section: A Leader in International Education
+CCGi is the international arm of Chichester College Group (CCG), which has been rated ‘Outstanding’ by Ofsted, the UK’s education standards authority.
+The group comprises seven colleges across ten campuses across West Sussex and Brighton & Hove.
+Mission & Reputation
+
+#### Section: CCGi’s mission: “Changing lives through learning.”.
+Recognized for academic excellence and comprehensive student support—especially for international learners.
+
+#### Section: Key Programs Offered
+English Language Courses: General English (15 & 21), delivered via the British Council-accredited Chichester English Language School, ranked among the top 5% in the UK.
+A-Levels & AS-Levels: Two-year A-Levels at Chichester and Worthing; one-year AS-Levels at Worthing.
+Vocational Courses & BTECs: Practical, skills-focused courses in areas like hospitality, engineering, health & social care, creative arts.
+University Foundation Programs: Pathways ensuring progression to UK or international universities.
+Higher Education Degrees: Undergraduate degrees (HNC, HND, level 4–6) in fields like business, engineering, art, media, motorsport, animal management, music, sports, teaching—accredited by institutions such as University of the Arts London (UAL) and University of Brighton.
+Study Abroad, Winter/Summer Schools: Short-term immersive experiences combining academics with British cultural activities.
+
+#### Section: Student Support & Unique Experience
+Comprehensive services: Visa guidance, accommodation assistance (homestays, halls), welfare, enrichment and social activities.
+Highly equipped campuses: State-of-the-art facilities including farms, animal care centres, equine training, workshops, labs, and creative arts studios.
+Cultural immersion: Organized trips to iconic UK sites like London, Oxford, Stonehenge, fostering personal growth and global citizenship.
+Global student body: Enrols students from regions including East Asia, Europe, and beyond.
+
+#### Section: Strategic Partnerships & Agents Network
+CCGi maintains partnerships with academic institutions, awarding bodies, and global agents who represent them locally to prospective students.
+Strategic collaborations include organisations like NOCN, supporting qualification accreditation.
+
+#### Section: Spotlight on CCGi Colleges
+1. Chichester College
+Main campus in Chichester, plus Brinsbury (agricultural campus with a working farm and animal care facilities).
+Offers A-Levels, BTECs, vocational programs, and some university-level courses.
+2. Northbrook College
+Based in Worthing with campuses in West Durrington and Shoreham-by-Sea (campus sale planned in 2025).
+Strong in creative and cultural higher education: fashion, photography, media (validated by UAL), plus motorsport engineering (via University of Brighton).
+3. Worthing College
+Sixth-form college in Worthing offering A-Levels & AS-Levels; also, part of CCG’s broader vocational and international portfolio.
+4. Brighton MET College
+Former Brighton MET (merged August 2021); campuses in central and east Brighton.
+Offers trades, technical subjects, adult education, and visual arts progression.
+5. Crawley College and Haywards Heath College
+Additional FE/Higher Education providers under the CCG umbrella—extending geographic range and offerings.
+6. Brinsbury
+Specialized land-based and agricultural centre; integral to Chichester College’s offerings.
+American Group International is a proud partner of CCGi and we will be working on projects and educational programs to help the local Moroccan community.
+→ **Partnerships & franchise** (`partnerships.html`)
+·
+→ **All journal entries** (`journal.html`)
+
+#### Section: Partner with AGI.
+Franchise and partnership enquiries are handled from the Agadir headquarters.
+→ **Partnership enquiry** (`forms.html#enquiry/partnership`)
 
 ---
 
 ### 4.19 `partnerships.html`
 
 - **Browser title:** Partnerships & franchise – American Group International, Agadir
-- **Meta description:** Franchise and institutional partnerships with AGI and Anglia Morocco across the Kingdom's twelve regions.
+- **Meta description:** Partner with AGI and Anglia Morocco: Anglia center franchise in Morocco's twelve regions, institutional partnerships, university pathways and our partner network.
 
-Global Network · Franchise & Partnerships
+Home / Anglia Morocco / Partnerships & franchise [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
 **Page title (H1):** Bring the AGI standard to your region.
-AGI holds the Anglia Examinations franchise for Morocco and operates from Agadir across the Kingdom's twelve regions. We work with schools, language centers, freelance teachers and international institutions — and franchise opportunities are open in the English market for the right candidates.
+AGI holds the Anglia Examinations franchise for Morocco and operates from Agadir across the Kingdom's twelve regions. We work with schools, language centers, freelance teachers and international institutions – and franchise opportunities are open for the right candidates.
+→ **Partnership enquiry** (`forms.html#enquiry/partnership`)
+→ **Network & centres** (`anglia-network.html`)
 
 #### Section: Two ways to build with AGI
-Model I
+_Model I_
 **Franchise**
 An Anglia Morocco center under your ownership, anywhere in the Kingdom's twelve regions. You get the examinations license, the placement and testing system, training, and the AGI standard behind it. Enquiries run through the Agadir headquarters.
-— Anglia examinations license & materials — Teacher training and C.I.T.E. certification — Placement testing & level mapping to the CEFR — Territory agreement within the 12 regions
-Model II
-**Institutional Partnership**
+- Anglia examinations license & materials
+- Teacher training and C.I.T.E. certification
+- Placement testing & level mapping to the CEFR
+- Territory agreement within the 12 regions
+_Model II_
+**Institutional partnership**
 For existing schools, language institutes and colleges: Anglia examination provision inside your campus, university pathway agreements, and co-designed English or academic programs under a shared quality framework.
-— Co-designed English & academic programs — University pathway agreements (UK, USA, India) — Anglia testing center inside your campus — Shared quality framework & annual review
+- Co-designed English & academic programs
+- University pathway agreements (UK, USA, India)
+- Anglia testing center inside your campus
+- Shared quality framework & annual review
 
 #### Section: The network today
-Anglia Morocco is managed from the Agadir headquarters, with Anglia centers across the north and center of the Kingdom. Remaining regions are open for franchise. The full network and open representative positions are listed on angliamorocco.org. [link: “angliamorocco.org” → `https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/`]
-Souss-Massa Headquarters · Agadir
-Casablanca-Settat Anglia centers
-Tanger-Tetouan-Al Hoceima Anglia centers
-Rabat-Salé-Kénitra Anglia centers
-Fès-Meknès · Marrakech-Safi Anglia centers
-Oriental · Béni Mellal-Khénifra Open for franchise
-Drâa-Tafilalet · Southern Provinces Open for franchise
-graphic: network map — USA → Morocco → World
+Anglia Morocco is managed from the Agadir headquarters, with Anglia centers across the north and center of the Kingdom. Remaining regions are open for franchise.
+→ **Regions, provinces and open positions** (`anglia-network.html`)
+- **Souss-Massa** — Headquarters · Agadir
+- **Casablanca-Settat** — Anglia centers
+- **Tanger-Tetouan-Al Hoceima** — Anglia centers
+- **Rabat-Salé-Kénitra** — Anglia centers
+- **Fès-Meknès · Marrakech-Safi** — Anglia centers
+- **Oriental · Béni Mellal-Khénifra** — Open for franchise
+- **Drâa-Tafilalet · Southern Provinces** — Open for franchise
 
 #### Section: Who we work with
 Examination boards, colleges, placement partners and professional bodies.
-United Kingdom
-Chichester College Group International
-The international arm of a seven-college group in the south of England — Chichester, Crawley, Worthing, Brinsbury, Brighton MET, Northbrook and Haywards Heath. Signed 2025.
-Teacher training
-Bridge Education Group
-A global leader in teacher training and TEFL/TESOL certification. Partnership announced November 2025, opening professional development to educators across Morocco.
-University placement
-Leverage Edu
-Official regional representation for Souss and southern Morocco since March 2026 — private and public university placement with housing assistance.
-Plantation, Florida
-American High School
-Cognia-accredited online diploma program and a Yass Prize awardee. Partnership announced 2025; the diploma is accepted in the U.S. and internationally.
-United Kingdom
-RB College
-UCAS-registered UK institution offering academic and vocational programs, including work-based Master of Business Administration routes.
-Chichester, since 1993
-Anglia Examinations England
-AGI has been the Anglia franchise holder for Morocco since 2021 and has used the Anglia system in its language programs since 2013.
-For teacherpreneurs
-AGI Learning Pods
-Small-group programs run by freelance teachers and parent groups under the Anglia system — inclusive, creative and affordable.
-Membership
-American School Counselor Association
-AGI joined the ASCA network in 2026, bringing U.S. school-counseling standards to student guidance.
-
-#### Section: Start the conversation
-Franchise and partnership enquiries are handled from the Agadir headquarters. Tell us the region, the model and your teaching or business background, and we will come back to you.
-Partnership Enquiry Meet AGI Connect [link: “Partnership Enquiry” → `forms.html#enquiry/partnership`] [link: “Meet AGI Connect” → `connect.html`]
+- Link card → `journal-ccgi-partnership.html`: United Kingdom · Chichester College Group International · The international arm of a seven-college group in the south of England – Chichester, Crawley, Worthing, Brinsbury, Brighton MET, Northbrook and Haywards Heath. Signed 2025.
+- Link card → `teachers.html`: Teacher training · Bridge Education Group · A global leader in teacher training and TEFL/TESOL certification. Partnership announced November 2025, opening professional development to educators across Morocco.
+- Link card → `pathways.html`: University placement · Leverage Edu · Official regional representation for Souss and southern Morocco since March 2026 – private and public university placement with housing assistance.
+- Link card → `fees.html#high-school`: Plantation, Florida · American High School · Cognia-accredited online diploma program and a Yass Prize awardee. Partnership announced 2025; the diploma is accepted in the U.S. and internationally.
+- Link card → `pathways.html`: United Kingdom · RB College · UCAS-registered UK institution offering academic and vocational programs, including work-based Master of Business Administration routes.
+- Link card → `anglia-about.html`: Chichester, since 1993 · Anglia Examinations England · AGI has been the Anglia franchise holder for Morocco since 2021 and has used the Anglia system in its language programs since 2013.
+- Link card → `programs-learning-pods.html`: For teacherpreneurs · AGI Learning Pods · Small-group programs run by freelance teachers and parent groups under the Anglia system – inclusive, creative and affordable.
+- Link card → `about.html#accreditation`: Membership · American School Counselor Association · AGI joined the ASCA network in 2026, bringing U.S. school-counseling standards to student guidance.
 
 #### Section: Partner with AGI and Anglia Morocco
-- Employment Opportunities at American Group International.
-- Anglia Examinations Partnership.
-- Anglia Morocco Learning Pods Program.
-- Other Partnership ideas apply to the email.
-Check out our form below and register your details for the one that best fits your skills, experience, and interests. We are always open to talent that would like to join American Group International or Anglia Morocco. By joining our community by sending a direct application. We will reach-out when we have an available role that matches your experience.
-We also have Franchise opportunities available in the English market for the right candidates.
-Once again thank you for choosing us for your educational needs!
-Join Anglia Morocco Learning Pods!
-American Group International School <americanecoleagadir@gmail.com>
-Looking for passionate educators with Entrepreneur abilities.
-We partner with schools, language institutes, Teacherpreneurs, and associations. We are looking for people who want to expand the educational opportunities in Morocco. We do teacher training for schools and look for opportunities to equip teachers. Are you passionate about teaching and ready to embark on an exciting journey across Morocco? Want to be your own entrepreneur? Anglia Morocco Learning Pods is seeking dedicated educators and qualified staff to join our innovative remote teaching initiative.
-
-#### Section: Why Join Us?
-– Remote Opportunities: Teach from the comfort of your home, reaching students all across Morocco.
-– Flexible Schedule: Enjoy the freedom to choose your hours and maintain a healthy work-life balance.
-– Supportive Environment: Join a dynamic team committed to educational excellence and personalized learning.
-– Professional Growth: Access ongoing training and development opportunities to enhance your skills.
-Positions Available:
-– Teachers: Experienced in a variety of subjects for primary and secondary levels.
-– Educational Assistants: Support our teachers in delivering engaging lessons and fostering a positive learning environment.
-– Administrative Staff: Help coordinate and manage our remote learning operations efficiently.
-Requirements:
-– Bachelor’s degree in education or relevant field (for teaching positions) and TESOL from an English Country that can be verified. We do not accept TESOL unless verifiable from an English-speaking country.
-– Strong communication skills and a passion for education.
-– Reliable internet connection and comfortable working remotely.
-How to Apply:
-Interested candidates can send their resume and cover letter to americanecoleagadir@gmail.com or visit our website for more information.
-Join us at Anglia Morocco Learning Pods and be part of transforming education in Morocco through remote learning excellence!
-All Teachers and staff must provide proof of background check from their countries and certified diplomas with legalization. Diplomas that are not legalized are just a piece of paper that cannot be approved.
-Employee Application AGI Agadir
-This form may be reproduced in quantities sufficient to accommodate your
-requirement.
-
-#### Section: Tell Us About Yourself
-The following information is for identification purposes only. You are not required to complete
-information that you feel violates your privacy.
-APPLICANTS FULL NAME: ________________________________________________________
-STREET ADDRESS________________________________________________________________
-CITY/STATE/ZIP__________________________________________________________________
-AREA CODE & PHONE NUMBER__________________________________________________
-DATE OF BIRTH__________________________________________________________________
-SOCIAL SECURITY NUMBER/ Or
-Other______________________________________________________
-
-#### Section: Drivers License Number &
-
-#### Section: State/Country_____________________________________________
-SEX_____________________US CITIZEN_________________OTHER_____________________
-
-#### Section: Tell Us About Your Teaching Experience
-EMPLOYED BY SCHOOL NUMBER 1 FROM/TO_____________________________________
-SCHOOL NAME___________________________________________________________________
-SCHOOL ADDRESS______________________________________________________________
-SUPERVISOR___________________________________________________________________
-A/C+PHONE____________________________________________________________________
-SUBJECT(S) TAUGHT____________________________________________________________
-GRADE LEVEL(S) TAUGHT_______________________________________________________
-EMPLOYED BY SCHOOL NUMBER 2 FROM/TO____________________________________
-EMPLOYED BY SCHOOL NUMBER 3 FROM/TO___________________________________
-
-#### Section: Tell Us About Your Academic/Training Experience
-ATTENDED SCHOOL NUMBER 1 FROM/TO_________________________________________
-A/C+TELEPHONE________________________________________________________________
-MAJOR/MINOR_________________________________________________________________
-DEGREE/CERTIFICATE/DIPLOMA________________________________________________
-ATTACH COPY(S) OF DOCUMENTS______________________________________________
-ATTENDED SCHOOL NUMBER 2 FROM/TO_______________________________________
-
-#### Section: Tell Us About Your Character
-HAVE YOUR EVER BEEN DENIED A TEACHING CERTIFICATE? _____________________
-
-#### Section: Have You Ever Had A Teaching Certificate Suspended Or Revoked? ______
-HAVE YOU EVER BEEN CONVICTED OF A FELONY? ________________________________
-
-#### Section: Professional References
-- NAME/PHONE/RELATIONSHIP______________________________________________
-- NAME/PHONE/RELATIONSHIP_______________________________________________
-
-#### Section: School Employer Nomination/Sponsorship
-(To be completed by supervisor/employer/professional associate)
-This is to certify that: I, as a professional in the education industry, have
-known/supervised/employed the
-applicant for a sufficient period to verify that she/he is of sound moral character ad would without
-reservation nominate her/him to be considered for private school professional teacher.
-Sponsor Name & Title_____________________________________________________________
-Address_________________________________________________________________________
-Professional Relationship to Applicant_______________________________________________
-Signature & Date_________________________________________________________________
-
-#### Section: Subject Area(S) In Which Applicant Seeks.
-(Choose up to three)
-SUBJECT #1_____________________________________GRADE LEVEL: ___________________
-SUBJECT #2_____________________________________GRADE LEVEL: ___________________
-SUBJECT #3_____________________________________GRADE LEVEL: __________________
-Provide the requested information and return the completed Application.
-This Application is the truth to the best of my knowledge.
-Please send correspondence to:
-Email: americanecoleagadir@gmail.com
-Please we do appreciate your business but we ask not to contact the us on Sunday, as there will be no one available to receive your call. We also ask that if you are interested in a job, please email us as we will ask for your information to be registered by email. Thank you.
+- **Q: Full text as published by AGI** — A: Employment Opportunities at American Group International. Anglia Examinations Partnership. Anglia Morocco Learning Pods Program. Other Partnership ideas apply to the email. Check out our form below and register your details for the one that best fits your skills, experience, and interests. We are always open to talent that would like to join American Group International or Anglia Morocco. By joining our community by sending a direct application. We will reach-out when we have an available role that matches your experience. We also have Franchise opportunities available in the English market for the right candidates. Once again thank you for choosing us for your educational needs! Join Anglia Morocco Learning Pods! American Group International School <americanecoleagadir@gmail.com> Looking for passionate educators with Entrepreneur abilities. We partner with schools, language institutes, Teacherpreneurs, and associations. We are looking for people who want to expand the educational opportunities in Morocco. We do teacher training for schools and look for opportunities to equip teachers. Are you passionate about teaching and ready to embark on an exciting journey across Morocco? Want to be your own entrepreneur? Anglia Morocco Learning Pods is seeking dedicated educators and qualified staff to join our innovative remote teaching initiative. Why Join Us? – Remote Opportunities: Teach from the comfort of your home, reaching students all across Morocco. – Flexible Schedule: Enjoy the freedom to choose your hours and maintain a healthy work-life balance. – Supportive Environment: Join a dynamic team committed to educational excellence and personalized learning. – Professional Growth: Access ongoing training and development opportunities to enhance your skills. Positions Available: – Teachers: Experienced in a variety of subjects for primary and secondary levels. – Educational Assistants: Support our teachers in delivering engaging lessons and fostering a positive learning environment. – Administrative Staff: Help coordinate and manage our remote learning operations efficiently. Requirements: – Bachelor’s degree in education or relevant field (for teaching positions) and TESOL from an English Country that can be verified. We do not accept TESOL unless verifiable from an English-speaking country. – Strong communication skills and a passion for education. – Reliable internet connection and comfortable working remotely. How to Apply: Interested candidates can send their resume and cover letter to americanecoleagadir@gmail.com or visit our website for more information. Join us at Anglia Morocco Learning Pods and be part of transforming education in Morocco through remote learning excellence! All Teachers and staff must provide proof of background check from their countries and certified diplomas with legalization. Diplomas that are not legalized are just a piece of paper that cannot be approved. Employee Application AGI Agadir This form may be reproduced in quantities sufficient to accommodate your requirement. Tell Us About Yourself The following information is for identification purposes only. You are not required to complete information that you feel violates your privacy. The application form is now online: apply on the forms page. SOCIAL SECURITY NUMBER/ Or Tell Us About Your Teaching Experience Tell Us About Your Academic/Training Experience Tell Us About Your Character Professional References School Employer Nomination/Sponsorship (To be completed by supervisor/employer/professional associate) This is to certify that: I, as a professional in the education industry, have known/supervised/employed the applicant for a sufficient period to verify that she/he is of sound moral character ad would without reservation nominate her/him to be considered for private school professional teacher. Subject Area(S) In Which Applicant Seeks. (Choose up to three) Provide the requested information and return the completed Application. This Application is the truth to the best of my knowledge. Please send correspondence to: Email: americanecoleagadir@gmail.com Please we do appreciate your business but we ask not to contact the us on Sunday, as there will be no one available to receive your call. We also ask that if you are interested in a job, please email us as we will ask for your information to be registered by email. Thank you.
 Anglia Morocco
-- Network & centres [link: “Network & centres” → `anglia-network.html`]
 - Anglia Morocco [link: “Anglia Morocco” → `anglia.html`]
+- Network & centres [link: “Network & centres” → `anglia-network.html`]
 - Partners & investors [link: “Partners & investors” → `investors.html`]
+
+#### Section: Start the conversation.
+Franchise and partnership enquiries are handled from the Agadir headquarters. Tell us the region, the model and your teaching or business background.
+→ **Partnership enquiry** (`forms.html#enquiry/partnership`)
+→ **Contact** (`contact.html`)
 
 ---
 
@@ -2251,6 +1613,11 @@ These forms go straight to the right person.
 - Link card → `forms.html#visit`: Book a visit · Tours are arranged individually, Monday to Friday.
 - Link card → `forms.html#enrollment`: Apply · Apply for a place in any AGI program.
 - Link card → `forms.html#documents`: Request a document · Transcripts, certificates and attestations.
+
+#### Section: Come and meet us.
+The best way to know AGI is to visit during the school day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Contact** (`contact.html`)
 
 ---
 
@@ -2373,26 +1740,16 @@ W25317017- Maryland LLC
 Online Teacher Information Form
 Online Teacher Registration Form
 Personal Information:
-- First Name: ___________________________
-- Last Name: ___________________________
-- Home Address: ___________________________
-- Phone Number: ___________________________
-- Email Address: ___________________________
+The application form is now online: apply on the forms page. [link: “apply on the forms page” → `forms.html#enrollment`]
 Documents Required:
 - Passport Copy or State Issued Picture ID:
 – ID/ Passport Copy (PDF):
 - Degree Information:
 – Degree Type: (e.g., Bachelor’s, Master’s, Ph.D.)
-– Degree Type: ___________________________
 – Degree:(e.g., B.A. in English, M.Sc. in Mathematics)
-– Degree: ___________________________
 – Discipline of the Degree:(e.g., Education, Science, Arts)
-– Discipline: ___________________________
-– Year Degree Started: ___________________________
-– Year Degree Completed: ___________________________
 – Upload Degree Certificate (PDF):
 - Subjects You Are Familiar with Teaching: (e.g., English, Mathematics, Science)
-– Subjects: ___________________________
 Submission Instructions:
 – Please ensure all documents are in PDF format.
 Thank you for your interest!
@@ -2400,6 +1757,11 @@ American Group International Team
 Online
 - Online tutoring [link: “Online tutoring” → `online-tutoring.html`]
 → **Prices** (`fees.html#services`)
+
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
 
 ---
 
@@ -2414,8 +1776,6 @@ Anglia Examinations has tested English since 1993 from Chichester, England. AGI 
 → **Book a free level test** (`forms.html#enquiry/anglia`)
 → **Exam dates** (`calendar.html#anglia-exams`)
 Anglia Examinations is a wholly owned subsidiary of the Chichester College Group, award winning and Ofsted Outstanding. The four highest levels are awarded by AIM Qualifications and Assessment Group, regulated by Ofqual.
-
-#### Section: More about Anglia
 
 #### Section: Regulated by Ofqual
 AIM Qualifications and Assessment Group (AIM Qualifications) is an awarding organization in the UK that offers a wide range of qualifications and assessments. They are recognized for providing innovative and flexible qualifications across various sectors, including vocational qualifications, end-point assessments, and bespoke qualifications for employers.
@@ -2451,7 +1811,7 @@ When you see the Ofqual logo endorsing a qualification you can be confident that
 Thank you for your interest in Anglia Examinations and we hope to be of service to your educational journey.
 Thank you very much,
 Julie A. Wilburn
-Anglia Morocco Country Manager
+CEO & Educational Director, Anglia Examinations Morocco
 
 #### Section: The History Of Anglia In Morocco
 The history of AngliaMorocco started in 2010 by Suzanne Linsen. She moved to Morocco to introduce Anglia Examinations and its wide range of English language certificates to schools and institutes. Prior to that she was selected to conduct English courses and administer Anglia exams at a language institute in Tangier.
@@ -2475,6 +1835,11 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
+#### Section: Find your English level.
+Book a free placement assessment, or ask us about classes and exam sessions.
+→ **Book a free level test** (`forms.html#enquiry/anglia`)
+→ **Exam dates** (`calendar.html#anglia-exams`)
+
 ---
 
 ### 4.27 `anglia-books.html`
@@ -2487,8 +1852,6 @@ Home / Anglia Morocco / Step To books [link: “Home” → `index.html`] [link:
 Preparation books for each Anglia level, with audio files – order through Anglia Morocco.
 → **Book a free level test** (`forms.html#enquiry/anglia`)
 → **Exam dates** (`calendar.html#anglia-exams`)
-
-#### Section: Step To books
 
 #### Section: step to books
 Designing vertical living spaces.
@@ -2513,11 +1876,11 @@ Each STEP comprises of:
 
 #### Section: The STEP TO series
 STEP TO First Step
-STEP TO Junior
-STEP TO Primary
-STEP TO Preliminary
-STEP TO Elementary
-STEP TO Pre-Intermediate
+- STEP TO Junior
+- STEP TO Primary
+- STEP TO Preliminary
+- STEP TO Elementary
+- STEP TO Pre-Intermediate
 STEP TO Intermediate (B1)*
 STEP TO Advanced (B2)*
 STEP TO Proficiency (C1)*
@@ -2547,6 +1910,11 @@ Anglia Morocco
 - About Anglia Examinations [link: “About Anglia Examinations” → `anglia-about.html`]
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
+
+#### Section: Find your English level.
+Book a free placement assessment, or ask us about classes and exam sessions.
+→ **Book a free level test** (`forms.html#enquiry/anglia`)
+→ **Exam dates** (`calendar.html#anglia-exams`)
 
 ---
 
@@ -2618,12 +1986,12 @@ If students do not speak English at home, they may be:
 ½ to 1 CEFR level lower in early grades
 but they usually catch up by middle school if immersion is consistent.
 Example:
-Native English CEFR
-ESL Student Typical
-A2+ / B1
-B1+ / B2
-C1
-B2 / C1-C2
+- Native English CEFR
+- ESL Student Typical
+- A2+ / B1
+- B1+ / B2
+- C1
+- B2 / C1-C2
 Common Benchmarks Used by International Schools.
 Many American international schools use these targets:
 Elementary graduation (Grade 5): B1
@@ -2636,11 +2004,11 @@ Academic writing ability and English Mathematics
 Connection to International Exams
 These CEFR levels align approximately with well-known exams:
 
-#### Section: Cefr
-Example Exams
-Beginner English tests
-Elementary English certification
-Intermediate academic English
+#### Section: - Cefr
+- Example Exams
+- Beginner English tests
+- Elementary English certification
+- Intermediate academic English
 Upper-intermediate / university readiness
 C1-C2
 Advanced academic English
@@ -2686,205 +2054,168 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
+#### Section: Find your English level.
+Book a free placement assessment, or ask us about classes and exam sessions.
+→ **Book a free level test** (`forms.html#enquiry/anglia`)
+→ **Exam dates** (`calendar.html#anglia-exams`)
+
 ---
 
 ### 4.29 `anglia-classes.html`
 
-- **Browser title:** Classes &amp; prices – Anglia Morocco | AGI Agadir
-- **Meta description:** English classes at Anglia Morocco, Agadir: one-to-one 200 MAD, small groups, 12-week courses 1,200 MAD, Saturday classes 500 MAD a month.
+- **Browser title:** English classes & prices – Anglia Morocco | AGI Agadir
+- **Meta description:** English classes at Anglia Morocco, Agadir: Saturday classes 500 MAD a month, one-to-one 200 MAD, small groups 150 MAD, 12-week course 1,200 MAD. Free level test.
 
 Home / Anglia Morocco / Classes & prices [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
-**Page title (H1):** Classes & prices
-One-to-one lessons, small groups, 12-week courses and Saturday classes for children and teens – with a free level test first.
+**Page title (H1):** English classes, at every age.
+Start with a free level test, then choose the format that suits you – from Saturday classes for children and teens to one-to-one lessons for professionals.
 → **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
+→ **WhatsApp us** (`https://wa.me/212688739393?text=Hello%20AGI%2C%20`)
+_Saturday classes_
+500 MAD
+a month
+- Ages 5–18
+- Saturdays 2:00–4:00 p.m., October–June
+- Yearly Anglia exam included
+- BAC, TOEFL, IELTS, SAT and Mathematics-in-English preparation
+→ **Ask about this class** (`forms.html#enquiry/anglia`)
+_One-to-one_
+200 MAD
+a session
+- English or mathematics
+- Full access to the teacher
+- Times that fit a working week
+- Ideal for job-related English
+→ **Ask about this class** (`forms.html#enquiry/anglia`)
+_Small group_
+150 MAD
+per person, per session
+- 2–3 students
+- Friends, siblings or colleagues
+- Same level, shared goals
+→ **Ask about this class** (`forms.html#enquiry/anglia`)
+_12-week course_
+1,200 MAD
+100 MAD a week
+- 4–10 students
+- A structured course over 12 weeks
+- Progress measured on the CEFR
+→ **Ask about this class** (`forms.html#enquiry/anglia`)
+Level test free · groups of up to 10 · prices effective November 2024 · books and insurance not included. Saturday schedule · Mathematics in English [link: “Saturday schedule” → `calendar.html#saturday`] [link: “Mathematics in English” → `english-anglia.html#math-english`]
 
-#### Section: Prices
-| Class | Price |
-|---|---|
-| Saturday classes, ages 5–18, Saturdays 2–4 pm, October–June, yearly exam included; BAC, TOEFL, IELTS, SAT and Mathematics-in-English preparation | 500 MAD a month |
-| One-to-one (English or mathematics) | 200 MAD a session |
-| Small group, 2–3 students | 150 MAD per person |
-| Group course, 4–10 students, 12 weeks | 1,200 MAD |
-| Level test | Free |
-Prices effective November 2024; books and insurance not included. Saturday schedule [link: “Saturday schedule” → `calendar.html#saturday`]
-
-#### Section: Our English classes
-- Exam prep. Course- Graduation practice from the Moroccan school system. British practice.
-- Business English Course- Covers Economics- Four levels available for certification.
-- Conversational ESL Course-
-Aimed at improving the students speaking skills and introduction of new words.
-- Beginner Level A-0 ESL-100 Courses-
-Basic English, with the target to increase English fluency, a basic level of literacy is expected.
-- Pre-Intermediate A-+ and Intermediate B-1 ESL-200 Courses-
-Language skills, activities emphasizing oral and written. Interpersonal communication and academic.
-- Advanced B-2 ESL -300 Course-
-Requires at least an Intermediate English level. Academic activities, essay writing, research papers development, and oral discussions of academic topics.
-- English Writing Course-
-Narrative writing, Descriptive writing, Job applications, Resume/CV writing, oral discussions, and a review of phonics.
-- الإعداد للامتحان. دورة - ممارسة التخرج من النظام المدرسي المغربي. الممارسة البريطانية.
-- دورة اللغة الإنجليزية للأعمال - يغطي الاقتصاد - أربعة مستويات متاحة للشهادة.
-- دورة اللغة الإنجليزية كلغة ثانية (ESL) للمحادثة-
-تهدف إلى تحسين مهارات التحدث لدى الطلاب وإدخال كلمات جديدة.
-- دورات مستوى المبتدئين A-0 ESL-100-
-اللغة الإنجليزية الأساسية ، بهدف زيادة طلاقة اللغة الإنجليزية ، من المتوقع مستوى أساسي من معرفة القراءة والكتابة.
-- دورات ما قبل المتوسط A- + والمتوسط B-1 ESL-200-
-المهارات اللغوية ، والأنشطة التي تركز على الشفوية والمكتوبة. التواصل الشخصي والأكاديمي.
-- دورة اللغة الإنجليزية كلغة ثانية- B-2 المتقدمة- 300-
-يتطلب على الأقل مستوى متوسط في اللغة الإنجليزية. الأنشطة الأكاديمية وكتابة المقالات وتطوير الأوراق البحثية والمناقشات الشفوية حول الموضوعات الأكاديمية.
-- دورة في الكتابة باللغة الإنجليزية-
-كتابة السرد ، والكتابة الوصفية ، وطلبات العمل ، وكتابة السيرة الذاتية / السيرة الذاتية ، والمناقشات الشفوية ، ومراجعة الصوتيات.
-The term one-to-one is applied to programs that provide all students in EFL setting, the ability to have full access to the teacher. EFL one- on- one programs are great for professionals that want to ask and learn for job related tasks. One-to-one refers to one teacher for every student. Many one-on-one teachers use the internet as a means to help promote positive literary skills.
-يتم تطبيق مصطلح واحد لواحد على البرامج التي توفر لجميع الطلاب في إعداد اللغة الإنجليزية كلغة أجنبية ، القدرة على الوصول الكامل إلى المعلم. تعد برامج EFL الفردية رائعة للمهنيين الذين يرغبون في السؤال عن المهام المتعلقة بالوظيفة وتعلمها. يشير واحد لواحد إلى مدرس واحد لكل طالب. يستخدم العديد من المعلمين الفرديين الإنترنت كوسيلة للمساعدة في تعزيز المهارات الأدبية الإيجابية.
+#### Section: About our classes
+- **Q: Our English classes in full** — A: Exam prep. Course- Graduation practice from the Moroccan school system. British practice. Business English Course- Covers Economics- Four levels available for certification. Conversational ESL Course- Aimed at improving the students speaking skills and introduction of new words. Beginner Level A-0 ESL-100 Courses- Basic English, with the target to increase English fluency, a basic level of literacy is expected. Pre-Intermediate A-+ and Intermediate B-1 ESL-200 Courses- Language skills, activities emphasizing oral and written. Interpersonal communication and academic. Advanced B-2 ESL -300 Course- Requires at least an Intermediate English level. Academic activities, essay writing, research papers development, and oral discussions of academic topics. English Writing Course- Narrative writing, Descriptive writing, Job applications, Resume/CV writing, oral discussions, and a review of phonics. The term one-to-one is applied to programs that provide all students in EFL setting, the ability to have full access to the teacher. EFL one- on- one programs are great for professionals that want to ask and learn for job related tasks. One-to-one refers to one teacher for every student. Many one-on-one teachers use the internet as a means to help promote positive literary skills.
 Anglia Morocco
-- Anglia Morocco [link: “Anglia Morocco” → `anglia.html`]
 - Exams & levels [link: “Exams & levels” → `anglia-exams.html`]
-- Exam dates 2026 [link: “Exam dates 2026” → `calendar.html#anglia-exams`]
-- CEFR levels [link: “CEFR levels” → `anglia-cefr.html`]
-- Practice papers & audio [link: “Practice papers & audio” → `anglia-practice.html`]
-- Step To books [link: “Step To books” → `anglia-books.html`]
-- Special arrangements [link: “Special arrangements” → `anglia-special-arrangements.html`]
-- Free placement assessment [link: “Free placement assessment” → `anglia-placement-test.html`]
-- Network & centres [link: “Network & centres” → `anglia-network.html`]
-- Become a centre [link: “Become a centre” → `partnerships.html`]
-- Anglia FAQ [link: “Anglia FAQ” → `anglia-faq.html`]
-- About Anglia Examinations [link: “About Anglia Examinations” → `anglia-about.html`]
-- C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
-Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
+- Exam dates [link: “Exam dates” → `anglia-exam-dates.html`]
+- All prices [link: “All prices” → `fees.html#english`]
+
+#### Section: Find the right class.
+A free level test first – then we recommend the format and the level.
+→ **Book a free level test** (`forms.html#enquiry/anglia`)
+→ **Contact** (`contact.html`)
 
 ---
 
-### 4.30 `anglia-exams.html`
+### 4.30 `anglia-exam-dates.html`
 
-- **Browser title:** Anglia exams &amp; levels – Anglia Morocco | AGI Agadir
-- **Meta description:** Anglia exams in Morocco: ten General English levels (First Step to Masters C2), Business English A2+ to C1, durations and online exams.
+- **Browser title:** Anglia exam dates 2026 – Anglia Morocco | AGI Agadir
+- **Meta description:** Anglia exam sessions in Morocco in 2026, month by month and by level, and how to register at Anglia Morocco headquarters in Agadir.
+
+Home / Anglia Morocco / Exam dates 2026 [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
+**Page title (H1):** Anglia exam dates 2026.
+Sessions run in most months of the year. If you need an exam on a date that is not listed, contact the Anglia office.
+→ **Register for an exam** (`forms.html#enquiry/anglia`)
+→ **Which level?** (`anglia-exams.html`)
+Upcoming
+All of 2026
+| Month | Levels / session | Exam days |
+|---|---|---|
+| January | First Step, Junior Primary | Friday 13th | Saturday 21st |
+| January | Preliminary A1, Elementary A2, Pre-Intermediate A2+, Intermediate B1, Advanced B2, Proficiency C1, Masters C2 | Saturday 21st |
+| April | All Levels | Thursday 9th | Saturday 18th |
+| May | Session 1 | Saturday 16th | Thursday 28th | Saturday 30th |
+| May | Session 2 | Thursday 22nd | Saturday 24th |
+| May | Session 3 | Saturday 14th |
+| June | All levels | Thursday 18th, Saturday 20th, Sunday 21st, Friday 26th, Saturday 27th |
+| July | Most Levels | Saturday 4th |
+| July | All levels | Saturday 4th | Friday 24th |
+| August | All levels | Friday 7th |
+| September | All levels | Friday 18th | Saturday 19th |
+| September | All levels | Saturday 19th |
+| October | All levels | Thursday 15th | Saturday 17th |
+| October | All levels | Thursday 15th |
+| November | All levels | Thursday 19th | Saturday 21st | Saturday 28th |
+| November | All levels | Thursday 19th | Saturday 21st |
+| December | All levels | Thursday 10th, Saturday 12th, Thursday 17th, Saturday 19th |
+| December | All levels | Saturday 12th |
+Young-learner levels (First Step, Junior, Primary) often have their own days. Special arrangements must be requested when you register. Special arrangements [link: “Special arrangements” → `anglia-special-arrangements.html`]
+
+#### Section: Ready to register?
+Tell us the candidate's level and preferred session – the office will confirm.
+→ **Register for an exam** (`forms.html#enquiry/anglia`)
+→ **Practice papers** (`anglia-practice.html`)
+
+---
+
+### 4.31 `anglia-exams.html`
+
+- **Browser title:** Anglia exams & levels – Anglia Morocco | AGI Agadir
+- **Meta description:** The Anglia ladder: ten General English levels from First Step to Masters C2, four Business English levels A2+ to C1, exam durations and certificates for life.
 
 Home / Anglia Morocco / Exams & levels [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
-**Page title (H1):** Anglia exams & levels
-Ten General English levels from First Step to Masters (C2), four Business English levels, and online exams – each testing listening, reading, writing and speaking.
-→ **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
+**Page title (H1):** Ten steps to Masters.
+Anglia's General English exams take learners from a first vocabulary of about 100 words to expert use of English (Masters, C2). Every level tests listening, reading, writing and speaking.
+→ **Find my level** (`forms.html#enquiry/anglia`)
+→ **Exam dates** (`anglia-exam-dates.html`)
 
-#### Section: General English – ten levels
-| Level | CEFR | What candidates can do |
-|---|---|---|
-| First Step | Pre-A1 | Entry level from about age 4: understands about 100 words, follows basic classroom instructions, says who they are. |
-| Junior | Pre-A1 | Understands around 200 words, uses useful structures and explains what they are doing. |
-| Primary | A1- | About 400 words (jobs, feelings, weather); forms questions, answers them and describes things. |
-| Preliminary | A1 | First general level for young and adult learners. |
-| Elementary | A2 | Everyday situations and simple texts. |
-| Pre-Intermediate | A2+ | Wider everyday communication. |
-| Intermediate | B1 | Independent use in familiar contexts. |
-| Advanced | B2 | Complex texts and fluent interaction. |
-| Proficiency | C1 | Effective operational proficiency. |
-| Masters | C2 | Expert user. The Mastery qualification carries UCAS tariff points. |
-Young-learner levels are also open to adults, so anyone can start step by step. There is no upper age limit.
+#### Section: The General English ladder
+The three young-learner levels (YL) lead up to A1. Young-learner levels are also open to adults – anyone can start at the step that fits.
+→ **What the CEFR levels mean** (`anglia-cefr.html`)
+- Young learners
+- 1 First Step YL Entry level from about age 4: understands about 100 words, follows basic classroom instructions, says who they are.
+- 2 Junior YL Understands around 200 words, uses useful structures and explains what they are doing.
+- 3 Primary YL About 400 words (jobs, feelings, weather); forms questions, answers them and describes things.
+- General English
+- 4 Preliminary A1 First general level for young and adult learners.
+- 5 Elementary A2 Everyday situations and simple texts.
+- 6 Pre-Intermediate A2+ Wider everyday communication.
+- 7 Intermediate B1 Independent use in familiar contexts.
+- Higher levels
+- 8 Advanced B2 Complex texts and fluent interaction.
+- 9 Proficiency C1 Effective operational proficiency.
+- 10 Masters C2 Expert user. The Mastery qualification carries UCAS tariff points.
 
-#### Section: Business English – four levels
-| Exam | CEFR |
-|---|---|
-| Practical Business English | A2+ |
-| Intermediate Business English | B1 |
-| Advanced Business English | B2 |
-| Proficiency in Business English | C1 |
+#### Section: Business English
+Four steps for candidates whose special interest is business, from A2+ to C1.
+→ **Business English classes** (`professional.html`)
+- B1 Practical Business English A2+ Practical business functions in realistic workplace situations – all four skills.
+- B2 Intermediate Business English B1 Practical business functions in realistic workplace situations – all four skills.
+- B3 Advanced Business English B2 Practical business functions in realistic workplace situations – all four skills.
+- B4 Proficiency in Business English C1 Practical business functions in realistic workplace situations – all four skills.
 
 #### Section: How long are the exams?
-- Reading and writing: 1 hour minimum, 3 hours maximum, depending on the level
-- Listening: 10–30 minutes
-- Speaking: about 5–20 minutes
-The certificate is valid for life; an institution may ask for a recent one.
-→ **Exam dates 2026** (`calendar.html#anglia-exams`)
+- **Reading & writing** — 1 hour minimum, 3 hours maximum, depending on the level
+- **Listening** — 10–30 minutes
+- **Speaking** — About 5–20 minutes
+- **Certificate** — Valid for life; an institution may ask for a recent one
+- **Online exams** — Anglia exams can also be taken online in Morocco – ask the office
 
 #### Section: In detail
-Anglia Examinations have been based in Chichester, England, since 1993. Anglia offers a comprehensive and structured program for assessing English language competence, from beginner through to full competence as an expert user. This Step-by-Step approach to testing encourages and motivates students to make clear and effective progress. Please see us for a free placement test.
-The official website of Anglia
-
-#### Section: Anglia Levels
-Anglia exams measure all four language skills – listening, reading, writing, and speaking. There are no minimum age requirements for the exams. The young learner levels are taken by children as young as four years old. The upper levels and Business English exams are taken by students and adults who plan to continue their studies at an English university/college or to improve their career prospects.
-Anglia Examinations in English currently consist of ten different levels and the Anglia International Business English examinations are available at four levels.
-The Proficiency level is listed by UCAS as a qualification that can be accepted by British universities to show international student competence in the English language. The Anglia Proficiency examination has been designed to incorporate a stronger academic element within its first section.
-All levels of the examinations have listening, reading, writing, and speaking elements.
-**View this PowerPoint for information on the C.I.T.E. for teachers.**
-New Microsoft PowerPoint Presentation-
-
-#### Section: The History of Anglia in Morocco
-http://www.angliamorocco.org/
-The history of Anglia Morocco started in 2010 by Suzanne Linsen. She moved to Morocco to introduce Anglia Examinations and its wide range of English language certificates to schools and institutes. Prior to that she was selected to conduct English courses and administer Anglia exams at a language institute in Tangier. During this year 2021, American Group International (AGI) became the Anglia franchise holder for Morocco. AGI has been an educational brand since 2012. AGI has placed hundreds of students into the American Educational System with low-cost, affordable, educational programs including an American School in Agadir. They have used the Anglia system in their language programs since 2013. Julie Wilburn is the CEO and lived in Morocco for many years and also holds dual citizenship in the country.
-The AGI team has now embarked on the next level in its offerings to give opportunities to thousands of people to master the international language of English in business and communication with top English training and assessments. We strive to give back to the Moroccan community and reach the areas that desire to take international exams. AGI wants local teams based in each of the 12 regions of the country to execute local community-based programs to reach the unreachable. The main headquarters are located in the cozy city of Agadir and it is centralized to the application of the AGI mission and educating the community in English throughout the Kingdom of Morocco. AGIs number of local franchise distribution networks will hopefully grow rapidly in the next few years; as English is quickly becoming a new love for Moroccan young people. This in return will hopefully open up new avenues for many including new international opportunities for people inside as well as international levels from the outside.
-Anglia Morocco along with AGI will work closely with; multiple’ education centres, schools, and businesses to develop new strategies to help all levels of schools and learners to achieve a higher standard of English. Addressing the challenges due to the COVID pandemic, AGI is offering online platforms and examinations, AGI and Anglia Maroc communities, and events to enhance greater opportunities in Moroccan communities. With AGIs mission “Global Minds with a Global Perspective”, we strive to offer a better opportunity for the Moroccan community to ‘Dare to Dream in English’ with the Step-by-Step approach. Anglia Maroc is offering Anglia English exams from Beginners to Mastery level (CEFR C2) through the European Framework.
-To contact Anglia Morocco/ AGI American Group International
-Julie Wilburn- Director of Operations
-Abdelhak Lam- Assistant of Operations Headquarters Branch Agadir/Sales
-Number 20, Rue Baalabek, Cite Nahda, Agadir, and Morocco.80000
-Anglia Examinations England 30th year celebration in Chichester West Sussex, England. Picture with Julie Wilburn, center. September 2023. Anglia is presented by 45 plus countries worldwide. Part of the Chichester College Group, the 3rd biggest group in the United Kingdom.
-Robo Gallery: You didn’t select any Robo Gallery item in editor. Please select one from the list or create new gallery
-Anglia Exams offers a range of Business English Exams that test the English proficiency level of students whose special interest is business. The exams are divided into four steps, ranging in level from A2+ to C1 on the CEFR, and test all four skills of reading, writing, listening and speaking. The exams are designed to evaluate the linguistic competence of candidates who may be considering a future in an international workplace or may already be working in the professional world 1.
-If you’re interested in taking one of these exams, you can visit Anglia Exams for more information.
-
-#### Section: Business English Exams
-English is the lingua-franca of business. No matter where in the world you live or work, the ability to communicate effectively in English is a definite advantage when conducting business. In an increasingly globalised world, being proficient in business English gives you a competitive edge.
-The four steps of the Anglia Business English exams, ranging in level from A2+ to C1 on the CEFR, test the English proficiency level of students whose special interest is business. Candidates may be considering a future in an international workplace or may already be working in the professional world and be keen to evaluate their linguistic competence.
-With an emphasis on practical business application in realistic situations, our communicative exams offer a progressive choice of levels: A2+, B1, B2 and C1, and test all four skills of reading, writing, listening and speaking.
-An online examination is a great way to conduct exams and tests using the internet. An online exam requires a device capable of accessing the internet. You can conduct an online exam at home or an examination centre. It is essential in the remote learning system where candidates can appear for exams from home. They need not travel to give the exam in the online examination system. A microphone and webcam are sufficient for online evaluation tests. Also, you need not invest in exam centres, security and
-invigilators. ￼
-Unlock Your Future with Anglia Examinations England!
-
-#### Section: Now Offering Online Examinations in Morocco
-Get internationally recognized English certifications from the comfort of your home. Join thousands of successful students and enhance your career opportunities.
-Why Choose Anglia Examinations England?
-Convenient Online Testing: Take exams from anywhere in Morocco.
-Wide Range of Levels: From beginners to advanced proficiency.
-Trusted and Recognized: Certifications valued by employers and educational institutions worldwide.
-Supportive Learning Environment: Access to study materials and practice tests.
-Enroll Today!
-Visit our website or contact us at [email/contact info] to learn more and register.
-Anglia Examinations England – Your Pathway to Global Success!
-
-#### Section: Anglia Exams
-
-#### Section: Anglia Exams: Tests of English as a Foreign or Second Language
-Anglia Exams are ideal for testing the abilities of those learning English as a foreign language. The Anglia General English exam suite measures all four language skills – listening, reading, speaking and writing.
-Our exams are ideal for teachers and students of English as a foreign or second language and are designed to measure the ability and help guide candidates from beginner level at First Step, to Masters (C2) level. Our young-learner levels are also available for adult learners, meaning that anyone at any age can start learning English step-by-step with confidence. Anglia’s educational testing service is designed to support education providers and measure the ability of English language proficiency of leaners at all ages and ability
-- First Step
-- Junior Level Exam
-- TaPrimary Level Examu003cbru003eb 3
-- Primary Level Exam
-- Preliminary Level Exam
-Our entry level English language exam. Children as young as four years old can begin here. Demonstrate an understanding of about 100 words, follow basic classroom instructions and know how to say who you are
-Our second step in the Anglia English exam learning journey. Students need to be able to demonstrate an understanding of around 200 words, are able to use useful structures and explain what they are doing.
-Step 3 in our progressive exam series covers a vocabulary of about 400 words in categories like jobs, feelings and weather. Students will be able to demonstrate how to form questions, provide answers to questions, and be able to describe things.
-
-#### Section: Business English Exams
-English is the lingua-franca of business. No matter where in the world you live or work, the ability to communicate effectively in English is a definite advantage when conducting business. In an increasingly globalised world, being proficient in business English gives you a competitive edge.English for Business EFL step by step
-The four steps of the Anglia Business English exams, ranging in level from A2+ to C1 on the CEFR, test the English proficiency level of students whose special interest is business. Candidates may be considering a future in an international workplace or may already be working in the professional world and be keen to evaluate their linguistic competence.
-With an emphasis on practical business application in realistic situations, our communicative exams offer a progressive choice of levels: A2+, B1, B2 and C1, and test all four skills of reading, writing, listening and speaking.
-To learn more about a specific exam level please click on the tabs below.
-- Practical Business English
-- Intermediate Business Englishu003cbru003e
-- Advanced Business English Exam
-- Proficiency in Business English
-At this level, candidates are expected to have an A2+ level of English. The Business English exams are based on a candidate’s ability to perform certain practical functions in the workplace. Therefore the Practical Business English exam does not have a specific grammar and structures syllabus as the business context tends to demand set structures. However, the syllabus of the corresponding level (A2+) of the General English examinations gives an overview of the language expected at this level.
-At this level, candidates are expected to have a level of English equivalent to B1 on the CEFR. As the Business English exams are based on a candidate’s ability to perform practical functions in the workplace, this exam does not have a specific grammar and structures syllabus. The business context tends to demand set structures. However, the syllabus of the corresponding level (B1) of the General English examinations gives an overview of the language expected at this level.
-At this level, candidates are expected to have a level of English equivalent to B2 on the CEFR. As the Business English exams are based on a candidate’s ability to perform practical functions in the workplace, this exam does not have a specific grammar and structures syllabus. The business context tends to demand set structures. However, the syllabus of the corresponding level (B2) of the General English examinations gives an overview of the language expected at this level.
-Anglia Morocco
-- Anglia Morocco [link: “Anglia Morocco” → `anglia.html`]
-- Exam dates 2026 [link: “Exam dates 2026” → `calendar.html#anglia-exams`]
-- CEFR levels [link: “CEFR levels” → `anglia-cefr.html`]
-- Practice papers & audio [link: “Practice papers & audio” → `anglia-practice.html`]
-- Step To books [link: “Step To books” → `anglia-books.html`]
+- **Q: The exam descriptions in full** — A: Anglia Examinations have been based in Chichester, England, since 1993. Anglia offers a comprehensive and structured program for assessing English language competence, from beginner through to full competence as an expert user. This Step-by-Step approach to testing encourages and motivates students to make clear and effective progress. Please see us for a free placement test. The official website of Anglia Anglia Levels Anglia exams measure all four language skills – listening, reading, writing, and speaking. There are no minimum age requirements for the exams. The young learner levels are taken by children as young as four years old. The upper levels and Business English exams are taken by students and adults who plan to continue their studies at an English university/college or to improve their career prospects. Anglia Examinations in English currently consist of ten different levels and the Anglia International Business English examinations are available at four levels. The Proficiency level is listed by UCAS as a qualification that can be accepted by British universities to show international student competence in the English language. The Anglia Proficiency examination has been designed to incorporate a stronger academic element within its first section. All levels of the examinations have listening, reading, writing, and speaking elements. View this PowerPoint for information on the C.I.T.E. for teachers. New Microsoft PowerPoint Presentation- The History of Anglia in Morocco angliamorocco.org The history of Anglia Morocco started in 2010 by Suzanne Linsen. She moved to Morocco to introduce Anglia Examinations and its wide range of English language certificates to schools and institutes. Prior to that she was selected to conduct English courses and administer Anglia exams at a language institute in Tangier. During this year 2021, American Group International (AGI) became the Anglia franchise holder for Morocco. AGI has been an educational brand since 2012. AGI has placed hundreds of students into the American Educational System with low-cost, affordable, educational programs including an American School in Agadir. They have used the Anglia system in their language programs since 2013. Julie Wilburn is the CEO and lived in Morocco for many years and also holds dual citizenship in the country. The AGI team has now embarked on the next level in its offerings to give opportunities to thousands of people to master the international language of English in business and communication with top English training and assessments. We strive to give back to the Moroccan community and reach the areas that desire to take international exams. AGI wants local teams based in each of the 12 regions of the country to execute local community-based programs to reach the unreachable. The main headquarters are located in the cozy city of Agadir and it is centralized to the application of the AGI mission and educating the community in English throughout the Kingdom of Morocco. AGIs number of local franchise distribution networks will hopefully grow rapidly in the next few years; as English is quickly becoming a new love for Moroccan young people. This in return will hopefully open up new avenues for many including new international opportunities for people inside as well as international levels from the outside. Anglia Morocco along with AGI will work closely with; multiple’ education centres, schools, and businesses to develop new strategies to help all levels of schools and learners to achieve a higher standard of English. Addressing the challenges due to the COVID pandemic, AGI is offering online platforms and examinations, AGI and Anglia Maroc communities, and events to enhance greater opportunities in Moroccan communities. With AGIs mission “Global Minds with a Global Perspective”, we strive to offer a better opportunity for the Moroccan community to ‘Dare to Dream in English’ with the Step-by-Step approach. Anglia Maroc is offering Anglia English exams from Beginners to Mastery level (CEFR C2) through the European Framework. To contact Anglia Morocco/ AGI American Group International Julie Wilburn – CEO & Educational Director Abdelhak Lam- Assistant of Operations Headquarters Branch Agadir/Sales Number 20, Rue Baalabek, Cite Nahda, Agadir, and Morocco.80000 Anglia Examinations England 30th year celebration in Chichester West Sussex, England. Picture with Julie Wilburn, center. September 2023. Anglia is presented by 45 plus countries worldwide. Part of the Chichester College Group, the 3rd biggest group in the United Kingdom. Robo Gallery: You didn’t select any Robo Gallery item in editor. Please select one from the list or create new gallery Anglia Exams offers a range of Business English Exams that test the English proficiency level of students whose special interest is business. The exams are divided into four steps, ranging in level from A2+ to C1 on the CEFR, and test all four skills of reading, writing, listening and speaking. The exams are designed to evaluate the linguistic competence of candidates who may be considering a future in an international workplace or may already be working in the professional world 1. If you’re interested in taking one of these exams, you can visit Anglia Exams for more information. Business English Exams English is the lingua-franca of business. No matter where in the world you live or work, the ability to communicate effectively in English is a definite advantage when conducting business. In an increasingly globalised world, being proficient in business English gives you a competitive edge. The four steps of the Anglia Business English exams, ranging in level from A2+ to C1 on the CEFR, test the English proficiency level of students whose special interest is business. Candidates may be considering a future in an international workplace or may already be working in the professional world and be keen to evaluate their linguistic competence. With an emphasis on practical business application in realistic situations, our communicative exams offer a progressive choice of levels: A2+, B1, B2 and C1, and test all four skills of reading, writing, listening and speaking. An online examination is a great way to conduct exams and tests using the internet. An online exam requires a device capable of accessing the internet. You can conduct an online exam at home or an examination centre. It is essential in the remote learning system where candidates can appear for exams from home. They need not travel to give the exam in the online examination system. A microphone and webcam are sufficient for online evaluation tests. Also, you need not invest in exam centres, security and invigilators. ￼ Unlock Your Future with Anglia Examinations England! Now Offering Online Examinations in Morocco Get internationally recognized English certifications from the comfort of your home. Join thousands of successful students and enhance your career opportunities. Why Choose Anglia Examinations England? Convenient Online Testing: Take exams from anywhere in Morocco. Wide Range of Levels: From beginners to advanced proficiency. Trusted and Recognized: Certifications valued by employers and educational institutions worldwide. Supportive Learning Environment: Access to study materials and practice tests. Enroll Today! Visit our website or contact us at americanecoleagadir@gmail.com to learn more and register. Anglia Examinations England – Your Pathway to Global Success! Anglia Exams Anglia Exams: Tests of English as a Foreign or Second Language Anglia Exams are ideal for testing the abilities of those learning English as a foreign language. The Anglia General English exam suite measures all four language skills – listening, reading, speaking and writing. Our exams are ideal for teachers and students of English as a foreign or second language and are designed to measure the ability and help guide candidates from beginner level at First Step, to Masters (C2) level. Our young-learner levels are also available for adult learners, meaning that anyone at any age can start learning English step-by-step with confidence. Anglia’s educational testing service is designed to support education providers and measure the ability of English language proficiency of leaners at all ages and ability First Step Junior Level Exam TaPrimary Level Exam b 3 Primary Level Exam Preliminary Level Exam Our entry level English language exam. Children as young as four years old can begin here. Demonstrate an understanding of about 100 words, follow basic classroom instructions and know how to say who you are Our second step in the Anglia English exam learning journey. Students need to be able to demonstrate an understanding of around 200 words, are able to use useful structures and explain what they are doing. Step 3 in our progressive exam series covers a vocabulary of about 400 words in categories like jobs, feelings and weather. Students will be able to demonstrate how to form questions, provide answers to questions, and be able to describe things. Business English Exams English is the lingua-franca of business. No matter where in the world you live or work, the ability to communicate effectively in English is a definite advantage when conducting business. In an increasingly globalised world, being proficient in business English gives you a competitive edge.English for Business EFL step by step To learn more about a specific exam level please click on the tabs below. Practical Business English Intermediate Business English Advanced Business English Exam Proficiency in Business English At this level, candidates are expected to have an A2+ level of English. The Business English exams are based on a candidate’s ability to perform certain practical functions in the workplace. Therefore the Practical Business English exam does not have a specific grammar and structures syllabus as the business context tends to demand set structures. However, the syllabus of the corresponding level (A2+) of the General English examinations gives an overview of the language expected at this level. At this level, candidates are expected to have a level of English equivalent to B1 on the CEFR. As the Business English exams are based on a candidate’s ability to perform practical functions in the workplace, this exam does not have a specific grammar and structures syllabus. The business context tends to demand set structures. However, the syllabus of the corresponding level (B1) of the General English examinations gives an overview of the language expected at this level. At this level, candidates are expected to have a level of English equivalent to B2 on the CEFR. As the Business English exams are based on a candidate’s ability to perform practical functions in the workplace, this exam does not have a specific grammar and structures syllabus. The business context tends to demand set structures. However, the syllabus of the corresponding level (B2) of the General English examinations gives an overview of the language expected at this level.
+Next
+- Practice papers [link: “Practice papers” → `anglia-practice.html`]
 - Special arrangements [link: “Special arrangements” → `anglia-special-arrangements.html`]
-- Free placement assessment [link: “Free placement assessment” → `anglia-placement-test.html`]
 - Classes & prices [link: “Classes & prices” → `anglia-classes.html`]
-- Network & centres [link: “Network & centres” → `anglia-network.html`]
-- Become a centre [link: “Become a centre” → `partnerships.html`]
-- Anglia FAQ [link: “Anglia FAQ” → `anglia-faq.html`]
-- About Anglia Examinations [link: “About Anglia Examinations” → `anglia-about.html`]
-- C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
-Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
+
+#### Section: Not sure which level?
+Take the free placement assessment – we will recommend the right step.
+→ **Book a free level test** (`forms.html#enquiry/anglia`)
+→ **Try a practice paper** (`anglia-practice.html`)
 
 ---
 
-### 4.31 `anglia-faq.html`
+### 4.32 `anglia-faq.html`
 
 - **Browser title:** Anglia FAQ – Anglia Morocco | AGI Agadir
 - **Meta description:** Anglia exams FAQ: levels, ages from 4, durations, lifetime certificates, UCAS tariff points for Mastery.
@@ -2919,139 +2250,80 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
----
-
-### 4.32 `anglia-network.html`
-
-- **Browser title:** Network &amp; centres – Anglia Morocco | AGI Agadir
-- **Meta description:** Anglia Morocco network across the 12 regions of Morocco: provinces, centres and open representative positions.
-
-Home / Anglia Morocco / Network & centres [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
-**Page title (H1):** Network & centres
-From its Agadir headquarters, Anglia Morocco works with schools, language centres and teachers across the Kingdom's twelve regions.
+#### Section: Find your English level.
+Book a free placement assessment, or ask us about classes and exam sessions.
 → **Book a free level test** (`forms.html#enquiry/anglia`)
 → **Exam dates** (`calendar.html#anglia-exams`)
-Main headquarters: AGI, Agadir · Sales coordinator: Abdelhak Lam. Partnerships are available – regions marked "Representative available" are looking for a local partner.
-Partnerships Are Available!
-Abdelhak Lam/ Main Headquarters Sales Coordinator
-
-#### Section: Mainland Morocco 12 Regions
-**Tanger-Tetouan-Al Hoceima Region-7**
-- M’diq-Fnideq Prefecture
-- Tangier-Assilah Prefecture
-- Al Hoceïma Province
-- Chefchaouen Province
-- Fahs-Anjra Province
-- Larache Province
-- Ouezzane Province
-- Tétouan Province
-**Oriental Region-12**
-- Oujda-Angad – Representative Available
-- Berkane Province
-- Driouch Province
-- Figuig Province
-- Guercif Province
-- Jerada Province
-- Nador Province
-- Taourirt Province
-**Fès-Meknès Region- 8**
-- Fè s- Representative Available
-- Meknès
-- Boulemane Province
-- El Hajeb Province
-- Ifrane Province
-- Sefrou Province
-- Taounate Province
-- Taza Province
-- Moulay Yacoub Province
-**Rabat-Salé-Kénitra Region- 9**
-- Rabat
-- Salé-
-- Skhirat-Témara
-- Kénitra Province –
-- Khémisset Province
-- Sidi Kacem Province
-- Sidi Slimane Province
-**Béni Mellal-Khénifra Region-10**
-- Azilal Province
-- Béni-Mellal Province
-- Fquih Ben Salah Province
-- Khénifra Province
-- Khouribga Province
-**Casablanca-Settat Region-11**
-- Casablanca
-- Casablanca Anfa
-- Al Fida – Mers Sultan
-- Aïn Sebaâ – Hay Mohammadi
-- Hay Hassani
-- Aïn Chock
-- Sidi Bernoussi
-- Ben M’Sick
-- Moulay Rachid
-- Mohammedia
-- Ben Slimane Province
-- Berrechid Province
-- El Jadida Province
-- Médiouna Province
-- Nouaceur Province
-- Settat Province
-- Sidi Bennour Province
-**Marrakech-Safi Region-6**
-- Marrakech
-- Al Haouz Province
-- Chichaoua Province
-- El Kelâat Es-Sraghna Province
-- Essaouira Province
-- Rehamna Province
-- Safi Province
-- Youssoufia Province
-**Drâa-Tafilalet Region-5**
-- Errachidia Province
-- Midelt Province
-- Ouarzazate Province
-- Tinghir Province
-- Zagora Province
-**Souss-Massa Region -4**
-- Agadir-Ida Ou Tanane- Representative Available
-- Inezgane-Aït Melloul
-- Chtouka Aït Baha Province
-- Taroudant Province -Representative Available
-- Tata Province
-- Tiznit Province
-**Guelmim-Oued Noun Region-3**
-- Assa-Zag Province
-- Sidi Ifni Province -Representative Available
-- Guelmim Province
-- Tan-Tan Province
-**Laâyoune-Sakia El Hamra Region-2**
-- Boujdour Province
-- Es Semara Province
-- Laâyoune Province -Representative Available
-- Tarfaya Province
-**Dakhla-Oued Ed-Dahab Region-1**
-- Aousserd Province
-- Oued Ed-Dahab Province
-Source: Wikipedia
-→ **Become an Anglia centre** (`partnerships.html`)
-Anglia Morocco
-- Anglia Morocco [link: “Anglia Morocco” → `anglia.html`]
-- Exams & levels [link: “Exams & levels” → `anglia-exams.html`]
-- Exam dates 2026 [link: “Exam dates 2026” → `calendar.html#anglia-exams`]
-- CEFR levels [link: “CEFR levels” → `anglia-cefr.html`]
-- Practice papers & audio [link: “Practice papers & audio” → `anglia-practice.html`]
-- Step To books [link: “Step To books” → `anglia-books.html`]
-- Special arrangements [link: “Special arrangements” → `anglia-special-arrangements.html`]
-- Free placement assessment [link: “Free placement assessment” → `anglia-placement-test.html`]
-- Classes & prices [link: “Classes & prices” → `anglia-classes.html`]
-- Become a centre [link: “Become a centre” → `partnerships.html`]
-- Anglia FAQ [link: “Anglia FAQ” → `anglia-faq.html`]
-- About Anglia Examinations [link: “About Anglia Examinations” → `anglia-about.html`]
-- C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
-Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
 ---
 
-### 4.33 `anglia-placement-test.html`
+### 4.33 `anglia-network.html`
+
+- **Browser title:** Become an Anglia centre – Anglia Morocco | AGI Agadir
+- **Meta description:** Anglia Morocco network across Morocco's 12 regions: open representative positions, franchise and institutional partnership models, how to become an Anglia centre.
+
+Home / Anglia Morocco / Become a centre [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
+**Page title (H1):** Become an Anglia centre.
+From its Agadir headquarters, Anglia Morocco works with schools, language centres and teachers across the Kingdom's twelve regions. Several regions are looking for a local representative.
+→ **Partnership enquiry** (`forms.html#enquiry/partnership`)
+→ **Partnership models** (`partnerships.html`)
+
+#### Section: The 12 regions
+Main headquarters: AGI, Agadir · Sales coordinator: Abdelhak Lam.
+Anglia network
+**Dakhla-Oued Ed-Dahab Region**
+- **Q: 2 prefectures & provinces** — A: Aousserd Province Oued Ed-Dahab Province
+Representative wanted
+**Laâyoune-Sakia El Hamra Region**
+- **Q: 4 prefectures & provinces** — A: Boujdour Province Es Semara Province Laâyoune Province · representative wanted Tarfaya Province
+Representative wanted
+**Guelmim-Oued Noun Region**
+- **Q: 4 prefectures & provinces** — A: Assa-Zag Province Sidi Ifni Province · representative wanted Guelmim Province Tan-Tan Province
+Headquarters · Agadir
+**Souss-Massa Region**
+- **Q: 6 prefectures & provinces** — A: Agadir-Ida Ou Tanane · representative wanted Inezgane-Aït Melloul Chtouka Aït Baha Province Taroudant Province · representative wanted Tata Province Tiznit Province
+Anglia network
+**Drâa-Tafilalet Region**
+- **Q: 5 prefectures & provinces** — A: Errachidia Province Midelt Province Ouarzazate Province Tinghir Province Zagora Province
+Anglia network
+**Marrakech-Safi Region**
+- **Q: 8 prefectures & provinces** — A: Marrakech Al Haouz Province Chichaoua Province El Kelâat Es-Sraghna Province Essaouira Province Rehamna Province Safi Province Youssoufia Province
+Anglia network
+**Tanger-Tetouan-Al Hoceima Region**
+- **Q: 8 prefectures & provinces** — A: M’diq-Fnideq Prefecture Tangier-Assilah Prefecture Al Hoceïma Province Chefchaouen Province Fahs-Anjra Province Larache Province Ouezzane Province Tétouan Province
+Representative wanted
+**Fès-Meknès Region**
+- **Q: 9 prefectures & provinces** — A: Fè s · representative wanted Meknès Boulemane Province El Hajeb Province Ifrane Province Sefrou Province Taounate Province Taza Province Moulay Yacoub Province
+Anglia network
+**Rabat-Salé-Kénitra Region**
+- **Q: 7 prefectures & provinces** — A: Rabat Salé Skhirat-Témara Kénitra Province Khémisset Province Sidi Kacem Province Sidi Slimane Province
+Anglia network
+**Béni Mellal-Khénifra Region**
+- **Q: 5 prefectures & provinces** — A: Azilal Province Béni-Mellal Province Fquih Ben Salah Province Khénifra Province Khouribga Province
+Anglia network
+**Casablanca-Settat Region**
+- **Q: 17 prefectures & provinces** — A: Casablanca Casablanca Anfa Al Fida – Mers Sultan Aïn Sebaâ – Hay Mohammadi Hay Hassani Aïn Chock Sidi Bernoussi Ben M’Sick Moulay Rachid Mohammedia Ben Slimane Province Berrechid Province El Jadida Province Médiouna Province Nouaceur Province Settat Province Sidi Bennour Province
+Representative wanted
+**Oriental Region**
+- **Q: 8 prefectures & provinces** — A: Oujda-Angad · representative wanted Berkane Province Driouch Province Figuig Province Guercif Province Jerada Province Nador Province Taourirt Province
+
+#### Section: Two ways to work with us
+_Model I_
+**Anglia centre (franchise)**
+An Anglia Morocco centre under your ownership: the examinations license, placement and testing system, teacher training and C.I.T.E., and a territory agreement within the 12 regions.
+_Model II_
+**Institutional partnership**
+For existing schools and institutes: an Anglia testing centre inside your campus, co-designed English programs and university pathway agreements.
+→ **Partnerships in detail** (`partnerships.html`)
+
+#### Section: Represent Anglia in your region.
+Tell us your region, the model and your teaching or business background.
+→ **Partnership enquiry** (`forms.html#enquiry/partnership`)
+→ **Contact** (`contact.html`)
+
+---
+
+### 4.34 `anglia-placement-test.html`
 
 - **Browser title:** Free placement assessment – Anglia Morocco | AGI Agadir
 - **Meta description:** Free English placement assessment on the CEFR at Anglia Morocco headquarters in Agadir.
@@ -3087,9 +2359,14 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
+#### Section: Find your English level.
+Book a free placement assessment, or ask us about classes and exam sessions.
+→ **Book a free level test** (`forms.html#enquiry/anglia`)
+→ **Exam dates** (`calendar.html#anglia-exams`)
+
 ---
 
-### 4.34 `anglia-practice.html`
+### 4.35 `anglia-practice.html`
 
 - **Browser title:** Practice papers &amp; audio – Anglia Morocco | AGI Agadir
 - **Meta description:** Free Anglia practice papers for every level (First Step to Advanced, Business English) and Step To audio files.
@@ -3099,21 +2376,16 @@ Home / Anglia Morocco / Practice papers & audio [link: “Home” → `index.htm
 Free sample papers for every level, published by Anglia Examinations, plus the audio files for the Step To books.
 → **Book a free level test** (`forms.html#enquiry/anglia`)
 → **Exam dates** (`calendar.html#anglia-exams`)
-تخطي إلى المحتوى
-
-#### Section: مرحبًا بكم في موارد الممارسة لامتحانات أنجليا
-تقدم امتحانات أنجليا مجموعة من أوراق الممارسة والاختبارات النموذجية المصممة للمتعلمين على مستويات مختلفة. تم تصميم هذه الموارد لمساعدتك على التعرف على تنسيق الامتحان وأنواع الأسئلة التي قد تواجهها، مما يضمن أنك مستعد جيدًا لتقييماتك.
-**اختر مستواك وانقر لتنزيل أوراق الممارسة والعينات:**
 **General English**
-First Step
-Junior
-Primary
-Preliminary
-Elementary
-Pre-Intermediate
-Intermediate
-Advanced
-Pack 1
+- First Step
+- Junior
+- Primary
+- Preliminary
+- Elementary
+- Pre-Intermediate
+- Intermediate
+- Advanced
+- Pack 1
 First Step Pack 1
 Pack 2
 First Step Pack 2
@@ -3121,60 +2393,59 @@ Pack 3
 First Step Pack 3
 Pack 4
 First Step Pack 4
-Junior Pack 1
-Junior Pack 2
-Junior Pack 3
-Junior Pack 4
-Primary Pack 1
-Primary Pack 2
-Primary Pack 3
-Primary Pack 4
-Preliminary Pack 1
-Pack1
-Preliminary Pack 2
-Pack2
-Preliminary Pack 3
-Pack3
-Preliminary Pack 4
-Pack4
-Elementary Pack 1
-Elementary Pack 2
-Elementary Pack 3
-Elementary Pack 4
-Pre-Intermediate Pack 1
-Pre-Intermediate Pack 2
-Pre-Intermediate Pack 3
-Pre-Intermediate Pack 4
-Intermediate Pack 1
-Intermediate Pack 2
-Intermediate Pack 3
-Intermediate Pack 4
-Advanced Pack 1
-Advanced Pack 2
-Advanced Pack 3
-Advanced Pack 4
-Proficiency
-Mastery
-Adult Learner
-Proficiency Pack 1
-Proficiency Pack 2
-Proficiency Pack 3
-Proficiency Pack 4
-Mastery Pack 1
-Mastery Pack 2
-Mastery Pack 3
-Mastery Pack 4
+- Junior Pack 1
+- Junior Pack 2
+- Junior Pack 3
+- Junior Pack 4
+- Primary Pack 1
+- Primary Pack 2
+- Primary Pack 3
+- Primary Pack 4
+- Preliminary Pack 1
+- Pack1
+- Preliminary Pack 2
+- Pack2
+- Preliminary Pack 3
+- Pack3
+- Preliminary Pack 4
+- Pack4
+- Elementary Pack 1
+- Elementary Pack 2
+- Elementary Pack 3
+- Elementary Pack 4
+- Pre-Intermediate Pack 1
+- Pre-Intermediate Pack 2
+- Pre-Intermediate Pack 3
+- Pre-Intermediate Pack 4
+- Intermediate Pack 1
+- Intermediate Pack 2
+- Intermediate Pack 3
+- Intermediate Pack 4
+- Advanced Pack 1
+- Advanced Pack 2
+- Advanced Pack 3
+- Advanced Pack 4
+- Proficiency
+- Mastery
+- Adult Learner
+- Proficiency Pack 1
+- Proficiency Pack 2
+- Proficiency Pack 3
+- Proficiency Pack 4
+- Mastery Pack 1
+- Mastery Pack 2
+- Mastery Pack 3
+- Mastery Pack 4
 Adult Learner Step 1
 Pack 1 y 2
 Adult Learner Step 2
 Adult Learner Step 3
 Adult Learner Step 4
 **Business English**
-Practical Business
-Download
-Intermediate Business
-Advanced Business
-Proficiency Business
+- Practical Business
+- Intermediate Business
+- Advanced Business
+- Proficiency Business
 **Children’s Oral Tests of Achievement**
 Download Level I
 Download Level II
@@ -3182,7 +2453,6 @@ Download Level III
 **Certificate & Diploma in Applied Translation**
 Certificate in Applied Translation
 Diploma in Applied Translation
-**Teachers**
 
 #### Section: C.I.T.E.-Vyl
 
@@ -3255,7 +2525,7 @@ Register
 - Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-3-gg119.zip`]
 - Intermediate Pack 4 [link: “Intermediate Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-4-aa120.zip`]
 - Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-4-aa120.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-business-english.zip`]
+- Intermediate Business English [link: “Intermediate Business English” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-business-english.zip`]
 **Advanced**
 - Advanced Pack 1 [link: “Advanced Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-1-ff120.zip`]
 - Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-1-ff120.zip`]
@@ -3265,7 +2535,7 @@ Register
 - Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-3-gg119.zip`]
 - Advanced Pack 4 [link: “Advanced Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-4-aa120.zip`]
 - Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-4-aa120.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-business-english.zip`]
+- Advanced Business English [link: “Advanced Business English” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-business-english.zip`]
 **Proficiency**
 - Proficiency Pack 1 [link: “Proficiency Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-1-ff120.zip`]
 - Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-1-ff120.zip`]
@@ -3275,7 +2545,7 @@ Register
 - Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-3-gg119.zip`]
 - Proficiency Pack 4 [link: “Proficiency Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-4-aa120.zip`]
 - Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-4-aa120.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-business-english.zip`]
+- Proficiency Business English [link: “Proficiency Business English” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-business-english.zip`]
 **Masters**
 - Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-1-ff120.zip`]
 - Pack 2 [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-2-ff119.zip`]
@@ -3286,21 +2556,19 @@ Register
 - Pack 1 y 2 [link: “Pack 1 y 2” → `https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-2.zip`]
 - Pack 1 y 2 [link: “Pack 1 y 2” → `https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-3.zip`]
 - Pack 1 y 2 [link: “Pack 1 y 2” → `https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-4.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/09/practical-business-english.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-i-3.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-ii.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-iii-1.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/certificateinappliedtranslation-7.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/diplomainappliedtranslation-1.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-vyl-2.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-yl-2.zip`]
-- Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-sr-3.zip`]
+- Practical Business English [link: “Practical Business English” → `https://angliaexams.com/wp-content/uploads/2021/09/practical-business-english.zip`]
+- Childrens Oral Level I 3 [link: “Childrens Oral Level I 3” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-i-3.zip`]
+- Childrens Oral Level Ii [link: “Childrens Oral Level Ii” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-ii.zip`]
+- Childrens Oral Level Iii 1 [link: “Childrens Oral Level Iii 1” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-iii-1.zip`]
+- Certificateinappliedtranslation 7 [link: “Certificateinappliedtranslation 7” → `https://angliaexams.com/wp-content/uploads/2021/08/certificateinappliedtranslation-7.zip`]
+- Diplomainappliedtranslation 1 [link: “Diplomainappliedtranslation 1” → `https://angliaexams.com/wp-content/uploads/2021/08/diplomainappliedtranslation-1.zip`]
+- Cite Vyl 2 [link: “Cite Vyl 2” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-vyl-2.zip`]
+- Cite Yl 2 [link: “Cite Yl 2” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-yl-2.zip`]
+- Cite Sr 3 [link: “Cite Sr 3” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-sr-3.zip`]
 
 #### Section: Audio files
 - Step To audio files: First Step to Pre-Intermediate [link: “Step To audio files: First Step to Pre-Intermediate” → `https://www.anglia.nl/uploads/1/2/0/0/120044573/audiofiles_step_to_fs_-_pre-intermediate__1_.zip`]
 - Step To audio files: Intermediate to Masters [link: “Step To audio files: Intermediate to Masters” → `https://www.anglia.nl/uploads/1/2/0/0/120044573/audoifiles_step_to_intermediate_-_masters__1_.zip`]
-
-#### Section: In detail
 
 #### Section: Step To books
 
@@ -3308,23 +2576,20 @@ Register
 
 #### Section: First Step – Pre-Interm.
 
-#### Section: Intermediate – Masters
-
 #### Section: Welcome to Anglia Examinations Practice Resources
 Anglia Examinations provides a selection of practice papers and sample exams tailored for learners at various levels. These resources are designed to help you familiarize yourself with the exam format and types of questions you may encounter, ensuring you are well-prepared for your assessments.
 Pick Your Level & Click to Download Practice Papers and Samples:
 **General English**
-Proficiency
-Mastery
-Adult Learner
+- Proficiency
+- Mastery
+- Adult Learner
 Adult Learner Step 1
 Adult Learner Step 2
 Adult Learner Step 3
 Adult Learner Step 4
 **Business English**
-Practical Business
-Download
-Proficiency Business
+- Practical Business
+- Proficiency Business
 **Children’s Oral Tests of Achievement**
 Download Level I
 Download Level II
@@ -3332,13 +2597,10 @@ Download Level III
 **Certificate & Diploma in Applied Translation**
 Certificate in Applied Translation
 Diploma in Applied Translation
-**Teachers**
 
 #### Section: C.I.T.E.-Vyl
 
 #### Section: C.I.T.E.-Yl
-
-#### Section: C.I.T.E.-Sr
 Anglia Morocco
 - Anglia Morocco [link: “Anglia Morocco” → `anglia.html`]
 - Exams & levels [link: “Exams & levels” → `anglia-exams.html`]
@@ -3355,9 +2617,14 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
+#### Section: Find your English level.
+Book a free placement assessment, or ask us about classes and exam sessions.
+→ **Book a free level test** (`forms.html#enquiry/anglia`)
+→ **Exam dates** (`calendar.html#anglia-exams`)
+
 ---
 
-### 4.35 `anglia-special-arrangements.html`
+### 4.36 `anglia-special-arrangements.html`
 
 - **Browser title:** Special arrangements – Anglia Morocco | AGI Agadir
 - **Meta description:** Special arrangements for Anglia exams in Morocco: extra time, breaks, Braille or large print, wheelchair access, scribe, lip reading; codes D1–D8.
@@ -3410,99 +2677,65 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
+#### Section: Find your English level.
+Book a free placement assessment, or ask us about classes and exam sessions.
+→ **Book a free level test** (`forms.html#enquiry/anglia`)
+→ **Exam dates** (`calendar.html#anglia-exams`)
+
 ---
 
-### 4.36 `anglia.html`
+### 4.37 `anglia.html`
 
-- **Browser title:** Anglia Morocco – English exams and classes | AGI Agadir
-- **Meta description:** Anglia Morocco headquarters at AGI, Agadir: Anglia English exams from First Step to Masters, exam dates, practice papers, classes and a network across 12 regions.
+- **Browser title:** Anglia Morocco – official English exams from England | AGI Agadir
+- **Meta description:** Anglia Morocco headquarters at AGI, Agadir: official English exams from England, First Step to Masters C2, from age 4. Exam dates, classes, free level test, centres in 12 regions.
 
 Home / Anglia Morocco [link: “Home” → `index.html`]
-**Page title (H1):** Anglia Morocco.
-Official English exams from England, from a child's first words to Masters (C2) – with classes, practice papers and centres across Morocco's twelve regions.
+**Page title (H1):** Official English certificates from England.
+Anglia Examinations has tested English since 1993 from Chichester, England. Since 2021 AGI has been the Anglia franchise holder for Morocco – exams from a child's first words to Masters (C2), classes, and centres across the Kingdom's twelve regions.
 → **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates 2026** (`calendar.html#anglia-exams`)
+→ **Exam dates 2026** (`anglia-exam-dates.html`)
 
-#### Section: Anglia Morocco pages
+#### Section: Where do you start?
+Parents & students Certify your child's English Ten steps from a child's first words (about age 4) to Masters C2 – each one a certificate from England. Continue → Adults & professionals English for work and study General English up to Masters, or Business English from A2+ to C1, with classes that fit a working week. Continue → Teachers C.I.T.E. certification A lifelong TESOL qualification recognized worldwide – no entry qualifications required. Continue → Schools & partners Become an Anglia centre Run Anglia exams in your school or region, with training and materials from the Agadir headquarters. Continue → [link: “Parents & students Certify your child's English Ten steps from a child's first words (about age 4) to Masters C2 – each one a certificate from England. Continue →” → `anglia-exams.html`] [link: “Adults & professionals English for work and study General English up to Masters, or Business English from A2+ to C1, with classes that fit a working week. Continue →” → `anglia-classes.html`] [link: “Teachers C.I.T.E. certification A lifelong TESOL qualification recognized worldwide – no entry qualifications required. Continue →” → `teachers-cite.html`] [link: “Schools & partners Become an Anglia centre Run Anglia exams in your school or region, with training and materials from the Agadir headquarters. Continue →” → `anglia-network.html`]
+
+#### Section: Why Anglia
+England, since 1993 Part of Chichester College Group – award winning and Ofsted Outstanding.
+Regulated by Ofqual The four highest levels are awarded by AIM Qualifications and Assessment Group.
+UCAS tariff points The Mastery (C2) qualification counts for UK university entry.
+For life Certificates do not expire – an institution may ask for a recent one.
+From age 4 No upper age limit; every level tests listening, reading, writing and speaking.
+October
+Next exam session: All levels
+Thursday 15th | Saturday 17th – sessions run in most months; other dates are possible on request.
+→ **All 2026 dates** (`anglia-exam-dates.html`)
+
+#### Section: Everything about Anglia in Morocco
 - Link card → `anglia-exams.html`: Exams & levels
-- Link card → `calendar.html#anglia-exams`: Exam dates 2026
-- Link card → `anglia-cefr.html`: CEFR levels
+- Link card → `anglia-exam-dates.html`: Exam dates 2026
+- Link card → `anglia-classes.html`: Classes & prices
 - Link card → `anglia-practice.html`: Practice papers & audio
 - Link card → `anglia-books.html`: Step To books
 - Link card → `anglia-special-arrangements.html`: Special arrangements
-- Link card → `anglia-placement-test.html`: Free placement assessment
-- Link card → `anglia-classes.html`: Classes & prices
-- Link card → `anglia-network.html`: Network & centres
-- Link card → `partnerships.html`: Become a centre
+- Link card → `anglia-cefr.html`: CEFR levels
 - Link card → `anglia-faq.html`: Anglia FAQ
 - Link card → `anglia-about.html`: About Anglia Examinations
-- Link card → `teachers.html#cite`: C.I.T.E. for teachers
 
-#### Section: Anglia English Examinations Morocco
-English exam board and a global family of English exam centres and specialist language schools working together to help people from all walks of life achieve their dreams. Anglia Examination’s English proficiency tests are trusted by education institutions and partners around the world
-**Anglia Morocco**
-**American Group International**
-**Accreditation and Credentials**
-**Regulated by AIM**
-**AIM National Awarding Organisation**
-**Owned by Chichester College Group**
-**General English Exams**
-**Through Ten Steps**
-Our exams are ideal for teachers and students of English as a foreign or second language and are designed to measure the ability and help guide candidates from beginner level at First Step, to Masters (C2) level.
-Learn More..
-**Business English Exams**
-**Through Four Steps**
-Our Step by step General English Exams progress through ten steps- from First Step to Mastery. Our four high levels of English language exams are accredited by AIM Awards & Qualifications and are endorsed.
-**Exams Special Arrangements**
-**Equal Opportunity And Diversity**
-Anglia is committed to providing all students with open and fair access to opportunity. We provide a special arrangements service for candidates with hearing, speech, visual, kinetic, and learning difficulties such as dyslexia.
-**C.I.T.E – Certificate for International Teachers of English (TESOL)**
-C.I.T.E. (Certificate for International Teachers of English) is a prestigious TESOL qualification offered by Anglia Examinations England. This certification demonstrates your mastery of English and your ability to teach the language effectively. It’s a lifelong qualification with no expiration date, recognized worldwide.
-
-#### Section: English Language Tests- Dare To Dream In English
-We are an English exam board and a global family of English exam centres and specialist language schools working together to help people from all walks of life achieve their dreams. Anglia Examination’s English proficiency tests are trusted by education institutions and partners around the world.
-Taking an English test with Anglia Examinations (or one of our many partners) is a good way of demonstrating your English ability. For ESOL teachers who want to know how to test English language proficiency then please do read on. Or perhaps your want to prove your English ability for an employer, school, college or University? We offer English EFL exams at all levels including CITE exams for teachers of English as a foreign language. An Anglia certificate of proficiency provides the evidence you need to accurately prove your ability.
-We are strict about standards- providing quality English language tests for students of English as a second language and giving our exam candidates the confidence that our proctored exams and certificates are backed awarding body AIM Qualifications and Assessment Group. We offer online tests and paper based exams in English reading, writing, listening and speaking tests for all levels of capability. Anglia Examinations is more than just another English examination board- we offer a global community of learning and professionalism combined with specialist local knowledge.
-Our trusted partners around the world have a shared vision; to help people from diverse backgrounds achieve their full potential. Whether you need to prove your English language skills to employers or educational establishments we never compromise on our standards and consistency.
-We work together with partners to help others attain proficiency in the English Language. Our partners and test centres choose us above others due to our authenticity and the strength of the bespoke and personalised relations we pride ourselves on.
-Based in the UK, we offer a unique S tep-by-Step approach.
-Our ESOL exams are designed for young learners, high school students and teachers of English as a Foreign language and are mapped to the Common European Framework CEFR, allowing English language learners to steadily gain mastery of the English language. For those in commerce we offer our Anglia Business English Exams. We price ourselves in providing a friendly and professional service and work with expert language partners, awarding organisations, universities and employers the world over to deliver an exemplary service.
-Learners who achieve Anglia English exams are examined to exacting, consistent and robust standards.
-Our partners have grown with us over many years, offering English exam takers all over the world credible and respected exams and an accessible path to English language competency. We would love to hear from you. Please do get involved, share your stories with us and help us in our mission to help others to “Dream in English”.
-**Five Reasons to Trust Anglia Exams**
-We have applied for our Highest level exam (Mastery General English CEFR C2), to be awarded award UCAS tariff points which will mean that holders of this qualification will secure UCAS points to count towards University admissions.
-- We apply rigourous standards to our exams, we will never compromise on the quality and robustness of our qualifications.
-- Our four highest level of exam are awarded by AIM Qualification & Assessments and accredited.
-- Anglia Awards is a wholly owned subsidiary of the Chichester College Group who are award winning and Ofsted Outstanding.
-- Our exams are mapped to the Common European of References for Languages (CEFR) so that you can see how our levels compare.
-- Many Universities, employers and local governments around the world recognise our qualifications. New institutions are formally recognising Anglia English language exams on a regular basis
-**Anglia Global Partners**
-
-#### Section: Anglia Morocco Network
-Northern Region
-Franchise Opportunities Available
-**Anglia Representative Partners**
-We work together to ensure that the quality and rigour of Anglia Exams are maintained to ensure consistency and high standards at all times. Please note that the map below is not yet complete- we will add further partners soon.
-Learn More here..
-Southern Region-Anglia Headquarters-Agadir
-
-#### Section: This Is Who We Are
-We deeply believe that great companies are made by great people.
-We believe that the working environment is a crucial factor in the company’s development, and that a good working environment is important for the people who make a huge effort every day.
-**Julie WILBURN**
-Director of Operations of Anglia Morocco
-**Abdelhak LAM**
-Main Headquarters Sales Coordinator
+#### Section: Anglia Morocco in its own words
+- **Q: The Anglia Morocco welcome text** — A: Anglia English Examinations Morocco English exam board and a global family of English exam centres and specialist language schools working together to help people from all walks of life achieve their dreams. Anglia Examination’s English proficiency tests are trusted by education institutions and partners around the world Through Ten Steps Our exams are ideal for teachers and students of English as a foreign or second language and are designed to measure the ability and help guide candidates from beginner level at First Step, to Masters (C2) level. Learn More.. Through Four Steps Our Step by step General English Exams progress through ten steps- from First Step to Mastery. Our four high levels of English language exams are accredited by AIM Awards & Qualifications and are endorsed. Equal Opportunity And Diversity Anglia is committed to providing all students with open and fair access to opportunity. We provide a special arrangements service for candidates with hearing, speech, visual, kinetic, and learning difficulties such as dyslexia. C.I.T.E – Certificate for International Teachers of English (TESOL) C.I.T.E. (Certificate for International Teachers of English) is a prestigious TESOL qualification offered by Anglia Examinations England. This certification demonstrates your mastery of English and your ability to teach the language effectively. It’s a lifelong qualification with no expiration date, recognized worldwide. English Language Tests- Dare To Dream In English We are an English exam board and a global family of English exam centres and specialist language schools working together to help people from all walks of life achieve their dreams. Anglia Examination’s English proficiency tests are trusted by education institutions and partners around the world. Taking an English test with Anglia Examinations (or one of our many partners) is a good way of demonstrating your English ability. For ESOL teachers who want to know how to test English language proficiency then please do read on. Or perhaps your want to prove your English ability for an employer, school, college or University? We offer English EFL exams at all levels including CITE exams for teachers of English as a foreign language. An Anglia certificate of proficiency provides the evidence you need to accurately prove your ability. We are strict about standards- providing quality English language tests for students of English as a second language and giving our exam candidates the confidence that our proctored exams and certificates are backed awarding body AIM Qualifications and Assessment Group. We offer online tests and paper based exams in English reading, writing, listening and speaking tests for all levels of capability. Anglia Examinations is more than just another English examination board- we offer a global community of learning and professionalism combined with specialist local knowledge. Our trusted partners around the world have a shared vision; to help people from diverse backgrounds achieve their full potential. Whether you need to prove your English language skills to employers or educational establishments we never compromise on our standards and consistency. We work together with partners to help others attain proficiency in the English Language. Our partners and test centres choose us above others due to our authenticity and the strength of the bespoke and personalised relations we pride ourselves on. Based in the UK, we offer a unique S tep-by-Step approach. Our ESOL exams are designed for young learners, high school students and teachers of English as a Foreign language and are mapped to the Common European Framework CEFR, allowing English language learners to steadily gain mastery of the English language. For those in commerce we offer our Anglia Business English Exams. We price ourselves in providing a friendly and professional service and work with expert language partners, awarding organisations, universities and employers the world over to deliver an exemplary service. Learners who achieve Anglia English exams are examined to exacting, consistent and robust standards. Our partners have grown with us over many years, offering English exam takers all over the world credible and respected exams and an accessible path to English language competency. We would love to hear from you. Please do get involved, share your stories with us and help us in our mission to help others to “Dream in English”. Five Reasons to Trust Anglia Exams We have applied for our Highest level exam (Mastery General English CEFR C2), to be awarded award UCAS tariff points which will mean that holders of this qualification will secure UCAS points to count towards University admissions. We apply rigourous standards to our exams, we will never compromise on the quality and robustness of our qualifications. Our four highest level of exam are awarded by AIM Qualification & Assessments and accredited. Anglia Awards is a wholly owned subsidiary of the Chichester College Group who are award winning and Ofsted Outstanding. Our exams are mapped to the Common European of References for Languages (CEFR) so that you can see how our levels compare. Many Universities, employers and local governments around the world recognise our qualifications. New institutions are formally recognising Anglia English language exams on a regular basis Anglia Morocco Network Northern Region Franchise Opportunities Available Anglia Representative Partners We work together to ensure that the quality and rigour of Anglia Exams are maintained to ensure consistency and high standards at all times. Please note that the map below is not yet complete- we will add further partners soon. Learn More here.. Southern Region-Anglia Headquarters-Agadir This Is Who We Are We deeply believe that great companies are made by great people. We believe that the working environment is a crucial factor in the company’s development, and that a good working environment is important for the people who make a huge effort every day. Julie WILBURN CEO & Educational Director, Anglia Examinations Morocco Abdelhak LAM Main Headquarters Sales Coordinator
 
 #### Section: Club Anglia
 [TO CONFIRM: Coming soon.]
-→ **angliamorocco.org** (`https://angliamorocco.org/`)
 Contacts
-Julie Wilburn · j.wilburn@angliamorocco.org Abdelhak Lam · a.lam@angliamorocco.org
+Julie Wilburn · j.wilburn@angliamorocco.org Abdelhak Lam · a.lam@angliamorocco.org angliamorocco.org [link: “angliamorocco.org” → `https://angliamorocco.org/`]
+
+#### Section: Find your English level.
+The placement assessment is free and takes place at AGI in Agadir.
+→ **Book a free level test** (`forms.html#enquiry/anglia`)
+→ **Classes & prices** (`anglia-classes.html`)
 
 ---
 
-### 4.37 `attendance.html`
+### 4.38 `attendance.html`
 
 - **Browser title:** Attendance – American Group International, Agadir
 - **Meta description:** AGI attendance policy: 90% attendance for promotion, excused absences, late arrivals and consequences.
@@ -3575,9 +2808,7 @@ AGI strongly encourages families to schedule family vacations to not conflict wi
 All children that miss the maximum number of days (20) without proper excuse will be required to attend the summer sessions. A full calendar year is made up of 180 days.
 Regards,
 Julie Wilburn, Principal
-
-#### Section: The Importance of School Attendance
-Text as published by AGI. Please check with the office for the current version. Source: American Group International of Agadir Attendance Policy, The Importance of School Attendance [link: “American Group International of Agadir Attendance Policy” → `https://www.americangroup-international.com/american-group-international-school-of-agadir-attendance-policy/`] [link: “The Importance of School Attendance” → `https://www.americangroup-international.com/the-importance-of-school-attendance/`]
+Text as published by AGI. Please check with the office for the current version. Source: “American Group International of Agadir Attendance Policy” (former AGI website), “The Importance of School Attendance” (former AGI website)
 All policies
 - Academic handbook [link: “Academic handbook” → `handbook.html`]
 - Promotion & retention [link: “Promotion & retention” → `promotion-retention.html`]
@@ -3590,9 +2821,14 @@ All policies
 - School supplies list [link: “School supplies list” → `supplies.html`]
 → **Ask the office a question** (`forms.html#enquiry/programs`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.38 `calendar.html`
+### 4.39 `calendar.html`
 
 - **Browser title:** Calendar 2026–27 – American Group International, Agadir
 - **Meta description:** AGI school calendar 2026–27: registration Aug 28 & 31, first day Sept 7, holidays and breaks, last day June 17; Saturday classes and Anglia exam sessions.
@@ -3690,16 +2926,21 @@ Summer Vacation
 | December | All levels | Saturday 12th |
 |  |  | If you need an exam session on an unlisted date, please contact the Anglia office. |
 → **English & Anglia exams** (`english-anglia.html`)
-- **Q: Archive: school calendar 2025–26** — A: American Group International of Agadir First Day of Classes- September 8th, 2025 September 2025 September 8th -First Day of Classes September 5 th and 6 th -Eid Al Mouloud – Closed- Moveable Date October 2025 Oct. 20 th – 24 th School closed for Fall Break. November 2025 November 6 th Green March November 18 th Independence Day November 27 and 28 th Thanksgiving Holiday December 2025 December 22 nd Winter Break Starts December 25 th Christmas Day High School Orders Gowns January 2026 January 1 st – New Years- school closed January 5 th School Starts January 14 th Amazigh New Year February 2026 Feb 7 th – Global Play Day Feb 18 th – First Day of Ramadan (Movable) March 2026 March 20 th and 21 st Eid El fir- end of Ramadan (movable) Pick date for Graduation 2026 April 2026 No Days Off Anglia Exams 2026 May 2026 May 1 st – Labor Day May 27, 28, 29 th – Eid al Adha (Movable). June 2026 June 19 th – Last day for Students Teachers need to report after the 19th to close out the year. July 2026 Summer Holidays August 2026 August 25 th, Teachers Reporting and Training. Inscriptions Begin September 7 th School Starts 2026 2025- 2026 Calendar Program Please contact the administration if you have questions about the calendar: groupinternationala@gmail.com First Semester Ends- January 15 th, Second Semester Ends- June 15 th
+- **Q: Archive: school calendar 2025–26** — A: American Group International of Agadir First Day of Classes- September 8th, 2025 September 2025 September 8th -First Day of Classes September 5 th and 6 th -Eid Al Mouloud – Closed- Moveable Date October 2025 Oct. 20 th – 24 th School closed for Fall Break. November 2025 November 6 th Green March November 18 th Independence Day November 27 and 28 th Thanksgiving Holiday December 2025 December 22 nd Winter Break Starts December 25 th Christmas Day High School Orders Gowns January 2026 January 1 st – New Years- school closed January 5 th School Starts January 14 th Amazigh New Year February 2026 Feb 7 th – Global Play Day Feb 18 th – First Day of Ramadan (Movable) March 2026 March 20 th and 21 st Eid El fir- end of Ramadan (movable) Pick date for Graduation 2026 April 2026 No Days Off Anglia Exams 2026 May 2026 May 1 st – Labor Day May 27, 28, 29 th – Eid al Adha (Movable). June 2026 June 19 th – Last day for Students Teachers need to report after the 19th to close out the year. July 2026 Summer Holidays August 2026 August 25 th, Teachers Reporting and Training. Inscriptions Begin September 7 th School Starts 2026 2025- 2026 Calendar Program Please contact the administration if you have questions about the calendar: americanecoleagadir@gmail.com First Semester Ends- January 15 th, Second Semester Ends- June 15 th
 Key dates
 - **Registration** — Aug 28 & 31
 - **First day** — Sept 7
 - **Last day & graduation** — June 17, 2027
 → **Book a visit** (`forms.html#visit`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.39 `cookies.html`
+### 4.40 `cookies.html`
 
 - **Browser title:** Cookies – American Group International, Agadir
 - **Meta description:** This website uses no advertising or tracking cookies. What it stores on your device, and which outside services it loads.
@@ -3724,7 +2965,7 @@ Write to americanecoleagadir@gmail.com. See also our privacy policy. [link: “p
 
 ---
 
-### 4.40 `faq.html`
+### 4.41 `faq.html`
 
 - **Browser title:** Questions & answers – American Group International, Agadir
 - **Meta description:** Answers to parents' questions about AGI: admissions, documents, fees, calendar, attendance, homework, Anglia exams, teachers and adult programs.
@@ -3736,46 +2977,46 @@ The questions families ask most, with answers taken from AGI's own policies and 
 → **WhatsApp us** (`https://wa.me/212688739393?text=Hello%20AGI%2C%20`)
 
 #### Section: Admissions
-- **Q: Who can enroll at AGI?** — A: Children aged 5 by September 1 (kindergarten) up to students under 21 on the first day of school. AGI admits students of any race, religion, color, national or ethnic origin. More
-- **Q: What documents do we need?** — A: Proof of age (birth certificate, passport or similar), proof of residency less than three months old, immunization and physical examination records, two years of previous school records with a behavior report, three recent photos, and transfer papers translated into English. More
-- **Q: How does the admissions process work?** — A: 1) Application with the non-refundable enrollment deposit, 2) an interview with parent and child, 3) an offer of admission and the tuition agreement. More
-- **Q: Is there an entrance test?** — A: Yes – a free placement assessment in English and academic subjects. Grade placement is not lowered due to missing documents, language gaps, or academic gaps. More
-- **Q: Can my child join in the middle of the year?** — A: Yes. Students are welcome at any stage; they sit the placement assessment and start with the right support. More
-- **Q: My child doesn't speak English yet. Can they join?** — A: Yes. Students join their age group with English as a second language support and are benchmarked on the CEFR with Anglia exams. More
-- **Q: Do you support children with special needs?** — A: Yes: Individualized Education Plans, small-group classes and therapy and behavioral support. Documentation from a licensed practitioner is required – a parent's description alone is not enough. More
+- **Q: Who can enroll at AGI?** — A: Children aged 5 by September 1 (kindergarten) up to students under 21 on the first day of school. AGI admits students of any race, religion, color, national or ethnic origin. Admissions
+- **Q: What documents do we need?** — A: Proof of age (birth certificate, passport or similar), proof of residency less than three months old, immunization and physical examination records, two years of previous school records with a behavior report, three recent photos, and transfer papers translated into English. Admissions
+- **Q: How does the admissions process work?** — A: 1) Application with the non-refundable enrollment deposit, 2) an interview with parent and child, 3) an offer of admission and the tuition agreement. Admissions
+- **Q: Is there an entrance test?** — A: Yes – a free placement assessment in English and academic subjects. Grade placement is not lowered due to missing documents, language gaps, or academic gaps. Placement policy
+- **Q: Can my child join in the middle of the year?** — A: Yes. Students are welcome at any stage; they sit the placement assessment and start with the right support. For parents
+- **Q: My child doesn't speak English yet. Can they join?** — A: Yes. Students join their age group with English as a second language support and are benchmarked on the CEFR with Anglia exams. Placement policy
+- **Q: Do you support children with special needs?** — A: Yes: Individualized Education Plans, small-group classes and therapy and behavioral support. Documentation from a licensed practitioner is required – a parent's description alone is not enough. Special education
 
 #### Section: Fees
-- **Q: How much is tuition?** — A: 2,600 MAD a month, paid over ten months (26,000 MAD a year). More
-- **Q: How much is the annual inscription?** — A: Kindergarten–grade 1: 6,500 MAD · grades 2–6: 7,500 MAD · grades 7–8: 7,800 MAD · grades 9–11: 10,000 MAD · grade 12: 11,000 MAD. Paid once a year, non-refundable. More
-- **Q: What is included?** — A: Books and learning materials, mathematics examinations, Anglia English examinations, enrollment in the USA and Morocco, and student insurance. More
-- **Q: Can fees be negotiated?** — A: No. Fees are already set as low as possible to keep AGI inclusive, and discounts are already applied for all families. More
-- **Q: Is there a summer school?** — A: Yes, for high school students who need to catch up or enroll late: 3,000 MAD for a one-month program. More
-- **Q: Is there a discount for brothers and sisters?** — A: [TO CONFIRM: To be confirmed by the office.] More
+- **Q: How much is tuition?** — A: 2,600 MAD a month, paid over ten months (26,000 MAD a year). Tuition & fees
+- **Q: How much is the annual inscription?** — A: Kindergarten–grade 1: 6,500 MAD · grades 2–6: 7,500 MAD · grades 7–8: 7,800 MAD · grades 9–11: 10,000 MAD · grade 12: 11,000 MAD. Paid once a year, non-refundable. Tuition & fees
+- **Q: What is included?** — A: Books and learning materials, mathematics examinations, Anglia English examinations, enrollment in the USA and Morocco, and student insurance. Tuition & fees
+- **Q: Can fees be negotiated?** — A: No. Fees are already set as low as possible to keep AGI inclusive, and discounts are already applied for all families. Tuition & fees
+- **Q: Is there a summer school?** — A: Yes, for high school students who need to catch up or enroll late: 3,000 MAD for a one-month program. Tuition & fees
+- **Q: Is there a discount for brothers and sisters?** — A: [TO CONFIRM: To be confirmed by the office.] Tuition & fees
 
 #### Section: School life
-- **Q: When does the school year start and end?** — A: 2026–27: registration days August 28 and 31, first day September 7, last day and graduation June 17, 2027. More
-- **Q: What are the school hours?** — A: [TO CONFIRM: To be confirmed by the office.] Arrival after 9:00 counts as late, and after 10:00 as an absence. More
-- **Q: Is there a uniform?** — A: [TO CONFIRM: No uniform is mentioned; a dress code applies (see the handbook).] More
-- **Q: What happens if my child is absent?** — A: Give the office a dated, signed excuse within two days. Students need 90% attendance to be promoted; unexcused absences lead to escalating consequences. More
-- **Q: How is promotion decided?** — A: At least 64% (D) in each core subject, 90% attendance, maturity and the English assessment; summer remediation is possible. More
-- **Q: How much homework is there?** — A: From 10–20 minutes a night in kindergarten to 2–3 hours in the last years of high school. More
-- **Q: What do high school students need to graduate?** — A: Among other requirements, 40 volunteer hours – ten each year. More
-- **Q: What should my child bring?** — A: See the school supplies list for elementary and high school. More
+- **Q: When does the school year start and end?** — A: 2026–27: registration days August 28 and 31, first day September 7, last day and graduation June 17, 2027. Calendar 2026–27
+- **Q: What are the school hours?** — A: [TO CONFIRM: To be confirmed by the office.] Arrival after 9:00 counts as late, and after 10:00 as an absence. Attendance policy
+- **Q: Is there a uniform?** — A: [TO CONFIRM: No uniform is mentioned; a dress code applies (see the handbook).] Academic handbook
+- **Q: What happens if my child is absent?** — A: Give the office a dated, signed excuse within two days. Students need 90% attendance to be promoted; unexcused absences lead to escalating consequences. Attendance policy
+- **Q: How is promotion decided?** — A: At least 64% (D) in each core subject, 90% attendance, maturity and the English assessment; summer remediation is possible. Promotion & retention
+- **Q: How much homework is there?** — A: From 10–20 minutes a night in kindergarten to 2–3 hours in the last years of high school. Homework guidelines
+- **Q: What do high school students need to graduate?** — A: Among other requirements, 40 volunteer hours – ten each year. Volunteer hours
+- **Q: What should my child bring?** — A: See the school supplies list for elementary and high school. Supplies list
 
 #### Section: Anglia exams & English
-- **Q: What are Anglia exams?** — A: English exams from Anglia Examinations, based in Chichester, England, since 1993 and part of Chichester College Group. They test reading, writing, listening and speaking at ten levels, from First Step to Masters (C2). More
-- **Q: From what age can my child take them?** — A: From about four years old; there is no upper age limit. More
-- **Q: How long are the exams?** — A: Reading and writing 1–3 hours, listening 10–30 minutes, speaking about 5–20 minutes, depending on the level. More
-- **Q: Does the certificate expire?** — A: It is valid for life, though an institution may ask for a recent one. More
-- **Q: When are the exam sessions?** — A: There are sessions in most months – see the 2026 exam sessions on the calendar. Other dates are possible on request. More
-- **Q: Can candidates with dyslexia or a disability get support?** — A: Yes – for example extra time, supervised breaks, Braille or large print, wheelchair access or a scribe. More
-- **Q: Are Saturday classes available?** — A: Yes: ages 5–18, Saturdays 2–4 pm, October to June, 500 MAD a month including the yearly Anglia exam, with BAC, TOEFL, IELTS, SAT and Mathematics-in-English preparation. More
+- **Q: What are Anglia exams?** — A: English exams from Anglia Examinations, based in Chichester, England, since 1993 and part of Chichester College Group. They test reading, writing, listening and speaking at ten levels, from First Step to Masters (C2). English & Anglia exams
+- **Q: From what age can my child take them?** — A: From about four years old; there is no upper age limit. English & Anglia exams
+- **Q: How long are the exams?** — A: Reading and writing 1–3 hours, listening 10–30 minutes, speaking about 5–20 minutes, depending on the level. English & Anglia exams
+- **Q: Does the certificate expire?** — A: It is valid for life, though an institution may ask for a recent one. English & Anglia exams
+- **Q: When are the exam sessions?** — A: There are sessions in most months – see the 2026 exam sessions on the calendar. Other dates are possible on request. Calendar 2026–27
+- **Q: Can candidates with dyslexia or a disability get support?** — A: Yes – for example extra time, supervised breaks, Braille or large print, wheelchair access or a scribe. English & Anglia exams
+- **Q: Are Saturday classes available?** — A: Yes: ages 5–18, Saturdays 2–4 pm, October to June, 500 MAD a month including the yearly Anglia exam, with BAC, TOEFL, IELTS, SAT and Mathematics-in-English preparation. English & Anglia exams
 
 #### Section: Teachers & adults
-- **Q: What is C.I.T.E.?** — A: Anglia's Certificate for International Teachers of English: a TESOL qualification mapped to the CEFR, with no entry qualifications and lifelong validity. More
-- **Q: Can I teach in the United States?** — A: AGI offers certification sponsorship for U.S. private schools: bachelor's degree, clear background check and a sponsoring school; fee US$60. Not valid for public schools. More
-- **Q: Can adults finish high school?** — A: Yes, from age 16 with American Worldwide Academy; every test is proctored in Agadir and graduation requires 80%. More
-- **Q: Do you proctor exams for other institutions?** — A: Yes, Monday to Thursday 9:00–17:00: a 200 MAD (15 EUR) administration fee plus 200 MAD (15 EUR) per exam hour. More
+- **Q: What is C.I.T.E.?** — A: Anglia's Certificate for International Teachers of English: a TESOL qualification mapped to the CEFR, with no entry qualifications and lifelong validity. For teachers
+- **Q: Can I teach in the United States?** — A: AGI offers certification sponsorship for U.S. private schools: bachelor's degree, clear background check and a sponsoring school; fee US$60. Not valid for public schools. For teachers
+- **Q: Can adults finish high school?** — A: Yes, from age 16 with American Worldwide Academy; every test is proctored in Agadir and graduation requires 80%. Adult diploma
+- **Q: Do you proctor exams for other institutions?** — A: Yes, Monday to Thursday 9:00–17:00: a 200 MAD (15 EUR) administration fee plus 200 MAD (15 EUR) per exam hour. Professional services
 Topics
 - Admissions [link: “Admissions” → `#admissions`]
 - Fees [link: “Fees” → `#fees`]
@@ -3783,9 +3024,14 @@ Topics
 - Anglia exams & English [link: “Anglia exams & English” → `#anglia-exams-english`]
 - Teachers & adults [link: “Teachers & adults” → `#teachers-adults`]
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.41 `fees.html`
+### 4.42 `fees.html`
 
 - **Browser title:** Tuition & fees – American Group International, Agadir
 - **Meta description:** AGI fees 2026–27: inscription by grade (6,500–11,000 MAD), tuition 2,600 MAD a month, all-inclusive package, high school options, class prices.
@@ -3867,7 +3113,7 @@ The office will explain every option for your family.
 
 ---
 
-### 4.42 `forms.html`
+### 4.43 `forms.html`
 
 - **Browser title:** Forms & requests – American Group International, Agadir
 - **Meta description:** Apply for a place, report an absence, request a document, give consent, book tutoring or tell the AGI office about a payment.
@@ -3886,7 +3132,7 @@ Report an absence Apply for a place Payment notice Request a transcript [link: �
 
 ---
 
-### 4.43 `handbook.html`
+### 4.44 `handbook.html`
 
 - **Browser title:** Academic handbook – American Group International, Agadir
 - **Meta description:** The AGI academic handbook in full: mission, vision, beliefs, school routines, behavior, communication and family partnership.
@@ -3962,7 +3208,7 @@ On this page
 Welcome to American Group International ***AGI. Our caring and nurturing staff is pleased to have the opportunity to educate your child and we look forward to the new school year with the same hopes and dreams you have for your child. We are eager to challenge all of our students to be successful both academically and socially as we prepare them for their future.
 AGI is a child-centered school with an environment that enables students to take responsibility for their learning and behavior. Students are at the center of each decision we make as educators, and we believe that is what makes our school stand out as a school that strives for excellence.
 We pride ourselves on our team of highly qualified teachers who bring a wealth of knowledge and skills. We are confident students receive a quality education each day under the guidance of our faculty.
-Thank you for choosing American Group International Correspondence as your educational Institution.
+Thank you for choosing American Group [TO CONFIRM: International Correspondence] as your educational Institution.
 Julie Wilburn, Director
 Email: americanecoleagadir@gmail.com
 
@@ -4037,7 +3283,7 @@ Program of Studies/Course Syllabus
 Teachers will provide information about their classroom schedule.
 Announcements
 The announcements are posted on the school website as needed.
-IF MY QUESTION INVOLVES ________________, I SHOULD ASK ___________________.
+The application form is now online: apply on the forms page. [link: “apply on the forms page” → `forms.html#enrollment`]
 Homework, class assignments Your Child’s Teacher
 Student files, records, attendance, health issues Julie Wilburn
 Payments Julie Wilburn/Abdelhak Lam
@@ -4082,12 +3328,12 @@ Administration is not limited in application because an item was not on the list
 Tutoring of students by AGI teachers and trainers are forbidden unless prior permission is received. Some assistants are not qualified to teach subjects. It is also forbidden in Morocco for teachers to give lessons outside of the school with the students they serve. We will not be held responsible if you decide to go against our policy as this will put the teacher or volunteer at danger of losing their position as this means they are using their energies outside of the school and they will not improve in the job performance here.
 
 #### Section: Levels Of Offenses And Levels Of Consequences
-Level 1 Offenses
-Inciting minor disruptions
-Defiance
-Lateness or absence
-Dress code violation
-Lunchroom violation
+- Level 1 Offenses
+- Inciting minor disruptions
+- Defiance
+- Lateness or absence
+- Dress code violation
+- Lunchroom violation
 Eating outside of designated areas or times (lunchroom or courtyard at recess)
 Coming to class unprepared
 Missing or late homework assignments
@@ -4337,7 +3583,7 @@ Throughout each year, students could be involved in drills and practice situatio
 Students will be permitted to use the school office phone during the day in the case of emergency only. Students must have permission from an administrator in order to make a personal call. This Handbook can be updated when found to benefit the AGI and the protection of our students and faculty.
 Updated January 17, 2024
 © 2024 American Group International School.
-Text as published by AGI. Please check with the office for the current version. Source: AGI Mission Statement and Academic Handbook [link: “AGI Mission Statement and Academic Handbook” → `https://www.americangroup-international.com/agi-academic-school-handbook/`]
+Text as published by AGI. Please check with the office for the current version. Source: “AGI Mission Statement and Academic Handbook” (former AGI website)
 All policies
 - Attendance [link: “Attendance” → `attendance.html`]
 - Promotion & retention [link: “Promotion & retention” → `promotion-retention.html`]
@@ -4350,9 +3596,14 @@ All policies
 - School supplies list [link: “School supplies list” → `supplies.html`]
 → **Ask the office a question** (`forms.html#enquiry/programs`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.44 `homework.html`
+### 4.45 `homework.html`
 
 - **Browser title:** Homework – American Group International, Agadir
 - **Meta description:** AGI homework guidelines: how many minutes of homework to expect each night, by grade, from kindergarten to grade 12.
@@ -4396,7 +3647,7 @@ Key Considerations:
 - Balance: Ensure time for extracurricular activities, family, and relaxation.
 - Environment**: Create a quiet, well-lit space for homework.
 Adjustments may be needed based on individual student needs, school requirements, and specific assignments. This schedule serves as a general guideline to help manage and balance students’ academic workloads.
-Text as published by AGI. Please check with the office for the current version. Source: Homework Guidelines Policy AGI [link: “Homework Guidelines Policy AGI” → `https://www.americangroup-international.com/homework-guidelines-policy-agi/`]
+Text as published by AGI. Please check with the office for the current version. Source: “Homework Guidelines Policy AGI” (former AGI website)
 All policies
 - Academic handbook [link: “Academic handbook” → `handbook.html`]
 - Attendance [link: “Attendance” → `attendance.html`]
@@ -4409,9 +3660,14 @@ All policies
 - School supplies list [link: “School supplies list” → `supplies.html`]
 → **Ask the office a question** (`forms.html#enquiry/programs`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.45 `media-policy.html`
+### 4.46 `media-policy.html`
 
 - **Browser title:** Media – American Group International, Agadir
 - **Meta description:** AGI media policy: photos, video and live streams, consent for students under 18.
@@ -4459,7 +3715,7 @@ Images and videos will be stored on equipment belonging to American Group Intern
 Updates & reviews
 This policy will be reviewed regularly, and American Group International may update the content of this policy without notice. Where any change greatly impacts individuals or groups of people, we will make every effort to communicate that to those affected.
 American Group International, June 21, 2024
-Text as published by AGI. Please check with the office for the current version. Source: Media Policy [link: “Media Policy” → `https://www.americangroup-international.com/media-policy/`]
+Text as published by AGI. Please check with the office for the current version. Source: “Media Policy” (former AGI website)
 All policies
 - Academic handbook [link: “Academic handbook” → `handbook.html`]
 - Attendance [link: “Attendance” → `attendance.html`]
@@ -4472,9 +3728,14 @@ All policies
 - School supplies list [link: “School supplies list” → `supplies.html`]
 → **Ask the office a question** (`forms.html#enquiry/programs`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.46 `online-tutoring.html`
+### 4.47 `online-tutoring.html`
 
 - **Browser title:** Online tutoring – American Group International, Agadir
 - **Meta description:** Online tutoring with American Group USA: session prices, how long a session should last, and Zoom/Teams instructions.
@@ -4519,7 +3780,7 @@ Thank you for your interest in our Tutor’s.
 Online Applications for Class Instructions for Students and Parents
 Downloading and Accessing Zoom
 - Download Zoom:
-– For Computers: Go to the Zoom website [ zoom.us/download](https://zoom.us/download) and click on “Download” under “Zoom Client for Meetings.”
+– For Computers: Go to the Zoom website zoom.us/download and click on “Download” under “Zoom Client for Meetings.” [link: “zoom.us/download” → `https://zoom.us/download`]
 – For Mobile Devices: Search for “Zoom Cloud Meetings” in the App Store (iOS) or Google Play Store (Android) and install the app.
 - Creating an Account:
 – Open the Zoom application.
@@ -4530,7 +3791,7 @@ Downloading and Accessing Zoom
 – Enter the Meeting ID and password provided by the teacher.
 Downloading and Accessing Microsoft Teams
 - Download Microsoft Teams:
-– For Computers: Go to the Microsoft Teams website [ teams.microsoft.com/downloads](https://teams.microsoft.com/downloads) and click “Download for desktop.”
+– For Computers: Go to the Microsoft Teams website teams.microsoft.com/downloads and click “Download for desktop.” [link: “teams.microsoft.com/downloads” → `https://teams.microsoft.com/downloads`]
 – For Mobile Devices: Search for “Microsoft Teams” in the App Store (iOS) or Google Play Store (Android) and install the app.
 – Open the Microsoft Teams application.
 – Sign in using your Microsoft account. If you don’t have one, click “Sign Up” and follow the prompts to create an account.
@@ -4540,7 +3801,7 @@ Downloading and Accessing Microsoft Teams
 Instructions for Teachers
 Scheduling Zoom Meetings
 - Sign in to Zoom:
-– Open the Zoom application or go to [ zoom.us ]( https://zoom.us) and sign in to your account.
+– Open the Zoom application or go to [ zoom.us ]( zoom.us) and sign in to your account. [link: “zoom.us” → `https://zoom.us`]
 - Schedule a Meeting:
 – Click “Schedule a Meeting” from the main dashboard.
 – Fill in the meeting details: topic, description, date, time, duration, etc.
@@ -4551,7 +3812,7 @@ Scheduling Zoom Meetings
 – Click “Copy the Invitation” and share the meeting ID and password with the students via email or your preferred communication method.
 Scheduling Microsoft Teams Meetings
 - Sign in to Microsoft Teams:
-– Open the Microsoft Teams application or go to [ teams.microsoft.com ]( https://teams.microsoft.com) and sign in to your account.
+– Open the Microsoft Teams application or go to [ teams.microsoft.com ]( teams.microsoft.com) and sign in to your account. [link: “teams.microsoft.com” → `https://teams.microsoft.com`]
 – Click “New Meeting” at the top right corner.
 – Fill in the meeting details: title, participants, date, time, and description.
 – Adjust the meeting options as needed (e.g., require lobby, enable meeting chat).
@@ -4594,9 +3855,14 @@ Online
 - American Group USA LLC [link: “American Group USA LLC” → `agi-usa.html`]
 → **Prices** (`fees.html#services`)
 
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
+
 ---
 
-### 4.47 `parent-responsibility.html`
+### 4.48 `parent-responsibility.html`
 
 - **Browser title:** Parent responsibility – American Group International, Agadir
 - **Meta description:** AGI parent policy and responsibility: adjustment period, communication, safeguarding and fees.
@@ -4638,7 +3904,7 @@ All interactions must remain professional and occur within school-approved setti
 - Policy Agreement
 Enrollment confirms agreement to all policies in this handbook. Failure to comply may result in withdrawal from the program. This Policy can be updated to reflect new situations that arise.
 The Administration
-Text as published by AGI. Please check with the office for the current version. Source: Parent Policy and Responsibility [link: “Parent Policy and Responsibility” → `https://www.americangroup-international.com/parent-policy-and-responsibility/`]
+Text as published by AGI. Please check with the office for the current version. Source: “Parent Policy and Responsibility” (former AGI website)
 All policies
 - Academic handbook [link: “Academic handbook” → `handbook.html`]
 - Attendance [link: “Attendance” → `attendance.html`]
@@ -4651,9 +3917,14 @@ All policies
 - School supplies list [link: “School supplies list” → `supplies.html`]
 → **Ask the office a question** (`forms.html#enquiry/programs`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.48 `placement-policy.html`
+### 4.49 `placement-policy.html`
 
 - **Browser title:** Provisional placement & assessment – AGI Agadir
 - **Meta description:** AGI provisional placement and assessment policy: grade placement is not lowered for missing documents, language gaps or academic gaps.
@@ -4736,7 +4007,7 @@ Approved by:
 Julie Wilburn, Director
 American Group International
 Policy 2026
-Text as published by AGI. Please check with the office for the current version. Source: American Group International – Provisional Placement & Assessment Policy [link: “American Group International – Provisional Placement & Assessment Policy” → `https://www.americangroup-international.com/american-group-international-provisional-placement-assessment-policy/`]
+Text as published by AGI. Please check with the office for the current version. Source: “American Group International – Provisional Placement & Assessment Policy” (former AGI website)
 All policies
 - Academic handbook [link: “Academic handbook” → `handbook.html`]
 - Attendance [link: “Attendance” → `attendance.html`]
@@ -4749,9 +4020,14 @@ All policies
 - School supplies list [link: “School supplies list” → `supplies.html`]
 → **Ask the office a question** (`forms.html#enquiry/programs`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.49 `programs-independent-studies.html`
+### 4.50 `programs-independent-studies.html`
 
 - **Browser title:** Independent course studies – American Group International, Agadir
 - **Meta description:** AGI independent course studies: modules, program, prices and certificates approved by the American Canadian Board.
@@ -4761,8 +4037,6 @@ Home / Programs / Independent studies [link: “Home” → `index.html`] [link:
 Self-paced, graduate-level modules using books and journals, with certificates approved by the American Canadian Board.
 → **Ask about this program** (`forms.html#enquiry/programs`)
 → **WhatsApp us** (`https://wa.me/212688739393?text=Hello%20AGI%2C%20`)
-
-#### Section: In detail
 
 #### Section: INDEPENDENT Course STUDIES (Modules and Program)
 This is an exciting new learning format for learners to gain certified certificates as they choose one or more courses that are of interest to them as well as beneficial for their classroom or organization. AGIs self-paced Independent Course Studies offer the ultimate in convenience for busy educators.
@@ -4774,12 +4048,12 @@ Thank you for your interest.
 American Group International
 Email: americanecoleagadir@gmail.com
 We offer these courses for short time study.
-Courses by Subject
-- Business +
-o Accounting
-o Finance
-o Human Resources
-o Management
+- Courses by Subject
+- • Business +
+- o Accounting
+- o Finance
+- o Human Resources
+- o Management
 - Introduction to Entrepreneurship
 o Marketing
 - Computer Science +
@@ -4798,15 +4072,15 @@ o Early Childhood
 - Child Development 101
 o Elementary Education
 - Mathematics for Elementary Teachers
-o Higher Education
-o Secondary Education
-- Engineering +
-o Civil Engineering
-o Electrical Engineering
-o Mechanical Engineering
-- Humanities +
-o Arts
-o History
+- o Higher Education
+- o Secondary Education
+- • Engineering +
+- o Civil Engineering
+- o Electrical Engineering
+- o Mechanical Engineering
+- • Humanities +
+- o Arts
+- o History
 - History of the Middle East
 o Languages
 - Sharing Knowledge: Best Practices for Language Learners in School.
@@ -4820,19 +4094,19 @@ o Philosophy
 o Religion
 - Journalism, Media Studies & Communications +
 o New Media Journalism
-- Law +
-o Administrative Law
-o Civil Law
-o Constitutional Law
-o Contract Law
-o Criminal Law
-o Procedural Law
-o Property Law
-- Mathematics +
-o Algebra
-o Analysis
-o Applied
-o Calculus
+- • Law +
+- o Administrative Law
+- o Civil Law
+- o Constitutional Law
+- o Contract Law
+- o Criminal Law
+- o Procedural Law
+- o Property Law
+- • Mathematics +
+- o Algebra
+- o Analysis
+- o Applied
+- o Calculus
 o Geometry and Trigonometry
 o Pure
 o Statistics
@@ -4863,12 +4137,12 @@ o Sociology
 - Guide of fundmental writing
 **Book Learning/ Critical Review Grading Rubric**
 Essay. Please remember that it needs to be 12 Font. Times Roman. The essay should be about what you learned from the course. If you agree or disagree. It should be at least 1000 words, typed and double-spaced.
-A 8-10
-B 7-7.9
-C 6-6.9
-D 5-5.9
-F <5
-Summary (20%)
+- A 8-10
+- B 7-7.9
+- C 6-6.9
+- D 5-5.9
+- F <5
+- Summary (20%)
 How well does the student summarize the text?
 Clearly presents author’s thesis and describes his/ her strategies for supporting it.
 Presents author’s thesis and describes his/her strategies for supporting it.
@@ -4946,7 +4220,7 @@ Citations are included but not in the ACM format.
 Significant grammatical errors, and/or
 Contains errors that are identified by MS Word software but were not corrected.
 Citations are missing.
-Please return your completed assignment to:
+The application form is now online: apply on the forms page. [link: “apply on the forms page” → `forms.html#enrollment`]
 **American Group International School of Agadir**
 Email as a PDF file with your name and date of birth and course of study to: americanecoleagadir@gmail.com
 All courses will be processed as quickly as possible. For mailing copies please included your exact name and address with the essay submission.
@@ -4958,9 +4232,14 @@ Adults & professionals
 - Exam proctoring [link: “Exam proctoring” → `services-proctoring.html`]
 → **Prices** (`fees.html#services`)
 
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
+
 ---
 
-### 4.50 `programs-learning-pods.html`
+### 4.51 `programs-learning-pods.html`
 
 - **Browser title:** Learning pods &amp; fast track – AGI Agadir
 - **Meta description:** AGI and Anglia Morocco learning pods: small groups of ten, teacherpreneurs, fast-track high school.
@@ -5052,8 +4331,6 @@ Academic tutors and executive functioning coaches.
 Available throughout Morocco.
 
 #### Section: AGI and Anglia Morocco Services
-**In-Home Tutoring**
-**Math Tutoring Services**
 **Exam Services**
 Our private-pay and doorstep language services, as well as math tutoring for all ages and skill levels, are individualized and adapted based on your child’s and peers’ needs
 **For more information or to start your learning pod, please contact us at:**
@@ -5074,7 +4351,6 @@ Join us if you are a freelanced teacher, a group of parents. The possibilities a
 
 #### Section: Discover Anglia Learning Pods in Morocco: Unlock Your Child’s Potential!
 **Why Choose Anglia Learning Pods?**
-At Anglia Learning Pods, we believe in providing a dynamic and enriching educational experience that goes beyond the traditional classroom. Our innovative learning pods are designed to inspire curiosity, foster creativity, and cultivate a love for learning in a nurturing environment.
 Key Features:
 – Personalized Learning: Tailored programs to meet your child’s unique needs and learning style.
 – Experienced Educators: Qualified and passionate teachers dedicated to your child’s success.
@@ -5092,7 +4368,6 @@ Programs Offered:
 Enroll Today!
 Give your child the gift of a world-class education with Anglia Learning Pods. Limited spots are available, so don’t miss out!
 Visit Us: www.angliamorocco.org
-Headquarters: Number 20 Rue Baalabek, Cite Nahda, Agadir, Morocco
 Anglia Morocco Learning Pods – Empowering Young Minds for a Brighter Future in English!
 Adults & professionals
 - Adult high school diploma [link: “Adult high school diploma” → `adult-diploma.html`]
@@ -5102,9 +4377,14 @@ Adults & professionals
 - Exam proctoring [link: “Exam proctoring” → `services-proctoring.html`]
 → **Prices** (`fees.html#services`)
 
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
+
 ---
 
-### 4.51 `promotion-retention.html`
+### 4.52 `promotion-retention.html`
 
 - **Browser title:** Promotion & retention – American Group International, Agadir
 - **Meta description:** AGI promotion and retention policy: 64% in core subjects, 90% attendance, English assessment and summer remediation.
@@ -5123,18 +4403,7 @@ Promotion and Retention Procedures Policy Promotion from one grade to another no
 - Students who have not met the above promotion requirements will not be promoted into the next grade. Students who have not met the attendance requirement due to excused illness or injury will be promoted supplied their grades are adequate.
 - Students who have been kept may attend summer remediation to see if the grade-level aims can be met. Once they have successfully completed this remediation, they will need to be retested at AGI to figure out if they can pass the course of study. The student will need to successfully pass the test given at the school to be placed into the next grade level. The school has final determination on promotion and retention of students.
 - These procedures are non-negotiable.
-عادة ما يتم الترويج لسياسة إجراءات الترقية والاستبقاء من صف إلى آخر في نهاية العام الدراسي. يُسمح للطلاب بالانتقال إلى الصف التالي من خلال استكمال معايير مستوى الصف التي حددها المنهج. سيتم استخدام المعايير التالية لتحديد وضع الطالب في الصف التالي أو الاحتفاظ به في الصف الحالي: الترقية • فهم الطالب لمنهج مستوى الصف الحالي في جميع المواد التالية:
-- الرياضيات والعلوم وفنون اللغة والدراسات الاجتماعية.
-- يجب أن يجتاز الطلاب كل مادة أساسية بدرجة لا تقل عن 64٪ (D) أو أعلى ليتم اعتبارهم “ناجحين”.
-- سجل حضور الطالب (90٪ من أيام التسجيل) • مستوى نضج الطالب مثبت على مدار العام.
-- إتمام اختبار تقييم اللغة الإنجليزية للمستويات المضمونة. حفظ
-- عدم قدرة الطالب على الحصول على 64٪ أو أكثر في مجالين أو أكثر من المجالات المذكورة أعلاه.
-- ضعف الحضور • عدم النضج. و،
-- إجماع المدرس والمدير.
-- الطلاب الذين لم يستوفوا متطلبات الترقية أعلاه لن يتم ترقيتهم إلى الصف التالي. سيتم ترقية الطلاب الذين لم يستوفوا متطلبات الحضور بسبب مرض أو إصابة معذور بشرط أن تكون درجاتهم كافية.
-- يمكن للطلاب الذين تم الاحتفاظ بهم حضور العلاج الصيفي لمعرفة ما إذا كان يمكن تحقيق أهداف مستوى الصف الدراسي. بمجرد إكمالهم لهذا العلاج بنجاح ، سيحتاجون إلى إعادة اختبارهم في AGI لمعرفة ما إذا كان بإمكانهم اجتياز دورة الدراسة. سيحتاج الطالب إلى اجتياز الاختبار الذي تم إجراؤه في المدرسة بنجاح ليتم وضعه في مستوى الصف التالي. لدى المدرسة قرار نهائي بشأن ترقية الطلاب والاحتفاظ بهم.
-- هذه الإجراءات غير قابلة للتفاوض.
-Text as published by AGI. Please check with the office for the current version. Source: Promotion and Retention Procedures Policy [link: “Promotion and Retention Procedures Policy” → `https://www.americangroup-international.com/promotion-and-retention-procedures-policy/`]
+Text as published by AGI. Please check with the office for the current version. Source: “Promotion and Retention Procedures Policy” (former AGI website)
 All policies
 - Academic handbook [link: “Academic handbook” → `handbook.html`]
 - Attendance [link: “Attendance” → `attendance.html`]
@@ -5147,9 +4416,14 @@ All policies
 - School supplies list [link: “School supplies list” → `supplies.html`]
 → **Ask the office a question** (`forms.html#enquiry/programs`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.52 `refunds-complaints.html`
+### 4.53 `refunds-complaints.html`
 
 - **Browser title:** Refunds & complaints – American Group International, Agadir
 - **Meta description:** AGI policies and procedures for refunds and complaints across all divisions.
@@ -5216,7 +4490,7 @@ These services are intended to support:
 - AGI and its divisions are not responsible for outcomes resulting from decisions made based on counseling advice.
 - School-based counseling services do not replace professional medical or mental health care.
 Regards,AGI
-Text as published by AGI. Please check with the office for the current version. Source: Policies & Procedures American Group International & Divisions, Refunds and Complaints [link: “Policies & Procedures American Group International & Divisions, Refunds and Complaints” → `https://www.americangroup-international.com/policies-procedures-american-group-international-divisions-refunds-and-complaints/`]
+Text as published by AGI. Please check with the office for the current version. Source: “Policies & Procedures American Group International & Divisions, Refunds and Complaints” (former AGI website)
 All policies
 - Academic handbook [link: “Academic handbook” → `handbook.html`]
 - Attendance [link: “Attendance” → `attendance.html`]
@@ -5229,9 +4503,14 @@ All policies
 - School supplies list [link: “School supplies list” → `supplies.html`]
 → **Ask the office a question** (`forms.html#enquiry/programs`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.53 `resources-mcguffey.html`
+### 4.54 `resources-mcguffey.html`
 
 - **Browser title:** McGuffey readers &amp; sight words – AGI Agadir
 - **Meta description:** McGuffey readers and sight words: classic reading and spelling practice for children (public domain).
@@ -5242,11 +4521,9 @@ Classic McGuffey reading lessons and sight words for reading and spelling practi
 → **Request a tutor** (`forms.html#tutor-request`)
 → **WhatsApp us** (`https://wa.me/212688739393?text=Hello%20AGI%2C%20`)
 
-#### Section: 
-
 #### Section: McGuffey’s Online Tutor/Sight Words Helps for Reading/Spelling
 This is a reading site for McGuffey’s Reading program. They have all online reproducible worksheets and Youtube videos to go with all lessons. If you need a reading book from McGuffey’s let the school know by email. Files for the books are listed at the bottom for free.
-https://mcguffeysonlinetutor.blogspot.com/2015/10/0-12-object-lesson-xii-fox-mcguffeys.html?m=0
+mcguffeysonlinetutor.blogspot.com [link: “mcguffeysonlinetutor.blogspot.com” → `https://mcguffeysonlinetutor.blogspot.com/2015/10/0-12-object-lesson-xii-fox-mcguffeys.html?m=0`]
 Dolch Words and Sight Word Charts
 Full Spelling Curriculum!
 
@@ -5295,129 +4572,129 @@ All the vowels, and some of the consonants, have several sounds; in this book th
 
 #### Section: Table Of Vocals.
 Long Sounds.
-Sound
-as is
-as in
-a
-ate
-e
-eve
-care
-err
-arm
-i
-ice
-last
-o
-ode
-all
-u
-use
-oo
-fool
+- Sound
+- as is
+- as in
+- a
+- ate
+- e
+- eve
+- care
+- err
+- arm
+- i
+- ice
+- last
+- o
+- ode
+- all
+- u
+- use
+- oo
+- fool
 Short Sounds.
-am
-odd
-elm
-up
-in
-look
+- am
+- odd
+- elm
+- up
+- in
+- look
 Diphthongs.
 oi,oy,as in oil, boy ou,ow, as in out, owl
 
-#### Section: Table Of Subvocals
-b
-bib
-v
-valve
-d
-did
-th
-this
-g
-gig
-z
-zinc
-j
-jug
-zh
-azure
-n
-nine
-r
-rare
-m
-maim
-w
-we
-ng
-hang
-y
-yet
-l
-lull
+#### Section: - Table Of Subvocals
+- b
+- bib
+- v
+- valve
+- d
+- did
+- th
+- this
+- g
+- gig
+- z
+- zinc
+- j
+- jug
+- zh
+- azure
+- n
+- nine
+- r
+- rare
+- m
+- maim
+- w
+- we
+- ng
+- hang
+- y
+- yet
+- l
+- lull
 
-#### Section: Table Of Aspirates
-f
-fife
-t
-tart
-h
-him
-sh
-she
-k
-cake
-ch
-chat
-p
-pipe
-thick
-s
-same
-wh
-why
+#### Section: - Table Of Aspirates
+- f
+- fife
+- t
+- tart
+- h
+- him
+- sh
+- she
+- k
+- cake
+- ch
+- chat
+- p
+- pipe
+- thick
+- s
+- same
+- wh
+- why
 
-#### Section: Spelling Book. 5
+#### Section: - Spelling Book. 5
 NOTE.–The foregoing forty-four sounds are those most employed in the English language. Some of these sounds are represented by other letters, as shown in the following table. For further instruction concerning the sounds, see Lessons 36-57.
 
 #### Section: Table Of Substitutes.
-for
-what
-myth
-there
-c
-can
-feint
-cite
-police
-chaise
-sir
-chaos
-son
-gem
-to
-ink
-wolf
-as
-fork
-sure
-work
-x
-gz
-exact
-full
-gh
-laugh
-burn
-ph
-phlox
-rude
-qu
-pique*
-fly
-kw
-quit
+- for
+- what
+- myth
+- there
+- c
+- can
+- feint
+- cite
+- police
+- chaise
+- sir
+- chaos
+- son
+- gem
+- to
+- ink
+- wolf
+- as
+- fork
+- sure
+- work
+- x
+- gz
+- exact
+- full
+- gh
+- laugh
+- burn
+- ph
+- phlox
+- rude
+- qu
+- pique*
+- fly
+- kw
+- quit
 W, in its vowel sounds, corresponds with u; an in new ( pro. nu).
 A has, in a few words, the sound of e; as in any ( pro. en’ny).
 U has, in a few words, the sound of e; as in bury ( pro. ber’ry); or that of i, as in busy ( pro. biz’y).
@@ -5468,17 +4745,17 @@ Q
 #### Section: 10 Eclectic Series.
 
 #### Section: Pictorial Alphabet.
-A B
-C D
-E F
-G H
+- A B
+- C D
+- E F
+- G H
 
-#### Section: Spelling Book. 11
-I J
-K L
-M N
-O P
-Q R
+#### Section: - Spelling Book. 11
+- I J
+- K L
+- M N
+- O P
+- Q R
 
 #### Section: 12 Eclectic Series.
 S T
@@ -7605,15 +6882,15 @@ pro duce’ u’ni corn sym’pa thy sup press’
 pro vide’ u’ni val ve syn tac’tic sug gest’
 Lesson 168.
 Compound Words promiscuously arranged.
-ale’-house lime’-kiln hedge’hog
-hail’stone boat’man pen’knife
-lay’man four’score grist’-mill
-safe’guard load’stone mid’night
-waist’coat oat’meal pitch’fork
-bee’-hive pole’-star ship’wreck
-key’-stone snow’-drop wrist’band
-knee’-pan sports’man block’head
-bride’groom jew’s’-harp cross’-bow
+- ale’-house lime’-kiln hedge’hog
+- hail’stone boat’man pen’knife
+- lay’man four’score grist’-mill
+- safe’guard load’stone mid’night
+- waist’coat oat’meal pitch’fork
+- bee’-hive pole’-star ship’wreck
+- key’-stone snow’-drop wrist’band
+- knee’-pan sports’man block’head
+- bride’groom jew’s’-harp cross’-bow
 light’-house luke’warm off ‘spring
 SPELLING-BOOK. 103
 Lesson 169.
@@ -8671,9 +7948,14 @@ Resources
 - Nursery rhymes for Pre-K [link: “Nursery rhymes for Pre-K” → `resources-nursery-rhymes.html`]
 - Anglia practice papers [link: “Anglia practice papers” → `anglia-practice.html`]
 
+#### Section: Come and see the school.
+Tours are arranged individually, Monday to Friday.
+→ **Book a visit** (`forms.html#visit`)
+→ **For parents** (`parents.html`)
+
 ---
 
-### 4.54 `resources-nursery-rhymes.html`
+### 4.55 `resources-nursery-rhymes.html`
 
 - **Browser title:** Nursery rhymes for Pre-K – American Group International, Agadir
 - **Meta description:** Traditional English nursery rhymes for pre-kindergarten children – read and sing at home.
@@ -8683,8 +7965,6 @@ Home / Student life / Nursery rhymes for Pre-K [link: “Home” → `index.html
 Traditional English rhymes to read and sing with young children.
 → **Request a tutor** (`forms.html#tutor-request`)
 → **WhatsApp us** (`https://wa.me/212688739393?text=Hello%20AGI%2C%20`)
-
-#### Section: 
 
 #### Section: Nursery Rhymes for Pre-K
 
@@ -9090,12 +8370,12 @@ And on that farm, he had a cow. E-I-E-I-O!
 With a “moo, moo” here, and a “moo, moo” there,
 Here a “moo,” there a “moo,”
 Everywhere a “moo, moo!”
-Pig…oink
-Goose…honk
-Dog…woof
-Cat…meow
-Sheep…baa
-Hen…cluck
+- Pig…oink
+- Goose…honk
+- Dog…woof
+- Cat…meow
+- Sheep…baa
+- Hen…cluck
 Horse…neigh.
 Baa Baa Black Sheep
 Baa, baa, black sheep, have you any wool?
@@ -9147,9 +8427,14 @@ Resources
 - McGuffey readers & sight words [link: “McGuffey readers & sight words” → `resources-mcguffey.html`]
 - Anglia practice papers [link: “Anglia practice papers” → `anglia-practice.html`]
 
+#### Section: Come and see the school.
+Tours are arranged individually, Monday to Friday.
+→ **Book a visit** (`forms.html#visit`)
+→ **For parents** (`parents.html`)
+
 ---
 
-### 4.55 `resources.html`
+### 4.56 `resources.html`
 
 - **Browser title:** Resources for families – American Group International, Agadir
 - **Meta description:** Free English resources from AGI: grammar self-helps, nursery rhymes, McGuffey readers and sight words, math resources.
@@ -9163,8 +8448,6 @@ Free English learning helps for home: grammar self-helps, reading, rhymes and ma
 #### Section: Resources
 - Link card → `resources-nursery-rhymes.html`: Nursery rhymes for Pre-K
 - Link card → `resources-mcguffey.html`: McGuffey readers & sight words
-
-#### Section: 
 
 #### Section: English Self Helps
 English Tenses
@@ -9306,9 +8589,14 @@ Resources
 - McGuffey readers & sight words [link: “McGuffey readers & sight words” → `resources-mcguffey.html`]
 - Anglia practice papers [link: “Anglia practice papers” → `anglia-practice.html`]
 
+#### Section: Come and see the school.
+Tours are arranged individually, Monday to Friday.
+→ **Book a visit** (`forms.html#visit`)
+→ **For parents** (`parents.html`)
+
 ---
 
-### 4.56 `services-document-editing.html`
+### 4.57 `services-document-editing.html`
 
 - **Browser title:** Document editing in English – AGI Agadir
 - **Meta description:** Document editing in English by AGI in Agadir: applications, CVs, reports and academic work, edited by native-level teachers.
@@ -9330,9 +8618,14 @@ Adults & professionals
 - Exam proctoring [link: “Exam proctoring” → `services-proctoring.html`]
 → **Prices** (`fees.html#services`)
 
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
+
 ---
 
-### 4.57 `services-proctoring.html`
+### 4.58 `services-proctoring.html`
 
 - **Browser title:** Exam proctoring – American Group International, Agadir
 - **Meta description:** Exam proctoring at AGI in Agadir for distance learners: which exams, fees per exam hour, opening days and conditions.
@@ -9372,9 +8665,14 @@ Adults & professionals
 - Document editing [link: “Document editing” → `services-document-editing.html`]
 → **Prices** (`fees.html#services`)
 
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
+
 ---
 
-### 4.58 `supplies.html`
+### 4.59 `supplies.html`
 
 - **Browser title:** School supplies list – American Group International, Agadir
 - **Meta description:** AGI school supplies list for elementary (K3–8) and high school (grades 9–12).
@@ -9405,7 +8703,7 @@ Tissues or toilet paper
 High School Supplies Grade 9-12th
 3- white-out
 3- packs pencils
-Text as published by AGI. Please check with the office for the current version. Source: AGI Academic School Supplies List [link: “AGI Academic School Supplies List” → `https://www.americangroup-international.com/agi-academic-school-supplies-list/`]
+Text as published by AGI. Please check with the office for the current version. Source: “AGI Academic School Supplies List” (former AGI website)
 All policies
 - Academic handbook [link: “Academic handbook” → `handbook.html`]
 - Attendance [link: “Attendance” → `attendance.html`]
@@ -9418,9 +8716,14 @@ All policies
 - Volunteer hours [link: “Volunteer hours” → `volunteer-hours.html`]
 → **Ask the office a question** (`forms.html#enquiry/programs`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.59 `teachers-careers.html`
+### 4.60 `teachers-careers.html`
 
 - **Browser title:** Teach with AGI – American Group International, Agadir
 - **Meta description:** Teach with AGI: online teachers database, learning pods and STEM educators workshops.
@@ -9442,11 +8745,11 @@ Delivery Online/In Person
 Professor Taiwo
 5 years’ Experience
 BA-MA degrees.
-Public Speaking
-Humanities
-International Business
-English Literature
-Creative Writing
+- Public Speaking
+- Humanities
+- International Business
+- English Literature
+- Creative Writing
 Secondary Education.
 ESL/EFL Classes
 
@@ -9469,17 +8772,20 @@ Insight into Anglia STEM teachers’ certifications
 CLIL/EMI demo lesson
 Special thanks to Mrs. Sanaa EL FIlALI (Faculté des sciences Ben M’Sik) for her continued trust and partnership.
 Morocco’s future STEM teachers are ready to lead — and English Castle Center – Bouskoura and AGI are proud to support them every step of the way.
-
-#### Section: EnglishCommunity #EnglishTeacher #englishlanguage #STEMEducation #stemforkids
 Teachers
 - For teachers [link: “For teachers” → `teachers.html`]
 - C.I.T.E. / TESOL certification [link: “C.I.T.E. / TESOL certification” → `teachers-cite.html`]
 - USA private-school sponsorship [link: “USA private-school sponsorship” → `teachers-usa-sponsorship.html`]
 → **Prices** (`fees.html#services`)
 
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
+
 ---
 
-### 4.60 `teachers-cite.html`
+### 4.61 `teachers-cite.html`
 
 - **Browser title:** C.I.T.E. / TESOL certification – AGI Agadir
 - **Meta description:** Anglia C.I.T.E. (TESOL) certification in Morocco: who it is for, English level needed, preparation, when and how to take it.
@@ -9490,8 +8796,6 @@ Anglia's Certificate for International Teachers of English: recognition of your 
 → **Ask about this program** (`forms.html#enquiry/programs`)
 → **WhatsApp us** (`https://wa.me/212688739393?text=Hello%20AGI%2C%20`)
 → **Register on angliamorocco.org** (`https://angliamorocco.org/citem/`)
-
-#### Section: In detail
 
 #### Section: Elevate Your Teaching Career
 
@@ -9549,7 +8853,6 @@ Support and Training: Anglia Morocco offers extensive preparatory support, inclu
 Professional Development: The certification process and associated resources help enhance your teaching skills and knowledge.
 **Flexible Examination Options**
 Convenient Testing: Choose to take the C.I.T.E. test in paper format at Anglia partnerships in Morocco, at the headquarters in Agadir, or online through the Anglia Examinations UK Portal.
-**Accreditation and Recognition**
 **Accreditation**
 The C.I.T.E. (Certificate for International Teachers of English) is accredited by Anglia Examinations England, a recognized body in the UK that ensures the highest standards of quality and rigor in English language teaching certifications.
 **Recognition**
@@ -9613,99 +8916,34 @@ The C.I.T.E. tests recognize that teaching young learners and teaching higher-le
 To a certain extent, you must make your own judgment on this by looking at the overview of the test, test specifications and sample papers. Although your representative may be able to indicate where you can find a suitable local course or study group, there is no set course either in English or in teaching which leads to the C.I.T.E. test.
 However, below is a list of books that would help you to prepare for the test and which, if you do not know them already, we recommend you read for your own professional development as an English teacher.
 If you are interested in taking a C.I.T.E. test then go to the Anglia Worldwide section. There you can find details of your local representative who will tell you how to register and give you the time and place of the next test session most local to you. If you don’t know who your local representative is, do not have one, or would like to find out more information about CITE contact Anglia Examinations via the online inquiry form, click here.
-س. هي شهادة امتحانات أنجليا لمعلمي اللغة الإنجليزية الدوليين. توفر هذه الاختبارات شهادة المعلم لمعلمي اللغة الإنجليزية ، الذين قد يكون لديهم أو لا يمتلكون أي مؤهلات تدريس أخرى للغة الإنجليزية ، وتمنحهم فرصة للحصول على اعتراف بمهاراتهم ومعرفتهم وخبراتهم في تدريس اللغة الإنجليزية. لدينا C.I.T.E. تعمل الاختبارات على نفس المبدأ مثل أي اختبار آخر للغة الإنجليزية لأغراض خاصة. في هذه الحالة ، الغرض الخاص هو تدريس اللغة الإنجليزية. تم تعيين الاختبارات وفقًا للإطار الأوروبي المرجعي الموحد للغات (CEFR) وتوفر شهادة C.I.T.E الخاصة بنا دليلًا على القدرة على تدريس اللغة الإنجليزية. من هو C.I.T.E. ل؟
-لا توجد مؤهلات دخول لـ C.I.T.E. اختبار. على الرغم من أنه قد يكون لديك مؤهلات سابقة في اللغة الإنجليزية ، إلا أنه لا توجد متطلبات إلزامية. The C.I.T.E. لا يعد الاختبار في حد ذاته مؤهلاً تدريسيًا ، ولكنه اعتراف بكفاءتك في مهارات اللغة الإنجليزية ذات الصلة اللازمة للتدريس. لذلك ، يمكن أن يأخذها المعلمون الذين يقومون حاليًا بتدريس اللغة الإنجليزية ، أو الطلاب الذين يخططون واكتسبوا المعرفة بلغة الفصل الدراسي وممارستها من خلال الدراسة ، على حد سواء. على سبيل المثال ، يمكن أن يأخذها مدرسو الرياضيات في المدرسة الثانوية الذين يجدون أنفسهم في جدول زمني مع درسين من اللغة الإنجليزية في الأسبوع ، أو من قبل معلمي المدارس الابتدائية الذين تم اختيارهم لتدريس اللغة الإنجليزية بموجب مبادرة حكومية ، أو معلمي اللغة الإنجليزية الذين تركز مؤهلاتهم الأصلية في أدب القرن التاسع عشر والذين يرغبون في التركيز على تحديث مهاراتهم العملية في اللغة الصفية.
-The C.I.T.E. تدرك الاختبارات أن تعليم المتعلمين الصغار وتعليم المتعلمين ذوي المستويات الأعلى والأكبر سنا قد يتطلب مستويات لغوية مختلفة ونظرية وممارسة. لهذا السبب ، يتم تقديم ثلاث نسخ من الاختبار للمرشحين:
 س.
-س. (المتعلمين الصغار)
-س. (المتعلمين الصغار جدا).
-يجب أن تساعد الإشارة إلى ورقة عينة المرشح أو ممثله في تحديد المستوى الأنسب. معلمو المدارس الابتدائية غير ملزمين بأخذ أي من نسخ المتعلم الصغير ، ولكن الفرصة متاحة.
-ما هو مستوى اللغة الإنجليزية الذي تحتاجه؟
-أنت بحاجة إلى مستوى اللغة الإنجليزية المطلوب لتكون مدرسًا مختصًا. إذا كنت تعتقد أن لديك هذا ، فمن المحتمل أنك في المستوى المناسب لـ C.I.T.E. اختبار.
-من أجل C.I.T.E. من المحتمل أن يكون مستواك في اللغة الإنجليزية C1 في CEFR. من أجل C.I.T.E. (YL) يجب أن يكون مستواك في اللغة الإنجليزية على الأقل B2 في CEFR. من أجل C.I.T.E. (VYL) يجب أن يكون مستواك في اللغة الإنجليزية على الأقل A2 في CEFR.
-ليس من السهل ربط المستوى المطلوب بأي اختبار عام للغة الإنجليزية. ومع ذلك ، فإن اللغة الإنجليزية المطلوبة في C.I.T.E. ترتبط الاختبارات بمعرفة المصطلحات والوظائف النحوية في اللغة الإنجليزية المضمنة في منهج المجموعة الرئيسية ، جنبًا إلى جنب مع لغة الفصل باللغة الإنجليزية.
-ما هي التحضير اللازم للامتحان؟
-إلى حد ما ، يجب عليك إصدار حكمك الخاص على هذا من خلال النظر في نظرة عامة على الاختبار ومواصفات الاختبار وأوراق العينة. على الرغم من أن ممثلك قد يكون قادرًا على تحديد المكان الذي يمكنك العثور فيه على دورة تدريبية محلية أو مجموعة دراسة مناسبة ، إلا أنه لا توجد دورة تدريبية محددة سواء
-
-#### Section: باللغة الإنجليزية أو في التدريس والتي تؤدي إلى Ci.T.E. اختبار.
-إلى حد ما ، يجب عليك إصدار حكمك الخاص على هذا من خلال النظر في نظرة عامة على الاختبار ومواصفات الاختبار وأوراق العينة. على الرغم من أن ممثلك قد يكون قادرًا على تحديد المكان الذي يمكنك العثور فيه على دورة تدريبية محلية أو مجموعة دراسة مناسبة ، إلا أنه لا توجد دورة تدريبية محددة سواء باللغة الإنجليزية أو في التدريس والتي تؤدي إلى CI.T.E. اختبار.
-ومع ذلك ، فيما يلي قائمة بالكتب التي من شأنها أن تساعدك على التحضير للاختبار والتي ، إذا كنت لا تعرفها بالفعل ، نوصيك بقراءتها من أجل تطويرك المهني كمدرس للغة الإنجليزية.
-براون ، إتش دوغلاس. 2000. مبادئ تعلم اللغة وتدريسها. برنتيس هول ريجنتس.
-براون ، دوجلاس هـ. 2001. التدريس بالمبادئ: نهج تفاعلي لعلم أصول التدريس اللغوي. برنتيس هول ريجنتس.
-هارمر ، جيريمي. 1983. ممارسة تدريس اللغة الإنجليزية. هارلو: لونجمان.
-هيوينجز ، مارتن. 2005. قواعد نحوية متقدمة في الاستخدام. كامبريدج: مطبعة جامعة كامبريدج.
-يوانو جورجيو ، صوفي ، بافلوس بافلو. 2003. تقييم المتعلمين الصغار. أكسفورد: جامعة أكسفورد.
-سلاتري ، ماري وجين ويليس. 2001. اللغة الإنجليزية لمعلمي المرحلة الابتدائية. أكسفورد: مطبعة جامعة أكسفورد.
-فال ، د. وأ. فيونتون. 1995. تعليم الأطفال اللغة الإنجليزية. كامبريدج: مطبعة جامعة كامبريدج.
-
-#### Section: متى وكيف يمكنك أداء اختبار C.I.T.E؟
-إذا كنت مهتمًا بالحصول على شهادة C.I.T.E. قم بإجراء الاختبار ثم انتقل إلى قسم Anglia Worldwide. هناك يمكنك العثور على تفاصيل عن ممثلك المحلي الذي سيخبرك بكيفية التسجيل ، ويعطيك وقت ومكان جلسة الاختبار التالية الأكثر محلية بالنسبة لك. إذا كنت لا تعرف من هو ممثلك المحلي ، أو ليس لديك ممثل ، أو ترغب في معرفة المزيد من المعلومات حول CITE ، فاتصل بـ Anglia Examinations عبر نموذج الاستفسار عبر الإنترنت ، انقر هنا.
 
 #### Section: C.I.T.E - Certificate for International Teachers of English (TESOL)
-Enhance your teaching skills and gain recognition for your proficiency with the prestigious C.I.T.E. certification offered by Anglia Examinations England. This lifelong qualification demonstrates your mastery of English and your ability to teach the language effectively. Register now to elevate your teaching career!
 
 #### Section: What is C.I.T.E?
-C.I.T.E. (Certificate for International Teachers of English) is a prestigious TESOL qualification offered by Anglia Examinations England. This certification demonstrates your mastery of English and your ability to teach the language effectively. It’s a lifelong qualification with no expiration date, recognized worldwide.
 **Who is C.I.T.E. for?**
-The C.I.T.E. test recognizes your competence in English language skills necessary for teaching. It is suitable for:
 **Current English Teachers**
-Validate and enhance your English teaching skills.
 **Aspiring Teachers**
-Start your teaching career with a recognized certification.
 **High School Teachers**
 Add English teaching to your skill set.
 **Primary School Teachers**
-Meet new curriculum requirements with confidence.
 **How to Register**
-- Determine Your English Level: Visit www.angliaonline.com or schedule an appointment with an authorized Anglia partner.
 - Register Online: [Register Here]
-- Payment and Confirmation: After registration, you will be contacted via email to arrange payment for the examination.
 **Prepare for Success**
-Anglia Morocco offers the necessary training and resources to help you succeed. Recommended books include:
-- Brown, H. Douglas. Principles of Language Learning and Teaching. Prentice Hall Regents, 2000.
-- Brown, Douglas H. Teaching by Principles: An Interactive Approach to Language Pedagogy. Prentice Hall Regents, 2001.
-- Harmer, Jeremy. The Practice of English Language Teaching. Longman, 1983.
-- Hewings, Martin. Advanced Grammar in Use. Cambridge University Press, 2005.
-- Ioannou-Georgiou, Sophie, and Pavlos Pavlou. Assessing Young Learners. Oxford University Press, 2003.
-- Slattery, Mary, and Jane Willis. English for Primary Teachers. Oxford University Press, 2001.
-- Vale, D., and A. Feunteun. Teaching Children English. Cambridge University Press, 1995.
 **Examination Process**
-- Format: Paper format at Anglia partnerships in Morocco or online via the Anglia Examinations UK Portal.
 - Duration: The C.I.T.E test lasts 3 hours.
-- Guidance: Candidates will receive login details and a guide prior to the exam session.
 **Results and Certificates**
-- Results: 5-6 weeks after tests are received at the control centre in Chichester, England.
-- Certificates: Up to 8 weeks after completion of testing.
-- Results will be sent electronically to the email provided during the application.
 
 #### Section: Why Choose Anglia C.I.T.E.?
 **No Entry Requirements**
-Inclusive Approach: The C.I.T.E. certification is accessible to all, regardless of prior qualifications, making it ideal for both current and aspiring English teachers.
-Flexible Levels: Candidates can choose the level that best suits their needs, from C.I.T.E. Master to versions tailored for young and very young learners.
 **Lifelong Qualification**
-Permanent Certification: Once earned, the C.I.T.E. certification is valid for life, providing lasting value without the need for renewal.
 **Recognition and Accreditation**
-Internationally Recognized: The C.I.T.E. certification is respected worldwide, ensuring your qualifications are valued by educational institutions and employers globally.
-Accredited Standards: Anglia Examinations England ensures that the C.I.T.E. certification meets high standards of quality and rigor.
 **Practical Focus**
-Teaching Competence: The C.I.T.E. certification demonstrates your proficiency in essential English language skills needed for effective teaching.
-Diverse Application: Suitable for a wide range of teaching contexts, from primary schools to high schools, and for teachers with varied backgrounds.
 **Comprehensive Preparation**
-Support and Training: Anglia Morocco offers extensive preparatory support, including practice exams and recommended reading materials.
-Professional Development: The certification process and associated resources help enhance your teaching skills and knowledge.
 **Flexible Examination Options**
-Convenient Testing: Choose to take the C.I.T.E. test in paper format at Anglia partnerships in Morocco, at the headquarters in Agadir, or online through the Anglia Examinations UK Portal.
-**Accreditation and Recognition**
 **Accreditation**
-The C.I.T.E. (Certificate for International Teachers of English) is accredited by Anglia Examinations England, a recognized body in the UK that ensures the highest standards of quality and rigor in English language teaching certifications.
 **Recognition**
-- International Recognition: The C.I.T.E. certification is globally recognized and accepted by educational institutions, language schools, and employers worldwide.
-- Career Advancement: With a C.I.T.E. certification, you enhance your career prospects in the field of English language teaching, gaining recognition for your proficiency and teaching skills.
-- Professional Development: The certification opens doors for further professional development opportunities, making you a more competitive candidate in the job market.
-For more information on accreditation and recognition, visit the Anglia Examinations England official website.
 **Contact Us**
-Have questions or need more information? Reach out to us at:
-Number 20, Rue Baalabek, Hay Nahda Agadir, Morocco 80000
 Ready to elevate your teaching career?
 Get Certified Now
 Teachers
@@ -9714,9 +8952,14 @@ Teachers
 - Teach with AGI [link: “Teach with AGI” → `teachers-careers.html`]
 → **Prices** (`fees.html#services`)
 
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
+
 ---
 
-### 4.61 `teachers-usa-sponsorship.html`
+### 4.62 `teachers-usa-sponsorship.html`
 
 - **Browser title:** USA private-school teacher sponsorship – AGI Agadir
 - **Meta description:** USA private-school teacher certification sponsorship through AGI: requirements, process, 30 days, US$60.
@@ -9826,9 +9069,14 @@ Teachers
 - Teach with AGI [link: “Teach with AGI” → `teachers-careers.html`]
 → **Prices** (`fees.html#services`)
 
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
+
 ---
 
-### 4.62 `volunteer-hours.html`
+### 4.63 `volunteer-hours.html`
 
 - **Browser title:** Volunteer hours – American Group International, Agadir
 - **Meta description:** AGI in-service volunteer hours for high school: 40 hours, ten per year.
@@ -9878,7 +9126,7 @@ Benefits of Volunteering
 - College Applications: Enhance college applications and resumes with documented
 community service.
 - Personal Growth: Build self-esteem, compassion, and a sense of responsibility.
-Text as published by AGI. Please check with the office for the current version. Source: In-Service Volunteer Hours for High School [link: “In-Service Volunteer Hours for High School” → `https://www.americangroup-international.com/in-service-volunteer-hours-for-high-school/`]
+Text as published by AGI. Please check with the office for the current version. Source: “In-Service Volunteer Hours for High School” (former AGI website)
 All policies
 - Academic handbook [link: “Academic handbook” → `handbook.html`]
 - Attendance [link: “Attendance” → `attendance.html`]
@@ -9891,9 +9139,14 @@ All policies
 - School supplies list [link: “School supplies list” → `supplies.html`]
 → **Ask the office a question** (`forms.html#enquiry/programs`)
 
+#### Section: Questions about joining AGI?
+Visit the school, or ask the office – we reply within one working day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Ask a question** (`forms.html#enquiry`)
+
 ---
 
-### 4.63 `wellbeing-adhd-coaching.html`
+### 4.64 `wellbeing-adhd-coaching.html`
 
 - **Browser title:** ADHD holistic coaching – American Group International, Agadir
 - **Meta description:** ADHD holistic coaching with Julie Wilburn, accredited Holistic Therapeutic Coach (IPHM, ICAHP), in Agadir and online.
@@ -9942,9 +9195,14 @@ Wellbeing (i-Heart)
 - Holistic play therapy [link: “Holistic play therapy” → `wellbeing-play-therapy.html`]
 → **Prices** (`fees.html#services`)
 
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
+
 ---
 
-### 4.64 `wellbeing-play-therapy.html`
+### 4.65 `wellbeing-play-therapy.html`
 
 - **Browser title:** Holistic play therapy – American Group International, Agadir
 - **Meta description:** Holistic play therapy at AGI school, Agadir: approach, benefits and sessions.
@@ -9954,8 +9212,6 @@ Home / Programs / Play therapy [link: “Home” → `index.html`] [link: “Pro
 Therapeutic play that supports the emotional, behavioral, social and cognitive development of children.
 → **Ask about this program** (`forms.html#enquiry/programs`)
 → **WhatsApp us** (`https://wa.me/212688739393?text=Hello%20AGI%2C%20`)
-
-#### Section: In detail
 
 #### Section: Holistic Play Therapy Practitioner Services at Our School
 
@@ -9980,9 +9236,14 @@ Wellbeing (i-Heart)
 - ADHD holistic coaching [link: “ADHD holistic coaching” → `wellbeing-adhd-coaching.html`]
 → **Prices** (`fees.html#services`)
 
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
+
 ---
 
-### 4.65 `wellbeing.html`
+### 4.66 `wellbeing.html`
 
 - **Browser title:** i-Heart therapeutic services – AGI Agadir
 - **Meta description:** i-Heart holistic therapeutic services and counseling at AGI: ADHD coaching and holistic play therapy.
@@ -10003,6 +9264,11 @@ Wellbeing (i-Heart)
 - ADHD holistic coaching [link: “ADHD holistic coaching” → `wellbeing-adhd-coaching.html`]
 - Holistic play therapy [link: “Holistic play therapy” → `wellbeing-play-therapy.html`]
 → **Prices** (`fees.html#services`)
+
+#### Section: Is this the right program?
+Tell us what you are looking for and we will help you choose.
+→ **Ask about this program** (`forms.html#enquiry/programs`)
+→ **All programs** (`programs.html`)
 
 ---
 

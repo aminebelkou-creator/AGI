@@ -453,9 +453,9 @@ def full(dest, skip=(), heading="In detail"):
     body = "".join(render(p["text"], skip=skip, privacy=True) for p in srcs_for(dest) if p["text"])
     return (f"<h2>{heading}</h2>" if heading and not body.lstrip().startswith("<h") else "") + body
 
-LEVELS = [("First Step", "Pre-A1", "Entry level from about age 4: understands about 100 words, follows basic classroom instructions, says who they are."),
- ("Junior", "Pre-A1", "Understands around 200 words, uses useful structures and explains what they are doing."),
- ("Primary", "A1-", "About 400 words (jobs, feelings, weather); forms questions, answers them and describes things."),
+LEVELS = [("First Step", "YL", "Entry level from about age 4: understands about 100 words, follows basic classroom instructions, says who they are."),
+ ("Junior", "YL", "Understands around 200 words, uses useful structures and explains what they are doing."),
+ ("Primary", "YL", "About 400 words (jobs, feelings, weather); forms questions, answers them and describes things."),
  ("Preliminary", "A1", "First general level for young and adult learners."), ("Elementary", "A2", "Everyday situations and simple texts."),
  ("Pre-Intermediate", "A2+", "Wider everyday communication."), ("Intermediate", "B1", "Independent use in familiar contexts."),
  ("Advanced", "B2", "Complex texts and fluent interaction."), ("Proficiency", "C1", "Effective operational proficiency."),
@@ -831,6 +831,175 @@ page("partnerships.html", "Partnerships & franchise – American Group Internati
 <aside><p class="kicker">Anglia Morocco</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="anglia.html">Anglia Morocco</a></li><li><a href="anglia-network.html">Network &amp; centres</a></li><li><a href="investors.html">Partners &amp; investors</a></li></ul></aside></div></section>
 """ + cta("Start the conversation.", "Franchise and partnership enquiries are handled from the Agadir headquarters. Tell us the region, the model and your teaching or business background.", '<a class="btn btn-gold" href="forms.html#enquiry/partnership">Partnership enquiry</a><a class="btn btn-light" href="contact.html">Contact</a>'), DOC_CSS)
 
+
+# ================================================================== ANGLIA REDESIGN (hub, exams ladder, exam dates, classes, become a centre)
+ANGLIA_CSS = DOC_CSS + FAQ_CSS + """
+.paths{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.paths a{background:#fff;padding:26px 22px;display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--ink);transition:background .2s}
+.paths a:hover{background:var(--paper)}.paths .who{font:600 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.paths h3{font-family:var(--serif);font-weight:400;font-size:24px;color:var(--navy);margin:0}.paths p{margin:0;font-size:14.5px;color:var(--text);line-height:1.6}.paths .more{margin-top:auto;font-weight:600;font-size:13px;color:var(--navy)}
+.recog{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.recog div{border-top:2px solid var(--gold);padding-top:14px}.recog b{display:block;font-family:var(--serif);font-weight:400;font-size:21px;color:#fff;margin-bottom:6px}.recog span{font-size:13.5px;color:rgba(255,255,255,.75);line-height:1.55}
+.next-session{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;border:1px solid var(--line);background:#fff;padding:24px 28px}
+.next-session .when{font-family:var(--serif);font-size:34px;color:var(--red);line-height:1}.next-session p{margin:4px 0 0;color:var(--text)}
+.ladder{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ladder li{display:grid;grid-template-columns:56px 150px 74px 1fr;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);padding:16px 20px}
+.ladder .step{font-family:var(--serif);font-size:30px;color:var(--gold);line-height:1}.ladder .name{font-weight:600;color:var(--navy)}
+.ladder .cefr{font:600 12px/1 var(--sans);letter-spacing:.06em;text-align:center;padding:7px 0;border:1px solid var(--navy);color:var(--navy)}
+.ladder .grp{display:block;grid-column:1/-1;font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--red);background:none;border:0;padding:16px 0 2px}
+.ladder li p{margin:0;font-size:14.5px;color:var(--text)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}.chips button{font:600 13px/1 var(--sans);padding:9px 14px;border:1px solid var(--line);background:#fff;color:var(--navy);cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+tr.past{opacity:.45}
+.offers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.offer{background:#fff;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:10px}.offer.feat{border:2px solid var(--navy)}
+.offer .price{font-family:var(--serif);font-size:34px;color:var(--navy);line-height:1}.offer .per{font-size:13px;color:var(--grey)}.offer ul{margin:0;padding-left:18px;font-size:14px;color:var(--text)}.offer .btn{margin-top:auto}
+.regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.region{background:#fff;border:1px solid var(--line);padding:20px}.region h3{font-size:19px;margin:6px 0 8px;color:var(--navy)}
+.status{display:inline-block;font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:6px 9px}
+.status.open{background:#e8f4ea;color:#1d6b33}.status.hq{background:var(--navy);color:#fff}.status.net{background:var(--paper);color:var(--grey)}
+.region details summary{cursor:pointer;font-size:13.5px;color:var(--navy);font-weight:600}.region ul{margin:8px 0 0;padding-left:18px;font-size:13.5px;color:var(--text)}
+@media (max-width:1000px){.paths,.offers{grid-template-columns:repeat(2,minmax(0,1fr))}.recog{grid-template-columns:repeat(2,minmax(0,1fr))}.regions{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.paths,.offers,.regions{grid-template-columns:minmax(0,1fr)}.ladder li{grid-template-columns:44px 1fr 64px}.ladder li p{grid-column:1/-1}.next-session{grid-template-columns:minmax(0,1fr)}}
+"""
+_MN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+def exam_rows(text):
+    rows, month, levels = [], None, []
+    for l in text.split("\n"):
+        t = l.strip().replace("▶", "").replace("\u25b6", "").strip()
+        if not t or "EXAM DATES" in t or t.startswith(("Anglia Exam Dates", "Book order")): continue
+        if t in _MN: month, levels = t, []; continue
+        if t.startswith("#"): levels.append(t.lstrip("# ").strip()); continue
+        if _re.search(r"(Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day", t) and month: rows.append((month, ", ".join(levels) or "All levels", t)); levels = []
+    return rows
+_EX = exam_rows(SRC("anglia-exam-dates")["text"])
+import datetime as _dt
+_now = _dt.date.today()
+_next = next(((m, lv, d) for m, lv, d in _EX if _MN.index(m) + 1 >= _now.month), _EX[0] if _EX else ("", "", ""))
+
+# ---------- 1. HUB
+_paths = [("Parents &amp; students", "Certify your child's English", "Ten steps from a child's first words (about age 4) to Masters C2 – each one a certificate from England.", "anglia-exams.html"),
+          ("Adults &amp; professionals", "English for work and study", "General English up to Masters, or Business English from A2+ to C1, with classes that fit a working week.", "anglia-classes.html"),
+          ("Teachers", "C.I.T.E. certification", "A lifelong TESOL qualification recognized worldwide – no entry qualifications required.", "teachers-cite.html"),
+          ("Schools &amp; partners", "Become an Anglia centre", "Run Anglia exams in your school or region, with training and materials from the Agadir headquarters.", "anglia-network.html")]
+page("anglia.html", "Anglia Morocco – official English exams from England | AGI Agadir",
+ "Anglia Morocco headquarters at AGI, Agadir: official English exams from England, First Step to Masters C2, from age 4. Exam dates, classes, free level test, centres in 12 regions.",
+ hero("<span>Anglia Morocco</span>", "Official English certificates from England.",
+      "Anglia Examinations has tested English since 1993 from Chichester, England. Since 2021 AGI has been the Anglia franchise holder for Morocco – exams from a child's first words to Masters (C2), classes, and centres across the Kingdom's twelve regions.",
+      '<a class="btn btn-primary" href="forms.html#enquiry/anglia">Book a free level test</a><a class="btn btn-ghost" href="anglia-exam-dates.html">Exam dates 2026</a>')
+ + f'''<section class="section bg-white"><div class="wrap">
+  <div class="section-head"><h2>Where do you start?</h2></div>
+  <div class="paths">{"".join(f'<a href="{h}"><span class="who">{w}</span><h3>{t}</h3><p>{d}</p><span class="more">Continue →</span></a>' for w, t, d, h in _paths)}</div>
+</div></section>
+<section class="section bg-navy"><div class="wrap">
+  <div class="section-head"><h2>Why Anglia</h2></div>
+  <div class="recog">
+    <div><b>England, since 1993</b><span>Part of Chichester College Group – award winning and Ofsted Outstanding.</span></div>
+    <div><b>Regulated by Ofqual</b><span>The four highest levels are awarded by AIM Qualifications and Assessment Group.</span></div>
+    <div><b>UCAS tariff points</b><span>The Mastery (C2) qualification counts for UK university entry.</span></div>
+    <div><b>For life</b><span>Certificates do not expire – an institution may ask for a recent one.</span></div>
+    <div><b>From age 4</b><span>No upper age limit; every level tests listening, reading, writing and speaking.</span></div>
+  </div>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="next-session"><div class="when">{_next[0]}</div><div><b>Next exam session{(": " + _next[1]) if _next[1] else ""}</b><p>{_next[2]} – sessions run in most months; other dates are possible on request.</p></div><a class="btn btn-primary" href="anglia-exam-dates.html">All 2026 dates</a></div>
+</div></section>
+<section class="section bg-white"><div class="wrap">
+  <div class="section-head"><h2>Everything about Anglia in Morocco</h2></div>
+  <div class="cards">{"".join(f'<a class="card" href="{h}"><h3>{t}</h3><span class="more">Open</span></a>' for h, t in [("anglia-exams.html", "Exams &amp; levels"), ("anglia-exam-dates.html", "Exam dates 2026"), ("anglia-classes.html", "Classes &amp; prices"), ("anglia-practice.html", "Practice papers &amp; audio"), ("anglia-books.html", "Step To books"), ("anglia-special-arrangements.html", "Special arrangements"), ("anglia-cefr.html", "CEFR levels"), ("anglia-faq.html", "Anglia FAQ"), ("anglia-about.html", "About Anglia Examinations")])}</div>
+</div></section>
+<section class="section"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Anglia Morocco in its own words</h2>{FULLTEXT(render(_home["text"], privacy=True), "The Anglia Morocco welcome text")}
+<h2>Club Anglia</h2><p>{PH_TXT("club-anglia", "Coming soon.")}</p></div>
+<aside><p class="kicker">Contacts</p><p class="muted" style="font-size:14px">Julie Wilburn · <a href="mailto:j.wilburn@angliamorocco.org">j.wilburn@angliamorocco.org</a><br>Abdelhak Lam · <a href="mailto:a.lam@angliamorocco.org">a.lam@angliamorocco.org</a><br><a href="https://angliamorocco.org/" target="_blank" rel="noopener">angliamorocco.org</a></p></aside></div></section>
+''' + cta("Find your English level.", "The placement assessment is free and takes place at AGI in Agadir.", '<a class="btn btn-gold" href="forms.html#enquiry/anglia">Book a free level test</a><a class="btn btn-light" href="anglia-classes.html">Classes &amp; prices</a>'), ANGLIA_CSS)
+
+# ---------- 2. EXAMS & LEVELS: the ladder
+_grp = {"First Step": "Young learners", "Preliminary": "General English", "Advanced": "Higher levels"}
+_lad = "".join((f'<li class="grp">{_grp[n]}</li>' if n in _grp else "") + f'<li><span class="step">{i}</span><span class="name">{n}</span><span class="cefr">{c}</span><p>{d}</p></li>' for i, (n, c, d) in enumerate(LEVELS, 1))
+_bz2 = "".join(f'<li><span class="step">B{i}</span><span class="name">{n}</span><span class="cefr">{c}</span><p>Practical business functions in realistic workplace situations – all four skills.</p></li>' for i, (n, c) in enumerate(BUSINESS, 1))
+page("anglia-exams.html", "Anglia exams & levels – Anglia Morocco | AGI Agadir",
+ "The Anglia ladder: ten General English levels from First Step to Masters C2, four Business English levels A2+ to C1, exam durations and certificates for life.",
+ hero('<a href="anglia.html">Anglia Morocco</a> / <span>Exams &amp; levels</span>', "Ten steps to Masters.",
+      "Anglia's General English exams take learners from a first vocabulary of about 100 words to expert use of English (Masters, C2). Every level tests listening, reading, writing and speaking.",
+      '<a class="btn btn-primary" href="forms.html#enquiry/anglia">Find my level</a><a class="btn btn-ghost" href="anglia-exam-dates.html">Exam dates</a>')
+ + f'''<section class="section bg-white" id="ladder"><div class="wrap split"><div class="intro"><h2>The General English ladder</h2><p>The three young-learner levels (YL) lead up to A1. Young-learner levels are also open to adults – anyone can start at the step that fits. <a class="link" href="anglia-cefr.html">What the CEFR levels mean</a></p></div>
+  <ol class="ladder">{_lad}</ol></div></section>
+<section class="section" id="business"><div class="wrap split"><div class="intro"><h2>Business English</h2><p>Four steps for candidates whose special interest is business, from A2+ to C1. <a class="link" href="professional.html">Business English classes</a></p></div><ol class="ladder">{_bz2}</ol></div></section>
+<section class="section bg-white" id="format"><div class="wrap split"><div class="intro"><h2>How long are the exams?</h2></div>
+  <dl class="rows"><div><dt>Reading &amp; writing</dt><dd>1 hour minimum, 3 hours maximum, depending on the level</dd></div><div><dt>Listening</dt><dd>10–30 minutes</dd></div><div><dt>Speaking</dt><dd>About 5–20 minutes</dd></div><div><dt>Certificate</dt><dd>Valid for life; an institution may ask for a recent one</dd></div><div><dt>Online exams</dt><dd>Anglia exams can also be taken online in Morocco – ask the office</dd></div></dl></div></section>
+<section class="section"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">In detail</h2>{FULLTEXT(full("anglia-exams.html", heading=""), "The exam descriptions in full")}</div>
+<aside><p class="kicker">Next</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="anglia-practice.html">Practice papers</a></li><li><a href="anglia-special-arrangements.html">Special arrangements</a></li><li><a href="anglia-classes.html">Classes &amp; prices</a></li></ul></aside></div></section>
+''' + cta("Not sure which level?", "Take the free placement assessment – we will recommend the right step.", '<a class="btn btn-gold" href="forms.html#enquiry/anglia">Book a free level test</a><a class="btn btn-light" href="anglia-practice.html">Try a practice paper</a>'), ANGLIA_CSS)
+
+# ---------- 3. EXAM DATES (new page, filterable)
+_er = "".join(f'<tr data-m="{_MN.index(m) + 1}"><td><b>{m}</b></td><td>{_html.escape(lv)}</td><td>{_html.escape(d)}</td></tr>' for m, lv, d in _EX)
+page("anglia-exam-dates.html", "Anglia exam dates 2026 – Anglia Morocco | AGI Agadir",
+ "Anglia exam sessions in Morocco in 2026, month by month and by level, and how to register at Anglia Morocco headquarters in Agadir.",
+ hero('<a href="anglia.html">Anglia Morocco</a> / <span>Exam dates 2026</span>', "Anglia exam dates 2026.",
+      "Sessions run in most months of the year. If you need an exam on a date that is not listed, contact the Anglia office.",
+      '<a class="btn btn-primary" href="forms.html#enquiry/anglia">Register for an exam</a><a class="btn btn-ghost" href="anglia-exams.html">Which level?</a>')
+ + f'''<section class="section bg-white"><div class="wrap">
+  <div class="chips" role="group" aria-label="Show"><button type="button" data-f="up" aria-pressed="true">Upcoming</button><button type="button" data-f="all" aria-pressed="false">All of 2026</button></div>
+  <div class="table-wrap"><table id="exam-dates"><thead><tr><th>Month</th><th>Levels / session</th><th>Exam days</th></tr></thead><tbody>{_er}</tbody></table></div>
+  <p class="muted" style="font-size:13px;margin-top:14px">Young-learner levels (First Step, Junior, Primary) often have their own days. Special arrangements must be requested when you register. <a href="anglia-special-arrangements.html">Special arrangements</a></p>
+</div></section>
+<script>(function(){{var m=new Date().getMonth()+1,rows=[].slice.call(document.querySelectorAll("#exam-dates tbody tr"));
+function show(f){{rows.forEach(function(r){{var past=+r.dataset.m<m;r.classList.toggle("past",past&&f==="all");r.hidden=past&&f==="up"}});
+document.querySelectorAll(".chips button").forEach(function(b){{b.setAttribute("aria-pressed",b.dataset.f===f)}})}}
+document.querySelectorAll(".chips button").forEach(function(b){{b.addEventListener("click",function(){{show(b.dataset.f)}})}});show("up")}})();</script>
+''' + cta("Ready to register?", "Tell us the candidate's level and preferred session – the office will confirm.", '<a class="btn btn-gold" href="forms.html#enquiry/anglia">Register for an exam</a><a class="btn btn-light" href="anglia-practice.html">Practice papers</a>'), ANGLIA_CSS)
+
+# ---------- 4. CLASSES & PRICES: comparison
+_offers = [("Saturday classes", "500 MAD", "a month", ["Ages 5–18", "Saturdays 2:00–4:00 p.m., October–June", "Yearly Anglia exam included", "BAC, TOEFL, IELTS, SAT and Mathematics-in-English preparation"], True),
+           ("One-to-one", "200 MAD", "a session", ["English or mathematics", "Full access to the teacher", "Times that fit a working week", "Ideal for job-related English"], False),
+           ("Small group", "150 MAD", "per person, per session", ["2–3 students", "Friends, siblings or colleagues", "Same level, shared goals"], False),
+           ("12-week course", "1,200 MAD", "100 MAD a week", ["4–10 students", "A structured course over 12 weeks", "Progress measured on the CEFR"], False)]
+page("anglia-classes.html", "English classes & prices – Anglia Morocco | AGI Agadir",
+ "English classes at Anglia Morocco, Agadir: Saturday classes 500 MAD a month, one-to-one 200 MAD, small groups 150 MAD, 12-week course 1,200 MAD. Free level test.",
+ hero('<a href="anglia.html">Anglia Morocco</a> / <span>Classes &amp; prices</span>', "English classes, at every age.",
+      "Start with a free level test, then choose the format that suits you – from Saturday classes for children and teens to one-to-one lessons for professionals.",
+      '<a class="btn btn-primary" href="forms.html#enquiry/anglia">Book a free level test</a>' + WA)
+ + '<section class="section bg-white"><div class="wrap"><div class="offers">' + "".join(
+    f'<div class="offer{" feat" if feat else ""}"><span class="tag">{n}</span><span class="price">{pr}</span><span class="per">{per}</span><ul>{"".join(f"<li>{x}</li>" for x in pts)}</ul><a class="btn {"btn-primary" if feat else "btn-ghost"}" href="forms.html#enquiry/anglia">Ask about this class</a></div>'
+    for n, pr, per, pts, feat in _offers) + '''</div>
+  <p class="muted" style="font-size:13px;margin-top:16px">Level test free · groups of up to 10 · prices effective November 2024 · books and insurance not included. <a href="calendar.html#saturday">Saturday schedule</a> · <a href="english-anglia.html#math-english">Mathematics in English</a></p>
+</div></section>''' + f'''<section class="section"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">About our classes</h2>{FULLTEXT(full("anglia-classes.html", heading=""), "Our English classes in full")}</div>
+<aside><p class="kicker">Anglia Morocco</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="anglia-exams.html">Exams &amp; levels</a></li><li><a href="anglia-exam-dates.html">Exam dates</a></li><li><a href="fees.html#english">All prices</a></li></ul></aside></div></section>
+''' + cta("Find the right class.", "A free level test first – then we recommend the format and the level.", '<a class="btn btn-gold" href="forms.html#enquiry/anglia">Book a free level test</a><a class="btn btn-light" href="contact.html">Contact</a>'), ANGLIA_CSS)
+
+# ---------- 5. BECOME A CENTRE: regions with status
+_nt = SRC("angliamorocco-networks-and-centers-12-regions")["text"]; _regs, _cur = [], None
+for _l in _nt.split("\n"):
+    _l = _l.strip()
+    _m = _re.match(r"#+\s*(.+?Region)\s*-\s*(\d+)", _l)
+    if _m: _cur = [_m.group(1).strip(), int(_m.group(2)), []]; _regs.append(_cur); continue
+    if _cur and _l.startswith("-") and not any(k in _l for k in _POL): _cur[2].append(_l.lstrip("- ").strip())
+    if _l.startswith("#") and not _m and _cur and "Region" not in _l: _cur = None
+def _status(name, provs):
+    if "Souss" in name: return ("hq", "Headquarters · Agadir")
+    return ("open", "Representative wanted") if any("Representative Available" in x for x in provs) else ("net", "Anglia network")
+_rc = "".join(f'''<div class="region"><span class="status {_status(n, pv)[0]}">{_status(n, pv)[1]}</span><h3>{_html.escape(n)}</h3>
+<details><summary>{len(pv)} prefectures &amp; provinces</summary><ul>{"".join(f"<li>{_html.escape(x.replace(' – Representative Available', '').replace('- Representative Available', '').replace('-Representative Available', '').strip(' -–'))}{' <b>· representative wanted</b>' if 'Representative Available' in x else ''}</li>" for x in pv)}</ul></details></div>''' for n, num, pv in sorted(_regs, key=lambda r: r[1]))
+page("anglia-network.html", "Become an Anglia centre – Anglia Morocco | AGI Agadir",
+ "Anglia Morocco network across Morocco's 12 regions: open representative positions, franchise and institutional partnership models, how to become an Anglia centre.",
+ hero('<a href="anglia.html">Anglia Morocco</a> / <span>Become a centre</span>', "Become an Anglia centre.",
+      "From its Agadir headquarters, Anglia Morocco works with schools, language centres and teachers across the Kingdom's twelve regions. Several regions are looking for a local representative.",
+      '<a class="btn btn-primary" href="forms.html#enquiry/partnership">Partnership enquiry</a><a class="btn btn-ghost" href="partnerships.html">Partnership models</a>')
+ + f'''<section class="section bg-white"><div class="wrap">
+  <div class="section-head"><h2>The 12 regions</h2><p>Main headquarters: AGI, Agadir · Sales coordinator: Abdelhak Lam.</p></div>
+  <div class="regions">{_rc}</div>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Two ways to work with us</h2></div>
+  <div class="cards" style="--cols:2">
+    <div><span class="tag">Model I</span><h3>Anglia centre (franchise)</h3><p>An Anglia Morocco centre under your ownership: the examinations license, placement and testing system, teacher training and C.I.T.E., and a territory agreement within the 12 regions.</p></div>
+    <div><span class="tag">Model II</span><h3>Institutional partnership</h3><p>For existing schools and institutes: an Anglia testing centre inside your campus, co-designed English programs and university pathway agreements.</p></div>
+  </div>
+  <p style="margin-top:18px"><a class="link" href="partnerships.html">Partnerships in detail</a></p>
+</div></section>
+''' + cta("Represent Anglia in your region.", "Tell us your region, the model and your teaching or business background.", '<a class="btn btn-gold" href="forms.html#enquiry/partnership">Partnership enquiry</a><a class="btn btn-light" href="contact.html">Contact</a>'), ANGLIA_CSS)
+for _n, _t in [("anglia-exam-dates.html", "Exam dates 2026")]:
+    if (_n, _t) not in ANGLIA_NAV: ANGLIA_NAV.insert(2, (_n, _t))
 # ================================================================== CONTENT QUALITY PASS (English pages)
 for _n in list(PAGES):
     if not _n.startswith(("fr/", "ar/")): PAGES[_n] = split_languages(PAGES[_n], _n)
