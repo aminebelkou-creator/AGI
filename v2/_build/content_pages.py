@@ -186,7 +186,7 @@ POLICY_LINKS = [("handbook.html", "Academic handbook"), ("attendance.html", "Att
 def policy_page(name, title, lede, parts, desc):
     body = "".join(render(SRC(p)["text"], toc=(i == 0), privacy=True) for i, p in enumerate(parts))
     others = "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in POLICY_LINKS if h != name)
-    srcs = ", ".join(f'<a href="{SRC(p)["url"]}" rel="nofollow">{_html.escape(SRC(p)["title"])}</a>' for p in parts)
+    srcs = ", ".join(f'“{_html.escape(SRC(p)["title"])}” (former AGI website)' for p in parts)
     page(name, f"{title} – American Group International, Agadir", desc,
          hero(f'<a href="admissions.html">Admissions</a> / <a href="policies.html">Policies</a> / <span>{title}</span>', title, lede)
          + f'''<section class="section bg-white"><div class="wrap split">
@@ -492,6 +492,12 @@ for h, t in _re.findall(r'<a[^>]+href="(https?://[^"]+\.(?:zip|pdf))"[^>]*>(.*?)
     t = _re.sub(r"<[^>]+>|\s+", " ", t).strip()
     if not t or t.lower() in ("download", "click here", "here"): t = _re.sub(r"[-_]+", " ", _re.sub(r"\.(zip|pdf)$|-[a-z]{2}\d+$", "", h.rsplit("/", 1)[-1], flags=_re.I)).strip().title()
     if t and (h, t) not in _links: _links.append((h, t))
+import csv as _csv2
+_dead = set()
+_xp = os.path.join(os.path.dirname(V2), "docs", "external-links.csv")
+if os.path.exists(_xp): _dead = {r["url"] for r in _csv2.DictReader(open(_xp, encoding="utf-8-sig")) if r["status"] == "BROKEN"}
+_missing_levels = sorted({next((L for L, _, _ in LEVELS if L.lower().replace(" ", "-") in h.lower()), "Other") for h, t in _links if h in _dead})
+_links = [(h, t) for h, t in _links if h not in _dead]
 _groups = {}
 for h, t in _links:
     lv = next((L for L, _, _ in LEVELS if L.lower().replace(" ", "-") in h.lower() or L.lower() in t.lower()), "Other")
@@ -501,7 +507,7 @@ _audio = "".join(f'<li><a href="{h}" rel="noopener">{lab}</a></li>' for h, lab i
     ("https://www.anglia.nl/uploads/1/2/0/0/120044573/audiofiles_step_to_fs_-_pre-intermediate__1_.zip", "Step To audio files: First Step to Pre-Intermediate"),
     ("https://www.anglia.nl/uploads/1/2/0/0/120044573/audoifiles_step_to_intermediate_-_masters__1_.zip", "Step To audio files: Intermediate to Masters")])
 anglia_page("anglia-practice.html", "Practice papers &amp; audio", "Free sample papers for every level, published by Anglia Examinations, plus the audio files for the Step To books.",
- render(SRC("practice-resources")["text"], stop="Pick Your Level") + f"<h2>Practice packs by level</h2>{_pk or '<p>Download links are on angliamorocco.org.</p>'}<h2>Audio files</h2><ul>{_audio}</ul>"
+ render(SRC("practice-resources")["text"], stop="Pick Your Level") + f"<h2>Practice packs by level</h2>{_pk or '<p>Download links are on angliamorocco.org.</p>'}" + (f'<p class="note">Practice packs for {", ".join(_missing_levels)} are not available online at the moment. <a href="forms.html#enquiry/anglia">Ask Anglia Morocco</a> for a copy.</p>' if _missing_levels else "") + f"<h2>Audio files</h2><ul>{_audio}</ul>"
  + full("anglia-practice.html", skip=("Pack", "First Step", "Junior", "Primary", "Preliminary", "Elementary", "Intermediate", "Advanced", "CLICK TO DOWNLOAD")),
  "Free Anglia practice papers for every level (First Step to Advanced, Business English) and Step To audio files.")
 

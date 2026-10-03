@@ -168,6 +168,21 @@ for _f in os.listdir(os.path.join(V2, "journal")):
     if _t != _o: open(_p, "w", encoding="utf-8", newline="").write(_t)
 print(f"privacy: photos hidden in {_h} posts · archive banner on {_a} posts")
 
+import csv
+# ---------------- OLD-SITE LINKS: files moved here, home links, dead images, Facebook hashtag links ----------------
+_OLDMAP = json.load(open(os.path.join(V2, "_build", "old-site-files.json"), encoding="utf-8")) if os.path.exists(os.path.join(V2, "_build", "old-site-files.json")) else {}
+_XP = os.path.join(os.path.dirname(V2), "docs", "external-links.csv")
+_DEAD = {r["url"] for r in csv.DictReader(open(_XP, encoding="utf-8-sig")) if r["status"] == "BROKEN"} if os.path.exists(_XP) else set()
+_fx = 0
+for _f in [x for x in os.listdir(os.path.join(V2, "journal")) if x.endswith(".html") and not x.startswith("_")]:
+    _p = os.path.join(V2, "journal", _f); _t = open(_p, encoding="utf-8").read(); _o = _t
+    for _u, _loc in _OLDMAP.items(): _t = _t.replace(_u, "../" + _loc).replace(_u.replace("http://", "https://"), "../" + _loc)
+    _t = re.sub(r'href="https?://www\.americangroup-international\.com/?"', 'href="../index.html"', _t)
+    _t = re.sub(r'<a[^>]+href="https://www\.facebook\.com/hashtag/[^"]*"[^>]*>.*?</a>', "", _t, flags=re.S)
+    _t = re.sub(r'<img\b[^>]*src="([^"]+)"[^>]*>', lambda m: "" if m.group(1).replace("&amp;", "&") in _DEAD else m.group(0), _t)
+    if _t != _o: open(_p, "w", encoding="utf-8", newline="").write(_t); _fx += 1
+print(f"old-site links fixed in {_fx} posts ({len(_OLDMAP)} files now hosted here)")
+
 # ---------------- JOURNAL LIST + CCGI ARTICLE (shared design, generated from the articles themselves) ----------------
 def _root_page(main_html, title, desc):
     doc = TPL.replace("<title>{{TITLE}} – AGI Journal</title>", f"<title>{html.escape(title)}</title>").replace("{{DESC}}", html.escape(desc))

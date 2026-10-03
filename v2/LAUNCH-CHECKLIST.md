@@ -144,3 +144,8 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] Review docs/privacy-review.csv: 32 journal posts have photos hidden until written parental consent for every child shown; approve by adding the page to "approved" in v2/_build/privacy.json
 - [ ] Check the 14 "possible names" in docs/privacy-review.csv (no child's name may appear without consent)
 - [ ] Old journal posts now show an "Archived post" banner (older than 12 months) – OK, or hide some posts entirely?
+
+## 16. Media and external links — Tech
+- [ ] 3 videos (64 MB) were copied from the old site into v2/assets/journal/files/ (not in git): upload them to the CMS media library or YouTube when migrating
+- [ ] Anglia First Step practice packs no longer exist on angliaexams.com – ask Anglia for current links
+- [ ] Run python _build/ext_linkcheck.py before launch (all 98 external links OK on Oct 3, 2026)

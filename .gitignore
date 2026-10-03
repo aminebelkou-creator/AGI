@@ -15,3 +15,5 @@ data/crawl/agi/
 data/crawl/anglia/
 data/crawl/*.log
 data/review/shots/
+v2/assets/journal/files/*.mp4
+v2/assets/journal/files/*.wmv
