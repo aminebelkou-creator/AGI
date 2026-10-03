@@ -9351,6 +9351,34 @@ All forms live on one page (`forms.html`) with a list of forms and one form show
 
 - **Submit button:** Send payment notice
 
+#### Form: Order Step To books (`forms.html#books`)
+- **Duration shown:** Takes about 3 minutes
+- **Introduction:** Order Anglia Step To workbooks and teachers' guides for any level, for yourself, your child, your class or your centre.
+- **Have ready:** The levels you need; How many copies of each; Where the books should go
+- **What happens next:** The office confirms availability, the price and the delivery or collection date, then sends you payment details.
+
+**Books**
+
+| Field | Type | Required | Hint / options |
+|---|---|---|---|
+| Step To books | multiple choice | at least one | Options: First Step, Junior, Primary, Preliminary, Elementary, Pre-Intermediate, Intermediate (B1), Advanced (B2), Proficiency (C1), Masters (C2) |
+| Teachers' guides for the same levels | single choice | yes | Options: Yes, No |
+| Quantities | textarea | yes | For example: 12 ├ù Primary, 8 ├ù Elementary, 1 teachers' guide each |
+| I am ordering as | single choice | yes | Options: Parent or student, Teacher, School or Anglia centre |
+| School or centre name | text | no | If you order for a school or centre |
+| Delivery | single choice | yes | Options: Collect at AGI, Agadir, Delivery to my address |
+| Delivery address | textarea | no | Only if you chose delivery |
+
+**Your details**
+
+| Field | Type | Required | Hint / options |
+|---|---|---|---|
+| Full name | text | yes |  |
+| Email | email | yes |  |
+| Phone or WhatsApp | tel | yes | Include the country code, for example +212 |
+
+- **Submit button:** Send order
+
 #### Form: Request a tutor (`forms.html#tutor-request`)
 - **Duration shown:** Takes about 2 minutes
 - **Introduction:** Ask for one-to-one tutoring in English, mathematics or another subject, in Agadir or online.
@@ -9428,7 +9456,7 @@ All forms live on one page (`forms.html`) with a list of forms and one form show
 
 | Field | Type | Required | Hint / options |
 |---|---|---|---|
-| Document | select | yes | Options: Academic transcript, Enrollment certificate, Attendance attestation, Diploma copy, Apostille-legalised copy, Other |
+| Document | select | yes | Options: Academic transcript, Enrollment certificate, Attendance attestation, Attestation for AGI clients, Diploma copy, Apostille-legalised copy, Other |
 | Number of copies | number | yes |  |
 | Language | select | yes | Options: English, French, Arabic |
 | Purpose | text | no | For example: university application, visa, transfer |
