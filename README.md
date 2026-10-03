@@ -299,6 +299,7 @@ The site is plain files – any web host works; `.htaccess` assumes **Apache** (
 | `agent-prompt.md` | **Ready-to-paste prompt** for an AI agent or developer to rebuild the site from `website-content-spec.md` (full and short versions, follow-up prompts for French, Arabic, forms backend) |
 | `rebuild-plan-v3.md` | **Complete content plan for v3**: both sites crawled (AGI 148 + angliamorocco.org 36), merged structure, page-by-page sources, calendar, thin content, events, 41 sourced FAQs, claims register, phased build with coverage gates |
 | `content-inventory.csv` | One row per source page of both sites: category, words, thin, coverage, missing facts |
+| `AI-ASSISTANT-BRIEF.md` | **Instructions for Julie's AI assistant** (verification before launch + CMS migration): rules, every open question, where answers go, checks, what must survive the move to Sitewright. Regenerate with `python v2/_build/assistant_brief.py` |
 | `marketing-strategy.md` | Positioning, audiences, channels, core package, calendar to registration (Aug 2027), assets, metrics, rules |
 | `founder-film-script.md` | 90 s founder film (+30 s/15 s), EN/FR/AR subtitles, interview questions, shot list, production checklist |
 | `parent-stories-guide.md` | Three parent stories, interview guide, editing rules, tracking, consent form templates (EN/FR; AR to translate; legal review needed) |
