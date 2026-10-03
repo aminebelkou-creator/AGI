@@ -296,6 +296,7 @@ The site is plain files – any web host works; `.htaccess` assumes **Apache** (
 |---|---|
 | `website-content-spec.md` | **Design-neutral specification of the whole website** (structure, requirements, content rules, key facts, every page's sections and copy, all form fields, journal list) – give it to an agent or developer to rebuild the site. Regenerate with `python v2/_build/export_spec.py`; intro in `_spec-intro.md` |
 | `growth-plan.md` | **Proposed growth plan** for the website: 16 additions in three phases (before launch, first months, growth) with effort, dependencies, roadmap, success measures and decisions needed from Julie |
+| `rebuild-prompt-neutral.md` | **Technology- and design-neutral rebuild prompt** with a description of every section of every page (69 pages), forms, behaviors and rules. Regenerate with `python v2/_build/export_prompt_neutral.py` |
 | `agent-prompt.md` | **Ready-to-paste prompt** for an AI agent or developer to rebuild the site from `website-content-spec.md` (full and short versions, follow-up prompts for French, Arabic, forms backend) |
 | `rebuild-plan-v3.md` | **Complete content plan for v3**: both sites crawled (AGI 148 + angliamorocco.org 36), merged structure, page-by-page sources, calendar, thin content, events, 41 sourced FAQs, claims register, phased build with coverage gates |
 | `content-inventory.csv` | One row per source page of both sites: category, words, thin, coverage, missing facts |

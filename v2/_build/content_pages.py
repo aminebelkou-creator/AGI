@@ -1025,8 +1025,8 @@ main.anglia-theme .bg-navy,main.anglia-theme .cta-band{background:#03379F}
 # ---------- Business English: real per-level descriptions from the source
 _ex_src = SRC("angliamorocco.org/exams/")["text"]
 _bdesc = [p.strip() for p in _re.findall(r"(At this level, candidates are expected[^\n]+)", _ex_src)]
-if len(_bdesc) >= 4:
-    _bz3 = "".join(f'<li><span class="step">B{i}</span><span class="name">{n}</span><span class="cefr">{c}</span><p>{_html.escape(_bdesc[i - 1])}</p></li>' for i, (n, c) in enumerate(BUSINESS, 1))
+if _bdesc:
+    _bz3 = "".join(f'<li><span class="step">B{i}</span><span class="name">{n}</span><span class="cefr">{c}</span><p>{_html.escape(_bdesc[i - 1]) if i <= len(_bdesc) else "Practical business functions in realistic workplace situations, at the level of the corresponding General English exam – all four skills."}</p></li>' for i, (n, c) in enumerate(BUSINESS, 1))
     PAGES["anglia-exams.html"] = _re.sub(r'(<section class="section" id="business">.*?<ol class="ladder">).*?(</ol>)', lambda m: m.group(1) + _bz3 + m.group(2), PAGES["anglia-exams.html"], count=1, flags=_re.S)
 
 # ---------- PRACTICE PAPERS (angliamorocco.org/practice-resources style): 5 categories, a card per level
