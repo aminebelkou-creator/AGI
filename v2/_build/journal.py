@@ -173,6 +173,8 @@ import csv
 _OLDMAP = json.load(open(os.path.join(V2, "_build", "old-site-files.json"), encoding="utf-8")) if os.path.exists(os.path.join(V2, "_build", "old-site-files.json")) else {}
 _XP = os.path.join(os.path.dirname(V2), "docs", "external-links.csv")
 _DEAD = {r["url"] for r in csv.DictReader(open(_XP, encoding="utf-8-sig")) if r["status"] == "BROKEN"} if os.path.exists(_XP) else set()
+_DJ = os.path.join(V2, "_build", "dead-links.json")
+if os.path.exists(_DJ): _DEAD |= set(json.load(open(_DJ, encoding="utf-8-sig")))   # known dead links stay out
 _fx = 0
 for _f in [x for x in os.listdir(os.path.join(V2, "journal")) if x.endswith(".html") and not x.startswith("_")]:
     _p = os.path.join(V2, "journal", _f); _t = open(_p, encoding="utf-8").read(); _o = _t
