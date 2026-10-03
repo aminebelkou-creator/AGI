@@ -5,7 +5,8 @@ files = [os.path.join(dp, f) for dp, _, fs in os.walk(V2) if "_legacy" not in dp
 ids = {}
 for f in files:
     ids[os.path.normpath(f)] = set(re.findall(r'\sid="([^"]+)"', open(f, encoding="utf-8").read()))
-FORM_IDS = {"start", "enrollment", "visit", "absence", "consent", "feedback", "payment", "tutor-request", "tutor-schedule", "documents", "enquiry", "transcript"}
+import re as _re
+FORM_IDS = {"start", "transcript"} | set(_re.findall(r'id:\s*"([a-z-]+)"', open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "forms.html"), encoding="utf-8").read()))   # read from forms.html
 broken, checked = [], 0
 for f in files:
     s = open(f, encoding="utf-8").read()

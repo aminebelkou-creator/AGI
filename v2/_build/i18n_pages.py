@@ -258,3 +258,17 @@ for _lang, _blocks in FOREIGN.items():
                 + f'<section class="section bg-white"><div class="wrap"><div class="doc">{_body}<p class="source-note">{_note} <a href="{_name}">{_en}</a>.</p></div></div></section>', DOC_CSS)
         _made.append(f"{_lang}/{_name}")
 print("translations built from AGI's own text:", _made)
+
+# ================================================================== Arabic Anglia Morocco hub (angliamorocco.org/ar redirects here)
+_arh = next((x for k, x in _INV.items() if "angliamorocco.org/ar/" in k and "الرئيسية" in k), None)
+_ara = next((x for k, x in _INV.items() if "angliamorocco.org/ar/" in k and "من-نحن" in k), None)
+_arp = next((x for k, x in _INV.items() if "angliamorocco.org/ar/practice" in k), None)
+_body_ar = "".join(render(x["text"], privacy=True) for x in (_arh, _ara) if x)
+tr_page("ar", "anglia.html", "أنجليا المغرب – امتحانات الإنجليزية الرسمية من إنجلترا", "أنجليا المغرب في أكادير: امتحانات اللغة الإنجليزية الرسمية من إنجلترا، من المستوى الأول إلى الماسترز (C2)، ودروس واختبار مستوى مجاني.",
+ f"""<section class="page-hero wrap anglia-hub-hero"><div><p class="crumb"><a href="./index.html">الرئيسية</a> / <span>أنجليا المغرب</span></p><h1>شهادات الإنجليزية الرسمية من إنجلترا.</h1>
+<p class="lede">تختبر أنجليا اللغة الإنجليزية منذ 1993 من تشيتشستر في إنجلترا، والمجموعة الأمريكية الدولية هي صاحبة امتياز أنجليا في المغرب منذ 2021.</p>
+<div class="btn-row"><a class="btn btn-primary" href="forms.html#enquiry/anglia">احجزوا اختبار مستوى مجاني</a><a class="btn btn-ghost" href="anglia-exam-dates.html">مواعيد الامتحانات 2026</a></div></div>
+<img src="assets/web/anglia-anglia-moroccool3.webp" alt="أنجليا للامتحانات – إنجلترا" width="320" height="327"></section>
+<section class="section bg-white"><div class="wrap"><div class="doc">{_body_ar}</div>
+<p class="source-note">النص كما نشرته أنجليا المغرب. <a href="anglia.html">النسخة الإنجليزية</a> · <a href="anglia-practice.html">موارد التدريب</a> · <a href="anglia-books.html">كتب Step To</a></p></div></section>""", DOC_CSS + ANGLIA_THEME_CSS)
+PAGES["ar/anglia.html"] = PAGES["ar/anglia.html"].replace('class="np"', 'class="np anglia-theme"', 1)

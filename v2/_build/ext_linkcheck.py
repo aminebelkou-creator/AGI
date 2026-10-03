@@ -1,5 +1,5 @@
 """External link check: every outside link on the site, tested.  python _build/ext_linkcheck.py -> docs/external-links.csv"""
-import os, re, csv, html, urllib.request, urllib.error, ssl, concurrent.futures as cf
+import os, re, csv, html, json, urllib.request, urllib.error, ssl, concurrent.futures as cf
 from collections import defaultdict
 V2 = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); ROOT = os.path.dirname(V2)
 SKIP = ("fonts.googleapis.com", "fonts.gstatic.com", "schema.org", "openapi.vercel.sh", "www.w3.org", "agi-preview.vercel.app", "wa.me", "maps.google", "google.com/maps", "www.google.com/maps")
@@ -41,3 +41,8 @@ c = Counter(r[0] for r in rows)
 print(f"external links: {len(rows)} unique · " + " · ".join(f"{k}: {n}" for k, n in c.items()))
 for r in rows:
     if r[0] != "OK": print(f"  [{r[0][:12]}] {r[1]}  {r[2][:95]}  ({r[4]} page(s): {r[5][:60]})")
+
+# remember dead links permanently (pages exclude them even after they disappear from this report)
+_dj = os.path.join(V2, '_build', 'dead-links.json')
+_known = set(json.load(open(_dj, encoding='utf-8-sig'))) if os.path.exists(_dj) else set()
+json.dump(sorted(_known | {r[2] for r in rows if r[0] == 'BROKEN'}), open(_dj, 'w', encoding='utf-8'), indent=1)

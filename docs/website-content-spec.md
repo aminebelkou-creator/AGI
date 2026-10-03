@@ -1770,6 +1770,7 @@ Tell us what you are looking for and we will help you choose.
 - **Browser title:** About Anglia Examinations – Anglia Morocco | AGI Agadir
 - **Meta description:** About Anglia Examinations: Chichester since 1993, Chichester College Group, AIM and Ofqual, Anglia Morocco since 2021.
 
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 Home / Anglia Morocco / About Anglia [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
 **Page title (H1):** About Anglia Examinations
 Anglia Examinations has tested English since 1993 from Chichester, England. AGI has been the franchise holder for Morocco since 2021.
@@ -1835,86 +1836,56 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
-#### Section: Find your English level.
-Book a free placement assessment, or ask us about classes and exam sessions.
-→ **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
-
 ---
 
 ### 4.27 `anglia-books.html`
 
 - **Browser title:** Step To books – Anglia Morocco | AGI Agadir
-- **Meta description:** Anglia Step To preparation books for every level, audio files and how to order in Morocco.
+- **Meta description:** Anglia Step To books: ten workbooks from First Step to Masters (C2), with audio files, guided test practice and a sample exam. Order through Anglia Morocco in Agadir.
 
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 Home / Anglia Morocco / Step To books [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
-**Page title (H1):** Step To books
-Preparation books for each Anglia level, with audio files – order through Anglia Morocco.
-→ **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
+**Page title (H1):** Step To books.
+Specifically designed for students preparing for Anglia examinations from First Step to Masters (C2): 10–12 topic-based units, a QR code linking to audio files and a sample test, 110–128 full-colour pages.
+→ **Order books** (`forms.html#books`)
+→ **Audio files** (`#audio`)
 
-#### Section: step to books
-Designing vertical living spaces.
-Get Quote
-**View Our Work**
-Our internationally acclaimed STEP TO books are specifically designed for students preparing for Anglia English as a Second Language (ESOL) examinations. The ten books range in skill level from beginner to masters and are set against the CEFR (Common European Framework).
-Anglia exams measure all four language skills:
-- Listening
-- Reading
-- Writing
-- Speaking
-Each STEP book has been specially researched and developed by professional ESOL experts.
+#### Section: The Step To series
+Ten books set against the CEFR, from beginner to Masters.
+First Step
+Junior
+Primary
+Preliminary
+Elementary
+Pre-Intermediate
+Intermediate B1 · Ofqual*
+Advanced B2 · Ofqual*
+Proficiency C1 · Ofqual*
+Masters C2 · Ofqual*
+* Ofqual accredited through AIM Qualifications.
 
-#### Section: What is the STEP TO approach?
-Our step-by-step approach to testing encourages and motivates students to make clear and effective progress.
-Each STEP comprises of:
-- A STEP TO work book with 10-12 topic-based units
-- Guided test practice for every test section
-- Audio files
-- Sample exam paper
-- The opportunity to gain an Anglia ESOL International Qualification
+#### Section: The Step To approach
+A step-by-step approach to testing that encourages and motivates students to make clear and effective progress. Each book is researched and developed by professional ESOL experts.
+- **Workbook** — A Step To workbook with 10–12 topic-based units, covering high-frequency test topics and vocabulary
+- **Test practice** — Guided practice for every test section – listening, reading, writing and speaking
+- **Audio** — Audio files, reached with the QR code in the book
+- **Sample paper** — A sample exam paper
+- **Qualification** — The opportunity to gain an Anglia ESOL international qualification
 
-#### Section: The STEP TO series
-STEP TO First Step
-- STEP TO Junior
-- STEP TO Primary
-- STEP TO Preliminary
-- STEP TO Elementary
-- STEP TO Pre-Intermediate
-STEP TO Intermediate (B1)*
-STEP TO Advanced (B2)*
-STEP TO Proficiency (C1)*
-STEP TO Masters (C2)*
-- Ofqual accredited through AIM Qualifications
-
-#### Section: Teachers’ Guide
-The accompanying teachers’ guides make things easy. Each book is a comprehensive one-stop solution for test preparation. In addition to instructions, the teachers’ guide for each level has language and cultural explanations, test tips, and transcripts of all the recordings.
-All Step To books are available to purchase through your local office. Or simply order your books here and we will pass your order onto your local office.
+#### Section: Teachers' guide
+The accompanying teachers' guides make things easy: each is a comprehensive one-stop solution for test preparation, with instructions, language and cultural explanations, test tips and transcripts of all the recordings.
 
 #### Section: Audio files
-- Step To audio files: First Step to Pre-Intermediate [link: “Step To audio files: First Step to Pre-Intermediate” → `https://www.anglia.nl/uploads/1/2/0/0/120044573/audiofiles_step_to_fs_-_pre-intermediate__1_.zip`]
-- Step To audio files: Intermediate to Masters [link: “Step To audio files: Intermediate to Masters” → `https://www.anglia.nl/uploads/1/2/0/0/120044573/audoifiles_step_to_intermediate_-_masters__1_.zip`]
-→ **Order books** (`forms.html#enquiry/anglia`)
-Anglia Morocco
-- Anglia Morocco [link: “Anglia Morocco” → `anglia.html`]
-- Exams & levels [link: “Exams & levels” → `anglia-exams.html`]
-- Exam dates 2026 [link: “Exam dates 2026” → `calendar.html#anglia-exams`]
-- CEFR levels [link: “CEFR levels” → `anglia-cefr.html`]
-- Practice papers & audio [link: “Practice papers & audio” → `anglia-practice.html`]
-- Special arrangements [link: “Special arrangements” → `anglia-special-arrangements.html`]
-- Free placement assessment [link: “Free placement assessment” → `anglia-placement-test.html`]
-- Classes & prices [link: “Classes & prices” → `anglia-classes.html`]
-- Network & centres [link: “Network & centres” → `anglia-network.html`]
-- Become a centre [link: “Become a centre” → `partnerships.html`]
-- Anglia FAQ [link: “Anglia FAQ” → `anglia-faq.html`]
-- About Anglia Examinations [link: “About Anglia Examinations” → `anglia-about.html`]
-- C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
-Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
+Free downloads for the Step To books.
+**First Step – Pre-Intermediate**
+Download audio [link: “Download audio” → `https://www.anglia.nl/uploads/1/2/0/0/120044573/audiofiles_step_to_fs_-_pre-intermediate__1_.zip`]
+**Intermediate – Masters**
+Download audio [link: “Download audio” → `https://www.anglia.nl/uploads/1/2/0/0/120044573/audoifiles_step_to_intermediate_-_masters__1_.zip`]
 
-#### Section: Find your English level.
-Book a free placement assessment, or ask us about classes and exam sessions.
-→ **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
+#### Section: Order your Step To books.
+Order through Anglia Morocco in Agadir – the office confirms availability, price and delivery.
+→ **Order books** (`forms.html#books`)
+→ **Practice papers** (`anglia-practice.html`)
 
 ---
 
@@ -1923,6 +1894,7 @@ Book a free placement assessment, or ask us about classes and exam sessions.
 - **Browser title:** CEFR levels – Anglia Morocco | AGI Agadir
 - **Meta description:** The CEFR levels A1 to C2 explained, and benchmarks for native speakers and language learners at AGI.
 
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 Home / Anglia Morocco / CEFR levels [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
 **Page title (H1):** CEFR levels
 How the Common European Framework of Reference describes language ability – and how AGI students progress through it.
@@ -2054,11 +2026,6 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
-#### Section: Find your English level.
-Book a free placement assessment, or ask us about classes and exam sessions.
-→ **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
-
 ---
 
 ### 4.29 `anglia-classes.html`
@@ -2066,6 +2033,7 @@ Book a free placement assessment, or ask us about classes and exam sessions.
 - **Browser title:** English classes & prices – Anglia Morocco | AGI Agadir
 - **Meta description:** English classes at Anglia Morocco, Agadir: Saturday classes 500 MAD a month, one-to-one 200 MAD, small groups 150 MAD, 12-week course 1,200 MAD. Free level test.
 
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 Home / Anglia Morocco / Classes & prices [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
 **Page title (H1):** English classes, at every age.
 Start with a free level test, then choose the format that suits you – from Saturday classes for children and teens to one-to-one lessons for professionals.
@@ -2122,6 +2090,7 @@ A free level test first – then we recommend the format and the level.
 - **Browser title:** Anglia exam dates 2026 – Anglia Morocco | AGI Agadir
 - **Meta description:** Anglia exam sessions in Morocco in 2026, month by month and by level, and how to register at Anglia Morocco headquarters in Agadir.
 
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 Home / Anglia Morocco / Exam dates 2026 [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
 **Page title (H1):** Anglia exam dates 2026.
 Sessions run in most months of the year. If you need an exam on a date that is not listed, contact the Anglia office.
@@ -2163,6 +2132,7 @@ Tell us the candidate's level and preferred session – the office will confirm.
 - **Browser title:** Anglia exams & levels – Anglia Morocco | AGI Agadir
 - **Meta description:** The Anglia ladder: ten General English levels from First Step to Masters C2, four Business English levels A2+ to C1, exam durations and certificates for life.
 
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 Home / Anglia Morocco / Exams & levels [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
 **Page title (H1):** Ten steps to Masters.
 Anglia's General English exams take learners from a first vocabulary of about 100 words to expert use of English (Masters, C2). Every level tests listening, reading, writing and speaking.
@@ -2220,6 +2190,7 @@ Take the free placement assessment – we will recommend the right step.
 - **Browser title:** Anglia FAQ – Anglia Morocco | AGI Agadir
 - **Meta description:** Anglia exams FAQ: levels, ages from 4, durations, lifetime certificates, UCAS tariff points for Mastery.
 
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 Home / Anglia Morocco / Anglia FAQ [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
 **Page title (H1):** Anglia FAQ
 Answers about Anglia exams – levels, ages, durations and certificates.
@@ -2250,11 +2221,6 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
-#### Section: Find your English level.
-Book a free placement assessment, or ask us about classes and exam sessions.
-→ **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
-
 ---
 
 ### 4.33 `anglia-network.html`
@@ -2262,6 +2228,7 @@ Book a free placement assessment, or ask us about classes and exam sessions.
 - **Browser title:** Become an Anglia centre – Anglia Morocco | AGI Agadir
 - **Meta description:** Anglia Morocco network across Morocco's 12 regions: open representative positions, franchise and institutional partnership models, how to become an Anglia centre.
 
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 Home / Anglia Morocco / Become a centre [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
 **Page title (H1):** Become an Anglia centre.
 From its Agadir headquarters, Anglia Morocco works with schools, language centres and teachers across the Kingdom's twelve regions. Several regions are looking for a local representative.
@@ -2328,6 +2295,7 @@ Tell us your region, the model and your teaching or business background.
 - **Browser title:** Free placement assessment – Anglia Morocco | AGI Agadir
 - **Meta description:** Free English placement assessment on the CEFR at Anglia Morocco headquarters in Agadir.
 
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 Home / Anglia Morocco / Placement assessment [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
 **Page title (H1):** Free placement assessment
 Find your English level on the CEFR before you choose a class or an Anglia exam.
@@ -2359,268 +2327,84 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
-#### Section: Find your English level.
-Book a free placement assessment, or ask us about classes and exam sessions.
-→ **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
-
 ---
 
 ### 4.35 `anglia-practice.html`
 
-- **Browser title:** Practice papers &amp; audio – Anglia Morocco | AGI Agadir
-- **Meta description:** Free Anglia practice papers for every level (First Step to Advanced, Business English) and Step To audio files.
+- **Browser title:** Practice papers & audio – Anglia Morocco | AGI Agadir
+- **Meta description:** Free Anglia practice papers and sample exams for every level: General English, Business English, Children's Oral Tests, Applied Translation and C.I.T.E. for teachers.
 
-Home / Anglia Morocco / Practice papers & audio [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
-**Page title (H1):** Practice papers & audio
-Free sample papers for every level, published by Anglia Examinations, plus the audio files for the Step To books.
-→ **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
-**General English**
-- First Step
-- Junior
-- Primary
-- Preliminary
-- Elementary
-- Pre-Intermediate
-- Intermediate
-- Advanced
-- Pack 1
-First Step Pack 1
-Pack 2
-First Step Pack 2
-Pack 3
-First Step Pack 3
-Pack 4
-First Step Pack 4
-- Junior Pack 1
-- Junior Pack 2
-- Junior Pack 3
-- Junior Pack 4
-- Primary Pack 1
-- Primary Pack 2
-- Primary Pack 3
-- Primary Pack 4
-- Preliminary Pack 1
-- Pack1
-- Preliminary Pack 2
-- Pack2
-- Preliminary Pack 3
-- Pack3
-- Preliminary Pack 4
-- Pack4
-- Elementary Pack 1
-- Elementary Pack 2
-- Elementary Pack 3
-- Elementary Pack 4
-- Pre-Intermediate Pack 1
-- Pre-Intermediate Pack 2
-- Pre-Intermediate Pack 3
-- Pre-Intermediate Pack 4
-- Intermediate Pack 1
-- Intermediate Pack 2
-- Intermediate Pack 3
-- Intermediate Pack 4
-- Advanced Pack 1
-- Advanced Pack 2
-- Advanced Pack 3
-- Advanced Pack 4
-- Proficiency
-- Mastery
-- Adult Learner
-- Proficiency Pack 1
-- Proficiency Pack 2
-- Proficiency Pack 3
-- Proficiency Pack 4
-- Mastery Pack 1
-- Mastery Pack 2
-- Mastery Pack 3
-- Mastery Pack 4
-Adult Learner Step 1
-Pack 1 y 2
-Adult Learner Step 2
-Adult Learner Step 3
-Adult Learner Step 4
-**Business English**
-- Practical Business
-- Intermediate Business
-- Advanced Business
-- Proficiency Business
-**Children’s Oral Tests of Achievement**
-Download Level I
-Download Level II
-Download Level III
-**Certificate & Diploma in Applied Translation**
-Certificate in Applied Translation
-Diploma in Applied Translation
+[IMAGE: Anglia Examinations England – Anglia Morocco]
+Home / Anglia Morocco / Practice papers [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
+**Page title (H1):** Practice resources.
+Practice papers and sample exams for every Anglia level, published by Anglia Examinations. Pick your level and download – then check your answers with your teacher.
+→ **Choose my level** (`#general-english`)
+→ **Step To books & audio** (`anglia-books.html`)
+→ **General English** (`#general-english`)
+→ **Business English** (`#business-english`)
+→ **Children's Oral Tests of Achievement** (`#children-s-oral-tests-of-achievement`)
+→ **Certificate & Diploma in Applied Translation** (`#certificate-diploma-in-applied-translation`)
+→ **Teachers (C.I.T.E.)** (`#teachers-c-i-t-e`)
 
-#### Section: C.I.T.E.-Vyl
-
-#### Section: C.I.T.E.-Yl
-
-#### Section: C.I.T.E.-Sr
-Register
-
-#### Section: Practice packs by level
+#### Section: General English
 **First Step**
-- Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/first-step-pack-1-ff120.zip`]
-- First Step Pack 1 [link: “First Step Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/first-step-pack-1-ff120.zip`]
-- Pack 2 [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/first-step-pack-2-jj120.zip`]
-- First Step Pack 2 [link: “First Step Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/first-step-pack-2-jj120.zip`]
-- Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/first-step-pack-3-gg119.zip`]
-- First Step Pack 3 [link: “First Step Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/first-step-pack-3-gg119.zip`]
-- Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/first-step-pack-4-aa119.zip`]
-- First Step Pack 4 [link: “First Step Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/first-step-pack-4-aa119.zip`]
+Ask Anglia Morocco for a copy
 **Junior**
-- Junior Pack 1 [link: “Junior Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-1-ff120.zip`]
-- Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-1-ff120.zip`]
-- Junior Pack 2 [link: “Junior Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-2-jj120.zip`]
-- Pack 2 [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-2-jj120.zip`]
-- Junior Pack 3 [link: “Junior Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-3-gg119.zip`]
-- Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-3-gg119.zip`]
-- Junior Pack 4 [link: “Junior Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-4-aa119.zip`]
-- Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-4-aa119.zip`]
+Pack 1 Pack 2 Pack 3 Pack 4 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-1-ff120.zip`] [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-2-jj120.zip`] [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-3-gg119.zip`] [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-4-aa119.zip`]
 **Primary**
-- Primary Pack 1 [link: “Primary Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-1-ff120.zip`]
-- Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-1-ff120.zip`]
-- Primary Pack 2 [link: “Primary Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-2-jj120.zip`]
-- Pack 2 [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-2-jj120.zip`]
-- Primary Pack 3 [link: “Primary Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-3-gg119.zip`]
-- Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-3-gg119.zip`]
-- Primary Pack 4 [link: “Primary Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-4-aa119.zip`]
-- Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-4-aa119.zip`]
+Pack 1 Pack 2 Pack 3 Pack 4 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-1-ff120.zip`] [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-2-jj120.zip`] [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-3-gg119.zip`] [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/primary-pack-4-aa119.zip`]
 **Preliminary**
-- Preliminary Pack 1 [link: “Preliminary Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-1-ff120.zip`]
-- Pack1 [link: “Pack1” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-1-ff120.zip`]
-- Preliminary Pack 2 [link: “Preliminary Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-2-ff119.zip`]
-- Pack2 [link: “Pack2” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-2-ff119.zip`]
-- Preliminary Pack 3 [link: “Preliminary Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-3-gg119.zip`]
-- Pack3 [link: “Pack3” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-3-gg119.zip`]
-- Preliminary Pack 4 [link: “Preliminary Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-4-aa119.zip`]
-- Pack4 [link: “Pack4” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-4-aa119.zip`]
+Pack 1 Pack 2 Pack 3 Pack 4 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-1-ff120.zip`] [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-2-ff119.zip`] [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-3-gg119.zip`] [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/preliminary-pack-4-aa119.zip`]
 **Elementary**
-- Elementary Pack 1 [link: “Elementary Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-1-ff120.zip`]
-- Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-1-ff120.zip`]
-- Elementary Pack 2 [link: “Elementary Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-2-ff119.zip`]
-- Pack 2 [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-2-ff119.zip`]
-- Elementary Pack 3 [link: “Elementary Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-3-gg119.zip`]
-- Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-3-gg119.zip`]
-- Elementary Pack 4 [link: “Elementary Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-4-aa119.zip`]
-- Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-4-aa119.zip`]
+Pack 1 Pack 2 Pack 3 Pack 4 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-1-ff120.zip`] [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-2-ff119.zip`] [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-3-gg119.zip`] [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/elementary-pack-4-aa119.zip`]
 **Pre-Intermediate**
-- Pre-Intermediate Pack 1 [link: “Pre-Intermediate Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-1-ff120.zip`]
-- Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-1-ff120.zip`]
-- Pre-Intermediate Pack 2 [link: “Pre-Intermediate Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-2-ff119.zip`]
-- Pack 2 [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-2-ff119.zip`]
-- Pre-Intermediate Pack 3 [link: “Pre-Intermediate Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-3-gg119.zip`]
-- Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-3-gg119.zip`]
-- Pre-Intermediate Pack 4 [link: “Pre-Intermediate Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-4-aa119.zip`]
-- Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-4-aa119.zip`]
+Pack 1 Pack 2 Pack 3 Pack 4 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-1-ff120.zip`] [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-2-ff119.zip`] [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-3-gg119.zip`] [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/pre-intermediate-pack-4-aa119.zip`]
 **Intermediate**
-- Intermediate Pack 1 [link: “Intermediate Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-1-ff120.zip`]
-- Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-1-ff120.zip`]
-- Intermediate Pack 2 [link: “Intermediate Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-2-ff119.zip`]
-- Pack 2 [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-2-ff119.zip`]
-- Intermediate Pack 3 [link: “Intermediate Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-3-gg119.zip`]
-- Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-3-gg119.zip`]
-- Intermediate Pack 4 [link: “Intermediate Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-4-aa120.zip`]
-- Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-4-aa120.zip`]
-- Intermediate Business English [link: “Intermediate Business English” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-business-english.zip`]
+Pack 1 Pack 2 Pack 3 Pack 4 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-1-ff120.zip`] [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-2-ff119.zip`] [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-3-gg119.zip`] [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-4-aa120.zip`]
 **Advanced**
-- Advanced Pack 1 [link: “Advanced Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-1-ff120.zip`]
-- Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-1-ff120.zip`]
-- Advanced Pack 2 [link: “Advanced Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-2-ff119.zip`]
-- Pack 2 [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-2-ff119.zip`]
-- Advanced Pack 3 [link: “Advanced Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-3-gg119.zip`]
-- Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-3-gg119.zip`]
-- Advanced Pack 4 [link: “Advanced Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-4-aa120.zip`]
-- Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-4-aa120.zip`]
-- Advanced Business English [link: “Advanced Business English” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-business-english.zip`]
+Pack 1 Pack 2 Pack 3 Pack 4 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-1-ff120.zip`] [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-2-ff119.zip`] [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-3-gg119.zip`] [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-4-aa120.zip`]
 **Proficiency**
-- Proficiency Pack 1 [link: “Proficiency Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-1-ff120.zip`]
-- Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-1-ff120.zip`]
-- Proficiency Pack 2 [link: “Proficiency Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-2-ff119.zip`]
-- Pack 2 [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-2-ff119.zip`]
-- Proficiency Pack 3 [link: “Proficiency Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-3-gg119.zip`]
-- Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-3-gg119.zip`]
-- Proficiency Pack 4 [link: “Proficiency Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-4-aa120.zip`]
-- Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-4-aa120.zip`]
-- Proficiency Business English [link: “Proficiency Business English” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-business-english.zip`]
+Pack 1 Pack 2 Pack 3 Pack 4 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-1-ff120.zip`] [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-2-ff119.zip`] [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-3-gg119.zip`] [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-4-aa120.zip`]
 **Masters**
-- Pack 1 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-1-ff120.zip`]
-- Pack 2 [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-2-ff119.zip`]
-- Pack 3 [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-3-gg119.zip`]
-- Pack 4 [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-4-aa120.zip`]
-**Other**
-- Pack 1 y 2 [link: “Pack 1 y 2” → `https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-1.zip`]
-- Pack 1 y 2 [link: “Pack 1 y 2” → `https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-2.zip`]
-- Pack 1 y 2 [link: “Pack 1 y 2” → `https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-3.zip`]
-- Pack 1 y 2 [link: “Pack 1 y 2” → `https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-4.zip`]
-- Practical Business English [link: “Practical Business English” → `https://angliaexams.com/wp-content/uploads/2021/09/practical-business-english.zip`]
-- Childrens Oral Level I 3 [link: “Childrens Oral Level I 3” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-i-3.zip`]
-- Childrens Oral Level Ii [link: “Childrens Oral Level Ii” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-ii.zip`]
-- Childrens Oral Level Iii 1 [link: “Childrens Oral Level Iii 1” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-iii-1.zip`]
-- Certificateinappliedtranslation 7 [link: “Certificateinappliedtranslation 7” → `https://angliaexams.com/wp-content/uploads/2021/08/certificateinappliedtranslation-7.zip`]
-- Diplomainappliedtranslation 1 [link: “Diplomainappliedtranslation 1” → `https://angliaexams.com/wp-content/uploads/2021/08/diplomainappliedtranslation-1.zip`]
-- Cite Vyl 2 [link: “Cite Vyl 2” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-vyl-2.zip`]
-- Cite Yl 2 [link: “Cite Yl 2” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-yl-2.zip`]
-- Cite Sr 3 [link: “Cite Sr 3” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-sr-3.zip`]
+Pack 1 Pack 2 Pack 3 Pack 4 [link: “Pack 1” → `https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-1-ff120.zip`] [link: “Pack 2” → `https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-2-ff119.zip`] [link: “Pack 3” → `https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-3-gg119.zip`] [link: “Pack 4” → `https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-4-aa120.zip`]
 
-#### Section: Audio files
-- Step To audio files: First Step to Pre-Intermediate [link: “Step To audio files: First Step to Pre-Intermediate” → `https://www.anglia.nl/uploads/1/2/0/0/120044573/audiofiles_step_to_fs_-_pre-intermediate__1_.zip`]
-- Step To audio files: Intermediate to Masters [link: “Step To audio files: Intermediate to Masters” → `https://www.anglia.nl/uploads/1/2/0/0/120044573/audoifiles_step_to_intermediate_-_masters__1_.zip`]
+#### Section: Business English
+**Practical Business English**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/09/practical-business-english.zip`]
+**Intermediate Business English**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/09/intermediate-business-english.zip`]
+**Advanced Business English**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/09/advanced-business-english.zip`]
+**Proficiency in Business English**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/09/proficiency-business-english.zip`]
 
-#### Section: Step To books
+#### Section: Children's Oral Tests of Achievement
+**Level I**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-i-3.zip`]
+**Level II**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-ii.zip`]
+**Level III**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-iii-1.zip`]
 
-#### Section: Anglia Step To Books
+#### Section: Certificate & Diploma in Applied Translation
+**Certificate in Applied Translation**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/certificateinappliedtranslation-7.zip`]
+**Diploma in Applied Translation**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/diplomainappliedtranslation-1.zip`]
 
-#### Section: First Step – Pre-Interm.
+#### Section: Teachers (C.I.T.E.)
+**C.I.T.E. Very Young Learners**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-vyl-2.zip`]
+**C.I.T.E. Young Learners**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-yl-2.zip`]
+**C.I.T.E. Senior**
+Download [link: “Download” → `https://angliaexams.com/wp-content/uploads/2021/08/cite-sr-3.zip`]
+Files are hosted by Anglia Examinations. Not sure of your level? Book a free level test. [link: “Book a free level test” → `forms.html#enquiry/anglia`]
 
-#### Section: Welcome to Anglia Examinations Practice Resources
-Anglia Examinations provides a selection of practice papers and sample exams tailored for learners at various levels. These resources are designed to help you familiarize yourself with the exam format and types of questions you may encounter, ensuring you are well-prepared for your assessments.
-Pick Your Level & Click to Download Practice Papers and Samples:
-**General English**
-- Proficiency
-- Mastery
-- Adult Learner
-Adult Learner Step 1
-Adult Learner Step 2
-Adult Learner Step 3
-Adult Learner Step 4
-**Business English**
-- Practical Business
-- Proficiency Business
-**Children’s Oral Tests of Achievement**
-Download Level I
-Download Level II
-Download Level III
-**Certificate & Diploma in Applied Translation**
-Certificate in Applied Translation
-Diploma in Applied Translation
-
-#### Section: C.I.T.E.-Vyl
-
-#### Section: C.I.T.E.-Yl
-Anglia Morocco
-- Anglia Morocco [link: “Anglia Morocco” → `anglia.html`]
-- Exams & levels [link: “Exams & levels” → `anglia-exams.html`]
-- Exam dates 2026 [link: “Exam dates 2026” → `calendar.html#anglia-exams`]
-- CEFR levels [link: “CEFR levels” → `anglia-cefr.html`]
-- Step To books [link: “Step To books” → `anglia-books.html`]
-- Special arrangements [link: “Special arrangements” → `anglia-special-arrangements.html`]
-- Free placement assessment [link: “Free placement assessment” → `anglia-placement-test.html`]
-- Classes & prices [link: “Classes & prices” → `anglia-classes.html`]
-- Network & centres [link: “Network & centres” → `anglia-network.html`]
-- Become a centre [link: “Become a centre” → `partnerships.html`]
-- Anglia FAQ [link: “Anglia FAQ” → `anglia-faq.html`]
-- About Anglia Examinations [link: “About Anglia Examinations” → `anglia-about.html`]
-- C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
-Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
-
-#### Section: Find your English level.
-Book a free placement assessment, or ask us about classes and exam sessions.
-→ **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
+#### Section: Want guided preparation?
+Our classes and the Step To books prepare candidates for every level.
+→ **Classes & prices** (`anglia-classes.html`)
+→ **Step To books** (`anglia-books.html`)
 
 ---
 
@@ -2629,6 +2413,7 @@ Book a free placement assessment, or ask us about classes and exam sessions.
 - **Browser title:** Special arrangements – Anglia Morocco | AGI Agadir
 - **Meta description:** Special arrangements for Anglia exams in Morocco: extra time, breaks, Braille or large print, wheelchair access, scribe, lip reading; codes D1–D8.
 
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 Home / Anglia Morocco / Special arrangements [link: “Home” → `index.html`] [link: “Anglia Morocco” → `anglia.html`]
 **Page title (H1):** Special arrangements
 Exams should be accessible to everyone. Candidates with learning or physical difficulties – or an injury on the day – can ask for support.
@@ -2677,11 +2462,6 @@ Anglia Morocco
 - C.I.T.E. for teachers [link: “C.I.T.E. for teachers” → `teachers.html#cite`]
 Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 
-#### Section: Find your English level.
-Book a free placement assessment, or ask us about classes and exam sessions.
-→ **Book a free level test** (`forms.html#enquiry/anglia`)
-→ **Exam dates** (`calendar.html#anglia-exams`)
-
 ---
 
 ### 4.37 `anglia.html`
@@ -2694,11 +2474,13 @@ Home / Anglia Morocco [link: “Home” → `index.html`]
 Anglia Examinations has tested English since 1993 from Chichester, England. Since 2021 AGI has been the Anglia franchise holder for Morocco – exams from a child's first words to Masters (C2), classes, and centres across the Kingdom's twelve regions.
 → **Book a free level test** (`forms.html#enquiry/anglia`)
 → **Exam dates 2026** (`anglia-exam-dates.html`)
+[IMAGE: Anglia Examinations England – Anglia Morocco]
 
 #### Section: Where do you start?
 Parents & students Certify your child's English Ten steps from a child's first words (about age 4) to Masters C2 – each one a certificate from England. Continue → Adults & professionals English for work and study General English up to Masters, or Business English from A2+ to C1, with classes that fit a working week. Continue → Teachers C.I.T.E. certification A lifelong TESOL qualification recognized worldwide – no entry qualifications required. Continue → Schools & partners Become an Anglia centre Run Anglia exams in your school or region, with training and materials from the Agadir headquarters. Continue → [link: “Parents & students Certify your child's English Ten steps from a child's first words (about age 4) to Masters C2 – each one a certificate from England. Continue →” → `anglia-exams.html`] [link: “Adults & professionals English for work and study General English up to Masters, or Business English from A2+ to C1, with classes that fit a working week. Continue →” → `anglia-classes.html`] [link: “Teachers C.I.T.E. certification A lifelong TESOL qualification recognized worldwide – no entry qualifications required. Continue →” → `teachers-cite.html`] [link: “Schools & partners Become an Anglia centre Run Anglia exams in your school or region, with training and materials from the Agadir headquarters. Continue →” → `anglia-network.html`]
 
 #### Section: Why Anglia
+AGI is the official Anglia Examinations franchise holder for Morocco.
 England, since 1993 Part of Chichester College Group – award winning and Ofsted Outstanding.
 Regulated by Ofqual The four highest levels are awarded by AIM Qualifications and Assessment Group.
 UCAS tariff points The Mastery (C2) qualification counts for UK university entry.

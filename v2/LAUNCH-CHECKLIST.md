@@ -54,7 +54,7 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] **Proficiency listed by UCAS** as evidence of English for UK universities — wording approved by Anglia (english-anglia, pathways, about)
 - [ ] **C.I.T.E.** description: no entry qualifications, CEFR-mapped, lifelong recognition (professional)
 - [ ] Anglia Morocco covers **twelve regions**; franchise "open in several regions" — which ones? (home, english-anglia, partnerships)
-- [ ] Use of the Anglia name and logo on the site approved
+- [x] Use of the Anglia name and logo on the site approved — approved by Anglia
 - [ ] Class prices (effective Nov 2024 — still current?): Saturday classes **500 MAD/month** ages 5–18 Sat 14:00–16:00 Oct–June incl. yearly exam; one-to-one **200 MAD**; small group **150 MAD/person**; group course **100 MAD/week (1,200 MAD for 12 weeks)**; level test **free**; groups max **10** (english-anglia)
 
 ## 6. Professional services — AGI
@@ -96,7 +96,7 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] Anglia Morocco contact emails shown: **j.wilburn@angliamorocco.org**, **a.lam@angliamorocco.org** (english-anglia)
 - [ ] *On angliamorocco.org*: the FAQ says Anglia is "dependant on the Ministry of Education of the United Kingdom" — inaccurate (Anglia is owned by Chichester College Group; qualifications regulated by Ofqual via AIM). Correct it there.
 - [ ] *On angliamorocco.org*: "Club Anglia" page still says "Coming soon"; "Country Manager" title differs from the signature used here
-- [ ] Should the two sites share branding (logo, colors) and link to each other in the header/footer?
+- [x] Should the two sites share branding (logo, colors) and link to each other in the header/footer? — Anglia brand colors and logo on the Anglia pages
 
 ## 11. Brand story and audience pages — AGI
 - [ ] Slogan **"Affordable, Creative and Inclusive"** used in the home hero, home, parents, about, founder letter
@@ -131,7 +131,7 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] Arabic pages (ar/index, parents, fees, contact) reviewed by a native Arabic speaker (Modern Standard Arabic; Darija for social media only)
 - [ ] Which further pages to translate next (recommended: admissions, calendar, our-story, faq, anglia)
 - [ ] Forms in French and Arabic (forms.html is English only today)
-- [ ] angliamorocco.org Arabic pages: move here (ar/) and redirect, or keep on angliamorocco.org?
+- [x] angliamorocco.org Arabic pages: move here (ar/) and redirect, or keep on angliamorocco.org? — decided: angliamorocco.org redirects here (ar/ → ar/anglia.html)
 
 ## 14. From the page review — AGI
 - [ ] Special education: a parent's letter (2024) names their child (Ismail) – hidden until the family gives written consent; publish or keep hidden?
@@ -149,3 +149,8 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] 3 videos (64 MB) were copied from the old site into v2/assets/journal/files/ (not in git): upload them to the CMS media library or YouTube when migrating
 - [ ] Anglia First Step practice packs no longer exist on angliaexams.com – ask Anglia for current links
 - [ ] Run python _build/ext_linkcheck.py before launch (all 98 external links OK on Oct 3, 2026)
+
+## 17. Anglia Morocco moves here — Tech / AGI
+- [ ] Install docs/angliamorocco-redirects.htaccess on the angliamorocco.org host (or recreate the 301s in its hosting panel) once the new site is live
+- [ ] Step To books: prices and delivery terms for the order form confirmations
+- [ ] Keep j.wilburn@ / a.lam@angliamorocco.org mailboxes active after the redirect

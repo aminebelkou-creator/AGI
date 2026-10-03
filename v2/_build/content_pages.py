@@ -496,6 +496,8 @@ import csv as _csv2
 _dead = set()
 _xp = os.path.join(os.path.dirname(V2), "docs", "external-links.csv")
 if os.path.exists(_xp): _dead = {r["url"] for r in _csv2.DictReader(open(_xp, encoding="utf-8-sig")) if r["status"] == "BROKEN"}
+_dj = os.path.join(V2, "_build", "dead-links.json")
+if os.path.exists(_dj): _dead |= set(_json.load(open(_dj, encoding="utf-8-sig")))   # links known to be dead stay excluded
 _missing_levels = sorted({next((L for L, _, _ in LEVELS if L.lower().replace(" ", "-") in h.lower()), "Other") for h, t in _links if h in _dead})
 _links = [(h, t) for h, t in _links if h not in _dead]
 _groups = {}
@@ -512,7 +514,7 @@ anglia_page("anglia-practice.html", "Practice papers &amp; audio", "Free sample 
  "Free Anglia practice papers for every level (First Step to Advanced, Business English) and Step To audio files.")
 
 anglia_page("anglia-books.html", "Step To books", "Preparation books for each Anglia level, with audio files – order through Anglia Morocco.",
- full("anglia-books.html", heading="Step To books") + f'<h2>Audio files</h2><ul>{_audio}</ul><p><a class="btn btn-primary" href="forms.html#enquiry/anglia">Order books</a></p>',
+ full("anglia-books.html", heading="Step To books") + f'<h2>Audio files</h2><ul>{_audio}</ul><p><a class="btn btn-primary" href="forms.html#books">Order books</a></p>',
  "Anglia Step To preparation books for every level, audio files and how to order in Morocco.")
 
 anglia_page("anglia-placement-test.html", "Free placement assessment", "Find your English level on the CEFR before you choose a class or an Anglia exam.",
@@ -1000,6 +1002,99 @@ page("anglia-network.html", "Become an Anglia centre – Anglia Morocco | AGI Ag
 ''' + cta("Represent Anglia in your region.", "Tell us your region, the model and your teaching or business background.", '<a class="btn btn-gold" href="forms.html#enquiry/partnership">Partnership enquiry</a><a class="btn btn-light" href="contact.html">Contact</a>'), ANGLIA_CSS)
 for _n, _t in [("anglia-exam-dates.html", "Exam dates 2026")]:
     if (_n, _t) not in ANGLIA_NAV: ANGLIA_NAV.insert(2, (_n, _t))
+
+# ================================================================== ANGLIA BRAND (approved): Anglia blues + logo on Anglia pages; practice, books, exams in angliamorocco.org style
+ANGLIA_LOGO = "assets/web/anglia-anglia-moroccool3.webp"
+ANGLIA_THEME_CSS = """
+main.anglia-theme{--navy:#03379F;--navy-deep:#000F23;--red:#0082D0;--gold:#5BC0F8}
+main.anglia-theme .bg-navy,main.anglia-theme .cta-band{background:#03379F}
+.anglia-hero{position:relative}.anglia-badge{position:absolute;top:clamp(28px,4vw,56px);right:clamp(20px,4vw,48px);width:clamp(72px,8vw,112px);height:auto;border-radius:10px;box-shadow:0 10px 30px -12px rgba(0,15,35,.35)}
+[dir="rtl"] .anglia-badge{right:auto;left:clamp(20px,4vw,48px)}
+.anglia-hub-hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:clamp(24px,5vw,72px);align-items:center}
+.anglia-hub-hero img{width:100%;max-width:300px;justify-self:end;border-radius:16px;box-shadow:0 24px 60px -24px rgba(0,15,35,.5)}
+.recog-logo{display:flex;align-items:center;gap:18px;margin:0 0 26px}.recog-logo img{width:64px;height:auto;border-radius:8px}.recog-logo span{color:rgba(255,255,255,.8);font-size:14px}
+.packs{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.pack{background:#fff;border:1px solid var(--line);padding:18px}.packs+h2{margin-top:56px}.pack h3{font-size:18px;margin:0 0 10px;color:var(--navy)}
+.pack .dl{display:flex;flex-wrap:wrap;gap:6px}.pack .dl a{font:600 12.5px/1 var(--sans);padding:8px 11px;border:1px solid var(--navy);color:var(--navy);text-decoration:none}
+.pack .dl a:hover{background:var(--navy);color:#fff}
+.series{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;counter-reset:s}
+.series div{background:#fff;border:1px solid var(--line);padding:16px;text-align:center}.series b{display:block;font-family:var(--serif);font-weight:400;font-size:20px;color:var(--navy)}
+.series small{display:block;margin-top:6px;font-size:12px;color:var(--grey)}.series .acc{color:var(--red);font-weight:600}
+@media (max-width:900px){.anglia-hub-hero{grid-template-columns:minmax(0,1fr)}.anglia-hub-hero img{justify-self:start;max-width:160px}.series{grid-template-columns:repeat(2,minmax(0,1fr))}.anglia-badge{position:static;display:block;margin:0 0 16px}}
+"""
+# ---------- Business English: real per-level descriptions from the source
+_ex_src = SRC("angliamorocco.org/exams/")["text"]
+_bdesc = [p.strip() for p in _re.findall(r"(At this level, candidates are expected[^\n]+)", _ex_src)]
+if len(_bdesc) >= 4:
+    _bz3 = "".join(f'<li><span class="step">B{i}</span><span class="name">{n}</span><span class="cefr">{c}</span><p>{_html.escape(_bdesc[i - 1])}</p></li>' for i, (n, c) in enumerate(BUSINESS, 1))
+    PAGES["anglia-exams.html"] = _re.sub(r'(<section class="section" id="business">.*?<ol class="ladder">).*?(</ol>)', lambda m: m.group(1) + _bz3 + m.group(2), PAGES["anglia-exams.html"], count=1, flags=_re.S)
+
+# ---------- PRACTICE PAPERS (angliamorocco.org/practice-resources style): 5 categories, a card per level
+_cat_rules = [("General English", r"first-step|junior|primary|preliminary|elementary|pre-intermediate|intermediate|advanced|proficiency|masters", ["First Step", "Junior", "Primary", "Preliminary", "Elementary", "Pre-Intermediate", "Intermediate", "Advanced", "Proficiency", "Masters"]),
+              ("Business English", r"business", ["Practical Business English", "Intermediate Business English", "Advanced Business English", "Proficiency in Business English"]),
+              ("Children's Oral Tests of Achievement", r"childrens-oral", ["Level I", "Level II", "Level III"]),
+              ("Certificate & Diploma in Applied Translation", r"translation", ["Certificate in Applied Translation", "Diploma in Applied Translation"]),
+              ("Teachers (C.I.T.E.)", r"cite-", ["C.I.T.E. Very Young Learners", "C.I.T.E. Young Learners", "C.I.T.E. Senior"])]
+_all_links = []
+for _h, _t in _re.findall(r'<a[^>]+href="(https?://[^"]+\.(?:zip|pdf))"[^>]*>(.*?)</a>', _raw, _re.S | _re.I):
+    if _h not in [x for x, _ in _all_links] and _h not in _dead: _all_links.append((_h, _t))
+def _level_of(h, cat, levels):
+    f = h.rsplit("/", 1)[-1].lower()
+    if cat.startswith("Business"): return next((L for L in levels if L.split()[0].lower() in f), levels[0])
+    if cat.startswith("Children"): return {"level-i-": "Level I", "level-i.": "Level I", "level-ii-": "Level II", "level-ii.": "Level II", "level-iii": "Level III"}.get(next((k for k in ("level-iii", "level-ii-", "level-ii.", "level-i-", "level-i.") if k in f), ""), "Level I")
+    if cat.startswith("Certificate"): return levels[1] if "diploma" in f else levels[0]
+    if cat.startswith("Teachers"): return {"vyl": levels[0], "yl": levels[1]}.get(next((k for k in ("vyl", "yl") if f"cite-{k}" in f), ""), levels[2])
+    return next((L for L in sorted(levels, key=len, reverse=True) if L.lower().replace(" ", "-") in f), "Other")
+_secs = ""
+for _cat, _rx, _levels in _cat_rules:
+    _items = [(h, _level_of(h, _cat, _levels)) for h, t in _all_links if _re.search(_rx, h, _re.I) and (_cat != "General English" or "business" not in h.lower())]
+    _cards = ""
+    for L in _levels:
+        _ls = [h for h, lv in _items if lv == L]
+        _btns = "".join(f'<a href="{h}" rel="noopener">{"Pack " + str(i) if len(_ls) > 1 else "Download"}</a>' for i, h in enumerate(_ls, 1))
+        _cards += f'<div class="pack"><h3>{_html.escape(L)}</h3><div class="dl">{_btns or "<span class=muted>Ask Anglia Morocco for a copy</span>"}</div></div>'
+    _secs += f'<h2 id="{_re.sub(r"[^a-z]+", "-", _cat.lower()).strip("-")}">{_html.escape(_cat)}</h2><div class="packs">{_cards}</div>'
+page("anglia-practice.html", "Practice papers & audio – Anglia Morocco | AGI Agadir",
+ "Free Anglia practice papers and sample exams for every level: General English, Business English, Children's Oral Tests, Applied Translation and C.I.T.E. for teachers.",
+ hero('<a href="anglia.html">Anglia Morocco</a> / <span>Practice papers</span>', "Practice resources.",
+      "Practice papers and sample exams for every Anglia level, published by Anglia Examinations. Pick your level and download – then check your answers with your teacher.",
+      '<a class="btn btn-primary" href="#general-english">Choose my level</a><a class="btn btn-ghost" href="anglia-books.html">Step To books &amp; audio</a>')
+ + f'<section class="section bg-white"><div class="wrap"><p class="chips">' + "".join(f'<a class="btn btn-ghost" href="#{_re.sub(r"[^a-z]+", "-", c.lower()).strip("-")}">{_html.escape(c)}</a> ' for c, _, _ in _cat_rules) + f'</p>{_secs}<p class="muted" style="font-size:13px;margin-top:24px">Files are hosted by Anglia Examinations. Not sure of your level? <a href="forms.html#enquiry/anglia">Book a free level test</a>.</p></div></section>'
+ + cta("Want guided preparation?", "Our classes and the Step To books prepare candidates for every level.", '<a class="btn btn-gold" href="anglia-classes.html">Classes &amp; prices</a><a class="btn btn-light" href="anglia-books.html">Step To books</a>'), ANGLIA_CSS + ANGLIA_THEME_CSS)
+
+# ---------- STEP TO BOOKS (angliamorocco.org/step-to-books + audio files)
+_series = [("First Step", ""), ("Junior", ""), ("Primary", ""), ("Preliminary", ""), ("Elementary", ""), ("Pre-Intermediate", ""), ("Intermediate", "B1 · Ofqual*"), ("Advanced", "B2 · Ofqual*"), ("Proficiency", "C1 · Ofqual*"), ("Masters", "C2 · Ofqual*")]
+page("anglia-books.html", "Step To books – Anglia Morocco | AGI Agadir",
+ "Anglia Step To books: ten workbooks from First Step to Masters (C2), with audio files, guided test practice and a sample exam. Order through Anglia Morocco in Agadir.",
+ hero('<a href="anglia.html">Anglia Morocco</a> / <span>Step To books</span>', "Step To books.",
+      "Specifically designed for students preparing for Anglia examinations from First Step to Masters (C2): 10–12 topic-based units, a QR code linking to audio files and a sample test, 110–128 full-colour pages.",
+      '<a class="btn btn-primary" href="forms.html#books">Order books</a><a class="btn btn-ghost" href="#audio">Audio files</a>')
+ + f'''<section class="section bg-white"><div class="wrap">
+  <div class="section-head"><h2>The Step To series</h2><p>Ten books set against the CEFR, from beginner to Masters.</p></div>
+  <div class="series">{"".join(f"<div><b>{n}</b><small{' class=acc' if x else ''}>{x or '&nbsp;'}</small></div>" for n, x in _series)}</div>
+  <p class="muted" style="font-size:13px;margin-top:12px">* Ofqual accredited through AIM Qualifications.</p>
+</div></section>
+<section class="section"><div class="wrap split"><div class="intro"><h2>The Step To approach</h2><p>A step-by-step approach to testing that encourages and motivates students to make clear and effective progress. Each book is researched and developed by professional ESOL experts.</p></div>
+  <dl class="rows"><div><dt>Workbook</dt><dd>A Step To workbook with 10–12 topic-based units, covering high-frequency test topics and vocabulary</dd></div><div><dt>Test practice</dt><dd>Guided practice for every test section – listening, reading, writing and speaking</dd></div>
+  <div><dt>Audio</dt><dd>Audio files, reached with the QR code in the book</dd></div><div><dt>Sample paper</dt><dd>A sample exam paper</dd></div><div><dt>Qualification</dt><dd>The opportunity to gain an Anglia ESOL international qualification</dd></div></dl></div></section>
+<section class="section bg-white"><div class="wrap split"><div class="intro"><h2>Teachers' guide</h2></div><p class="prose">The accompanying teachers' guides make things easy: each is a comprehensive one-stop solution for test preparation, with instructions, language and cultural explanations, test tips and transcripts of all the recordings.</p></div></section>
+<section class="section" id="audio"><div class="wrap"><div class="section-head"><h2>Audio files</h2><p>Free downloads for the Step To books.</p></div>
+  <div class="packs"><div class="pack"><h3>First Step – Pre-Intermediate</h3><div class="dl"><a href="https://www.anglia.nl/uploads/1/2/0/0/120044573/audiofiles_step_to_fs_-_pre-intermediate__1_.zip" rel="noopener">Download audio</a></div></div>
+  <div class="pack"><h3>Intermediate – Masters</h3><div class="dl"><a href="https://www.anglia.nl/uploads/1/2/0/0/120044573/audoifiles_step_to_intermediate_-_masters__1_.zip" rel="noopener">Download audio</a></div></div></div></div></section>
+''' + cta("Order your Step To books.", "Order through Anglia Morocco in Agadir – the office confirms availability, price and delivery.", '<a class="btn btn-gold" href="forms.html#books">Order books</a><a class="btn btn-light" href="anglia-practice.html">Practice papers</a>'), ANGLIA_CSS + ANGLIA_THEME_CSS)
+
+# ---------- hub hero with the logo + logo in the recognition strip
+PAGES["anglia.html"] = PAGES["anglia.html"].replace('<section class="page-hero wrap">', f'<section class="page-hero wrap anglia-hub-hero"><div>', 1)
+PAGES["anglia.html"] = _re.sub(r'(<section class="page-hero wrap anglia-hub-hero"><div>.*?</div>\s*)(</section>)', lambda m: m.group(1) + f'</div><img src="{ANGLIA_LOGO}" alt="Anglia Examinations England – Anglia Morocco" width="320" height="327">' + m.group(2), PAGES["anglia.html"], count=1, flags=_re.S)
+PAGES["anglia.html"] = PAGES["anglia.html"].replace('<div class="section-head"><h2>Why Anglia</h2></div>', f'<div class="section-head"><h2>Why Anglia</h2></div><div class="recog-logo"><img src="{ANGLIA_LOGO}" alt="Anglia Examinations England" width="64" height="65"><span>AGI is the official Anglia Examinations franchise holder for Morocco.</span></div>', 1)
+# every Anglia page: theme colors + logo badge
+for _n in list(PAGES):
+    if _n.startswith("anglia") and not _n.startswith(("fr/", "ar/")):
+        h = PAGES[_n].replace('<main id="main" class="np">', '<main id="main" class="np anglia-theme">', 1)
+        if _n != "anglia.html": h = h.replace('<section class="page-hero wrap">', f'<section class="page-hero wrap anglia-hero"><img class="anglia-badge" src="{ANGLIA_LOGO}" alt="Anglia Examinations England – Anglia Morocco" width="112" height="114">', 1)
+        if "ANGLIA_THEME" not in h: h = h.replace("</head>", f"<style>/*ANGLIA_THEME*/{ANGLIA_THEME_CSS}</style>\n</head>", 1)
+        PAGES[_n] = h
+
 # ================================================================== CONTENT QUALITY PASS (English pages)
 for _n in list(PAGES):
     if not _n.startswith(("fr/", "ar/")): PAGES[_n] = split_languages(PAGES[_n], _n)

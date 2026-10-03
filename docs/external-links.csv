@@ -1,7 +1,7 @@
 ﻿status,http,url,redirects_to,pages,used_on
-OK,200,https://angliamorocco.org/,,146,about.html admissions.html adult-diploma.html agi-usa.html anglia-about.html anglia-books.html
-OK,200,https://www.anglia.nl/uploads/1/2/0/0/120044573/audiofiles_step_to_fs_-_pre-intermediate__1_.zip,,2,anglia-books.html anglia-practice.html
-OK,200,https://www.anglia.nl/uploads/1/2/0/0/120044573/audoifiles_step_to_intermediate_-_masters__1_.zip,,2,anglia-books.html anglia-practice.html
+OK,200,https://angliamorocco.org/,,148,about.html admissions.html adult-diploma.html agi-usa.html anglia-about.html anglia-books.html
+OK,200,https://www.anglia.nl/uploads/1/2/0/0/120044573/audiofiles_step_to_fs_-_pre-intermediate__1_.zip,,1,anglia-books.html
+OK,200,https://www.anglia.nl/uploads/1/2/0/0/120044573/audoifiles_step_to_intermediate_-_masters__1_.zip,,1,anglia-books.html
 OK,200,http://www.angliamorocco.org/,https://angliamorocco.org/,1,anglia-exams.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-1-ff120.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/junior-pack-2-jj120.zip,,1,anglia-practice.html
@@ -27,26 +27,22 @@ OK,200,https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-1-ff
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-2-ff119.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-3-gg119.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/intermediate-pack-4-aa120.zip,,1,anglia-practice.html
-OK,200,https://angliaexams.com/wp-content/uploads/2021/09/intermediate-business-english.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-1-ff120.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-2-ff119.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-3-gg119.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/advanced-pack-4-aa120.zip,,1,anglia-practice.html
-OK,200,https://angliaexams.com/wp-content/uploads/2021/09/advanced-business-english.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-1-ff120.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-2-ff119.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-3-gg119.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/proficiency-pack-4-aa120.zip,,1,anglia-practice.html
-OK,200,https://angliaexams.com/wp-content/uploads/2021/09/proficiency-business-english.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-1-ff120.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-2-ff119.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-3-gg119.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/masters-pack-4-aa120.zip,,1,anglia-practice.html
-OK,200,https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-1.zip,,1,anglia-practice.html
-OK,200,https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-2.zip,,1,anglia-practice.html
-OK,200,https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-3.zip,,1,anglia-practice.html
-OK,200,https://angliaexams.com/wp-content/uploads/2021/09/adult-lerner-step-4.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/09/practical-business-english.zip,,1,anglia-practice.html
+OK,200,https://angliaexams.com/wp-content/uploads/2021/09/intermediate-business-english.zip,,1,anglia-practice.html
+OK,200,https://angliaexams.com/wp-content/uploads/2021/09/advanced-business-english.zip,,1,anglia-practice.html
+OK,200,https://angliaexams.com/wp-content/uploads/2021/09/proficiency-business-english.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-i-3.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-ii.zip,,1,anglia-practice.html
 OK,200,https://angliaexams.com/wp-content/uploads/2021/08/childrens-oral-level-iii-1.zip,,1,anglia-practice.html
@@ -97,3 +93,7 @@ OK,200,"https://en.wikipedia.org/wiki/Benton_County,_Oregon",,1,journal/lane-com
 OK,200,"https://en.wikipedia.org/wiki/Linn_County,_Oregon",,1,journal/lane-community-college-international-programs.html
 OK,200,"https://en.wikipedia.org/wiki/Douglas_County,_Oregon",,1,journal/lane-community-college-international-programs.html
 OK,200,https://en.wikipedia.org/wiki/Motto,,1,journal/lane-community-college-international-programs.html
+BROKEN,404,https://www.americangroup-international.com/wp-content/uploads/2026/04/OIP-7.webp,,1,journal/4356-2.html
+BROKEN,404,https://www.americangroup-international.com/wp-content/uploads/2026/03/american-school-counselor-association-asca-logo-png_seeklogo-385757.png,,1,journal/american-school-counselor-association-member.html
+BROKEN,404,https://www.americangroup-international.com/wp-content/uploads/2026/03/1000100832.png,,1,journal/leverage-edu-x-agi-join-forces-in-the-south-of-morocco.html
+BROKEN,404,https://www.americangroup-international.com/wp-content/uploads/2026/03/1000100833-683x1024.png,,1,journal/leverage-edu-x-agi-join-forces-in-the-south-of-morocco.html
