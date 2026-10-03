@@ -17,7 +17,7 @@ def _is_heading(l):
 def render(text, skip=(), privacy=False, start=None, stop=None, toc=False):
     """Turn crawled text into clean HTML: headings, lists, paragraphs. Keeps every line (except skip/privacy)."""
     lines = text.split("\n")
-    if lines and _re.search(r"[–-] American Group International|W25317017", lines[0]): lines = lines[1:]
+    if lines and _re.search(r"[–-] American Group International|W25317017|[–-] Anglia Morocco\s*$", lines[0]): lines = lines[1:]
     if start: lines = lines[next((i for i, l in enumerate(lines) if start in l), 0):]
     if stop: lines = lines[:next((i for i, l in enumerate(lines) if stop in l), len(lines))]
     out, lst, heads = [], None, []
@@ -292,3 +292,134 @@ _k12_src = MAPPED("k12.html")
 inject_static("k12.html", "full", '<section class="section bg-white np" id="about-the-school"><div class="wrap docwrap"><div class="doc">'
   + '<h2 style="margin-top:0">About the school in detail</h2>' + "".join(render(SRC(u)["text"], privacy=True) for u in _k12_src)
   + '</div><aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="handbook.html">Academic handbook</a></li><li><a href="supplies.html">Supplies list</a></li><li><a href="homework.html">Homework</a></li><li><a href="fees.html#high-school">High school options</a></li></ul></aside></div></section>')
+
+# ================================================================== PHASE 2 – ANGLIA MOROCCO
+_CRAWL = os.path.join(os.path.dirname(V2), "data", "crawl")
+ANGLIA_NAV = [("anglia.html", "Anglia Morocco"), ("anglia-exams.html", "Exams & levels"), ("calendar.html#anglia-exams", "Exam dates 2026"),
+              ("anglia-cefr.html", "CEFR levels"), ("anglia-practice.html", "Practice papers & audio"), ("anglia-books.html", "Step To books"),
+              ("anglia-special-arrangements.html", "Special arrangements"), ("anglia-placement-test.html", "Free placement assessment"),
+              ("anglia-classes.html", "Classes & prices"), ("anglia-network.html", "Network & centres"), ("partnerships.html", "Become a centre"),
+              ("anglia-faq.html", "Anglia FAQ"), ("anglia-about.html", "About Anglia Examinations"), ("teachers.html#cite", "C.I.T.E. for teachers")]
+def anglia_page(name, title, lede, body, desc, crumb=None):
+    nav = "".join(f'<li><a href="{h}"{" aria-current=\"page\"" if h == name else ""}>{t}</a></li>' for h, t in ANGLIA_NAV if h != name)
+    page(name, f"{title} – Anglia Morocco | AGI Agadir", desc,
+         hero(f'<a href="anglia.html">Anglia Morocco</a> / <span>{crumb or title}</span>' if name != "anglia.html" else "<span>Anglia Morocco</span>", title, lede,
+              '<a class="btn btn-primary" href="forms.html#enquiry/anglia">Book a free level test</a><a class="btn btn-ghost" href="calendar.html#anglia-exams">Exam dates</a>')
+         + f'<section class="section bg-white"><div class="wrap docwrap"><div class="doc">{body}</div>'
+           f'<aside><p class="kicker">Anglia Morocco</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px">{nav}</ul>'
+           f'<p style="margin-top:22px;font-size:13px" class="muted">Anglia Morocco headquarters: AGI, Agadir · <a href="mailto:j.wilburn@angliamorocco.org">j.wilburn@angliamorocco.org</a> · <a href="mailto:a.lam@angliamorocco.org">a.lam@angliamorocco.org</a></p></aside></div></section>', DOC_CSS)
+
+def srcs_for(dest): return [SRC(u) for u in MAPPED(dest)]
+def full(dest, skip=(), heading="In detail"):
+    return "".join(f'<h2>{heading if i == 0 else ""}</h2>' * (i == 0) + render(p["text"], skip=skip, privacy=True) for i, p in enumerate(srcs_for(dest)) if p["text"])
+
+LEVELS = [("First Step", "Pre-A1", "Entry level from about age 4: understands about 100 words, follows basic classroom instructions, says who they are."),
+ ("Junior", "Pre-A1", "Understands around 200 words, uses useful structures and explains what they are doing."),
+ ("Primary", "A1-", "About 400 words (jobs, feelings, weather); forms questions, answers them and describes things."),
+ ("Preliminary", "A1", "First general level for young and adult learners."), ("Elementary", "A2", "Everyday situations and simple texts."),
+ ("Pre-Intermediate", "A2+", "Wider everyday communication."), ("Intermediate", "B1", "Independent use in familiar contexts."),
+ ("Advanced", "B2", "Complex texts and fluent interaction."), ("Proficiency", "C1", "Effective operational proficiency."),
+ ("Masters", "C2", "Expert user. The Mastery qualification carries UCAS tariff points.")]
+BUSINESS = [("Practical Business English", "A2+"), ("Intermediate Business English", "B1"), ("Advanced Business English", "B2"), ("Proficiency in Business English", "C1")]
+_lv = "".join(f"<tr><td><b>{n}</b></td><td>{c}</td><td>{d}</td></tr>" for n, c, d in LEVELS)
+_bz = "".join(f"<tr><td><b>{n}</b></td><td>{c}</td></tr>" for n, c in BUSINESS)
+anglia_page("anglia-exams.html", "Anglia exams &amp; levels",
+ "Ten General English levels from First Step to Masters (C2), four Business English levels, and online exams – each testing listening, reading, writing and speaking.",
+ f'''<h2 style="margin-top:0">General English – ten levels</h2>
+ <div class="table-wrap"><table><thead><tr><th>Level</th><th>CEFR</th><th>What candidates can do</th></tr></thead><tbody>{_lv}</tbody></table></div>
+ <p>Young-learner levels are also open to adults, so anyone can start step by step. There is no upper age limit.</p>
+ <h2>Business English – four levels</h2><div class="table-wrap"><table><thead><tr><th>Exam</th><th>CEFR</th></tr></thead><tbody>{_bz}</tbody></table></div>
+ <h2>How long are the exams?</h2><ul><li>Reading and writing: 1 hour minimum, 3 hours maximum, depending on the level</li><li>Listening: 10–30 minutes</li><li>Speaking: about 5–20 minutes</li></ul>
+ <p>The certificate is valid for life; an institution may ask for a recent one. <a class="link" href="calendar.html#anglia-exams">Exam dates 2026</a></p>''' + full("anglia-exams.html"),
+ "Anglia exams in Morocco: ten General English levels (First Step to Masters C2), Business English A2+ to C1, durations and online exams.", "Exams &amp; levels")
+
+anglia_page("anglia-cefr.html", "CEFR levels", "How the Common European Framework of Reference describes language ability – and how AGI students progress through it.",
+ '<p style="margin-top:0"><a class="link" href="english-anglia.html#cefr">English benchmarks at AGI by grade</a></p>' + full("anglia-cefr.html", heading="The CEFR explained"),
+ "The CEFR levels A1 to C2 explained, and benchmarks for native speakers and language learners at AGI.")
+
+# special arrangements: list + disability codes table
+_sa = SRC("special-arrangements")["text"]; _codes = _re.findall(r"\n([A-Za-z][^\n]{2,60})\n(D\d)\b", _sa)
+_sa_tbl = '<div class="table-wrap"><table><thead><tr><th>Need</th><th>Code</th></tr></thead><tbody>' + "".join(f"<tr><td>{_html.escape(a.strip(' /'))}</td><td><b>{b}</b></td></tr>" for a, b in _codes) + "</tbody></table></div>" if _codes else ""
+anglia_page("anglia-special-arrangements.html", "Special arrangements", "Exams should be accessible to everyone. Candidates with learning or physical difficulties – or an injury on the day – can ask for support.",
+ render(_sa, stop="Explanation the D") + ("<h2>Disability codes</h2><p>Use these codes when you request special arrangements.</p>" + _sa_tbl if _sa_tbl else "")
+ + '<p><a class="btn btn-primary" href="forms.html#enquiry/anglia">Request special arrangements</a></p>',
+ "Special arrangements for Anglia exams in Morocco: extra time, breaks, Braille or large print, wheelchair access, scribe, lip reading; codes D1–D8.")
+
+# practice packs from the original page's download links
+_raw = open(os.path.join(_CRAWL, "anglia", "practice-resources.html"), encoding="utf-8", errors="ignore").read()
+_links = []
+for h, t in _re.findall(r'<a[^>]+href="(https?://[^"]+\.(?:zip|pdf))"[^>]*>(.*?)</a>', _raw, _re.S | _re.I):
+    t = _re.sub(r"<[^>]+>|\s+", " ", t).strip()
+    if t and (h, t) not in _links: _links.append((h, t))
+_groups = {}
+for h, t in _links:
+    lv = next((L for L, _, _ in LEVELS if L.lower().replace(" ", "-") in h.lower() or L.lower() in t.lower()), "Other")
+    _groups.setdefault(lv, []).append((h, t))
+_pk = "".join(f"<h3>{lv}</h3><ul>" + "".join(f'<li><a href="{h}" rel="noopener">{_html.escape(t)}</a></li>' for h, t in L) + "</ul>" for lv, L in _groups.items())
+_audio = "".join(f'<li><a href="{h}" rel="noopener">{lab}</a></li>' for h, lab in [
+    ("https://www.anglia.nl/uploads/1/2/0/0/120044573/audiofiles_step_to_fs_-_pre-intermediate__1_.zip", "Step To audio files: First Step to Pre-Intermediate"),
+    ("https://www.anglia.nl/uploads/1/2/0/0/120044573/audoifiles_step_to_intermediate_-_masters__1_.zip", "Step To audio files: Intermediate to Masters")])
+anglia_page("anglia-practice.html", "Practice papers &amp; audio", "Free sample papers for every level, published by Anglia Examinations, plus the audio files for the Step To books.",
+ render(SRC("practice-resources")["text"], stop="Pick Your Level") + f"<h2>Practice packs by level</h2>{_pk or '<p>Download links are on angliamorocco.org.</p>'}<h2>Audio files</h2><ul>{_audio}</ul>"
+ + full("anglia-practice.html", skip=("Pack", "First Step", "Junior", "Primary", "Preliminary", "Elementary", "Intermediate", "Advanced", "CLICK TO DOWNLOAD")),
+ "Free Anglia practice papers for every level (First Step to Advanced, Business English) and Step To audio files.")
+
+anglia_page("anglia-books.html", "Step To books", "Preparation books for each Anglia level, with audio files – order through Anglia Morocco.",
+ full("anglia-books.html", heading="Step To books") + f'<h2>Audio files</h2><ul>{_audio}</ul><p><a class="btn btn-primary" href="forms.html#enquiry/anglia">Order books</a></p>',
+ "Anglia Step To preparation books for every level, audio files and how to order in Morocco.")
+
+anglia_page("anglia-placement-test.html", "Free placement assessment", "Find your English level on the CEFR before you choose a class or an Anglia exam.",
+ '''<h2 style="margin-top:0">How it works</h2><ol><li>Book your free assessment online or by WhatsApp.</li><li>Take the assessment at AGI in Agadir: reading, listening, writing and a short conversation.</li><li>Get your CEFR level and a recommendation: a class, a learning pod or the right Anglia exam.</li></ol>
+<p><a class="btn btn-primary" href="forms.html#enquiry/anglia">Book my free assessment</a></p>
+<h2>Want to practice first?</h2><p>Try the official Anglia sample papers for your level. <a class="link" href="anglia-practice.html">Practice papers</a></p>''',
+ "Free English placement assessment on the CEFR at Anglia Morocco headquarters in Agadir.", "Placement assessment")
+
+_cls = full("anglia-classes.html", heading="Our English classes")
+anglia_page("anglia-classes.html", "Classes &amp; prices", "One-to-one lessons, small groups, 12-week courses and Saturday classes for children and teens – with a free level test first.",
+ '''<h2 style="margin-top:0">Prices</h2><div class="table-wrap"><table class="fee-table"><thead><tr><th>Class</th><th>Price</th></tr></thead><tbody>
+ <tr><td>Saturday classes, ages 5–18, Saturdays 2–4 pm, October–June, yearly exam included; BAC, TOEFL, IELTS, SAT and Mathematics-in-English preparation</td><td><b>500 MAD a month</b></td></tr>
+ <tr><td>One-to-one (English or mathematics)</td><td><b>200 MAD a session</b></td></tr><tr><td>Small group, 2–3 students</td><td><b>150 MAD per person</b></td></tr>
+ <tr><td>Group course, 4–10 students, 12 weeks</td><td><b>1,200 MAD</b></td></tr><tr><td>Level test</td><td><b>Free</b></td></tr></tbody></table></div>
+ <p class="muted" style="font-size:13px">Prices effective November 2024; books and insurance not included. <a href="calendar.html#saturday">Saturday schedule</a></p>''' + _cls,
+ "English classes at Anglia Morocco, Agadir: one-to-one 200 MAD, small groups, 12-week courses 1,200 MAD, Saturday classes 500 MAD a month.", "Classes &amp; prices")
+
+# network: regions and provinces; no political text (claims register #11)
+_POL = ("Sahrawi", "United Nations", "disputed", "de facto", "See also", "annex", "Polisario", "self-determination", "auto determined", "legal instruments", "Western Sahara")
+anglia_page("anglia-network.html", "Network &amp; centres", "From its Agadir headquarters, Anglia Morocco works with schools, language centres and teachers across the Kingdom's twelve regions.",
+ '<p style="margin-top:0">Main headquarters: AGI, Agadir · Sales coordinator: Abdelhak Lam. Partnerships are available – regions marked "Representative available" are looking for a local partner.</p>'
+ + render(SRC("angliamorocco-networks-and-centers-12-regions")["text"], skip=_POL + ("Country Manager",))
+ + '<p><a class="btn btn-primary" href="partnerships.html">Become an Anglia centre</a></p>',
+ "Anglia Morocco network across the 12 regions of Morocco: provinces, centres and open representative positions.", "Network &amp; centres")
+
+anglia_page("anglia-faq.html", "Anglia FAQ", "Answers about Anglia exams – levels, ages, durations and certificates.",
+ '''<div class="faq">
+ <details><summary>What are the Anglia exams?</summary><p>Official English certificates from Anglia Examinations (Chichester, England, since 1993; part of Chichester College Group). They evaluate reading, listening, speaking and writing, from initiation to expertise, helping students reach the level they want step by step.</p></details>
+ <details><summary>Which levels do they certify?</summary><p>10 levels in three groups – young learners (First Step, Junior, Primary, Preliminary), intermediate (Elementary, Pre-Intermediate, Intermediate) and higher (Advanced, Proficiency, Masters) – plus Business English levels with business vocabulary.</p></details>
+ <details><summary>How long do the exams last?</summary><p>Reading and writing: 1 hour minimum and 3 hours maximum depending on the level. Listening: 10 to 30 minutes. Speaking: about 5 to 20 minutes.</p></details>
+ <details><summary>Who can take them?</summary><p>Anyone: students of all ages from 4 years onwards, with no upper age limit. You can start at the level you or your teacher consider appropriate.</p></details>
+ <details><summary>Do I need extra classes?</summary><p>No – preparation is built into the classroom curriculum. Classes at AGI are available if you want them.</p></details>
+ <details><summary>Does the certificate expire?</summary><p>It lasts for life, but an institution may ask for a recent one if yours is very old.</p></details>
+ <details><summary>How do I know which level to take?</summary><p>Take the free placement assessment; Anglia also offers an additional exam that determines your level.</p></details>
+ <details><summary>Are Anglia certificates recognized by universities?</summary><p>The Mastery (C2) qualification carries UCAS tariff points for UK universities. ''' + PH_TXT("anglia-faq-recognition", "Further recognition statements to be confirmed with Anglia.") + '''</p></details>
+ <details><summary>Are they affordable?</summary><p>Anglia exams are priced affordably compared with other international certificates.</p></details></div>''',
+ "Anglia exams FAQ: levels, ages from 4, durations, lifetime certificates, UCAS tariff points for Mastery.")
+
+anglia_page("anglia-about.html", "About Anglia Examinations", "Anglia Examinations has tested English since 1993 from Chichester, England. AGI has been the franchise holder for Morocco since 2021.",
+ '<p style="margin-top:0">Anglia Examinations is a wholly owned subsidiary of the Chichester College Group, award winning and Ofsted Outstanding. The four highest levels are awarded by AIM Qualifications and Assessment Group, regulated by Ofqual.</p>'
+ + full("anglia-about.html", heading="More about Anglia"), "About Anglia Examinations: Chichester since 1993, Chichester College Group, AIM and Ofqual, Anglia Morocco since 2021.", "About Anglia")
+
+_home = _INV.get("https://angliamorocco.org/", {"text": "", "url": "", "title": ""})
+_cards = "".join(f'<a class="card" href="{h}"><h3>{t}</h3><span class="more">Open</span></a>' for h, t in ANGLIA_NAV[1:])
+page("anglia.html", "Anglia Morocco – English exams and classes | AGI Agadir",
+ "Anglia Morocco headquarters at AGI, Agadir: Anglia English exams from First Step to Masters, exam dates, practice papers, classes and a network across 12 regions.",
+ hero("<span>Anglia Morocco</span>", "Anglia Morocco.", "Official English exams from England, from a child's first words to Masters (C2) – with classes, practice papers and centres across Morocco's twelve regions.",
+      '<a class="btn btn-primary" href="forms.html#enquiry/anglia">Book a free level test</a><a class="btn btn-ghost" href="calendar.html#anglia-exams">Exam dates 2026</a>')
+ + f'''<section class="section bg-white"><div class="wrap"><div class="cards">{_cards}</div></div></section>
+<section class="section"><div class="wrap docwrap"><div class="doc">{render(_home["text"], privacy=True)}
+<h2>Club Anglia</h2><p>{PH_TXT("club-anglia", "Coming soon.")}</p>
+<p><a class="link" href="https://angliamorocco.org/" target="_blank" rel="noopener">angliamorocco.org</a></p></div>
+<aside><p class="kicker">Contacts</p><p class="muted" style="font-size:14px">Julie Wilburn · <a href="mailto:j.wilburn@angliamorocco.org">j.wilburn@angliamorocco.org</a><br>Abdelhak Lam · <a href="mailto:a.lam@angliamorocco.org">a.lam@angliamorocco.org</a></p></aside></div></section>''', DOC_CSS)
+
+# partnerships (static page): full source text
+inject_static("partnerships.html", "full", '<section class="section bg-white np" id="partner-with-us"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Partner with AGI and Anglia Morocco</h2>'
+  + "".join(render(SRC(u)["text"], privacy=True) for u in MAPPED("partnerships.html")) + '</div><aside><p class="kicker">Anglia Morocco</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="anglia-network.html">Network &amp; centres</a></li><li><a href="anglia.html">Anglia Morocco</a></li><li><a href="investors.html">Partners &amp; investors</a></li></ul></aside></div></section>')

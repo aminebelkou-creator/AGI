@@ -321,7 +321,7 @@ ACC = [("American Council of Training and Development", "Accreditation", "AGI's 
  ("American Canadian Board", "Certification", "Professional training certificates, including the Early Childhood Education and Care diploma, are approved by the American Canadian Board."),
  ("Chichester College Group, UK", "Official partner", "AGI is proud to be the official partner in Morocco of Chichester College Group, UK – award winning and Ofsted Outstanding – which owns Anglia Examinations. AGI became the Anglia franchise holder for Morocco in 2021."),
  ("AIM Qualifications · Ofqual", "Regulation", "Anglia's four highest levels of exam are awarded by AIM Qualifications and Assessment Group, regulated by Ofqual in England."),
- ("UCAS", "Recognition", "The Anglia Proficiency examination is listed by UCAS as evidence of English competence for British universities."),
+ ("UCAS", "Recognition", "The Anglia Mastery (C2) qualification carries UCAS tariff points for British universities."),
  ("Global Schools Program", "Membership", "An initiative of the UN Sustainable Development Solutions Network, supporting education for sustainable development. Member since 2023."),
  ("American School Counselor Association", "Membership", "AGI joined ASCA in 2026, bringing U.S. school-counseling standards to student guidance.")]
 acc = "".join(f'<div><dt>{n}<small style="display:block;font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-top:6px">{k}</small></dt><dd>{d}</dd></div>' for n, k, d in ACC)
@@ -487,7 +487,7 @@ program_page("english-anglia.html", "English & Anglia exams", "English & Anglia 
     <div><dt>Ten levels</dt><dd>From young learner to expert user, mapped to the Common European Framework (CEFR). There is no minimum age; young learners start at about four.</dd></div>
     <div><dt>All four skills</dt><dd>Every level tests listening, reading, writing and speaking.</dd></div>
     <div><dt>Business English</dt><dd>Anglia International Business English, at four levels from A2+ to C1.</dd></div>
-    <div><dt>Recognized in the UK</dt><dd>Anglia Examinations is a wholly owned subsidiary of the Chichester College Group, award winning and Ofsted Outstanding. The four highest levels are awarded by AIM Qualifications and Assessment Group, regulated by Ofqual. The Proficiency level is listed by UCAS as evidence of English for British universities.</dd></div>
+    <div><dt>Recognized in the UK</dt><dd>Anglia Examinations is a wholly owned subsidiary of the Chichester College Group, award winning and Ofsted Outstanding. The four highest levels are awarded by AIM Qualifications and Assessment Group, regulated by Ofqual. The Mastery (C2) qualification carries UCAS tariff points for British universities.</dd></div>
   </dl>
 </div></section>
 <section class="section" id="classes"><div class="wrap">
@@ -588,7 +588,7 @@ program_page("pathways.html", "University pathways", "University pathways",
   <div class="cards">
     <div><span class="tag">United Kingdom</span><h3>Chichester College Group</h3><p>Seven colleges in the south of England – Chichester, Crawley, Worthing, Brinsbury, Brighton MET, Northbrook and Haywards Heath – with UK progression routes for AGI learners.</p><a class="more" href="journal-ccgi-partnership.html">Read about the partnership</a></div>
     <div><span class="tag">Placement</span><h3>Leverage Edu</h3><p>Our regional partner for the Souss and southern Morocco: private and public university placement, with housing assistance.</p></div>
-    <div><span class="tag">English requirement</span><h3>Anglia Proficiency</h3><p>Listed by UCAS as evidence of English for British universities – and taken right here in Agadir.</p><a class="more" href="english-anglia.html">English &amp; Anglia exams</a></div>
+    <div><span class="tag">English requirement</span><h3>Anglia Mastery (C2)</h3><p>Carries UCAS tariff points for British universities – and taken right here in Agadir.</p><a class="more" href="english-anglia.html">English &amp; Anglia exams</a></div>
   </div>
   <h3 style="margin:48px 0 16px">Partner universities and colleges</h3>
   <div class="cards" data-placeholder="fact:partner-universities">

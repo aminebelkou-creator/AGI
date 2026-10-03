@@ -8,6 +8,7 @@ pages = json.load(open(os.path.join(ROOT, "data", "crawl", "inventory.json"), en
 # (regex on url path + title, destination, section, action, phase, reason)
 R = [
  # ---- decisions for pages no general rule covered (reviewed by hand)
+ (r"teacher-assistant-trainings|/citem", "teachers/cite.html", "C.I.T.E. / TESOL", "expand", 3, "Teacher certification belongs to the teachers section"),
  (r"/blog/?\s|/lates?t?-news/?\s|angliamorocco\.org/news/?\s|/programs(-2)?/?\s|/services-2/?\s|sch-dashboard", "-", "-", "drop", 0, "Menu, archive or internal page without content of its own"),
  (r"/lerninpods/", "programs/learning-pods.html", "Learning pods & fast track", "merge", 3, "Duplicate learning-pods page"),
  (r"for-a-better-education", "k12.html", "K–12 school", "merge", 1, "School presentation page"),

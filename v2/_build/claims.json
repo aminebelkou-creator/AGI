@@ -11,7 +11,7 @@
   "claim": "Proficiency listed by UCAS",
   "source": "v2 english-anglia",
   "decision": "Replace with: Mastery (C2) carries UCAS tariff points",
-  "status": "fix-now"
+  "status": "fixed"
  },
  {
   "id": 3,

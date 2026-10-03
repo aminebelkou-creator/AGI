@@ -53,7 +53,6 @@ agi,en,page,program,EFL Classes,https://www.americangroup-international.com/libr
 agi,en,page,program,One-On-One EFL Classes,https://www.americangroup-international.com/one-on-one-esl-classes/,139,yes,partial,anglia-classes.html,EFL classes,expand,2,Class formats,0
 agi,en,page,exam,Anglia Examinations of England,https://www.americangroup-international.com/anglia/,750,,covered,anglia-exams.html,Levels & exams,expand,2,All levels with descriptions,3
 agi,en,page,exam,Business Examinations,https://www.americangroup-international.com/business-examinations/,253,,covered,anglia-exams.html,Business English exams,merge,2,Exam suite page,0
-agi,en,page,teacher,Teacher Training Program for English/Anglia C.I.T.E Certificate of International Teachers-TESOL,https://www.americangroup-international.com/teacher-assistant-trainings/,2307,,missing,anglia-exams.html,Levels & exams,expand,2,All levels with descriptions,1
 anglia,en,page,exam,Anglia Morocco New Online Examinations,https://angliamorocco.org/anglia-morocco-new-online-examinations/,219,,covered,anglia-exams.html,Online exams,merge,2,Online exam option,3
 anglia,en,page,exam,Exams,https://angliamorocco.org/exams/,681,,covered,anglia-exams.html,Levels & exams,expand,2,All levels with descriptions,0
 anglia,en,page,about,FAQ,https://angliamorocco.org/faq/,514,,partial,anglia-faq.html,Anglia FAQ,expand,2,Verified answers only (claims register),4
@@ -86,7 +85,8 @@ agi,en,page,program,Proctoring Services,https://www.americangroup-international.
 agi,en,page,teacher,Online Teachers Database,https://www.americangroup-international.com/online-teachers-database/,327,,partial,teachers-careers.html,Teach with AGI,expand,3,"Teachers database, workshops",2
 agi,en,page,teacher,STEM Educators Workshop Job Interviews,https://www.americangroup-international.com/4084-2/,186,,missing,teachers-careers.html,Teach with AGI,expand,3,"Teachers database, workshops",0
 agi,en,page,exam,Elevate Your Teaching Career,https://www.americangroup-international.com/cite/,824,,covered,teachers-cite.html,C.I.T.E. / TESOL,expand,3,Full teacher certification page,7
-anglia,en,page,exam,C.I.T.E – Certificate for International Teachers of English (TESOL),https://angliamorocco.org/citem/,817,,covered,teachers-cite.html,C.I.T.E. / TESOL,expand,3,Full teacher certification page,7
+agi,en,page,teacher,Teacher Training Program for English/Anglia C.I.T.E Certificate of International Teachers-TESOL,https://www.americangroup-international.com/teacher-assistant-trainings/,2307,,missing,teachers-cite.html,C.I.T.E. / TESOL,expand,3,Teacher certification belongs to the teachers section,1
+anglia,en,page,exam,C.I.T.E – Certificate for International Teachers of English (TESOL),https://angliamorocco.org/citem/,817,,covered,teachers-cite.html,C.I.T.E. / TESOL,expand,3,Teacher certification belongs to the teachers section,7
 agi,en,page,teacher,USA Private School Teacher Sponsorship,https://www.americangroup-international.com/usa-private-school-teacher-sponsorship/,764,,covered,teachers-usa-sponsorship.html,USA private-school sponsorship,expand,3,Process and fee,5
 agi,en,page,wellbeing,ADHD Holistic Practitioner Coaching,https://www.americangroup-international.com/adhd-holistic-practitioner-coaching/,782,,partial,wellbeing-adhd-coaching.html,ADHD holistic coaching,expand,3,Service page,3
 agi,en,page,wellbeing,Holistic Play Therapy Practitioner,https://www.americangroup-international.com/holistic-play-therapy-practitioner/,236,,missing,wellbeing-play-therapy.html,Holistic play therapy,expand,3,Service page,1

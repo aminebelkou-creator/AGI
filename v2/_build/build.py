@@ -19,11 +19,11 @@ PROGRAMS = [
 ]
 NAV = [("about.html", "About"), ("PROGRAMS", "Programs"), ("admissions.html", "Admissions"),
        ("student-life.html", "Student life"), ("journal.html", "Journal"),
-       ("partnerships.html", "Partnerships"), ("contact.html", "Contact")]
+       ("anglia.html", "Anglia Morocco"), ("contact.html", "Contact")]
 # which menu item each page belongs to
 SECTION = {p: "PROGRAMS" for p, _, _ in PROGRAMS}
 SECTION.update({"programs.html": "PROGRAMS", "policies.html": "admissions.html", "journal-ccgi-partnership.html": "journal.html",
-                "connect.html": "contact.html", "parents.html": None, "founder-letter.html": "about.html", "investors.html": "partnerships.html", "our-story.html": "about.html", "fees.html": "admissions.html", "calendar.html": "admissions.html", "handbook.html": "admissions.html", "attendance.html": "admissions.html", "promotion-retention.html": "admissions.html", "placement-policy.html": "admissions.html", "parent-responsibility.html": "admissions.html", "refunds-complaints.html": "admissions.html", "media-policy.html": "admissions.html", "homework.html": "admissions.html", "volunteer-hours.html": "admissions.html", "supplies.html": "admissions.html", "faq.html": "contact.html", "privacy.html": None, "terms.html": None, "forms.html": "FORMS", "index.html": None})
+                "connect.html": "contact.html", "parents.html": None, "founder-letter.html": "about.html", "investors.html": "anglia.html", "our-story.html": "about.html", "anglia-exams.html": "anglia.html", "anglia-cefr.html": "anglia.html", "anglia-special-arrangements.html": "anglia.html", "anglia-practice.html": "anglia.html", "anglia-books.html": "anglia.html", "anglia-placement-test.html": "anglia.html", "anglia-classes.html": "anglia.html", "anglia-network.html": "anglia.html", "anglia-faq.html": "anglia.html", "anglia-about.html": "anglia.html", "partnerships.html": "anglia.html", "english-anglia.html": "anglia.html", "fees.html": "admissions.html", "calendar.html": "admissions.html", "handbook.html": "admissions.html", "attendance.html": "admissions.html", "promotion-retention.html": "admissions.html", "placement-policy.html": "admissions.html", "parent-responsibility.html": "admissions.html", "refunds-complaints.html": "admissions.html", "media-policy.html": "admissions.html", "homework.html": "admissions.html", "volunteer-hours.html": "admissions.html", "supplies.html": "admissions.html", "faq.html": "contact.html", "privacy.html": None, "terms.html": None, "forms.html": "FORMS", "index.html": None})
 
 def cur(page, href):
     return ' aria-current="page"' if page == href else ""

@@ -1,7 +1,7 @@
 ﻿site,language,kind,category,title,url,date,words,thin,text_coverage,fact_coverage,status,missing_facts_examples
 agi,en,page,about,About Us,https://www.americangroup-international.com/about-us/,,517,,0.45,,partial,
 agi,en,page,about,Contact,https://www.americangroup-international.com/contact/,,65,yes,1.0,1.0,covered,
-agi,en,page,about,Front Page – Copy,https://www.americangroup-international.com/front-page-copy/,,1066,,0.9,0.0,missing,number: 45 nationalities
+agi,en,page,about,Front Page – Copy,https://www.americangroup-international.com/front-page-copy/,,1066,,0.95,0.0,missing,number: 45 nationalities
 agi,en,page,about,Our Vision,https://www.americangroup-international.com/our-vision/,,147,yes,0.14,,missing,
 agi,en,page,admissions,Enrollment,https://www.americangroup-international.com/enrollment/,,391,,0.55,1.0,partial,
 agi,en,page,admissions,Student Life,https://www.americangroup-international.com/admission-prossess/,,50,yes,1.0,,covered,
@@ -14,23 +14,23 @@ agi,en,archive,archive,university,https://www.americangroup-international.com/ht
 agi,en,page,calendar,Academic School Calendar 2026-2027,https://www.americangroup-international.com/school-calandar/,,473,,1.0,1.0,covered,
 agi,en,page,calendar,Anglia Examinations Saturday Classes Yearly Schedule 2025-2026,https://www.americangroup-international.com/anglia-examinations-saturday-classes-yearly-schedule-2025-2026/,,275,,1.0,0.97,covered,number: 2026 Week
 agi,en,page,calendar,Last Day for Students- Other Important Dates!,https://www.americangroup-international.com/last-day-for-students-other-important-dates/,,54,yes,1.0,0.0,missing,"date: June 15, 2022 | date: June 4, 2022"
-agi,en,page,exam,Anglia Examinations Accreditation with AIM,https://www.americangroup-international.com/anglia-examinations-accreditation-with-aim/,,553,,0.93,,covered,
-agi,en,page,exam,Anglia Examinations of England,https://www.americangroup-international.com/anglia/,,750,,0.88,1.0,covered,
+agi,en,page,exam,Anglia Examinations Accreditation with AIM,https://www.americangroup-international.com/anglia-examinations-accreditation-with-aim/,,553,,1.0,,covered,
+agi,en,page,exam,Anglia Examinations of England,https://www.americangroup-international.com/anglia/,,750,,1.0,1.0,covered,
 agi,en,page,exam,AngliaMorocco English Test,https://www.americangroup-international.com/english-practice-test/,,2018,,0.33,,partial,
 agi,en,page,exam,Attestation For AGI clients,https://www.americangroup-international.com/attestation-for-agi-clients/,,19,yes,1.0,,covered,
 agi,en,page,exam,Benchmarks for Natives and Language Learners on the CEFR (Common European Frame).,https://www.americangroup-international.com/benchmarks-for-natives-and-language-learners-on-the-cerf-common-european-reference-framework/,,375,,1.0,,covered,
-agi,en,page,exam,Business Examinations,https://www.americangroup-international.com/business-examinations/,,253,,0.9,,covered,
+agi,en,page,exam,Business Examinations,https://www.americangroup-international.com/business-examinations/,,253,,1.0,,covered,
 agi,en,page,exam,Elevate Your Teaching Career,https://www.americangroup-international.com/cite/,,824,,0.97,0.86,covered,number: 6 weeks
 agi,en,page,exam,latest news,https://www.americangroup-international.com/latest-news/,,12,yes,0.0,,missing,
 agi,en,page,fees,Admission Fees,https://www.americangroup-international.com/admission-fee/,,1609,,1.0,0.88,covered,"money: 26,000 Dirhams | money: 2600 Dirhams | money: 2600 dirhams"
 agi,en,page,fees,Anglia Language Class Pricing and Details,https://www.americangroup-international.com/anglia-language-class-pricing-and-details/,,155,,1.0,0.5,partial,"money: 1,200 DHs | money: 100 DHs | money: 150 DHs | money: 200 DHs"
-agi,en,page,fees,Online Tutoring Session Prices for AGI USA,https://www.americangroup-international.com/online-tutoring-session-prices-for-agi-usa/,,289,,0.69,0.12,missing,money: $15.00 | money: $20.00 | money: $25.00 | money: $40.00 | money: $50.00 | number: 5 hour | number: 5 hours
+agi,en,page,fees,Online Tutoring Session Prices for AGI USA,https://www.americangroup-international.com/online-tutoring-session-prices-for-agi-usa/,,289,,0.77,0.12,missing,money: $15.00 | money: $20.00 | money: $25.00 | money: $40.00 | money: $50.00 | number: 5 hour | number: 5 hours
 agi,en,page,form,Book An Appointment,https://www.americangroup-international.com/book-an-appointment/,,34,yes,1.0,,covered,
 agi,en,page,form,Document Request Form,https://www.americangroup-international.com/document-request/,,17,yes,1.0,,covered,
 agi,en,page,form,Forms,https://www.americangroup-international.com/forms/,,362,,0.93,0.5,partial,number: 48 hours
 agi,en,page,form,SCHEDULE AN APPOINTMENT,https://www.americangroup-international.com/schedule-an-appointment/,,17,yes,1.0,,covered,
 agi,en,page,form,SCHEDULE YOUR FREE CONSULTATION,https://www.americangroup-international.com/applyform/,,64,yes,1.0,,covered,
-agi,en,page,legal,Privacy Policy,https://www.americangroup-international.com/privacy-policy/,,605,,0.74,1.0,covered,
+agi,en,page,legal,Privacy Policy,https://www.americangroup-international.com/privacy-policy/,,605,,0.77,1.0,covered,
 agi,en,page,legal,TERMS AND CONDITIONS,https://www.americangroup-international.com/terms-and-conditions-of-sale/,,520,,0.27,1.0,missing,
 agi,en,post,news/event,A Day At The Seamstress,https://www.americangroup-international.com/a-day-at-the-seamstress/,,73,yes,1.0,,covered,
 agi,en,post,news/event,A brief note from the Principal. Graduation 2022.,https://www.americangroup-international.com/a-brief-note-from-the-principal-graduation-2022/,,213,,1.0,0.0,missing,"date: 0 June 10, 2022"
@@ -92,12 +92,12 @@ agi,en,post,news/event,Summer School for Academic and Language EFL Students 2018
 agi,en,post,news/event,Teachers Training Program in English,https://www.americangroup-international.com/teachers-training-program-in-english/,,474,,1.0,1.0,covered,
 agi,en,post,news/event,Work Experience Degree Celebration,https://www.americangroup-international.com/work-experience-degree-celebration/,,76,yes,1.0,,covered,
 agi,en,post,news/event,student life,https://www.americangroup-international.com/gallery/student-life/,,56,yes,1.0,,covered,
-agi,en,post,news/event,“American Group International and Anglia Morocco Join Forces with Chichester College Group International (CCGi) to Empower Global Learners”,https://www.americangroup-international.com/american-group-international-and-anglia-morocco-join-forces-with-chichester-college-group-international-ccgi-to-empower-global-learners/,,498,,0.65,1.0,partial,
-agi,en,page,online,American Group International American Group USA LLC W25317017-,https://www.americangroup-international.com/,,949,,0.93,0.0,missing,number: 45 nationalities
-agi,en,page,online,"American Group USA, LLC",https://www.americangroup-international.com/american-group-international-usa/,,319,,0.89,1.0,covered,
+agi,en,post,news/event,“American Group International and Anglia Morocco Join Forces with Chichester College Group International (CCGi) to Empower Global Learners”,https://www.americangroup-international.com/american-group-international-and-anglia-morocco-join-forces-with-chichester-college-group-international-ccgi-to-empower-global-learners/,,498,,0.69,1.0,partial,
+agi,en,page,online,American Group International American Group USA LLC W25317017-,https://www.americangroup-international.com/,,949,,0.98,0.0,missing,number: 45 nationalities
+agi,en,page,online,"American Group USA, LLC",https://www.americangroup-international.com/american-group-international-usa/,,319,,1.0,1.0,covered,
 agi,en,page,online,How Long Should a Tutoring Session Last?,https://www.americangroup-international.com/how-long-should-a-tutoring-session-last/,,878,,0.81,0.5,partial,number: 2 hours | number: 5 hours
-agi,en,page,online,McGuffey’s Online Tutor/Sight Words Helps for Reading/Spelling,https://www.americangroup-international.com/mcguffeys-online-tutor-sight-words-helps-for-reading/,,21180,,0.11,0.0,missing,number: 100 years
-agi,en,page,online,Online Applications Zoom/Teams Instructions,https://www.americangroup-international.com/online-applications-zoom-teams-instructions/,,626,,0.69,,partial,
+agi,en,page,online,McGuffey’s Online Tutor/Sight Words Helps for Reading/Spelling,https://www.americangroup-international.com/mcguffeys-online-tutor-sight-words-helps-for-reading/,,21180,,0.14,0.0,missing,number: 100 years
+agi,en,page,online,Online Applications Zoom/Teams Instructions,https://www.americangroup-international.com/online-applications-zoom-teams-instructions/,,626,,0.72,,covered,
 agi,en,page,other,Blog,https://www.americangroup-international.com/blog/,,13,yes,0.0,,missing,
 agi,en,fragment,other,Elementor Floating Element #4278,https://www.americangroup-international.com/e-floating-buttons/elementor-floating-element-4278/,,32,yes,0.0,,fragment,
 agi,en,page,other,Lates News,https://www.americangroup-international.com/lates-news/,,15,yes,0.0,,missing,
@@ -105,10 +105,10 @@ agi,en,page,other,Recent Posts,https://www.americangroup-international.com/recen
 agi,en,page,other,Services,https://www.americangroup-international.com/services-2/,,13,yes,1.0,,covered,
 agi,en,page,other,Special Education Services,https://www.americangroup-international.com/location-physical/,,731,,1.0,0.5,partial,email: brahim.robio@antal.com | phone: 659926960
 agi,en,page,partner,AngliaMorocco Network- 12 Regions,https://www.americangroup-international.com/angliamorocco-networks-and-centers/,,686,,0.25,1.0,missing,
-agi,en,page,partner,Partnerships,https://www.americangroup-international.com/interested-in-working-with-us/,,795,,0.78,1.0,covered,
-agi,en,page,pathways,AGI Education Consultancy,https://www.americangroup-international.com/agi-education-consultancy/,,1001,,0.82,,covered,
+agi,en,page,partner,Partnerships,https://www.americangroup-international.com/interested-in-working-with-us/,,795,,1.0,1.0,covered,
+agi,en,page,pathways,AGI Education Consultancy,https://www.americangroup-international.com/agi-education-consultancy/,,1001,,0.84,,covered,
 agi,en,page,pathways,English University Agent Worldwide,https://www.americangroup-international.com/university-agent-announcement/,,364,,1.0,1.0,covered,
-agi,en,page,pathways,Network of Partners,https://www.americangroup-international.com/network-of-partners/,,909,,0.8,0.0,missing,number: 000 students | number: 20 years | number: 80 nationalities
+agi,en,page,pathways,Network of Partners,https://www.americangroup-international.com/network-of-partners/,,909,,0.85,0.0,missing,number: 000 students | number: 20 years | number: 80 nationalities
 agi,en,page,pathways,RB College of the United Kingdom,https://www.americangroup-international.com/rb-college-of-the-united-kingdom/,,267,,0.9,,covered,
 agi,en,page,policy,AGI Academic School Supplies List,https://www.americangroup-international.com/agi-academic-school-supplies-list/,,96,yes,1.0,,covered,
 agi,en,page,policy,AGI Mission Statement and Academic Handbook,https://www.americangroup-international.com/agi-academic-school-handbook/,,7082,,1.0,1.0,covered,
@@ -122,61 +122,61 @@ agi,en,page,policy,Parent Policy and Responsibility,https://www.americangroup-in
 agi,en,page,policy,"Policies & Procedures American Group International & Divisions, Refunds and Complaints",https://www.americangroup-international.com/policies-procedures-american-group-international-divisions-refunds-and-complaints/,,679,,1.0,1.0,covered,
 agi,en,page,policy,Promotion and Retention Procedures Policy,https://www.americangroup-international.com/promotion-and-retention-procedures-policy/,,539,,1.0,1.0,covered,
 agi,en,page,policy,The Importance of School Attendance,https://www.americangroup-international.com/the-importance-of-school-attendance/,,21,yes,1.0,,covered,
-agi,en,page,program,AGI Learning Pods,https://www.americangroup-international.com/lerninpods/,,709,,0.88,1.0,covered,
-agi,en,page,program,"Academic English K to12th, Inclusive Education Grade Micro-School",https://www.americangroup-international.com/transportation-facilities/,,951,,0.91,0.0,missing,number: 10 month | number: 2 month | number: 36 Week
-agi,en,page,program,Adult High School Diploma Program- 16+,https://www.americangroup-international.com/adult-high-school-diploma-program/,,1398,,0.62,0.0,missing,number: 1 credit | number: 16 years | number: 2 Credits | number: 2 credit | number: 2 credits | number: 24 credit | number: 24 credits | number: 3 Credits
+agi,en,page,program,AGI Learning Pods,https://www.americangroup-international.com/lerninpods/,,709,,0.92,1.0,covered,
+agi,en,page,program,"Academic English K to12th, Inclusive Education Grade Micro-School",https://www.americangroup-international.com/transportation-facilities/,,951,,1.0,1.0,covered,
+agi,en,page,program,Adult High School Diploma Program- 16+,https://www.americangroup-international.com/adult-high-school-diploma-program/,,1398,,0.65,0.0,missing,number: 1 credit | number: 16 years | number: 2 Credits | number: 2 credit | number: 2 credits | number: 24 credit | number: 24 credits | number: 3 Credits
 agi,en,page,program,American Group International School – Agadir,https://www.americangroup-international.com/for-a-better-education/,,305,,1.0,1.0,covered,
 agi,en,page,program,Anglia Morocco Learning Pods,https://www.americangroup-international.com/anglia-morocco-learning-pod-pdf/,,13,yes,1.0,,covered,
-agi,en,page,program,Anglia Morocco Learning Pods….,https://www.americangroup-international.com/anglia-learning-pods/,,428,,0.78,1.0,covered,
+agi,en,page,program,Anglia Morocco Learning Pods….,https://www.americangroup-international.com/anglia-learning-pods/,,428,,0.87,1.0,covered,
 agi,en,page,program,Document Editing In English,https://www.americangroup-international.com/document-editing-in-english/,,34,yes,0.5,,partial,
-agi,en,page,program,EFL Classes,https://www.americangroup-international.com/library-facilities/,,284,,0.5,,partial,
-agi,en,page,program,Educational Workshop English Castle,https://www.americangroup-international.com/educational-workshop-english-castle/,,211,,0.33,,partial,
+agi,en,page,program,EFL Classes,https://www.americangroup-international.com/library-facilities/,,284,,1.0,,covered,
+agi,en,page,program,Educational Workshop English Castle,https://www.americangroup-international.com/educational-workshop-english-castle/,,211,,0.42,,partial,
 agi,en,page,program,English Self Helps,https://www.americangroup-international.com/english-self-helps/,,943,,0.8,,covered,
-agi,en,page,program,INDEPENDENT Course STUDIES (Modules and Program),https://www.americangroup-international.com/independent-course-studies-modules-and-program/,,1544,,0.41,1.0,partial,
-agi,en,page,program,Medical EFL For Professionals.,https://www.americangroup-international.com/social-club/,,638,,0.64,,partial,
-agi,en,page,program,One-On-One EFL Classes,https://www.americangroup-international.com/one-on-one-esl-classes/,,139,yes,0.57,,partial,
+agi,en,page,program,INDEPENDENT Course STUDIES (Modules and Program),https://www.americangroup-international.com/independent-course-studies-modules-and-program/,,1544,,0.5,1.0,partial,
+agi,en,page,program,Medical EFL For Professionals.,https://www.americangroup-international.com/social-club/,,638,,0.73,,covered,
+agi,en,page,program,One-On-One EFL Classes,https://www.americangroup-international.com/one-on-one-esl-classes/,,139,yes,1.0,,covered,
 agi,en,page,program,Proctoring Services,https://www.americangroup-international.com/proctoring-services/,,286,,0.92,0.8,covered,money: 200 Dirhams
 agi,en,page,program,Programs,https://www.americangroup-international.com/programs-2/,,11,yes,1.0,,covered,
 agi,en,page,program,Programs,https://www.americangroup-international.com/programs/,,11,yes,1.0,,covered,
-agi,en,page,resource,Nursery Rhymes for Pre-K,https://www.americangroup-international.com/nursery-rhymes-for-pre-k/,,2681,,0.35,,partial,
-agi,en,page,teacher,Corporate EFL Trainings/ Business English,https://www.americangroup-international.com/corporate-esl-trainings/,,621,,0.3,,partial,
-agi,en,page,teacher,Online Teachers Database,https://www.americangroup-international.com/online-teachers-database/,,327,,0.69,1.0,partial,
-agi,en,page,teacher,STEM Educators Workshop Job Interviews,https://www.americangroup-international.com/4084-2/,,186,,0.2,,missing,
-agi,en,page,teacher,Teacher Training Program for English/Anglia C.I.T.E Certificate of International Teachers-TESOL,https://www.americangroup-international.com/teacher-assistant-trainings/,,2307,,0.64,0.0,missing,date: October 28
-agi,en,page,teacher,USA Private School Teacher Sponsorship,https://www.americangroup-international.com/usa-private-school-teacher-sponsorship/,,764,,0.8,0.8,covered,money: $60.00
-agi,en,page,wellbeing,ADHD Holistic Practitioner Coaching,https://www.americangroup-international.com/adhd-holistic-practitioner-coaching/,,782,,0.69,0.67,partial,"date: May 4, 2025"
-agi,en,page,wellbeing,Holistic Play Therapy Practitioner,https://www.americangroup-international.com/holistic-play-therapy-practitioner/,,236,,0.79,0.0,missing,money: 150 dirhams
+agi,en,page,resource,Nursery Rhymes for Pre-K,https://www.americangroup-international.com/nursery-rhymes-for-pre-k/,,2681,,0.4,,partial,
+agi,en,page,teacher,Corporate EFL Trainings/ Business English,https://www.americangroup-international.com/corporate-esl-trainings/,,621,,0.39,,partial,
+agi,en,page,teacher,Online Teachers Database,https://www.americangroup-international.com/online-teachers-database/,,327,,0.85,1.0,covered,
+agi,en,page,teacher,STEM Educators Workshop Job Interviews,https://www.americangroup-international.com/4084-2/,,186,,0.3,,partial,
+agi,en,page,teacher,Teacher Training Program for English/Anglia C.I.T.E Certificate of International Teachers-TESOL,https://www.americangroup-international.com/teacher-assistant-trainings/,,2307,,0.66,0.0,missing,date: October 28
+agi,en,page,teacher,USA Private School Teacher Sponsorship,https://www.americangroup-international.com/usa-private-school-teacher-sponsorship/,,764,,0.91,0.8,covered,money: $60.00
+agi,en,page,wellbeing,ADHD Holistic Practitioner Coaching,https://www.americangroup-international.com/adhd-holistic-practitioner-coaching/,,782,,0.8,0.67,partial,"date: May 4, 2025"
+agi,en,page,wellbeing,Holistic Play Therapy Practitioner,https://www.americangroup-international.com/holistic-play-therapy-practitioner/,,236,,0.86,0.0,missing,money: 150 dirhams
 agi,en,page,wellbeing,i-Heart Holistic Therapeutic Services and Counselling,https://www.americangroup-international.com/i-heart-holistic-therapeutic-services-and-counselling/,,25,yes,1.0,,covered,
 anglia,en,page,about,Contact,https://angliamorocco.org/contact/,2021-12-06,77,yes,,1.0,covered,
-anglia,en,page,about,FAQ,https://angliamorocco.org/faq/,2021-12-11,514,,0.81,0.5,partial,number: 10 levels | number: 4 years
-anglia,en,page,about,about,https://angliamorocco.org/about/,2021-12-06,415,,0.88,1.0,covered,
-anglia,en,page,about,home,https://angliamorocco.org/,,1035,,0.8,1.0,covered,
+anglia,en,page,about,FAQ,https://angliamorocco.org/faq/,2021-12-11,514,,0.85,1.0,covered,
+anglia,en,page,about,about,https://angliamorocco.org/about/,2021-12-06,415,,1.0,1.0,covered,
+anglia,en,page,about,home,https://angliamorocco.org/,,1035,,1.0,1.0,covered,
 anglia,ar,page,about,الرئيسية,https://angliamorocco.org/ar/,2021-12-04,405,,0.0,,missing,
 anglia,ar,page,about,الرئيسية,https://angliamorocco.org/ar/الرئيسية/,2021-12-04,405,,0.0,,missing,
 anglia,ar,page,about,من-نحن,https://angliamorocco.org/ar/من-نحن/,2021-12-05,339,,0.0,,missing,
-anglia,ar,archive,archive,Uncategorised,https://angliamorocco.org/ar/category/uncategorised/,,84,yes,0.0,,fragment,
-anglia,en,archive,archive,Uncategorized,https://angliamorocco.org/category/uncategorized-en/,,312,,0.77,,fragment,
+anglia,ar,archive,archive,Uncategorised,https://angliamorocco.org/ar/category/uncategorised/,,84,yes,0.67,,fragment,
+anglia,en,archive,archive,Uncategorized,https://angliamorocco.org/category/uncategorized-en/,,312,,1.0,,fragment,
 anglia,en,page,calendar,ANGLIA EXAM DATES,https://angliamorocco.org/anglia-exam-dates-2/,2025-11-22,172,,1.0,,covered,
 anglia,en,page,calendar,Anglia Exam dates,https://angliamorocco.org/anglia-exam-dates/,2025-11-22,6,yes,,,covered,
 anglia,en,page,exam,Anglia Morocco New Online Examinations,https://angliamorocco.org/anglia-morocco-new-online-examinations/,2024-07-01,219,,1.0,1.0,covered,
 anglia,en,page,exam,C.I.T.E – Certificate for International Teachers of English (TESOL),https://angliamorocco.org/citem/,2024-07-05,817,,0.97,0.86,covered,number: 6 weeks
-anglia,en,page,exam,CEFR,https://angliamorocco.org/cefr/,2022-01-11,629,,0.93,,covered,
+anglia,en,page,exam,CEFR,https://angliamorocco.org/cefr/,2022-01-11,629,,1.0,,covered,
 anglia,en,page,exam,CITE,https://angliamorocco.org/elementor-1438/,2024-07-05,806,,0.97,0.86,covered,number: 6 weeks
-anglia,en,page,exam,Exams,https://angliamorocco.org/exams/,2021-12-06,681,,0.78,,covered,
-anglia,en,page,exam,Special Arrangements,https://angliamorocco.org/special-arrangements/,2021-12-13,273,,0.8,1.0,covered,
-anglia,en,page,legal,Cookies Policy,https://angliamorocco.org/cookies-policy/,2021-12-13,1458,,0.44,0.0,missing,email: dp@chichester.ac.uk
+anglia,en,page,exam,Exams,https://angliamorocco.org/exams/,2021-12-06,681,,1.0,,covered,
+anglia,en,page,exam,Special Arrangements,https://angliamorocco.org/special-arrangements/,2021-12-13,273,,1.0,1.0,covered,
+anglia,en,page,legal,Cookies Policy,https://angliamorocco.org/cookies-policy/,2021-12-13,1458,,0.47,0.0,missing,email: dp@chichester.ac.uk
 anglia,en,page,legal,Privacy Policy,https://angliamorocco.org/privacy-policy/,2021-12-13,522,,0.76,1.0,covered,
-anglia,en,page,legal,Terms And Conditions,https://angliamorocco.org/terms-and-conditions/,2021-12-13,3838,,0.47,0.33,partial,email: info@anglia.org | email: webadmin@anglia.org
-anglia,en,post,news/event,Anglia Mastery Qualification Awarded UCAS Tariff Points,https://angliamorocco.org/anglia-mastery-qualification-awarded-ucas-tariff-points-2/,2021-12-06,380,,0.33,,partial,
-anglia,ar,post,news/event,Anglia Mastery Qualification Awarded UCAS Tariff points,https://angliamorocco.org/ar/anglia-mastery-qualification-awarded-ucas-tariff-points/,2021-12-03,385,,0.29,,missing,
+anglia,en,page,legal,Terms And Conditions,https://angliamorocco.org/terms-and-conditions/,2021-12-13,3838,,0.48,0.33,partial,email: info@anglia.org | email: webadmin@anglia.org
+anglia,en,post,news/event,Anglia Mastery Qualification Awarded UCAS Tariff Points,https://angliamorocco.org/anglia-mastery-qualification-awarded-ucas-tariff-points-2/,2021-12-06,380,,0.89,,covered,
+anglia,ar,post,news/event,Anglia Mastery Qualification Awarded UCAS Tariff points,https://angliamorocco.org/ar/anglia-mastery-qualification-awarded-ucas-tariff-points/,2021-12-03,385,,0.88,,covered,
 anglia,en,post,news/event,Chichester College Group Selected For Queen’s Anniversary Prize,https://angliamorocco.org/chichester-college-group-selected-for-queens-anniversary-prize/,2021-12-11,119,yes,0.8,,covered,
 anglia,en,post,news/event,Proud that EVERYONE can take an Anglia exam!,https://angliamorocco.org/proud-that-everyone-can-take-an-anglia-exam/,2021-12-15,59,yes,1.0,,covered,
-anglia,en,post,news/event,“Julie Our newest franchisee from Morocco” an article published in the Anglia November Newsletter 2021,https://angliamorocco.org/julie-our-newest-franchisee-from-morocco-an-article-published-in-the-anglia-november-newsletter-2021/,2021-12-11,512,,0.75,0.5,partial,number: 5 regions
+anglia,en,post,news/event,“Julie Our newest franchisee from Morocco” an article published in the Anglia November Newsletter 2021,https://angliamorocco.org/julie-our-newest-franchisee-from-morocco-an-article-published-in-the-anglia-november-newsletter-2021/,2021-12-11,512,,0.83,0.5,partial,number: 5 regions
 anglia,en,page,other,,https://angliamorocco.org/sch-dashboard/,,3,yes,,,covered,
 anglia,en,page,other,Club Anglia,https://angliamorocco.org/club-anglia/,2022-01-02,16,yes,,,covered,
-anglia,en,page,other,news,https://angliamorocco.org/news/,2021-12-06,141,yes,0.71,,covered,
+anglia,en,page,other,news,https://angliamorocco.org/news/,2021-12-06,141,yes,0.86,,covered,
 anglia,en,page,partner,AngliaMorocco Networks – 12 Regions,https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/,2021-12-17,662,,0.14,1.0,missing,
-anglia,en,page,resource,CLICK TO DOWNLOAD AUDIO FILES​ :,https://angliamorocco.org/step-to-books-2/,2021-12-13,92,yes,0.33,,partial,
+anglia,en,page,resource,CLICK TO DOWNLOAD AUDIO FILES​ :,https://angliamorocco.org/step-to-books-2/,2021-12-13,92,yes,0.67,,partial,
 anglia,en,page,resource,Practice Resources,https://angliamorocco.org/practice-resources/,2024-10-06,286,,1.0,,covered,
-anglia,ar,page,resource,Practice Resources .,https://angliamorocco.org/ar/practice-resources-ar/,2024-10-06,280,,0.0,,missing,
-anglia,en,page,resource,step to books,https://angliamorocco.org/step-to-books/,2021-12-13,266,,0.89,,covered,
+anglia,ar,page,resource,Practice Resources .,https://angliamorocco.org/ar/practice-resources-ar/,2024-10-06,280,,1.0,,covered,
+anglia,en,page,resource,step to books,https://angliamorocco.org/step-to-books/,2021-12-13,266,,1.0,,covered,
