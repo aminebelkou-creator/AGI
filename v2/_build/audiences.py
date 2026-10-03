@@ -187,6 +187,7 @@ program_page("teachers.html", "For teachers", "For teachers – C.I.T.E. & train
   <div class="intro"><h2>More for educators</h2></div>
   <dl class="rows">
     <div id="sponsorship"><dt>USA teacher sponsorship</dt><dd>Certification sponsorship for teaching in U.S. private schools. Requires a bachelor's degree, a clear background check and a sponsoring school. Fee: US$60. Not valid for U.S. public schools.</dd></div>
+    <div id="math"><dt>Mathematics in English</dt><dd>For classroom teachers adding mathematics to their skills, and new teacher candidates who are not math majors: teach mathematics in English (SAT, IELTS) and qualify as a mathematics specialist or coach. <a class="link" href="english-anglia.html#math-english">Courses</a></dd></div>
     <div id="training"><dt>Teacher training program</dt><dd>English teachers test and train in AGI classrooms to strengthen their language and their teaching.</dd></div>
     <div id="tefl"><dt>TEFL / TESOL with Bridge</dt><dd>Accredited TEFL/TESOL courses through AGI's partnership with Bridge Education Group.</dd></div>
     <div id="courses"><dt>Independent course studies</dt><dd>Graduate-level, self-paced modules using books and journals; certificates approved by the American Canadian Board.</dd></div>
@@ -205,7 +206,7 @@ program_page("professional.html", "Professional & medical English", "Professiona
   <div class="intro"><h2>English for work</h2><p>Start with a free level test; we'll recommend the right course and schedule.</p></div>
   <dl class="rows">
     <div id="business"><dt>Business English</dt><dd>Anglia International Business English, certified in four steps from A2+ to C1: meetings, presentations, emails and negotiation.</dd></div>
-    <div id="medical"><dt>Medical English</dt><dd>For doctors, nurses and clinicians: patient communication, handovers, seminars and reading medical papers.</dd></div>
+    <div id="medical"><dt>Medical English</dt><dd>For doctors, nurses and clinicians: the terms of the body systems, medical vocabulary and grammar, patient communication, handovers and medical papers – taught by a teacher with experience in the U.S. health system.</dd></div>
     <div id="teams"><dt>Courses for organizations</dt><dd>Group courses for your team, on site at your company or at AGI, with progress measured on the CEFR.</dd></div>
     <div id="one-to-one"><dt>One-to-one</dt><dd>Private sessions at 200 MAD each, at times that fit a working schedule. <a class="link" href="english-anglia.html#classes">All class prices</a></dd></div>
   </dl>

@@ -495,17 +495,33 @@ program_page("english-anglia.html", "English & Anglia exams", "English & Anglia 
   <div class="table-wrap"><table>
     <thead><tr><th>Option</th><th>Who</th><th>Price</th></tr></thead>
     <tbody>
-      <tr><td><b>Saturday classes for children</b></td><td>Ages 5–18, Saturdays 2:00–4:00 p.m., October to June</td><td>500 MAD a month, yearly Anglia exam included</td></tr>
-      <tr><td><b>One-to-one</b></td><td>English or mathematics</td><td>200 MAD per session</td></tr>
+      <tr><td><b>Saturday classes for children and teens</b></td><td>Ages 5–18, Saturdays 2:00–4:00 p.m., October to June. Interactive Anglia classes with preparation for the BAC, TOEFL, IELTS, SAT and Mathematics in English</td><td>500 MAD a month, yearly Anglia exam included</td></tr>
+      <tr><td><b>One-to-one</b></td><td>English or mathematics, with full access to the teacher – ideal for professionals who want English for their job</td><td>200 MAD per session</td></tr>
       <tr><td><b>Small group</b></td><td>2–3 students</td><td>150 MAD per person, per session</td></tr>
       <tr><td><b>Group course</b></td><td>4–10 students, 12 weeks</td><td>100 MAD a week per student (1,200 MAD)</td></tr>
     </tbody></table></div>
   <p class="muted" style="font-size:13px;margin-top:12px">Prices effective November 2024. Books and insurance are not included.</p>
 </div></section>
+<section class="section bg-white" id="free-assessment"><div class="wrap">
+  <div class="section-head"><h2>Free to start</h2><p>Find your level before you choose a class.</p></div>
+  <div class="cards">
+    <a class="card" href="forms.html#enquiry/anglia"><span class="tag">Free</span><h3>English placement assessment on the CEFR</h3><p>A free assessment of your English level, from beginner to expert, so we can recommend the right class or Anglia level.</p><span class="more">Book your free assessment</span></a>
+    <a class="card" href="https://angliamorocco.org/practice-resources/" target="_blank" rel="noopener"><span class="tag">Free</span><h3>Practice Anglia examinations</h3><p>Sample papers and practice material for every Anglia level, on angliamorocco.org.</p><span class="more">Practice now</span></a>
+    <a class="card" href="#math-english"><span class="tag">Exam preparation</span><h3>Mathematics in English</h3><p>Mathematics taught in English for SAT and IELTS candidates, plus certification workshops.</p><span class="more">See below</span></a>
+  </div>
+</div></section>
+<section class="section" id="math-english"><div class="wrap split">
+  <div class="intro"><h2>Mathematics in English</h2><p>Courses and tutors for students and teachers.</p></div>
+  <dl class="rows">
+    <div><dt>For students</dt><dd>Mathematics taught in English to prepare for the SAT and IELTS, with one-to-one tutoring or small groups.</dd></div>
+    <div><dt>For teachers</dt><dd>For classroom teachers who want to add mathematics to their skills, and new teacher candidates who are not math majors: teach mathematics in English and qualify as a mathematics specialist or coach. <a class="link" href="teachers.html#math">For teachers</a></dd></div>
+    <div><dt>Certification</dt><dd>Mathematics certification in English is available through specialized workshops.</dd></div>
+  </dl>
+</div></section>
 <section class="section bg-white"><div class="wrap split">
   <div class="intro"><h2>Courses for teenagers and adults</h2></div>
   <dl class="rows">
-    <div><dt>Exam preparation</dt><dd>Practice for Moroccan school graduation and British exams.</dd></div>
+    <div><dt>Exam preparation</dt><dd>Practice for the BAC, TOEFL, IELTS, SAT and British exams.</dd></div>
     <div><dt>Conversation</dt><dd>Speaking practice and new vocabulary.</dd></div>
     <div><dt>ESL 100 – 300</dt><dd>From beginner to advanced (B2): academic reading, essays and research writing.</dd></div>
     <div><dt>English writing</dt><dd>Narrative and descriptive writing, job applications and CVs.</dd></div>

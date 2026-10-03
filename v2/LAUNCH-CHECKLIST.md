@@ -119,3 +119,10 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] Parents page FAQ – answers needed: sibling discount, school day hours, transport and lunch, uniform (parents)
 - [ ] Popup: phones = bottom bar after half the page; desktop = dialog after half the page or when leaving; once a week – OK?
 
+## 12. From the old home page — AGI
+- [ ] The old home page calls AGI "a private **correspondence school**" – should the new site use this legal description? (k12, about)
+- [ ] Old home page says "**45+** nationalities", the rest of the site "46+" – which number?
+- [ ] Memorial to partner **Professor Abdelfatah** (Essaouira center, passed away 2024) – include on the partnerships page?
+- [ ] Mathematics in English: course format, prices and certification workshops – confirm details (english-anglia, teachers)
+- [ ] Saturday classes: BAC, TOEFL, IELTS, SAT and Mathematics-in-English preparation – still offered?
+
