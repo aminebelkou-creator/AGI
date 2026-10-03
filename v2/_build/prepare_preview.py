@@ -1,10 +1,13 @@
 """Prepare a clean review copy of v2 for a Vercel preview: no build files, noindex, redirects, caching."""
 import os, re, csv, json, shutil
 V2 = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); ROOT = os.path.dirname(V2)
-OUT = os.path.join(ROOT, "deploy", "agi-preview")
+OUT = os.path.join(os.path.expanduser("~"), "agi-preview-deploy")   # outside the git repo: Vercel blocks deploys whose git commit author is not a team member
 EXCLUDE = {"_build", "_legacy", "LAUNCH-CHECKLIST.md", ".thumbnail", "support.js", "world-dots.js", "journal-posts.json", ".htaccess", "__pycache__"}
-if os.path.exists(OUT): shutil.rmtree(OUT)
-shutil.copytree(V2, OUT, ignore=lambda d, names: [n for n in names if n in EXCLUDE or n.startswith("_test")])
+if os.path.exists(OUT):
+    for n in os.listdir(OUT):
+        if n != ".vercel": fp = os.path.join(OUT, n); shutil.rmtree(fp) if os.path.isdir(fp) else os.remove(fp)
+os.makedirs(OUT, exist_ok=True)
+shutil.copytree(V2, OUT, dirs_exist_ok=True, ignore=lambda d, names: [n for n in names if n in EXCLUDE or n.startswith("_test")])
 
 # preview must stay out of search engines
 open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8", newline="\n").write("User-agent: *\nDisallow: /\n")

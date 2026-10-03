@@ -30,15 +30,17 @@ RULES = [(r"contact", "contact.html"), (r"book-an-appointment|appointment", "for
  (r"about|vision|mission|director|team|better-education|usa|accredit|who-we-are", "about.html"),
  (r"school|k-12|k12|elementary|high-school|curriculum|micro|pods", "k12.html"),
  (r"blog|news", "journal.html")]
+# redirects come from the content map: every old address -> its v3 destination (dropped pages -> nearest section)
 rows = []
-for p in EXPORT["pages"]:
-    route = (p.get("route") or "").strip()
-    if not route or route in ("/", ""): continue
-    target = next((t for rx, t in RULES if re.search(rx, route, re.I)), "index.html")
-    rows.append((route, "/" + target, p.get("title", "").strip(), "page"))
-for n in EXPORT["news"]:
-    target = "/journal-ccgi-partnership.html" if "chichester" in n["title"].lower() else f"/journal/{n['slug']}.html"
-    rows.append((f"/{n['slug']}/", target, n["title"].strip(), "post"))
+_map = list(csv.DictReader(open(os.path.join(os.path.dirname(V2), "docs", "content-map.csv"), encoding="utf-8-sig")))
+FALLBACK = {"news/event": "journal.html", "archive": "journal.html", "form": "forms.html", "legal": "privacy.html"}
+for r in _map:
+    if r["site"] != "agi": continue          # angliamorocco.org keeps its own domain; redirects for it are set up there
+    path = re.sub(r"^https?://[^/]+", "", r["url"]).rstrip("/") or "/"
+    if path == "/": continue
+    dest = r["destination"]
+    if dest in ("-", "REVIEW", "") or dest.startswith("ar/"): dest = FALLBACK.get(r["category"], "index.html")
+    rows.append((path + "/", "/" + dest, r["title"], r["kind"]))
 PERF = """# Compression and browser caching (Apache)
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/plain application/xml
@@ -70,6 +72,8 @@ today = datetime.date.today().isoformat()
 urls = [f for f in sorted(os.listdir(".")) if f.endswith(".html") and not f.startswith("_")]
 urls += ["journal/" + f for f in sorted(os.listdir("journal")) if f.endswith(".html")]
 def pri(u): return "1.0" if u == "index.html" else "0.8" if "/" not in u and u not in ("privacy.html", "terms.html", "connect.html") else "0.5"
+for d in ("fr", "ar"):
+    if os.path.isdir(d): urls += [f"{d}/{f}" for f in sorted(os.listdir(d)) if f.endswith(".html")]
 xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 xml += [f"  <url><loc>{SITE}/{'' if u == 'index.html' else u}</loc><lastmod>{today}</lastmod><priority>{pri(u)}</priority></url>" for u in urls]
 xml.append("</urlset>")

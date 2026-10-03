@@ -126,3 +126,10 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] Mathematics in English: course format, prices and certification workshops – confirm details (english-anglia, teachers)
 - [ ] Saturday classes: BAC, TOEFL, IELTS, SAT and Mathematics-in-English preparation – still offered?
 
+## 13. Languages — AGI
+- [ ] French pages (fr/index, parents, fees, contact) reviewed by a native French speaker
+- [ ] Arabic pages (ar/index, parents, fees, contact) reviewed by a native Arabic speaker (Modern Standard Arabic; Darija for social media only)
+- [ ] Which further pages to translate next (recommended: admissions, calendar, our-story, faq, anglia)
+- [ ] Forms in French and Arabic (forms.html is English only today)
+- [ ] angliamorocco.org Arabic pages: move here (ar/) and redirect, or keep on angliamorocco.org?
+
