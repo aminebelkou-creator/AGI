@@ -13,8 +13,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.2,
-  "status": "missing"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -70,7 +70,7 @@
    "number: 45 nationalities"
   ],
   "fact_coverage": 0.0,
-  "text_coverage": 0.88,
+  "text_coverage": 0.98,
   "status": "missing"
  },
  {
@@ -86,13 +86,11 @@
   "thin": false,
   "facts": {
    "date": [
-    "0 June 10, 2022",
-    "21st May 20"
+    "0 June 10, 2022"
    ]
   },
   "facts_missing": [
-   "date: 0 June 10, 2022",
-   "date: 21st May 20"
+   "date: 0 June 10, 2022"
   ],
   "fact_coverage": 0.0,
   "text_coverage": 1.0,
@@ -109,17 +107,11 @@
   "category": "news/event",
   "words": 73,
   "thin": true,
-  "facts": {
-   "date": [
-    "19th April 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 19th April 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -135,7 +127,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.36,
+  "text_coverage": 0.45,
   "status": "partial"
  },
  {
@@ -160,12 +152,10 @@
     "688739393"
    ]
   },
-  "facts_missing": [
-   "date: May 4, 2025"
-  ],
-  "fact_coverage": 0.67,
-  "text_coverage": 0.49,
-  "status": "partial"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -214,27 +204,13 @@
    ]
   },
   "facts_missing": [
-   "money: $2,500",
-   "money: 10,000 MAD",
    "money: 26,000 Dirhams",
    "money: 2600 Dirhams",
-   "money: 2600 dirhams",
-   "money: 3,000 MAD",
-   "money: 7,500 MAD",
-   "money: 7,800 MAD",
-   "email: groupinternationala@gmail.com",
-   "number: 1 Day",
-   "number: 10 days",
-   "number: 10 months",
-   "number: 180 days",
-   "number: 3 day",
-   "number: 5 day",
-   "number: 5 days",
-   "number: 90 Days"
+   "money: 2600 dirhams"
   ],
-  "fact_coverage": 0.32,
-  "text_coverage": 0.49,
-  "status": "partial"
+  "fact_coverage": 0.88,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -265,9 +241,6 @@
   "words": 149,
   "thin": true,
   "facts": {
-   "date": [
-    "16th April 20"
-   ],
    "email": [
     "americanecoleagadir@gmail.com"
    ],
@@ -275,12 +248,10 @@
     "688739393"
    ]
   },
-  "facts_missing": [
-   "date: 16th April 20"
-  ],
-  "fact_coverage": 0.67,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -305,13 +276,10 @@
     "2 years"
    ]
   },
-  "facts_missing": [
-   "date: August 1st",
-   "date: June 15th"
-  ],
-  "fact_coverage": 0.5,
-  "text_coverage": 0.78,
-  "status": "partial"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -340,23 +308,10 @@
     "9 credits"
    ]
   },
-  "facts_missing": [
-   "number: 1 credit",
-   "number: 16 years",
-   "number: 2 Credits",
-   "number: 2 credit",
-   "number: 2 credits",
-   "number: 24 credit",
-   "number: 24 credits",
-   "number: 3 Credits",
-   "number: 3 credits",
-   "number: 4 credits",
-   "number: 5 credits",
-   "number: 9 credits"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.56,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -391,20 +346,10 @@
     "72 hours"
    ]
   },
-  "facts_missing": [
-   "money: 150 DH",
-   "money: 20 DH",
-   "money: 2600 DH",
-   "date: January 17, 2024",
-   "number: 1 hour",
-   "number: 180 days",
-   "number: 5 years",
-   "number: 6 years",
-   "number: 72 hours"
-  ],
-  "fact_coverage": 0.25,
-  "text_coverage": 0.41,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -437,8 +382,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.49,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -452,19 +397,14 @@
   "words": 498,
   "thin": false,
   "facts": {
-   "date": [
-    "August 20"
-   ],
    "number": [
     "5%"
    ]
   },
-  "facts_missing": [
-   "date: August 20"
-  ],
-  "fact_coverage": 0.5,
-  "text_coverage": 0.62,
-  "status": "partial"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 0.81,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -497,7 +437,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.72,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -523,17 +463,10 @@
     "90%"
    ]
   },
-  "facts_missing": [
-   "number: 1 Day",
-   "number: 10 days",
-   "number: 180 days",
-   "number: 3 day",
-   "number: 5 day",
-   "number: 5 days"
-  ],
-  "fact_coverage": 0.25,
-  "text_coverage": 0.37,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -553,7 +486,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.78,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -568,19 +501,14 @@
   "words": 159,
   "thin": false,
   "facts": {
-   "date": [
-    "May 20"
-   ],
    "number": [
     "2 years"
    ]
   },
-  "facts_missing": [
-   "date: May 20"
-  ],
-  "fact_coverage": 0.5,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -610,17 +538,11 @@
   "category": "news/event",
   "words": 34,
   "thin": true,
-  "facts": {
-   "date": [
-    "2nd November 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 2nd November 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -636,7 +558,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.85,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -694,7 +616,6 @@
     "January 3, 2026",
     "January 31, 2026",
     "June 13, 2026",
-    "June 20",
     "June 6, 2026",
     "March 14, 2026",
     "March 21, 2026",
@@ -712,7 +633,6 @@
     "November 8, 2025",
     "October 11, 2025",
     "October 18, 2025",
-    "October 20",
     "October 25, 2025",
     "October 4, 2025"
    ],
@@ -724,50 +644,11 @@
    ]
   },
   "facts_missing": [
-   "money: 500 DHS",
-   "date: April 11, 2026",
-   "date: April 18, 2026",
-   "date: April 25, 2026",
-   "date: April 4, 2026",
-   "date: December 20, 2025",
-   "date: December 27, 2025",
-   "date: December 6, 2025",
-   "date: February 14, 2026",
-   "date: February 21, 2026",
-   "date: February 28, 2026",
-   "date: February 7, 2026",
-   "date: January 10, 2026",
-   "date: January 17, 2026",
-   "date: January 24, 2026",
-   "date: January 3, 2026",
-   "date: January 31, 2026",
-   "date: June 13, 2026",
-   "date: June 20",
-   "date: June 6, 2026",
-   "date: March 14, 2026",
-   "date: March 21, 2026",
-   "date: March 28, 2026",
-   "date: March 7, 2026",
-   "date: May 16, 2026",
-   "date: May 2, 2026",
-   "date: May 23, 2026",
-   "date: May 30, 2026",
-   "date: May 9, 2026",
-   "date: November 1, 2025",
-   "date: November 15, 2025",
-   "date: November 22, 2025",
-   "date: November 29, 2025",
-   "date: November 8, 2025",
-   "date: October 11, 2025",
-   "date: October 18, 2025",
-   "date: October 20",
-   "date: October 25, 2025",
-   "date: October 4, 2025",
    "number: 2026 Week"
   ],
-  "fact_coverage": 0.05,
-  "text_coverage": 0.86,
-  "status": "missing"
+  "fact_coverage": 0.97,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -813,9 +694,6 @@
     "200 DHs",
     "500 DHs"
    ],
-   "date": [
-    "November 20"
-   ],
    "number": [
     "10 students",
     "12 weeks",
@@ -826,11 +704,9 @@
    "money: 1,200 DHs",
    "money: 100 DHs",
    "money: 150 DHs",
-   "money: 200 DHs",
-   "money: 500 DHs",
-   "date: November 20"
+   "money: 200 DHs"
   ],
-  "fact_coverage": 0.33,
+  "fact_coverage": 0.5,
   "text_coverage": 1.0,
   "status": "partial"
  },
@@ -856,7 +732,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.78,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -935,18 +811,13 @@
   "thin": true,
   "facts": {
    "date": [
-    "12th November 20",
-    "December 20",
     "January 14th, 2019"
    ]
   },
-  "facts_missing": [
-   "date: 12th November 20",
-   "date: December 20"
-  ],
-  "fact_coverage": 0.33,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -960,9 +831,6 @@
   "words": 750,
   "thin": false,
   "facts": {
-   "date": [
-    "September 20"
-   ],
    "email": [
     "americanecoleagadir@gmail.com"
    ],
@@ -973,11 +841,9 @@
     "12 regions"
    ]
   },
-  "facts_missing": [
-   "date: September 20"
-  ],
-  "fact_coverage": 0.75,
-  "text_coverage": 0.82,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -998,7 +864,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.12,
+  "text_coverage": 0.25,
   "status": "missing"
  },
  {
@@ -1048,19 +914,16 @@
   "thin": true,
   "facts": {
    "date": [
-    "19th April 20",
     "April 17, 2018"
    ],
    "number": [
     "10 week"
    ]
   },
-  "facts_missing": [
-   "date: 19th April 20"
-  ],
-  "fact_coverage": 0.67,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1075,17 +938,14 @@
   "thin": true,
   "facts": {
    "date": [
-    "12th June 20",
     "September 2, 2019",
     "September 2nd, 2019"
    ]
   },
-  "facts_missing": [
-   "date: 12th June 20"
-  ],
-  "fact_coverage": 0.67,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1100,16 +960,13 @@
   "thin": true,
   "facts": {
    "date": [
-    "August 20",
     "September 8th, 2025"
    ]
   },
-  "facts_missing": [
-   "date: August 20"
-  ],
-  "fact_coverage": 0.5,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1124,16 +981,13 @@
   "thin": true,
   "facts": {
    "date": [
-    "5th September 20",
     "September 9th, 2021"
    ]
   },
-  "facts_missing": [
-   "date: 5th September 20"
-  ],
-  "fact_coverage": 0.5,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1149,7 +1003,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.86,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -1166,8 +1020,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.0,
-  "status": "missing"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1200,8 +1054,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.5,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1214,17 +1068,11 @@
   "category": "news/event",
   "words": 50,
   "thin": true,
-  "facts": {
-   "date": [
-    "7th October 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 7th October 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1252,11 +1100,9 @@
     "8 weeks"
    ]
   },
-  "facts_missing": [
-   "number: 6 weeks"
-  ],
-  "fact_coverage": 0.86,
-  "text_coverage": 0.88,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -1271,19 +1117,14 @@
   "words": 60,
   "thin": true,
   "facts": {
-   "date": [
-    "12th June 20"
-   ],
    "number": [
     "1 level"
    ]
   },
-  "facts_missing": [
-   "date: 12th June 20"
-  ],
-  "fact_coverage": 0.5,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1296,17 +1137,11 @@
   "category": "news/event",
   "words": 75,
   "thin": true,
-  "facts": {
-   "date": [
-    "13th June 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 13th June 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1319,17 +1154,11 @@
   "category": "news/event",
   "words": 25,
   "thin": true,
-  "facts": {
-   "date": [
-    "14th June 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 14th June 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1385,17 +1214,11 @@
   "category": "news/event",
   "words": 58,
   "thin": true,
-  "facts": {
-   "date": [
-    "2nd November 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 2nd November 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1411,8 +1234,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.09,
-  "status": "missing"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1425,17 +1248,11 @@
   "category": "news/event",
   "words": 71,
   "thin": true,
-  "facts": {
-   "date": [
-    "9th January 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 9th January 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1451,8 +1268,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.5,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1499,17 +1316,11 @@
   "category": "news/event",
   "words": 59,
   "thin": true,
-  "facts": {
-   "date": [
-    "8th October 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 8th October 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1524,7 +1335,6 @@
   "thin": false,
   "facts": {
    "date": [
-    "14th September 20",
     "December 12th",
     "December 12th, 2018",
     "October 1st",
@@ -1538,10 +1348,8 @@
     "8 weeks"
    ]
   },
-  "facts_missing": [
-   "date: 14th September 20"
-  ],
-  "fact_coverage": 0.88,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
   "status": "covered"
  },
@@ -1559,8 +1367,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.33,
-  "status": "partial"
+  "text_coverage": 0.92,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1619,17 +1427,11 @@
   "category": "news/event",
   "words": 32,
   "thin": true,
-  "facts": {
-   "date": [
-    "20th April 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 20th April 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1645,8 +1447,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.17,
-  "status": "missing"
+  "text_coverage": 0.33,
+  "status": "partial"
  },
  {
   "site": "agi",
@@ -1662,8 +1464,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.6,
-  "status": "partial"
+  "text_coverage": 0.8,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1684,10 +1486,8 @@
     "3 months"
    ]
   },
-  "facts_missing": [
-   "number: 3 months"
-  ],
-  "fact_coverage": 0.5,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 0.55,
   "status": "partial"
  },
@@ -1704,16 +1504,13 @@
   "thin": true,
   "facts": {
    "date": [
-    "13th June 20",
     "May 17, 2019"
    ]
   },
-  "facts_missing": [
-   "date: 13th June 20"
-  ],
-  "fact_coverage": 0.5,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1728,8 +1525,6 @@
   "thin": false,
   "facts": {
    "date": [
-    "25th May 20",
-    "August 20",
     "September 5, 2018",
     "September 5th"
    ],
@@ -1737,13 +1532,10 @@
     "2 weeks"
    ]
   },
-  "facts_missing": [
-   "date: 25th May 20",
-   "date: August 20"
-  ],
-  "fact_coverage": 0.6,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1758,17 +1550,14 @@
   "thin": false,
   "facts": {
    "date": [
-    "7th January 20",
     "January 28, 2022",
     "January 28th, 2022"
    ]
   },
-  "facts_missing": [
-   "date: 7th January 20"
-  ],
-  "fact_coverage": 0.67,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1786,12 +1575,10 @@
     "11 years"
    ]
   },
-  "facts_missing": [
-   "number: 11 years"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.86,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1814,7 +1601,7 @@
    "number: 48 hours"
   ],
   "fact_coverage": 0.5,
-  "text_coverage": 0.5,
+  "text_coverage": 1.0,
   "status": "partial"
  },
  {
@@ -1829,19 +1616,14 @@
   "words": 49,
   "thin": true,
   "facts": {
-   "date": [
-    "19th December 20"
-   ],
    "number": [
     "12 regions"
    ]
   },
-  "facts_missing": [
-   "date: 19th December 20"
-  ],
-  "fact_coverage": 0.5,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1854,17 +1636,11 @@
   "category": "news/event",
   "words": 86,
   "thin": true,
-  "facts": {
-   "date": [
-    "23rd May 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 23rd May 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1886,7 +1662,7 @@
    "number: 45 nationalities"
   ],
   "fact_coverage": 0.0,
-  "text_coverage": 0.85,
+  "text_coverage": 0.95,
   "status": "missing"
  },
  {
@@ -1900,17 +1676,11 @@
   "category": "news/event",
   "words": 56,
   "thin": true,
-  "facts": {
-   "date": [
-    "15th April 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 15th April 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1942,23 +1712,14 @@
   "thin": true,
   "facts": {
    "date": [
-    "8th March 20",
-    "August 20",
-    "December 20",
     "June 11, 2021",
-    "June 11th, 2021",
-    "May 20"
+    "June 11th, 2021"
    ]
   },
-  "facts_missing": [
-   "date: 8th March 20",
-   "date: August 20",
-   "date: December 20",
-   "date: May 20"
-  ],
-  "fact_coverage": 0.33,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -1992,17 +1753,11 @@
   "category": "news/event",
   "words": 28,
   "thin": true,
-  "facts": {
-   "date": [
-    "23rd September 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 23rd September 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2020,12 +1775,10 @@
     "150 dirhams"
    ]
   },
-  "facts_missing": [
-   "money: 150 dirhams"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.64,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2041,7 +1794,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.73,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -2065,14 +1818,10 @@
     "5 hours"
    ]
   },
-  "facts_missing": [
-   "number: 1 hour",
-   "number: 2 hours",
-   "number: 5 hours"
-  ],
-  "fact_coverage": 0.25,
-  "text_coverage": 0.55,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2087,27 +1836,12 @@
   "thin": true,
   "facts": {
    "date": [
-    "11th November 20",
-    "13th December 20",
-    "16th June 20",
-    "22nd August 20",
-    "24th June 20",
-    "4th March 20",
-    "6th April 20",
     "September 8th, 2025"
    ]
   },
-  "facts_missing": [
-   "date: 11th November 20",
-   "date: 13th December 20",
-   "date: 16th June 20",
-   "date: 22nd August 20",
-   "date: 24th June 20",
-   "date: 4th March 20",
-   "date: 6th April 20"
-  ],
-  "fact_coverage": 0.12,
-  "text_coverage": 0.67,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
   "status": "fragment"
  },
  {
@@ -2123,26 +1857,11 @@
   "thin": true,
   "facts": {
    "date": [
-    "11th November 20",
-    "13th December 20",
-    "16th June 20",
-    "22nd August 20",
-    "24th June 20",
-    "4th March 20",
-    "6th April 20",
     "September 8th, 2025"
    ]
   },
-  "facts_missing": [
-   "date: 11th November 20",
-   "date: 13th December 20",
-   "date: 16th June 20",
-   "date: 22nd August 20",
-   "date: 24th June 20",
-   "date: 4th March 20",
-   "date: 6th April 20"
-  ],
-  "fact_coverage": 0.12,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
   "status": "fragment"
  },
@@ -2159,26 +1878,11 @@
   "thin": true,
   "facts": {
    "date": [
-    "11th November 20",
-    "13th December 20",
-    "16th June 20",
-    "22nd August 20",
-    "24th June 20",
-    "4th March 20",
-    "6th April 20",
     "September 8th, 2025"
    ]
   },
-  "facts_missing": [
-   "date: 11th November 20",
-   "date: 13th December 20",
-   "date: 16th June 20",
-   "date: 22nd August 20",
-   "date: 24th June 20",
-   "date: 4th March 20",
-   "date: 6th April 20"
-  ],
-  "fact_coverage": 0.12,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
   "status": "fragment"
  },
@@ -2195,34 +1899,13 @@
   "thin": false,
   "facts": {
    "date": [
-    "13th March 20",
-    "16th June 20",
-    "21st May 20",
-    "23rd September 20",
-    "24th November 20",
-    "28th June 20",
-    "4th March 20",
-    "6th April 20",
-    "8th October 20",
-    "9th July 20",
     "November 24, 2023",
     "September 6, 2022"
    ]
   },
-  "facts_missing": [
-   "date: 13th March 20",
-   "date: 16th June 20",
-   "date: 21st May 20",
-   "date: 23rd September 20",
-   "date: 24th November 20",
-   "date: 28th June 20",
-   "date: 4th March 20",
-   "date: 6th April 20",
-   "date: 8th October 20",
-   "date: 9th July 20"
-  ],
-  "fact_coverage": 0.17,
-  "text_coverage": 0.89,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 0.94,
   "status": "fragment"
  },
  {
@@ -2236,16 +1919,10 @@
   "category": "archive",
   "words": 46,
   "thin": true,
-  "facts": {
-   "date": [
-    "9th January 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 9th January 20"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.5,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
+  "text_coverage": 1.0,
   "status": "fragment"
  },
  {
@@ -2279,8 +1956,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.68,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2305,13 +1982,10 @@
     "20%"
    ]
   },
-  "facts_missing": [
-   "money: $49.95",
-   "money: $79.95"
-  ],
-  "fact_coverage": 0.5,
-  "text_coverage": 0.22,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2324,17 +1998,11 @@
   "category": "news/event",
   "words": 39,
   "thin": true,
-  "facts": {
-   "date": [
-    "8th June 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 8th June 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2347,17 +2015,11 @@
   "category": "news/event",
   "words": 38,
   "thin": true,
-  "facts": {
-   "date": [
-    "18th April 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 18th April 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2382,8 +2044,8 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.62,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2418,19 +2080,14 @@
   "words": 121,
   "thin": true,
   "facts": {
-   "date": [
-    "8th November 20"
-   ],
    "number": [
     "000 credit"
    ]
   },
-  "facts_missing": [
-   "date: 8th November 20"
-  ],
-  "fact_coverage": 0.5,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2445,16 +2102,13 @@
   "thin": true,
   "facts": {
    "date": [
-    "23rd September 20",
     "January 7th, 2019",
     "September 24th",
     "September 25th"
    ]
   },
-  "facts_missing": [
-   "date: 23rd September 20"
-  ],
-  "fact_coverage": 0.75,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
   "status": "covered"
  },
@@ -2471,13 +2125,11 @@
   "thin": true,
   "facts": {
    "date": [
-    "July 20",
     "June 15, 2022",
     "June 4, 2022"
    ]
   },
   "facts_missing": [
-   "date: July 20",
    "date: June 15, 2022",
    "date: June 4, 2022"
   ],
@@ -2498,17 +2150,14 @@
   "thin": true,
   "facts": {
    "date": [
-    "19th May 20",
     "June 17, 2020",
     "June 17th, 2020"
    ]
   },
-  "facts_missing": [
-   "date: 19th May 20"
-  ],
-  "fact_coverage": 0.67,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2524,8 +2173,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.0,
-  "status": "missing"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2540,27 +2189,12 @@
   "thin": true,
   "facts": {
    "date": [
-    "11th November 20",
-    "13th December 20",
-    "16th June 20",
-    "22nd August 20",
-    "24th June 20",
-    "4th March 20",
-    "6th April 20",
     "September 8th, 2025"
    ]
   },
-  "facts_missing": [
-   "date: 11th November 20",
-   "date: 13th December 20",
-   "date: 16th June 20",
-   "date: 22nd August 20",
-   "date: 24th June 20",
-   "date: 4th March 20",
-   "date: 6th April 20"
-  ],
-  "fact_coverage": 0.12,
-  "text_coverage": 0.67,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
   "status": "fragment"
  },
  {
@@ -2577,8 +2211,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.0,
-  "status": "missing"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2605,7 +2239,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.8,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -2646,8 +2280,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.42,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2675,14 +2309,12 @@
    ]
   },
   "facts_missing": [
-   "date: May 24, 2024",
    "email: brahim.robio@antal.com",
-   "phone: 659926960",
-   "number: 25 years"
+   "phone: 659926960"
   ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.73,
-  "status": "missing"
+  "fact_coverage": 0.5,
+  "text_coverage": 1.0,
+  "status": "partial"
  },
  {
   "site": "agi",
@@ -2704,7 +2336,7 @@
    "number: 100 years"
   ],
   "fact_coverage": 0.0,
-  "text_coverage": 0.05,
+  "text_coverage": 0.21,
   "status": "missing"
  },
  {
@@ -2726,13 +2358,10 @@
     "18 years"
    ]
   },
-  "facts_missing": [
-   "date: June 21, 2024",
-   "number: 18 years"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.32,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2752,14 +2381,10 @@
     "80 nationalities"
    ]
   },
-  "facts_missing": [
-   "number: 000 students",
-   "number: 20 years",
-   "number: 80 nationalities"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.7,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2775,8 +2400,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.25,
-  "status": "missing"
+  "text_coverage": 0.4,
+  "status": "partial"
  },
  {
   "site": "agi",
@@ -2792,8 +2417,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.43,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2809,8 +2434,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.55,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2823,19 +2448,11 @@
   "category": "news/event",
   "words": 273,
   "thin": false,
-  "facts": {
-   "date": [
-    "14th May 20",
-    "June 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 14th May 20",
-   "date: June 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2856,12 +2473,10 @@
     "5 years"
    ]
   },
-  "facts_missing": [
-   "number: 5 years"
-  ],
-  "fact_coverage": 0.5,
-  "text_coverage": 0.46,
-  "status": "partial"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2888,18 +2503,10 @@
     "5 hours"
    ]
   },
-  "facts_missing": [
-   "money: $15.00",
-   "money: $20.00",
-   "money: $25.00",
-   "money: $40.00",
-   "money: $50.00",
-   "number: 5 hour",
-   "number: 5 hours"
-  ],
-  "fact_coverage": 0.12,
-  "text_coverage": 0.69,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2934,12 +2541,10 @@
     "90 days"
    ]
   },
-  "facts_missing": [
-   "number: 90 days"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.48,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2983,12 +2588,10 @@
     "80%"
    ]
   },
-  "facts_missing": [
-   "number: 7 days"
-  ],
-  "fact_coverage": 0.67,
-  "text_coverage": 0.47,
-  "status": "partial"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3008,8 +2611,8 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.45,
-  "status": "partial"
+  "text_coverage": 0.87,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3026,9 +2629,6 @@
    "money": [
     "15 EUR"
    ],
-   "date": [
-    "28th March 20"
-   ],
    "email": [
     "americanecoleagadir@gmail.com"
    ],
@@ -3039,10 +2639,8 @@
     "24 hours"
    ]
   },
-  "facts_missing": [
-   "date: 28th March 20"
-  ],
-  "fact_coverage": 0.8,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
   "status": "covered"
  },
@@ -3072,11 +2670,9 @@
     "24 hours"
    ]
   },
-  "facts_missing": [
-   "money: 200 Dirhams"
-  ],
-  "fact_coverage": 0.8,
-  "text_coverage": 0.92,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -3090,17 +2686,11 @@
   "category": "news/event",
   "words": 158,
   "thin": false,
-  "facts": {
-   "date": [
-    "25th May 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 25th May 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3155,8 +2745,8 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.48,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3172,7 +2762,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.8,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -3205,28 +2795,13 @@
   "thin": false,
   "facts": {
    "date": [
-    "11th November 20",
-    "13th December 20",
-    "16th June 20",
-    "22nd August 20",
-    "24th June 20",
-    "4th March 20",
-    "6th April 20",
     "September 8th, 2025"
    ]
   },
-  "facts_missing": [
-   "date: 11th November 20",
-   "date: 13th December 20",
-   "date: 16th June 20",
-   "date: 22nd August 20",
-   "date: 24th June 20",
-   "date: 4th March 20",
-   "date: 6th April 20"
-  ],
-  "fact_coverage": 0.12,
-  "text_coverage": 0.73,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3258,39 +2833,25 @@
   "thin": false,
   "facts": {
    "date": [
-    "AUGUST 20",
-    "April 20",
-    "August 20",
     "August 25",
-    "December 20",
     "December 22",
     "December 25",
-    "February 20",
-    "JANUARY 20",
     "January 1",
     "January 14",
     "January 15",
-    "January 20",
     "January 5",
-    "July 20",
     "June 15",
     "June 17",
     "June 19",
-    "June 20",
     "June 30",
     "June 5",
-    "MAY 20",
     "March 20",
     "May 1",
     "May 17",
-    "May 20",
     "May 27",
     "November 18",
-    "November 20",
     "November 27",
     "November 6",
-    "October 20",
-    "September 20",
     "September 5",
     "September 7",
     "September 8th",
@@ -3300,41 +2861,10 @@
     "groupinternationala@gmail.com"
    ]
   },
-  "facts_missing": [
-   "date: AUGUST 20",
-   "date: August 20",
-   "date: August 25",
-   "date: December 20",
-   "date: December 22",
-   "date: December 25",
-   "date: February 20",
-   "date: JANUARY 20",
-   "date: January 1",
-   "date: January 14",
-   "date: January 15",
-   "date: January 20",
-   "date: July 20",
-   "date: June 15",
-   "date: June 19",
-   "date: June 20",
-   "date: June 30",
-   "date: June 5",
-   "date: MAY 20",
-   "date: March 20",
-   "date: May 1",
-   "date: May 20",
-   "date: May 27",
-   "date: November 18",
-   "date: November 20",
-   "date: November 27",
-   "date: November 6",
-   "date: October 20",
-   "date: September 20",
-   "email: groupinternationala@gmail.com"
-  ],
-  "fact_coverage": 0.21,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3349,18 +2879,13 @@
   "thin": true,
   "facts": {
    "date": [
-    "9th July 20",
-    "August 20",
     "September 6, 2022"
    ]
   },
-  "facts_missing": [
-   "date: 9th July 20",
-   "date: August 20"
-  ],
-  "fact_coverage": 0.33,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3393,8 +2918,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.23,
-  "status": "missing"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3407,17 +2932,11 @@
   "category": "news/event",
   "words": 54,
   "thin": true,
-  "facts": {
-   "date": [
-    "9th January 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 9th January 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3430,17 +2949,11 @@
   "category": "news/event",
   "words": 23,
   "thin": true,
-  "facts": {
-   "date": [
-    "9th January 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 9th January 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3453,19 +2966,11 @@
   "category": "news/event",
   "words": 50,
   "thin": true,
-  "facts": {
-   "date": [
-    "9th January 20",
-    "October 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 9th January 20",
-   "date: October 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3484,7 +2989,6 @@
    ],
    "date": [
     "0 June 25th",
-    "6th May 20",
     "July 19th, 2018"
    ],
    "number": [
@@ -3492,12 +2996,11 @@
    ]
   },
   "facts_missing": [
-   "date: 0 June 25th",
-   "date: 6th May 20"
+   "date: 0 June 25th"
   ],
-  "fact_coverage": 0.6,
+  "fact_coverage": 0.75,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3512,17 +3015,14 @@
   "thin": true,
   "facts": {
    "date": [
-    "8th June 20",
     "July 15th, 2021",
     "June 21, 2021"
    ]
   },
-  "facts_missing": [
-   "date: 8th June 20"
-  ],
-  "fact_coverage": 0.67,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3537,19 +3037,13 @@
   "thin": false,
   "facts": {
    "date": [
-    "June 20",
-    "October 28",
-    "September 20"
+    "October 28"
    ]
   },
-  "facts_missing": [
-   "date: June 20",
-   "date: October 28",
-   "date: September 20"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.54,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3563,19 +3057,14 @@
   "words": 474,
   "thin": false,
   "facts": {
-   "date": [
-    "23rd September 20"
-   ],
    "number": [
     "30 days"
    ]
   },
-  "facts_missing": [
-   "date: 23rd September 20"
-  ],
-  "fact_coverage": 0.5,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
   "text_coverage": 1.0,
-  "status": "partial"
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3595,8 +3084,8 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.17,
-  "status": "missing"
+  "text_coverage": 0.3,
+  "status": "partial"
  },
  {
   "site": "agi",
@@ -3612,8 +3101,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.0,
-  "status": "missing"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3633,14 +3122,10 @@
     "36 Week"
    ]
   },
-  "facts_missing": [
-   "number: 10 month",
-   "number: 2 month",
-   "number: 36 Week"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.73,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3663,7 +3148,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.88,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -3692,12 +3177,10 @@
     "30 days"
    ]
   },
-  "facts_missing": [
-   "money: $60.00"
-  ],
-  "fact_coverage": 0.8,
-  "text_coverage": 0.66,
-  "status": "partial"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3710,17 +3193,11 @@
   "category": "news/event",
   "words": 76,
   "thin": true,
-  "facts": {
-   "date": [
-    "19th April 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 19th April 20"
-  ],
-  "fact_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
   "text_coverage": 1.0,
-  "status": "missing"
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -3744,7 +3221,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.75,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -3765,7 +3242,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.76,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -3782,8 +3259,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.5,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -3813,17 +3290,11 @@
   "category": "news/event",
   "words": 380,
   "thin": false,
-  "facts": {
-   "date": [
-    "May 20"
-   ]
-  },
-  "facts_missing": [
-   "date: May 20"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.28,
-  "status": "missing"
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
+  "text_coverage": 0.89,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -3868,7 +3339,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.0,
+  "text_coverage": 0.14,
   "status": "missing"
  },
  {
@@ -3902,7 +3373,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.0,
+  "text_coverage": 0.07,
   "status": "missing"
  },
  {
@@ -3933,17 +3404,11 @@
   "category": "news/event",
   "words": 385,
   "thin": false,
-  "facts": {
-   "date": [
-    "May 20"
-   ]
-  },
-  "facts_missing": [
-   "date: May 20"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.29,
-  "status": "missing"
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
+  "text_coverage": 0.88,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -3956,16 +3421,10 @@
   "category": "archive",
   "words": 84,
   "thin": true,
-  "facts": {
-   "date": [
-    "May 20"
-   ]
-  },
-  "facts_missing": [
-   "date: May 20"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.0,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
+  "text_coverage": 1.0,
   "status": "fragment"
  },
  {
@@ -3982,8 +3441,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.0,
-  "status": "missing"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -3996,16 +3455,10 @@
   "category": "archive",
   "words": 312,
   "thin": false,
-  "facts": {
-   "date": [
-    "May 20"
-   ]
-  },
-  "facts_missing": [
-   "date: May 20"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.77,
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
+  "text_coverage": 1.0,
   "status": "fragment"
  },
  {
@@ -4022,8 +3475,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.63,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -4039,8 +3492,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.6,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -4068,11 +3521,9 @@
     "8 weeks"
    ]
   },
-  "facts_missing": [
-   "number: 6 weeks"
-  ],
-  "fact_coverage": 0.86,
-  "text_coverage": 0.88,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -4136,7 +3587,7 @@
    "email: dp@chichester.ac.uk"
   ],
   "fact_coverage": 0.0,
-  "text_coverage": 0.23,
+  "text_coverage": 0.62,
   "status": "missing"
  },
  {
@@ -4165,11 +3616,9 @@
     "8 weeks"
    ]
   },
-  "facts_missing": [
-   "number: 6 weeks"
-  ],
-  "fact_coverage": 0.86,
-  "text_coverage": 0.87,
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -4186,8 +3635,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.41,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -4208,14 +3657,10 @@
     "4 years"
    ]
   },
-  "facts_missing": [
-   "number: 1 hour",
-   "number: 10 levels",
-   "number: 4 years"
-  ],
-  "fact_coverage": 0.25,
-  "text_coverage": 0.62,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 0.96,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -4238,7 +3683,7 @@
    "number: 5 regions"
   ],
   "fact_coverage": 0.5,
-  "text_coverage": 0.5,
+  "text_coverage": 0.88,
   "status": "partial"
  },
  {
@@ -4252,21 +3697,11 @@
   "category": "other",
   "words": 141,
   "thin": true,
-  "facts": {
-   "date": [
-    "11 December 20",
-    "15 December 20",
-    "6 December 20"
-   ]
-  },
-  "facts_missing": [
-   "date: 11 December 20",
-   "date: 15 December 20",
-   "date: 6 December 20"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.71,
-  "status": "missing"
+  "facts": {},
+  "facts_missing": [],
+  "fact_coverage": null,
+  "text_coverage": 0.86,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -4282,8 +3717,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.33,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -4303,8 +3738,8 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.44,
-  "status": "partial"
+  "text_coverage": 0.84,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -4358,8 +3793,8 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.4,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -4375,7 +3810,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.33,
+  "text_coverage": 0.67,
   "status": "partial"
  },
  {
@@ -4392,8 +3827,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.56,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -4417,11 +3852,10 @@
   },
   "facts_missing": [
    "email: info@anglia.org",
-   "email: webadmin@anglia.org",
-   "number: 18 years"
+   "email: webadmin@anglia.org"
   ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.16,
-  "status": "missing"
+  "fact_coverage": 0.33,
+  "text_coverage": 0.55,
+  "status": "partial"
  }
 ]

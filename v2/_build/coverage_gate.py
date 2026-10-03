@@ -37,7 +37,7 @@ def present(kind, val, t):
     if kind == "phone": return val in digits
     if kind == "money":   # compare the number; accept MAD/DH/dirhams as the same currency
         n = re.sub(r"[^\d]", "", val)
-        return bool(n) and (f" {n} " in words or f" {int(n):,} ".replace(",", " ") in words)
+        return bool(n) and (norm(val) in words or norm(re.sub(r"[^\d.,]", "", val)) in words or f" {n} " in words or f" {int(n):,} ".replace(",", " ") in words)
     return norm(val) in words
 want = int(sys.argv[sys.argv.index("--phase") + 1]) if "--phase" in sys.argv else None
 by_phase = defaultdict(lambda: {"sources": 0, "facts": 0, "ok": 0, "excluded": 0, "unbuilt": set(), "missing": []})

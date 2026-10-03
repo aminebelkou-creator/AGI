@@ -423,3 +423,84 @@ page("anglia.html", "Anglia Morocco – English exams and classes | AGI Agadir",
 # partnerships (static page): full source text
 inject_static("partnerships.html", "full", '<section class="section bg-white np" id="partner-with-us"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Partner with AGI and Anglia Morocco</h2>'
   + "".join(render(SRC(u)["text"], privacy=True) for u in MAPPED("partnerships.html")) + '</div><aside><p class="kicker">Anglia Morocco</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="anglia-network.html">Network &amp; centres</a></li><li><a href="anglia.html">Anglia Morocco</a></li><li><a href="investors.html">Partners &amp; investors</a></li></ul></aside></div></section>')
+
+# ================================================================== PHASE 3 – TEACHERS · ADULTS · WELLBEING · ONLINE · PATHWAYS
+GROUPS = {
+ "Teachers": [("teachers.html", "For teachers"), ("teachers-cite.html", "C.I.T.E. / TESOL certification"), ("teachers-usa-sponsorship.html", "USA private-school sponsorship"), ("teachers-careers.html", "Teach with AGI")],
+ "Adults & professionals": [("adult-diploma.html", "Adult high school diploma"), ("programs-independent-studies.html", "Independent course studies"), ("professional.html", "Business & medical English"),
+                            ("programs-learning-pods.html", "Learning pods & fast track"), ("services-document-editing.html", "Document editing"), ("services-proctoring.html", "Exam proctoring")],
+ "Wellbeing (i-Heart)": [("wellbeing.html", "i-Heart therapeutic services"), ("wellbeing-adhd-coaching.html", "ADHD holistic coaching"), ("wellbeing-play-therapy.html", "Holistic play therapy")],
+ "Online": [("online-tutoring.html", "Online tutoring"), ("agi-usa.html", "American Group USA LLC")],
+ "Pathways": [("pathways.html", "University pathways")],
+}
+def section_page(name, group, title, lede, intro_html, desc, buttons=None, crumb=None):
+    links = "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in GROUPS[group] if h != name)
+    page(name, f"{title} – American Group International, Agadir", desc,
+         hero(f'<a href="programs.html">Programs</a> / <span>{crumb or title}</span>', title, lede,
+              buttons or ('<a class="btn btn-primary" href="forms.html#enquiry/programs">Ask about this program</a>' + WA))
+         + f'<section class="section bg-white"><div class="wrap docwrap"><div class="doc">{intro_html}{full(name)}</div>'
+           f'<aside><p class="kicker">{group}</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px">{links}</ul>'
+           f'<p style="margin-top:22px"><a class="link" href="fees.html#services">Prices</a></p></aside></div></section>', DOC_CSS)
+
+section_page("teachers-cite.html", "Teachers", "C.I.T.E. / TESOL certification",
+ "Anglia's Certificate for International Teachers of English: recognition of your English and your teaching – for life.",
+ '<p style="margin-top:0"><a class="btn btn-primary" href="https://angliamorocco.org/citem/" target="_blank" rel="noopener">Register on angliamorocco.org</a></p>',
+ "Anglia C.I.T.E. (TESOL) certification in Morocco: who it is for, English level needed, preparation, when and how to take it.", crumb="C.I.T.E.")
+section_page("teachers-usa-sponsorship.html", "Teachers", "USA private-school teacher sponsorship",
+ "Certification sponsorship for teaching in private schools in the United States – process, requirements and fee.", "",
+ "USA private-school teacher certification sponsorship through AGI: requirements, process, 30 days, US$60.", crumb="USA sponsorship")
+section_page("teachers-careers.html", "Teachers", "Teach with AGI",
+ "Join AGI's online teachers database and workshops – for freelance teachers, learning-pod leaders and STEM educators.",
+ '<p style="margin-top:0"><a class="btn btn-primary" href="forms.html#enquiry/careers">Send your profile</a></p>',
+ "Teach with AGI: online teachers database, learning pods and STEM educators workshops.", crumb="Teach with AGI")
+section_page("programs-independent-studies.html", "Adults & professionals", "Independent course studies",
+ "Self-paced, graduate-level modules using books and journals, with certificates approved by the American Canadian Board.", "",
+ "AGI independent course studies: modules, program, prices and certificates approved by the American Canadian Board.", crumb="Independent studies")
+section_page("programs-learning-pods.html", "Adults & professionals", "Learning pods &amp; fast track",
+ "Small groups of about ten students, led by teacherpreneurs – including a fast-track high school route.", "",
+ "AGI and Anglia Morocco learning pods: small groups of ten, teacherpreneurs, fast-track high school.", crumb="Learning pods")
+section_page("services-document-editing.html", "Adults & professionals", "Document editing in English",
+ "Professional editing of documents in English – applications, CVs, reports and academic work.",
+ "<p style=\"margin-top:0\">Tell us about your document and deadline; the office will confirm the price and turnaround. " + PH_TXT("document-editing-details", "Prices and process to be confirmed.") + "</p>",
+ "Document editing in English by AGI, Agadir.", crumb="Document editing")
+section_page("services-proctoring.html", "Adults & professionals", "Exam proctoring",
+ "Paper and online exams invigilated at AGI for distance learners of North American and British universities, companies and certification bodies.",
+ "<p style=\"margin-top:0\"><b>Monday to Thursday, 9:00–17:00.</b> A 200 MAD (15 EUR) administration fee plus 200 MAD (15 EUR) per exam hour.</p>",
+ "Exam proctoring at AGI Agadir: exams, fees per exam and conditions.", crumb="Proctoring")
+section_page("wellbeing.html", "Wellbeing (i-Heart)", "i-Heart therapeutic services",
+ "Holistic support for children, teens and adults – coaching, therapeutic play and counseling, alongside school.",
+ '<div class="cards" style="--cols:2;margin-bottom:28px"><a class="card" href="wellbeing-adhd-coaching.html"><h3>ADHD holistic coaching</h3><p>Focus, organization and time management for children and adults.</p><span class="more">Learn more</span></a><a class="card" href="wellbeing-play-therapy.html"><h3>Holistic play therapy</h3><p>Guided therapeutic play for emotional, social and behavioral development.</p><span class="more">Learn more</span></a></div>',
+ "i-Heart holistic therapeutic services and counseling at AGI: ADHD coaching and holistic play therapy.", crumb="Wellbeing")
+section_page("wellbeing-adhd-coaching.html", "Wellbeing (i-Heart)", "ADHD holistic coaching",
+ "One-to-one coaching for children and adults on focus, organization and time management – in Agadir and online.", "",
+ "ADHD holistic coaching with Julie Wilburn, accredited Holistic Therapeutic Coach (IPHM, ICAHP), in Agadir and online.", crumb="ADHD coaching")
+section_page("wellbeing-play-therapy.html", "Wellbeing (i-Heart)", "Holistic play therapy",
+ "Therapeutic play that supports the emotional, behavioral, social and cognitive development of children.", "",
+ "Holistic play therapy at AGI school, Agadir: approach, benefits and sessions.", crumb="Play therapy")
+section_page("online-tutoring.html", "Online", "Online tutoring",
+ "One-to-one lessons online through American Group USA LLC – prices, session length and how to join on Zoom or Teams.", "",
+ "Online tutoring with American Group USA: session prices, how long a session should last, and Zoom/Teams instructions.")
+section_page("agi-usa.html", "Online", "American Group USA LLC",
+ "AGI's U.S.-registered company, offering programs, tutoring and coaching to clients worldwide.",
+ "<p style=\"margin-top:0\">" + PH_TXT("agi-usa-address", "Registered address in Grantsville, Maryland – to be confirmed.") + "</p>",
+ "American Group USA LLC: AGI's U.S. company for online programs, tutoring and coaching.", crumb="AGI USA")
+
+# existing pages: add the full source details
+def append_details(name, title, related):
+    links = "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in related)
+    block = f'''
+<section class="section bg-white" id="details"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">{title}</h2>{full(name, heading="")}</div>
+<aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px">{links}</ul></aside></div></section>
+</main>'''
+    PAGES[name] = PAGES[name].replace("\n</main>", block, 1)
+    if "doc-css" not in PAGES[name]: PAGES[name] = PAGES[name].replace("</head>", f'<style id="doc-css">{DOC_CSS}</style>\n</head>', 1)
+append_details("adult-diploma.html", "Program details and courses", GROUPS["Adults & professionals"][1:] + [("fees.html", "Prices")])
+append_details("professional.html", "Business and medical English in detail", GROUPS["Adults & professionals"])
+append_details("pathways.html", "Consultancy services and partner institutions", [("anglia-about.html", "Anglia & UCAS"), ("journal-ccgi-partnership.html", "Chichester College Group")])
+
+# programs hub + teachers page: link everything
+_more = "".join(f'<a class="card" href="{h}"><span class="tag">{g}</span><h3>{t}</h3><span class="more">Open</span></a>' for g, L in GROUPS.items() for h, t in L if h not in ("teachers.html", "adult-diploma.html", "professional.html", "pathways.html"))
+PAGES["programs.html"] = PAGES["programs.html"].replace("\n</main>", f'\n<section class="section"><div class="wrap"><div class="section-head"><h2>More programs and services</h2><p>For teachers, adults, families and professionals.</p></div><div class="cards">{_more}</div></div></section>\n</main>', 1)
+PAGES["teachers.html"] = PAGES["teachers.html"].replace("\n</main>", '\n<section class="section"><div class="wrap"><div class="section-head"><h2>In detail</h2></div><div class="cards">'
+  + "".join(f'<a class="card" href="{h}"><h3>{t}</h3><span class="more">Open</span></a>' for h, t in GROUPS["Teachers"][1:])
+  + '<a class="card" href="journal/early-childhood-education-and-care-degree.html"><h3>Early childhood education &amp; care diploma</h3><span class="more">Read</span></a></div></div></section>\n</main>', 1)
