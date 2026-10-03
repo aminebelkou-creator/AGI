@@ -124,7 +124,8 @@ def _clean_article(t):
     body = re.sub(r'\[video[^\]]*?(?:mp4|src)="([^"]+)"[^\]]*\](?:\s*\[/video\])?', lambda m: f'<a class="link" href="{m.group(1).replace("http://", "https://")}" target="_blank" rel="noopener">Watch the video</a>', body)
     body = re.sub(r"\[/?(?:caption|gallery|embed|contact-form-7|video)[^\]]*\]", "", body)
     body = re.sub(r"<p>(?:\s*#\w+[\s,.]*){2,}</p>", "", body)
-    body = re.sub(r"<p>\s*_{4,}\s*</p>", "", body)                                     # separator lines of underscores
+    body = re.sub(r"<p>\s*_{4,}\s*</p>", "", body)
+    body = re.sub(r"<p>\s*[a-z]+(?: [a-z]+){0,2}\s*</p>", "", body)                         # lowercase gallery captions ("christmas party")                                     # separator lines of underscores
     _fn = re.compile(r"\d{6,}_|_\d{4,}|^[a-z]{3,}\d+$")
     def _gallery(m):                                                                    # lists of photo file names / gallery captions
         items = re.findall(r"<li>(.*?)</li>", m.group(0), re.S)
