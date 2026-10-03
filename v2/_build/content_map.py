@@ -113,9 +113,16 @@ def route(p):
     for rx, dest, sec, act, ph, why in R:
         if re.search(rx, key): return (dest, sec, act, ph, why)
     return ("REVIEW", "-", "review", 0, "No rule matched – decide by hand")
+def flat(dest):
+    if dest in ("-", "REVIEW") or dest.startswith(("journal/", "ar/")) or "/" not in dest: return dest
+    sec, name = dest.split("/", 1)
+    if name == "index.html": return sec + ".html"
+    if sec in ("policies", "school"): return {"placement.html": "placement-policy.html", "media.html": "media-policy.html"}.get(name, name)
+    if sec == "about": return name
+    return f"{sec}-{name}"
 rows = []
 for p in pages:
-    dest, sec, act, ph, why = route(p)
+    dest, sec, act, ph, why = route(p); dest = flat(dest)
     rows.append({"site": p["site"], "language": p["lang"], "kind": p["kind"], "category": p["category"], "title": p["title"], "url": p["url"],
                  "words": p["words"], "thin": "yes" if p["thin"] else "", "current_status": p["status"], "destination": dest, "section": sec,
                  "action": act, "phase": ph, "reason": why, "facts": sum(len(v) for v in p["facts"].values())})

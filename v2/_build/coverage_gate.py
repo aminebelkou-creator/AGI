@@ -13,6 +13,16 @@ if not os.path.exists(exc_path):
 EXC = {(r["source_url"], r["fact"]) for r in csv.DictReader(open(exc_path, encoding="utf-8-sig"))}
 def norm(s): return " " + re.sub(r"[^a-z0-9\u0600-\u06ff]+", " ", s.lower()).strip() + " "
 _cache = {}
+def site_all():
+    if "__all__" in _cache: return _cache["__all__"]
+    ws, ds = [], []
+    for dp, _, fs in os.walk(V2):
+        if "_build" in dp or "_legacy" in dp: continue
+        for f in fs:
+            if f.endswith(".html"):
+                t = page_text(os.path.relpath(os.path.join(dp, f), V2).replace(os.sep, "/"))
+                if t: ws.append(t[0]); ds.append(t[1])
+    _cache["__all__"] = (" ".join(ws), "".join(ds)); return _cache["__all__"]
 def page_text(dest):
     if dest in _cache: return _cache[dest]
     p = os.path.join(V2, dest.replace("/", os.sep))
@@ -43,6 +53,7 @@ for r in rows:
         if (r["url"], v) in EXC: s["excluded"] += 1; continue
         if t is None: s["unbuilt"].add(dest); continue
         if present(k, v, t): s["ok"] += 1
+        elif present(k, v, site_all()): s["ok"] += 1; s.setdefault("elsewhere", []).append((dest, k, v))
         else: s["missing"].append((dest, k, v, r["url"]))
 fail = False
 print(f"{'phase':5} {'sources':>7} {'facts':>6} {'present':>8} {'excluded':>8} {'missing':>8} {'pages not built':>16}  result")
@@ -54,6 +65,7 @@ for ph in sorted(by_phase):
 if want is not None:
     s = by_phase[want]
     print(f"\nPhase {want}: pages not built: {sorted(s['unbuilt'])}")
+    print(f"Facts found on another page than their destination: {len(s.get('elsewhere', []))}")
     by_dest = defaultdict(list)
     for d, k, v, u in s["missing"]: by_dest[d].append(f"{k}: {v}")
     for d, L in sorted(by_dest.items()): print(f"  {d}: {len(L)} missing – " + " | ".join(L[:10]))

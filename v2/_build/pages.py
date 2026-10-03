@@ -784,6 +784,7 @@ page("terms.html", "Terms of use – American Group International, Agadir", "Ter
 </div></div></section>""", LEGAL_CSS)
 
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "audiences.py"), encoding="utf-8").read())
+exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "content_pages.py"), encoding="utf-8").read())
 
 if __name__ == "__main__":
     for name, doc in PAGES.items():

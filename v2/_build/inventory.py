@@ -19,7 +19,7 @@ def norm(l): return re.sub(r"[^a-z0-9\u0600-\u06ff]+", " ", l.lower()).strip()
 
 FACT_RX = {
  "money": r"\d[\d,. ]*\s?(?:MAD|DH|DHS|Dhs|dirhams?|€|EUR|euros?|USD)\b|\$\s?\d[\d,.]*",
- "date": r"\b(?:\d{1,2}(?:st|nd|rd|th)?\s+)?(?:January|February|March|April|May|June|July|August|September|October|November|December)\.?\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s*\d{4})?",
+ "date": r"\b(?:\d{1,2}(?:st|nd|rd|th)?\s+)?(?:January|February|March|April|May|June|July|August|September|October|November|December)\.?\s+\d{1,2}(?!\d)(?:st|nd|rd|th)?(?:,?\s*\d{4})?",
  "email": r"[\w.+-]+@[\w-]+\.[a-z]{2,}(?:\.[a-z]{2,})?",
  "phone": r"(?:\+?212|0)[\s.-]?[5-7](?:[\s.-]?\d){8}",
  "number": r"\b\d+\s?(?:hours?|weeks?|months?|years?|days?|students?|levels?|regions?|nationalities|credits?|%)",

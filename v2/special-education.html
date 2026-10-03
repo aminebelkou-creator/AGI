@@ -8,9 +8,30 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap"></noscript></noscript>
 <link rel="stylesheet" href="site.css">
 <script src="site.js" defer></script>
+<style>
+.doc{display:grid;grid-template-columns:minmax(0,1fr);max-width:820px}
+.doc h2{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.2vw,30px);color:var(--navy);margin:1.8em 0 .5em;line-height:1.2}
+.doc h3{font-family:var(--sans);font-weight:600;font-size:17px;color:var(--ink);margin:1.4em 0 .4em}
+.doc p,.doc li{font-size:16px;line-height:1.75;color:var(--text)}
+.doc ul,.doc ol{padding-left:22px;margin:0 0 1em}
+.toc{border:1px solid var(--line);background:var(--paper);padding:20px 24px;margin:0 0 28px}
+.toc ol{margin:0;padding-left:20px;columns:2;column-gap:32px}.toc li{font-size:14px;line-height:1.9;break-inside:avoid}
+.source-note{font-size:13px;color:var(--grey);border-top:1px solid var(--line);padding-top:16px;margin-top:36px}
+@media (max-width:700px){.toc ol{columns:1}}
+
+.docwrap{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:clamp(32px,5vw,72px);align-items:start}
+.docwrap aside{position:sticky;top:calc(var(--header) + 24px)}
+.docwrap aside li a{font-size:14px}
+.fee-table td:last-child,.fee-table th:last-child{text-align:right;white-space:nowrap}
+.cal h3{font-family:var(--sans);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:26px 0 8px}
+.cal table{min-width:0}.cal td:first-child{white-space:nowrap;font-weight:600;color:var(--navy);width:34%}
+details.archive{border:1px solid var(--line);padding:4px 20px;background:var(--paper);margin-top:24px}
+details.archive summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(--navy)}
+@media (max-width:900px){.docwrap{grid-template-columns:minmax(0,1fr)}.docwrap aside{position:static}}
+</style>
 <!--site:seo-->
 <link rel="canonical" href="https://www.americangroup-international.com/special-education.html">
 <meta property="og:site_name" content="American Group International">
@@ -61,6 +82,51 @@
   </div>
 </div></section>
 <section class="section tight bg-navy"><div class="wrap cta-band"><div><h2>Talk to us about your child.</h2><p>Book a visit to meet the team, or send a question first – everything you share is handled in confidence.</p></div><div class="btn-row"><a class="btn btn-gold" href="forms.html#enrollment">Apply</a><a class="btn btn-light" href="forms.html#visit">Book a visit</a></div></div></section><section class="section"><div class="wrap"><div class="section-head"><h2>Other programs</h2><p><a class="link" href="programs.html">All programs</a></p></div><div class="cards" style="--cols:3"><a class="card" href="k12.html"><span class="tag">Ages 5–18</span><h3>K–12 school</h3><p>An American-curriculum micro-school from kindergarten to grade 12, with English support through the Anglia system for children who don't speak English at home.</p><span class="more">Learn more</span></a><a class="card" href="adult-diploma.html"><span class="tag">Age 16+</span><h3>Adult high school diploma</h3><p>A self-paced U.S. high school completion program with American Worldwide Academy, with every test proctored on site in Agadir.</p><span class="more">Learn more</span></a><a class="card" href="english-anglia.html"><span class="tag">All ages</span><h3>English & Anglia exams</h3><p>AGI is the Anglia Examinations headquarters for Morocco: ten CEFR-mapped levels, Saturday classes for children and courses for adults.</p><span class="more">Learn more</span></a><a class="card" href="teachers.html"><span class="tag">Educators</span><h3>For teachers (C.I.T.E.)</h3><p>The lifelong Anglia C.I.T.E. teaching certificate, teacher training, a 30-day internship and U.S. private-school sponsorship.</p><span class="more">Learn more</span></a><a class="card" href="professional.html"><span class="tag">Professionals</span><h3>Professional & medical English</h3><p>Business and medical English for working adults and teams, exam proctoring and ADHD holistic coaching.</p><span class="more">Learn more</span></a><a class="card" href="pathways.html"><span class="tag">Next steps</span><h3>University pathways</h3><p>An authorized admissions agent for universities and colleges in the UK, the United States and beyond.</p><span class="more">Learn more</span></a></div></div></section>
+<section class="section bg-white" id="details"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Special education services in detail</h2><h2 id="embracing-diversity-our-commitment-to-special-educ">Embracing Diversity: Our Commitment to Special Education (SEN)</h2>
+<p>At American Group International, we are proud to offer a warm and inclusive environment that welcomes students with a wide range of special needs, learning differences, mental health challenges, and specific disabilities—both physical and developmental. We understand that each child is unique, and we are dedicated to providing the support and resources necessary for their success.</p>
+<h2 id="our-approach">Our Approach</h2>
+<p>– Individualized Support: We create Individualized Education Plans (IEPs) tailored to the specific needs and abilities of each student.</p>
+<p>– Small Group Settings: Our small class sizes ensure personalized attention and a supportive learning environment.</p>
+<p>– Comprehensive Services: From occupational therapy to speech-language pathology and behavioural support, we provide a holistic approach to education and development.</p>
+<p>– Inclusive Education: We believe in fostering an inclusive community where every student feels valued, respected, and empowered to thrive.</p>
+<h2 id="special-needs-high-school-program-sen">Special Needs High School Program (SEN)</h2>
+<p>Our high school program is specially designed to meet the academic, social, and emotional needs of high school students with special needs. With a focus on life skills, vocational training, and preparing for independence, we aim to equip students with the tools they need to succeed beyond graduation.</p>
+<h2 id="join-our-community">Join Our Community</h2>
+<p>Whether you’re exploring educational options for your child or seeking a supportive environment that understands and celebrates diversity, American Group International is here for you. Contact us today to learn more about how we can support your child’s educational journey.</p>
+<p>Please see us if you know a child who could benefit from our Special Education Services.</p>
+<p>Physical Education</p>
+<p>Arabic</p>
+<p>English</p>
+<p>Math</p>
+<p>Science</p>
+<p>History</p>
+<p>Reading</p>
+<p>Spelling</p>
+<p>Fine Arts-Random</p>
+<p>ESL</p>
+<p>Thank you,</p>
+<p>Julie Wilburn</p>
+<p>Educational Director</p>
+<p>تم توجيه خدماتنا في American Group International للطلاب ذوي الاحتياجات الخاصة ، مثل اختلافات التعلم ، وقضايا الصحة العقلية ، والإعاقات المحددة (الجسدية أو التنموية) ، والموهبة هي تلك التي يتم تلبية احتياجاتها في إطار الفصل الدراسي لمجموعة صغيرة. نقوم بتنفيذ IEP = خطة تعليمية فردية) للآباء ونعمل أيضًا مع مقدمي رعاية / أطباء محترفين من أجل التقدم والمستوى التعليمي طوال كل عام دراسي. نقدم حاليًا برنامج المدرسة الثانوية لذوي الاحتياجات الخاصة.</p>
+<p>يرجى زيارتنا إذا كنت تعرف طفلاً يمكنه الاستفادة من خدمات التعليم الخاص لدينا.</p>
+<h2 id="references-of-services">References of Services</h2>
+<p>American Group International School</p>
+<p>Attn: Mr. Julie Wilburn, Director</p>
+<p>Agadir, Morocco</p>
+<p>May 24, 2024</p>
+<p>Dear Mrs. Julie Wilburn,</p>
+<p>I am writing to express my profound gratitude and appreciation for the exceptional education and care provided by the American International Correspondence School in Agadir to our son, Ismail.</p>
+<p>In 2017, our family made a significant move from Saudi Arabia to Morocco after spending 25 years in the Middle East. Ismail had been attending Jeddah American School from primary school until Grade 8. As parents of a special needs child with Down syndrome, we were anxious about this major transition and how Ismail would adapt to the new environment.</p>
+<p>However, our concerns were alleviated upon meeting you and your dedicated team. Your immediate and compassionate enrollment of Ismail into your school demonstrated a deep understanding and commitment to his needs. Under your guidance and with the support of your team, Ismail not only adapted but thrived. The love, care, and special attention you all provided played a crucial role in his successful transition and eventual graduation from high school in 2022. This achievement is a testament to your dedication and the nurturing environment you foster at your school.</p>
+<p>Ismail’s progress did not stop at high school. He also benefited immensely from the Anglia English classes and your initiative to enroll him in a university hotel management program. Currently, he continues to pursue his education in the hospitality sector at the OFPPT center for special needs, further building on the strong foundation laid by your institution.</p>
+<p>Your school has had a significant positive impact on our lives, particularly Ismail’s. We are immensely grateful for the extraordinary efforts you, your husband Mr. Abdelhak, an expert in Mathematics, and your son Matthew, an expert in English grammar, have put into ensuring Ismail’s educational and personal development.</p>
+<p>I wholeheartedly recommend the American Group International School in Agadir. It is undoubtedly one of the best schools in Morocco, providing an inclusive, supportive, and high-quality education for all its students.</p>
+<p>Thank you once again for your unwavering support and dedication.</p>
+<p>Warm regards,</p>
+<p>Brahim Robio</p>
+<p>Managing Partner</p>
+<p>Antal International</p></div>
+<aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="placement-policy.html">Placement policy</a></li><li><a href="parents.html">For parents</a></li><li><a href="forms.html#visit">Book a visit</a></li></ul></aside></div></section>
 </main>
 <!--site:footer-->
 <footer class="site-footer">
@@ -70,7 +136,7 @@
       <p>American Group International – the first American school in Agadir, since 2013, and headquarters of Anglia Examinations in Morocco.</p>
     </div>
     <div><h2>Programs</h2><ul><li><a href="k12.html">K–12 school</a></li><li><a href="special-education.html">Special education (SEN)</a></li><li><a href="adult-diploma.html">Adult high school diploma</a></li><li><a href="english-anglia.html">English & Anglia exams</a></li><li><a href="teachers.html">For teachers (C.I.T.E.)</a></li><li><a href="professional.html">Professional & medical English</a></li><li><a href="pathways.html">University pathways</a></li></ul></div>
-    <div><h2>School</h2><ul><li><a href="about.html">About AGI</a></li><li><a href="our-story.html">Our story</a></li><li><a href="parents.html">For parents</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="admissions.html#fees">Tuition &amp; fees</a></li><li><a href="policies.html">Policies</a></li><li><a href="student-life.html">Student life</a></li><li><a href="journal.html">Journal</a></li></ul></div>
+    <div><h2>School</h2><ul><li><a href="about.html">About AGI</a></li><li><a href="our-story.html">Our story</a></li><li><a href="parents.html">For parents</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="fees.html">Tuition &amp; fees</a></li><li><a href="calendar.html">Calendar 2026–27</a></li><li><a href="policies.html">Policies</a></li><li><a href="handbook.html">Academic handbook</a></li><li><a href="faq.html">Questions &amp; answers</a></li><li><a href="student-life.html">Student life</a></li><li><a href="journal.html">Journal</a></li></ul></div>
     <div><h2>Services</h2><ul><li><a href="forms.html">Forms &amp; requests</a></li><li><a href="forms.html#absence">Report an absence</a></li><li><a href="forms.html#documents">Request a document</a></li><li><a href="forms.html#visit">Book a visit</a></li><li><a href="partnerships.html">Partnerships &amp; franchise</a></li><li><a href="investors.html">Partners &amp; investors</a></li><li><a href="connect.html">AGI Connect (preview)</a></li><li><a href="https://angliamorocco.org/" target="_blank" rel="noopener">Anglia Morocco ↗</a></li></ul></div>
     <div><h2>Contact</h2><address>Number 20, Rue Baalabek<br>Hay Nahda, Agadir 80000<br>Morocco</address>
       <ul style="margin-top:14px"><li><a href="tel:+212528843349">+212 528 843 349</a></li><li><a href="tel:+212618639911">+212 618 639 911</a> <span style="color:rgba(255,255,255,.7);font-size:13px">Arabic</span></li><li><a href="https://wa.me/212688739393">WhatsApp +212 688 739 393</a></li><li><a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a></li></ul></div>
