@@ -527,3 +527,29 @@ if _ang_posts:
     inject_static("journal.html", "anglia-news", '<section class="section bg-white np" id="anglia-news"><div class="wrap"><div class="section-head"><h2>From Anglia Morocco</h2><p>News first published on angliamorocco.org.</p></div><div class="cards">'
       + "".join(f'<a class="card" href="{r["destination"]}"><span class="tag">Anglia Morocco</span><h3>{_html.escape(_re.sub(r"^[“\"]|[”\"]$", "", r["title"]))}</h3><span class="more">Read</span></a>' for r in _ang_posts)
       + "</div></div></section>")
+
+# ================================================================== PHASE 5 – ABOUT · COOKIES · FORMS
+PAGES["about.html"] = PAGES["about.html"].replace("\n</main>", f'''
+<section class="section bg-white" id="in-julies-words"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">In Julie's words</h2>{render(SRC("about-us")["text"], privacy=True)}</div>
+<aside><p class="kicker">About</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="our-story.html">Our story</a></li><li><a href="founder-letter.html">Founder's letter</a></li><li><a href="handbook.html">Mission &amp; handbook</a></li></ul></aside></div></section>
+</main>''', 1)
+if "doc-css" not in PAGES["about.html"]: PAGES["about.html"] = PAGES["about.html"].replace("</head>", f'<style id="doc-css">{DOC_CSS}</style>\n</head>', 1)
+
+page("cookies.html", "Cookies – American Group International, Agadir", "This website uses no advertising or tracking cookies. What it stores on your device, and which outside services it loads.",
+ hero("<span>Cookies</span>", "Cookies.", "This website does not use advertising or tracking cookies. Here is exactly what it stores and loads. Last updated October 2026.") + """
+<section class="section bg-white"><div class="wrap"><div class="doc" data-verify="legal-review:cookies">
+<h2 style="margin-top:0">What this site stores on your device</h2>
+<p>One small setting in your browser's local storage, named <code>agi-story-popup</code>, remembers the date you last saw the "For parents" invitation, so that it is not shown again for 7 days. It contains no personal information and is never sent to us. You can clear it at any time by clearing your browser's site data.</p>
+<h2>Outside services</h2>
+<ul><li><b>Google Fonts</b> – the typefaces are loaded from Google, which receives your browser's standard technical information (such as your IP address).</li>
+<li><b>Google Maps</b> – the maps on the home and contact pages are loaded from Google only when they appear on your screen; Google may set its own cookies when you use the map.</li>
+<li><b>WhatsApp</b> – the WhatsApp button opens WhatsApp only when you tap it.</li></ul>
+<h2>No tracking</h2><p>We do not use analytics, advertising or social-media tracking cookies. If this changes, this page will be updated and your consent asked first where the law requires it.</p>
+<h2>Questions</h2><p>Write to <a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a>. See also our <a href="privacy.html">privacy policy</a>.</p>
+</div></div></section>""", DOC_CSS)
+
+# forms: attestation for AGI clients in the document request form
+_ff = os.path.join(V2, "forms.html"); _ft = open(_ff, encoding="utf-8", newline="").read()
+if "Attestation for AGI clients" not in _ft:
+    _ft = _ft.replace('"Attendance attestation", ', '"Attendance attestation", "Attestation for AGI clients", ', 1)
+    open(_ff, "w", encoding="utf-8", newline="").write(_ft)

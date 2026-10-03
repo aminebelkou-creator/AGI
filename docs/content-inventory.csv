@@ -1,5 +1,5 @@
 ﻿site,language,kind,category,title,url,date,words,thin,text_coverage,fact_coverage,status,missing_facts_examples
-agi,en,page,about,About Us,https://www.americangroup-international.com/about-us/,,517,,0.45,,partial,
+agi,en,page,about,About Us,https://www.americangroup-international.com/about-us/,,517,,1.0,,covered,
 agi,en,page,about,Contact,https://www.americangroup-international.com/contact/,,65,yes,1.0,1.0,covered,
 agi,en,page,about,Front Page – Copy,https://www.americangroup-international.com/front-page-copy/,,1066,,0.98,0.0,missing,number: 45 nationalities
 agi,en,page,about,Our Vision,https://www.americangroup-international.com/our-vision/,,147,yes,0.14,,missing,
@@ -164,7 +164,7 @@ anglia,en,page,exam,CEFR,https://angliamorocco.org/cefr/,2022-01-11,629,,1.0,,co
 anglia,en,page,exam,CITE,https://angliamorocco.org/elementor-1438/,2024-07-05,806,,1.0,1.0,covered,
 anglia,en,page,exam,Exams,https://angliamorocco.org/exams/,2021-12-06,681,,1.0,,covered,
 anglia,en,page,exam,Special Arrangements,https://angliamorocco.org/special-arrangements/,2021-12-13,273,,1.0,1.0,covered,
-anglia,en,page,legal,Cookies Policy,https://angliamorocco.org/cookies-policy/,2021-12-13,1458,,0.67,0.0,missing,email: dp@chichester.ac.uk
+anglia,en,page,legal,Cookies Policy,https://angliamorocco.org/cookies-policy/,2021-12-13,1458,,0.71,0.0,missing,email: dp@chichester.ac.uk
 anglia,en,page,legal,Privacy Policy,https://angliamorocco.org/privacy-policy/,2021-12-13,522,,0.88,1.0,covered,
 anglia,en,page,legal,Terms And Conditions,https://angliamorocco.org/terms-and-conditions/,2021-12-13,3838,,0.65,0.33,partial,email: info@anglia.org | email: webadmin@anglia.org
 anglia,en,post,news/event,Anglia Mastery Qualification Awarded UCAS Tariff Points,https://angliamorocco.org/anglia-mastery-qualification-awarded-ucas-tariff-points-2/,2021-12-06,380,,1.0,,covered,

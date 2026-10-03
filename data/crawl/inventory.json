@@ -127,8 +127,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.45,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -3585,7 +3585,7 @@
    "email: dp@chichester.ac.uk"
   ],
   "fact_coverage": 0.0,
-  "text_coverage": 0.67,
+  "text_coverage": 0.71,
   "status": "missing"
  },
  {
