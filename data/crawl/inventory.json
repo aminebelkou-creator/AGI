@@ -70,7 +70,7 @@
    "number: 45 nationalities"
   ],
   "fact_coverage": 0.0,
-  "text_coverage": 0.98,
+  "text_coverage": 1.0,
   "status": "missing"
  },
  {
@@ -403,7 +403,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.81,
+  "text_coverage": 0.85,
   "status": "covered"
  },
  {
@@ -1367,7 +1367,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.92,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -1447,7 +1447,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.33,
+  "text_coverage": 0.39,
   "status": "partial"
  },
  {
@@ -1464,7 +1464,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.8,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -1662,7 +1662,7 @@
    "number: 45 nationalities"
   ],
   "fact_coverage": 0.0,
-  "text_coverage": 0.95,
+  "text_coverage": 0.98,
   "status": "missing"
  },
  {
@@ -2332,12 +2332,10 @@
     "100 years"
    ]
   },
-  "facts_missing": [
-   "number: 100 years"
-  ],
-  "fact_coverage": 0.0,
-  "text_coverage": 0.21,
-  "status": "missing"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2400,8 +2398,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.4,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "agi",
@@ -2611,7 +2609,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.87,
+  "text_coverage": 0.9,
   "status": "covered"
  },
  {
@@ -3084,7 +3082,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.3,
+  "text_coverage": 0.43,
   "status": "partial"
  },
  {
@@ -3293,7 +3291,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.89,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -3407,7 +3405,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.88,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -3587,7 +3585,7 @@
    "email: dp@chichester.ac.uk"
   ],
   "fact_coverage": 0.0,
-  "text_coverage": 0.62,
+  "text_coverage": 0.67,
   "status": "missing"
  },
  {
@@ -3679,12 +3677,10 @@
     "5 regions"
    ]
   },
-  "facts_missing": [
-   "number: 5 regions"
-  ],
-  "fact_coverage": 0.5,
-  "text_coverage": 0.88,
-  "status": "partial"
+  "facts_missing": [],
+  "fact_coverage": 1.0,
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -3700,7 +3696,7 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.86,
+  "text_coverage": 1.0,
   "status": "covered"
  },
  {
@@ -3738,7 +3734,7 @@
   },
   "facts_missing": [],
   "fact_coverage": 1.0,
-  "text_coverage": 0.84,
+  "text_coverage": 0.88,
   "status": "covered"
  },
  {
@@ -3810,8 +3806,8 @@
   "facts": {},
   "facts_missing": [],
   "fact_coverage": null,
-  "text_coverage": 0.67,
-  "status": "partial"
+  "text_coverage": 1.0,
+  "status": "covered"
  },
  {
   "site": "anglia",
@@ -3855,7 +3851,7 @@
    "email: webadmin@anglia.org"
   ],
   "fact_coverage": 0.33,
-  "text_coverage": 0.55,
+  "text_coverage": 0.65,
   "status": "partial"
  }
 ]

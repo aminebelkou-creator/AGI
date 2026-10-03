@@ -61,3 +61,39 @@ def row(m):
 s2, n = re.subn(r'(<a class="[^"]*agi-jrow" href=")[^"]*(".*?<span style="font-family:\'Newsreader\'[^>]*>)(.*?</span>)', row, s, flags=re.S)
 open(jp, "w", encoding="utf-8", newline="").write(s2)
 print(f"articles generated: {len([f for f in os.listdir(OUT) if f.endswith('.html')])}; journal rows relinked: {n}")
+
+# ---------------- CRAWL-ONLY POSTS: posts found on the live sites but not in the export ----------------
+import csv as _csv
+INV = {x["url"]: x for x in json.load(open(os.path.join(os.path.dirname(V2), "data", "crawl", "inventory.json"), encoding="utf-8"))}
+MAPROWS = list(_csv.DictReader(open(os.path.join(os.path.dirname(V2), "docs", "content-map.csv"), encoding="utf-8-sig")))
+def text_to_html(t):
+    out, ul = [], False
+    for l in t.split("\n")[1:]:
+        l = l.strip()
+        if not l: continue
+        if l.startswith("#"):
+            if ul: out.append("</ul>"); ul = False
+            out.append(f"<h2>{html.escape(l.lstrip('# '))}</h2>"); continue
+        if re.match(r"^[-•*]\s+", l):
+            if not ul: out.append("<ul>"); ul = True
+            out.append(f"<li>{html.escape(re.sub(r'^[-•*]\s+', '', l))}</li>"); continue
+        if ul: out.append("</ul>"); ul = False
+        out.append(f"<p>{html.escape(l)}</p>")
+    if ul: out.append("</ul>")
+    return "\n".join(out)
+extra = 0
+for r in MAPROWS:
+    d = r["destination"]
+    if not d.startswith("journal/") or os.path.exists(os.path.join(V2, d)): continue
+    src = INV.get(r["url"])
+    if not src: continue
+    title = re.sub(r'^[“"\s]+|[”"\s]+$', "", src["title"]); body = text_to_html(src["text"])
+    date = src.get("date") or ""
+    nice = nice_date(date) if re.match(r"\d{4}-\d{2}-\d{2}", date) else ""
+    plain = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body)).strip()
+    doc = (TPL.replace("<title>{{TITLE}} – AGI Journal</title>", f"<title>{html.escape(title if len(title) > 56 else title + ' – AGI Journal')}</title>")
+           .replace("{{TITLE}}", html.escape(title)).replace("{{DESC}}", html.escape((plain[:150] + "…") if len(plain) > 150 else plain or title))
+           .replace("{{DATE}}", nice).replace("{{KIND}}", kind_of(title)).replace("{{BODY}}", body + f'<p class="muted" style="font-size:13px">Originally published on {html.escape(src["url"].split("/")[2])}.</p>')
+           .replace("{{NEWER}}", "<span></span>").replace("{{OLDER}}", "<span></span>"))
+    open(os.path.join(V2, d), "w", encoding="utf-8", newline="").write(doc); extra += 1
+print(f"crawl-only posts generated: {extra}")

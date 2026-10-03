@@ -504,3 +504,26 @@ PAGES["programs.html"] = PAGES["programs.html"].replace("\n</main>", f'\n<sectio
 PAGES["teachers.html"] = PAGES["teachers.html"].replace("\n</main>", '\n<section class="section"><div class="wrap"><div class="section-head"><h2>In detail</h2></div><div class="cards">'
   + "".join(f'<a class="card" href="{h}"><h3>{t}</h3><span class="more">Open</span></a>' for h, t in GROUPS["Teachers"][1:])
   + '<a class="card" href="journal/early-childhood-education-and-care-degree.html"><h3>Early childhood education &amp; care diploma</h3><span class="more">Read</span></a></div></div></section>\n</main>', 1)
+
+# ================================================================== PHASE 4 – RESOURCES & JOURNAL
+RES = [("resources.html", "Resources for families"), ("resources-nursery-rhymes.html", "Nursery rhymes for Pre-K"), ("resources-mcguffey.html", "McGuffey readers &amp; sight words")]
+def resource_page(name, title, lede, desc, intro=""):
+    links = "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in RES if h != name)
+    page(name, f"{title} – American Group International, Agadir", desc,
+         hero(f'<a href="student-life.html">Student life</a> / <span>{title}</span>', title, lede, '<a class="btn btn-primary" href="forms.html#tutor-request">Request a tutor</a>' + WA)
+         + f'<section class="section bg-white"><div class="wrap docwrap"><div class="doc">{intro}{full(name, heading="")}</div>'
+           f'<aside><p class="kicker">Resources</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px">{links}<li><a href="anglia-practice.html">Anglia practice papers</a></li></ul></aside></div></section>', DOC_CSS)
+resource_page("resources.html", "Resources for families", "Free English learning helps for home: grammar self-helps, reading, rhymes and math resources.",
+ "Free English resources from AGI: grammar self-helps, nursery rhymes, McGuffey readers and sight words, math resources.",
+ '<div class="cards" style="--cols:2;margin-bottom:28px"><a class="card" href="resources-nursery-rhymes.html"><h3>Nursery rhymes for Pre-K</h3><span class="more">Open</span></a><a class="card" href="resources-mcguffey.html"><h3>McGuffey readers &amp; sight words</h3><span class="more">Open</span></a></div>')
+resource_page("resources-nursery-rhymes.html", "Nursery rhymes for Pre-K", "Traditional English rhymes to read and sing with young children.",
+ "Traditional English nursery rhymes for pre-kindergarten children – read and sing at home.")
+resource_page("resources-mcguffey.html", "McGuffey readers &amp; sight words", "Classic McGuffey reading lessons and sight words for reading and spelling practice at home.",
+ "McGuffey readers and sight words: classic reading and spelling practice for children (public domain).")
+
+# Journal: list posts that exist only on angliamorocco.org
+_ang_posts = [r for r in _MAP if r["site"] == "anglia" and r["destination"].startswith("journal/")]
+if _ang_posts:
+    inject_static("journal.html", "anglia-news", '<section class="section bg-white np" id="anglia-news"><div class="wrap"><div class="section-head"><h2>From Anglia Morocco</h2><p>News first published on angliamorocco.org.</p></div><div class="cards">'
+      + "".join(f'<a class="card" href="{r["destination"]}"><span class="tag">Anglia Morocco</span><h3>{_html.escape(_re.sub(r"^[“\"]|[”\"]$", "", r["title"]))}</h3><span class="more">Read</span></a>' for r in _ang_posts)
+      + "</div></div></section>")

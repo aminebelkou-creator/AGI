@@ -107,6 +107,8 @@ R = [
 def route(p):
     key = p["url"].lower() + " " + p["title"].lower()
     if p["kind"] in ("fragment", "archive"): return ("-", "-", "drop", 0, "Fragment or archive page")
+    if p["kind"] == "post" and "join-forces-with-chichester" in p["url"]:
+        return ("journal-ccgi-partnership.html", "Journal · Partnership", "keep", 4, "Designed article page already exists")
     if p["kind"] == "post":
         slug = p["url"].rstrip("/").rsplit("/", 1)[-1]
         ev = re.search(r"graduat|congrat|celebrat|party|birthday|seamstress|award|spelling|workshop|castle|summer-school|holiday|fun-times|back-to-school|work-experience", key)
