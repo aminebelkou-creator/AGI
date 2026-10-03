@@ -1,0 +1,162 @@
+
+######## [agi/en] Admission Fees (1973w) https://www.americangroup-international.com/admission-fee/
+HEADINGS: Admission Fees || Fees || American Group International Agadir || High School- Option 1 || Rights || Responsibilities || Unexcused Absence and Tardiness Consequences || First Offense (1 Day) || Second Offense (3 day) || Subsequent Offenses (5 day) || Additional Options || Excused Absences || Family Obligations
+MONEY: ['$2,500', '10,000 MAD', '11,000 MAD', '2,600 MAD', '2600 dirhams', '3,000 MAD', '6,500 MAD', '7,500 MAD', '7,800 MAD']
+NUMBERS: ['1 Day', '10 days', '10 months', '180 days', '3 day', '30 days', '5 day', '5 days', '90 Days', '90%']
+
+######## [agi/en] Academic School Calendar 2026-2027 (828w) https://www.americangroup-international.com/school-calandar/
+HEADINGS: Academic School Calendar 2026-2027 || American Group International of Agadir
+DATES: ['April 20', 'August 20', 'August 25', 'December 20', 'December 22', 'December 25', 'February 20', 'January 1', 'January 14', 'January 15', 'January 20', 'January 5', 'July 20', 'June 15', 'June 17', 'June 19', 'June 20', 'June 30', 'June 5', 'March 20', 'May 1', 'May 17', 'May 20', 'May 27', 'November 18', 'November 20', 'November 27', 'November 6', 'October 20', 'September 20']
+
+######## [agi/en] Last Day for Students- Other Important Dates! (404w) https://www.americangroup-international.com/last-day-for-students-other-important-dates/
+HEADINGS: Last Day for Students- Other Important Dates!
+DATES: ['July 20', 'June 15, 2022', 'June 4, 2022']
+
+######## [agi/en] Anglia Examinations Saturday Classes Yearly Schedule 2025-2026 (633w) https://www.americangroup-international.com/anglia-examinations-saturday-classes-yearly-schedule-2025-2026/
+HEADINGS: Anglia Examinations Saturday Classes Yearly Schedule 2025-2026 || Anglia Language School Schedule 2025-2026 || Academic Calendar 2025-2026
+MONEY: ['500 DH']
+DATES: ['April 11, 2026', 'April 18, 2026', 'April 25, 2026', 'April 4, 2026', 'December 13, 2025', 'December 20, 2025', 'December 27,\n2025', 'December 6, 2025', 'February 14, 2026', 'February 21, 2026', 'February 28, 2026', 'February 7, 2026', 'January 10, 2026', 'January 17, 2026', 'January 24, 2026', 'January 3, 2026', 'January 31, 2026', 'June 13, 2026', 'June 20', 'June 6, 2026', 'March 14, 2026', 'March 21, 2026', 'March 28, 2026', 'March 7, 2026', 'May 16, 2026', 'May 2, 2026', 'May 23, 2026', 'May 30, 2026', 'May 9, 2026', 'November 1, 2025']
+NUMBERS: ['2026\nWeek']
+
+######## [agi/en] AGI Mission Statement and Academic Handbook (7458w) https://www.americangroup-international.com/agi-academic-school-handbook/
+HEADINGS: AGI Mission Statement and Academic Handbook
+MONEY: ['150 DH', '20 DH', '2600 DH']
+DATES: ['January 17, 2024', 'September 1']
+NUMBERS: ['1 hour', '180 days', '24 hours', '5 years', '6 years', '72 hours']
+
+######## [agi/en] American Group International of Agadir Attendance Policy (1500w) https://www.americangroup-international.com/american-group-international-school-of-agadir-attendance-policy/
+HEADINGS: American Group International of Agadir Attendance Policy || Rights || Responsibilities || Unexcused Absence and Tardiness Consequences || First Offense (1 Day) || Second Offense (3 day) || Subsequent Offenses (5 day) || Additional Options || Excused Absences || Family Obligations
+NUMBERS: ['1 Day', '10 days', '180 days', '3 day', '30 days', '5 day', '5 days', '90%']
+
+######## [agi/en] Media Policy (1395w) https://www.americangroup-international.com/media-policy/
+HEADINGS: Media Policy
+DATES: ['June 21, 2024']
+NUMBERS: ['18 years']
+
+######## [agi/en] Policies & Procedures American Group International & Divisions, Refunds and Complaints (1041w) https://www.americangroup-international.com/policies-procedures-american-group-international-divisions-refunds-and-complaints/
+HEADINGS: Policies & Procedures American Group International & Divisions, Refund
+NUMBERS: ['50%', '7 days', '80%']
+
+######## [agi/en] Admissions Procedure (919w) https://www.americangroup-international.com/admissions-procedure/
+HEADINGS: Admissions Procedure || Welcome to American Group International of Agadir
+DATES: ['August 1st', 'June 15th']
+NUMBERS: ['2 years']
+
+######## [agi/en] Promotion and Retention Procedures Policy (895w) https://www.americangroup-international.com/promotion-and-retention-procedures-policy/
+HEADINGS: Promotion and Retention Procedures Policy
+NUMBERS: ['64%', '90%']
+
+######## [agi/en] Parent Policy and Responsibility (776w) https://www.americangroup-international.com/parent-policy-and-responsibility/
+HEADINGS: Parent Policy and Responsibility
+NUMBERS: ['90 days']
+
+######## [agi/en] Enrollment (743w) https://www.americangroup-international.com/enrollment/
+HEADINGS: Enrollment || Verification of Age || A child age 5, Grade K, by September 1 and under age 21 on the first d || Verification of Residency || Acceptable residency verification includes: || Required Health Related Documents || • Immunization Certification || For further information || AGI admits students of any race, religion, color, national or ethnic o
+DATES: ['September 1']
+NUMBERS: ['3 months']
+
+######## [agi/en] INDEPENDENT Course STUDIES (Modules and Program) (1894w) https://www.americangroup-international.com/independent-course-studies-modules-and-program/
+HEADINGS: INDEPENDENT Course STUDIES (Modules and Program)
+MONEY: ['$49.95', '$79.95.']
+NUMBERS: ['20%']
+
+######## [agi/en] Adult High School Diploma Program- 16+ (1755w) https://www.americangroup-international.com/adult-high-school-diploma-program/
+HEADINGS: Adult High School Diploma Program- 16+ || American Worldwide Academy || American Worldwide Academy in partnership with American Group Internat || All the students will learn English and be required to take an English || Make your dreams come true…. || We proctor all tests onsite in our centre. || COURSE DESCRIPTION
+NUMBERS: ['16 years']
+
+######## [agi/en] Online Tutoring Session Prices for AGI USA (647w) https://www.americangroup-international.com/online-tutoring-session-prices-for-agi-usa/
+HEADINGS: Online Tutoring Session Prices for AGI USA
+MONEY: ['$10.00', '$15.00', '$20.00', '$25.00', '$40.00', '$50.00']
+NUMBERS: ['5 hour', '5 hours']
+
+######## [agi/en] Anglia Language Class Pricing and Details (512w) https://www.americangroup-international.com/anglia-language-class-pricing-and-details/
+HEADINGS: Anglia Language Class Pricing and Details || Personalized Learning Options || Special Saturday Classes for Children || Level Testing is Free! Times of class will be discussed after level te
+MONEY: ['1,200 DH', '100 DH', '150 DH', '200 DH', '500 DH']
+DATES: ['November 20']
+NUMBERS: ['10 students', '12 weeks', '3 students']
+
+######## [agi/en] Teacher Training Program for English/Anglia C.I.T.E Certificate of International Teachers-TESOL (2890w) https://www.americangroup-international.com/teacher-assistant-trainings/
+HEADINGS: Teacher Training Program for English/Anglia C.I.T.E Certificate of Int || GET YOUR TESOL WITH US! CITE with Anglia Examinations || About the C.I.T.E Exams: Exams for Teachers of English TESOL. || Who is C.I.T.E. for? || What level of English do you need? || What preparation is necessary for the examination? || When and how can you take the C.I.T.E test? || Reference Letter from one of our Teachers….. || About the C.I.T.E Exams: Exams for Teachers of English
+DATES: ['June 20', 'October 28', 'September 20']
+
+######## [agi/en] AngliaMorocco English Test (2368w) https://www.americangroup-international.com/english-practice-test/
+HEADINGS: AngliaMorocco English Test
+
+######## [agi/en] Network of Partners (1259w) https://www.americangroup-international.com/network-of-partners/
+HEADINGS: Network of Partners || Our Prestigious Network of Partners || Royale Business College UK || RB College, a prestigious UK institution, offers a variety of academic || Britts Imperial College University || Britts Imperial University College is a dynamic academic center and an || UCAM Universidad Católica San Antonio de Murcia || UCAM (Universidad Católica de Murcia) in Spain is offering a wide rang || Eucléa Business School || Eucléa Business School, part of the Collège de Paris, specializes in c || University of London || The University of London is a globally recognized institution offering || SIST British Education || SIST (Superior Institute of Science and Technology) has been offering  || geneva business school || Geneva Business School stands as a globally recognized Swiss instituti || Coventry University || Coventry University is a modern, global institution known for shaping  || College de Paris || Founded in 2010, the Collège de Paris is a network of higher education || Nest Academy of Management Education Dubai || Innovative Learning Hub: Nest Academy of Management Education Dubai of
+NUMBERS: ['000 students', '20 years', '80 nationalities']
+
+######## [agi/en] Holistic Play Therapy Practitioner (591w) https://www.americangroup-international.com/holistic-play-therapy-practitioner/
+HEADINGS: Holistic Play Therapy Practitioner || Holistic Play Therapy Practitioner Services at Our School || Supporting the Whole Child Through Therapeutic Play
+MONEY: ['150 dirhams']
+
+######## [agi/en] Early Childhood Education and Care Diploma (385w) https://www.americangroup-international.com/early-childhood-education-and-care-degree/
+HEADINGS: Early Childhood Education and Care Diploma || Early Childhood Education and Care Diploma || Leave a Reply Cancel reply
+DATES: ['8th October 20']
+
+######## [agi/en] Anglia Morocco Learning Pods…. (778w) https://www.americangroup-international.com/anglia-learning-pods/
+HEADINGS: Anglia Morocco Learning Pods…. || Discover Anglia Learning Pods in Morocco: Unlock Your Child’s Potentia
+NUMBERS: ['10 students']
+
+######## [agi/en] Front Page (1437w) https://www.americangroup-international.com/front-page-copy/
+HEADINGS: Front Page – Copy || Anglia Examinations England in Morocco || AGI Learning Pods and Fast Track High School Services || American Group International of Agadir K-12 || American High School Online LMS Partership || AWA High School for Adults-USA || I-Heart Holistic Health Practitioner and Therapist || Partnership with Chichester College Group UK || Leverage Edu Unversity Assistance || Apply Now! || K-12th – Headquarters Anglia Morocco || One-On-One EFL Classes || Anglia Examinations Of England || Academic English K-3 to 12th Grade School || Corporate/Business EFL Trainings || Children and Teens Anglia EFL Classes On Saturdays || Medical EFL For Medical Professionals || Special Education Services || English Mathematics Courses and Tutors || Examination Board Looking for School Partnerships || Anglia CITE/TESOL Examinations/ Teacher Training || Free English Placement Assessment on the CEFR || Free Practice Anglia Examinations || Latest News || American Group International Team and Home of Anglia Morocco || Director/ CEO Julie Wilburn || Professor Abdelhak Lam || Professor Latifa Amhari || Professor Mohamed Saih || Mr. Rachid Oussalh
+NUMBERS: ['45 nationalities']
+
+######## [agi/en] Anglia Examinations Will Soon Offer Online Exams in Morocco (231w) https://www.americangroup-international.com/anglia-examinations-will-soon-offer-online-exams-in-morocco/
+HEADINGS: 
+
+######## [agi/en] Benchmarks for Natives and Language Learners on the CEFR (Common European Frame). (741w) https://www.americangroup-international.com/benchmarks-for-natives-and-language-learners-on-the-cerf-common-european-reference-framework/
+HEADINGS: Benchmarks for Natives and Language Learners on the CEFR (Common Europ
+
+######## [anglia/en] ANGLIA EXAM DATES (180w) https://angliamorocco.org/anglia-exam-dates-2/
+HEADINGS: Anglia Exam Dates – 2026 || First Step, Junior Primary || Preliminary A1 || Elementary A2 || Pre-Intermediate A2+ || Intermediate B1 || Advanced B2 || Proficiency C1 || Masters C2 || All Levels || Session 1 || Session 2 || Session 3 || Most Levels
+
+######## [anglia/en] Special Arrangements (280w) https://angliamorocco.org/special-arrangements/
+HEADINGS: Special Arrangements
+NUMBERS: ['25%']
+
+######## [anglia/en] FAQ (542w) https://angliamorocco.org/faq/
+HEADINGS: 
+NUMBERS: ['1 hour', '10 levels', '3 hours', '4 years']
+
+######## [anglia/en] AngliaMorocco Networks (669w) https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/
+HEADINGS: Country Manager- Julie Wilburn || Mainland Morocco 12 Regions || Tanger-Tetouan-Al Hoceima Region-7 || Oriental Region-12 || Fès-Meknès Region- 8 || Rabat-Salé-Kénitra Region- 9 || Béni Mellal-Khénifra Region-10 || Casablanca-Settat Region-11 || Marrakech-Safi Region-6 || Drâa-Tafilalet Region-5 || Souss-Massa Region -4 || Western Sahara (most under de facto Moroccan administration) || Guelmim-Oued Noun Region-3 || Laâyoune-Sakia El Hamra Region-2 || Dakhla-Oued Ed-Dahab Region-1
+NUMBERS: ['12 Regions']
+
+######## [anglia/ar] Practice Resources . (281w) https://angliamorocco.org/ar/practice-resources-ar/
+HEADINGS: مرحبًا بكم في موارد الممارسة لامتحانات أنجليا || اختر مستواك وانقر لتنزيل أوراق الممارسة والعينات: || General English || Business English || Children’s Oral Tests of Achievement || Certificate & Diploma in Applied Translation || Teachers
+
+######## [agi/en] USA Private School Teacher Sponsorship (1120w) https://www.americangroup-international.com/usa-private-school-teacher-sponsorship/
+HEADINGS: USA Private School Teacher Sponsorship
+MONEY: ['$60.00.']
+NUMBERS: ['30 DAYS', '30 days']
+
+######## [agi/en] Proctoring Services Available (588w) https://www.americangroup-international.com/proctoring-services-available/
+HEADINGS: Proctoring Services Available || Proctoring Services Available || Exams || Fees per exam || Conditions || Leave a Reply Cancel reply
+MONEY: ['15 EUR']
+DATES: ['28th March 20']
+NUMBERS: ['24 hours']
+
+######## [agi/en] Document Editing In English (389w) https://www.americangroup-international.com/document-editing-in-english/
+HEADINGS: Document Editing In English
+
+######## [agi/en] Business Examinations (606w) https://www.americangroup-international.com/business-examinations/
+HEADINGS: Business Examinations || Business English Exams
+
+######## [agi/en] EFL Classes (637w) https://www.americangroup-international.com/library-facilities/
+HEADINGS: EFL Classes
+
+######## [agi/en] STEM Educators Workshop Job Interviews (536w) https://www.americangroup-international.com/4084-2/
+HEADINGS: STEM Educators Workshop Job Interviews || EnglishCommunity #EnglishTeacher #englishlanguage #STEMEducation #stem
+
+######## [agi/en] Educational Workshop English Castle (561w) https://www.americangroup-international.com/educational-workshop-english-castle/
+HEADINGS: Educational Workshop English Castle || EnglishCommunity #EnglishTeacher #englishlanguage #STEMEducation #stem
+
+######## [agi/en] AGI Academic School Supplies List (446w) https://www.americangroup-international.com/agi-academic-school-supplies-list/
+HEADINGS: AGI Academic School Supplies List || AGI Supplies List
+
+######## [agi/en] In-Service Volunteer Hours for High School (759w) https://www.americangroup-international.com/in-service-volunteer-hours-for-high-school/
+HEADINGS: In-Service Volunteer Hours for High School
+
+######## [agi/en] Homework Guidelines Policy AGI (641w) https://www.americangroup-international.com/homework-guidelines-policy-agi/
+HEADINGS: Homework Guidelines Policy AGI

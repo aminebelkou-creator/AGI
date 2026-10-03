@@ -11,3 +11,6 @@ Thumbs.db
 __pycache__/
 *.pyc
 deploy/
+data/crawl/agi/
+data/crawl/anglia/
+data/crawl/*.log

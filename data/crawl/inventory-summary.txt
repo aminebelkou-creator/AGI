@@ -1,0 +1,106 @@
+﻿
+===== agi: 148 pages ┬À 123,016 words ┬À languages {'en': 148} ┬À kinds {'page': 80, 'post': 62, 'archive': 6}
+  by category: {'news/event': 62, 'program': 16, 'exam': 13, 'policy': 12, 'service': 9, 'other': 8, 'form': 5, 'teacher': 4, 'partner': 4, 'about': 3, 'fees': 3, 'calendar': 3, 'admissions': 2, 'resource': 2, 'legal': 2}
+  status: {'partial': 79, 'covered': 66, 'missing': 3}
+  thin pages (<150 words): 9
+  --- MISSING (3):
+     [calendar  ]   633w  Anglia Examinations Saturday Classes Yearly Schedule 2025-2026
+     [news/event]    33w  Elementor Floating Element #4278
+     [service   ] 21603w  McGuffeyÔÇÖs Online Tutor/Sight Words Helps for Reading/Spelling
+  --- PARTIAL (73):
+     [about     ]   870w  About Us
+     [about     ]   497w  Our Vision
+     [admissions]   743w  Enrollment
+     [calendar  ]   828w  Academic School Calendar 2026-2027
+     [calendar  ]   404w  Last Day for Students- Other Important Dates!
+     [exam      ]  2890w  Teacher Training Program for English/Anglia C.I.T.E Certificat
+     [exam      ]  2368w  AngliaMorocco English Test
+     [fees      ]  1973w  Admission Fees
+     [fees      ]   647w  Online Tutoring Session Prices for AGI USA
+     [fees      ]   512w  Anglia Language Class Pricing and Details
+     [form      ]   731w  Forms
+     [legal     ]   958w  Privacy Policy
+     [legal     ]   870w  TERMS AND CONDITIONS
+     [news/event]   799w  Teachers Training Program in English
+     [news/event]   602w  Online Classes for Language Students starting in June 2020.
+     [news/event]   541w  A brief note from the Principal. Graduation 2022.
+     [news/event]   499w  ÔÇ£American Group International and Anglia Morocco Join Forces w
+     [news/event]   488w  Programme dÔÇÖ├®tudes secondaires pour adultes en anglais et en e
+     [news/event]   485w  Summer School for Academic and Language EFL Students 2018
+     [news/event]   471w  Admissions 2020-2021
+     [news/event]   446w  Lane Community College International Programs
+     [news/event]   410w  Free Dyslexia Resource Test
+     [news/event]   408w  Congrats to Said El Ouahbi awarded his Masters of Business Adm
+     [news/event]   400w  Work Experience Degree Celebration
+     [news/event]   398w  A Day At The Seamstress
+     [news/event]   396w  Birthday Celebration At Fine Burger
+     [news/event]   385w  Early Childhood Education and Care Diploma
+     [news/event]   384w  Congrats Dr. Kamal Sarjdine
+     [news/event]   383w  CEO of American Group International is the new Director of Ope
+     [news/event]   382w  Continuation of the work!
+     [news/event]   382w  First Adult High School Graduate!
+     [news/event]   382w  American Group InternationalÔÇÖs New Year Eve Party 2017
+     [news/event]   376w  Fun Times In Our Conversation Classes
+     [news/event]   373w  Franchise Opportunities throughout Morocco
+     [news/event]   372w  student life
+     [news/event]   362w  Anglia C.I.T.E. International Teachers Certification is availa
+     [news/event]   361w  Inscriptions 2021-2022
+     [news/event]   361w  Inscriptions for 2019-2020
+     [news/event]   358w  Back to School
+     [news/event]   355w  English Math Resources
+     [news/event]   353w  Headquarters of AngliaMaroc in Agadir
+     [news/event]   348w  Congratulations Graduates 2021
+     [news/event]   345w  Holiday Celebrations
+     [other     ]  1437w  Front Page
+     [other     ]  1320w  American Group International American Group USA LLC W25317017-
+     [other     ]   637w  Recent Posts
+     [partner   ]  1259w  Network of Partners
+     [partner   ]  1170w  Partnerships
+     [partner   ]  1036w  AngliaMorocco Network- 12 Regions
+     [policy    ]  7458w  AGI Mission Statement and Academic Handbook
+     [policy    ]  1500w  American Group International of Agadir Attendance Policy
+     [policy    ]  1395w  Media Policy
+     [policy    ]  1041w  Policies & Procedures American Group International & Divisions
+     [policy    ]   919w  Admissions Procedure
+     [policy    ]   895w  Promotion and Retention Procedures Policy
+     [policy    ]   776w  Parent Policy and Responsibility
+     [program   ]  1894w  INDEPENDENT Course STUDIES (Modules and Program)
+     [program   ]  1755w  Adult High School Diploma Program- 16+
+     [program   ]  1310w  Academic English K to12th, Inclusive Education Grade Micro-Sch
+     [program   ]   993w  Medical EFL For Professionals.
+     [program   ]   668w  American Group International School
+     [program   ]   637w  EFL Classes
+     [program   ]   561w  Educational Workshop English Castle
+     [resource  ]  3155w  Nursery Rhymes for Pre-K
+     [resource  ]   981w  Online Applications Zoom/Teams Instructions
+     [service   ]  1367w  AGI Education Consultancy
+     [service   ]  1236w  How Long Should a Tutoring Session Last?
+     [service   ]  1137w  ADHD Holistic Practitioner Coaching
+     [service   ]  1085w  Special Education Services
+     [service   ]   591w  Holistic Play Therapy Practitioner
+
+===== anglia: 33 pages ┬À 16,463 words ┬À languages {'en': 27, 'ar': 6} ┬À kinds {'page': 26, 'post': 5, 'archive': 2}
+  by category: {'other': 12, 'news/event': 5, 'exam': 5, 'about': 3, 'legal': 3, 'calendar': 2, 'resource': 2, 'partner': 1}
+  status: {'covered': 13, 'partial': 13, 'missing': 7}
+  thin pages (<150 words): 9
+  --- MISSING (6):
+     [about     ]   542w  FAQ
+     [legal     ]  3845w  Terms And Conditions
+     [legal     ]  1466w  Cookies Policy
+     [other     ]   148w  news
+     [partner   ]   669w  AngliaMorocco Networks
+     [resource  ]   281w  Practice Resources .
+  --- PARTIAL (13):
+     [calendar  ]   180w  ANGLIA EXAM DATES
+     [exam      ]   729w  Exams
+     [exam      ]   636w  CEFR
+     [legal     ]   529w  Privacy Policy
+     [news/event]   519w  ÔÇ£Julie Our newest franchisee from MoroccoÔÇØ an article publishe
+     [news/event]   387w  Anglia Mastery Qualification Awarded UCAS Tariff Points
+     [news/event]   386w  Anglia Mastery Qualification Awarded UCAS Tariff points
+     [other     ]   406w  Ïº┘äÏ▒Ïª┘èÏ│┘èÏ®
+     [other     ]   406w  Ïº┘äÏ▒Ïª┘èÏ│┘èÏ®
+     [other     ]   340w  ┘à┘å-┘åÏ¡┘å
+     [other     ]   280w  Special Arrangements
+     [other     ]    99w  CLICK TO DOWNLOAD AUDIO FILESÔÇï :
+     [resource  ]   293w  Practice Resources
