@@ -33,6 +33,8 @@ for f in files:
             if fr >= 4 and fr > en * 1.5 or re.search(r"[éèêàçù].*[éèêàçù].*[éèêàçù]", t) and fr >= 3: add("French text on an English page", t)
         for rx, kind in JUNK:
             if re.search(rx, t): add(kind, t)
+        if re.search(r"\d{6,}_|_\d{4,}", t) or re.fullmatch(r"[a-z]{3,}\d+", t): add("File name / gallery caption", t)
+        if re.search(r"_{3,}", t): add("Paper form field (____)", t)
         if tag == "p" and len(t.split()) > 160: add("Very long paragraph (>160 words)", t)
         if tag == "p" and (len(re.findall(r"\s[•·▪]\s|\s-\s[A-Z]", t)) >= 3 or len(re.findall(r"(?:^|\s)\d{1,2}[.)]\s+[A-Z]", t)) >= 3): add("List run together in one paragraph", t)
         if tag == "p" and len(t.split()) >= 8 and t.upper() == t and len(re.findall(r"[A-Z]", t)) > 0.5 * len(re.sub(r"\W", "", t)): add("ALL-CAPS paragraph", t)

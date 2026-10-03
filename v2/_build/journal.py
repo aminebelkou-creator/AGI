@@ -123,7 +123,14 @@ def _clean_article(t):
     if not sep: return t
     body = re.sub(r'\[video[^\]]*?(?:mp4|src)="([^"]+)"[^\]]*\](?:\s*\[/video\])?', lambda m: f'<a class="link" href="{m.group(1).replace("http://", "https://")}" target="_blank" rel="noopener">Watch the video</a>', body)
     body = re.sub(r"\[/?(?:caption|gallery|embed|contact-form-7|video)[^\]]*\]", "", body)
-    body = re.sub(r"<p>(?:\s*#\w+[\s,.]*){2,}</p>", "", body)                              # paragraphs of hashtags only
+    body = re.sub(r"<p>(?:\s*#\w+[\s,.]*){2,}</p>", "", body)
+    body = re.sub(r"<p>\s*_{4,}\s*</p>", "", body)                                     # separator lines of underscores
+    _fn = re.compile(r"\d{6,}_|_\d{4,}|^[a-z]{3,}\d+$")
+    def _gallery(m):                                                                    # lists of photo file names / gallery captions
+        items = re.findall(r"<li>(.*?)</li>", m.group(0), re.S)
+        return "" if sum(1 for x in items if _fn.search(x.strip())) >= 2 else m.group(0)
+    body = re.sub(r"<ul>.*?</ul>", _gallery, body, flags=re.S)
+    body = re.sub(r"<p>\s*(?:[^<\s]*\d{6,}_[^<\s]*|[a-z]{3,}\d+)\s*</p>", "", body)                              # paragraphs of hashtags only
     body = re.sub(r"(<p>[^<]*?)((?:\s*#\w+){3,}\s*)(</p>)", r"\1\3", body)                  # trailing hashtag runs
     body = re.sub(r'(?<![="\'>])(https?://[^\s<"]+)', lambda m: f'<a href="{m.group(1)}" target="_blank" rel="noopener">{re.sub(r"^https?://(www\.)?", "", m.group(1)).split("/")[0]}</a>', body)
     seen = set()

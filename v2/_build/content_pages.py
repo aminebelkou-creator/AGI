@@ -37,12 +37,17 @@ def linkify(esc):
     esc = _re.sub(r"\[\s*([^\]]+?)\s*\]\((https?://[^)\s]+)\)", lambda m: f'<a href="{m.group(2)}" target="_blank" rel="noopener">{m.group(1)}</a>', esc)
     esc = _re.sub(r'(?<!href=")(?<!">)(https?://[^\s<)]+)', lambda m: f'<a href="{m.group(1)}" target="_blank" rel="noopener">{_re.sub(r"^https?://(www\.)?", "", m.group(1)).split("/")[0]}</a>', esc)
     return esc.replace("\x00EMAIL\x00", AGI_EMAIL)
+def _is_filename(t):
+    """Image file names and gallery captions left by WordPress: '30174036_1021…_o', 'ahmedpic', 'adamjulie18', 'IMG_2034'."""
+    return bool(_re.search(r"\d{6,}_|_\d{4,}|^(?:img|dsc|image|photo|whatsapp)[_ -]?\d", t, _re.I) or _re.fullmatch(r"[a-z]{3,}\d+", t))
 def _runs_to_lists(lines):
     """5+ consecutive one-to-three-word lines (a list that lost its bullets) become a bulleted list."""
     out, run = [], []
     def flush():
-        if len(run) >= 5: out.extend("- " + x.strip() for x in run)
-        else: out.extend(run)
+        junk = sum(1 for x in run if _is_filename(x.strip()))
+        if len(run) >= 5 and junk >= 2: pass                                   # photo-gallery captions / file names: drop the whole run
+        elif len(run) >= 5: out.extend("- " + x.strip() for x in run)
+        else: out.extend(x for x in run if not _is_filename(x.strip()))
         run.clear()
     for l in lines:
         t = l.strip()
@@ -107,6 +112,7 @@ def render(text, skip=(), privacy=False, start=None, stop=None, toc=False):
     if stop: lines = lines[:next((i for i, l in enumerate(lines) if stop in l), len(lines))]
     out, lst, heads = [], None, []
     seen_h2 = [False]
+    paper_form = [False]
     def close():
         nonlocal lst
         if lst: out.append(f"</{lst}>"); lst = None
@@ -115,6 +121,9 @@ def render(text, skip=(), privacy=False, start=None, stop=None, toc=False):
         if l.startswith("<table"): close(); out.append('<div class="table-wrap">' + l + "</div>"); continue
         kind_, val_ = clean_line(l)
         if kind_ == "skip" or any(s in l for s in skip): continue
+        if kind_ == "text" and (_re.search(r"_{3,}", val_) or _re.match(r"(?i)please (list|return)\b", val_)):
+            if not paper_form[0]: close(); out.append('<p class="note">The application form is now online: <a href="forms.html#enrollment">apply on the forms page</a>.</p>'); paper_form[0] = True
+            continue
         if kind_ == "html": close(); out.append(val_); continue
         l = val_
         if privacy and (_re.search(r"[\w.+-]+@[\w-]+\.\w+", l) and "americanecoleagadir" not in l or _re.search(r"(?:\+?212|0)[\s.-]?[5-7](?:[\s.-]?\d){8}", l)): continue
