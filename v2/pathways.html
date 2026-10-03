@@ -8,10 +8,14 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap"></noscript></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap"></noscript>
 <link rel="stylesheet" href="site.css">
 <script src="site.js" defer></script>
 <style id="doc-css">
+details.fulltext{border:1px solid var(--line);background:var(--paper);margin:8px 0 0}
+details.fulltext summary{cursor:pointer;padding:16px 20px;font-weight:600;color:var(--navy);list-style:none}
+details.fulltext summary::before{content:"+ ";color:var(--red)}details.fulltext[open] summary::before{content:"– "}
+details.fulltext .fulltext-body{padding:4px 20px 20px;border-top:1px solid var(--line);background:#fff}
 .doc{display:grid;grid-template-columns:minmax(0,1fr);max-width:820px}
 .doc h2{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.2vw,30px);color:var(--navy);margin:1.8em 0 .5em;line-height:1.2}
 .doc h3{font-family:var(--sans);font-weight:600;font-size:17px;color:var(--ink);margin:1.4em 0 .4em}
@@ -90,12 +94,11 @@ details.archive summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(
   </div>
 </div></section>
 <section class="section tight bg-navy"><div class="wrap cta-band"><div><h2>Plan your next step.</h2><p>Tell us where you'd like to study. The office will reply within one working day.</p></div><div class="btn-row"><a class="btn btn-gold" href="forms.html#enquiry/programs">Start a conversation</a><a class="btn btn-light" href="forms.html#visit">Book a visit</a></div></div></section><section class="section"><div class="wrap"><div class="section-head"><h2>Other programs</h2><p><a class="link" href="programs.html">All programs</a></p></div><div class="cards" style="--cols:3"><a class="card" href="k12.html"><span class="tag">Ages 5–18</span><h3>K–12 school</h3><p>An American-curriculum micro-school from kindergarten to grade 12, with English support through the Anglia system for children who don't speak English at home.</p><span class="more">Learn more</span></a><a class="card" href="special-education.html"><span class="tag">Inclusive</span><h3>Special education (SEN)</h3><p>Individualized Education Plans, small-group classes and support from occupational therapy to speech-language and behavioral care.</p><span class="more">Learn more</span></a><a class="card" href="adult-diploma.html"><span class="tag">Age 16+</span><h3>Adult high school diploma</h3><p>A self-paced U.S. high school completion program with American Worldwide Academy, with every test proctored on site in Agadir.</p><span class="more">Learn more</span></a><a class="card" href="english-anglia.html"><span class="tag">All ages</span><h3>English & Anglia exams</h3><p>AGI is the Anglia Examinations headquarters for Morocco: ten CEFR-mapped levels, Saturday classes for children and courses for adults.</p><span class="more">Learn more</span></a><a class="card" href="teachers.html"><span class="tag">Educators</span><h3>For teachers (C.I.T.E.)</h3><p>The lifelong Anglia C.I.T.E. teaching certificate, teacher training, a 30-day internship and U.S. private-school sponsorship.</p><span class="more">Learn more</span></a><a class="card" href="professional.html"><span class="tag">Professionals</span><h3>Professional & medical English</h3><p>Business and medical English for working adults and teams, exam proctoring and ADHD holistic coaching.</p><span class="more">Learn more</span></a></div></div></section>
-<section class="section bg-white" id="details"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Consultancy services and partner institutions</h2><h2></h2><h2 id="empowering-your-global-academic-journey">Empowering Your Global Academic Journey</h2>
+<section class="section bg-white" id="details"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Consultancy services and partner institutions</h2><details class="fulltext"><summary>Full text as published by AGI</summary><div class="fulltext-body"><h2 id="empowering-your-global-academic-journey">Empowering Your Global Academic Journey</h2>
 <h2 id="navigating-your-future-from-admission-to-achieveme">Navigating Your Future: From Admission to Achievement!</h2>
 <h3 id="what-is-agi-education-consultancy">What is AGI Education Consultancy ?</h3>
 <p>AGI Education Consultancy offers a comprehensive suite of personalized education consultancy and enrollment solutions for students and professionals. As an authorized admission agent representing a wide array of prestigious institutions, we streamline your application process for higher education, whether it’s locally, abroad, or online. Our services extend beyond administrative tasks; we provide holistic support tailored to your unique circumstances. From accommodation arrangements and visa applications to health insurance and family support for international students, we’ve got you covered. Additionally, AGI facilitates double diplomation programs, offers language training, assists with scholarships and financial aid applications, and provides career counseling and cultural orientation workshops. Our goal is to empower you to maximize your educational experience at every stage of your journey.</p>
 <p>Check our Network of Partners</p>
-<p>apply Now</p>
 <h2 id="why-choose-agi-education-consultancy">Why Choose AGI Education Consultancy?</h2>
 <h3>Tailored Guidance for Individual Success</h3>
 <p>At AGI, we understand that every student has unique aspirations, strengths, and circumstances. Our personalized approach means we take the time to listen to your goals and craft a customized educational plan that aligns with your academic and career objectives. We study each case individually, collaborating with you to identify the best pathways for your success.</p>
@@ -132,7 +135,7 @@ details.archive summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(
 <h2 id="ready-to-take-the-next-step-in-your-educational-jo">Ready to Take the Next Step in Your Educational Journey?</h2>
 <p>we are here to guide you every step of the way.</p>
 <p>With our expert team, personalized approach, and comprehensive support services, we’ll ensure you make the most of your educational opportunities. Get started today</p>
-<h2 id="schedule-your-free-consultation">Schedule Your Free Consultation</h2><p>American Group USA LLC and American Group International is proud to announce our official role as an English University agent for the following esteemed institutions:</p>
+<p>American Group USA LLC and American Group International is proud to announce our official role as an English University agent for the following esteemed institutions:</p>
 <p>Explore Global Education Opportunities with Our University Partnerships</p>
 <p>Welcome to American Group USA LLC your gateway to world-class English education in Agadir, Morocco, and beyond. We proudly partner with universities across the United States, Europe, and Asia to offer students in Morocco and around the world an opportunity to pursue higher education with international standards and recognition.</p>
 <p>Whether you’re based in Agadir, elsewhere in Morocco, or anywhere in the world, our team is here to help you discover the best educational path. As an authorized agent and admissions counselling centre, we guide students in selecting the university that best matches their career goals, academic needs, and personal ambitions.</p>
@@ -157,7 +160,6 @@ details.archive summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(
 <p>By partnering with these respected institutions, AGI ensures that you have access to the best educational pathways tailored to your unique aspirations. Explore the endless possibilities through our diverse partner network and take the next step in shaping your future!</p>
 <h2 id="royale-business-college-uk">Royale Business College UK</h2>
 <p><strong>RB College, a prestigious UK institution, offers a variety of academic and vocational programs focused on student success and career readiness. As a trusted AGI Education Consultancy partner, RB College provides top-quality education and hands-on training, ensuring students achieve their academic and professional aspirations.</strong></p>
-<p>apply now</p>
 <p>See details</p>
 <h2 id="britts-imperial-college-university">Britts Imperial College University</h2>
 <p><strong>Britts Imperial University College is a dynamic academic center and an education partner of top British and European universities. Offering globally recognized Undergraduate, Postgraduate, and Doctorate degree programs, Britts Imperial empowers students from over 31 countries to achieve their academic and professional goals. With hybrid learning, campus transfer options, and post-study work opportunities, the university provides a globally accessible and practical education experience.</strong></p>
@@ -189,7 +191,7 @@ details.archive summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(
 <p>UCAS, the Universities and Colleges Admissions Service, and the UK’s shared admissions service for higher education.</p>
 <p>UCAS supports 1.5 million students every year to explore entering higher education, employment and apprenticeships and manage almost three million applications, from around 700,000 people each year, for full-time undergraduate courses at over 380 universities and colleges across the UK.</p>
 <p>Together with RB College and American Group International we will offer these programs at our institution in Agadir, Morocco.</p>
-<p>RB College – Welcome (rb-college.co.uk)</p></div>
+<p>RB College – Welcome (rb-college.co.uk)</p></div></details></div>
 <aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="anglia-about.html">Anglia & UCAS</a></li><li><a href="journal-ccgi-partnership.html">Chichester College Group</a></li></ul></aside></div></section>
 </main>
 <!--site:footer-->

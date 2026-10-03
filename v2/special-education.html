@@ -8,10 +8,14 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap"></noscript></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap"></noscript>
 <link rel="stylesheet" href="site.css">
 <script src="site.js" defer></script>
 <style>
+details.fulltext{border:1px solid var(--line);background:var(--paper);margin:8px 0 0}
+details.fulltext summary{cursor:pointer;padding:16px 20px;font-weight:600;color:var(--navy);list-style:none}
+details.fulltext summary::before{content:"+ ";color:var(--red)}details.fulltext[open] summary::before{content:"– "}
+details.fulltext .fulltext-body{padding:4px 20px 20px;border-top:1px solid var(--line);background:#fff}
 .doc{display:grid;grid-template-columns:minmax(0,1fr);max-width:820px}
 .doc h2{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.2vw,30px);color:var(--navy);margin:1.8em 0 .5em;line-height:1.2}
 .doc h3{font-family:var(--sans);font-weight:600;font-size:17px;color:var(--ink);margin:1.4em 0 .4em}
@@ -83,7 +87,7 @@ details.archive summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(
   </div>
 </div></section>
 <section class="section tight bg-navy"><div class="wrap cta-band"><div><h2>Talk to us about your child.</h2><p>Book a visit to meet the team, or send a question first – everything you share is handled in confidence.</p></div><div class="btn-row"><a class="btn btn-gold" href="forms.html#enrollment">Apply</a><a class="btn btn-light" href="forms.html#visit">Book a visit</a></div></div></section><section class="section"><div class="wrap"><div class="section-head"><h2>Other programs</h2><p><a class="link" href="programs.html">All programs</a></p></div><div class="cards" style="--cols:3"><a class="card" href="k12.html"><span class="tag">Ages 5–18</span><h3>K–12 school</h3><p>An American-curriculum micro-school from kindergarten to grade 12, with English support through the Anglia system for children who don't speak English at home.</p><span class="more">Learn more</span></a><a class="card" href="adult-diploma.html"><span class="tag">Age 16+</span><h3>Adult high school diploma</h3><p>A self-paced U.S. high school completion program with American Worldwide Academy, with every test proctored on site in Agadir.</p><span class="more">Learn more</span></a><a class="card" href="english-anglia.html"><span class="tag">All ages</span><h3>English & Anglia exams</h3><p>AGI is the Anglia Examinations headquarters for Morocco: ten CEFR-mapped levels, Saturday classes for children and courses for adults.</p><span class="more">Learn more</span></a><a class="card" href="teachers.html"><span class="tag">Educators</span><h3>For teachers (C.I.T.E.)</h3><p>The lifelong Anglia C.I.T.E. teaching certificate, teacher training, a 30-day internship and U.S. private-school sponsorship.</p><span class="more">Learn more</span></a><a class="card" href="professional.html"><span class="tag">Professionals</span><h3>Professional & medical English</h3><p>Business and medical English for working adults and teams, exam proctoring and ADHD holistic coaching.</p><span class="more">Learn more</span></a><a class="card" href="pathways.html"><span class="tag">Next steps</span><h3>University pathways</h3><p>An authorized admissions agent for universities and colleges in the UK, the United States and beyond.</p><span class="more">Learn more</span></a></div></div></section>
-<section class="section bg-white" id="details"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Special education services in detail</h2><h2 id="embracing-diversity-our-commitment-to-special-educ">Embracing Diversity: Our Commitment to Special Education (SEN)</h2>
+<section class="section bg-white" id="details"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Special education services in detail</h2><details class="fulltext"><summary>Full text as published by AGI</summary><div class="fulltext-body"><h2 id="embracing-diversity-our-commitment-to-special-educ">Embracing Diversity: Our Commitment to Special Education (SEN)</h2>
 <p>At American Group International, we are proud to offer a warm and inclusive environment that welcomes students with a wide range of special needs, learning differences, mental health challenges, and specific disabilities—both physical and developmental. We understand that each child is unique, and we are dedicated to providing the support and resources necessary for their success.</p>
 <h2 id="our-approach">Our Approach</h2>
 <p>– Individualized Support: We create Individualized Education Plans (IEPs) tailored to the specific needs and abilities of each student.</p>
@@ -116,21 +120,7 @@ details.archive summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(
 <p>American Group International School</p>
 <p>Attn: Mr. Julie Wilburn, Director</p>
 <p>Agadir, Morocco</p>
-<p>May 24, 2024</p>
-<p>Dear Mrs. Julie Wilburn,</p>
-<p>I am writing to express my profound gratitude and appreciation for the exceptional education and care provided by the American International Correspondence School in Agadir to our son, Ismail.</p>
-<p>In 2017, our family made a significant move from Saudi Arabia to Morocco after spending 25 years in the Middle East. Ismail had been attending Jeddah American School from primary school until Grade 8. As parents of a special needs child with Down syndrome, we were anxious about this major transition and how Ismail would adapt to the new environment.</p>
-<p>However, our concerns were alleviated upon meeting you and your dedicated team. Your immediate and compassionate enrollment of Ismail into your school demonstrated a deep understanding and commitment to his needs. Under your guidance and with the support of your team, Ismail not only adapted but thrived. The love, care, and special attention you all provided played a crucial role in his successful transition and eventual graduation from high school in 2022. This achievement is a testament to your dedication and the nurturing environment you foster at your school.</p>
-<p>Ismail’s progress did not stop at high school. He also benefited immensely from the Anglia English classes and your initiative to enroll him in a university hotel management program. Currently, he continues to pursue his education in the hospitality sector at the OFPPT center for special needs, further building on the strong foundation laid by your institution.</p>
-<p>Your school has had a significant positive impact on our lives, particularly Ismail’s. We are immensely grateful for the extraordinary efforts you, your husband Mr. Abdelhak, an expert in Mathematics, and your son Matthew, an expert in English grammar, have put into ensuring Ismail’s educational and personal development.</p>
-<p>I wholeheartedly recommend the American Group International School in Agadir. It is undoubtedly one of the best schools in Morocco, providing an inclusive, supportive, and high-quality education for all its students.</p>
-<p>Thank you once again for your unwavering support and dedication.</p>
-<ul>
-<li>Warm regards,</li>
-<li>Brahim Robio</li>
-<li>Managing Partner</li>
-<li>Antal International</li>
-</ul></div>
+<p>May 24, 2024</p></div></details></div>
 <aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="placement-policy.html">Placement policy</a></li><li><a href="parents.html">For parents</a></li><li><a href="forms.html#visit">Book a visit</a></li></ul></aside></div></section>
 </main>
 <!--site:footer-->

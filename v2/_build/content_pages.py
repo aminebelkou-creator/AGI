@@ -31,12 +31,23 @@ def clean_line(l):
     if v: return ("html", f'<p><a class="link" href="{v.group(1).replace("http://", "https://")}" target="_blank" rel="noopener">Watch the video</a></p>')
     t = t.replace("[email/contact info]", "\x00EMAIL\x00")
     t = _re.sub(r"\[(?:contact-form-7|caption|/caption|gallery|embed|/embed)[^\]]*\]", "", t).strip()
-    if not t or _re.fullmatch(r"(?i)(click here|show the way|find your way by cli[c]?king here ?:?)", t): return ("skip", None)
+    if not t or _re.fullmatch(r"(?i)(?:[-•*·]\s*)?(click here|show the way|find your way by cli[c]?king here ?:?|read more|contact us|download|apply now!?|enroll now|learn more|register now|book now|submit|share)", t): return ("skip", None)
+    if _re.search(r"\s&$", t) and len(t.split()) <= 6: return ("skip", None)                     # old form field labels ("Drivers License Number &")
     return ("text", t)
+TITLE_FIX = [(r"Julie\s+(?:A\.\s+)?WILBURN\s+Director of Operations of Anglia Morocco", "Julie Wilburn, CEO &amp; Educational Director, Anglia Examinations Morocco"),
+             (r"Julie\s+Wilburn\s*[-–]\s*Director of Operations", "Julie Wilburn – CEO &amp; Educational Director"),
+             (r"Anglia Morocco Country Manager", "CEO &amp; Educational Director, Anglia Examinations Morocco"),
+             (r"Director of Operations of Anglia Morocco", "CEO &amp; Educational Director, Anglia Examinations Morocco")]
+CLAIM_MARK = [(r"\b(International\s+)?Correspondence(\s+School)?\b", "claim-correspondence"), (r"\b45\+?\s+(?:different\s+)?nationalities\b", "claim-nationalities")]
+def fix_claims(esc):
+    for rx, rp in TITLE_FIX: esc = _re.sub(rx, rp, esc, flags=_re.I)
+    for rx, key in CLAIM_MARK:
+        esc = _re.sub(rx, lambda m: f'<span class="ph-text" data-placeholder="fact:{key}">{m.group(0)}</span>', esc)
+    return esc
 def linkify(esc):
     esc = _re.sub(r"\[\s*([^\]]+?)\s*\]\((https?://[^)\s]+)\)", lambda m: f'<a href="{m.group(2)}" target="_blank" rel="noopener">{m.group(1)}</a>', esc)
     esc = _re.sub(r'(?<!href=")(?<!">)(https?://[^\s<)]+)', lambda m: f'<a href="{m.group(1)}" target="_blank" rel="noopener">{_re.sub(r"^https?://(www\.)?", "", m.group(1)).split("/")[0]}</a>', esc)
-    return esc.replace("\x00EMAIL\x00", AGI_EMAIL)
+    return fix_claims(esc.replace("\x00EMAIL\x00", AGI_EMAIL))
 def _is_filename(t):
     """Image file names and gallery captions left by WordPress: '30174036_1021…_o', 'ahmedpic', 'adamjulie18', 'IMG_2034'."""
     return bool(_re.search(r"\d{6,}_|_\d{4,}|^(?:img|dsc|image|photo|whatsapp)[_ -]?\d", t, _re.I) or _re.fullmatch(r"[a-z]{3,}\d+", t))
@@ -45,6 +56,7 @@ def _runs_to_lists(lines):
     out, run = [], []
     def flush():
         junk = sum(1 for x in run if _is_filename(x.strip()))
+        if sum(1 for x in run if x.strip().endswith((":", "&"))) >= 3: run.clear(); return      # old paper-form labels
         if len(run) >= 5 and junk >= 2: pass                                   # photo-gallery captions / file names: drop the whole run
         elif len(run) >= 5: out.extend("- " + x.strip() for x in run)
         else: out.extend(x for x in run if not _is_filename(x.strip()))
@@ -144,11 +156,18 @@ def render(text, skip=(), privacy=False, start=None, stop=None, toc=False):
         close(); out.append(f"<p>{linkify(_html.escape(l))}</p>")
     close()
     body = "\n".join(out)
+    body = _re.sub(r"<h3[^>]*>[^<]*</h3>\s*(?=<h[23][ >]|$)", "", body)                                      # h3 with nothing under it
+    body = _re.sub(r"<h2[^>]*>[^<]*</h2>\s*$", "", body)                                                     # chapter titles followed by a section stay
     if toc and len(heads) >= 4:
         body = ('<nav class="toc" aria-label="On this page"><p class="kicker">On this page</p><ol>' + "".join(f'<li><a href="#{h}">{_html.escape(t)}</a></li>' for h, t in heads) + "</ol></nav>\n" + body)
     return body
 
+FULLTEXT = lambda inner, label="Full text as published by AGI": f'<details class="fulltext"><summary>{label}</summary><div class="fulltext-body">{inner}</div></details>'
 DOC_CSS = """
+details.fulltext{border:1px solid var(--line);background:var(--paper);margin:8px 0 0}
+details.fulltext summary{cursor:pointer;padding:16px 20px;font-weight:600;color:var(--navy);list-style:none}
+details.fulltext summary::before{content:"+ ";color:var(--red)}details.fulltext[open] summary::before{content:"– "}
+details.fulltext .fulltext-body{padding:4px 20px 20px;border-top:1px solid var(--line);background:#fff}
 .doc{display:grid;grid-template-columns:minmax(0,1fr);max-width:820px}
 .doc h2{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.2vw,30px);color:var(--navy);margin:1.8em 0 .5em;line-height:1.2}
 .doc h3{font-family:var(--sans);font-weight:600;font-size:17px;color:var(--ink);margin:1.4em 0 .4em}
@@ -320,9 +339,9 @@ page("calendar.html", "Calendar 2026–27 – American Group International, Agad
 </div></section>""", DOC_CSS)
 
 # ------------------------------------------------------------------ SPECIAL EDUCATION: full source text (private contact details filtered)
-_se = render(SRC("location-physical")["text"], privacy=True)
+_se = render(SRC("location-physical")["text"], privacy=True, stop="Dear Mrs")      # the parent letter that follows names a child: hidden until written consent
 PAGES["special-education.html"] = PAGES["special-education.html"].replace("\n</main>", f'''
-<section class="section bg-white" id="details"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Special education services in detail</h2>{_se}</div>
+<section class="section bg-white" id="details"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Special education services in detail</h2>{FULLTEXT(_se)}</div>
 <aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="placement-policy.html">Placement policy</a></li><li><a href="parents.html">For parents</a></li><li><a href="forms.html#visit">Book a visit</a></li></ul></aside></div></section>
 </main>''', 1)
 
@@ -399,16 +418,16 @@ def inject_static(fname, key, inner):
     t = t.replace("</main>", blk + "\n</main>", 1)
     open(fp, "w", encoding="utf-8", newline="").write(t)
 inject_static("admissions.html", "full", '<section class="section bg-white np" id="procedure"><div class="wrap docwrap"><div class="doc">'
-  + '<h2 style="margin-top:0">Admissions procedure in full</h2>' + render(SRC("admissions-procedure")["text"])
-  + '<h2 id="enrollment-documents">Enrollment documents</h2>' + render(SRC("/enrollment")["text"], stop="rification de l")
-  + render(SRC("admission-prossess")["text"]) + '</div><aside><p class="kicker">Next steps</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px">'
+  + '<h2 style="margin-top:0">In AGI&rsquo;s own words</h2><p>The steps above summarize the procedure. Here is the full text, and the full list of enrollment documents.</p>'
+  + FULLTEXT(render(SRC("admissions-procedure")["text"]) + render(SRC("admission-prossess")["text"]), "The admissions procedure in full")
+  + FULLTEXT(render(SRC("/enrollment")["text"], stop="rification de l"), "Enrollment documents in full") + '</div><aside><p class="kicker">Next steps</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px">'
   + '<li><a href="fees.html">Tuition &amp; fees</a></li><li><a href="calendar.html">Calendar 2026–27</a></li><li><a href="placement-policy.html">Placement policy</a></li><li><a href="forms.html#enrollment">Apply</a></li><li><a href="faq.html">Questions &amp; answers</a></li></ul></aside></div></section>')
 import csv as _csv
 _MAP = list(_csv.DictReader(open(os.path.join(os.path.dirname(V2), "docs", "content-map.csv"), encoding="utf-8-sig")))
 def MAPPED(dest): return [r["url"] for r in _MAP if r["destination"] == dest and r["action"] != "drop"]
 _k12_src = MAPPED("k12.html")
 inject_static("k12.html", "full", '<section class="section bg-white np" id="about-the-school"><div class="wrap docwrap"><div class="doc">'
-  + '<h2 style="margin-top:0">About the school in detail</h2>' + "".join(render(SRC(u)["text"], privacy=True) for u in _k12_src)
+  + '<h2 style="margin-top:0">About the school in detail</h2>' + FULLTEXT("".join(render(SRC(u)["text"], privacy=True) for u in _k12_src))
   + '</div><aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="handbook.html">Academic handbook</a></li><li><a href="supplies.html">Supplies list</a></li><li><a href="homework.html">Homework</a></li><li><a href="fees.html#high-school">High school options</a></li></ul></aside></div></section>')
 
 # ================================================================== PHASE 2 – ANGLIA MOROCCO
@@ -429,7 +448,8 @@ def anglia_page(name, title, lede, body, desc, crumb=None):
 
 def srcs_for(dest): return [SRC(u) for u in MAPPED(dest)]
 def full(dest, skip=(), heading="In detail"):
-    return "".join(f'<h2>{heading if i == 0 else ""}</h2>' * (i == 0) + render(p["text"], skip=skip, privacy=True) for i, p in enumerate(srcs_for(dest)) if p["text"])
+    body = "".join(render(p["text"], skip=skip, privacy=True) for p in srcs_for(dest) if p["text"])
+    return (f"<h2>{heading}</h2>" if heading and not body.lstrip().startswith("<h") else "") + body
 
 LEVELS = [("First Step", "Pre-A1", "Entry level from about age 4: understands about 100 words, follows basic classroom instructions, says who they are."),
  ("Junior", "Pre-A1", "Understands around 200 words, uses useful structures and explains what they are doing."),
@@ -468,6 +488,7 @@ _raw = open(os.path.join(_CRAWL, "anglia", "practice-resources.html"), encoding=
 _links = []
 for h, t in _re.findall(r'<a[^>]+href="(https?://[^"]+\.(?:zip|pdf))"[^>]*>(.*?)</a>', _raw, _re.S | _re.I):
     t = _re.sub(r"<[^>]+>|\s+", " ", t).strip()
+    if not t or t.lower() in ("download", "click here", "here"): t = _re.sub(r"[-_]+", " ", _re.sub(r"\.(zip|pdf)$|-[a-z]{2}\d+$", "", h.rsplit("/", 1)[-1], flags=_re.I)).strip().title()
     if t and (h, t) not in _links: _links.append((h, t))
 _groups = {}
 for h, t in _links:
@@ -540,7 +561,7 @@ page("anglia.html", "Anglia Morocco – English exams and classes | AGI Agadir",
 
 # partnerships (static page): full source text
 inject_static("partnerships.html", "full", '<section class="section bg-white np" id="partner-with-us"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Partner with AGI and Anglia Morocco</h2>'
-  + "".join(render(SRC(u)["text"], privacy=True) for u in MAPPED("partnerships.html")) + '</div><aside><p class="kicker">Anglia Morocco</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="anglia-network.html">Network &amp; centres</a></li><li><a href="anglia.html">Anglia Morocco</a></li><li><a href="investors.html">Partners &amp; investors</a></li></ul></aside></div></section>')
+  + FULLTEXT("".join(render(SRC(u)["text"], privacy=True) for u in MAPPED("partnerships.html"))) + '</div><aside><p class="kicker">Anglia Morocco</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="anglia-network.html">Network &amp; centres</a></li><li><a href="anglia.html">Anglia Morocco</a></li><li><a href="investors.html">Partners &amp; investors</a></li></ul></aside></div></section>')
 
 # ================================================================== PHASE 3 – TEACHERS · ADULTS · WELLBEING · ONLINE · PATHWAYS
 GROUPS = {
@@ -607,7 +628,7 @@ section_page("agi-usa.html", "Online", "American Group USA LLC",
 def append_details(name, title, related):
     links = "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in related)
     block = f'''
-<section class="section bg-white" id="details"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">{title}</h2>{full(name, heading="")}</div>
+<section class="section bg-white" id="details"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">{title}</h2>{FULLTEXT(full(name, heading=""))}</div>
 <aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px">{links}</ul></aside></div></section>
 </main>'''
     PAGES[name] = PAGES[name].replace("\n</main>", block, 1)

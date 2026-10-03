@@ -8,9 +8,13 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap"></noscript></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap"></noscript>
 <link rel="stylesheet" href="site.css">
 <script src="site.js" defer></script><style>
+details.fulltext{border:1px solid var(--line);background:var(--paper);margin:8px 0 0}
+details.fulltext summary{cursor:pointer;padding:16px 20px;font-weight:600;color:var(--navy);list-style:none}
+details.fulltext summary::before{content:"+ ";color:var(--red)}details.fulltext[open] summary::before{content:"– "}
+details.fulltext .fulltext-body{padding:4px 20px 20px;border-top:1px solid var(--line);background:#fff}
 .doc{display:grid;grid-template-columns:minmax(0,1fr);max-width:820px}
 .doc h2{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.2vw,30px);color:var(--navy);margin:1.8em 0 .5em;line-height:1.2}
 .doc h3{font-family:var(--sans);font-weight:600;font-size:17px;color:var(--ink);margin:1.4em 0 .4em}
@@ -56,7 +60,7 @@
 <p>Welcome to American Group International ***AGI. Our caring and nurturing staff is pleased to have the opportunity to educate your child and we look forward to the new school year with the same hopes and dreams you have for your child. We are eager to challenge all of our students to be successful both academically and socially as we prepare them for their future.</p>
 <p>AGI is a child-centered school with an environment that enables students to take responsibility for their learning and behavior. Students are at the center of each decision we make as educators, and we believe that is what makes our school stand out as a school that strives for excellence.</p>
 <p>We pride ourselves on our team of highly qualified teachers who bring a wealth of knowledge and skills. We are confident students receive a quality education each day under the guidance of our faculty.</p>
-<p>Thank you for choosing American Group International Correspondence as your educational Institution.</p>
+<p>Thank you for choosing American Group <span class="ph-text" data-placeholder="fact:claim-correspondence">International Correspondence</span> as your educational Institution.</p>
 <p>Julie Wilburn, Director</p>
 <p>Email: americanecoleagadir@gmail.com</p>
 <h2 id="mission-vision-and-beliefs">Mission, Vision And Beliefs</h2>

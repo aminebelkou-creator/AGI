@@ -133,3 +133,9 @@ Owner: **AGI** = Julie / school office · **Anglia** = Anglia Examinations (Chic
 - [ ] Forms in French and Arabic (forms.html is English only today)
 - [ ] angliamorocco.org Arabic pages: move here (ar/) and redirect, or keep on angliamorocco.org?
 
+## 14. From the page review — AGI
+- [ ] Special education: a parent's letter (2024) names their child (Ismail) – hidden until the family gives written consent; publish or keep hidden?
+- [ ] C.I.T.E. page: keep the 2019 teacher reference letter?
+- [ ] Handbook and parent letter call AGI a "Correspondence" school/institution (highlighted gold) – confirm the legal description (claim #4)
+- [ ] Old Anglia texts called Julie "Director of Operations" / "Country Manager" – replaced by her confirmed title; OK?
+- [ ] McGuffey resource page (21,000 words): split into lessons?
