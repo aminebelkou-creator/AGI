@@ -41,53 +41,46 @@
 
 ## 3. Structure and global elements
 
-### 3.1 Sitemap
+### 3.1 Sitemap (one website: AGI + Anglia Morocco; 151 pages)
 
 ```
-Home (index.html)
-├── About (about.html)
-│   ├── Our story (our-story.html)              ← long-form brand story; links to the parents page
-│   └── A letter from our founder (founder-letter.html)
-├── Programs (programs.html)
-│   ├── K–12 school (k12.html)
-│   ├── Special education (special-education.html)
-│   ├── Adult high school diploma (adult-diploma.html)
-│   ├── English & Anglia exams (english-anglia.html)
-│   ├── For teachers – C.I.T.E. (teachers.html)
-│   ├── Professional & medical English (professional.html)
-│   └── University pathways (pathways.html)
-├── Admissions (admissions.html)  – incl. tuition & fees (#fees)
-│   └── Policies (policies.html)
-├── For parents (parents.html)               ← THE parent landing page (target of the home popup)
-├── Student life (student-life.html)
-├── Journal (journal.html)
-│   ├── journal/<slug>.html  (59 articles from the old site)
-│   └── journal-ccgi-partnership.html (featured article)
-├── Partnerships & franchise (partnerships.html)
-│   └── Partners & investors (investors.html)
-├── Forms & requests (forms.html)  – 10 forms, deep-linkable (#enrollment, #visit, #absence, #consent, #feedback, #payment, #tutor-request, #tutor-schedule, #documents, #enquiry)
-├── Contact (contact.html)
-│   └── AGI Connect – preview (connect.html)
-├── Privacy (privacy.html)
-└── Terms (terms.html)
+Home (index.html) · For parents (parents.html) · Our story · Founder's letter
+About ─ about · investors (partners & investors) · agi-usa (American Group USA LLC)
+School ─ k12 · special-education · student-life · resources (+ nursery rhymes, McGuffey)
+Admissions ─ admissions · fees · calendar · faq · policies
+           └ full policies: handbook · attendance · promotion-retention · placement-policy · parent-responsibility
+                            refunds-complaints · media-policy · homework · volunteer-hours · supplies · safeguarding
+Programs ─ programs (hub) · adult-diploma · pathways · professional (business & medical English)
+         · teachers (+ teachers-cite, teachers-usa-sponsorship, teachers-careers)
+         · programs-independent-studies · programs-learning-pods · services-document-editing · services-proctoring
+         · wellbeing (+ ADHD coaching, play therapy) · online-tutoring
+Anglia Morocco (Anglia brand colors + logo) ─ anglia (hub) · anglia-exams (10-step ladder + Business English)
+         · anglia-exam-dates (filterable 2026 sessions) · anglia-classes (price cards) · anglia-practice (5 categories, packs per level)
+         · anglia-books (Step To series, audio, order) · anglia-cefr · anglia-special-arrangements · anglia-placement-test
+         · anglia-network (become a centre, 12 regions) · anglia-faq · anglia-about · english-anglia · partnerships
+Journal (journal.html, generated from 66 articles in journal/) · journal-ccgi-partnership
+Forms & requests (forms.html, 11 forms) · Contact · AGI Connect (preview)
+Legal ─ privacy · terms · cookies · accessibility · 404 (page not found)
+Languages ─ fr/ (index, parents, fees, contact) · ar/ (index, parents, fees, contact, anglia hub + 7 pages from AGI's own Arabic texts)
 ```
+
+angliamorocco.org is **not** a separate site any more: it redirects page by page into the Anglia Morocco section (`docs/angliamorocco-redirects.htaccess`, 33 redirects). Its email addresses stay active.
 
 ### 3.2 Header navigation (identical on every page)
 
-- Brand: "AGI" + "American Group International School · Agadir" → home.
-- Main menu: **About** · **Programs** (submenu: K–12 school – *American curriculum, kindergarten to grade 12*; Special education (SEN) – *IEPs, small groups, therapy support*; Adult high school diploma – *U.S. diploma for learners 16 and over*; English & Anglia exams – *Anglia Morocco headquarters, classes and exams*; For teachers (C.I.T.E.) – *Lifelong certificate, training, 30-day internship*; Professional & medical English – *Business and medical English, proctoring, coaching*; University pathways – *Admissions agent for universities abroad*; All programs) · **Admissions** · **Student life** · **Journal** · **Partnerships** · **Contact**.
-- Utility link: **Forms** → forms.html. Primary action: **Apply** → forms.html#enrollment.
-- The current page/section is indicated in the menu. On small screens the menu collapses into an openable panel listing all items (programs as sub-items) plus "Forms & requests" and Apply.
-- A "Skip to content" link is the first focusable element.
+- Brand: AGI seal + "AGI" + "American Group International School · Agadir" → home.
+- Main menu: **About** · **Programs** ▾ (K–12 school · Special education · Adult high school diploma · English & Anglia exams · For teachers (C.I.T.E.) · Professional & medical English · University pathways · Wellbeing (i-Heart) · Online tutoring · All programs) · **Admissions** · **Student life** · **Journal** · **Anglia Morocco** · **Contact**.
+- Language switch **EN · FR · ع** (links to the same page in that language when it exists, otherwise to that language's home). Utility link **Forms**; primary action **Apply** → forms.html#enrollment.
+- The current section is highlighted. On small screens the menu collapses into a panel. "Skip to content" is the first focusable element.
 
 ### 3.3 Footer (identical on every page)
 
 - About line: *American Group International – the first American school in Agadir, since 2013, and headquarters of Anglia Examinations in Morocco.*
-- **Programs:** the seven programs.
-- **School:** About AGI · Our story · For parents · Admissions · Tuition & fees · Policies · Student life · Journal.
-- **Services:** Forms & requests · Report an absence · Request a document · Book a visit · Partnerships & franchise · Partners & investors · AGI Connect (preview) · Anglia Morocco ↗ (angliamorocco.org, new tab).
-- **Contact:** Number 20, Rue Baalabek, Hay Nahda, Agadir 80000, Morocco · +212 528 843 349 · +212 618 639 911 (Arabic) · WhatsApp +212 688 739 393 · americanecoleagadir@gmail.com.
-- Bottom line: © 2026 American Group International · Agadir, Morocco · Privacy · Terms · Contact.
+- **Programs:** the program list + Independent course studies · Learning pods · Anglia Morocco.
+- **School:** About AGI · Our story · For parents · Admissions · Tuition & fees · Calendar 2026–27 · Policies · Academic handbook · Questions & answers · Student life · Resources for families · Journal.
+- **Services:** Forms & requests · Report an absence · Request a document · Book a visit · Wellbeing (i-Heart) · Online tutoring · Exam proctoring · Document editing · Partnerships & franchise · Partners & investors · AGI Connect (preview).
+- **Contact:** Number 20, Rue Baalabek, Hay Nahda, Agadir 80000 · +212 528 843 349 · +212 618 639 911 (Arabic) · WhatsApp +212 688 739 393 · americanecoleagadir@gmail.com.
+- Bottom line: © American Group International · Privacy · Terms · Cookies · Accessibility · Safeguarding · Contact.
 
 ### 3.4 Global elements and behaviors
 
@@ -114,6 +107,14 @@ Home (index.html)
 8. **Placeholders:** photos, sample testimonials, team names and unconfirmed facts must remain visibly identifiable and machine-detectable until replaced.
 9. **Multilingual-ready:** text must not be embedded in images; layouts must work right-to-left for a future Arabic version.
 
+10. **Anglia section branding (approved by Anglia):** AGI layout and typography everywhere; on Anglia pages the accents switch to Anglia blues (`#03379F` headings/buttons/dark sections, `#0082D0` labels, `#000F23` deep) and the Anglia Morocco logo (`assets/web/anglia-anglia-moroccool3.webp`) appears in the hub hero, the "Why Anglia" strip and as a badge on every Anglia page.
+11. **Privacy holds:** journal posts listed in `v2/_build/privacy.json` show "Photo hidden until parental consent is confirmed" instead of photos until the page is in `approved`; a 2024 parent letter naming a child is hidden.
+12. **Archived posts:** journal posts older than 12 months open with "Archived post … Fees, dates and programs may have changed – see the current tuition & fees and calendar."
+13. **Full source texts:** where a page has a summary, AGI's original text follows in a collapsible "Full text as published by AGI" section (nothing from the old sites is lost).
+14. **404 page** with absolute links and noindex; **Apache:** `ErrorDocument 404 /404.html`.
+15. **Redirects:** 147 from the old AGI WordPress addresses (`v2/.htaccess`, `v2/_build/redirects.csv`) + 33 from angliamorocco.org (`docs/angliamorocco-redirects.htaccess`).
+16. **Checks:** `python _build/check_all.py` (coverage gate, internal + external links, page audit, site QA, content quality, fact conflicts, privacy, mobile, launch readiness) must pass its blocking checks; GitHub Actions runs `--ci` on every push.
+
 ### 3.6 Content rules
 
 - **Verified facts only.** Unconfirmed items stay marked `[TO CONFIRM]`. Do not add: expansion to other cities, Mauritania or the USA; "exclusive" franchise; "Director of Global Operations" – until confirmed.
@@ -121,7 +122,7 @@ Home (index.html)
 - **Placement promise (quote exactly):** "Grade placement is not lowered due to missing documents, language gaps, or academic gaps." – AGI Provisional Placement Policy.
 - **No invented testimonials** on a live site; real ones need written consent. No financial claims on the investors page without documents.
 - **Tone:** warm, direct, parent-first; US English (enrollment, behavior, center, program).
-- **angliamorocco.org** is the official Anglia Morocco site: link to it (exam dates, books, practice, C.I.T.E. registration, network) rather than duplicating it.
+- **One website:** all Anglia Morocco content lives in the Anglia section; never link to angliamorocco.org (it redirects here). Anglia mailboxes (j.wilburn@ / a.lam@angliamorocco.org) stay in use.
 
 ### 3.7 Content status
 
@@ -958,7 +959,7 @@ Prices effective November 2024. Books and insurance are not included.
 #### Section: Free to start
 Find your level before you choose a class.
 - Link card → `forms.html#enquiry/anglia`: Free · English placement assessment on the CEFR · A free assessment of your English level, from beginner to expert, so we can recommend the right class or Anglia level.
-- Link card → `https://angliamorocco.org/practice-resources/`: Free · Practice Anglia examinations · Sample papers and practice material for every Anglia level, on angliamorocco.org.
+- Link card → `anglia-practice.html`: Free · Practice Anglia examinations · Sample papers and practice material for every Anglia level,.
 - Link card → `#math-english`: Exam preparation · Mathematics in English · Mathematics taught in English for SAT and IELTS candidates, plus certification workshops.
 
 #### Section: Mathematics in English
@@ -975,13 +976,13 @@ Courses and tutors for students and teachers.
 - **Business & medical English** — For organizations and clinicians – see professional programs. [link: “professional programs” → `professional.html`]
 
 #### Section: Anglia Morocco online
-Exam dates, books and practice material are published on the official Anglia Morocco website.
-- Link card → `https://angliamorocco.org/anglia-exam-dates-2/`: angliamorocco.org · Exam dates · The year's exam sessions for every level, from First Step to Masters.
-- Link card → `https://angliamorocco.org/step-to-books-2/`: angliamorocco.org · Step To books & audio · Preparation books for each level, the book order form and the audio files.
-- Link card → `https://angliamorocco.org/practice-resources/`: angliamorocco.org · Practice resources · Sample papers and practice material to prepare for the exams.
-- Link card → `https://angliamorocco.org/citem/`: angliamorocco.org · C.I.T.E. for teachers · Register for the Certificate for International Teachers of English.
-- Link card → `https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/`: angliamorocco.org · Network & centers · The Anglia Morocco network across the twelve regions, and open representative positions.
-- Link card → `https://angliamorocco.org/faq/`: angliamorocco.org · Questions about the exams · How long each exam lasts, what it assesses and how levels are grouped.
+Exam dates, books, practice material and the national network – all on this website.
+- Link card → `anglia-exam-dates.html`: Anglia Morocco · Exam dates · The year's exam sessions for every level, from First Step to Masters.
+- Link card → `anglia-books.html`: Anglia Morocco · Step To books & audio · Preparation books for each level, the book order form and the audio files.
+- Link card → `anglia-practice.html`: Anglia Morocco · Practice resources · Sample papers and practice material to prepare for the exams.
+- Link card → `teachers-cite.html`: Anglia Morocco · C.I.T.E. for teachers · Register for the Certificate for International Teachers of English.
+- Link card → `anglia-network.html`: Anglia Morocco · Network & centers · The Anglia Morocco network across the twelve regions, and open representative positions.
+- Link card → `anglia-faq.html`: Anglia Morocco · Questions about the exams · How long each exam lasts, what it assesses and how levels are grouped.
 
 #### Section: English benchmarks at AGI
 How English develops through the K–12 school. Students who don't speak English at home often start half a level lower and catch up by middle school.
@@ -999,7 +1000,7 @@ How English develops through the K–12 school. Students who don't speak English
 From its Agadir headquarters, Anglia Morocco works with schools, language centers and teachers in the Kingdom's twelve regions. Schools can become Anglia exam centers, and franchise opportunities are open in several regions, [TO CONFIRM: including Oujda, Fès, Agadir and Taroudant].
 Anglia Morocco contacts: j.wilburn@angliamorocco.org · a.lam@angliamorocco.org
 → **Partnerships & franchise** (`partnerships.html`)
-→ **angliamorocco.org** (`https://angliamorocco.org/`)
+→ **Anglia Morocco** (`anglia.html`)
 
 #### Section: Find your level.
 Book a free Anglia level test – the office will suggest the right class afterwards.
@@ -1032,7 +1033,7 @@ Anglia Examinations England
 
 #### Section: C.I.T.E. – Certificate for International Teachers of English
 A TESOL qualification that proves both your English and your ability to teach it.
-→ **Register on angliamorocco.org** (`https://angliamorocco.org/citem/`)
+→ **Register for C.I.T.E.** (`teachers-cite.html`)
 - **Lifelong** — A qualification with no expiration date, recognized worldwide.
 - **Open to all** — No entry qualifications are required. It suits current teachers who want to validate their skills and aspiring teachers starting out.
 - **Mapped to the CEFR** — Your certificate shows your English level on the same European framework schools and employers use.
@@ -1062,8 +1063,8 @@ Professional development workshops, a final survey and wrap-up.
 - **Teach a learning pod** — Freelance teachers can lead Anglia learning pods: small groups of about ten students over ten weeks, with materials supplied.
 
 #### Section: Start your next step as a teacher.
-Register for C.I.T.E. on angliamorocco.org, or ask us about the internship and sponsorship.
-→ **Register for C.I.T.E.** (`https://angliamorocco.org/citem/`)
+Register for C.I.T.E., or ask us about the internship and sponsorship.
+→ **Register for C.I.T.E.** (`teachers-cite.html`)
 → **Ask about the internship** (`forms.html#enquiry/programs`)
 
 #### Section: Other programs
@@ -1558,7 +1559,7 @@ AGI's U.S.-registered company [TO CONFIRM: (Maryland)], offering programs and co
 
 #### Section: Ways to partner
 - Link card → `partnerships.html`: Open an AGI school or center · Franchise and institutional partnerships for schools and language centers.
-- Link card → `https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/`: Represent Anglia in your region · Open representative positions in the Anglia Morocco network.
+- Link card → `anglia-network.html`: Represent Anglia in your region · Open representative positions in the Anglia Morocco network.
 - Link card → `forms.html#enquiry/partnership`: Strategic partnership or investment · Request the partner brief and a conversation with Julie Wilburn.
 
 #### Section: Let's talk.
@@ -1716,7 +1717,59 @@ Questions about these terms: americanecoleagadir@gmail.com.
 
 ---
 
-### 4.25 `agi-usa.html`
+### 4.25 `404.html`
+
+- **Browser title:** Page not found – American Group International, Agadir
+- **Meta description:** The page you are looking for has moved or no longer exists.
+
+Home / Page not found [link: “Home” → `/index.html`]
+**Page title (H1):** This page has moved.
+The AGI website has been rebuilt, so some old addresses no longer exist. Everything is still here – start from one of these pages, or ask us.
+→ **Home** (`/index.html`)
+→ **Contact** (`/contact.html`)
+- Link card → `/parents.html`: Parents · For parents
+- Link card → `/admissions.html`: Admissions · How to apply
+- Link card → `/fees.html`: Fees · Tuition & fees
+- Link card → `/calendar.html`: Dates · Calendar 2026–27
+- Link card → `/programs.html`: Programs · All programs
+- Link card → `/anglia.html`: Anglia Morocco · English exams
+- Link card → `/forms.html`: Forms · Forms & requests
+- Link card → `/journal.html`: News · Journal
+- Link card → `/faq.html`: Help · Questions & answers
+
+---
+
+### 4.26 `accessibility.html`
+
+- **Browser title:** Accessibility – American Group International, Agadir
+- **Meta description:** How the AGI website is made accessible (WCAG 2.1 AA), what is not yet fully accessible, and how to ask for help.
+
+Home / Accessibility [link: “Home” → `index.html`]
+**Page title (H1):** Accessibility.
+We want everyone to be able to use this website – on any device, in English, French or Arabic, with or without assistive technology.
+
+#### Section: Our goal
+This website aims to meet the Web Content Accessibility Guidelines (WCAG) 2.1, level AA.
+
+#### Section: What we have done
+- Text and background colors meet contrast requirements; text can be enlarged without breaking the layout.
+- Every page can be used with a keyboard, with a visible focus and a "skip to content" link.
+- Pages use proper headings, labels and descriptions for screen readers; forms explain errors in words.
+- Pages work on phones and support right-to-left reading for Arabic.
+- Animations are reduced when your device asks for reduced motion.
+
+#### Section: What is not yet fully accessible
+- Some older journal posts imported from the previous website may have long paragraphs or images without full descriptions.
+- Practice papers and books published by Anglia Examinations, and some older videos, are provided as they are and may not have captions or accessible formats.
+- French and Arabic versions cover the main pages only for now.
+
+#### Section: Need help or found a problem?
+Tell us what you need and we will provide the information another way: americanecoleagadir@gmail.com · +212 528 843 349 · WhatsApp +212 688 739 393. [link: “+212 688 739 393” → `https://wa.me/212688739393`]
+Last reviewed October 2026.
+
+---
+
+### 4.27 `agi-usa.html`
 
 - **Browser title:** American Group USA LLC – American Group International, Agadir
 - **Meta description:** American Group USA LLC: AGI's U.S. company for online programs, tutoring and coaching.
@@ -1765,7 +1818,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.26 `anglia-about.html`
+### 4.28 `anglia-about.html`
 
 - **Browser title:** About Anglia Examinations – Anglia Morocco | AGI Agadir
 - **Meta description:** About Anglia Examinations: Chichester since 1993, Chichester College Group, AIM and Ofqual, Anglia Morocco since 2021.
@@ -1838,7 +1891,7 @@ Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam
 
 ---
 
-### 4.27 `anglia-books.html`
+### 4.29 `anglia-books.html`
 
 - **Browser title:** Step To books – Anglia Morocco | AGI Agadir
 - **Meta description:** Anglia Step To books: ten workbooks from First Step to Masters (C2), with audio files, guided test practice and a sample exam. Order through Anglia Morocco in Agadir.
@@ -1889,7 +1942,7 @@ Order through Anglia Morocco in Agadir – the office confirms availability, pri
 
 ---
 
-### 4.28 `anglia-cefr.html`
+### 4.30 `anglia-cefr.html`
 
 - **Browser title:** CEFR levels – Anglia Morocco | AGI Agadir
 - **Meta description:** The CEFR levels A1 to C2 explained, and benchmarks for native speakers and language learners at AGI.
@@ -2028,7 +2081,7 @@ Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam
 
 ---
 
-### 4.29 `anglia-classes.html`
+### 4.31 `anglia-classes.html`
 
 - **Browser title:** English classes & prices – Anglia Morocco | AGI Agadir
 - **Meta description:** English classes at Anglia Morocco, Agadir: Saturday classes 500 MAD a month, one-to-one 200 MAD, small groups 150 MAD, 12-week course 1,200 MAD. Free level test.
@@ -2085,7 +2138,7 @@ A free level test first – then we recommend the format and the level.
 
 ---
 
-### 4.30 `anglia-exam-dates.html`
+### 4.32 `anglia-exam-dates.html`
 
 - **Browser title:** Anglia exam dates 2026 – Anglia Morocco | AGI Agadir
 - **Meta description:** Anglia exam sessions in Morocco in 2026, month by month and by level, and how to register at Anglia Morocco headquarters in Agadir.
@@ -2127,7 +2180,7 @@ Tell us the candidate's level and preferred session – the office will confirm.
 
 ---
 
-### 4.31 `anglia-exams.html`
+### 4.33 `anglia-exams.html`
 
 - **Browser title:** Anglia exams & levels – Anglia Morocco | AGI Agadir
 - **Meta description:** The Anglia ladder: ten General English levels from First Step to Masters C2, four Business English levels A2+ to C1, exam durations and certificates for life.
@@ -2172,7 +2225,7 @@ Four steps for candidates whose special interest is business, from A2+ to C1.
 - **Online exams** — Anglia exams can also be taken online in Morocco – ask the office
 
 #### Section: In detail
-- **Q: The exam descriptions in full** — A: Anglia Examinations have been based in Chichester, England, since 1993. Anglia offers a comprehensive and structured program for assessing English language competence, from beginner through to full competence as an expert user. This Step-by-Step approach to testing encourages and motivates students to make clear and effective progress. Please see us for a free placement test. The official website of Anglia Anglia Levels Anglia exams measure all four language skills – listening, reading, writing, and speaking. There are no minimum age requirements for the exams. The young learner levels are taken by children as young as four years old. The upper levels and Business English exams are taken by students and adults who plan to continue their studies at an English university/college or to improve their career prospects. Anglia Examinations in English currently consist of ten different levels and the Anglia International Business English examinations are available at four levels. The Proficiency level is listed by UCAS as a qualification that can be accepted by British universities to show international student competence in the English language. The Anglia Proficiency examination has been designed to incorporate a stronger academic element within its first section. All levels of the examinations have listening, reading, writing, and speaking elements. View this PowerPoint for information on the C.I.T.E. for teachers. New Microsoft PowerPoint Presentation- The History of Anglia in Morocco angliamorocco.org The history of Anglia Morocco started in 2010 by Suzanne Linsen. She moved to Morocco to introduce Anglia Examinations and its wide range of English language certificates to schools and institutes. Prior to that she was selected to conduct English courses and administer Anglia exams at a language institute in Tangier. During this year 2021, American Group International (AGI) became the Anglia franchise holder for Morocco. AGI has been an educational brand since 2012. AGI has placed hundreds of students into the American Educational System with low-cost, affordable, educational programs including an American School in Agadir. They have used the Anglia system in their language programs since 2013. Julie Wilburn is the CEO and lived in Morocco for many years and also holds dual citizenship in the country. The AGI team has now embarked on the next level in its offerings to give opportunities to thousands of people to master the international language of English in business and communication with top English training and assessments. We strive to give back to the Moroccan community and reach the areas that desire to take international exams. AGI wants local teams based in each of the 12 regions of the country to execute local community-based programs to reach the unreachable. The main headquarters are located in the cozy city of Agadir and it is centralized to the application of the AGI mission and educating the community in English throughout the Kingdom of Morocco. AGIs number of local franchise distribution networks will hopefully grow rapidly in the next few years; as English is quickly becoming a new love for Moroccan young people. This in return will hopefully open up new avenues for many including new international opportunities for people inside as well as international levels from the outside. Anglia Morocco along with AGI will work closely with; multiple’ education centres, schools, and businesses to develop new strategies to help all levels of schools and learners to achieve a higher standard of English. Addressing the challenges due to the COVID pandemic, AGI is offering online platforms and examinations, AGI and Anglia Maroc communities, and events to enhance greater opportunities in Moroccan communities. With AGIs mission “Global Minds with a Global Perspective”, we strive to offer a better opportunity for the Moroccan community to ‘Dare to Dream in English’ with the Step-by-Step approach. Anglia Maroc is offering Anglia English exams from Beginners to Mastery level (CEFR C2) through the European Framework. To contact Anglia Morocco/ AGI American Group International Julie Wilburn – CEO & Educational Director Abdelhak Lam- Assistant of Operations Headquarters Branch Agadir/Sales Number 20, Rue Baalabek, Cite Nahda, Agadir, and Morocco.80000 Anglia Examinations England 30th year celebration in Chichester West Sussex, England. Picture with Julie Wilburn, center. September 2023. Anglia is presented by 45 plus countries worldwide. Part of the Chichester College Group, the 3rd biggest group in the United Kingdom. Robo Gallery: You didn’t select any Robo Gallery item in editor. Please select one from the list or create new gallery Anglia Exams offers a range of Business English Exams that test the English proficiency level of students whose special interest is business. The exams are divided into four steps, ranging in level from A2+ to C1 on the CEFR, and test all four skills of reading, writing, listening and speaking. The exams are designed to evaluate the linguistic competence of candidates who may be considering a future in an international workplace or may already be working in the professional world 1. If you’re interested in taking one of these exams, you can visit Anglia Exams for more information. Business English Exams English is the lingua-franca of business. No matter where in the world you live or work, the ability to communicate effectively in English is a definite advantage when conducting business. In an increasingly globalised world, being proficient in business English gives you a competitive edge. The four steps of the Anglia Business English exams, ranging in level from A2+ to C1 on the CEFR, test the English proficiency level of students whose special interest is business. Candidates may be considering a future in an international workplace or may already be working in the professional world and be keen to evaluate their linguistic competence. With an emphasis on practical business application in realistic situations, our communicative exams offer a progressive choice of levels: A2+, B1, B2 and C1, and test all four skills of reading, writing, listening and speaking. An online examination is a great way to conduct exams and tests using the internet. An online exam requires a device capable of accessing the internet. You can conduct an online exam at home or an examination centre. It is essential in the remote learning system where candidates can appear for exams from home. They need not travel to give the exam in the online examination system. A microphone and webcam are sufficient for online evaluation tests. Also, you need not invest in exam centres, security and invigilators. ￼ Unlock Your Future with Anglia Examinations England! Now Offering Online Examinations in Morocco Get internationally recognized English certifications from the comfort of your home. Join thousands of successful students and enhance your career opportunities. Why Choose Anglia Examinations England? Convenient Online Testing: Take exams from anywhere in Morocco. Wide Range of Levels: From beginners to advanced proficiency. Trusted and Recognized: Certifications valued by employers and educational institutions worldwide. Supportive Learning Environment: Access to study materials and practice tests. Enroll Today! Visit our website or contact us at americanecoleagadir@gmail.com to learn more and register. Anglia Examinations England – Your Pathway to Global Success! Anglia Exams Anglia Exams: Tests of English as a Foreign or Second Language Anglia Exams are ideal for testing the abilities of those learning English as a foreign language. The Anglia General English exam suite measures all four language skills – listening, reading, speaking and writing. Our exams are ideal for teachers and students of English as a foreign or second language and are designed to measure the ability and help guide candidates from beginner level at First Step, to Masters (C2) level. Our young-learner levels are also available for adult learners, meaning that anyone at any age can start learning English step-by-step with confidence. Anglia’s educational testing service is designed to support education providers and measure the ability of English language proficiency of leaners at all ages and ability First Step Junior Level Exam TaPrimary Level Exam b 3 Primary Level Exam Preliminary Level Exam Our entry level English language exam. Children as young as four years old can begin here. Demonstrate an understanding of about 100 words, follow basic classroom instructions and know how to say who you are Our second step in the Anglia English exam learning journey. Students need to be able to demonstrate an understanding of around 200 words, are able to use useful structures and explain what they are doing. Step 3 in our progressive exam series covers a vocabulary of about 400 words in categories like jobs, feelings and weather. Students will be able to demonstrate how to form questions, provide answers to questions, and be able to describe things. Business English Exams English is the lingua-franca of business. No matter where in the world you live or work, the ability to communicate effectively in English is a definite advantage when conducting business. In an increasingly globalised world, being proficient in business English gives you a competitive edge.English for Business EFL step by step To learn more about a specific exam level please click on the tabs below. Practical Business English Intermediate Business English Advanced Business English Exam Proficiency in Business English At this level, candidates are expected to have an A2+ level of English. The Business English exams are based on a candidate’s ability to perform certain practical functions in the workplace. Therefore the Practical Business English exam does not have a specific grammar and structures syllabus as the business context tends to demand set structures. However, the syllabus of the corresponding level (A2+) of the General English examinations gives an overview of the language expected at this level. At this level, candidates are expected to have a level of English equivalent to B1 on the CEFR. As the Business English exams are based on a candidate’s ability to perform practical functions in the workplace, this exam does not have a specific grammar and structures syllabus. The business context tends to demand set structures. However, the syllabus of the corresponding level (B1) of the General English examinations gives an overview of the language expected at this level. At this level, candidates are expected to have a level of English equivalent to B2 on the CEFR. As the Business English exams are based on a candidate’s ability to perform practical functions in the workplace, this exam does not have a specific grammar and structures syllabus. The business context tends to demand set structures. However, the syllabus of the corresponding level (B2) of the General English examinations gives an overview of the language expected at this level.
+- **Q: The exam descriptions in full** — A: Anglia Examinations have been based in Chichester, England, since 1993. Anglia offers a comprehensive and structured program for assessing English language competence, from beginner through to full competence as an expert user. This Step-by-Step approach to testing encourages and motivates students to make clear and effective progress. Please see us for a free placement test. The official website of Anglia Anglia Levels Anglia exams measure all four language skills – listening, reading, writing, and speaking. There are no minimum age requirements for the exams. The young learner levels are taken by children as young as four years old. The upper levels and Business English exams are taken by students and adults who plan to continue their studies at an English university/college or to improve their career prospects. Anglia Examinations in English currently consist of ten different levels and the Anglia International Business English examinations are available at four levels. The Proficiency level is listed by UCAS as a qualification that can be accepted by British universities to show international student competence in the English language. The Anglia Proficiency examination has been designed to incorporate a stronger academic element within its first section. All levels of the examinations have listening, reading, writing, and speaking elements. View this PowerPoint for information on the C.I.T.E. for teachers. New Microsoft PowerPoint Presentation- The History of Anglia in Morocco Anglia Morocco The history of Anglia Morocco started in 2010 by Suzanne Linsen. She moved to Morocco to introduce Anglia Examinations and its wide range of English language certificates to schools and institutes. Prior to that she was selected to conduct English courses and administer Anglia exams at a language institute in Tangier. During this year 2021, American Group International (AGI) became the Anglia franchise holder for Morocco. AGI has been an educational brand since 2012. AGI has placed hundreds of students into the American Educational System with low-cost, affordable, educational programs including an American School in Agadir. They have used the Anglia system in their language programs since 2013. Julie Wilburn is the CEO and lived in Morocco for many years and also holds dual citizenship in the country. The AGI team has now embarked on the next level in its offerings to give opportunities to thousands of people to master the international language of English in business and communication with top English training and assessments. We strive to give back to the Moroccan community and reach the areas that desire to take international exams. AGI wants local teams based in each of the 12 regions of the country to execute local community-based programs to reach the unreachable. The main headquarters are located in the cozy city of Agadir and it is centralized to the application of the AGI mission and educating the community in English throughout the Kingdom of Morocco. AGIs number of local franchise distribution networks will hopefully grow rapidly in the next few years; as English is quickly becoming a new love for Moroccan young people. This in return will hopefully open up new avenues for many including new international opportunities for people inside as well as international levels from the outside. Anglia Morocco along with AGI will work closely with; multiple’ education centres, schools, and businesses to develop new strategies to help all levels of schools and learners to achieve a higher standard of English. Addressing the challenges due to the COVID pandemic, AGI is offering online platforms and examinations, AGI and Anglia Maroc communities, and events to enhance greater opportunities in Moroccan communities. With AGIs mission “Global Minds with a Global Perspective”, we strive to offer a better opportunity for the Moroccan community to ‘Dare to Dream in English’ with the Step-by-Step approach. Anglia Maroc is offering Anglia English exams from Beginners to Mastery level (CEFR C2) through the European Framework. To contact Anglia Morocco/ AGI American Group International Julie Wilburn – CEO & Educational Director Abdelhak Lam- Assistant of Operations Headquarters Branch Agadir/Sales Number 20, Rue Baalabek, Cite Nahda, Agadir, and Morocco.80000 Anglia Examinations England 30th year celebration in Chichester West Sussex, England. Picture with Julie Wilburn, center. September 2023. Anglia is presented by 45 plus countries worldwide. Part of the Chichester College Group, the 3rd biggest group in the United Kingdom. Robo Gallery: You didn’t select any Robo Gallery item in editor. Please select one from the list or create new gallery Anglia Exams offers a range of Business English Exams that test the English proficiency level of students whose special interest is business. The exams are divided into four steps, ranging in level from A2+ to C1 on the CEFR, and test all four skills of reading, writing, listening and speaking. The exams are designed to evaluate the linguistic competence of candidates who may be considering a future in an international workplace or may already be working in the professional world 1. If you’re interested in taking one of these exams, you can visit Anglia Exams for more information. Business English Exams English is the lingua-franca of business. No matter where in the world you live or work, the ability to communicate effectively in English is a definite advantage when conducting business. In an increasingly globalised world, being proficient in business English gives you a competitive edge. The four steps of the Anglia Business English exams, ranging in level from A2+ to C1 on the CEFR, test the English proficiency level of students whose special interest is business. Candidates may be considering a future in an international workplace or may already be working in the professional world and be keen to evaluate their linguistic competence. With an emphasis on practical business application in realistic situations, our communicative exams offer a progressive choice of levels: A2+, B1, B2 and C1, and test all four skills of reading, writing, listening and speaking. An online examination is a great way to conduct exams and tests using the internet. An online exam requires a device capable of accessing the internet. You can conduct an online exam at home or an examination centre. It is essential in the remote learning system where candidates can appear for exams from home. They need not travel to give the exam in the online examination system. A microphone and webcam are sufficient for online evaluation tests. Also, you need not invest in exam centres, security and invigilators. ￼ Unlock Your Future with Anglia Examinations England! Now Offering Online Examinations in Morocco Get internationally recognized English certifications from the comfort of your home. Join thousands of successful students and enhance your career opportunities. Why Choose Anglia Examinations England? Convenient Online Testing: Take exams from anywhere in Morocco. Wide Range of Levels: From beginners to advanced proficiency. Trusted and Recognized: Certifications valued by employers and educational institutions worldwide. Supportive Learning Environment: Access to study materials and practice tests. Enroll Today! Visit our website or contact us at americanecoleagadir@gmail.com to learn more and register. Anglia Examinations England – Your Pathway to Global Success! Anglia Exams Anglia Exams: Tests of English as a Foreign or Second Language Anglia Exams are ideal for testing the abilities of those learning English as a foreign language. The Anglia General English exam suite measures all four language skills – listening, reading, speaking and writing. Our exams are ideal for teachers and students of English as a foreign or second language and are designed to measure the ability and help guide candidates from beginner level at First Step, to Masters (C2) level. Our young-learner levels are also available for adult learners, meaning that anyone at any age can start learning English step-by-step with confidence. Anglia’s educational testing service is designed to support education providers and measure the ability of English language proficiency of leaners at all ages and ability First Step Junior Level Exam TaPrimary Level Exam b 3 Primary Level Exam Preliminary Level Exam Our entry level English language exam. Children as young as four years old can begin here. Demonstrate an understanding of about 100 words, follow basic classroom instructions and know how to say who you are Our second step in the Anglia English exam learning journey. Students need to be able to demonstrate an understanding of around 200 words, are able to use useful structures and explain what they are doing. Step 3 in our progressive exam series covers a vocabulary of about 400 words in categories like jobs, feelings and weather. Students will be able to demonstrate how to form questions, provide answers to questions, and be able to describe things. Business English Exams English is the lingua-franca of business. No matter where in the world you live or work, the ability to communicate effectively in English is a definite advantage when conducting business. In an increasingly globalised world, being proficient in business English gives you a competitive edge.English for Business EFL step by step To learn more about a specific exam level please click on the tabs below. Practical Business English Intermediate Business English Advanced Business English Exam Proficiency in Business English At this level, candidates are expected to have an A2+ level of English. The Business English exams are based on a candidate’s ability to perform certain practical functions in the workplace. Therefore the Practical Business English exam does not have a specific grammar and structures syllabus as the business context tends to demand set structures. However, the syllabus of the corresponding level (A2+) of the General English examinations gives an overview of the language expected at this level. At this level, candidates are expected to have a level of English equivalent to B1 on the CEFR. As the Business English exams are based on a candidate’s ability to perform practical functions in the workplace, this exam does not have a specific grammar and structures syllabus. The business context tends to demand set structures. However, the syllabus of the corresponding level (B1) of the General English examinations gives an overview of the language expected at this level. At this level, candidates are expected to have a level of English equivalent to B2 on the CEFR. As the Business English exams are based on a candidate’s ability to perform practical functions in the workplace, this exam does not have a specific grammar and structures syllabus. The business context tends to demand set structures. However, the syllabus of the corresponding level (B2) of the General English examinations gives an overview of the language expected at this level.
 Next
 - Practice papers [link: “Practice papers” → `anglia-practice.html`]
 - Special arrangements [link: “Special arrangements” → `anglia-special-arrangements.html`]
@@ -2185,7 +2238,7 @@ Take the free placement assessment – we will recommend the right step.
 
 ---
 
-### 4.32 `anglia-faq.html`
+### 4.34 `anglia-faq.html`
 
 - **Browser title:** Anglia FAQ – Anglia Morocco | AGI Agadir
 - **Meta description:** Anglia exams FAQ: levels, ages from 4, durations, lifetime certificates, UCAS tariff points for Mastery.
@@ -2223,7 +2276,7 @@ Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam
 
 ---
 
-### 4.33 `anglia-network.html`
+### 4.35 `anglia-network.html`
 
 - **Browser title:** Become an Anglia centre – Anglia Morocco | AGI Agadir
 - **Meta description:** Anglia Morocco network across Morocco's 12 regions: open representative positions, franchise and institutional partnership models, how to become an Anglia centre.
@@ -2290,7 +2343,7 @@ Tell us your region, the model and your teaching or business background.
 
 ---
 
-### 4.34 `anglia-placement-test.html`
+### 4.36 `anglia-placement-test.html`
 
 - **Browser title:** Free placement assessment – Anglia Morocco | AGI Agadir
 - **Meta description:** Free English placement assessment on the CEFR at Anglia Morocco headquarters in Agadir.
@@ -2329,7 +2382,7 @@ Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam
 
 ---
 
-### 4.35 `anglia-practice.html`
+### 4.37 `anglia-practice.html`
 
 - **Browser title:** Practice papers & audio – Anglia Morocco | AGI Agadir
 - **Meta description:** Free Anglia practice papers and sample exams for every level: General English, Business English, Children's Oral Tests, Applied Translation and C.I.T.E. for teachers.
@@ -2408,7 +2461,7 @@ Our classes and the Step To books prepare candidates for every level.
 
 ---
 
-### 4.36 `anglia-special-arrangements.html`
+### 4.38 `anglia-special-arrangements.html`
 
 - **Browser title:** Special arrangements – Anglia Morocco | AGI Agadir
 - **Meta description:** Special arrangements for Anglia exams in Morocco: extra time, breaks, Braille or large print, wheelchair access, scribe, lip reading; codes D1–D8.
@@ -2464,7 +2517,7 @@ Anglia Morocco headquarters: AGI, Agadir · j.wilburn@angliamorocco.org · a.lam
 
 ---
 
-### 4.37 `anglia.html`
+### 4.39 `anglia.html`
 
 - **Browser title:** Anglia Morocco – official English exams from England | AGI Agadir
 - **Meta description:** Anglia Morocco headquarters at AGI, Agadir: official English exams from England, First Step to Masters C2, from age 4. Exam dates, classes, free level test, centres in 12 regions.
@@ -2508,7 +2561,7 @@ Thursday 15th | Saturday 17th – sessions run in most months; other dates are p
 #### Section: Club Anglia
 [TO CONFIRM: Coming soon.]
 Contacts
-Julie Wilburn · j.wilburn@angliamorocco.org Abdelhak Lam · a.lam@angliamorocco.org angliamorocco.org [link: “angliamorocco.org” → `https://angliamorocco.org/`]
+Julie Wilburn · j.wilburn@angliamorocco.org Abdelhak Lam · a.lam@angliamorocco.org Anglia Morocco [link: “Anglia Morocco” → `anglia.html`]
 
 #### Section: Find your English level.
 The placement assessment is free and takes place at AGI in Agadir.
@@ -2517,7 +2570,7 @@ The placement assessment is free and takes place at AGI in Agadir.
 
 ---
 
-### 4.38 `attendance.html`
+### 4.40 `attendance.html`
 
 - **Browser title:** Attendance – American Group International, Agadir
 - **Meta description:** AGI attendance policy: 90% attendance for promotion, excused absences, late arrivals and consequences.
@@ -2610,7 +2663,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.39 `calendar.html`
+### 4.41 `calendar.html`
 
 - **Browser title:** Calendar 2026–27 – American Group International, Agadir
 - **Meta description:** AGI school calendar 2026–27: registration Aug 28 & 31, first day Sept 7, holidays and breaks, last day June 17; Saturday classes and Anglia exam sessions.
@@ -2722,7 +2775,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.40 `cookies.html`
+### 4.42 `cookies.html`
 
 - **Browser title:** Cookies – American Group International, Agadir
 - **Meta description:** This website uses no advertising or tracking cookies. What it stores on your device, and which outside services it loads.
@@ -2747,7 +2800,7 @@ Write to americanecoleagadir@gmail.com. See also our privacy policy. [link: “p
 
 ---
 
-### 4.41 `faq.html`
+### 4.43 `faq.html`
 
 - **Browser title:** Questions & answers – American Group International, Agadir
 - **Meta description:** Answers to parents' questions about AGI: admissions, documents, fees, calendar, attendance, homework, Anglia exams, teachers and adult programs.
@@ -2813,7 +2866,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.42 `fees.html`
+### 4.44 `fees.html`
 
 - **Browser title:** Tuition & fees – American Group International, Agadir
 - **Meta description:** AGI fees 2026–27: inscription by grade (6,500–11,000 MAD), tuition 2,600 MAD a month, all-inclusive package, high school options, class prices.
@@ -2895,7 +2948,7 @@ The office will explain every option for your family.
 
 ---
 
-### 4.43 `forms.html`
+### 4.45 `forms.html`
 
 - **Browser title:** Forms & requests – American Group International, Agadir
 - **Meta description:** Apply for a place, report an absence, request a document, give consent, book tutoring or tell the AGI office about a payment.
@@ -2914,7 +2967,7 @@ Report an absence Apply for a place Payment notice Request a transcript [link: �
 
 ---
 
-### 4.44 `handbook.html`
+### 4.46 `handbook.html`
 
 - **Browser title:** Academic handbook – American Group International, Agadir
 - **Meta description:** The AGI academic handbook in full: mission, vision, beliefs, school routines, behavior, communication and family partnership.
@@ -3385,7 +3438,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.45 `homework.html`
+### 4.47 `homework.html`
 
 - **Browser title:** Homework – American Group International, Agadir
 - **Meta description:** AGI homework guidelines: how many minutes of homework to expect each night, by grade, from kindergarten to grade 12.
@@ -3449,7 +3502,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.46 `media-policy.html`
+### 4.48 `media-policy.html`
 
 - **Browser title:** Media – American Group International, Agadir
 - **Meta description:** AGI media policy: photos, video and live streams, consent for students under 18.
@@ -3517,7 +3570,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.47 `online-tutoring.html`
+### 4.49 `online-tutoring.html`
 
 - **Browser title:** Online tutoring – American Group International, Agadir
 - **Meta description:** Online tutoring with American Group USA: session prices, how long a session should last, and Zoom/Teams instructions.
@@ -3644,7 +3697,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.48 `parent-responsibility.html`
+### 4.50 `parent-responsibility.html`
 
 - **Browser title:** Parent responsibility – American Group International, Agadir
 - **Meta description:** AGI parent policy and responsibility: adjustment period, communication, safeguarding and fees.
@@ -3706,7 +3759,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.49 `placement-policy.html`
+### 4.51 `placement-policy.html`
 
 - **Browser title:** Provisional placement & assessment – AGI Agadir
 - **Meta description:** AGI provisional placement and assessment policy: grade placement is not lowered for missing documents, language gaps or academic gaps.
@@ -3809,7 +3862,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.50 `programs-independent-studies.html`
+### 4.52 `programs-independent-studies.html`
 
 - **Browser title:** Independent course studies – American Group International, Agadir
 - **Meta description:** AGI independent course studies: modules, program, prices and certificates approved by the American Canadian Board.
@@ -4021,7 +4074,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.51 `programs-learning-pods.html`
+### 4.53 `programs-learning-pods.html`
 
 - **Browser title:** Learning pods &amp; fast track – AGI Agadir
 - **Meta description:** AGI and Anglia Morocco learning pods: small groups of ten, teacherpreneurs, fast-track high school.
@@ -4166,7 +4219,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.52 `promotion-retention.html`
+### 4.54 `promotion-retention.html`
 
 - **Browser title:** Promotion & retention – American Group International, Agadir
 - **Meta description:** AGI promotion and retention policy: 64% in core subjects, 90% attendance, English assessment and summer remediation.
@@ -4205,7 +4258,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.53 `refunds-complaints.html`
+### 4.55 `refunds-complaints.html`
 
 - **Browser title:** Refunds & complaints – American Group International, Agadir
 - **Meta description:** AGI policies and procedures for refunds and complaints across all divisions.
@@ -4292,7 +4345,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.54 `resources-mcguffey.html`
+### 4.56 `resources-mcguffey.html`
 
 - **Browser title:** McGuffey readers &amp; sight words – AGI Agadir
 - **Meta description:** McGuffey readers and sight words: classic reading and spelling practice for children (public domain).
@@ -7737,7 +7790,7 @@ Tours are arranged individually, Monday to Friday.
 
 ---
 
-### 4.55 `resources-nursery-rhymes.html`
+### 4.57 `resources-nursery-rhymes.html`
 
 - **Browser title:** Nursery rhymes for Pre-K – American Group International, Agadir
 - **Meta description:** Traditional English nursery rhymes for pre-kindergarten children – read and sing at home.
@@ -8216,7 +8269,7 @@ Tours are arranged individually, Monday to Friday.
 
 ---
 
-### 4.56 `resources.html`
+### 4.58 `resources.html`
 
 - **Browser title:** Resources for families – American Group International, Agadir
 - **Meta description:** Free English resources from AGI: grammar self-helps, nursery rhymes, McGuffey readers and sight words, math resources.
@@ -8378,7 +8431,58 @@ Tours are arranged individually, Monday to Friday.
 
 ---
 
-### 4.57 `services-document-editing.html`
+### 4.59 `safeguarding.html`
+
+- **Browser title:** Safeguarding & child protection – AGI Agadir
+- **Meta description:** How AGI keeps children safe: our commitments, photos and media consent, online safety, visitors, how to raise a concern, and children's personal data.
+
+Home / Policies / Safeguarding [link: “Home” → `index.html`] [link: “Policies” → `policies.html`]
+**Page title (H1):** Safeguarding & child protection.
+Every child at AGI has the right to be safe, respected and heard. This page explains how the school protects children and how to raise a concern.
+→ **Raise a concern** (`#concern`)
+→ **All policies** (`policies.html`)
+
+#### Section: Our commitments
+- Children's safety and wellbeing come first in every decision.
+- Staff know the children and families they work with, and listen when a child speaks up.
+- Concerns are taken seriously, recorded and acted on promptly.
+- We work with parents and, where needed, with the competent authorities.
+
+#### Section: Who is responsible
+Designated safeguarding lead: [TO CONFIRM: name and role to be confirmed]. Overall responsibility: Julie A. Wilburn, Founder · CEO & Educational Director.
+
+#### Section: Photos, video and children's names
+No child's photo, video or full name is published without written parental consent, in line with our media policy and Morocco's personal-data law (09-08). On this website, photos of children are hidden until that consent is confirmed. [link: “media policy” → `media-policy.html`]
+
+#### Section: Online safety
+Students use school devices and online classes under the acceptable-use rules in the academic handbook. Online lessons run on Zoom or Microsoft Teams with the school's instructions. [link: “academic handbook” → `handbook.html`]
+
+#### Section: Wellbeing and support
+Individual plans, small classes and holistic support help children who are struggling. AGI is a member of the American School Counselor Association. Wellbeing (i-Heart) · Special education [link: “Wellbeing (i-Heart)” → `wellbeing.html`] [link: “Special education” → `special-education.html`]
+
+#### Section: Visitors
+Visits to the school are by appointment and arranged individually. [TO CONFIRM: Visitor sign-in and supervision procedure to be confirmed.]
+
+#### Section: How to raise a concern
+If you are worried about a child's safety or wellbeing, speak to the school office or the safeguarding lead straight away – in person, by phone on +212 528 843 349 or by email at americanecoleagadir@gmail.com. You can also use the complaints procedure. If a child is in immediate danger, contact the emergency services first. [link: “complaints procedure” → `refunds-complaints.html`]
+
+#### Section: Children's personal data
+We collect only the information needed to educate and protect each child, keep it confidential and share it only with people who need it. Privacy policy [link: “Privacy policy” → `privacy.html`]
+This page summarizes AGI's practice and will be completed once the full safeguarding policy is confirmed.
+Related
+- Media policy [link: “Media policy” → `media-policy.html`]
+- Parent responsibility [link: “Parent responsibility” → `parent-responsibility.html`]
+- Academic handbook [link: “Academic handbook” → `handbook.html`]
+- Privacy [link: “Privacy” → `privacy.html`]
+
+#### Section: Come and meet us.
+The best way to know AGI is to visit during the school day.
+→ **Book a visit** (`forms.html#visit`)
+→ **Contact** (`contact.html`)
+
+---
+
+### 4.60 `services-document-editing.html`
 
 - **Browser title:** Document editing in English – AGI Agadir
 - **Meta description:** Document editing in English by AGI in Agadir: applications, CVs, reports and academic work, edited by native-level teachers.
@@ -8407,7 +8511,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.58 `services-proctoring.html`
+### 4.61 `services-proctoring.html`
 
 - **Browser title:** Exam proctoring – American Group International, Agadir
 - **Meta description:** Exam proctoring at AGI in Agadir for distance learners: which exams, fees per exam hour, opening days and conditions.
@@ -8454,7 +8558,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.59 `supplies.html`
+### 4.62 `supplies.html`
 
 - **Browser title:** School supplies list – American Group International, Agadir
 - **Meta description:** AGI school supplies list for elementary (K3–8) and high school (grades 9–12).
@@ -8505,7 +8609,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.60 `teachers-careers.html`
+### 4.63 `teachers-careers.html`
 
 - **Browser title:** Teach with AGI – American Group International, Agadir
 - **Meta description:** Teach with AGI: online teachers database, learning pods and STEM educators workshops.
@@ -8567,7 +8671,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.61 `teachers-cite.html`
+### 4.64 `teachers-cite.html`
 
 - **Browser title:** C.I.T.E. / TESOL certification – AGI Agadir
 - **Meta description:** Anglia C.I.T.E. (TESOL) certification in Morocco: who it is for, English level needed, preparation, when and how to take it.
@@ -8577,7 +8681,7 @@ Home / Programs / C.I.T.E. [link: “Home” → `index.html`] [link: “Program
 Anglia's Certificate for International Teachers of English: recognition of your English and your teaching – for life.
 → **Ask about this program** (`forms.html#enquiry/programs`)
 → **WhatsApp us** (`https://wa.me/212688739393?text=Hello%20AGI%2C%20`)
-→ **Register on angliamorocco.org** (`https://angliamorocco.org/citem/`)
+→ **Register for C.I.T.E.** (`forms.html#enquiry/anglia`)
 
 #### Section: Elevate Your Teaching Career
 
@@ -8741,7 +8845,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.62 `teachers-usa-sponsorship.html`
+### 4.65 `teachers-usa-sponsorship.html`
 
 - **Browser title:** USA private-school teacher sponsorship – AGI Agadir
 - **Meta description:** USA private-school teacher certification sponsorship through AGI: requirements, process, 30 days, US$60.
@@ -8858,7 +8962,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.63 `volunteer-hours.html`
+### 4.66 `volunteer-hours.html`
 
 - **Browser title:** Volunteer hours – American Group International, Agadir
 - **Meta description:** AGI in-service volunteer hours for high school: 40 hours, ten per year.
@@ -8928,7 +9032,7 @@ Visit the school, or ask the office – we reply within one working day.
 
 ---
 
-### 4.64 `wellbeing-adhd-coaching.html`
+### 4.67 `wellbeing-adhd-coaching.html`
 
 - **Browser title:** ADHD holistic coaching – American Group International, Agadir
 - **Meta description:** ADHD holistic coaching with Julie Wilburn, accredited Holistic Therapeutic Coach (IPHM, ICAHP), in Agadir and online.
@@ -8984,7 +9088,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.65 `wellbeing-play-therapy.html`
+### 4.68 `wellbeing-play-therapy.html`
 
 - **Browser title:** Holistic play therapy – American Group International, Agadir
 - **Meta description:** Holistic play therapy at AGI school, Agadir: approach, benefits and sessions.
@@ -9025,7 +9129,7 @@ Tell us what you are looking for and we will help you choose.
 
 ---
 
-### 4.66 `wellbeing.html`
+### 4.69 `wellbeing.html`
 
 - **Browser title:** i-Heart therapeutic services – AGI Agadir
 - **Meta description:** i-Heart holistic therapeutic services and counseling at AGI: ADHD coaching and holistic play therapy.

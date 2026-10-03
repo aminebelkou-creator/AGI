@@ -41,53 +41,46 @@
 
 ## 3. Structure and global elements
 
-### 3.1 Sitemap
+### 3.1 Sitemap (one website: AGI + Anglia Morocco; 151 pages)
 
 ```
-Home (index.html)
-├── About (about.html)
-│   ├── Our story (our-story.html)              ← long-form brand story; links to the parents page
-│   └── A letter from our founder (founder-letter.html)
-├── Programs (programs.html)
-│   ├── K–12 school (k12.html)
-│   ├── Special education (special-education.html)
-│   ├── Adult high school diploma (adult-diploma.html)
-│   ├── English & Anglia exams (english-anglia.html)
-│   ├── For teachers – C.I.T.E. (teachers.html)
-│   ├── Professional & medical English (professional.html)
-│   └── University pathways (pathways.html)
-├── Admissions (admissions.html)  – incl. tuition & fees (#fees)
-│   └── Policies (policies.html)
-├── For parents (parents.html)               ← THE parent landing page (target of the home popup)
-├── Student life (student-life.html)
-├── Journal (journal.html)
-│   ├── journal/<slug>.html  (59 articles from the old site)
-│   └── journal-ccgi-partnership.html (featured article)
-├── Partnerships & franchise (partnerships.html)
-│   └── Partners & investors (investors.html)
-├── Forms & requests (forms.html)  – 10 forms, deep-linkable (#enrollment, #visit, #absence, #consent, #feedback, #payment, #tutor-request, #tutor-schedule, #documents, #enquiry)
-├── Contact (contact.html)
-│   └── AGI Connect – preview (connect.html)
-├── Privacy (privacy.html)
-└── Terms (terms.html)
+Home (index.html) · For parents (parents.html) · Our story · Founder's letter
+About ─ about · investors (partners & investors) · agi-usa (American Group USA LLC)
+School ─ k12 · special-education · student-life · resources (+ nursery rhymes, McGuffey)
+Admissions ─ admissions · fees · calendar · faq · policies
+           └ full policies: handbook · attendance · promotion-retention · placement-policy · parent-responsibility
+                            refunds-complaints · media-policy · homework · volunteer-hours · supplies · safeguarding
+Programs ─ programs (hub) · adult-diploma · pathways · professional (business & medical English)
+         · teachers (+ teachers-cite, teachers-usa-sponsorship, teachers-careers)
+         · programs-independent-studies · programs-learning-pods · services-document-editing · services-proctoring
+         · wellbeing (+ ADHD coaching, play therapy) · online-tutoring
+Anglia Morocco (Anglia brand colors + logo) ─ anglia (hub) · anglia-exams (10-step ladder + Business English)
+         · anglia-exam-dates (filterable 2026 sessions) · anglia-classes (price cards) · anglia-practice (5 categories, packs per level)
+         · anglia-books (Step To series, audio, order) · anglia-cefr · anglia-special-arrangements · anglia-placement-test
+         · anglia-network (become a centre, 12 regions) · anglia-faq · anglia-about · english-anglia · partnerships
+Journal (journal.html, generated from 66 articles in journal/) · journal-ccgi-partnership
+Forms & requests (forms.html, 11 forms) · Contact · AGI Connect (preview)
+Legal ─ privacy · terms · cookies · accessibility · 404 (page not found)
+Languages ─ fr/ (index, parents, fees, contact) · ar/ (index, parents, fees, contact, anglia hub + 7 pages from AGI's own Arabic texts)
 ```
+
+angliamorocco.org is **not** a separate site any more: it redirects page by page into the Anglia Morocco section (`docs/angliamorocco-redirects.htaccess`, 33 redirects). Its email addresses stay active.
 
 ### 3.2 Header navigation (identical on every page)
 
-- Brand: "AGI" + "American Group International School · Agadir" → home.
-- Main menu: **About** · **Programs** (submenu: K–12 school – *American curriculum, kindergarten to grade 12*; Special education (SEN) – *IEPs, small groups, therapy support*; Adult high school diploma – *U.S. diploma for learners 16 and over*; English & Anglia exams – *Anglia Morocco headquarters, classes and exams*; For teachers (C.I.T.E.) – *Lifelong certificate, training, 30-day internship*; Professional & medical English – *Business and medical English, proctoring, coaching*; University pathways – *Admissions agent for universities abroad*; All programs) · **Admissions** · **Student life** · **Journal** · **Partnerships** · **Contact**.
-- Utility link: **Forms** → forms.html. Primary action: **Apply** → forms.html#enrollment.
-- The current page/section is indicated in the menu. On small screens the menu collapses into an openable panel listing all items (programs as sub-items) plus "Forms & requests" and Apply.
-- A "Skip to content" link is the first focusable element.
+- Brand: AGI seal + "AGI" + "American Group International School · Agadir" → home.
+- Main menu: **About** · **Programs** ▾ (K–12 school · Special education · Adult high school diploma · English & Anglia exams · For teachers (C.I.T.E.) · Professional & medical English · University pathways · Wellbeing (i-Heart) · Online tutoring · All programs) · **Admissions** · **Student life** · **Journal** · **Anglia Morocco** · **Contact**.
+- Language switch **EN · FR · ع** (links to the same page in that language when it exists, otherwise to that language's home). Utility link **Forms**; primary action **Apply** → forms.html#enrollment.
+- The current section is highlighted. On small screens the menu collapses into a panel. "Skip to content" is the first focusable element.
 
 ### 3.3 Footer (identical on every page)
 
 - About line: *American Group International – the first American school in Agadir, since 2013, and headquarters of Anglia Examinations in Morocco.*
-- **Programs:** the seven programs.
-- **School:** About AGI · Our story · For parents · Admissions · Tuition & fees · Policies · Student life · Journal.
-- **Services:** Forms & requests · Report an absence · Request a document · Book a visit · Partnerships & franchise · Partners & investors · AGI Connect (preview) · Anglia Morocco ↗ (angliamorocco.org, new tab).
-- **Contact:** Number 20, Rue Baalabek, Hay Nahda, Agadir 80000, Morocco · +212 528 843 349 · +212 618 639 911 (Arabic) · WhatsApp +212 688 739 393 · americanecoleagadir@gmail.com.
-- Bottom line: © 2026 American Group International · Agadir, Morocco · Privacy · Terms · Contact.
+- **Programs:** the program list + Independent course studies · Learning pods · Anglia Morocco.
+- **School:** About AGI · Our story · For parents · Admissions · Tuition & fees · Calendar 2026–27 · Policies · Academic handbook · Questions & answers · Student life · Resources for families · Journal.
+- **Services:** Forms & requests · Report an absence · Request a document · Book a visit · Wellbeing (i-Heart) · Online tutoring · Exam proctoring · Document editing · Partnerships & franchise · Partners & investors · AGI Connect (preview).
+- **Contact:** Number 20, Rue Baalabek, Hay Nahda, Agadir 80000 · +212 528 843 349 · +212 618 639 911 (Arabic) · WhatsApp +212 688 739 393 · americanecoleagadir@gmail.com.
+- Bottom line: © American Group International · Privacy · Terms · Cookies · Accessibility · Safeguarding · Contact.
 
 ### 3.4 Global elements and behaviors
 
@@ -114,6 +107,14 @@ Home (index.html)
 8. **Placeholders:** photos, sample testimonials, team names and unconfirmed facts must remain visibly identifiable and machine-detectable until replaced.
 9. **Multilingual-ready:** text must not be embedded in images; layouts must work right-to-left for a future Arabic version.
 
+10. **Anglia section branding (approved by Anglia):** AGI layout and typography everywhere; on Anglia pages the accents switch to Anglia blues (`#03379F` headings/buttons/dark sections, `#0082D0` labels, `#000F23` deep) and the Anglia Morocco logo (`assets/web/anglia-anglia-moroccool3.webp`) appears in the hub hero, the "Why Anglia" strip and as a badge on every Anglia page.
+11. **Privacy holds:** journal posts listed in `v2/_build/privacy.json` show "Photo hidden until parental consent is confirmed" instead of photos until the page is in `approved`; a 2024 parent letter naming a child is hidden.
+12. **Archived posts:** journal posts older than 12 months open with "Archived post … Fees, dates and programs may have changed – see the current tuition & fees and calendar."
+13. **Full source texts:** where a page has a summary, AGI's original text follows in a collapsible "Full text as published by AGI" section (nothing from the old sites is lost).
+14. **404 page** with absolute links and noindex; **Apache:** `ErrorDocument 404 /404.html`.
+15. **Redirects:** 147 from the old AGI WordPress addresses (`v2/.htaccess`, `v2/_build/redirects.csv`) + 33 from angliamorocco.org (`docs/angliamorocco-redirects.htaccess`).
+16. **Checks:** `python _build/check_all.py` (coverage gate, internal + external links, page audit, site QA, content quality, fact conflicts, privacy, mobile, launch readiness) must pass its blocking checks; GitHub Actions runs `--ci` on every push.
+
 ### 3.6 Content rules
 
 - **Verified facts only.** Unconfirmed items stay marked `[TO CONFIRM]`. Do not add: expansion to other cities, Mauritania or the USA; "exclusive" franchise; "Director of Global Operations" – until confirmed.
@@ -121,7 +122,7 @@ Home (index.html)
 - **Placement promise (quote exactly):** "Grade placement is not lowered due to missing documents, language gaps, or academic gaps." – AGI Provisional Placement Policy.
 - **No invented testimonials** on a live site; real ones need written consent. No financial claims on the investors page without documents.
 - **Tone:** warm, direct, parent-first; US English (enrollment, behavior, center, program).
-- **angliamorocco.org** is the official Anglia Morocco site: link to it (exam dates, books, practice, C.I.T.E. registration, network) rather than duplicating it.
+- **One website:** all Anglia Morocco content lives in the Anglia section; never link to angliamorocco.org (it redirects here). Anglia mailboxes (j.wilburn@ / a.lam@angliamorocco.org) stay in use.
 
 ### 3.7 Content status
 

@@ -60,7 +60,7 @@ You are helping **Julie A. Wilburn** (Founder · CEO & Educational Director, Ame
 
 ### 3.3 Privacy – needs Julie's decision
 
-- **32 journal posts** show *"Photo hidden until parental consent is confirmed"*. For each post, ask whether written consent exists for every child in its photos. Only then add the page to `approved` in `v2/_build/privacy.json`:
+- **36 journal posts** show *"Photo hidden until parental consent is confirmed"*. For each post, ask whether written consent exists for every child in its photos. Only then add the page to `approved` in `v2/_build/privacy.json`:
   - `journal/a-day-at-the-seamstress.html`
   - `journal/admissions-2020-2021.html`
   - `journal/american-national-spelling-bee-in-morocco.html`
@@ -74,9 +74,12 @@ You are helping **Julie A. Wilburn** (Founder · CEO & Educational Director, Ame
   - `journal/congrats-to-said-el-ouahbi-awarded-his-masters-of-business-administration-and-management.html`
   - `journal/congratulations-graduates-2021.html`
   - `journal/decision-making-by-coaches-and-athletes-in-sport.html`
+  - `journal/educational-psychology-course.html`
   - `journal/energia-structure-of-intellect.html`
+  - `journal/english-math-resources.html`
   - `journal/first-adult-high-school-graduate.html`
   - `journal/first-day-of-school-is-september-5-2018.html`
+  - `journal/free-dyslexia-resource-test.html`
   - `journal/graduation-2025.html`
   - `journal/graduation-set-projected-june-11th-2021.html`
   - `journal/have-a-great-summer.html`
@@ -84,6 +87,7 @@ You are helping **Julie A. Wilburn** (Founder · CEO & Educational Director, Ame
   - `journal/inscriptions-2021-2022.html`
   - `journal/lane-community-college-international-programs.html`
   - `journal/last-day-of-school-june-17-2020.html`
+  - `journal/leverage-edu-x-agi-join-forces-in-the-south-of-morocco.html`
   - `journal/online-classes-for-language-students-starting-in-june-2020.html`
   - `journal/partnership-through-out-morocco.html`
   - `journal/proctoring-services-available.html`
@@ -93,9 +97,12 @@ You are helping **Julie A. Wilburn** (Founder · CEO & Educational Director, Ame
   - `journal/summer-school.html`
   - `journal/teachers-training-program-in-english.html`
   - `journal/work-experience-degree-celebration.html`
-- **14 possible names** were found near words like student/son/daughter/birthday (most are ordinary words). Ask Julie to confirm none is a child's name:
+- **18 possible names** were found near words like student/son/daughter/birthday (most are ordinary words). Ask Julie to confirm none is a child's name:
   - `anglia-cefr.html`: Typical
   - `handbook.html`: Hemlines
+  - `journal-ccgi-partnership.html`: Enrols
+  - `journal-ccgi-partnership.html`: Strategic
+  - `journal.html`: Originally
   - `pathways.html`: Coventry
   - `placement-policy.html`: Mandatory Assessment
   - `programs-independent-studies.html`: Exhibits
@@ -104,6 +111,7 @@ You are helping **Julie A. Wilburn** (Founder · CEO & Educational Director, Ame
   - `resources-nursery-rhymes.html`: Moses Supposes
   - `resources-nursery-rhymes.html`: Nursery
   - `journal/4292-2.html`: Newer
+  - `journal/educational-psychology-course.html`: Lecturer
   - `journal/first-adult-high-school-graduate.html`: Younes
   - `journal/graduation-2025.html`: Younes
   - `journal/graduation-2025.html`: Younes Nait
@@ -254,7 +262,7 @@ You are helping **Julie A. Wilburn** (Founder · CEO & Educational Director, Ame
 - Step To books: prices and delivery terms for the order form confirmations
 - Keep j.wilburn@ / a.lam@angliamorocco.org mailboxes active after the redirect
 
-### 3.5 Editorial suggestions (29) – AGI's own texts, Julie decides
+### 3.5 Editorial suggestions (31) – AGI's own texts, Julie decides
 
 Long paragraphs, repetitions and wording in imported texts are listed in `docs/editorial-review.md`. Offer rewrites; apply only what Julie approves.
 
