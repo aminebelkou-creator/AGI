@@ -16,6 +16,8 @@ PROGRAMS = [
     ("teachers.html", "For teachers (C.I.T.E.)", "Lifelong certificate, training, 30-day internship"),
     ("professional.html", "Professional & medical English", "Business and medical English, proctoring, coaching"),
     ("pathways.html", "University pathways", "Admissions agent for universities abroad"),
+    ("wellbeing.html", "Wellbeing (i-Heart)", "ADHD coaching, play therapy, counseling"),
+    ("online-tutoring.html", "Online tutoring", "One-to-one lessons online, prices"),
 ]
 NAV = [("about.html", "About"), ("PROGRAMS", "Programs"), ("admissions.html", "Admissions"),
        ("student-life.html", "Student life"), ("journal.html", "Journal"),

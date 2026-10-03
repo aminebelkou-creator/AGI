@@ -133,6 +133,7 @@ def links_in(n):
 ORDER = ["index.html", "our-story.html", "parents.html", "founder-letter.html", "about.html", "programs.html", "k12.html", "special-education.html",
          "adult-diploma.html", "english-anglia.html", "teachers.html", "professional.html", "pathways.html", "admissions.html", "policies.html",
          "student-life.html", "journal.html", "journal-ccgi-partnership.html", "partnerships.html", "investors.html", "contact.html", "connect.html", "privacy.html", "terms.html"]
+ORDER += sorted(f for f in os.listdir(V2) if f.endswith(".html") and f not in ORDER and not f.startswith("_"))
 pages_md = []
 for i, f in enumerate(ORDER, 1):
     root = parse(os.path.join(V2, f))

@@ -14,6 +14,33 @@ def _is_heading(l):
     if l.startswith("#"): return True
     t = l.strip(); letters = _re.sub(r"[^A-Za-z]", "", t)
     return 3 < len(t) < 70 and len(letters) > 3 and t.upper() == t and not _re.search(r"\d{3,}", t)
+_SMALL = {"a", "an", "and", "the", "of", "to", "in", "for", "on", "at", "by", "or", "vs", "with", "is", "it", "your", "our", "a"}
+def _is_subhead(l, lines, i):
+    t = l.strip()
+    if not (3 <= len(t) <= 70) or t[0].islower() or _BUL.match(t) or _NUM.match(t) or t.startswith("#"): return False
+    if t[-1] in ".,;:!" or _re.search(r"\d{2,}|@|http|MAD|\$", t): return False
+    words = [w for w in _re.findall(r"[A-Za-z'’]+", t)]
+    if len(words) < 2: return False
+    caps = sum(1 for w in words if w[0].isupper() or w.lower() in _SMALL)
+    nxt = next((x.strip() for x in lines[i + 1:] if x.strip()), "")
+    return caps / len(words) >= 0.8 and len(nxt) > 80
+TABLES = [["Grade Level", "Session Length", "Sessions Per Week"]]   # known tables flattened in the old pages
+def _tableize(lines):
+    L = [x.strip() for x in lines]; out = []; i = 0
+    while i < len(L):
+        hit = next((h for h in TABLES if L[i:i + len(h)] == h), None)
+        if not hit: out.append(lines[i]); i += 1; continue
+        n = len(hit); j = i + n; rows = []
+        while j + n <= len(L) and all(len(c) < 40 and not _is_heading(c) for c in L[j:j + n]) and not any(c in ("Traditional Schooling vs Homeschooling",) for c in L[j:j + n]):
+            rows.append(L[j:j + n]); j += n
+            if len(rows) >= 12: break
+        part = []
+        while j < len(L) and len(part) < n - 1 and L[j] and len(L[j]) < 40 and not _is_heading(L[j]) and not _is_subhead(L[j], L, j): part.append(L[j]); j += 1
+        if len(part) >= 2: rows.append(part + ["—"] * (n - len(part)))
+        elif part: j -= len(part)
+        out.append("<table><thead><tr>" + "".join(f"<th>{_html.escape(h)}</th>" for h in hit) + "</tr></thead><tbody>" + "".join("<tr>" + "".join(f"<td>{_html.escape(c)}</td>" for c in r) + "</tr>" for r in rows) + "</tbody></table>")
+        i = j
+    return out
 def render(text, skip=(), privacy=False, start=None, stop=None, toc=False):
     """Turn crawled text into clean HTML: headings, lists, paragraphs. Keeps every line (except skip/privacy)."""
     lines = text.split("\n")
@@ -21,10 +48,13 @@ def render(text, skip=(), privacy=False, start=None, stop=None, toc=False):
     if start: lines = lines[next((i for i, l in enumerate(lines) if start in l), 0):]
     if stop: lines = lines[:next((i for i, l in enumerate(lines) if stop in l), len(lines))]
     out, lst, heads = [], None, []
+    seen_h2 = [False]
     def close():
         nonlocal lst
         if lst: out.append(f"</{lst}>"); lst = None
-    for l in lines:
+    lines = _tableize(lines)
+    for l_i, l in enumerate(lines):
+        if l.startswith("<table"): close(); out.append('<div class="table-wrap">' + l + "</div>"); continue
         l = l.strip()
         if not l or any(s in l for s in skip): continue
         if privacy and (_re.search(r"[\w.+-]+@[\w-]+\.\w+", l) and "americanecoleagadir" not in l or _re.search(r"(?:\+?212|0)[\s.-]?[5-7](?:[\s.-]?\d){8}", l)): continue
@@ -32,8 +62,11 @@ def render(text, skip=(), privacy=False, start=None, stop=None, toc=False):
             close(); t = l.lstrip("#").strip(); lvl = 2 if (l.startswith("#") and len(l) - len(l.lstrip("#")) <= 2) or not l.startswith("#") else 3
             if len(t) > 90: out.append(f"<p><strong>{_html.escape(t)}</strong></p>"); continue
             hid = _re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")[:50]
-            if lvl == 2: heads.append((hid, t.title() if t.isupper() else t))
+            if lvl == 3 and not seen_h2[0]: lvl = 2
+            if lvl == 2: seen_h2[0] = True; heads.append((hid, t.title() if t.isupper() else t))
             out.append(f'<h{lvl} id="{hid}">{_html.escape(t.title() if t.isupper() else t)}</h{lvl}>'); continue
+        if _is_subhead(l, lines, l_i):
+            close(); tg = "h3" if seen_h2[0] else "h2"; seen_h2[0] = True; out.append(f"<{tg}>{_html.escape(l)}</{tg}>"); continue
         m = _BUL.match(l); n = _NUM.match(l)
         if m or n:
             kind = "ul" if m else "ol"
@@ -88,7 +121,7 @@ policy_page("refunds-complaints.html", "Refunds & complaints", "One procedure fo
 policy_page("media-policy.html", "Media", "How photos, video and live streams of school events are used – always with consent and safeguarding first.",
             ["media-policy"], "AGI media policy: photos, video and live streams, consent for students under 18.")
 policy_page("homework.html", "Homework", "How much homework to expect at each grade, and how families can help.",
-            ["homework-guidelines"], "AGI homework guidelines by grade, from kindergarten to grade 12.")
+            ["homework-guidelines"], "AGI homework guidelines: how many minutes of homework to expect each night, by grade, from kindergarten to grade 12.")
 policy_page("volunteer-hours.html", "Volunteer hours", "Forty hours of service before graduation: what counts and how hours are recorded.",
             ["volunteer-hours"], "AGI in-service volunteer hours for high school: 40 hours, ten per year.")
 policy_page("supplies.html", "School supplies list", "What to bring on the first day, for elementary and high school.",
@@ -114,7 +147,7 @@ _f = FACTS["fees"]; _ins = _f["inscription"]["value"]
 _ins_rows = "".join(f"<tr><td>{g}</td><td><b>{v}</b></td></tr>" for g, v in _ins.items())
 _fee_src = SRC("admission-fee")["text"]
 page("fees.html", "Tuition & fees – American Group International, Agadir",
- "AGI tuition and fees 2026–27: annual inscription by grade (6,500–11,000 MAD), tuition 2,600 MAD a month, all-inclusive package, high school options, Anglia class prices.",
+ "AGI fees 2026–27: inscription by grade (6,500–11,000 MAD), tuition 2,600 MAD a month, all-inclusive package, high school options, class prices.",
  hero('<a href="admissions.html">Admissions</a> / <span>Tuition &amp; fees</span>', "Tuition &amp; fees.",
       "Clear and simple: one annual inscription, ten monthly payments, and the essentials included. Fees are the same for every family – they are already set as low as possible.",
       APPLY + '<a class="btn btn-ghost" href="calendar.html">Calendar 2026–27</a>') + f"""
@@ -163,6 +196,21 @@ page("fees.html", "Tuition & fees – American Group International, Agadir",
 """ + cta("Questions about fees?", "The office will explain every option for your family.", GOLD_APPLY + '<a class="btn btn-light" href="forms.html#enquiry/programs">Ask a question</a>'), DOC_CSS)
 
 # ------------------------------------------------------------------ CALENDAR
+_MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December"
+def exam_table(text):
+    rows, month, levels = [], None, []
+    for l in text.split("\n"):
+        t = l.strip().replace("▶", "").replace("\u25b6", "").strip()
+        if not t or t.startswith("Anglia Exam Dates") or "EXAM DATES" in t or t.startswith("Book order"): continue
+        if _re.fullmatch(f"({_MONTHS})", t): month, levels = t, []; continue
+        if t.startswith("#"): levels.append(t.lstrip("# ").strip()); continue
+        if _re.search(r"(Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day|^—$", t) and month:
+            rows.append((month, ", ".join(levels) or "All levels", t)); levels = []; continue
+        if t.startswith("*"): rows.append(("", "", t.lstrip("* "))); continue
+    if not rows: return render(text)
+    return ('<div class="table-wrap"><table><thead><tr><th>Month</th><th>Levels / session</th><th>Exam days</th></tr></thead><tbody>'
+            + "".join(f"<tr><td>{_html.escape(m)}</td><td>{_html.escape(lv)}</td><td>{_html.escape(d)}</td></tr>" for m, lv, d in rows) + "</tbody></table></div>")
+
 def cal_render(text, start, stop=None):
     lines = text.split("\n"); i = next((k for k, l in enumerate(lines) if start in l), 0)
     j = next((k for k, l in enumerate(lines) if stop and stop in l and k > i), len(lines)); out = []; rows = []
@@ -193,7 +241,7 @@ page("calendar.html", "Calendar 2026–27 – American Group International, Agad
   <p>{PH_TXT("saturday-2026-27", "The 2026–27 Saturday schedule will be published here.")} The 2025–26 schedule is below for reference.</p>
   <details class="archive"><summary>Saturday classes 2025–26</summary>{render(SRC("saturday-classes-yearly-schedule")["text"])}</details>
   <h2 id="anglia-exams">Anglia exam sessions 2026</h2>
-  {render(SRC("anglia-exam-dates")["text"])}
+  {exam_table(SRC("anglia-exam-dates")["text"])}
   <p><a class="link" href="english-anglia.html">English &amp; Anglia exams</a></p>
   <details class="archive"><summary>Archive: school calendar 2025–26</summary>{render(_cal, stop="AMERICAN GROUP INTERNATIONAL")}</details>
 </div>
@@ -414,7 +462,7 @@ page("anglia.html", "Anglia Morocco – English exams and classes | AGI Agadir",
  "Anglia Morocco headquarters at AGI, Agadir: Anglia English exams from First Step to Masters, exam dates, practice papers, classes and a network across 12 regions.",
  hero("<span>Anglia Morocco</span>", "Anglia Morocco.", "Official English exams from England, from a child's first words to Masters (C2) – with classes, practice papers and centres across Morocco's twelve regions.",
       '<a class="btn btn-primary" href="forms.html#enquiry/anglia">Book a free level test</a><a class="btn btn-ghost" href="calendar.html#anglia-exams">Exam dates 2026</a>')
- + f'''<section class="section bg-white"><div class="wrap"><div class="cards">{_cards}</div></div></section>
+ + f'''<section class="section bg-white"><div class="wrap"><h2 class="visually-hidden">Anglia Morocco pages</h2><div class="cards">{_cards}</div></div></section>
 <section class="section"><div class="wrap docwrap"><div class="doc">{render(_home["text"], privacy=True)}
 <h2>Club Anglia</h2><p>{PH_TXT("club-anglia", "Coming soon.")}</p>
 <p><a class="link" href="https://angliamorocco.org/" target="_blank" rel="noopener">angliamorocco.org</a></p></div>
@@ -462,14 +510,14 @@ section_page("programs-learning-pods.html", "Adults & professionals", "Learning 
 section_page("services-document-editing.html", "Adults & professionals", "Document editing in English",
  "Professional editing of documents in English – applications, CVs, reports and academic work.",
  "<p style=\"margin-top:0\">Tell us about your document and deadline; the office will confirm the price and turnaround. " + PH_TXT("document-editing-details", "Prices and process to be confirmed.") + "</p>",
- "Document editing in English by AGI, Agadir.", crumb="Document editing")
+ "Document editing in English by AGI in Agadir: applications, CVs, reports and academic work, edited by native-level teachers.", crumb="Document editing")
 section_page("services-proctoring.html", "Adults & professionals", "Exam proctoring",
  "Paper and online exams invigilated at AGI for distance learners of North American and British universities, companies and certification bodies.",
  "<p style=\"margin-top:0\"><b>Monday to Thursday, 9:00–17:00.</b> A 200 MAD (15 EUR) administration fee plus 200 MAD (15 EUR) per exam hour.</p>",
- "Exam proctoring at AGI Agadir: exams, fees per exam and conditions.", crumb="Proctoring")
+ "Exam proctoring at AGI in Agadir for distance learners: which exams, fees per exam hour, opening days and conditions.", crumb="Proctoring")
 section_page("wellbeing.html", "Wellbeing (i-Heart)", "i-Heart therapeutic services",
  "Holistic support for children, teens and adults – coaching, therapeutic play and counseling, alongside school.",
- '<div class="cards" style="--cols:2;margin-bottom:28px"><a class="card" href="wellbeing-adhd-coaching.html"><h3>ADHD holistic coaching</h3><p>Focus, organization and time management for children and adults.</p><span class="more">Learn more</span></a><a class="card" href="wellbeing-play-therapy.html"><h3>Holistic play therapy</h3><p>Guided therapeutic play for emotional, social and behavioral development.</p><span class="more">Learn more</span></a></div>',
+ '<h2 style="margin-top:0">Our services</h2><div class="cards" style="--cols:2;margin-bottom:28px"><a class="card" href="wellbeing-adhd-coaching.html"><h3>ADHD holistic coaching</h3><p>Focus, organization and time management for children and adults.</p><span class="more">Learn more</span></a><a class="card" href="wellbeing-play-therapy.html"><h3>Holistic play therapy</h3><p>Guided therapeutic play for emotional, social and behavioral development.</p><span class="more">Learn more</span></a></div>',
  "i-Heart holistic therapeutic services and counseling at AGI: ADHD coaching and holistic play therapy.", crumb="Wellbeing")
 section_page("wellbeing-adhd-coaching.html", "Wellbeing (i-Heart)", "ADHD holistic coaching",
  "One-to-one coaching for children and adults on focus, organization and time management – in Agadir and online.", "",
@@ -515,7 +563,7 @@ def resource_page(name, title, lede, desc, intro=""):
            f'<aside><p class="kicker">Resources</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px">{links}<li><a href="anglia-practice.html">Anglia practice papers</a></li></ul></aside></div></section>', DOC_CSS)
 resource_page("resources.html", "Resources for families", "Free English learning helps for home: grammar self-helps, reading, rhymes and math resources.",
  "Free English resources from AGI: grammar self-helps, nursery rhymes, McGuffey readers and sight words, math resources.",
- '<div class="cards" style="--cols:2;margin-bottom:28px"><a class="card" href="resources-nursery-rhymes.html"><h3>Nursery rhymes for Pre-K</h3><span class="more">Open</span></a><a class="card" href="resources-mcguffey.html"><h3>McGuffey readers &amp; sight words</h3><span class="more">Open</span></a></div>')
+ '<h2 style="margin-top:0">Resources</h2><div class="cards" style="--cols:2;margin-bottom:28px"><a class="card" href="resources-nursery-rhymes.html"><h3>Nursery rhymes for Pre-K</h3><span class="more">Open</span></a><a class="card" href="resources-mcguffey.html"><h3>McGuffey readers &amp; sight words</h3><span class="more">Open</span></a></div>')
 resource_page("resources-nursery-rhymes.html", "Nursery rhymes for Pre-K", "Traditional English rhymes to read and sing with young children.",
  "Traditional English nursery rhymes for pre-kindergarten children – read and sing at home.")
 resource_page("resources-mcguffey.html", "McGuffey readers &amp; sight words", "Classic McGuffey reading lessons and sight words for reading and spelling practice at home.",
