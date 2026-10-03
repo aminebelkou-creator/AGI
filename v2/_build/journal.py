@@ -97,3 +97,44 @@ for r in MAPROWS:
            .replace("{{NEWER}}", "<span></span>").replace("{{OLDER}}", "<span></span>"))
     open(os.path.join(V2, d), "w", encoding="utf-8", newline="").write(doc); extra += 1
 print(f"crawl-only posts generated: {extra}")
+
+# ---------------- LANGUAGE MARKUP: bilingual posts keep their French/Arabic paragraphs, marked with lang ----------------
+_FRW = set("le la les des est et pour avec une un du dans sur que qui vous nous sont aux au ce cette ces leur leurs pas plus être été par".split())
+_ENW = set("the and for with is are to of in on that this you we our your be was were by not from".split())
+def _lang_of(t):
+    if len(re.findall(r"[\u0600-\u06ff]", t)) >= 8: return "ar"
+    w = re.findall(r"[a-zà-ÿ']+", t.lower()); fr = sum(x in _FRW for x in w); en = sum(x in _ENW for x in w)
+    return "fr" if len(w) >= 6 and fr >= 4 and fr > en * 1.5 else None
+_n = 0
+for _f in os.listdir(os.path.join(V2, "journal")):
+    _p = os.path.join(V2, "journal", _f); _t = open(_p, encoding="utf-8").read()
+    def _mark(m):
+        global _n
+        lang = _lang_of(re.sub(r"<[^>]+>", " ", m.group(2)))
+        if not lang: return m.group(0)
+        _n += 1; return f'<{m.group(1)} lang="{lang}"' + (' dir="rtl"' if lang == "ar" else "") + f'>{m.group(2)}</{m.group(1)}>'
+    _new = re.sub(r"<(p|li|h2|h3)>(.*?)</\1>", _mark, _t, flags=re.S)
+    if _new != _t: open(_p, "w", encoding="utf-8", newline="").write(_new)
+print(f"journal: {_n} French/Arabic paragraphs marked with lang")
+
+# ---------------- JOURNAL CLEANUP: video codes, shortcodes, hashtag lines, raw links, duplicates ----------------
+def _clean_article(t):
+    head, sep, body = t.partition("<main")
+    if not sep: return t
+    body = re.sub(r'\[video[^\]]*?(?:mp4|src)="([^"]+)"[^\]]*\](?:\s*\[/video\])?', lambda m: f'<a class="link" href="{m.group(1).replace("http://", "https://")}" target="_blank" rel="noopener">Watch the video</a>', body)
+    body = re.sub(r"\[/?(?:caption|gallery|embed|contact-form-7|video)[^\]]*\]", "", body)
+    body = re.sub(r"<p>(?:\s*#\w+[\s,.]*){2,}</p>", "", body)                              # paragraphs of hashtags only
+    body = re.sub(r"(<p>[^<]*?)((?:\s*#\w+){3,}\s*)(</p>)", r"\1\3", body)                  # trailing hashtag runs
+    body = re.sub(r'(?<![="\'>])(https?://[^\s<"]+)', lambda m: f'<a href="{m.group(1)}" target="_blank" rel="noopener">{re.sub(r"^https?://(www\.)?", "", m.group(1)).split("/")[0]}</a>', body)
+    seen = set()
+    def _dedupe(m):
+        k = re.sub(r"\W+", " ", re.sub(r"<[^>]+>", " ", m.group(0)).lower()).strip()
+        if len(k) > 40 and k in seen: return ""
+        seen.add(k); return m.group(0)
+    body = re.sub(r"<p\b[^>]*>.*?</p>", _dedupe, body, flags=re.S)
+    return head + sep + body
+_c = 0
+for _f in os.listdir(os.path.join(V2, "journal")):
+    _p = os.path.join(V2, "journal", _f); _t = open(_p, encoding="utf-8").read(); _n2 = _clean_article(_t)
+    if _n2 != _t: open(_p, "w", encoding="utf-8", newline="").write(_n2); _c += 1
+print(f"journal cleanup: {_c} articles cleaned")

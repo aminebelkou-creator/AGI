@@ -8,6 +8,64 @@ def SRC(part):
     hit = next((p for u, p in _INV.items() if part in u), None)
     if hit is None: print(f'WARNING: source not found in inventory: {part}'); return {'text': '', 'url': '', 'title': part}
     return hit
+
+# ---------------- language detection + text cleanup (content quality) ----------------
+_FRW = set("le la les des est et pour avec une un du dans sur que qui vous nous sont aux au ce cette ces leur leurs pas plus être été par".split())
+_ENW = set("the and for with is are to of in on that this you we our your be was were by not from".split())
+def is_ar(t):
+    letters = len(_re.sub(r"\s", "", t)); ar = len(_re.findall(r"[\u0600-\u06ff]", t))
+    return ar >= 8 and ar >= 0.3 * max(letters, 1)
+def is_fr(t):
+    w = _re.findall(r"[a-zà-ÿ']+", t.lower())
+    if len(w) < 6: return False
+    fr = sum(x in _FRW for x in w); en = sum(x in _ENW for x in w)
+    return (fr >= 4 and fr > en * 1.5) or (len(_re.findall(r"[éèêàçù]", t)) >= 3 and fr >= 3 and fr > en)
+AGI_EMAIL = '<a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a>'
+def clean_line(l):
+    """Returns (kind, value): ('skip',None) | ('html', ready html) | ('text', cleaned text)."""
+    t = l.replace("u003cbru003e", " ").replace("u003cbr", " ").replace("u003e", "").replace("u003c", "")
+    t = _re.sub(r"\s+", " ", t).strip()
+    if not t: return ("skip", None)
+    if t.count("#") >= 2 and _re.fullmatch(r"[\w\s#.,!&-]*#\w+[\w\s#.,!&-]*", t) and len(_re.sub(r"#\w+", "", t).split()) <= 3: return ("skip", None)   # hashtag lines
+    v = _re.search(r'\[video[^\]]*?(?:mp4|src)="([^"]+)"[^\]]*\]', t)
+    if v: return ("html", f'<p><a class="link" href="{v.group(1).replace("http://", "https://")}" target="_blank" rel="noopener">Watch the video</a></p>')
+    t = t.replace("[email/contact info]", "\x00EMAIL\x00")
+    t = _re.sub(r"\[(?:contact-form-7|caption|/caption|gallery|embed|/embed)[^\]]*\]", "", t).strip()
+    if not t or _re.fullmatch(r"(?i)(click here|show the way|find your way by cli[c]?king here ?:?)", t): return ("skip", None)
+    return ("text", t)
+def linkify(esc):
+    esc = _re.sub(r"\[\s*([^\]]+?)\s*\]\((https?://[^)\s]+)\)", lambda m: f'<a href="{m.group(2)}" target="_blank" rel="noopener">{m.group(1)}</a>', esc)
+    esc = _re.sub(r'(?<!href=")(?<!">)(https?://[^\s<)]+)', lambda m: f'<a href="{m.group(1)}" target="_blank" rel="noopener">{_re.sub(r"^https?://(www\.)?", "", m.group(1)).split("/")[0]}</a>', esc)
+    return esc.replace("\x00EMAIL\x00", AGI_EMAIL)
+def _runs_to_lists(lines):
+    """5+ consecutive one-to-three-word lines (a list that lost its bullets) become a bulleted list."""
+    out, run = [], []
+    def flush():
+        if len(run) >= 5: out.extend("- " + x.strip() for x in run)
+        else: out.extend(run)
+        run.clear()
+    for l in lines:
+        t = l.strip()
+        if t and not t.startswith(("#", "-", "<")) and len(t.split()) <= 3 and not t.endswith((".", ":", "?")) and not _re.match(r"^\d{1,2}[.)]\s", t): run.append(l)
+        else: flush(); out.append(l)
+    flush(); return out
+FOREIGN = {"ar": {}, "fr": {}}
+def split_languages(page_html, name):
+    """Move Arabic/French blocks out of an English page (kept for ar/ and fr/), and drop repeated paragraphs."""
+    seen = set()
+    def repl(m):
+        txt = _re.sub(r"\s+", " ", _html.unescape(_re.sub(r"<[^>]+>", " ", m.group(0)))).strip()
+        lang = "ar" if is_ar(txt) else ("fr" if is_fr(txt) else None)
+        if lang: FOREIGN[lang].setdefault(name, []).append(m.group(0)); return ""
+        key = _re.sub(r"\W+", " ", txt.lower()).strip()
+        if len(key) > 40 and m.group(1) in ("p", "li"):
+            if key in seen: return ""
+            seen.add(key)
+        return m.group(0)
+    head, sep, rest = page_html.partition("<main")
+    if not sep: return page_html
+    return head + sep + _re.sub(r"<(p|li|h2|h3|dd|blockquote)\b(?![^>]*\blang=)[^>]*>.*?</\1>", repl, rest, flags=_re.S)
+
 _BUL = _re.compile(r"^\s*(?:[-•*·]|ÔÇó|\u2022)\s+")
 _NUM = _re.compile(r"^\s*(\d{1,2})[.)]\s+")
 def _is_heading(l):
@@ -52,11 +110,13 @@ def render(text, skip=(), privacy=False, start=None, stop=None, toc=False):
     def close():
         nonlocal lst
         if lst: out.append(f"</{lst}>"); lst = None
-    lines = _tableize(lines)
+    lines = _runs_to_lists(_tableize(lines))
     for l_i, l in enumerate(lines):
         if l.startswith("<table"): close(); out.append('<div class="table-wrap">' + l + "</div>"); continue
-        l = l.strip()
-        if not l or any(s in l for s in skip): continue
+        kind_, val_ = clean_line(l)
+        if kind_ == "skip" or any(s in l for s in skip): continue
+        if kind_ == "html": close(); out.append(val_); continue
+        l = val_
         if privacy and (_re.search(r"[\w.+-]+@[\w-]+\.\w+", l) and "americanecoleagadir" not in l or _re.search(r"(?:\+?212|0)[\s.-]?[5-7](?:[\s.-]?\d){8}", l)): continue
         if _is_heading(l):
             close(); t = l.lstrip("#").strip(); lvl = 2 if (l.startswith("#") and len(l) - len(l.lstrip("#")) <= 2) or not l.startswith("#") else 3
@@ -71,8 +131,8 @@ def render(text, skip=(), privacy=False, start=None, stop=None, toc=False):
         if m or n:
             kind = "ul" if m else "ol"
             if lst != kind: close(); out.append(f"<{kind}>"); lst = kind
-            out.append(f"<li>{_html.escape(l[(m or n).end():])}</li>"); continue
-        close(); out.append(f"<p>{_html.escape(l)}</p>")
+            out.append(f"<li>{linkify(_html.escape(l[(m or n).end():]))}</li>"); continue
+        close(); out.append(f"<p>{linkify(_html.escape(l))}</p>")
     close()
     body = "\n".join(out)
     if toc and len(heads) >= 4:
@@ -323,6 +383,7 @@ page("faq.html", "Questions & answers – American Group International, Agadir",
 # ------------------------------------------------------------------ static pages: full source texts (between markers, rebuilt every run)
 def inject_static(fname, key, inner):
     fp = os.path.join(V2, fname); t = open(fp, encoding="utf-8", newline="").read()
+    inner = split_languages('<main>' + inner, fname)[len('<main>'):]
     blk = f"<!--p1:{key}-->\n{inner}\n<!--/p1:{key}-->"
     t = _re.sub(r"<!--p1:%s-->.*?<!--/p1:%s-->\n?" % (key, key), "", t, flags=re.S)
     if "<style id=\"doc-css\">" not in t: t = t.replace("</head>", f'<style id="doc-css">{DOC_CSS}</style>\n</head>', 1)
@@ -601,3 +662,8 @@ _ff = os.path.join(V2, "forms.html"); _ft = open(_ff, encoding="utf-8", newline=
 if "Attestation for AGI clients" not in _ft:
     _ft = _ft.replace('"Attendance attestation", ', '"Attendance attestation", "Attestation for AGI clients", ', 1)
     open(_ff, "w", encoding="utf-8", newline="").write(_ft)
+
+# ================================================================== CONTENT QUALITY PASS (English pages)
+for _n in list(PAGES):
+    if not _n.startswith(("fr/", "ar/")): PAGES[_n] = split_languages(PAGES[_n], _n)
+print("foreign blocks moved: ar", {k: len(v) for k, v in FOREIGN["ar"].items()}, "| fr", {k: len(v) for k, v in FOREIGN["fr"].items()})

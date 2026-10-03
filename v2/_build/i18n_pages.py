@@ -236,3 +236,25 @@ tr_page("ar", "contact.html", "اتصل بنا – المجموعة الأمري
 <section class="section tight"><div class="wrap">{MAP}</div></section>
 <section class="section"><div class="wrap"><div class="section-head"><h2>الاستمارات</h2><p>الاستمارات متوفرة حالياً بالإنجليزية.</p></div>
 <div class="cards"><a class="card" href="forms.html#visit"><h3>احجزوا زيارة</h3></a><a class="card" href="forms.html#enrollment"><h3>سجّل الآن</h3></a><a class="card" href="forms.html#enquiry"><h3>اطرحوا سؤالاً</h3></a></div></div></section>""")
+
+# ================================================================== AGI's own translations, moved out of the English pages
+AR_TITLES = {"about.html": "من نحن", "anglia-classes.html": "دروس اللغة الإنجليزية", "promotion-retention.html": "سياسة الترقية والإعادة", "professional.html": "الإنجليزية للمهنيين",
+             "teachers-cite.html": "شهادة C.I.T.E. لأساتذة الإنجليزية", "special-education.html": "التربية الخاصة", "anglia-practice.html": "موارد التدريب لامتحانات أنجليا",
+             "k12.html": "مدرسة K–12", "admissions.html": "التسجيل", "anglia.html": "أنجليا المغرب", "attendance.html": "سياسة الحضور", "handbook.html": "الدليل الأكاديمي"}
+FR_TITLES = {"about.html": "À propos", "admissions.html": "Admissions", "adult-diploma.html": "Diplôme d'études secondaires pour adultes", "k12.html": "École K–12",
+             "anglia-classes.html": "Cours d'anglais", "professional.html": "Anglais professionnel"}
+_made = []
+for _lang, _blocks in FOREIGN.items():
+    for _name, _items in _blocks.items():
+        if _name.startswith("journal") or len(_items) < 2: continue
+        if f"{_lang}/{_name}" in PAGES: continue          # a hand-made translation already exists
+        _title = (AR_TITLES if _lang == "ar" else FR_TITLES).get(_name) or _re.sub(r"<[^>]+>", "", _items[0])[:60]
+        _note = ("النص الأصلي كما نشرته المجموعة الأمريكية الدولية. للاطلاع على التفاصيل الكاملة، راجعوا" if _lang == "ar" else "Texte original publié par American Group International. Pour tous les détails, voir")
+        _en = "النسخة الإنجليزية" if _lang == "ar" else "la version anglaise"
+        _body = "\n".join(_re.sub(r"<(p|li|h2|h3|dd|blockquote)\b", lambda m: f"<{m.group(1)}", b) for b in _items)
+        _body = _re.sub(r"(<li>.*?</li>\s*)+", lambda m: "<ul>" + m.group(0) + "</ul>", _body, flags=_re.S)
+        tr_page(_lang, _name, f"{_title} – AGI Agadir", _re.sub(r"<[^>]+>", " ", _items[0])[:150].strip(),
+                tr_hero("الرئيسية" if _lang == "ar" else "Accueil", _title, _title + ".", "")
+                + f'<section class="section bg-white"><div class="wrap"><div class="doc">{_body}<p class="source-note">{_note} <a href="{_name}">{_en}</a>.</p></div></div></section>', DOC_CSS)
+        _made.append(f"{_lang}/{_name}")
+print("translations built from AGI's own text:", _made)
