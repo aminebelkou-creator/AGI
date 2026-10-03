@@ -1,185 +1,182 @@
 ﻿site,language,kind,category,title,url,date,words,thin,text_coverage,fact_coverage,status,missing_facts_examples
-agi,en,page,about,About Us,https://www.americangroup-international.com/about-us/,,870,,0.66,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,about,Contact,https://www.americangroup-international.com/contact/,,417,,1.0,0.8,covered,email: groupinternationala@gmail.com
-agi,en,page,about,Our Vision,https://www.americangroup-international.com/our-vision/,,497,,0.65,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,admissions,Enrollment,https://www.americangroup-international.com/enrollment/,,743,,0.76,0.67,partial,email: groupinternationala@gmail.com | number: 3 months
-agi,en,page,admissions,Student Life,https://www.americangroup-international.com/admission-prossess/,,403,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,calendar,Academic School Calendar 2026-2027,https://www.americangroup-international.com/school-calandar/,,828,,1.0,0.55,partial,date: August 25 | date: December 22 | date: December 25 | date: February 20 | date: January 15 | date: January 20 | date: July 20 | date: June 15
-agi,en,page,calendar,Anglia Examinations Saturday Classes Yearly Schedule 2025-2026,https://www.americangroup-international.com/anglia-examinations-saturday-classes-yearly-schedule-2025-2026/,,633,,0.94,0.13,missing,"money: 500 DH | date: April 11, 2026 | date: April 18, 2026 | date: April 25, 2026 | date: April 4, 2026 | date: December 20, 2025 | date: December 27,
-2025 | date: December 6, 2025"
-agi,en,page,calendar,Last Day for Students- Other Important Dates!,https://www.americangroup-international.com/last-day-for-students-other-important-dates/,,404,,1.0,0.43,partial,"date: July 20 | date: June 15, 2022 | date: June 4, 2022 | email: groupinternationala@gmail.com"
-agi,en,page,exam,Anglia Examinations Accreditation with AIM,https://www.americangroup-international.com/anglia-examinations-accreditation-with-aim/,,909,,0.89,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,exam,Anglia Examinations of England,https://www.americangroup-international.com/anglia/,,1105,,0.91,0.71,covered,date: September 20 | email: groupinternationala@gmail.com
-agi,en,page,exam,AngliaMorocco English Test,https://www.americangroup-international.com/english-practice-test/,,2368,,0.5,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,exam,Attestation For AGI clients,https://www.americangroup-international.com/attestation-for-agi-clients/,,369,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,exam,Benchmarks for Natives and Language Learners on the CEFR (Common European Frame).,https://www.americangroup-international.com/benchmarks-for-natives-and-language-learners-on-the-cerf-common-european-reference-framework/,,741,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,exam,Business Examinations,https://www.americangroup-international.com/business-examinations/,,606,,0.75,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,exam,Elevate Your Teaching Career,https://www.americangroup-international.com/cite/,,1174,,0.98,0.75,covered,email: groupinternationala@gmail.com | number: 6 weeks
-agi,en,archive,exam,Franchise Opportunities,https://www.americangroup-international.com/https:/www.anglia.org/latest-news/franchise-opportunities/,,452,,1.0,0.33,partial,date: 11th November 20 | date: 13th December 20 | date: 16th June 20 | date: 22nd August 20 | date: 24th June 20 | date: 4th March 20 | date: 6th April 20 | email: groupinternationala@gmail.com
-agi,en,archive,exam,Latest News,https://www.americangroup-international.com/https:/www.anglia.org/latest-news/,,457,,1.0,0.33,partial,date: 11th November 20 | date: 13th December 20 | date: 16th June 20 | date: 22nd August 20 | date: 24th June 20 | date: 4th March 20 | date: 6th April 20 | email: groupinternationala@gmail.com
-agi,en,archive,exam,Latest News,https://www.americangroup-international.com/latest-news-2/,,456,,1.0,0.33,partial,date: 11th November 20 | date: 13th December 20 | date: 16th June 20 | date: 22nd August 20 | date: 24th June 20 | date: 4th March 20 | date: 6th April 20 | email: groupinternationala@gmail.com
-agi,en,page,exam,Teacher Training Program for English/Anglia C.I.T.E Certificate of International Teachers-TESOL,https://www.americangroup-international.com/teacher-assistant-trainings/,,2890,,0.68,0.57,partial,date: October 28 | date: September 20 | email: groupinternationala@gmail.com
-agi,en,page,exam,latest news,https://www.americangroup-international.com/latest-news/,,365,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,archive,exam,university,https://www.americangroup-international.com/https:/www.anglia.org/latest-news/university/,,450,,1.0,0.33,partial,date: 11th November 20 | date: 13th December 20 | date: 16th June 20 | date: 22nd August 20 | date: 24th June 20 | date: 4th March 20 | date: 6th April 20 | email: groupinternationala@gmail.com
-agi,en,page,fees,Admission Fees,https://www.americangroup-international.com/admission-fee/,,1973,,0.6,0.38,partial,"money: $2,500 | money: 10,000 MAD | money: 2600 dirhams | money: 3,000 MAD | money: 7,500 MAD | money: 7,800 MAD | email: groupinternationala@gmail.com | number: 1 Day"
-agi,en,page,fees,Anglia Language Class Pricing and Details,https://www.americangroup-international.com/anglia-language-class-pricing-and-details/,,512,,1.0,0.54,partial,"money: 1,200 DH | money: 100 DH | money: 150 DH | money: 200 DH | money: 500 DH | email: groupinternationala@gmail.com"
-agi,en,page,fees,Online Tutoring Session Prices for AGI USA,https://www.americangroup-international.com/online-tutoring-session-prices-for-agi-usa/,,647,,0.78,0.33,partial,money: $15.00 | money: $20.00 | money: $25.00 | money: $40.00 | money: $50.00 | email: groupinternationala@gmail.com | number: 5 hour | number: 5 hours
-agi,en,page,form,Book An Appointment,https://www.americangroup-international.com/book-an-appointment/,,388,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,form,Document Request Form,https://www.americangroup-international.com/document-request/,,367,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,form,Forms,https://www.americangroup-international.com/forms/,,731,,0.83,0.67,partial,email: groupinternationala@gmail.com | number: 48 hours
-agi,en,page,form,SCHEDULE AN APPOINTMENT,https://www.americangroup-international.com/schedule-an-appointment/,,367,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,form,SCHEDULE YOUR FREE CONSULTATION,https://www.americangroup-international.com/applyform/,,419,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,legal,Privacy Policy,https://www.americangroup-international.com/privacy-policy/,,958,,0.63,0.8,partial,email: groupinternationala@gmail.com
-agi,en,page,legal,TERMS AND CONDITIONS,https://www.americangroup-international.com/terms-and-conditions-of-sale/,,870,,0.35,0.8,partial,email: groupinternationala@gmail.com
-agi,en,post,news/event,A Day At The Seamstress,https://www.americangroup-international.com/a-day-at-the-seamstress/,,398,,1.0,0.6,partial,date: 19th April 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,A brief note from the Principal. Graduation 2022.,https://www.americangroup-international.com/a-brief-note-from-the-principal-graduation-2022/,,541,,1.0,0.5,partial,"date: 0
-June 10, 2022 | date: 21st May 20 | email: groupinternationala@gmail.com"
-agi,en,post,news/event,Admissions 2020-2021,https://www.americangroup-international.com/admissions-2020-2021/,,471,,1.0,0.67,partial,date: 16th April 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,American Group International is now a member of The Global Schools Program,https://www.americangroup-international.com/american-group-international-is-now-a-member-of-the-global-schools-program/,,125,yes,1.0,,covered,
-agi,en,post,news/event,American Group International’s New Year Eve Party 2017,https://www.americangroup-international.com/software-and-computer-workshop-and-conference/,,382,,1.0,0.6,partial,date: 9th January 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,American National Spelling Bee in Morocco,https://www.americangroup-international.com/american-national-spelling-bee-in-morocco/,,160,,1.0,1.0,covered,
-agi,en,post,news/event,American School Counselor Association Member,https://www.americangroup-international.com/american-school-counselor-association-member/,,341,,1.0,,covered,
-agi,en,post,news/event,Anglia C.I.T.E. International Teachers Certification is available. TESOL.,https://www.americangroup-international.com/anglia-c-i-t-e-international-teachers-certification-is-here/,,362,,1.0,0.6,partial,date: 2nd November 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Anglia Examinations Celebrates 30 years !,https://www.americangroup-international.com/anglia-examinations-celebrates-30-years/,,57,yes,1.0,1.0,covered,
-agi,en,post,news/event,Anglia Examinations Will Soon Offer Online Exams in Morocco,https://www.americangroup-international.com/anglia-examinations-will-soon-offer-online-exams-in-morocco/,,231,,1.0,1.0,covered,
-agi,en,post,news/event,"Anglia Morocco Newsletter November 24, 2023",https://www.americangroup-international.com/anglia-morocco-newsletter-november-24-2023/,,319,,1.0,1.0,covered,
-agi,en,post,news/event,"Anglia Testing Session November 13-28, 2022",https://www.americangroup-international.com/anglia-testing-session-november-13-28-2022/,,69,yes,1.0,1.0,covered,
-agi,en,post,news/event,"Anglia Testing Starting January 14th, 2019",https://www.americangroup-international.com/anglia-testing-starting-january-14th-2019/,,379,,1.0,0.71,covered,date: 12th November 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,"Awarding of Language Students April 17, 2018",https://www.americangroup-international.com/awarding-of-language-students-april-17-2018/,,448,,1.0,0.71,covered,date: 19th April 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Back to School,https://www.americangroup-international.com/back-to-school/,,358,,1.0,0.67,partial,date: 5th September 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,"Back to School September 2, 2019",https://www.americangroup-international.com/back-to-school-september-2-2019/,,389,,1.0,0.71,covered,date: 12th June 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,"Back to School September 8th, 2025",https://www.americangroup-international.com/back-to-school-september-3-2025/,,144,yes,1.0,1.0,covered,
-agi,en,post,news/event,Birthday Celebration At Fine Burger,https://www.americangroup-international.com/decision-making-by-coaches-and-athletes-in-sport/,,396,,1.0,0.6,partial,date: 9th January 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,CEO of American Group International is the new Director of Operations of AngliaMorocco,https://www.americangroup-international.com/ceo-of-american-group-international-is-the-new-director-of-operations-of-angliamaroc/,,383,,1.0,0.6,partial,date: 7th October 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Celebrating Excellence with Our Partner,https://www.americangroup-international.com/4292-2/,,383,,1.0,,covered,
-agi,en,post,news/event,Congrats Dr. Kamal Sarjdine,https://www.americangroup-international.com/congrats-dr-kamal-sarjdine/,,384,,1.0,0.67,partial,date: 12th June 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Congrats to Said El Ouahbi awarded his Masters of Business Administration and Management,https://www.americangroup-international.com/congrats-to-said-el-ouahbi-awarded-his-masters-of-business-administration-and-management/,,408,,1.0,0.6,partial,date: 13th June 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Congratulations Graduates 2021,https://www.americangroup-international.com/congratulations-graduates-2021/,,348,,1.0,0.6,partial,date: 14th June 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Congratulations to the Class of 2024,https://www.americangroup-international.com/congratulations-to-the-class-of-2024/,,163,,1.0,,covered,
-agi,en,post,news/event,Continuation of the work!,https://www.americangroup-international.com/continuation-of-the-work/,,382,,1.0,0.6,partial,date: 2nd November 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Early Childhood Education and Care Diploma,https://www.americangroup-international.com/early-childhood-education-and-care-degree/,,385,,1.0,0.6,partial,date: 8th October 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,"Educational Psychology Course October 2nd-December 12th, 2018",https://www.americangroup-international.com/educational-psychology-course/,,592,,1.0,0.82,covered,date: 14th September 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Elementor Floating Element #4278,https://www.americangroup-international.com/e-floating-buttons/elementor-floating-element-4278/,,33,yes,0.0,,missing,
-agi,en,post,news/event,Empowering Educators in Morocco: Our New Partnership with Bridge Education Group,https://www.americangroup-international.com/empowering-educators-in-morocco-our-new-partnership-with-bridge-education-group/,,292,,1.0,1.0,covered,
-agi,en,post,news/event,Energia Structure of Intellect,https://www.americangroup-international.com/energia-structure-of-intellect/,,538,,1.0,1.0,covered,
-agi,en,post,news/event,English Math Resources,https://www.americangroup-international.com/english-math-resources/,,355,,1.0,0.6,partial,date: 20th April 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,First Adult High School Graduate!,https://www.americangroup-international.com/first-adult-high-school-graduate/,,382,,1.0,0.67,partial,date: 13th June 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,"First Day of School is September 5, 2018",https://www.americangroup-international.com/first-day-of-school-is-september-5-2018/,,493,,1.0,0.78,covered,date: 25th May 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,"First Semester Ends January 28th, 2022 for American School Students K-Grade 12.",https://www.americangroup-international.com/first-semester-ends-january-28th-2022/,,511,,1.0,0.71,covered,date: 7th January 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Franchise Opportunities throughout Morocco,https://www.americangroup-international.com/franchise-opportunities-throughout-morocco/,,373,,1.0,0.67,partial,date: 19th December 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Free Dyslexia Resource Test,https://www.americangroup-international.com/free-dyslexia-resource-test/,,410,,1.0,0.6,partial,date: 23rd May 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Fun Times In Our Conversation Classes,https://www.americangroup-international.com/successful-students-celebrating-graduation-degree/,,376,,1.0,0.67,partial,date: 9th January 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Graduation 2025,https://www.americangroup-international.com/graduation-2025/,,170,,1.0,,covered,
-agi,en,post,news/event,"Graduation Set projected June 11th, 2021.",https://www.americangroup-international.com/graduation-set-projected-june-11th-2021/,,389,,1.0,0.8,covered,date: 8th March 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Have a Great Summer!,https://www.americangroup-international.com/have-a-great-summer/,,67,yes,1.0,1.0,covered,
-agi,en,post,news/event,Headquarters of AngliaMaroc in Agadir,https://www.americangroup-international.com/headquarters-of-angliamaroc-in-agadir/,,353,,1.0,0.6,partial,date: 23rd September 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Holiday Celebrations,https://www.americangroup-international.com/student-using-microscope-in-science/,,345,,1.0,0.6,partial,date: 9th January 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Inscriptions 2021-2022,https://www.americangroup-international.com/inscriptions-2021-2022/,,361,,1.0,0.6,partial,date: 8th June 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Inscriptions for 2019-2020,https://www.americangroup-international.com/inscriptions-for-2019-2020/,,361,,1.0,0.6,partial,date: 18th April 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Job Fair under Dar America,https://www.americangroup-international.com/job-fair-under-dar-america/,,332,,1.0,1.0,covered,
-agi,en,post,news/event,Julie Wilburn Officially Accredited as a Holistic Therapeutic Coach,https://www.americangroup-international.com/4356-2/,,167,,1.0,,covered,
-agi,en,post,news/event,LEVERAGE Edu X AGI Join forces in the South of Morocco.,https://www.americangroup-international.com/leverage-edu-x-agi-join-forces-in-the-south-of-morocco/,,301,,1.0,1.0,covered,
-agi,en,post,news/event,Lane Community College International Programs,https://www.americangroup-international.com/lane-community-college-international-programs/,,446,,1.0,0.6,partial,date: 8th November 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,"Languages Classes for Adults begin on Monday, September 24th and Tuesday September 25th.",https://www.americangroup-international.com/languages-classes-for-adults-begin-on-monday-september-24th-and-tuesday-september-25th/,,433,,1.0,0.75,covered,date: 23rd September 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,"Last Day of School June 17, 2020",https://www.americangroup-international.com/last-day-of-school-june-17-2020/,,417,,1.0,0.71,covered,date: 19th May 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Online Classes for Language Students starting in June 2020.,https://www.americangroup-international.com/online-classes-for-language-students-starting-in-june-2020/,,602,,1.0,0.67,partial,date: 14th May 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Partnership Through-out Morocco,https://www.americangroup-international.com/partnership-through-out-morocco/,,137,yes,1.0,1.0,covered,
-agi,en,post,news/event,Proctoring Services Available,https://www.americangroup-international.com/proctoring-services-available/,,588,,1.0,0.75,covered,date: 28th March 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Programme d’études secondaires pour adultes en anglais et en espagnol,https://www.americangroup-international.com/programme-detudes-secondaires-pour-adultes-en-anglais-et-en-espagnol/,,488,,1.0,0.6,partial,date: 25th May 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,RB College of United Kingdom,https://www.americangroup-international.com/rb-college-of-united-kingdom/,,65,yes,1.0,,covered,
-agi,en,post,news/event,"School Starts on September 6, 2022",https://www.americangroup-international.com/school-starts-on-september-6-2022/,,431,,1.0,0.71,covered,date: 9th July 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Summer School,https://www.americangroup-international.com/summer-school/,,392,,1.0,0.71,covered,date: 8th June 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Summer School for Academic and Language EFL Students 2018,https://www.americangroup-international.com/summer-school-for-academic-and-language-efl-students-2018/,,485,,1.0,0.67,partial,"date: 0
-June 25th | date: 6th May 20 | email: groupinternationala@gmail.com"
-agi,en,post,news/event,Teachers Training Program in English,https://www.americangroup-international.com/teachers-training-program-in-english/,,799,,1.0,0.67,partial,date: 23rd September 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,Work Experience Degree Celebration,https://www.americangroup-international.com/work-experience-degree-celebration/,,400,,1.0,0.6,partial,date: 19th April 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,student life,https://www.americangroup-international.com/gallery/student-life/,,372,,1.0,0.6,partial,date: 15th April 20 | email: groupinternationala@gmail.com
-agi,en,post,news/event,“American Group International and Anglia Morocco Join Forces with Chichester College Group International (CCGi) to Empower Global Learners”,https://www.americangroup-international.com/american-group-international-and-anglia-morocco-join-forces-with-chichester-college-group-international-ccgi-to-empower-global-learners/,,499,,0.69,1.0,partial,
-agi,en,page,other,American Group International American Group USA LLC W25317017-,https://www.americangroup-international.com/,,1320,,0.92,0.6,partial,email: groupinternationala@gmail.com | number: 45 nationalities
-agi,en,page,other,"American Group USA, LLC",https://www.americangroup-international.com/american-group-international-usa/,,674,,0.89,0.8,covered,email: groupinternationala@gmail.com
-agi,en,page,other,Blog,https://www.americangroup-international.com/blog/,,363,,0.91,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,other,Front Page,https://www.americangroup-international.com/front-page-copy/,,1437,,0.96,0.6,partial,email: groupinternationala@gmail.com | number: 45 nationalities
-agi,en,page,other,Lates News,https://www.americangroup-international.com/lates-news/,,365,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,other,Recent Posts,https://www.americangroup-international.com/recent-posts/,,637,,0.96,0.33,partial,date: 11th November 20 | date: 13th December 20 | date: 16th June 20 | date: 22nd August 20 | date: 24th June 20 | date: 4th March 20 | date: 6th April 20 | email: groupinternationala@gmail.com
-agi,en,archive,other,Uncategorised,https://www.americangroup-international.com/https:/www.anglia.org/uncategorised/,,871,,0.93,0.31,partial,date: 13th March 20 | date: 16th June 20 | date: 21st May 20 | date: 23rd September 20 | date: 24th November 20 | date: 28th June 20 | date: 4th March 20 | date: 6th April 20
-agi,en,archive,other,Uncategorized,https://www.americangroup-international.com/https:/www.anglia.org/uncategorized/,,359,,0.91,0.6,partial,date: 9th January 20 | email: groupinternationala@gmail.com
-agi,en,page,partner,AngliaMorocco Network- 12 Regions,https://www.americangroup-international.com/angliamorocco-networks-and-centers/,,1036,,0.61,0.8,partial,email: groupinternationala@gmail.com
-agi,en,page,partner,Network of Partners,https://www.americangroup-international.com/network-of-partners/,,1259,,0.84,0.43,partial,email: groupinternationala@gmail.com | number: 000 students | number: 20 years | number: 80 nationalities
-agi,en,page,partner,Partnerships,https://www.americangroup-international.com/interested-in-working-with-us/,,1170,,0.69,0.8,partial,email: groupinternationala@gmail.com
-agi,en,page,partner,RB College of the United Kingdom,https://www.americangroup-international.com/rb-college-of-the-united-kingdom/,,617,,0.95,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,policy,AGI Academic School Supplies List,https://www.americangroup-international.com/agi-academic-school-supplies-list/,,446,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,policy,AGI Mission Statement and Academic Handbook,https://www.americangroup-international.com/agi-academic-school-handbook/,,7458,,0.5,0.38,partial,"money: 150 DH | money: 20 DH | money: 2600 DH | date: January 17, 2024 | email: groupinternationala@gmail.com | number: 1 hour | number: 180 days | number: 5 years"
-agi,en,page,policy,Admissions Procedure,https://www.americangroup-international.com/admissions-procedure/,,919,,0.84,0.67,partial,date: August 1st | date: June 15th | email: groupinternationala@gmail.com
-agi,en,page,policy,American Group International,https://www.americangroup-international.com/american-group-international-provisional-placement-assessment-policy/,,1027,,0.81,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,policy,American Group International of Agadir Attendance Policy,https://www.americangroup-international.com/american-group-international-school-of-agadir-attendance-policy/,,1500,,0.49,0.42,partial,email: groupinternationala@gmail.com | number: 1 Day | number: 10 days | number: 180 days | number: 3 day | number: 5 day | number: 5 days
-agi,en,page,policy,Homework Guidelines Policy AGI,https://www.americangroup-international.com/homework-guidelines-policy-agi/,,641,,0.84,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,policy,In-Service Volunteer Hours for High School,https://www.americangroup-international.com/in-service-volunteer-hours-for-high-school/,,759,,0.86,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,policy,Media Policy,https://www.americangroup-international.com/media-policy/,,1395,,0.51,0.5,partial,"date: June 21, 2024 | email: groupinternationala@gmail.com | number: 18 years"
-agi,en,page,policy,Parent Policy and Responsibility,https://www.americangroup-international.com/parent-policy-and-responsibility/,,776,,0.71,0.6,partial,email: groupinternationala@gmail.com | number: 90 days
-agi,en,page,policy,"Policies & Procedures American Group International & Divisions, Refunds and Complaints",https://www.americangroup-international.com/policies-procedures-american-group-international-divisions-refunds-and-complaints/,,1041,,0.64,0.71,partial,email: groupinternationala@gmail.com | number: 7 days
-agi,en,page,policy,Promotion and Retention Procedures Policy,https://www.americangroup-international.com/promotion-and-retention-procedures-policy/,,895,,0.6,0.83,partial,email: groupinternationala@gmail.com
-agi,en,page,policy,The Importance of School Attendance,https://www.americangroup-international.com/the-importance-of-school-attendance/,,371,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,program,AGI Learning Pods,https://www.americangroup-international.com/lerninpods/,,1063,,0.89,0.83,covered,email: groupinternationala@gmail.com
-agi,en,page,program,"Academic English K to12th, Inclusive Education Grade Micro-School",https://www.americangroup-international.com/transportation-facilities/,,1310,,0.82,0.43,partial,email: groupinternationala@gmail.com | number: 10 month | number: 2 month | number: 36 Week
-agi,en,page,program,Adult High School Diploma Program- 16+,https://www.americangroup-international.com/adult-high-school-diploma-program/,,1755,,0.69,0.6,partial,email: groupinternationala@gmail.com | number: 16 years
-agi,en,page,program,American Group International School,https://www.americangroup-international.com/for-a-better-education/,,668,,0.96,0.6,partial,email: groupinternationala@gmail.com | number: 11 years
-agi,en,page,program,Anglia Morocco Learning Pods,https://www.americangroup-international.com/anglia-morocco-learning-pod-pdf/,,14,yes,1.0,,covered,
-agi,en,page,program,Anglia Morocco Learning Pods….,https://www.americangroup-international.com/anglia-learning-pods/,,778,,0.91,0.8,covered,email: groupinternationala@gmail.com
-agi,en,page,program,Document Editing In English,https://www.americangroup-international.com/document-editing-in-english/,,389,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,program,EFL Classes,https://www.americangroup-international.com/library-facilities/,,637,,0.68,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,program,Educational Workshop English Castle,https://www.americangroup-international.com/educational-workshop-english-castle/,,561,,0.64,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,program,English Self Helps,https://www.americangroup-international.com/english-self-helps/,,1299,,0.93,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,program,English University Agent Worldwide,https://www.americangroup-international.com/university-agent-announcement/,,719,,1.0,0.8,covered,email: groupinternationala@gmail.com
-agi,en,page,program,INDEPENDENT Course STUDIES (Modules and Program),https://www.americangroup-international.com/independent-course-studies-modules-and-program/,,1894,,0.39,0.62,partial,money: $49.95 | money: $79.95. | email: groupinternationala@gmail.com
-agi,en,page,program,Medical EFL For Professionals.,https://www.americangroup-international.com/social-club/,,993,,0.59,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,program,One-On-One EFL Classes,https://www.americangroup-international.com/one-on-one-esl-classes/,,493,,0.82,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,program,Programs,https://www.americangroup-international.com/programs-2/,,363,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,program,Programs,https://www.americangroup-international.com/programs/,,363,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,resource,Nursery Rhymes for Pre-K,https://www.americangroup-international.com/nursery-rhymes-for-pre-k/,,3155,,0.43,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,resource,Online Applications Zoom/Teams Instructions,https://www.americangroup-international.com/online-applications-zoom-teams-instructions/,,981,,0.67,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,service,ADHD Holistic Practitioner Coaching,https://www.americangroup-international.com/adhd-holistic-practitioner-coaching/,,1137,,0.64,0.67,partial,"date: May 4, 2025 | email: groupinternationala@gmail.com"
-agi,en,page,service,AGI Education Consultancy,https://www.americangroup-international.com/agi-education-consultancy/,,1367,,0.68,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,service,Holistic Play Therapy Practitioner,https://www.americangroup-international.com/holistic-play-therapy-practitioner/,,591,,0.79,0.6,partial,money: 150 dirhams | email: groupinternationala@gmail.com
-agi,en,page,service,How Long Should a Tutoring Session Last?,https://www.americangroup-international.com/how-long-should-a-tutoring-session-last/,,1236,,0.65,0.5,partial,email: groupinternationala@gmail.com | number: 1 hour | number: 2 hours | number: 5 hours
-agi,en,page,service,McGuffey’s Online Tutor/Sight Words Helps for Reading/Spelling,https://www.americangroup-international.com/mcguffeys-online-tutor-sight-words-helps-for-reading/,,21603,,0.12,0.6,missing,email: groupinternationala@gmail.com | number: 100 years
-agi,en,page,service,Proctoring Services,https://www.americangroup-international.com/proctoring-services/,,639,,0.95,0.86,covered,email: groupinternationala@gmail.com
-agi,en,page,service,Services,https://www.americangroup-international.com/services-2/,,363,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,service,Special Education Services,https://www.americangroup-international.com/location-physical/,,1085,,0.84,0.38,partial,"date: May 24, 2024 | email: brahim.robio@antal.com | email: groupinternationala@gmail.com | phone: 659926960 | number: 25 years"
-agi,en,page,service,i-Heart Holistic Therapeutic Services and Counselling,https://www.americangroup-international.com/i-heart-holistic-therapeutic-services-and-counselling/,,382,,1.0,0.75,covered,email: groupinternationala@gmail.com
-agi,en,page,teacher,Corporate EFL Trainings/ Business English,https://www.americangroup-international.com/corporate-esl-trainings/,,971,,0.39,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,teacher,Online Teachers Database,https://www.americangroup-international.com/online-teachers-database/,,685,,0.78,0.67,partial,email: groupinternationala@gmail.com | number: 5 years
-agi,en,page,teacher,STEM Educators Workshop Job Interviews,https://www.americangroup-international.com/4084-2/,,536,,0.6,0.75,partial,email: groupinternationala@gmail.com
-agi,en,page,teacher,USA Private School Teacher Sponsorship,https://www.americangroup-international.com/usa-private-school-teacher-sponsorship/,,1120,,0.76,0.75,covered,money: $60.00. | email: groupinternationala@gmail.com
-anglia,en,page,about,Contact,https://angliamorocco.org/contact/,2021-12-06,84,yes,,1.0,covered,
-anglia,en,page,about,FAQ,https://angliamorocco.org/faq/,2021-12-11,542,,0.63,0.25,missing,number: 1 hour | number: 10 levels | number: 4 years
-anglia,en,page,about,about,https://angliamorocco.org/about/,2021-12-06,422,,0.88,1.0,covered,
-anglia,en,page,calendar,ANGLIA EXAM DATES,https://angliamorocco.org/anglia-exam-dates-2/,2025-11-22,180,,0.5,,partial,
-anglia,en,page,calendar,Anglia Exam dates,https://angliamorocco.org/anglia-exam-dates/,2025-11-22,13,yes,,,covered,
-anglia,en,page,exam,Anglia Morocco New Online Examinations,https://angliamorocco.org/anglia-morocco-new-online-examinations/,2024-07-01,226,,1.0,1.0,covered,
-anglia,en,page,exam,C.I.T.E,https://angliamorocco.org/citem/,2024-07-05,824,,0.97,0.86,covered,number: 6 weeks
-anglia,en,page,exam,CEFR,https://angliamorocco.org/cefr/,2022-01-11,636,,0.67,,partial,
-anglia,en,page,exam,CITE,https://angliamorocco.org/elementor-1438/,2024-07-05,813,,0.97,0.86,covered,number: 6 weeks
-anglia,en,page,exam,Exams,https://angliamorocco.org/exams/,2021-12-06,729,,0.45,,partial,
-anglia,en,page,legal,Cookies Policy,https://angliamorocco.org/cookies-policy/,2021-12-13,1466,,0.27,0.0,missing,email: dp@chichester.ac.uk
-anglia,en,page,legal,Privacy Policy,https://angliamorocco.org/privacy-policy/,2021-12-13,529,,0.48,1.0,partial,
-anglia,en,page,legal,Terms And Conditions,https://angliamorocco.org/terms-and-conditions/,2021-12-13,3845,,0.19,0.0,missing,email: info@anglia.org | email: info@anglia.org. | email: webadmin@anglia.org | email: webadmin@anglia.org. | number: 18 years
-anglia,en,post,news/event,Anglia Mastery Qualification Awarded UCAS Tariff Points,https://angliamorocco.org/anglia-mastery-qualification-awarded-ucas-tariff-points-2/,2021-12-06,387,,0.39,1.0,partial,
-anglia,ar,post,news/event,Anglia Mastery Qualification Awarded UCAS Tariff points,https://angliamorocco.org/ar/anglia-mastery-qualification-awarded-ucas-tariff-points/,2021-12-03,386,,0.41,1.0,partial,
-anglia,en,post,news/event,Chichester College Group Selected For Queen’s Anniversary Prize,https://angliamorocco.org/chichester-college-group-selected-for-queens-anniversary-prize/,2021-12-11,126,yes,1.0,,covered,
-anglia,en,post,news/event,Proud that EVERYONE can take an Anglia exam!,https://angliamorocco.org/proud-that-everyone-can-take-an-anglia-exam/,2021-12-15,66,yes,1.0,,covered,
-anglia,en,post,news/event,“Julie Our newest franchisee from Morocco” an article published in the Anglia November Newsletter 2021,https://angliamorocco.org/julie-our-newest-franchisee-from-morocco-an-article-published-in-the-anglia-november-newsletter-2021/,2021-12-11,519,,0.67,0.5,partial,number: 5 regions
-anglia,en,page,other,,https://angliamorocco.org/sch-dashboard/,,4,yes,,,covered,
-anglia,en,page,other,CLICK TO DOWNLOAD AUDIO FILES​ :,https://angliamorocco.org/step-to-books-2/,2021-12-13,99,yes,0.33,,partial,
-anglia,en,page,other,Club Anglia,https://angliamorocco.org/club-anglia/,2022-01-02,23,yes,,,covered,
-anglia,en,page,other,Special Arrangements,https://angliamorocco.org/special-arrangements/,2021-12-13,280,,0.4,1.0,partial,
-anglia,ar,archive,other,Uncategorised,https://angliamorocco.org/ar/category/uncategorised/,,85,yes,0.0,1.0,missing,
-anglia,en,archive,other,Uncategorized,https://angliamorocco.org/category/uncategorized-en/,,319,,0.77,1.0,covered,
-anglia,en,page,other,home,https://angliamorocco.org/,,1044,,0.84,1.0,covered,
-anglia,en,page,other,news,https://angliamorocco.org/news/,2021-12-06,148,yes,0.71,0.0,missing,date: 11 December 20 | date: 15 December 20 | date: 6 December 20
-anglia,en,page,other,step to books,https://angliamorocco.org/step-to-books/,2021-12-13,273,,0.78,,covered,
-anglia,ar,page,other,الرئيسية,https://angliamorocco.org/ar/,2021-12-04,406,,0.36,,partial,
-anglia,ar,page,other,الرئيسية,https://angliamorocco.org/ar/الرئيسية/,2021-12-04,406,,0.36,,partial,
-anglia,ar,page,other,من-نحن,https://angliamorocco.org/ar/من-نحن/,2021-12-05,340,,0.47,,partial,
-anglia,en,page,partner,AngliaMorocco Networks,https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/,2021-12-17,669,,0.0,1.0,missing,
-anglia,en,page,resource,Practice Resources,https://angliamorocco.org/practice-resources/,2024-10-06,293,,0.33,,partial,
-anglia,ar,page,resource,Practice Resources .,https://angliamorocco.org/ar/practice-resources-ar/,2024-10-06,281,,0.0,,missing,
+agi,en,page,about,About Us,https://www.americangroup-international.com/about-us/,,517,,0.36,,partial,
+agi,en,page,about,Contact,https://www.americangroup-international.com/contact/,,65,yes,1.0,1.0,covered,
+agi,en,page,about,Front Page – Copy,https://www.americangroup-international.com/front-page-copy/,,1066,,0.85,0.0,missing,number: 45 nationalities
+agi,en,page,about,Our Vision,https://www.americangroup-international.com/our-vision/,,147,yes,0.14,,missing,
+agi,en,page,admissions,Enrollment,https://www.americangroup-international.com/enrollment/,,391,,0.55,0.5,partial,number: 3 months
+agi,en,page,admissions,Student Life,https://www.americangroup-international.com/admission-prossess/,,50,yes,1.0,,covered,
+agi,en,archive,archive,Franchise Opportunities,https://www.americangroup-international.com/https:/www.anglia.org/latest-news/franchise-opportunities/,,98,yes,1.0,0.12,fragment,date: 11th November 20 | date: 13th December 20 | date: 16th June 20 | date: 22nd August 20 | date: 24th June 20 | date: 4th March 20 | date: 6th April 20
+agi,en,archive,archive,Latest News,https://www.americangroup-international.com/https:/www.anglia.org/latest-news/,,103,yes,0.67,0.12,fragment,date: 11th November 20 | date: 13th December 20 | date: 16th June 20 | date: 22nd August 20 | date: 24th June 20 | date: 4th March 20 | date: 6th April 20
+agi,en,archive,archive,Latest News,https://www.americangroup-international.com/latest-news-2/,,99,yes,0.67,0.12,fragment,date: 11th November 20 | date: 13th December 20 | date: 16th June 20 | date: 22nd August 20 | date: 24th June 20 | date: 4th March 20 | date: 6th April 20
+agi,en,archive,archive,Uncategorised,https://www.americangroup-international.com/https:/www.anglia.org/uncategorised/,,535,,0.89,0.17,fragment,date: 13th March 20 | date: 16th June 20 | date: 21st May 20 | date: 23rd September 20 | date: 24th November 20 | date: 28th June 20 | date: 4th March 20 | date: 6th April 20
+agi,en,archive,archive,Uncategorized,https://www.americangroup-international.com/https:/www.anglia.org/uncategorized/,,46,yes,0.5,0.0,fragment,date: 9th January 20
+agi,en,archive,archive,university,https://www.americangroup-international.com/https:/www.anglia.org/latest-news/university/,,96,yes,1.0,0.12,fragment,date: 11th November 20 | date: 13th December 20 | date: 16th June 20 | date: 22nd August 20 | date: 24th June 20 | date: 4th March 20 | date: 6th April 20
+agi,en,page,calendar,Academic School Calendar 2026-2027,https://www.americangroup-international.com/school-calandar/,,473,,1.0,0.21,missing,date: AUGUST 20 | date: August 20 | date: August 25 | date: December 20 | date: December 22 | date: December 25 | date: February 20 | date: JANUARY 20
+agi,en,page,calendar,Anglia Examinations Saturday Classes Yearly Schedule 2025-2026,https://www.americangroup-international.com/anglia-examinations-saturday-classes-yearly-schedule-2025-2026/,,275,,0.86,0.05,missing,"money: 500 DHS | date: April 11, 2026 | date: April 18, 2026 | date: April 25, 2026 | date: April 4, 2026 | date: December 20, 2025 | date: December 27, 2025 | date: December 6, 2025"
+agi,en,page,calendar,Last Day for Students- Other Important Dates!,https://www.americangroup-international.com/last-day-for-students-other-important-dates/,,54,yes,1.0,0.0,missing,"date: July 20 | date: June 15, 2022 | date: June 4, 2022"
+agi,en,page,exam,Anglia Examinations Accreditation with AIM,https://www.americangroup-international.com/anglia-examinations-accreditation-with-aim/,,553,,0.85,,covered,
+agi,en,page,exam,Anglia Examinations of England,https://www.americangroup-international.com/anglia/,,750,,0.82,0.75,covered,date: September 20
+agi,en,page,exam,AngliaMorocco English Test,https://www.americangroup-international.com/english-practice-test/,,2018,,0.17,,missing,
+agi,en,page,exam,Attestation For AGI clients,https://www.americangroup-international.com/attestation-for-agi-clients/,,19,yes,1.0,,covered,
+agi,en,page,exam,Benchmarks for Natives and Language Learners on the CEFR (Common European Frame).,https://www.americangroup-international.com/benchmarks-for-natives-and-language-learners-on-the-cerf-common-european-reference-framework/,,375,,0.86,,covered,
+agi,en,page,exam,Business Examinations,https://www.americangroup-international.com/business-examinations/,,253,,0.5,,partial,
+agi,en,page,exam,Elevate Your Teaching Career,https://www.americangroup-international.com/cite/,,824,,0.88,0.86,covered,number: 6 weeks
+agi,en,page,exam,latest news,https://www.americangroup-international.com/latest-news/,,12,yes,0.0,,missing,
+agi,en,page,fees,Admission Fees,https://www.americangroup-international.com/admission-fee/,,1609,,0.49,0.32,partial,"money: $2,500 | money: 10,000 MAD | money: 26,000 Dirhams | money: 2600 Dirhams | money: 2600 dirhams | money: 3,000 MAD | money: 7,500 MAD | money: 7,800 MAD"
+agi,en,page,fees,Anglia Language Class Pricing and Details,https://www.americangroup-international.com/anglia-language-class-pricing-and-details/,,155,,1.0,0.33,partial,"money: 1,200 DHs | money: 100 DHs | money: 150 DHs | money: 200 DHs | money: 500 DHs | date: November 20"
+agi,en,page,fees,Online Tutoring Session Prices for AGI USA,https://www.americangroup-international.com/online-tutoring-session-prices-for-agi-usa/,,289,,0.69,0.12,missing,money: $15.00 | money: $20.00 | money: $25.00 | money: $40.00 | money: $50.00 | number: 5 hour | number: 5 hours
+agi,en,page,form,Book An Appointment,https://www.americangroup-international.com/book-an-appointment/,,34,yes,1.0,,covered,
+agi,en,page,form,Document Request Form,https://www.americangroup-international.com/document-request/,,17,yes,1.0,,covered,
+agi,en,page,form,Forms,https://www.americangroup-international.com/forms/,,362,,0.5,0.5,partial,number: 48 hours
+agi,en,page,form,SCHEDULE AN APPOINTMENT,https://www.americangroup-international.com/schedule-an-appointment/,,17,yes,1.0,,covered,
+agi,en,page,form,SCHEDULE YOUR FREE CONSULTATION,https://www.americangroup-international.com/applyform/,,64,yes,1.0,,covered,
+agi,en,page,legal,Privacy Policy,https://www.americangroup-international.com/privacy-policy/,,605,,0.45,1.0,partial,
+agi,en,page,legal,TERMS AND CONDITIONS,https://www.americangroup-international.com/terms-and-conditions-of-sale/,,520,,0.17,1.0,missing,
+agi,en,post,news/event,A Day At The Seamstress,https://www.americangroup-international.com/a-day-at-the-seamstress/,,73,yes,1.0,0.0,missing,date: 19th April 20
+agi,en,post,news/event,A brief note from the Principal. Graduation 2022.,https://www.americangroup-international.com/a-brief-note-from-the-principal-graduation-2022/,,213,,1.0,0.0,missing,"date: 0 June 10, 2022 | date: 21st May 20"
+agi,en,post,news/event,Admissions 2020-2021,https://www.americangroup-international.com/admissions-2020-2021/,,149,yes,1.0,0.67,partial,date: 16th April 20
+agi,en,post,news/event,American Group International is now a member of The Global Schools Program,https://www.americangroup-international.com/american-group-international-is-now-a-member-of-the-global-schools-program/,,124,yes,1.0,,covered,
+agi,en,post,news/event,American Group International’s New Year Eve Party 2017,https://www.americangroup-international.com/software-and-computer-workshop-and-conference/,,54,yes,1.0,0.0,missing,date: 9th January 20
+agi,en,post,news/event,American National Spelling Bee in Morocco,https://www.americangroup-international.com/american-national-spelling-bee-in-morocco/,,159,,1.0,0.5,partial,date: May 20
+agi,en,post,news/event,American School Counselor Association Member,https://www.americangroup-international.com/american-school-counselor-association-member/,,340,,1.0,,covered,
+agi,en,post,news/event,Anglia C.I.T.E. International Teachers Certification is available. TESOL.,https://www.americangroup-international.com/anglia-c-i-t-e-international-teachers-certification-is-here/,,34,yes,1.0,0.0,missing,date: 2nd November 20
+agi,en,post,news/event,Anglia Examinations Celebrates 30 years !,https://www.americangroup-international.com/anglia-examinations-celebrates-30-years/,,56,yes,1.0,1.0,covered,
+agi,en,post,news/event,Anglia Examinations Will Soon Offer Online Exams in Morocco,https://www.americangroup-international.com/anglia-examinations-will-soon-offer-online-exams-in-morocco/,,230,,1.0,1.0,covered,
+agi,en,post,news/event,"Anglia Morocco Newsletter November 24, 2023",https://www.americangroup-international.com/anglia-morocco-newsletter-november-24-2023/,,318,,1.0,1.0,covered,
+agi,en,post,news/event,"Anglia Testing Session November 13-28, 2022",https://www.americangroup-international.com/anglia-testing-session-november-13-28-2022/,,68,yes,1.0,1.0,covered,
+agi,en,post,news/event,"Anglia Testing Starting January 14th, 2019",https://www.americangroup-international.com/anglia-testing-starting-january-14th-2019/,,53,yes,1.0,0.33,partial,date: 12th November 20 | date: December 20
+agi,en,post,news/event,"Awarding of Language Students April 17, 2018",https://www.americangroup-international.com/awarding-of-language-students-april-17-2018/,,121,yes,1.0,0.67,partial,date: 19th April 20
+agi,en,post,news/event,Back to School,https://www.americangroup-international.com/back-to-school/,,35,yes,1.0,0.5,partial,date: 5th September 20
+agi,en,post,news/event,"Back to School September 2, 2019",https://www.americangroup-international.com/back-to-school-september-2-2019/,,63,yes,1.0,0.67,partial,date: 12th June 20
+agi,en,post,news/event,"Back to School September 8th, 2025",https://www.americangroup-international.com/back-to-school-september-3-2025/,,143,yes,1.0,0.5,partial,date: August 20
+agi,en,post,news/event,Birthday Celebration At Fine Burger,https://www.americangroup-international.com/decision-making-by-coaches-and-athletes-in-sport/,,71,yes,1.0,0.0,missing,date: 9th January 20
+agi,en,post,news/event,CEO of American Group International is the new Director of Operations of AngliaMorocco,https://www.americangroup-international.com/ceo-of-american-group-international-is-the-new-director-of-operations-of-angliamaroc/,,50,yes,1.0,0.0,missing,date: 7th October 20
+agi,en,post,news/event,Celebrating Excellence with Our Partner,https://www.americangroup-international.com/4292-2/,,376,,1.0,,covered,
+agi,en,post,news/event,Congrats Dr. Kamal Sarjdine,https://www.americangroup-international.com/congrats-dr-kamal-sarjdine/,,60,yes,1.0,0.5,partial,date: 12th June 20
+agi,en,post,news/event,Congrats to Said El Ouahbi awarded his Masters of Business Administration and Management,https://www.americangroup-international.com/congrats-to-said-el-ouahbi-awarded-his-masters-of-business-administration-and-management/,,75,yes,1.0,0.0,missing,date: 13th June 20
+agi,en,post,news/event,Congratulations Graduates 2021,https://www.americangroup-international.com/congratulations-graduates-2021/,,25,yes,1.0,0.0,missing,date: 14th June 20
+agi,en,post,news/event,Congratulations to the Class of 2024,https://www.americangroup-international.com/congratulations-to-the-class-of-2024/,,162,,1.0,,covered,
+agi,en,post,news/event,Continuation of the work!,https://www.americangroup-international.com/continuation-of-the-work/,,58,yes,1.0,0.0,missing,date: 2nd November 20
+agi,en,post,news/event,Early Childhood Education and Care Diploma,https://www.americangroup-international.com/early-childhood-education-and-care-degree/,,59,yes,1.0,0.0,missing,date: 8th October 20
+agi,en,post,news/event,"Educational Psychology Course October 2nd-December 12th, 2018",https://www.americangroup-international.com/educational-psychology-course/,,265,,1.0,0.88,covered,date: 14th September 20
+agi,en,post,news/event,Empowering Educators in Morocco: Our New Partnership with Bridge Education Group,https://www.americangroup-international.com/empowering-educators-in-morocco-our-new-partnership-with-bridge-education-group/,,291,,1.0,1.0,covered,
+agi,en,post,news/event,Energia Structure of Intellect,https://www.americangroup-international.com/energia-structure-of-intellect/,,536,,1.0,1.0,covered,
+agi,en,post,news/event,English Math Resources,https://www.americangroup-international.com/english-math-resources/,,32,yes,1.0,0.0,missing,date: 20th April 20
+agi,en,post,news/event,First Adult High School Graduate!,https://www.americangroup-international.com/first-adult-high-school-graduate/,,57,yes,1.0,0.5,partial,date: 13th June 20
+agi,en,post,news/event,"First Day of School is September 5, 2018",https://www.americangroup-international.com/first-day-of-school-is-september-5-2018/,,165,,1.0,0.6,partial,date: 25th May 20 | date: August 20
+agi,en,post,news/event,"First Semester Ends January 28th, 2022 for American School Students K-Grade 12.",https://www.americangroup-international.com/first-semester-ends-january-28th-2022/,,179,,1.0,0.67,partial,date: 7th January 20
+agi,en,post,news/event,Franchise Opportunities throughout Morocco,https://www.americangroup-international.com/franchise-opportunities-throughout-morocco/,,49,yes,1.0,0.5,partial,date: 19th December 20
+agi,en,post,news/event,Free Dyslexia Resource Test,https://www.americangroup-international.com/free-dyslexia-resource-test/,,86,yes,1.0,0.0,missing,date: 23rd May 20
+agi,en,post,news/event,Fun Times In Our Conversation Classes,https://www.americangroup-international.com/successful-students-celebrating-graduation-degree/,,50,yes,1.0,0.0,missing,date: 9th January 20 | date: October 20
+agi,en,post,news/event,Graduation 2025,https://www.americangroup-international.com/graduation-2025/,,169,,1.0,,covered,
+agi,en,post,news/event,"Graduation Set projected June 11th, 2021.",https://www.americangroup-international.com/graduation-set-projected-june-11th-2021/,,63,yes,1.0,0.33,partial,date: 8th March 20 | date: August 20 | date: December 20 | date: May 20
+agi,en,post,news/event,Have a Great Summer!,https://www.americangroup-international.com/have-a-great-summer/,,66,yes,1.0,1.0,covered,
+agi,en,post,news/event,Headquarters of AngliaMaroc in Agadir,https://www.americangroup-international.com/headquarters-of-angliamaroc-in-agadir/,,28,yes,1.0,0.0,missing,date: 23rd September 20
+agi,en,post,news/event,Holiday Celebrations,https://www.americangroup-international.com/student-using-microscope-in-science/,,23,yes,1.0,0.0,missing,date: 9th January 20
+agi,en,post,news/event,Inscriptions 2021-2022,https://www.americangroup-international.com/inscriptions-2021-2022/,,39,yes,1.0,0.0,missing,date: 8th June 20
+agi,en,post,news/event,Inscriptions for 2019-2020,https://www.americangroup-international.com/inscriptions-for-2019-2020/,,38,yes,1.0,0.0,missing,date: 18th April 20
+agi,en,post,news/event,Job Fair under Dar America,https://www.americangroup-international.com/job-fair-under-dar-america/,,331,,1.0,1.0,covered,
+agi,en,post,news/event,Julie Wilburn Officially Accredited as a Holistic Therapeutic Coach,https://www.americangroup-international.com/4356-2/,,164,,1.0,,covered,
+agi,en,post,news/event,LEVERAGE Edu X AGI Join forces in the South of Morocco.,https://www.americangroup-international.com/leverage-edu-x-agi-join-forces-in-the-south-of-morocco/,,300,,1.0,1.0,covered,
+agi,en,post,news/event,Lane Community College International Programs,https://www.americangroup-international.com/lane-community-college-international-programs/,,121,yes,1.0,0.5,partial,date: 8th November 20
+agi,en,post,news/event,"Languages Classes for Adults begin on Monday, September 24th and Tuesday September 25th.",https://www.americangroup-international.com/languages-classes-for-adults-begin-on-monday-september-24th-and-tuesday-september-25th/,,100,yes,1.0,0.75,covered,date: 23rd September 20
+agi,en,post,news/event,"Last Day of School June 17, 2020",https://www.americangroup-international.com/last-day-of-school-june-17-2020/,,90,yes,1.0,0.67,partial,date: 19th May 20
+agi,en,post,news/event,Online Classes for Language Students starting in June 2020.,https://www.americangroup-international.com/online-classes-for-language-students-starting-in-june-2020/,,273,,1.0,0.0,missing,date: 14th May 20 | date: June 20
+agi,en,post,news/event,Partnership Through-out Morocco,https://www.americangroup-international.com/partnership-through-out-morocco/,,136,yes,1.0,1.0,covered,
+agi,en,post,news/event,Proctoring Services Available,https://www.americangroup-international.com/proctoring-services-available/,,265,,1.0,0.8,covered,date: 28th March 20
+agi,en,post,news/event,Programme d’études secondaires pour adultes en anglais et en espagnol,https://www.americangroup-international.com/programme-detudes-secondaires-pour-adultes-en-anglais-et-en-espagnol/,,158,,1.0,0.0,missing,date: 25th May 20
+agi,en,post,news/event,RB College of United Kingdom,https://www.americangroup-international.com/rb-college-of-united-kingdom/,,64,yes,1.0,,covered,
+agi,en,post,news/event,"School Starts on September 6, 2022",https://www.americangroup-international.com/school-starts-on-september-6-2022/,,105,yes,1.0,0.33,partial,date: 9th July 20 | date: August 20
+agi,en,post,news/event,Summer School,https://www.americangroup-international.com/summer-school/,,70,yes,1.0,0.67,partial,date: 8th June 20
+agi,en,post,news/event,Summer School for Academic and Language EFL Students 2018,https://www.americangroup-international.com/summer-school-for-academic-and-language-efl-students-2018/,,156,,1.0,0.6,partial,date: 0 June 25th | date: 6th May 20
+agi,en,post,news/event,Teachers Training Program in English,https://www.americangroup-international.com/teachers-training-program-in-english/,,474,,1.0,0.5,partial,date: 23rd September 20
+agi,en,post,news/event,Work Experience Degree Celebration,https://www.americangroup-international.com/work-experience-degree-celebration/,,76,yes,1.0,0.0,missing,date: 19th April 20
+agi,en,post,news/event,student life,https://www.americangroup-international.com/gallery/student-life/,,56,yes,1.0,0.0,missing,date: 15th April 20
+agi,en,post,news/event,“American Group International and Anglia Morocco Join Forces with Chichester College Group International (CCGi) to Empower Global Learners”,https://www.americangroup-international.com/american-group-international-and-anglia-morocco-join-forces-with-chichester-college-group-international-ccgi-to-empower-global-learners/,,498,,0.62,0.5,partial,date: August 20
+agi,en,page,online,American Group International American Group USA LLC W25317017-,https://www.americangroup-international.com/,,949,,0.88,0.0,missing,number: 45 nationalities
+agi,en,page,online,"American Group USA, LLC",https://www.americangroup-international.com/american-group-international-usa/,,319,,0.78,1.0,covered,
+agi,en,page,online,How Long Should a Tutoring Session Last?,https://www.americangroup-international.com/how-long-should-a-tutoring-session-last/,,878,,0.55,0.25,missing,number: 1 hour | number: 2 hours | number: 5 hours
+agi,en,page,online,McGuffey’s Online Tutor/Sight Words Helps for Reading/Spelling,https://www.americangroup-international.com/mcguffeys-online-tutor-sight-words-helps-for-reading/,,21180,,0.05,0.0,missing,number: 100 years
+agi,en,page,online,Online Applications Zoom/Teams Instructions,https://www.americangroup-international.com/online-applications-zoom-teams-instructions/,,626,,0.55,,partial,
+agi,en,page,other,Blog,https://www.americangroup-international.com/blog/,,13,yes,0.0,,missing,
+agi,en,fragment,other,Elementor Floating Element #4278,https://www.americangroup-international.com/e-floating-buttons/elementor-floating-element-4278/,,32,yes,0.0,,fragment,
+agi,en,page,other,Lates News,https://www.americangroup-international.com/lates-news/,,15,yes,0.0,,missing,
+agi,en,page,other,Recent Posts,https://www.americangroup-international.com/recent-posts/,,242,,0.73,0.12,missing,date: 11th November 20 | date: 13th December 20 | date: 16th June 20 | date: 22nd August 20 | date: 24th June 20 | date: 4th March 20 | date: 6th April 20
+agi,en,page,other,Services,https://www.americangroup-international.com/services-2/,,13,yes,1.0,,covered,
+agi,en,page,other,Special Education Services,https://www.americangroup-international.com/location-physical/,,731,,0.73,0.0,missing,"date: May 24, 2024 | email: brahim.robio@antal.com | phone: 659926960 | number: 25 years"
+agi,en,page,partner,AngliaMorocco Network- 12 Regions,https://www.americangroup-international.com/angliamorocco-networks-and-centers/,,686,,0.12,1.0,missing,
+agi,en,page,partner,Partnerships,https://www.americangroup-international.com/interested-in-working-with-us/,,795,,0.62,1.0,partial,
+agi,en,page,pathways,AGI Education Consultancy,https://www.americangroup-international.com/agi-education-consultancy/,,1001,,0.49,,partial,
+agi,en,page,pathways,English University Agent Worldwide,https://www.americangroup-international.com/university-agent-announcement/,,364,,0.88,1.0,covered,
+agi,en,page,pathways,Network of Partners,https://www.americangroup-international.com/network-of-partners/,,909,,0.7,0.0,missing,number: 000 students | number: 20 years | number: 80 nationalities
+agi,en,page,pathways,RB College of the United Kingdom,https://www.americangroup-international.com/rb-college-of-the-united-kingdom/,,267,,0.8,,covered,
+agi,en,page,policy,AGI Academic School Supplies List,https://www.americangroup-international.com/agi-academic-school-supplies-list/,,96,yes,1.0,,covered,
+agi,en,page,policy,AGI Mission Statement and Academic Handbook,https://www.americangroup-international.com/agi-academic-school-handbook/,,7082,,0.41,0.25,missing,"money: 150 DH | money: 20 DH | money: 2600 DH | date: January 17, 2024 | number: 1 hour | number: 180 days | number: 5 years | number: 6 years"
+agi,en,page,policy,Admissions Procedure,https://www.americangroup-international.com/admissions-procedure/,,565,,0.78,0.5,partial,date: August 1st | date: June 15th
+agi,en,page,policy,American Group International of Agadir Attendance Policy,https://www.americangroup-international.com/american-group-international-school-of-agadir-attendance-policy/,,1138,,0.37,0.25,missing,number: 1 Day | number: 10 days | number: 180 days | number: 3 day | number: 5 day | number: 5 days
+agi,en,page,policy,American Group International – Provisional Placement & Assessment Policy,https://www.americangroup-international.com/american-group-international-provisional-placement-assessment-policy/,,667,,0.72,,covered,
+agi,en,page,policy,Homework Guidelines Policy AGI,https://www.americangroup-international.com/homework-guidelines-policy-agi/,,286,,0.73,,covered,
+agi,en,page,policy,In-Service Volunteer Hours for High School,https://www.americangroup-international.com/in-service-volunteer-hours-for-high-school/,,402,,0.68,,partial,
+agi,en,page,policy,Media Policy,https://www.americangroup-international.com/media-policy/,,1038,,0.32,0.0,missing,"date: June 21, 2024 | number: 18 years"
+agi,en,page,policy,Parent Policy and Responsibility,https://www.americangroup-international.com/parent-policy-and-responsibility/,,421,,0.48,0.0,missing,number: 90 days
+agi,en,page,policy,"Policies & Procedures American Group International & Divisions, Refunds and Complaints",https://www.americangroup-international.com/policies-procedures-american-group-international-divisions-refunds-and-complaints/,,679,,0.47,0.67,partial,number: 7 days
+agi,en,page,policy,Promotion and Retention Procedures Policy,https://www.americangroup-international.com/promotion-and-retention-procedures-policy/,,539,,0.48,1.0,partial,
+agi,en,page,policy,The Importance of School Attendance,https://www.americangroup-international.com/the-importance-of-school-attendance/,,21,yes,0.0,,missing,
+agi,en,page,program,AGI Learning Pods,https://www.americangroup-international.com/lerninpods/,,709,,0.8,1.0,covered,
+agi,en,page,program,"Academic English K to12th, Inclusive Education Grade Micro-School",https://www.americangroup-international.com/transportation-facilities/,,951,,0.73,0.0,missing,number: 10 month | number: 2 month | number: 36 Week
+agi,en,page,program,Adult High School Diploma Program- 16+,https://www.americangroup-international.com/adult-high-school-diploma-program/,,1398,,0.56,0.0,missing,number: 1 credit | number: 16 years | number: 2 Credits | number: 2 credit | number: 2 credits | number: 24 credit | number: 24 credits | number: 3 Credits
+agi,en,page,program,American Group International School – Agadir,https://www.americangroup-international.com/for-a-better-education/,,305,,0.86,0.0,missing,number: 11 years
+agi,en,page,program,Anglia Morocco Learning Pods,https://www.americangroup-international.com/anglia-morocco-learning-pod-pdf/,,13,yes,1.0,,covered,
+agi,en,page,program,Anglia Morocco Learning Pods….,https://www.americangroup-international.com/anglia-learning-pods/,,428,,0.78,1.0,covered,
+agi,en,page,program,Document Editing In English,https://www.americangroup-international.com/document-editing-in-english/,,34,yes,0.5,,partial,
+agi,en,page,program,EFL Classes,https://www.americangroup-international.com/library-facilities/,,284,,0.42,,partial,
+agi,en,page,program,Educational Workshop English Castle,https://www.americangroup-international.com/educational-workshop-english-castle/,,211,,0.33,,partial,
+agi,en,page,program,English Self Helps,https://www.americangroup-international.com/english-self-helps/,,943,,0.6,,partial,
+agi,en,page,program,INDEPENDENT Course STUDIES (Modules and Program),https://www.americangroup-international.com/independent-course-studies-modules-and-program/,,1544,,0.22,0.5,missing,money: $49.95 | money: $79.95
+agi,en,page,program,Medical EFL For Professionals.,https://www.americangroup-international.com/social-club/,,638,,0.23,,missing,
+agi,en,page,program,One-On-One EFL Classes,https://www.americangroup-international.com/one-on-one-esl-classes/,,139,yes,0.43,,partial,
+agi,en,page,program,Proctoring Services,https://www.americangroup-international.com/proctoring-services/,,286,,0.92,0.8,covered,money: 200 Dirhams
+agi,en,page,program,Programs,https://www.americangroup-international.com/programs-2/,,11,yes,1.0,,covered,
+agi,en,page,program,Programs,https://www.americangroup-international.com/programs/,,11,yes,1.0,,covered,
+agi,en,page,resource,Nursery Rhymes for Pre-K,https://www.americangroup-international.com/nursery-rhymes-for-pre-k/,,2681,,0.25,,missing,
+agi,en,page,teacher,Corporate EFL Trainings/ Business English,https://www.americangroup-international.com/corporate-esl-trainings/,,621,,0.09,,missing,
+agi,en,page,teacher,Online Teachers Database,https://www.americangroup-international.com/online-teachers-database/,,327,,0.46,0.5,partial,number: 5 years
+agi,en,page,teacher,STEM Educators Workshop Job Interviews,https://www.americangroup-international.com/4084-2/,,186,,0.2,,missing,
+agi,en,page,teacher,Teacher Training Program for English/Anglia C.I.T.E Certificate of International Teachers-TESOL,https://www.americangroup-international.com/teacher-assistant-trainings/,,2307,,0.54,0.0,missing,date: June 20 | date: October 28 | date: September 20
+agi,en,page,teacher,USA Private School Teacher Sponsorship,https://www.americangroup-international.com/usa-private-school-teacher-sponsorship/,,764,,0.66,0.8,partial,money: $60.00
+agi,en,page,wellbeing,ADHD Holistic Practitioner Coaching,https://www.americangroup-international.com/adhd-holistic-practitioner-coaching/,,782,,0.49,0.67,partial,"date: May 4, 2025"
+agi,en,page,wellbeing,Holistic Play Therapy Practitioner,https://www.americangroup-international.com/holistic-play-therapy-practitioner/,,236,,0.64,0.0,missing,money: 150 dirhams
+agi,en,page,wellbeing,i-Heart Holistic Therapeutic Services and Counselling,https://www.americangroup-international.com/i-heart-holistic-therapeutic-services-and-counselling/,,25,yes,1.0,,covered,
+anglia,en,page,about,Contact,https://angliamorocco.org/contact/,2021-12-06,77,yes,,1.0,covered,
+anglia,en,page,about,FAQ,https://angliamorocco.org/faq/,2021-12-11,514,,0.62,0.25,missing,number: 1 hour | number: 10 levels | number: 4 years
+anglia,en,page,about,about,https://angliamorocco.org/about/,2021-12-06,415,,0.76,1.0,covered,
+anglia,en,page,about,home,https://angliamorocco.org/,,1035,,0.75,1.0,covered,
+anglia,ar,page,about,الرئيسية,https://angliamorocco.org/ar/,2021-12-04,405,,0.0,,missing,
+anglia,ar,page,about,الرئيسية,https://angliamorocco.org/ar/الرئيسية/,2021-12-04,405,,0.0,,missing,
+anglia,ar,page,about,من-نحن,https://angliamorocco.org/ar/من-نحن/,2021-12-05,339,,0.0,,missing,
+anglia,ar,archive,archive,Uncategorised,https://angliamorocco.org/ar/category/uncategorised/,,84,yes,0.0,0.0,fragment,date: May 20
+anglia,en,archive,archive,Uncategorized,https://angliamorocco.org/category/uncategorized-en/,,312,,0.77,0.0,fragment,date: May 20
+anglia,en,page,calendar,ANGLIA EXAM DATES,https://angliamorocco.org/anglia-exam-dates-2/,2025-11-22,172,,0.5,,partial,
+anglia,en,page,calendar,Anglia Exam dates,https://angliamorocco.org/anglia-exam-dates/,2025-11-22,6,yes,,,covered,
+anglia,en,page,exam,Anglia Morocco New Online Examinations,https://angliamorocco.org/anglia-morocco-new-online-examinations/,2024-07-01,219,,1.0,1.0,covered,
+anglia,en,page,exam,C.I.T.E – Certificate for International Teachers of English (TESOL),https://angliamorocco.org/citem/,2024-07-05,817,,0.88,0.86,covered,number: 6 weeks
+anglia,en,page,exam,CEFR,https://angliamorocco.org/cefr/,2022-01-11,629,,0.63,,partial,
+anglia,en,page,exam,CITE,https://angliamorocco.org/elementor-1438/,2024-07-05,806,,0.87,0.86,covered,number: 6 weeks
+anglia,en,page,exam,Exams,https://angliamorocco.org/exams/,2021-12-06,681,,0.41,,partial,
+anglia,en,page,exam,Special Arrangements,https://angliamorocco.org/special-arrangements/,2021-12-13,273,,0.4,1.0,partial,
+anglia,en,page,legal,Cookies Policy,https://angliamorocco.org/cookies-policy/,2021-12-13,1458,,0.23,0.0,missing,email: dp@chichester.ac.uk
+anglia,en,page,legal,Privacy Policy,https://angliamorocco.org/privacy-policy/,2021-12-13,522,,0.44,1.0,partial,
+anglia,en,page,legal,Terms And Conditions,https://angliamorocco.org/terms-and-conditions/,2021-12-13,3838,,0.16,0.0,missing,email: info@anglia.org | email: webadmin@anglia.org | number: 18 years
+anglia,en,post,news/event,Anglia Mastery Qualification Awarded UCAS Tariff Points,https://angliamorocco.org/anglia-mastery-qualification-awarded-ucas-tariff-points-2/,2021-12-06,380,,0.28,0.0,missing,date: May 20
+anglia,ar,post,news/event,Anglia Mastery Qualification Awarded UCAS Tariff points,https://angliamorocco.org/ar/anglia-mastery-qualification-awarded-ucas-tariff-points/,2021-12-03,385,,0.29,0.0,missing,date: May 20
+anglia,en,post,news/event,Chichester College Group Selected For Queen’s Anniversary Prize,https://angliamorocco.org/chichester-college-group-selected-for-queens-anniversary-prize/,2021-12-11,119,yes,0.6,,partial,
+anglia,en,post,news/event,Proud that EVERYONE can take an Anglia exam!,https://angliamorocco.org/proud-that-everyone-can-take-an-anglia-exam/,2021-12-15,59,yes,1.0,,covered,
+anglia,en,post,news/event,“Julie Our newest franchisee from Morocco” an article published in the Anglia November Newsletter 2021,https://angliamorocco.org/julie-our-newest-franchisee-from-morocco-an-article-published-in-the-anglia-november-newsletter-2021/,2021-12-11,512,,0.5,0.5,partial,number: 5 regions
+anglia,en,page,other,,https://angliamorocco.org/sch-dashboard/,,3,yes,,,covered,
+anglia,en,page,other,Club Anglia,https://angliamorocco.org/club-anglia/,2022-01-02,16,yes,,,covered,
+anglia,en,page,other,news,https://angliamorocco.org/news/,2021-12-06,141,yes,0.71,0.0,missing,date: 11 December 20 | date: 15 December 20 | date: 6 December 20
+anglia,en,page,partner,AngliaMorocco Networks – 12 Regions,https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/,2021-12-17,662,,0.0,1.0,missing,
+anglia,en,page,resource,CLICK TO DOWNLOAD AUDIO FILES​ :,https://angliamorocco.org/step-to-books-2/,2021-12-13,92,yes,0.33,,partial,
+anglia,en,page,resource,Practice Resources,https://angliamorocco.org/practice-resources/,2024-10-06,286,,0.33,,partial,
+anglia,ar,page,resource,Practice Resources .,https://angliamorocco.org/ar/practice-resources-ar/,2024-10-06,280,,0.0,,missing,
+anglia,en,page,resource,step to books,https://angliamorocco.org/step-to-books/,2021-12-13,266,,0.56,,partial,

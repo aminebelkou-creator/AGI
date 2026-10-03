@@ -1,0 +1,307 @@
+{
+ "contact": {
+  "address": {
+   "value": "Number 20, Rue Baalabek, Hay Nahda, Agadir 80000, Morocco",
+   "source": "julie-signature",
+   "status": "confirmed"
+  },
+  "phone_main": {
+   "value": "+212 528 843 349",
+   "source": "julie-signature",
+   "status": "confirmed"
+  },
+  "phone_arabic": {
+   "value": "+212 618 639 911",
+   "source": "julie-signature",
+   "status": "confirmed"
+  },
+  "whatsapp_english": {
+   "value": "+212 688 739 393",
+   "source": "julie-signature",
+   "status": "confirmed"
+  },
+  "email_official": {
+   "value": "americanecoleagadir@gmail.com",
+   "source": "julie-signature",
+   "status": "confirmed"
+  },
+  "email_admin_old": {
+   "value": "groupinternationala@gmail.com",
+   "source": "https://www.americangroup-international.com/",
+   "status": "to-confirm",
+   "note": "Shown as 'Admin' on the old site header – still used?"
+  },
+  "email_anglia_julie": {
+   "value": "j.wilburn@angliamorocco.org",
+   "source": "https://angliamorocco.org/",
+   "status": "source"
+  },
+  "email_anglia_abdelhak": {
+   "value": "a.lam@angliamorocco.org",
+   "source": "https://angliamorocco.org/",
+   "status": "source"
+  },
+  "office_hours": {
+   "value": null,
+   "source": "",
+   "status": "to-confirm",
+   "note": "Not on either site"
+  }
+ },
+ "school": {
+  "founded": {
+   "value": 2013,
+   "source": "https://www.americangroup-international.com/about-us/",
+   "status": "source",
+   "note": "angliamorocco.org says AGI is a brand since 2012"
+  },
+  "first_students": {
+   "value": 5,
+   "source": "https://www.americangroup-international.com/about-us/",
+   "status": "source"
+  },
+  "classrooms": {
+   "value": 8,
+   "source": "https://www.americangroup-international.com/for-a-better-education/",
+   "status": "source"
+  },
+  "nationalities": {
+   "value": "46+",
+   "source": "https://www.americangroup-international.com/for-a-better-education/",
+   "status": "to-confirm",
+   "note": "Old front page says 45+"
+  },
+  "status_wording": {
+   "value": "private correspondence school",
+   "source": "https://www.americangroup-international.com/front-page-copy/",
+   "status": "to-confirm",
+   "note": "Legal description on old front page"
+  },
+  "eligibility": {
+   "value": "Aged 5 by September 1; under 21 on the first day",
+   "source": "https://www.americangroup-international.com/enrollment/",
+   "status": "source"
+  },
+  "attendance_minimum": {
+   "value": "90%",
+   "source": "https://www.americangroup-international.com/american-group-international-school-of-agadir-attendance-policy/",
+   "status": "source"
+  },
+  "pass_mark": {
+   "value": "64% (D)",
+   "source": "https://www.americangroup-international.com/promotion-and-retention-procedures-policy/",
+   "status": "source"
+  },
+  "service_hours": {
+   "value": "40 (10 per year)",
+   "source": "https://www.americangroup-international.com/in-service-volunteer-hours-for-high-school/",
+   "status": "source"
+  },
+  "school_hours": {
+   "value": null,
+   "source": "",
+   "status": "to-confirm",
+   "note": "Not on either site"
+  },
+  "transport": {
+   "value": null,
+   "source": "",
+   "status": "to-confirm"
+  },
+  "lunch": {
+   "value": null,
+   "source": "",
+   "status": "to-confirm"
+  },
+  "sibling_discount": {
+   "value": null,
+   "source": "",
+   "status": "to-confirm"
+  },
+  "uniform": {
+   "value": "No uniform mentioned; dress code in the handbook",
+   "source": "https://www.americangroup-international.com/agi-academic-school-handbook/",
+   "status": "to-confirm"
+  }
+ },
+ "fees": {
+  "tuition_monthly": {
+   "value": "2,600 MAD × 10 months",
+   "source": "https://www.americangroup-international.com/admission-fee/",
+   "status": "source"
+  },
+  "inscription": {
+   "value": {
+    "K–Grade 1": "6,500 MAD",
+    "Grades 2–6": "7,500 MAD",
+    "Grades 7–8": "7,800 MAD",
+    "Grades 9–11": "10,000 MAD",
+    "Grade 12": "11,000 MAD"
+   },
+   "source": "https://www.americangroup-international.com/admission-fee/",
+   "status": "source",
+   "note": "Grade bands to verify against the page text in Phase 1"
+  },
+  "american_high_school_online": {
+   "value": "US$2,500 per year",
+   "source": "https://www.americangroup-international.com/admission-fee/",
+   "status": "source"
+  },
+  "summer_school_high_school": {
+   "value": "3,000 MAD for one month",
+   "source": "https://www.americangroup-international.com/admission-fee/",
+   "status": "source"
+  },
+  "included": {
+   "value": "Books, mathematics and Anglia exams, insurance (all-inclusive package)",
+   "source": "https://www.americangroup-international.com/admission-fee/",
+   "status": "source"
+  },
+  "anglia_saturday_classes": {
+   "value": "500 MAD a month, yearly exam included",
+   "source": "https://www.americangroup-international.com/anglia-language-class-pricing-and-details/",
+   "status": "source"
+  },
+  "anglia_one_to_one": {
+   "value": "200 MAD per session",
+   "source": "https://www.americangroup-international.com/anglia-language-class-pricing-and-details/",
+   "status": "source"
+  },
+  "anglia_small_group": {
+   "value": "150 MAD per person per session (2–3 students)",
+   "source": "https://www.americangroup-international.com/anglia-language-class-pricing-and-details/",
+   "status": "source"
+  },
+  "anglia_group_course": {
+   "value": "100 MAD a week, 1,200 MAD for 12 weeks (4–10 students)",
+   "source": "https://www.americangroup-international.com/anglia-language-class-pricing-and-details/",
+   "status": "source"
+  },
+  "anglia_level_test": {
+   "value": "Free",
+   "source": "https://www.americangroup-international.com/anglia-language-class-pricing-and-details/",
+   "status": "source"
+  },
+  "online_tutoring_usd": {
+   "value": "US$10 – US$50 per session (by length/package)",
+   "source": "https://www.americangroup-international.com/online-tutoring-session-prices-for-agi-usa/",
+   "status": "to-confirm",
+   "note": "Exact grid to transcribe in Phase 3; prices may be outdated"
+  },
+  "independent_modules": {
+   "value": "US$49.95 / US$79.95 per module; 20% discount mentioned",
+   "source": "https://www.americangroup-international.com/independent-course-studies-modules-and-program/",
+   "status": "to-confirm"
+  },
+  "proctoring": {
+   "value": "200 MAD (15 EUR) admin + 200 MAD (15 EUR) per exam hour",
+   "source": "https://www.americangroup-international.com/proctoring-services-available/",
+   "status": "source"
+  },
+  "usa_sponsorship": {
+   "value": "US$60",
+   "source": "https://www.americangroup-international.com/usa-private-school-teacher-sponsorship/",
+   "status": "source"
+  },
+  "play_therapy": {
+   "value": "150 MAD per session",
+   "source": "https://www.americangroup-international.com/holistic-play-therapy-practitioner/",
+   "status": "to-confirm"
+  },
+  "handbook_fees_mentions": {
+   "value": "150 DH, 20 DH (see handbook text)",
+   "source": "https://www.americangroup-international.com/agi-academic-school-handbook/",
+   "status": "to-confirm",
+   "note": "Identify what these fees are in Phase 1"
+  }
+ },
+ "anglia": {
+  "since": {
+   "value": 1993,
+   "source": "https://angliamorocco.org/exams/",
+   "status": "source"
+  },
+  "franchise_since": {
+   "value": 2021,
+   "source": "https://www.americangroup-international.com/about-us/",
+   "status": "source"
+  },
+  "regions": {
+   "value": 12,
+   "source": "https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/",
+   "status": "source"
+  },
+  "open_representatives": {
+   "value": [
+    "Oujda-Angad",
+    "Fès",
+    "Agadir-Ida Ou Tanane",
+    "Taroudant"
+   ],
+   "source": "https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/",
+   "status": "to-confirm"
+  },
+  "ucas": {
+   "value": "Mastery (C2) qualification carries UCAS tariff points",
+   "source": "https://angliamorocco.org/anglia-mastery-qualification-awarded-ucas-tariff-points-2/",
+   "status": "source"
+  },
+  "exam_durations": {
+   "value": "Reading & writing 1–3 h; listening 10–30 min; speaking 5–20 min",
+   "source": "https://angliamorocco.org/faq/",
+   "status": "source"
+  },
+  "min_age": {
+   "value": "About 4; no upper age limit",
+   "source": "https://angliamorocco.org/faq/",
+   "status": "source"
+  }
+ },
+ "calendars": {
+  "school_2026_27_source_text": {
+   "value": "- Academic School Calendar 2026-2027 – American Group International American Group USA LLC W25317017-\n# American Group International of Agadir\nFirst Day of Classes- September 8th, 2025\nSeptember 2025 September 8th -First Day of Classes September 5 th and 6 th\n-Eid Al Mouloud – Closed- Moveable Date\nOctober 2025 Oct. 20 th – 24 th\nSchool closed for Fall Break .\nNovember 2025 November 6 th\nGreen March\nNovember 18 th\nIndependence Day\nNovember 27 and 28 th\nThanksgiving Holiday\nDecember 2025 December 22 nd Winter Break Starts\nDecember 25 th\nChristmas Day\nHigh School Orders Gowns\nJanuary 2026 January 1 st – New Years- school closed\nJanuary 5 th\nSchool Starts\nJanuary 14 th\nAmazigh New Year\nFebruary 2026 Feb 7 th –\nGlobal Play Day\nFeb 18 th –\nFirst Day of Ramadan\n(Movable)\nMarch 2026 March 20 th and 21 st\nEid El fir- end of Ramadan (movable)\nPick date for Graduation 2026\nApril 2026\nNo Days Off\nAnglia Exams\n2026\nMay 2026 May 1 st –\nLabor Day\nMay 27, 28, 29 th –\nEid al Adha (Movable).\nJune 2026 June 19 th –\nLast day for Students\nTeachers need to report after the 19th to close out the year.\nJuly 2026 Summer Holidays\nAugust 2026 August 25 th ,\nTeachers Reporting and Training.\nInscriptions Begin\nSeptember 7 th School Starts 2026\n2025- 2026 Calendar Program\nPlease contact the administration if you have questions about the calendar: groupinternationala@gmail.com\nFirst Semester Ends- January 15 th , Second Semester Ends- June 15 th\nAMERICAN GROUP INTERNATIONAL\n2026–2027 ACADEMIC CALENDAR\nExcellence • Integrity • Global Pathways\nIMPORTANT DATES\nAUGUST 2026\nAug 1 to 10 – Overseas book orders.\nAug 28 & 31 – Registration Days and teachers’ trainings. Teachers must report. 1 to 4 PM\nSEPTEMBER\nSept 7 – First Day of School\nOCTOBER\nOct 12–18 – Fall Break\nOct 31 – Al Wahda Day (Closed)\nNOVEMBER\nNov 6 – Green March Day (Closed)\nNov 18 – Independence Day (Closed)\nNov 27–28 – Thanksgiving Break\nDECEMBER\nDec 18 – Jan 3 – Winter Break\nJANUARY 2027\nJan 1 – New Year’s Day (Closed)\nJan 4 – Staff PD (No School)\nJan 5 – Students Return\nJan 14 – Amazigh New Year (Closed)\nJan 15 – End of 1 Semester\nFEBRUARY\nFeb 8–10 – Mid-Winter Break\nFeb 17- Global Play Day\nMARCH\nMar 8–14 – Eid Al-Fitr & Break\nAPRIL\nApr 19–25 – Spring Break\n(Anglia Exams to be announced.)\nMAY 2027\nMay 1 – International Labour Day (Closed)\nMay 17–18 – Eid Al-Adha (Closed)\nJUNE\nJune 5 – Islamic New Year\nJune 17 – Last Day for Students and Graduation!\nJune 30 – Last Day for Staff\nJuly 2027\nSummer Vacation\nAugust 2027\n9- Inscription begins\nSeptember 2027\nSept 1 through 3 – Inscription and Teachers report.\nSept 6- School Begins",
+   "source": "https://www.americangroup-international.com/school-calandar/",
+   "status": "source",
+   "note": "Structure into dated events in Phase 1"
+  },
+  "saturday_classes_2025_26_source_text": {
+   "value": "- Anglia Examinations Saturday Classes Yearly Schedule 2025-2026 – American Group International American Group USA LLC W25317017-\n# Anglia Language School Schedule 2025-2026\n(October 4, 2025 – June 13, 2026\nClass Time: Saturdays from 2:00 PM to 4:00 PM\nStart Date: October 4, 2025\nEnd Date: June 13, 2026\nWeekly Breakdown: Prix 500 DHS/ Monthly with Anglia\nExam included in April/May session.\nThe schedule runs every Saturday from the first Saturday in October 2025 until the second Saturday, June 2026.\n#### Academic Calendar 2025-2026\nThis schedule provides a full academic year of Anglia language classes on\nSaturdays from 2:00 PM to 4:00 PM, accounting for breaks and holidays. Yellow highlighted areas are the days off on the Saturday calendar.\nOctober 4, 2025\nOctober 11, 2025\nOctober 18, 2025\nOctober 25, 2025\nNovember 1, 2025\nNovember 8, 2025\nNovember 15, 2025\nNovember 22, 2025\nNovember 29, 2025\nDecember 6, 2025\nDecember 13, 2025\nDecember 20, 2025\nWinter Break – December 27,\n2025 (No Class)\nJanuary 3, 2026\nJanuary 10, 2026\nJanuary 17, 2026\nJanuary 24, 2026\nJanuary 31, 2026\nFebruary 7, 2026\nFebruary 14, 2026\nFebruary 21, 2026\nFebruary 28, 2026\nMarch 7, 2026\nMarch 14, 2026\nMarch 21, 2026\nMarch 28, 2026\nApril 4, 2026\nApril 11, 2026\nSpring Break – April 18, 2026\n(No Class)\nApril 25, 2026\nMay 2, 2026\nMay 9, 2026\nMay 16, 2026\nMay 23, 2026\nMay 30, 2026\nJune 6, 2026\nJune 13, 2026\n(Final Class)\nPlease reach out to us by WhatsApp for questions about the yearly sessions. Please make sure you tell us who you are and what class your child/ children are enrolled in. 212 0688739393.",
+   "source": "https://www.americangroup-international.com/anglia-examinations-saturday-classes-yearly-schedule-2025-2026/",
+   "status": "to-confirm",
+   "note": "2026–27 schedule needed"
+  },
+  "anglia_exam_dates_2026_source_text": {
+   "value": "ANGLIA EXAM DATES - Anglia Morocco\n# Anglia Exam Dates – 2026\nJanuary ▶\n#### First Step, Junior Primary\nFriday 13th | Saturday 21st\n#### Preliminary A1\n#### Elementary A2\n#### Pre-Intermediate A2+\n#### Intermediate B1\n#### Advanced B2\n#### Proficiency C1\n#### Masters C2\nSaturday 21st\nApril ▶\n#### All Levels\nThursday 9th | Saturday 18th\nMay ▶\n### Session 1\nSaturday 16th | Thursday 28th | Saturday 30th\n### Session 2\nThursday 22nd | Saturday 24th\n### Session 3\nSaturday 14th\nJune ▶\nThursday 18th, Saturday 20th, Sunday 21st, Friday 26th, Saturday 27th\nJuly ▶\n#### Most Levels\nSaturday 4th\nSaturday 4th | Friday 24th\nAugust ▶\nFriday 7th\nSeptember ▶\nFriday 18th | Saturday 19th\nSaturday 19th\nOctober ▶\nThursday 15th | Saturday 17th\nThursday 15th\nNovember ▶\nThursday 19th | Saturday 21st | Saturday 28th\nThursday 19th | Saturday 21st\nDecember ▶\nThursday 10th, Saturday 12th, Thursday 17th, Saturday 19th\nSaturday 12th\n* If you need an exam session on an unlisted date, please contact the Anglia office.",
+   "source": "https://angliamorocco.org/anglia-exam-dates-2/",
+   "status": "source"
+  }
+ },
+ "people": {
+  "julie_title": {
+   "value": "CEO & Educational Director · Anglia Examinations Morocco, American Group International of Agadir",
+   "source": "julie-signature",
+   "status": "confirmed"
+  },
+  "julie_other_titles": {
+   "value": [
+    "Founder (ASCA 2026 post)",
+    "Country Manager (angliamorocco.org)",
+    "Director of Operations of AngliaMaroc (2022 post)",
+    "Director of Global Operations (marketing draft)"
+   ],
+   "source": "various",
+   "status": "to-confirm"
+  },
+  "team_old_front_page": {
+   "value": [
+    "Prof. Abdelhak Lam",
+    "Prof. Latifa Amhari",
+    "Prof. Mohamed Saih",
+    "Mr. Rachid Oussalh"
+   ],
+   "source": "https://www.americangroup-international.com/front-page-copy/",
+   "status": "to-confirm",
+   "note": "Julie asked to remove Rachid Oussalh"
+  }
+ }
+}

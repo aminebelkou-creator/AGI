@@ -1,0 +1,86 @@
+[
+ {
+  "id": 1,
+  "claim": "Anglia is dependent on the UK Ministry of Education; recognised by the British Council; QCA accreditation; ASCENTIS support",
+  "source": "https://angliamorocco.org/faq/",
+  "decision": "Do not publish until Anglia confirms current wording",
+  "status": "open"
+ },
+ {
+  "id": 2,
+  "claim": "Proficiency listed by UCAS",
+  "source": "v2 english-anglia",
+  "decision": "Replace with: Mastery (C2) carries UCAS tariff points",
+  "status": "fix-now"
+ },
+ {
+  "id": 3,
+  "claim": "45+ vs 46+ nationalities",
+  "source": "old front page vs school page",
+  "decision": "Julie",
+  "status": "open"
+ },
+ {
+  "id": 4,
+  "claim": "AGI is a private correspondence school",
+  "source": "old front page",
+  "decision": "Julie (legal status)",
+  "status": "open"
+ },
+ {
+  "id": 5,
+  "claim": "Julie's titles (CEO, Country Manager, Director of Operations, Director of Global Operations, Founder)",
+  "source": "various",
+  "decision": "Julie",
+  "status": "open"
+ },
+ {
+  "id": 6,
+  "claim": "Team: Latifa Amhari, Mohamed Saih, Rachid Oussalh",
+  "source": "old front page",
+  "decision": "Julie: current team and roles",
+  "status": "open"
+ },
+ {
+  "id": 7,
+  "claim": "Three emails in use (official, admin, agiangliama)",
+  "source": "old site header/menus",
+  "decision": "Julie: one email per purpose",
+  "status": "open"
+ },
+ {
+  "id": 8,
+  "claim": "Saturday schedule is for 2025–26",
+  "source": "schedule page",
+  "decision": "Get 2026–27 dates",
+  "status": "open"
+ },
+ {
+  "id": 9,
+  "claim": "Limited homework vs homework policy minutes",
+  "source": "K-12 vs policy",
+  "decision": "Julie",
+  "status": "open"
+ },
+ {
+  "id": 10,
+  "claim": "American Group USA LLC address in Grantsville (Maryland)",
+  "source": "AGI USA page",
+  "decision": "Confirm and publish",
+  "status": "open"
+ },
+ {
+  "id": 11,
+  "claim": "Western Sahara political text on the Anglia network page",
+  "source": "angliamorocco.org network",
+  "decision": "Do not reproduce; list regions and provinces only",
+  "status": "decided"
+ },
+ {
+  "id": 12,
+  "claim": "Old prices (online tutoring, modules, proctoring, play therapy) may be outdated",
+  "source": "various",
+  "decision": "Julie",
+  "status": "open"
+ }
+]
