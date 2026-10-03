@@ -529,14 +529,14 @@ program_page("english-anglia.html", "English & Anglia exams", "English & Anglia 
   </dl>
 </div></section>
 <section class="section" id="anglia-morocco"><div class="wrap">
-  <div class="section-head"><h2>Anglia Morocco online</h2><p>Exam dates, books and practice material are published on the official Anglia Morocco website.</p></div>
+  <div class="section-head"><h2>Anglia Morocco online</h2><p>Exam dates, books, practice material and the national network – all on this website.</p></div>
   <div class="cards">
-    <a class="card" href="https://angliamorocco.org/anglia-exam-dates-2/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>Exam dates</h3><p>The year's exam sessions for every level, from First Step to Masters.</p><span class="more">See the dates</span></a>
-    <a class="card" href="https://angliamorocco.org/step-to-books-2/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>Step To books &amp; audio</h3><p>Preparation books for each level, the book order form and the audio files.</p><span class="more">Order books</span></a>
-    <a class="card" href="https://angliamorocco.org/practice-resources/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>Practice resources</h3><p>Sample papers and practice material to prepare for the exams.</p><span class="more">Practice</span></a>
-    <a class="card" href="https://angliamorocco.org/citem/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>C.I.T.E. for teachers</h3><p>Register for the Certificate for International Teachers of English.</p><span class="more">Register</span></a>
-    <a class="card" href="https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>Network &amp; centers</h3><p>The Anglia Morocco network across the twelve regions, and open representative positions.</p><span class="more">See the network</span></a>
-    <a class="card" href="https://angliamorocco.org/faq/" target="_blank" rel="noopener"><span class="tag">angliamorocco.org</span><h3>Questions about the exams</h3><p>How long each exam lasts, what it assesses and how levels are grouped.</p><span class="more">Read the FAQ</span></a>
+    <a class="card" href="https://angliamorocco.org/anglia-exam-dates-2/" target="_blank" rel="noopener"><span class="tag">Anglia Morocco</span><h3>Exam dates</h3><p>The year's exam sessions for every level, from First Step to Masters.</p><span class="more">See the dates</span></a>
+    <a class="card" href="https://angliamorocco.org/step-to-books-2/" target="_blank" rel="noopener"><span class="tag">Anglia Morocco</span><h3>Step To books &amp; audio</h3><p>Preparation books for each level, the book order form and the audio files.</p><span class="more">Order books</span></a>
+    <a class="card" href="https://angliamorocco.org/practice-resources/" target="_blank" rel="noopener"><span class="tag">Anglia Morocco</span><h3>Practice resources</h3><p>Sample papers and practice material to prepare for the exams.</p><span class="more">Practice</span></a>
+    <a class="card" href="https://angliamorocco.org/citem/" target="_blank" rel="noopener"><span class="tag">Anglia Morocco</span><h3>C.I.T.E. for teachers</h3><p>Register for the Certificate for International Teachers of English.</p><span class="more">Register</span></a>
+    <a class="card" href="https://angliamorocco.org/angliamorocco-networks-and-centers-12-regions/" target="_blank" rel="noopener"><span class="tag">Anglia Morocco</span><h3>Network &amp; centers</h3><p>The Anglia Morocco network across the twelve regions, and open representative positions.</p><span class="more">See the network</span></a>
+    <a class="card" href="https://angliamorocco.org/faq/" target="_blank" rel="noopener"><span class="tag">Anglia Morocco</span><h3>Questions about the exams</h3><p>How long each exam lasts, what it assesses and how levels are grouped.</p><span class="more">Read the FAQ</span></a>
   </div>
 </div></section>
 <section class="section" id="cefr"><div class="wrap">

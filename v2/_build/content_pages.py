@@ -593,7 +593,7 @@ def section_page(name, group, title, lede, intro_html, desc, buttons=None, crumb
 
 section_page("teachers-cite.html", "Teachers", "C.I.T.E. / TESOL certification",
  "Anglia's Certificate for International Teachers of English: recognition of your English and your teaching – for life.",
- '<p style="margin-top:0"><a class="btn btn-primary" href="https://angliamorocco.org/citem/" target="_blank" rel="noopener">Register on angliamorocco.org</a></p>',
+ '<p style="margin-top:0"><a class="btn btn-primary" href="forms.html#enquiry/anglia">Register for C.I.T.E.</a></p>',
  "Anglia C.I.T.E. (TESOL) certification in Morocco: who it is for, English level needed, preparation, when and how to take it.", crumb="C.I.T.E.")
 section_page("teachers-usa-sponsorship.html", "Teachers", "USA private-school teacher sponsorship",
  "Certification sponsorship for teaching in private schools in the United States – process, requirements and fee.", "",
@@ -1161,6 +1161,24 @@ page("accessibility.html", "Accessibility – American Group International, Agad
 for _n in list(PAGES):
     if not _n.startswith(("fr/", "ar/")): PAGES[_n] = split_languages(PAGES[_n], _n)
 print("foreign blocks moved: ar", {k: len(v) for k, v in FOREIGN["ar"].items()}, "| fr", {k: len(v) for k, v in FOREIGN["fr"].items()})
+
+
+# ================================================================== ONE WEBSITE: angliamorocco.org links point to the pages here (the domain redirects to this site)
+AM_MAP = {"": "anglia.html", "anglia-exam-dates-2": "anglia-exam-dates.html", "anglia-exam-dates": "anglia-exam-dates.html", "step-to-books": "anglia-books.html", "step-to-books-2": "anglia-books.html",
+          "practice-resources": "anglia-practice.html", "citem": "teachers-cite.html", "contact": "contact.html", "exams": "anglia-exams.html", "cefr": "anglia-cefr.html", "faq": "anglia-faq.html",
+          "special-arrangements": "anglia-special-arrangements.html", "angliamorocco-networks-and-centers-12-regions": "anglia-network.html", "about": "anglia-about.html", "club-anglia": "anglia.html", "news": "journal.html"}
+def _am_local(m):
+    path = m.group(2).strip("/").split("/")[0] if m.group(2) else ""
+    if path == "ar": return f'href="ar/anglia.html"'
+    return f'href="{AM_MAP.get(path, "anglia.html")}"'
+def one_site(h):
+    h = _re.sub(r'href="https?://(www\.)?angliamorocco\.org/?([^"#]*)"(\s+target="_blank")?(\s+rel="noopener")?', lambda m: _am_local(m), h)
+    h = h.replace('>Register on angliamorocco.org<', '>Register for C.I.T.E.<').replace('>Register for C.I.T.E.<', '>Register for C.I.T.E.<')
+    h = h.replace(">angliamorocco.org</a>", ">Anglia Morocco</a>").replace(">angliamorocco.org<", ">Anglia Morocco<")
+    h = _re.sub(r"(?i)\s*(?:on|from)\s+angliamorocco\.org", "", h)
+    return h
+for _n in list(PAGES):
+    if not _n.startswith("fr/"): PAGES[_n] = one_site(PAGES[_n])
 
 # ================================================================== CLOSING CTA on every page without one
 def _section_of(n):

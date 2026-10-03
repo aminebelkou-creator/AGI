@@ -15,7 +15,7 @@ for f in files:
         if re.match(r"(https?:|mailto:|tel:|data:|javascript:)", url): continue
         checked += 1
         path, _, frag = url.partition("#")
-        target = os.path.normpath(os.path.join(os.path.dirname(f), unquote(path))) if path else os.path.normpath(f)
+        target = os.path.normpath(os.path.join(V2, unquote(path).lstrip("/")) if path.startswith("/") else os.path.join(os.path.dirname(f), unquote(path))) if path else os.path.normpath(f)   # "/x" = site root
         if not os.path.exists(target):
             broken.append((os.path.relpath(f, V2), url, "missing file")); continue
         if frag and target.endswith(".html"):
