@@ -146,3 +146,24 @@ for _f in os.listdir(os.path.join(V2, "journal")):
     _p = os.path.join(V2, "journal", _f); _t = open(_p, encoding="utf-8").read(); _n2 = _clean_article(_t)
     if _n2 != _t: open(_p, "w", encoding="utf-8", newline="").write(_n2); _c += 1
 print(f"journal cleanup: {_c} articles cleaned")
+
+# ---------------- PRIVACY + ARCHIVE: hidden photos until consent, banner on posts older than 12 months ----------------
+import datetime as _dt
+_PJ = os.path.join(V2, "_build", "privacy.json")
+_PRIV = json.load(open(_PJ, encoding="utf-8")) if os.path.exists(_PJ) else {"hide_photos": [], "approved": []}
+_HIDE = set(_PRIV.get("hide_photos", [])) - set(_PRIV.get("approved", []))
+_MON = {m: i for i, m in enumerate(["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"], 1)}
+_CUT = _dt.date.today() - _dt.timedelta(days=365)
+_h = _a = 0
+for _f in os.listdir(os.path.join(V2, "journal")):
+    _p = os.path.join(V2, "journal", _f); _t = open(_p, encoding="utf-8").read(); _o = _t
+    if f"journal/{_f}" in _HIDE:
+        _t = re.sub(r"<figure\b[^>]*>\s*<img\b[^>]*>.*?</figure>|<img\b[^>]*>", '<span class="photo-hidden">Photo hidden until parental consent is confirmed.</span>', _t, flags=re.S)
+        _t = _t.replace('<main id="main" class="article np">', '<main id="main" class="article np" data-verify="privacy-review">', 1); _h += 1
+    _m = re.search(r'<p class="article-meta"><b>[^<]*</b>([^<]*)</p>', _t)
+    if _m and "archived-note" not in _t:
+        _d = _m.group(1); _y = re.search(r"(19|20)\d{2}", _d); _mo = next((v for k, v in _MON.items() if k in _d.lower()), 1)
+        if _y and _dt.date(int(_y.group(0)), _mo, 1) < _CUT:
+            _t = _t.replace('<div class="prose">', f'<div class="prose"><p class="archived-note">Archived post{(" from " + _d.strip()) if _d.strip() else ""}. Fees, dates and programs may have changed – see the current <a href="../fees.html">tuition &amp; fees</a> and <a href="../calendar.html">calendar</a>.</p>', 1); _a += 1
+    if _t != _o: open(_p, "w", encoding="utf-8", newline="").write(_t)
+print(f"privacy: photos hidden in {_h} posts · archive banner on {_a} posts")

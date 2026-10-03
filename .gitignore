@@ -14,3 +14,4 @@ deploy/
 data/crawl/agi/
 data/crawl/anglia/
 data/crawl/*.log
+data/review/shots/
