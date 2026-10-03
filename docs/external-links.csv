@@ -1,5 +1,5 @@
 ﻿status,http,url,redirects_to,pages,used_on
-OK,200,https://angliamorocco.org/,,148,about.html admissions.html adult-diploma.html agi-usa.html anglia-about.html anglia-books.html
+OK,200,https://angliamorocco.org/,,151,404.html about.html accessibility.html admissions.html adult-diploma.html agi-usa.html
 OK,200,https://www.anglia.nl/uploads/1/2/0/0/120044573/audiofiles_step_to_fs_-_pre-intermediate__1_.zip,,1,anglia-books.html
 OK,200,https://www.anglia.nl/uploads/1/2/0/0/120044573/audoifiles_step_to_intermediate_-_masters__1_.zip,,1,anglia-books.html
 OK,200,http://www.angliamorocco.org/,https://angliamorocco.org/,1,anglia-exams.html
@@ -93,7 +93,3 @@ OK,200,"https://en.wikipedia.org/wiki/Benton_County,_Oregon",,1,journal/lane-com
 OK,200,"https://en.wikipedia.org/wiki/Linn_County,_Oregon",,1,journal/lane-community-college-international-programs.html
 OK,200,"https://en.wikipedia.org/wiki/Douglas_County,_Oregon",,1,journal/lane-community-college-international-programs.html
 OK,200,https://en.wikipedia.org/wiki/Motto,,1,journal/lane-community-college-international-programs.html
-BROKEN,404,https://www.americangroup-international.com/wp-content/uploads/2026/04/OIP-7.webp,,1,journal/4356-2.html
-BROKEN,404,https://www.americangroup-international.com/wp-content/uploads/2026/03/american-school-counselor-association-asca-logo-png_seeklogo-385757.png,,1,journal/american-school-counselor-association-member.html
-BROKEN,404,https://www.americangroup-international.com/wp-content/uploads/2026/03/1000100832.png,,1,journal/leverage-edu-x-agi-join-forces-in-the-south-of-morocco.html
-BROKEN,404,https://www.americangroup-international.com/wp-content/uploads/2026/03/1000100833-683x1024.png,,1,journal/leverage-edu-x-agi-join-forces-in-the-south-of-morocco.html

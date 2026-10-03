@@ -1,11 +1,19 @@
 ﻿page,area,issue,detail
 handbook.html,facts,"Tuition amount differs from 2,600 MAD","monthly payment, there is a 150 DH"
 journal.html,facts,First day differs from Sept 7,First Day of School is September 5
+404.html,structure,No closing call to action,
 about.html,design,Many inline styles (design drift),27 style attributes
+accessibility.html,structure,No closing call to action,
+anglia-about.html,structure,No closing call to action,
+anglia-cefr.html,structure,No closing call to action,
+anglia-faq.html,structure,No closing call to action,
+anglia-placement-test.html,structure,No closing call to action,
+anglia-special-arrangements.html,structure,No closing call to action,
 connect.html,structure,No page hero,
 connect.html,structure,No breadcrumb,
 connect.html,design,Many inline styles (design drift),51 style attributes
 forms.html,structure,No page hero,
 index.html,design,Many inline styles (design drift),26 style attributes
 journal.html,design,Many inline styles (design drift),76 style attributes
+404.html,organization,Orphan page (no link to it),
 connect.html,design,Hard-coded colors outside the palette,"#0a0a0a, #141414, #1e1e1e, #7bc98a, #e8b4b4"

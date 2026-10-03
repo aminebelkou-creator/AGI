@@ -1,6 +1,6 @@
 import os, re, html
 from urllib.parse import unquote
-V2 = r"C:\Users\belko\AGI\v2"
+V2 = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 files = [os.path.join(dp, f) for dp, _, fs in os.walk(V2) if "_legacy" not in dp and "_build" not in dp for f in fs if f.endswith(".html")]
 ids = {}
 for f in files:

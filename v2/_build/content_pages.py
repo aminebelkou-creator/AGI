@@ -1095,6 +1095,68 @@ for _n in list(PAGES):
         if "ANGLIA_THEME" not in h: h = h.replace("</head>", f"<style>/*ANGLIA_THEME*/{ANGLIA_THEME_CSS}</style>\n</head>", 1)
         PAGES[_n] = h
 
+
+# ================================================================== 404 · SAFEGUARDING · ACCESSIBILITY
+page("404.html", "Page not found – American Group International, Agadir", "The page you are looking for has moved or no longer exists.",
+ hero("<span>Page not found</span>", "This page has moved.",
+      "The AGI website has been rebuilt, so some old addresses no longer exist. Everything is still here – start from one of these pages, or ask us.",
+      '<a class="btn btn-primary" href="index.html">Home</a><a class="btn btn-ghost" href="contact.html">Contact</a>') + """
+<section class="section bg-white"><div class="wrap"><div class="cards">
+  <a class="card" href="parents.html"><span class="tag">Parents</span><h3>For parents</h3><span class="more">Open</span></a>
+  <a class="card" href="admissions.html"><span class="tag">Admissions</span><h3>How to apply</h3><span class="more">Open</span></a>
+  <a class="card" href="fees.html"><span class="tag">Fees</span><h3>Tuition &amp; fees</h3><span class="more">Open</span></a>
+  <a class="card" href="calendar.html"><span class="tag">Dates</span><h3>Calendar 2026–27</h3><span class="more">Open</span></a>
+  <a class="card" href="programs.html"><span class="tag">Programs</span><h3>All programs</h3><span class="more">Open</span></a>
+  <a class="card" href="anglia.html"><span class="tag">Anglia Morocco</span><h3>English exams</h3><span class="more">Open</span></a>
+  <a class="card" href="forms.html"><span class="tag">Forms</span><h3>Forms &amp; requests</h3><span class="more">Open</span></a>
+  <a class="card" href="journal.html"><span class="tag">News</span><h3>Journal</h3><span class="more">Open</span></a>
+  <a class="card" href="faq.html"><span class="tag">Help</span><h3>Questions &amp; answers</h3><span class="more">Open</span></a>
+</div></div></section>""")
+PAGES["404.html"] = PAGES["404.html"].replace("<head>", '<head>\n<meta name="robots" content="noindex">', 1)
+# links in the 404 page must work from any folder depth -> absolute from the site root
+PAGES["404.html"] = _re.sub(r'(href|src)="(?!https?:|mailto:|tel:|#|/)', r'\1="/', PAGES["404.html"])
+
+page("safeguarding.html", "Safeguarding & child protection – American Group International, Agadir",
+ "How AGI keeps children safe: our commitments, photos and media consent, online safety, visitors, how to raise a concern, and children's personal data.",
+ hero('<a href="policies.html">Policies</a> / <span>Safeguarding</span>', "Safeguarding &amp; child protection.",
+      "Every child at AGI has the right to be safe, respected and heard. This page explains how the school protects children and how to raise a concern.",
+      '<a class="btn btn-primary" href="#concern">Raise a concern</a><a class="btn btn-ghost" href="policies.html">All policies</a>') + f"""
+<section class="section bg-white"><div class="wrap docwrap"><div class="doc" data-verify="legal-review:safeguarding">
+  <h2 style="margin-top:0">Our commitments</h2>
+  <ul><li>Children's safety and wellbeing come first in every decision.</li><li>Staff know the children and families they work with, and listen when a child speaks up.</li>
+  <li>Concerns are taken seriously, recorded and acted on promptly.</li><li>We work with parents and, where needed, with the competent authorities.</li></ul>
+  <h2 id="lead">Who is responsible</h2>
+  <p>Designated safeguarding lead: {PH_TXT("safeguarding-lead", "name and role to be confirmed")}. Overall responsibility: Julie A. Wilburn, Founder · CEO &amp; Educational Director.</p>
+  <h2 id="media">Photos, video and children's names</h2>
+  <p>No child's photo, video or full name is published without written parental consent, in line with our <a href="media-policy.html">media policy</a> and Morocco's personal-data law (09-08). On this website, photos of children are hidden until that consent is confirmed.</p>
+  <h2 id="online">Online safety</h2>
+  <p>Students use school devices and online classes under the acceptable-use rules in the <a href="handbook.html">academic handbook</a>. Online lessons run on Zoom or Microsoft Teams with the school's instructions.</p>
+  <h2 id="wellbeing">Wellbeing and support</h2>
+  <p>Individual plans, small classes and holistic support help children who are struggling. AGI is a member of the American School Counselor Association. <a href="wellbeing.html">Wellbeing (i-Heart)</a> · <a href="special-education.html">Special education</a></p>
+  <h2 id="visitors">Visitors</h2>
+  <p>Visits to the school are by appointment and arranged individually. {PH_TXT("safeguarding-visitors", "Visitor sign-in and supervision procedure to be confirmed.")}</p>
+  <h2 id="concern">How to raise a concern</h2>
+  <p>If you are worried about a child's safety or wellbeing, speak to the school office or the safeguarding lead straight away – in person, by phone on <a href="tel:+212528843349">+212 528 843 349</a> or by email at <a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a>. You can also use the <a href="refunds-complaints.html">complaints procedure</a>. If a child is in immediate danger, contact the emergency services first.</p>
+  <h2 id="data">Children's personal data</h2>
+  <p>We collect only the information needed to educate and protect each child, keep it confidential and share it only with people who need it. <a href="privacy.html">Privacy policy</a></p>
+  <p class="source-note">This page summarizes AGI's practice and will be completed once the full safeguarding policy is confirmed.</p>
+</div><aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="media-policy.html">Media policy</a></li><li><a href="parent-responsibility.html">Parent responsibility</a></li><li><a href="handbook.html">Academic handbook</a></li><li><a href="privacy.html">Privacy</a></li></ul></aside></div></section>""", DOC_CSS)
+
+page("accessibility.html", "Accessibility – American Group International, Agadir",
+ "How the AGI website is made accessible (WCAG 2.1 AA), what is not yet fully accessible, and how to ask for help.",
+ hero("<span>Accessibility</span>", "Accessibility.", "We want everyone to be able to use this website – on any device, in English, French or Arabic, with or without assistive technology.") + """
+<section class="section bg-white"><div class="wrap docwrap"><div class="doc">
+  <h2 style="margin-top:0">Our goal</h2><p>This website aims to meet the Web Content Accessibility Guidelines (WCAG) 2.1, level AA.</p>
+  <h2>What we have done</h2>
+  <ul><li>Text and background colors meet contrast requirements; text can be enlarged without breaking the layout.</li><li>Every page can be used with a keyboard, with a visible focus and a "skip to content" link.</li>
+  <li>Pages use proper headings, labels and descriptions for screen readers; forms explain errors in words.</li><li>Pages work on phones and support right-to-left reading for Arabic.</li>
+  <li>Animations are reduced when your device asks for reduced motion.</li></ul>
+  <h2>What is not yet fully accessible</h2>
+  <ul><li>Some older journal posts imported from the previous website may have long paragraphs or images without full descriptions.</li><li>Practice papers and books published by Anglia Examinations, and some older videos, are provided as they are and may not have captions or accessible formats.</li><li>French and Arabic versions cover the main pages only for now.</li></ul>
+  <h2>Need help or found a problem?</h2><p>Tell us what you need and we will provide the information another way: <a href="mailto:americanecoleagadir@gmail.com">americanecoleagadir@gmail.com</a> · <a href="tel:+212528843349">+212 528 843 349</a> · WhatsApp <a href="https://wa.me/212688739393" target="_blank" rel="noopener">+212 688 739 393</a>.</p>
+  <p class="source-note">Last reviewed October 2026.</p>
+</div></div></section>""", DOC_CSS)
+
 # ================================================================== CONTENT QUALITY PASS (English pages)
 for _n in list(PAGES):
     if not _n.startswith(("fr/", "ar/")): PAGES[_n] = split_languages(PAGES[_n], _n)
@@ -1113,7 +1175,7 @@ _CTA = {"anglia": ("Find your English level.", "Book a free placement assessment
         "programs": ("Is this the right program?", "Tell us what you are looking for and we will help you choose.", '<a class="btn btn-gold" href="forms.html#enquiry/programs">Ask about this program</a><a class="btn btn-light" href="programs.html">All programs</a>'),
         "life": ("Come and see the school.", "Tours are arranged individually, Monday to Friday.", '<a class="btn btn-gold" href="forms.html#visit">Book a visit</a><a class="btn btn-light" href="parents.html">For parents</a>'),
         "about": ("Come and meet us.", "The best way to know AGI is to visit during the school day.", '<a class="btn btn-gold" href="forms.html#visit">Book a visit</a><a class="btn btn-light" href="contact.html">Contact</a>')}
-_SKIP_CTA = {"forms.html", "privacy.html", "terms.html", "cookies.html", "connect.html", "journal.html"}
+_SKIP_CTA = {"404.html", "accessibility.html", "forms.html", "privacy.html", "terms.html", "cookies.html", "connect.html", "journal.html"}
 for _n in list(PAGES):
     if _n.startswith(("fr/", "ar/")) or _n in _SKIP_CTA or "cta-band" in PAGES[_n]: continue
     _t, _x, _b = _CTA[_section_of(_n)]

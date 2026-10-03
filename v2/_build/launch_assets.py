@@ -41,7 +41,8 @@ for r in _map:
     dest = r["destination"]
     if dest in ("-", "REVIEW", "") or dest.startswith("ar/"): dest = FALLBACK.get(r["category"], "index.html")
     rows.append((path + "/", "/" + dest, r["title"], r["kind"]))
-PERF = """# Compression and browser caching (Apache)
+PERF = """ErrorDocument 404 /404.html
+# Compression and browser caching (Apache)
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/plain application/xml
 </IfModule>
@@ -69,7 +70,7 @@ print(f"redirects: {len(seen)}  (pages {sum(1 for r in rows if r[3]=='page')}, p
 
 # 3) sitemap + robots
 today = datetime.date.today().isoformat()
-urls = [f for f in sorted(os.listdir(".")) if f.endswith(".html") and not f.startswith("_")]
+urls = [f for f in sorted(os.listdir(".")) if f.endswith(".html") and not f.startswith("_") and f != "404.html"]
 urls += ["journal/" + f for f in sorted(os.listdir("journal")) if f.endswith(".html")]
 def pri(u): return "1.0" if u == "index.html" else "0.8" if "/" not in u and u not in ("privacy.html", "terms.html", "connect.html") else "0.5"
 for d in ("fr", "ar"):

@@ -4,7 +4,7 @@ or be listed in docs/content-exclusions.csv with a reason.
   python _build/coverage_gate.py --phase 1  -> exit 1 unless phase 1 passes (use before calling a phase done)"""
 import os, re, json, csv, sys, html
 from collections import defaultdict
-ROOT = r"C:\Users\belko\AGI"; V2 = os.path.join(ROOT, "v2")
+V2 = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); ROOT = os.path.dirname(V2)
 inv = {p["url"]: p for p in json.load(open(os.path.join(ROOT, "data", "crawl", "inventory.json"), encoding="utf-8"))}
 rows = list(csv.DictReader(open(os.path.join(ROOT, "docs", "content-map.csv"), encoding="utf-8-sig")))
 exc_path = os.path.join(ROOT, "docs", "content-exclusions.csv")
