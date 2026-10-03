@@ -34,7 +34,8 @@ def clean_line(l):
     if not t or _re.fullmatch(r"(?i)(?:[-•*·]\s*)?(click here|show the way|find your way by cli[c]?king here ?:?|read more|contact us|download|apply now!?|enroll now|learn more|register now|book now|submit|share)", t): return ("skip", None)
     if _re.search(r"\s&$", t) and len(t.split()) <= 6: return ("skip", None)                     # old form field labels ("Drivers License Number &")
     return ("text", t)
-TITLE_FIX = [(r"Julie\s+(?:A\.\s+)?WILBURN\s+Director of Operations of Anglia Morocco", "Julie Wilburn, CEO &amp; Educational Director, Anglia Examinations Morocco"),
+TITLE_FIX = [(r"groupinternationala@gmail\.com", "americanecoleagadir@gmail.com"),
+             (r"Julie\s+(?:A\.\s+)?WILBURN\s+Director of Operations of Anglia Morocco", "Julie Wilburn, CEO &amp; Educational Director, Anglia Examinations Morocco"),
              (r"Julie\s+Wilburn\s*[-–]\s*Director of Operations", "Julie Wilburn – CEO &amp; Educational Director"),
              (r"Anglia Morocco Country Manager", "CEO &amp; Educational Director, Anglia Examinations Morocco"),
              (r"Director of Operations of Anglia Morocco", "CEO &amp; Educational Director, Anglia Examinations Morocco")]
@@ -395,8 +396,9 @@ FAQ = [
   ("Can adults finish high school?", "Yes, from age 16 with American Worldwide Academy; every test is proctored in Agadir and graduation requires 80%.", "adult-diploma.html"),
   ("Do you proctor exams for other institutions?", "Yes, Monday to Thursday 9:00–17:00: a 200 MAD (15 EUR) administration fee plus 200 MAD (15 EUR) per exam hour.", "professional.html")]),
 ]
+FAQ_LBL = {'admissions.html': 'Admissions', 'placement-policy.html': 'Placement policy', 'parents.html': 'For parents', 'special-education.html': 'Special education', 'fees.html': 'Tuition & fees', 'calendar.html': 'Calendar 2026–27', 'attendance.html': 'Attendance policy', 'handbook.html': 'Academic handbook', 'promotion-retention.html': 'Promotion & retention', 'homework.html': 'Homework guidelines', 'volunteer-hours.html': 'Volunteer hours', 'supplies.html': 'Supplies list', 'english-anglia.html': 'English & Anglia exams', 'teachers.html': 'For teachers', 'adult-diploma.html': 'Adult diploma', 'professional.html': 'Professional services'}
 _faq_html = "".join(f'<h2 id="{_re.sub(r"[^a-z]+", "-", g.lower()).strip("-")}">{g}</h2><div class="faq">' + "".join(
-    f'<details><summary>{q}</summary><p>{a} <a class="link" href="{l}">More</a></p></details>' for q, a, l in qs) + "</div>" for g, qs in FAQ)
+    f'<details><summary>{q}</summary><p>{a} <a class="link" href="{l}">{FAQ_LBL.get(l, "Read more about this")}</a></p></details>' for q, a, l in qs) + "</div>" for g, qs in FAQ)
 _faq_ld = _json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
     {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": _re.sub(r"<[^>]+>", "", a)}} for _, qs in FAQ for q, a, _l in qs if "ph-text" not in a]}, ensure_ascii=False)
 page("faq.html", "Questions & answers – American Group International, Agadir",
@@ -417,7 +419,7 @@ def inject_static(fname, key, inner):
     if "<style id=\"doc-css\">" not in t: t = t.replace("</head>", f'<style id="doc-css">{DOC_CSS}</style>\n</head>', 1)
     t = t.replace("</main>", blk + "\n</main>", 1)
     open(fp, "w", encoding="utf-8", newline="").write(t)
-inject_static("admissions.html", "full", '<section class="section bg-white np" id="procedure"><div class="wrap docwrap"><div class="doc">'
+if False: inject_static("admissions.html", "full", '<section class="section bg-white np" id="procedure"><div class="wrap docwrap"><div class="doc">'
   + '<h2 style="margin-top:0">In AGI&rsquo;s own words</h2><p>The steps above summarize the procedure. Here is the full text, and the full list of enrollment documents.</p>'
   + FULLTEXT(render(SRC("admissions-procedure")["text"]) + render(SRC("admission-prossess")["text"]), "The admissions procedure in full")
   + FULLTEXT(render(SRC("/enrollment")["text"], stop="rification de l"), "Enrollment documents in full") + '</div><aside><p class="kicker">Next steps</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px">'
@@ -426,7 +428,7 @@ import csv as _csv
 _MAP = list(_csv.DictReader(open(os.path.join(os.path.dirname(V2), "docs", "content-map.csv"), encoding="utf-8-sig")))
 def MAPPED(dest): return [r["url"] for r in _MAP if r["destination"] == dest and r["action"] != "drop"]
 _k12_src = MAPPED("k12.html")
-inject_static("k12.html", "full", '<section class="section bg-white np" id="about-the-school"><div class="wrap docwrap"><div class="doc">'
+if False: inject_static("k12.html", "full", '<section class="section bg-white np" id="about-the-school"><div class="wrap docwrap"><div class="doc">'
   + '<h2 style="margin-top:0">About the school in detail</h2>' + FULLTEXT("".join(render(SRC(u)["text"], privacy=True) for u in _k12_src))
   + '</div><aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="handbook.html">Academic handbook</a></li><li><a href="supplies.html">Supplies list</a></li><li><a href="homework.html">Homework</a></li><li><a href="fees.html#high-school">High school options</a></li></ul></aside></div></section>')
 
@@ -560,7 +562,7 @@ page("anglia.html", "Anglia Morocco – English exams and classes | AGI Agadir",
 <aside><p class="kicker">Contacts</p><p class="muted" style="font-size:14px">Julie Wilburn · <a href="mailto:j.wilburn@angliamorocco.org">j.wilburn@angliamorocco.org</a><br>Abdelhak Lam · <a href="mailto:a.lam@angliamorocco.org">a.lam@angliamorocco.org</a></p></aside></div></section>''', DOC_CSS)
 
 # partnerships (static page): full source text
-inject_static("partnerships.html", "full", '<section class="section bg-white np" id="partner-with-us"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Partner with AGI and Anglia Morocco</h2>'
+if False: inject_static("partnerships.html", "full", '<section class="section bg-white np" id="partner-with-us"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Partner with AGI and Anglia Morocco</h2>'
   + FULLTEXT("".join(render(SRC(u)["text"], privacy=True) for u in MAPPED("partnerships.html"))) + '</div><aside><p class="kicker">Anglia Morocco</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="anglia-network.html">Network &amp; centres</a></li><li><a href="anglia.html">Anglia Morocco</a></li><li><a href="investors.html">Partners &amp; investors</a></li></ul></aside></div></section>')
 
 # ================================================================== PHASE 3 – TEACHERS · ADULTS · WELLBEING · ONLINE · PATHWAYS
@@ -663,7 +665,7 @@ resource_page("resources-mcguffey.html", "McGuffey readers &amp; sight words", "
 # Journal: list posts that exist only on angliamorocco.org
 _ang_posts = [r for r in _MAP if r["site"] == "anglia" and r["destination"].startswith("journal/")]
 if _ang_posts:
-    inject_static("journal.html", "anglia-news", '<section class="section bg-white np" id="anglia-news"><div class="wrap"><div class="section-head"><h2>From Anglia Morocco</h2><p>News first published on angliamorocco.org.</p></div><div class="cards">'
+    if False: inject_static("journal.html", "anglia-news", '<section class="section bg-white np" id="anglia-news"><div class="wrap"><div class="section-head"><h2>From Anglia Morocco</h2><p>News first published on angliamorocco.org.</p></div><div class="cards">'
       + "".join(f'<a class="card" href="{r["destination"]}"><span class="tag">Anglia Morocco</span><h3>{_html.escape(_re.sub(r"^[“\"]|[”\"]$", "", r["title"]))}</h3><span class="more">Read</span></a>' for r in _ang_posts)
       + "</div></div></section>")
 
@@ -693,7 +695,156 @@ if "Attestation for AGI clients" not in _ft:
     _ft = _ft.replace('"Attendance attestation", ', '"Attendance attestation", "Attestation for AGI clients", ', 1)
     open(_ff, "w", encoding="utf-8", newline="").write(_ft)
 
+
+# ================================================================== ADMISSIONS + K-12 rebuilt in the shared design system
+page("admissions.html", "Admissions – American Group International, Agadir",
+ "How to join AGI in Agadir: visit, placement assessment, documents, enrollment. Registration days Aug 28 & 31, first day Sept 7; tuition 2,600 MAD a month.",
+ hero('<a href="parents.html">Parents</a> / <span>Admissions</span>', "Admissions.",
+      "Tours are arranged individually – call or write for an appointment to meet us and see the school. Every new student sits placement assessments before admission, whatever system they arrive from, and registration for 2026–27 takes place on August 28 and 31.",
+      '<a class="btn btn-primary" href="forms.html#enrollment">Apply online</a><a class="btn btn-ghost" href="forms.html#visit">Book a visit</a>') + f"""
+<section class="section bg-white" id="journey"><div class="wrap">
+  <div class="section-head"><h2>The application journey</h2><p>Four steps, with the office beside you at each one.</p></div>
+  <div class="cards" style="--cols:4">
+    <div><span class="num">01</span><h3>Enquire</h3><p>Call or email the admissions team to arrange a visit; tours are individual and include the school and the application process.</p></div>
+    <div><span class="num">02</span><h3>Visit &amp; assess</h3><p>English/ESL proficiency and academic assessments, including the free Anglia placement test for language learners.</p></div>
+    <div><span class="num">03</span><h3>Apply</h3><p>Prior school records and a behavior report, age and residency verification, immunization and physical examination records.</p></div>
+    <div><span class="num">04</span><h3>Enroll</h3><p>Pay the annual inscription, confirm the monthly tuition plan, and order books from the beginning of August.</p></div>
+  </div>
+</div></section>
+<section class="section" id="calendar"><div class="wrap split">
+  <div class="intro"><h2>Key dates 2026–27</h2><p>Movable religious holidays – Eid al Mouloud, Ramadan, Eid al Fitr and Eid al Adha – are confirmed each term. Fall break runs October 12–18 and winter break December 18 – January 3. <a class="link" href="calendar.html">Full calendar</a></p></div>
+  <dl class="rows">
+    <div><dt>Registration days</dt><dd>August 28 &amp; 31</dd></div><div><dt>First day of classes</dt><dd>September 7</dd></div>
+    <div><dt>Second semester begins</dt><dd>January 5</dd></div><div><dt>Anglia examinations</dt><dd>April</dd></div><div><dt>Last day &amp; graduation</dt><dd>June 17, 2027</dd></div>
+  </dl>
+</div></section>
+<section class="section bg-navy" id="fees"><div class="wrap split">
+  <div class="intro"><p class="kicker">Tuition &amp; fees</p><h2>2,600 MAD a month, paid over ten months.</h2></div>
+  <div><p style="color:rgba(255,255,255,.85)">Plus one annual inscription at enrollment: 6,500 MAD for kindergarten–grade 1, rising to 11,000 MAD for grade 12. Books, mathematics and Anglia English examinations, dual enrollment in the USA and Morocco, and student insurance are included. The inscription is non-refundable; fees are not negotiable.</p>
+  <div class="btn-row" style="margin-top:20px"><a class="btn btn-gold" href="fees.html">Tuition &amp; fees in full</a><a class="btn btn-light" href="forms.html#enquiry/programs">Request the tuition guide</a></div></div>
+</div></section>
+<section class="section bg-white" id="documents"><div class="wrap split">
+  <div class="intro"><h2>What to bring</h2><p>A child aged 5 by September 1 and under 21 on the first day of school is eligible. AGI admits students of any race, religion, color, national or ethnic origin.</p></div>
+  <dl class="rows">
+    <div><dt>Age</dt><dd>Birth certificate, hospital or physician certificate, passport or visa, or birth registration.</dd></div>
+    <div><dt>Residency</dt><dd>Lease or mortgage statement, utility bill, tax statement or deed, or a job contract – dated within three months.</dd></div>
+    <div><dt>Health</dt><dd>Immunization certification and a physical examination record.</dd></div>
+    <div><dt>Academic</dt><dd>Records from the previous school (or its address), plus a behavior report. IEP or special-needs provision requires practitioner documentation.</dd></div>
+  </dl>
+</div></section>
+<section class="section" id="procedure"><div class="wrap docwrap"><div class="doc">
+  <h2 style="margin-top:0">In AGI&rsquo;s own words</h2><p>The steps above summarize the procedure. Here is the full text, and the full list of enrollment documents.</p>
+  {FULLTEXT(render(SRC("admissions-procedure")["text"]) + render(SRC("admission-prossess")["text"]), "The admissions procedure in full")}
+  {FULLTEXT(render(SRC("/enrollment")["text"], stop="rification de l"), "Enrollment documents in full")}
+</div><aside><p class="kicker">Before you enroll</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px">
+  <li><a href="fees.html">Tuition &amp; fees</a></li><li><a href="calendar.html">Calendar 2026–27</a></li><li><a href="policies.html">Family policies</a></li><li><a href="placement-policy.html">Placement policy</a></li><li><a href="faq.html">Questions &amp; answers</a></li></ul></aside></div></section>
+""" + cta("Ready to apply?", "Apply online in about five minutes, or book a visit first.", '<a class="btn btn-gold" href="forms.html#enrollment">Apply</a><a class="btn btn-light" href="forms.html#visit">Book a visit</a>'), DOC_CSS)
+
+_k12_rows = [("Kindergarten", "Foreign language, English, reading &amp; phonics, math, science, penmanship, ESL"),
+ ("Grades 1–4", "Foreign language, English &amp; spelling, literature, mathematics, natural science, U.S. history strands, penmanship (grades 2–4), ESL"),
+ ("Grades 5–8", "Foreign language, English &amp; spelling, American, world and Islamic history, literature, mathematics through pre-algebra, earth &amp; biological science, ESL"),
+ ("Grade 9", "English I, U.S. history, algebra I, physical science, principles of music, physical education, ESL"), ("Grade 10", "English II, world history, geometry, biology, one elective, ESL"),
+ ("Grade 11", "English III, algebra II, health, two electives, ESL"), ("Grade 12", "English IV, U.S. government &amp; economics, business math, science, ESL")]
+page("k12.html", "K–12 school – American Group International, Agadir",
+ "AGI's American-curriculum micro-school in Agadir, kindergarten to grade 12: lower, middle and upper school, inclusive education, course of study by grade.",
+ hero('<a href="programs.html">Programs</a> / <span>K–12 school</span>', "K–12 school.",
+      "An American-curriculum school, from the first day of kindergarten to the last day of grade twelve.",
+      '<a class="btn btn-primary" href="admissions.html">Start admissions</a><a class="btn btn-ghost" href="forms.html#visit">Book a visit</a>') + f"""
+<section class="section bg-white"><div class="wrap split">
+  <div class="intro"><h2>At a glance</h2></div>
+  <div><p class="prose">AGI is a child-centered micro-school in Agadir, established in 2013. Small classes, American curriculum standards, and ESL through the Anglia Examinations system of England for children who do not speak English at home. Students are welcomed at any stage and supported to adapt to the curriculum and the language immersion.</p>
+  <dl class="rows"><div><dt>Ages</dt><dd>5–18</dd></div><div><dt>Curriculum</dt><dd>American</dd></div><div><dt>Languages</dt><dd>English · French · Arabic</dd></div><div><dt>Campus</dt><dd>Agadir · Hay Nahda</dd></div></dl></div>
+</div></section>
+<section class="section" id="schools"><div class="wrap">
+  <div class="section-head"><h2>Three schools, one journey</h2></div>
+  <div class="cards">
+    <div>{ph("k12-lower", "Lower school classroom", "4/3")}<span class="tag">K – Grade 5</span><h3>Lower School</h3><p>English and spelling, literature, mathematics, natural science and foreign language – with penmanship in grades 2 to 4 and ESL alongside. The elementary benchmark is CEFR B1 by the end of grade 5.</p></div>
+    <div>{ph("k12-middle", "Middle school class", "4/3")}<span class="tag">Grades 6 – 8</span><h3>Middle School</h3><p>American, world and Islamic history, earth and biological science, and mathematics through Foundations and Pre-Algebra. Middle school graduates at grade 8 target CEFR B2.</p></div>
+    <div>{ph("k12-upper", "Upper school students", "4/3")}<span class="tag">Grades 9 – 12</span><h3>Upper School</h3><p>English I–IV, U.S. History, Algebra I and II, Geometry, Biology, Government and Economics. Two routes: the Florida-accredited books program or the Cognia-accredited American High School Online. Forty service hours are required to graduate.</p></div>
+  </div>
+</div></section>
+<section class="section bg-white" id="inclusive"><div class="wrap split">
+  <div class="intro"><h2>Inclusive by design</h2><p>AGI welcomes students with a range of special needs, learning differences and mental-health challenges, physical and developmental alike. Documentation from a licensed practitioner is required so provision can be planned properly. <a class="link" href="special-education.html">Special education</a></p></div>
+  <dl class="rows">
+    <div><dt>Individualized plans</dt><dd>Individualized Education Plans written to each student's needs and abilities.</dd></div>
+    <div><dt>Small groups</dt><dd>Class sizes that allow personalized attention within mainstream school life.</dd></div>
+    <div><dt>Therapeutic support</dt><dd>Occupational therapy, speech-language pathology and behavioral support.</dd></div>
+    <div><dt>Cognitive programs</dt><dd>Energia SOI, customized for students with reading and mathematics difficulties.</dd></div>
+  </dl>
+</div></section>
+<section class="section bg-navy"><div class="wrap">
+  <div class="section-head"><h2>How the year is measured</h2></div>
+  <div class="facts"><div><b>90%</b><span>Minimum attendance to qualify for promotion, K–12.</span></div><div><b>64%</b><span>Pass mark in each core subject – math, science, language arts, social studies.</span></div>
+  <div><b>April</b><span>Anglia English assessment, required of every enrolled student.</span></div><div><b>40</b><span>Service hours across four years of high school – ten per year.</span></div></div>
+  <p style="color:rgba(255,255,255,.8);margin-top:24px">Every new student sits English/ESL and academic placement assessments before admission, whatever system they arrive from. Grades 9 to 11 also take the CAT assessment.</p>
+</div></section>
+<section class="section bg-white" id="curriculum"><div class="wrap">
+  <div class="section-head"><h2>The course of study, grade by grade</h2><p>A fixed set of subjects each year, with ESL alongside for language learners. Electives and AP courses are planned from grade 9.</p></div>
+  <div class="table-wrap"><table><thead><tr><th>Grades</th><th>Subjects</th></tr></thead><tbody>{"".join(f"<tr><td><b>{g}</b></td><td>{x}</td></tr>" for g, x in _k12_rows)}</tbody></table></div>
+  <p style="margin-top:20px">High school students complete 40 service hours (ten a year). For grades 9–12 there are two routes: the Florida-accredited books program, or American High School Online (Cognia accredited). See <a class="link" href="fees.html#high-school">tuition &amp; fees</a> and <a class="link" href="english-anglia.html#cefr">English benchmarks</a>.</p>
+</div></section>
+<section class="section"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">About the school in detail</h2>{FULLTEXT("".join(render(SRC(u)["text"], privacy=True) for u in MAPPED("k12.html")))}</div>
+<aside><p class="kicker">Related</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="handbook.html">Academic handbook</a></li><li><a href="supplies.html">Supplies list</a></li><li><a href="homework.html">Homework</a></li><li><a href="special-education.html">Special education</a></li></ul></aside></div></section>
+""" + cta("Ready to meet the school?", "Start admissions, or book a visit during the school day.", '<a class="btn btn-gold" href="admissions.html">Start admissions</a><a class="btn btn-light" href="forms.html#visit">Book a visit</a>'), DOC_CSS)
+
+
+# ================================================================== PARTNERSHIPS rebuilt in the shared design system
+_net = [("Souss-Massa", "Headquarters · Agadir"), ("Casablanca-Settat", "Anglia centers"), ("Tanger-Tetouan-Al Hoceima", "Anglia centers"), ("Rabat-Salé-Kénitra", "Anglia centers"),
+        ("Fès-Meknès · Marrakech-Safi", "Anglia centers"), ("Oriental · Béni Mellal-Khénifra", "Open for franchise"), ("Drâa-Tafilalet · Southern Provinces", "Open for franchise")]
+_partners = [("United Kingdom", "Chichester College Group International", "The international arm of a seven-college group in the south of England – Chichester, Crawley, Worthing, Brinsbury, Brighton MET, Northbrook and Haywards Heath. Signed 2025.", "journal-ccgi-partnership.html"),
+ ("Teacher training", "Bridge Education Group", "A global leader in teacher training and TEFL/TESOL certification. Partnership announced November 2025, opening professional development to educators across Morocco.", "teachers.html"),
+ ("University placement", "Leverage Edu", "Official regional representation for Souss and southern Morocco since March 2026 – private and public university placement with housing assistance.", "pathways.html"),
+ ("Plantation, Florida", "American High School", "Cognia-accredited online diploma program and a Yass Prize awardee. Partnership announced 2025; the diploma is accepted in the U.S. and internationally.", "fees.html#high-school"),
+ ("United Kingdom", "RB College", "UCAS-registered UK institution offering academic and vocational programs, including work-based Master of Business Administration routes.", "pathways.html"),
+ ("Chichester, since 1993", "Anglia Examinations England", "AGI has been the Anglia franchise holder for Morocco since 2021 and has used the Anglia system in its language programs since 2013.", "anglia-about.html"),
+ ("For teacherpreneurs", "AGI Learning Pods", "Small-group programs run by freelance teachers and parent groups under the Anglia system – inclusive, creative and affordable.", "programs-learning-pods.html"),
+ ("Membership", "American School Counselor Association", "AGI joined the ASCA network in 2026, bringing U.S. school-counseling standards to student guidance.", "about.html#accreditation")]
+page("partnerships.html", "Partnerships & franchise – American Group International, Agadir",
+ "Partner with AGI and Anglia Morocco: Anglia center franchise in Morocco's twelve regions, institutional partnerships, university pathways and our partner network.",
+ hero('<a href="anglia.html">Anglia Morocco</a> / <span>Partnerships &amp; franchise</span>', "Bring the AGI standard to your region.",
+      "AGI holds the Anglia Examinations franchise for Morocco and operates from Agadir across the Kingdom's twelve regions. We work with schools, language centers, freelance teachers and international institutions – and franchise opportunities are open for the right candidates.",
+      '<a class="btn btn-primary" href="forms.html#enquiry/partnership">Partnership enquiry</a><a class="btn btn-ghost" href="anglia-network.html">Network &amp; centres</a>') + f"""
+<section class="section bg-white" id="models"><div class="wrap">
+  <div class="section-head"><h2>Two ways to build with AGI</h2></div>
+  <div class="cards" style="--cols:2">
+    <div><span class="tag">Model I</span><h3>Franchise</h3><p>An Anglia Morocco center under your ownership, anywhere in the Kingdom's twelve regions. You get the examinations license, the placement and testing system, training, and the AGI standard behind it. Enquiries run through the Agadir headquarters.</p>
+      <ul><li>Anglia examinations license &amp; materials</li><li>Teacher training and C.I.T.E. certification</li><li>Placement testing &amp; level mapping to the CEFR</li><li>Territory agreement within the 12 regions</li></ul></div>
+    <div><span class="tag">Model II</span><h3>Institutional partnership</h3><p>For existing schools, language institutes and colleges: Anglia examination provision inside your campus, university pathway agreements, and co-designed English or academic programs under a shared quality framework.</p>
+      <ul><li>Co-designed English &amp; academic programs</li><li>University pathway agreements (UK, USA, India)</li><li>Anglia testing center inside your campus</li><li>Shared quality framework &amp; annual review</li></ul></div>
+  </div>
+</div></section>
+<section class="section" id="network"><div class="wrap split">
+  <div class="intro"><h2>The network today</h2><p>Anglia Morocco is managed from the Agadir headquarters, with Anglia centers across the north and center of the Kingdom. Remaining regions are open for franchise. <a class="link" href="anglia-network.html">Regions, provinces and open positions</a></p></div>
+  <dl class="rows">{"".join(f"<div><dt>{r}</dt><dd>{st}</dd></div>" for r, st in _net)}</dl>
+</div></section>
+<section class="section bg-white" id="partners"><div class="wrap">
+  <div class="section-head"><h2>Who we work with</h2><p>Examination boards, colleges, placement partners and professional bodies.</p></div>
+  <div class="cards">{"".join(f'<a class="card" href="{h}"><span class="tag">{t}</span><h3>{n}</h3><p>{d}</p></a>' for t, n, d, h in _partners)}</div>
+</div></section>
+<section class="section"><div class="wrap docwrap"><div class="doc"><h2 style="margin-top:0">Partner with AGI and Anglia Morocco</h2>{FULLTEXT("".join(render(SRC(u)["text"], privacy=True) for u in MAPPED("partnerships.html")))}</div>
+<aside><p class="kicker">Anglia Morocco</p><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="anglia.html">Anglia Morocco</a></li><li><a href="anglia-network.html">Network &amp; centres</a></li><li><a href="investors.html">Partners &amp; investors</a></li></ul></aside></div></section>
+""" + cta("Start the conversation.", "Franchise and partnership enquiries are handled from the Agadir headquarters. Tell us the region, the model and your teaching or business background.", '<a class="btn btn-gold" href="forms.html#enquiry/partnership">Partnership enquiry</a><a class="btn btn-light" href="contact.html">Contact</a>'), DOC_CSS)
+
 # ================================================================== CONTENT QUALITY PASS (English pages)
 for _n in list(PAGES):
     if not _n.startswith(("fr/", "ar/")): PAGES[_n] = split_languages(PAGES[_n], _n)
 print("foreign blocks moved: ar", {k: len(v) for k, v in FOREIGN["ar"].items()}, "| fr", {k: len(v) for k, v in FOREIGN["fr"].items()})
+
+# ================================================================== CLOSING CTA on every page without one
+def _section_of(n):
+    if n.startswith("anglia") or n in ("partnerships.html", "english-anglia.html"): return "anglia"
+    if n in ("fees.html", "calendar.html", "handbook.html", "attendance.html", "promotion-retention.html", "placement-policy.html", "parent-responsibility.html",
+             "refunds-complaints.html", "media-policy.html", "homework.html", "volunteer-hours.html", "supplies.html", "policies.html", "faq.html", "admissions.html"): return "admissions"
+    if n.startswith(("teachers", "programs-", "services-", "wellbeing", "online-tutoring", "agi-usa", "professional", "adult-diploma", "pathways", "special-education", "k12")): return "programs"
+    if n.startswith("resources") or n == "student-life.html": return "life"
+    return "about"
+_CTA = {"anglia": ("Find your English level.", "Book a free placement assessment, or ask us about classes and exam sessions.", '<a class="btn btn-gold" href="forms.html#enquiry/anglia">Book a free level test</a><a class="btn btn-light" href="calendar.html#anglia-exams">Exam dates</a>'),
+        "admissions": ("Questions about joining AGI?", "Visit the school, or ask the office – we reply within one working day.", '<a class="btn btn-gold" href="forms.html#visit">Book a visit</a><a class="btn btn-light" href="forms.html#enquiry">Ask a question</a>'),
+        "programs": ("Is this the right program?", "Tell us what you are looking for and we will help you choose.", '<a class="btn btn-gold" href="forms.html#enquiry/programs">Ask about this program</a><a class="btn btn-light" href="programs.html">All programs</a>'),
+        "life": ("Come and see the school.", "Tours are arranged individually, Monday to Friday.", '<a class="btn btn-gold" href="forms.html#visit">Book a visit</a><a class="btn btn-light" href="parents.html">For parents</a>'),
+        "about": ("Come and meet us.", "The best way to know AGI is to visit during the school day.", '<a class="btn btn-gold" href="forms.html#visit">Book a visit</a><a class="btn btn-light" href="contact.html">Contact</a>')}
+_SKIP_CTA = {"forms.html", "privacy.html", "terms.html", "cookies.html", "connect.html", "journal.html"}
+for _n in list(PAGES):
+    if _n.startswith(("fr/", "ar/")) or _n in _SKIP_CTA or "cta-band" in PAGES[_n]: continue
+    _t, _x, _b = _CTA[_section_of(_n)]
+    PAGES[_n] = PAGES[_n].replace("\n</main>", "\n" + cta(_t, _x, _b) + "\n</main>", 1)

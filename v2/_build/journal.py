@@ -167,3 +167,41 @@ for _f in os.listdir(os.path.join(V2, "journal")):
             _t = _t.replace('<div class="prose">', f'<div class="prose"><p class="archived-note">Archived post{(" from " + _d.strip()) if _d.strip() else ""}. Fees, dates and programs may have changed – see the current <a href="../fees.html">tuition &amp; fees</a> and <a href="../calendar.html">calendar</a>.</p>', 1); _a += 1
     if _t != _o: open(_p, "w", encoding="utf-8", newline="").write(_t)
 print(f"privacy: photos hidden in {_h} posts · archive banner on {_a} posts")
+
+# ---------------- JOURNAL LIST + CCGI ARTICLE (shared design, generated from the articles themselves) ----------------
+def _root_page(main_html, title, desc):
+    doc = TPL.replace("<title>{{TITLE}} – AGI Journal</title>", f"<title>{html.escape(title)}</title>").replace("{{DESC}}", html.escape(desc))
+    doc = re.sub(r"<main\b.*?</main>", lambda m: main_html, doc, flags=re.S)
+    return re.sub(r'(href|src)="\.\./', r'\1="', doc)
+# CCGi partnership article from the original post text
+_cc = next((r for r in MAPROWS if "join-forces-with-chichester" in r["url"]), None)
+if _cc and _cc["url"] in INV:
+    _src = INV[_cc["url"]]; _title = re.sub(r'^[“"\s]+|[”"\s]+$', "", _src["title"])
+    _main = (f'<main id="main" class="article np"><section class="page-hero wrap"><p class="crumb"><a href="index.html">Home</a> / <a href="journal.html">Journal</a> / <span>Partnership</span></p>'
+             f'<h1 style="max-width:22ch;font-size:clamp(36px,4.4vw,64px)">{html.escape(_title)}</h1><p class="article-meta"><b>Partnership</b>{nice_date(_src["date"]) if re.match(r"\d{4}-\d{2}-\d{2}", _src.get("date") or "") else ""}</p></section>'
+             f'<section class="section bg-white"><div class="wrap"><div class="prose">{text_to_html(_src["text"])}</div><p style="margin-top:28px"><a class="link" href="partnerships.html">Partnerships &amp; franchise</a> · <a class="link" href="journal.html">All journal entries</a></p></div></section>'
+             + '<section class="section tight bg-navy"><div class="wrap cta-band"><div><h2>Partner with AGI.</h2><p>Franchise and partnership enquiries are handled from the Agadir headquarters.</p></div><div class="btn-row"><a class="btn btn-gold" href="forms.html#enquiry/partnership">Partnership enquiry</a></div></div></section></main>')
+    open(os.path.join(V2, "journal-ccgi-partnership.html"), "w", encoding="utf-8", newline="").write(_root_page(_main, f"{_title[:60]} – AGI Journal", "AGI and Anglia Morocco join Chichester College Group International to empower global learners."))
+# journal list: every article, newest first, grouped by year
+_items = []
+for _f in os.listdir(os.path.join(V2, "journal")):
+    _t = open(os.path.join(V2, "journal", _f), encoding="utf-8").read()
+    _ti = html.unescape(re.sub(r"<[^>]+>", "", (re.search(r"<h1[^>]*>(.*?)</h1>", _t, re.S) or [None, _f])[1])).strip()
+    _mm = re.search(r'<p class="article-meta"><b>([^<]*)</b>([^<]*)</p>', _t); _kind = _mm.group(1) if _mm else "News"; _d = (_mm.group(2) if _mm else "").strip()
+    _y = re.search(r"(19|20)\d{2}", _d); _mo = next((v for k, v in _MON.items() if k in _d.lower()), 0)
+    _ex = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", (re.search(r'<div class="prose">(.*?)</div>', _t, re.S) or [None, ""])[1]))).replace("Archived post", "").strip()
+    _ex = re.sub(r"^from [^.]*\.\s*Fees, dates and programs may have changed – see the current tuition & fees and calendar\.\s*", "", _ex)
+    _items.append((int(_y.group(0)) if _y else 0, _mo, _ti, _kind, _d, _f, (_ex[:150] + "…") if len(_ex) > 150 else _ex, "angliamorocco" in _t))
+_items.sort(key=lambda x: (x[0], x[1]), reverse=True)
+_groups = {}
+for it in _items: _groups.setdefault(it[0] or "Undated", []).append(it)
+_nav = " · ".join(f'<a href="#y{y}">{y}</a>' for y in _groups)
+_body = "".join(f'<h2 id="y{y}" style="margin-top:48px">{y}</h2><div class="cards">' + "".join(
+    f'<a class="card" href="journal/{f}"><span class="tag">{html.escape(k)}{" · Anglia Morocco" if a else ""}</span><h3>{html.escape(ti)}</h3><p class="muted" style="font-size:13px;margin:0 0 8px">{html.escape(d)}</p><p>{html.escape(ex)}</p><span class="more">Read</span></a>'
+    for _y2, _m2, ti, k, d, f, ex, a in L) + "</div>" for y, L in _groups.items())
+_main = (f'<main id="main" class="np"><section class="page-hero wrap"><p class="crumb"><a href="index.html">Home</a> / <span>Journal</span></p><h1>Journal.</h1>'
+         f'<p class="lede">News from AGI and Anglia Morocco since 2017: graduations, partnerships, exams, events and school life. Posts older than a year are archived – fees and dates in them may have changed.</p></section>'
+         f'<section class="section bg-white"><div class="wrap"><p><b>{len(_items)} posts</b> · {_nav}</p>{_body}</div></section>'
+         '<section class="section tight bg-navy"><div class="wrap cta-band"><div><h2>Come and see the school.</h2><p>Tours are arranged individually, Monday to Friday.</p></div><div class="btn-row"><a class="btn btn-gold" href="forms.html#visit">Book a visit</a><a class="btn btn-light" href="parents.html">For parents</a></div></div></section></main>')
+open(os.path.join(V2, "journal.html"), "w", encoding="utf-8", newline="").write(_root_page(_main, "Journal – American Group International, Agadir", f"News from American Group International and Anglia Morocco: {len(_items)} posts on graduations, partnerships, Anglia exams, events and school life."))
+print(f"journal list: {len(_items)} posts in {len(_groups)} years · CCGi article rebuilt")
