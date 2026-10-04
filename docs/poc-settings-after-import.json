@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "name": "American Group International",
+    "description": "The first American school in Agadir: K–12, special education, adult diploma, English and Anglia exams. Established 2013. Now enrolling for 2026–27.",
+    "logo": "/media/example/8NQcCi-favicon.png",
+    "icon": "/media/example/8NQcCi-favicon.png",
+    "image": "https://www.americangroup-international.com/assets/web/agi-seal-520.png",
+    "email": "americanecoleagadir@gmail.com",
+    "telephone": "+212528843349",
+    "address": {
+      "street": "Number 20, Rue BaalabekHay Nahda, Agadir 80000",
+      "locality": "Morocco"
+    },
+    "social": [
+      {
+        "link": "https://wa.me/212688739393",
+        "name": "WhatsApp",
+        "icon": "brand:whatsapp"
+      }
+    ],
+    "colors": {
+      "primary": "#4f46e5",
+      "secondary": "#0ea5e9",
+      "accent": "#f59e0b",
+      "neutral": "#171627",
+      "base-100": "#ffffff",
+      "base-content": "#1a1a23"
+    }
+  },
+  "website": {
+    "head": "<link rel=\"stylesheet\" href=\"/media/example/gX5Xya-styles.css\">",
+    "scripts": "<script src=\"/media/example/828ZKL-script.js\" defer></script>\n<script src=\"/media/example/XgfDqB-script.js\" defer></script>",
+    "siteUrl": "https://agi-website-poc.edgeone.dev/index.html"
+  },
+  "settings": {
+    "defaultLocale": "en",
+    "locales": [
+      "en",
+      "ar",
+      "fr"
+    ]
+  }
+}
