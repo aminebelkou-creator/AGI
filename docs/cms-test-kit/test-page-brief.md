@@ -21,7 +21,12 @@ Create these as global settings / a dataset / site data – NOT typed twice:
 1. **Header** (shared): logo text "Atlas Language Studio", menu links (Courses · Prices · FAQ · Contact – anchors on this page), language switch EN | ع, button "Book a free level test" → #contact, phone number (global).
 2. **Hero**: headline "Speak with confidence."; subtitle "English, French and Arabic courses for children and adults in Agadir – small groups, certified teachers."; buttons "Book a free level test" (#contact) and "See prices" (#prices); a badge "From {monthly_price} a month" (global); one image (any free stock photo of a classroom; alt text required).
 3. **Three feature cards**: "Small groups" – "Never more than 8 students per class."; "Certified teachers" – "Every teacher holds an international teaching certificate."; "Free level test" – "We place you at the right level before you start."
-4. **Courses** (a list of 4 items, each: name + age + short description): English for kids (6–12) · English for adults (16+) · French conversation (12+) · Arabic for beginners (all ages).
+4. **Courses** (a list of 4 items, each: name + age + short description):
+   - English for kids (6–12) – "Playful lessons with songs, games and stories."
+   - English for adults (16+) – "Conversation and grammar for work, travel and study."
+   - French conversation (12+) – "Speak French with confidence in everyday situations."
+   - Arabic for beginners (all ages) – "Learn to read, write and speak Modern Standard Arabic."
+   *(Descriptions added on 2026-10-05 after the EmDash first build, which correctly left them empty because the brief gave no text.)*
 5. **Prices** (#prices): one pricing card "Monthly course" – {monthly_price} – "8 hours a month · materials included · free level test"; button "Enrol" → #contact.
 6. **FAQ** (#faq): 3 questions with expandable answers:
    - "Do you offer trial lessons?" – "Yes, the level test includes a 20-minute trial lesson."
