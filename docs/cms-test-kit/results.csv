@@ -1,4 +1,5 @@
 ﻿cms,date,agent_model,c1_setup_mcp,c2_discoverability,c3_first_build,c4_native_structure,c5_global_data,c6_extending,c7_multilingual_rtl,c8_media,c9_self_repair,c10_rollback,c11_publish_export,c12_self_check,c13_human_editor,c14_reliability,c15_operations,total_45,interventions,agent_minutes,dealbreaker,verdict
+SmartSite,2026-11-16,claude-opus-5-5,3,2,1,2,1,3,1,2,3,3,1,1,2,2,2,29,1,~6 build+tasks (excl. setup),"no (c7=1, c11=1 are weak)","Strong CMS core (versions, checked saves, media); weak for AGI: no locales/RTL, no static export, design only via code"
 Sitewright,,,,,,,,,,,,,,,,,,,,,,
 Instatic,,,,,,,,,,,,,,,,,,,,,,
 EmDash,,,,,,,,,,,,,,,,,,,,,,
