@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGI Portable Content Entity",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "locale",
+    "status",
+    "title",
+    "body"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "page",
+        "programme",
+        "service",
+        "person",
+        "organisation",
+        "qualification",
+        "examination",
+        "book",
+        "article",
+        "faq",
+        "event",
+        "form",
+        "media",
+        "claim",
+        "policy",
+        "location"
+      ]
+    },
+    "locale": {
+      "type": "string",
+      "enum": [
+        "en-US",
+        "fr-MA",
+        "ar-MA"
+      ]
+    },
+    "source_locale": {
+      "type": "string",
+      "enum": [
+        "en-US",
+        "fr-MA",
+        "ar-MA"
+      ]
+    },
+    "translation_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "body": {
+      "type": [
+        "string",
+        "array",
+        "object"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "subject_review",
+        "legal_review",
+        "partner_approval",
+        "approved",
+        "scheduled",
+        "published",
+        "expired",
+        "withdrawn"
+      ]
+    },
+    "audiences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "owner": {
+      "type": "string"
+    },
+    "review_by": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "seo": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "canonical": {
+          "type": "string"
+        }
+      }
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset_id": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          },
+          "consent_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rights_status": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
