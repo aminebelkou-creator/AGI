@@ -1,0 +1,14 @@
+priority,area,issue,required_evidence_or_action,owner_role,status,release_gate
+P0,School legal status,K-12/American school/foreign education claims,AREF authorisation approved grades educational project and Article 58 written advice,School director + Moroccan counsel,Open,Block publication of legal-status claims
+P0,Fees,Current fee schedule and fee categories,Approved 2026-27 fee list contract insurance and ancillary fee definitions,Finance + school administration,Open,Block publishing current prices
+P0,Accreditation,Florida/Cognia/AIM/Ofqual/ACTD wording,Credential documents exact entity programme scope territory and validity,Programme owner + partner,Open,Block accreditation claims
+P0,Wellbeing,Clinical/therapy descriptions,Provider credentials scope safeguarding referrals consent and liability review,Wellbeing lead + counsel,Open,Block clinical/therapy claims
+P0,Refunds,Conflicting refund descriptions,One service-specific policy aligned with contracts and applicable law,Administration + counsel,Open,Block policy publication
+P1,Calendar,2026-27 title with 2025 dates,Approved current academic calendar,School administration,Open,Block calendar promotion
+P1,Anglia pricing,Prices effective November 2024,Current approved prices schedules and exam inclusions,Anglia Morocco manager,Open,Block current-price claims
+P1,Brand naming,AGI/AGIC/American School/CSALC variations,Approved legal names and brand architecture,Executive owner,Open,Block translated page production
+P1,Marketing claims,First school/46+ nationalities/lowest fees,Documentary evidence and date range or remove,Marketing + school administration,Open,Block unsupported claims
+P1,Partnerships,Provider and awarding-body roles unclear,Current signed agreement and role/fees/support/award disclosures,Partnerships lead,Open,Block partner pathway claims
+P2,Navigation,Audience and service lines mixed,Approved sitemap and audience journeys,Digital/product owner,Open,Before redesign sign-off
+P2,Privacy,Children/health data and imagery,Privacy review consent records retention and transfer map,Data protection owner,Open,Before new forms and marketing
+P2,Translations,EN/FR/AR content drift,Structured facts source and translation approval workflow,Editorial lead,Open,Before multilingual release
