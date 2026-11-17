@@ -23,7 +23,7 @@ ids = [row["fact_id"] for row in rows]
 assert len(rows) >= 10, f"Fact register unexpectedly small: {len(rows)}"
 assert len(ids) == len(set(ids)), "Duplicate fact IDs"
 for row in rows:
-    assert re.fullmatch(r"F-AGI-\\d{3}", row["fact_id"]), row["fact_id"]
+    assert re.fullmatch(r"F-AGI-[0-9]{3}", row["fact_id"]), row["fact_id"]
     assert row["current_status"] in ALLOWED, (row["fact_id"], row["current_status"])
     for key in REQUIRED:
         assert row[key].strip(), (row["fact_id"], "empty", key)
