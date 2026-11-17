@@ -24,7 +24,8 @@ Each item has:
 - `audiences` and `channels`: intended reuse contexts.
 - `status`: editorial state of the module.
 - `locales`: independently reviewable `en-US`, `fr-MA` and `ar-MA` copy.
-- `evidence_gates`: facts, approvals or specialist checks required before publication.
+- `fact_refs`: stable IDs in `../facts/fact-register.csv` for material claims used by the module.
+- `evidence_gates`: approvals or specialist checks required before publication.
 
 The JSON contract is in `../schemas/reusable-content-library.schema.json`. Validate with:
 
