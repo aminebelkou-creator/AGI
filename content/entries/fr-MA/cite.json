@@ -1,0 +1,26 @@
+{
+  "id": "agi.cite",
+  "slug": "cite",
+  "locale": "fr-MA",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "translation-review",
+  "title": "C.I.T.E. — Certificate for International Teachers of English",
+  "summary": "C.I.T.E. est une évaluation d’Anglia Examinations destinée aux personnes qui enseignent l’anglais ou se préparent à l’enseigner. Anglia la présente comme un examen attestant de compétences linguistiques en anglais utiles dans un contexte d’enseignement et référencé au CECRL.",
+  "body": "C.I.T.E. est une évaluation d’Anglia Examinations destinée aux personnes qui enseignent l’anglais ou se préparent à l’enseigner. Anglia la présente comme un examen attestant de compétences linguistiques en anglais utiles dans un contexte d’enseignement et référencé au CECRL.\n\nAnglia précise que le C.I.T.E. ne constitue pas, à lui seul, une qualification d’enseignant. Ne le présentez pas comme une licence d’enseignement, un diplôme universitaire ou une certification TEFL/TESOL autonome.\n\nAnglia distingue trois versions : C.I.T.E., C.I.T.E. (Young Learners) et C.I.T.E. (Very Young Learners). Vérifiez les spécifications en vigueur.\n\n**Action :** Contacter Anglia Morocco pour connaître les modalités actuelles.",
+  "seo": {
+    "title": "Évaluation C.I.T.E. en anglais | Anglia Morocco",
+    "description": "Découvrez l’examen C.I.T.E. d’Anglia destiné aux personnes qui enseignent ou souhaitent enseigner l’anglais."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "ltr",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
