@@ -229,7 +229,12 @@
       ],
       "fact_refs": [
         "F-AGI-012",
-        "F-AGI-015"
+        "F-AGI-015",
+        "F-AGI-031",
+        "F-AGI-032",
+        "F-AGI-033",
+        "F-AGI-034",
+        "F-AGI-038"
       ]
     },
     {
@@ -306,6 +311,9 @@
       },
       "evidence_gates": [
         "Verify title list, editions, ISBNs, rights, stock, prices and ordering process."
+      ],
+      "fact_refs": [
+        "F-AGI-037"
       ]
     },
     {
@@ -1318,6 +1326,363 @@
       },
       "evidence_gates": [
         "Confirm admissions contact routing and current application process."
+      ]
+    },
+    {
+      "id": "agi.anglia.exam-levels",
+      "type": "programme-description",
+      "audiences": [
+        "learners",
+        "parents",
+        "teachers"
+      ],
+      "channels": [
+        "website",
+        "brochure",
+        "directory"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Anglia General English levels",
+          "summary": "A step-by-step examination pathway, with level names and specifications to be confirmed against Anglia’s current materials.",
+          "body": "Anglia’s published materials describe a General English pathway that progresses from early learner stages to advanced and expert use of English. The pathway is organised into young-learner, intermediate and higher levels. Candidates should choose a starting point based on their current ability, not simply their age or school grade. The exact level names, sequence and exam availability must be checked against the current official Anglia specifications."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Les niveaux d’anglais général Anglia",
+          "summary": "Un parcours d’évaluation progressif, dont les noms et spécifications doivent être confirmés à partir des documents Anglia en vigueur.",
+          "body": "Les supports publiés par Anglia décrivent un parcours d’anglais général qui progresse des premiers niveaux d’apprentissage vers une maîtrise avancée et experte de la langue. Le parcours est organisé en niveaux jeunes apprenants, intermédiaires et supérieurs. Le niveau de départ doit être choisi selon les compétences actuelles du candidat, et non uniquement selon son âge ou sa classe. Les noms, l’ordre et la disponibilité des examens doivent être vérifiés dans les spécifications officielles actuelles d’Anglia."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "مستويات اللغة الإنجليزية العامة لدى Anglia",
+          "summary": "مسار تدريجي للتقييم، مع ضرورة تأكيد أسماء المستويات ومواصفاتها وفق الوثائق الرسمية المحينة.",
+          "body": "تعرض المواد المنشورة لـAnglia مساراً في اللغة الإنجليزية العامة ينتقل من المراحل الأولى للتعلم إلى المستويات المتقدمة والمتخصصة. وينقسم المسار إلى مستويات للمتعلمين الصغار ومستويات متوسطة وعليا. وينبغي اختيار مستوى الانطلاق بحسب الكفايات الحالية للمترشح، وليس اعتماداً على سنه أو صفه الدراسي فقط. ويجب التحقق من أسماء المستويات وتسلسلها وتوفر الامتحانات بالرجوع إلى المواصفات الرسمية المحينة لـAnglia."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-031"
+      ],
+      "evidence_gates": [
+        "Verify exact current Anglia level names and pathway specifications with the awarding/examination provider."
+      ]
+    },
+    {
+      "id": "agi.anglia.exam-format",
+      "type": "faq-answer",
+      "audiences": [
+        "learners",
+        "parents",
+        "teachers"
+      ],
+      "channels": [
+        "website",
+        "email"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "What do Anglia examinations assess?",
+          "summary": "A guide to the skills assessed and the need to check the format for the chosen level.",
+          "body": "Anglia’s materials describe assessment across reading, listening, speaking and writing. The structure and duration vary by examination level and format. Before booking, candidates should consult the current specification for their chosen examination, including the components required, timing, permitted materials, delivery mode and result arrangements."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Que évaluent les examens Anglia ?",
+          "summary": "Un aperçu des compétences évaluées et de l’importance de vérifier le format du niveau choisi.",
+          "body": "Les supports d’Anglia décrivent une évaluation de la lecture, de la compréhension orale, de l’expression orale et de l’expression écrite. La structure et la durée varient selon le niveau et le format de l’examen. Avant toute inscription, les candidats doivent consulter la spécification actuelle de l’examen choisi, notamment les épreuves requises, les durées, les documents autorisés, le mode de passation et les modalités de résultats."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "ما المهارات التي تقيسها امتحانات Anglia؟",
+          "summary": "نظرة عامة على المهارات المقيمة وأهمية التحقق من صيغة الامتحان حسب المستوى المختار.",
+          "body": "توضح مواد Anglia أن التقييم يشمل القراءة والاستماع والتحدث والكتابة. وتختلف بنية الامتحان ومدته بحسب المستوى والصيغة المعتمدة. وقبل الحجز، ينبغي للمترشحين الاطلاع على المواصفات الحالية للامتحان المختار، بما في ذلك مكوناته ومدته والمواد المسموح بها وطريقة إجرائه وكيفية إعلان النتائج."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-032"
+      ],
+      "evidence_gates": [
+        "Verify current skill components, durations and exam delivery format for each level."
+      ]
+    },
+    {
+      "id": "agi.anglia.cefr-framework",
+      "type": "resource-description",
+      "audiences": [
+        "learners",
+        "parents",
+        "teachers"
+      ],
+      "channels": [
+        "website",
+        "brochure"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Understanding CEFR levels",
+          "summary": "The Common European Framework offers a shared way to describe language proficiency.",
+          "body": "The Common European Framework of Reference for Languages (CEFR) describes language ability through a progression of proficiency levels. It can help learners, families and educators discuss what a person can understand and communicate at a given stage. A CEFR reference should not be treated as an automatic equivalence between different examination boards, school grades or qualifications; consult the relevant official mapping for each programme."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Comprendre les niveaux du CECRL",
+          "summary": "Le Cadre européen commun de référence pour les langues fournit un langage partagé pour décrire les compétences linguistiques.",
+          "body": "Le Cadre européen commun de référence pour les langues (CECRL) décrit les compétences linguistiques selon une progression de niveaux. Il aide les apprenants, les familles et les enseignants à discuter de ce qu’une personne peut comprendre et communiquer à une étape donnée. Une référence au CECRL ne constitue pas automatiquement une équivalence entre différents organismes d’examen, niveaux scolaires ou qualifications ; il faut consulter la correspondance officielle propre à chaque programme."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "فهم مستويات الإطار الأوروبي المرجعي للغات",
+          "summary": "يوفر الإطار الأوروبي المرجعي المشترك طريقة موحدة لوصف الكفايات اللغوية.",
+          "body": "يصف الإطار الأوروبي المرجعي المشترك للغات الكفايات اللغوية من خلال مستويات متدرجة. ويساعد المتعلمين والأسر والمدرسين على مناقشة ما يستطيع الشخص فهمه والتواصل به في مرحلة معينة. ولا تعني الإشارة إلى مستوى من الإطار وجود معادلة تلقائية بين مختلف هيئات الامتحانات أو المستويات الدراسية أو المؤهلات؛ بل ينبغي الرجوع إلى المطابقة الرسمية الخاصة بكل برنامج."
+        }
+      },
+      "evidence_gates": [
+        "Check all CEFR mappings against current official exam specifications; do not invent equivalencies."
+      ]
+    },
+    {
+      "id": "agi.anglia.special-arrangements",
+      "type": "service-description",
+      "audiences": [
+        "candidates",
+        "parents",
+        "centres"
+      ],
+      "channels": [
+        "website",
+        "email"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Special arrangements for examination candidates",
+          "summary": "Candidates can ask about adjustments for specific learning, sensory, physical or temporary needs.",
+          "body": "Anglia’s published materials describe a process for considering special arrangements for candidates with certain learning, sensory or physical needs, as well as temporary injuries. Arrangements are not automatic: candidates should contact the examination team before registration or by the provider’s stated deadline, explain the support needed and submit any required evidence. The final decision depends on the current examination rules and the facilities available at the approved centre."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Aménagements particuliers pour les candidats aux examens",
+          "summary": "Les candidats peuvent se renseigner sur les adaptations liées à certains besoins d’apprentissage, sensoriels, physiques ou temporaires.",
+          "body": "Les supports publiés par Anglia décrivent une procédure d’examen des demandes d’aménagement pour les candidats présentant certains besoins d’apprentissage, sensoriels ou physiques, ainsi que des blessures temporaires. Les aménagements ne sont pas automatiques : les candidats doivent contacter l’équipe d’examen avant l’inscription ou dans le délai fixé par l’organisme, expliquer le soutien nécessaire et fournir les justificatifs demandés. La décision finale dépend des règles d’examen en vigueur et des équipements disponibles dans le centre agréé."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "الترتيبات الخاصة للمترشحين للامتحانات",
+          "summary": "يمكن للمترشحين الاستفسار عن الترتيبات الملائمة لبعض الاحتياجات التعلمية أو الحسية أو البدنية أو الإصابات المؤقتة.",
+          "body": "تشير المواد المنشورة لـAnglia إلى مسطرة لدراسة طلبات الترتيبات الخاصة للمترشحين الذين لديهم بعض الاحتياجات التعلمية أو الحسية أو البدنية، وكذلك الإصابات المؤقتة. ولا تمنح هذه الترتيبات تلقائياً؛ بل ينبغي للمترشح التواصل مع فريق الامتحانات قبل التسجيل أو داخل الأجل الذي تحدده الجهة المنظمة، وشرح الدعم المطلوب وتقديم الوثائق عند الاقتضاء. ويظل القرار النهائي خاضعاً لقواعد الامتحان المعمول بها والتجهيزات المتاحة في المركز المعتمد."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-036"
+      ],
+      "evidence_gates": [
+        "Verify exact accommodations, evidence rules, deadlines, provider approval and centre capacity."
+      ]
+    },
+    {
+      "id": "agi.anglia.class-formats",
+      "type": "service-description",
+      "audiences": [
+        "learners",
+        "parents",
+        "professionals"
+      ],
+      "channels": [
+        "website",
+        "brochure"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "English classes and learning formats",
+          "summary": "Explore group and individual learning options, subject to current availability.",
+          "body": "Anglia Morocco’s materials describe English learning in different formats, including group classes and individual lessons. The appropriate format depends on the learner’s current level, goals, timetable and available teaching capacity. Ask the team about the current age groups, class sizes, course length, teaching hours, materials, assessment and fee schedule before enrolling."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Cours d’anglais et formats d’apprentissage",
+          "summary": "Découvrez les possibilités d’apprentissage en groupe ou en individuel, selon les disponibilités actuelles.",
+          "body": "Les supports d’Anglia Morocco présentent différentes modalités d’apprentissage de l’anglais, notamment les cours en groupe et les leçons individuelles. Le format adapté dépend du niveau actuel, des objectifs, de l’emploi du temps de l’apprenant et des capacités d’encadrement disponibles. Avant l’inscription, renseignez-vous sur les tranches d’âge, les effectifs, la durée du cours, le volume horaire, les supports, l’évaluation et le barème en vigueur."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "دروس الإنجليزية وصيغ التعلم",
+          "summary": "اكتشفوا إمكانيات التعلم ضمن مجموعات أو بصورة فردية وفق التوفر الحالي.",
+          "body": "تعرض مواد Anglia Morocco صيغاً مختلفة لتعلم الإنجليزية، من بينها الدروس الجماعية والحصص الفردية. وتتحدد الصيغة الملائمة بحسب المستوى الحالي للمتعلم وأهدافه وجدوله الزمني وقدرة التأطير المتاحة. وقبل التسجيل، يرجى الاستفسار عن الفئات العمرية وأعداد المتعلمين ومدة البرنامج وعدد الساعات والموارد وطرق التقييم وجدول الرسوم المعمول به."
+        }
+      },
+      "evidence_gates": [
+        "Verify current course availability, class sizes, staffing, schedules, materials and fee schedule."
+      ]
+    },
+    {
+      "id": "agi.anglia.placement-assessment",
+      "type": "service-description",
+      "audiences": [
+        "learners",
+        "parents"
+      ],
+      "channels": [
+        "website",
+        "email"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Find your starting English level",
+          "summary": "A placement assessment can help identify an appropriate starting point for learning or exam preparation.",
+          "body": "A placement assessment can help a learner and teacher discuss current English ability and identify a suitable starting level. It is a guide for planning, not a formal qualification or a guarantee of an examination result. Contact Anglia Morocco to confirm the current assessment format, booking process, availability and whether any fee applies."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Déterminer son niveau de départ en anglais",
+          "summary": "Une évaluation de positionnement peut aider à identifier un niveau adapté pour apprendre ou préparer un examen.",
+          "body": "Une évaluation de positionnement peut aider l’apprenant et l’enseignant à discuter du niveau actuel en anglais et à identifier un point de départ approprié. Elle sert de repère pour organiser l’apprentissage ; elle ne constitue pas une qualification officielle ni une garantie de résultat à un examen. Contactez Anglia Morocco pour confirmer le format actuel, la procédure de réservation, les disponibilités et l’existence éventuelle de frais."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "تحديد مستوى الانطلاق في اللغة الإنجليزية",
+          "summary": "يمكن لتقييم تحديد المستوى أن يساعد على اختيار نقطة انطلاق مناسبة للتعلم أو التحضير للامتحان.",
+          "body": "يساعد تقييم تحديد المستوى المتعلم والمدرس على مناقشة الكفايات الحالية في الإنجليزية وتحديد المستوى المناسب للانطلاق. ويعد هذا التقييم أداة استرشادية لتنظيم التعلم، وليس مؤهلاً رسمياً أو ضماناً لنتيجة امتحان معين. يرجى التواصل مع Anglia Morocco لتأكيد صيغة التقييم الحالية وإجراءات الحجز والتوفر وما إذا كانت هناك رسوم."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-035"
+      ],
+      "evidence_gates": [
+        "Verify assessment price, booking availability, format and whether it is diagnostic or formal examination."
+      ]
+    },
+    {
+      "id": "agi.anglia.step-to-series",
+      "type": "resource-description",
+      "audiences": [
+        "learners",
+        "parents",
+        "teachers"
+      ],
+      "channels": [
+        "website",
+        "catalogue",
+        "brochure"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Step To examination-preparation books",
+          "summary": "A learning-resource series associated with Anglia examination preparation; request the current catalogue.",
+          "body": "The Step To series is presented in AGI’s materials as a set of learning and preparation resources for Anglia examinations. Each catalogue record should identify the official book title, level, edition, ISBN, publisher or rights holder, learning objectives, included audio or digital materials, teacher guidance, price and availability. Contact Anglia Morocco for the current catalogue and ordering information."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Les livres Step To pour préparer les examens",
+          "summary": "Une collection de ressources d’apprentissage associée à la préparation aux examens Anglia ; demandez le catalogue actualisé.",
+          "body": "Les supports d’AGI présentent la collection Step To comme un ensemble de ressources d’apprentissage et de préparation aux examens Anglia. Chaque fiche de catalogue doit préciser le titre officiel, le niveau, l’édition, l’ISBN, l’éditeur ou titulaire des droits, les objectifs pédagogiques, les ressources audio ou numériques incluses, le guide de l’enseignant, le prix et la disponibilité. Contactez Anglia Morocco pour obtenir le catalogue et les informations de commande à jour."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "كتب Step To للتحضير للامتحانات",
+          "summary": "مجموعة موارد للتعلم والتحضير لامتحانات Anglia؛ اطلبوا الفهرس المحين.",
+          "body": "تعرض مواد AGI سلسلة Step To باعتبارها مجموعة من موارد التعلم والتحضير لامتحانات Anglia. وينبغي أن تتضمن كل بطاقة فهرسية العنوان الرسمي للكتاب والمستوى والطبعة ورقم ISBN والناشر أو صاحب الحقوق والأهداف التعليمية والموارد الصوتية أو الرقمية المرفقة ودليل المدرس والسعر والتوفر. يرجى التواصل مع Anglia Morocco للحصول على الفهرس ومعلومات الطلب المحينة."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-037"
+      ],
+      "evidence_gates": [
+        "Verify catalogue, editions, ISBNs, rights, audio access, prices and stock."
+      ]
+    },
+    {
+      "id": "agi.anglia.business-english",
+      "type": "programme-description",
+      "audiences": [
+        "professionals",
+        "adult-learners",
+        "organisations"
+      ],
+      "channels": [
+        "website",
+        "brochure"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Business English examinations",
+          "summary": "A separate English assessment pathway for professional communication, with current levels to be confirmed.",
+          "body": "Anglia’s materials describe Business English examinations for learners who want to develop and demonstrate English used in professional contexts. The pathway is presented as distinct from General English. Candidates should check the current level names, CEFR mapping, exam format and availability before selecting an examination."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Examens d’anglais des affaires",
+          "summary": "Un parcours distinct d’évaluation de l’anglais en contexte professionnel, dont les niveaux actuels doivent être confirmés.",
+          "body": "Les supports d’Anglia présentent des examens d’anglais des affaires destinés aux apprenants qui souhaitent développer et démontrer leurs compétences en anglais dans un contexte professionnel. Ce parcours est présenté séparément de l’anglais général. Les candidats doivent vérifier les noms des niveaux, leur correspondance au CECRL, le format et la disponibilité des examens avant de choisir."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "امتحانات الإنجليزية للأعمال",
+          "summary": "مسار مستقل لتقييم الإنجليزية في السياق المهني، مع ضرورة تأكيد المستويات المعمول بها حالياً.",
+          "body": "تعرض مواد Anglia امتحانات للإنجليزية الخاصة بالأعمال، موجهة للمتعلمين الراغبين في تطوير وإثبات كفاياتهم في استعمال الإنجليزية ضمن السياق المهني. ويقدم هذا المسار بصورة مستقلة عن الإنجليزية العامة. وينبغي للمترشحين التحقق من أسماء المستويات ومطابقتها للإطار الأوروبي وصيغة الامتحان وتوفره قبل الاختيار."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-034"
+      ],
+      "evidence_gates": [
+        "Verify current Business English specifications, level names, CEFR mapping and availability."
+      ]
+    },
+    {
+      "id": "agi.anglia.recognition",
+      "type": "proof-point",
+      "audiences": [
+        "learners",
+        "parents",
+        "universities",
+        "partners"
+      ],
+      "channels": [
+        "website",
+        "brochure"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Qualification recognition and progression",
+          "summary": "Recognition statements must identify the exact qualification and awarding body.",
+          "body": "Recognition depends on the specific qualification, its awarding body, the institution receiving the result and the relevant admissions cycle. AGI’s materials refer to the Anglia Mastery level and UCAS tariff points. Any public statement must use the exact current qualification title and be checked against the official UCAS listing and Anglia/AIM documentation. Do not imply that every Anglia examination carries the same recognition."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Reconnaissance des qualifications et poursuite d’études",
+          "summary": "Toute déclaration de reconnaissance doit préciser la qualification exacte et l’organisme certificateur.",
+          "body": "La reconnaissance dépend de la qualification concernée, de son organisme certificateur, de l’établissement qui reçoit le résultat et de la campagne d’admission applicable. Les supports d’AGI font référence au niveau Anglia Mastery et aux points tarifaires UCAS. Toute communication publique doit reprendre l’intitulé exact et actuel de la qualification et être vérifiée à partir de la liste officielle UCAS et des documents Anglia/AIM. Ne pas laisser entendre que tous les examens Anglia bénéficient de la même reconnaissance."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "الاعتراف بالمؤهلات ومواصلة الدراسة",
+          "summary": "يجب أن يحدد كل تصريح بشأن الاعتراف اسم المؤهل بدقة والجهة المانحة له.",
+          "body": "يرتبط الاعتراف بالمؤهل المحدد والجهة المانحة له والمؤسسة التي تتلقى النتيجة ودورة القبول المعنية. وتشير مواد AGI إلى مستوى Anglia Mastery ونقاط UCAS. وينبغي أن يستعمل أي تصريح منشور الاسم الرسمي والمحَين للمؤهل وأن تتم مراجعته بالاستناد إلى القائمة الرسمية لـUCAS ووثائق Anglia/AIM. ولا يجوز الإيحاء بأن جميع امتحانات Anglia تتمتع بالاعتراف نفسه."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-038",
+        "F-AGI-015"
+      ],
+      "evidence_gates": [
+        "Verify exact qualification title, awarding body, current UCAS listing and applicable admissions cycle."
       ]
     }
   ]
