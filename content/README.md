@@ -59,3 +59,9 @@ The current app has its own legacy route index and 128 page JSON files (includin
 
 - [Headless CMS evaluation](architecture/cms-evaluation.md): recommends an isolated Strapi 5 Community proof of concept, with Payload as the alternative. No CMS has been deployed or selected for production.
 - [Current-site integration assessment](architecture/current-site-integration.md): documents the non-destructive migration approach.
+
+## Route review and target site structure
+
+- [68-route content review](migration/route-content-review.csv)
+- [Proposed information architecture v2](strategy/proposed-information-architecture-v2.md)
+- [Migration review validator](../scripts/validate_migration_plan.py)
