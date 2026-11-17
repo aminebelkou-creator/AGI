@@ -15,3 +15,11 @@ See `content/architecture/current-site-integration.md` for the migration strateg
 - [Structural reconciliation report](legacy-content-reconciliation.md): verified route/news/file integrity baseline and review priorities.
 - [Legacy route review matrix](legacy-route-review-matrix.csv): 68 route-by-route triage rows. Priority flags are automated from route/title text only; they are not a review or approval of the page body.
 - Run the read-only integrity audit with `python scripts/audit_legacy_content.py`. GitHub Actions runs it alongside the multilingual export validator.
+
+## Detailed route review and target structure
+
+- [Detailed 68-route content review](route-content-review.csv): observed content findings, proposed canonical routes, content types, actions, priority and evidence gates.
+- [Proposed information architecture v2](../strategy/proposed-information-architecture-v2.md): target navigation, site tree, CMS content types, editorial workflow, localisation, SEO and implementation sequence.
+- [Migration plan validator](../../scripts/validate_migration_plan.py): checks the review matrix covers every route in the current route index and that required decisions are populated.
+
+The matrix is a recommendation and triage artefact. It does not mean the proposed route has been created, the content has been approved, or a redirect has been installed.
