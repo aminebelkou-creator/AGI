@@ -226,6 +226,10 @@
       },
       "evidence_gates": [
         "Verify current franchise scope, official exam specifications, current availability and qualification-specific recognition."
+      ],
+      "fact_refs": [
+        "F-AGI-012",
+        "F-AGI-015"
       ]
     },
     {
@@ -262,6 +266,9 @@
       },
       "evidence_gates": [
         "Use current official Anglia wording and specifications; do not market C.I.T.E. as a TEFL/TESOL qualification or teaching licence."
+      ],
+      "fact_refs": [
+        "F-AGI-016"
       ]
     },
     {
@@ -335,6 +342,10 @@
       },
       "evidence_gates": [
         "Verify current AWA agreement, legal identity, awarding body, accreditation scope, eligibility, fees and AGI's exact role."
+      ],
+      "fact_refs": [
+        "F-AGI-014",
+        "F-AGI-017"
       ]
     },
     {
@@ -407,6 +418,9 @@
       },
       "evidence_gates": [
         "Verify current accepted examination providers, authorisations, availability, fees and data/security procedures."
+      ],
+      "fact_refs": [
+        "F-AGI-020"
       ]
     },
     {
@@ -443,6 +457,9 @@
       },
       "evidence_gates": [
         "Verify current institutional appointments, service scope, fees, disclosures and partner permissions."
+      ],
+      "fact_refs": [
+        "F-AGI-023"
       ]
     },
     {
@@ -479,6 +496,9 @@
       },
       "evidence_gates": [
         "Verify active provider agreements, qualification issuer, internship scope, supervision, safeguarding and insurance."
+      ],
+      "fact_refs": [
+        "F-AGI-021"
       ]
     },
     {
@@ -514,6 +534,9 @@
       },
       "evidence_gates": [
         "Verify provider identity, credentials, legal scope, consent, safeguarding and referral arrangements."
+      ],
+      "fact_refs": [
+        "F-AGI-022"
       ]
     },
     {
