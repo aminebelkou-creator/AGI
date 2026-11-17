@@ -41,3 +41,14 @@ Only website copy and non-confidential editorial rules belong here. Internal leg
 
 ## Source and limitations
 This first migration batch is based on the AGI Multilingual Content Foundation v3 editorial package and public-facing source research. It is a content draft, not a legal opinion, regulatory approval, accreditation audit or proof that every described service is currently available.
+
+## Structured export and website integration
+
+- `entries.json` is the CMS-neutral structured export (36 records, 12 page groups × 3 locales).
+- `entries/README.md` documents the record model and review-state boundaries.
+- `schemas/content-entry.schema.json` describes the portable entry shape.
+- `../scripts/validate_content_export.py` checks the structured export using Python's standard library.
+- `architecture/current-site-integration.md` explains why the export is not a drop-in replacement for the current React app content store and defines a non-destructive migration path.
+- `IMPORT-STATUS.md` records scope, completed work and remaining gates.
+
+The current app has its own legacy route index and 128 page JSON files (including 60 news items). The new 12-page core set does not replace those files. Production export must include only approved records; none of the current records is approved or published.
