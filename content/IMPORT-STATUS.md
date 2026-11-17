@@ -14,6 +14,7 @@
 - A lightweight validation script at `scripts/validate_content_export.py`.
 - A first reusable multilingual content library at `content/library/reusable-content-library.json`: 15 semantic content modules × 3 locales (45 locale variants).
 - Reusable content schema at `content/schemas/reusable-content-library.schema.json`, authoring/composition guide at `content/library/README.md`, and validator at `scripts/validate_reusable_content.py`.
+- Seven machine-readable page composition maps at `content/library/page-compositions.json`, connecting page-level drafts to reusable modules by stable ID and listing content gaps.
 - Governed fact register at `content/facts/fact-register.csv`: 22 material or volatile claims from v2, each with a source pointer, owner, evidence requirement and publication rule. A validator at `scripts/validate_fact_register.py` checks register completeness and verification-date requirements.
 - CI workflow extended to validate the reusable content library alongside the existing page export, legacy inventory and migration plan.
 - Import architecture assessment at `content/architecture/current-site-integration.md`.
@@ -53,7 +54,7 @@ The new content export and reusable library are deliberately separate from the l
 
 1. Reconcile the complete v2 page copy against the legacy WordPress export and the new reusable modules, identifying keep/merge/rewrite/archive decisions.
 2. Verify and date-stamp the 22 existing fact-register entries; add primary evidence and review/expiry dates. Expand the register as new material claims are discovered.
-3. Expand the reusable library with institutional story, mission/vision, admissions, parent policies, student life, approved testimonials, detailed Anglia levels and news/article records.
+3. Expand the reusable library with institutional story, mission/vision, admissions, parent policies, student life, approved testimonials, detailed Anglia levels and news/article records; extend page composition maps as those modules are reviewed.
 4. Create page compositions that reference modules, then compare them against v2 page narratives to avoid losing useful detail.
 5. Assign content owners and complete subject-matter, legal, partner, safeguarding, rights and translation reviews.
 6. Only then prepare CMS import and staging-only previews.
