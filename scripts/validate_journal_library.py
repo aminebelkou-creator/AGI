@@ -22,7 +22,8 @@ assert data["counts"]["total"] == data["counts"]["wordpress_export"] + data["cou
 allowed_locales = {"en-US", "fr-MA", "ar-MA", "und"}
 allowed_status = {"source-captured", "editorial-review", "rights-review", "partner-approval", "legal-review", "archived-candidate", "approved", "published"}
 for record in records:
-    assert re.fullmatch(r"agi\\.journal\\.[a-z0-9-]+", record["id"]), record["id"]
+    assert record["id"] == "agi.journal." + record["slug"], record["id"]
+    assert re.fullmatch(r"[a-z0-9-]+", record["slug"]), record["slug"]
     assert record["source_type"] in {"wordpress-export", "crawl-inventory"}
     assert record["source_locale"] in allowed_locales, (record["id"], record["source_locale"])
     assert record["title"].strip() and record["slug"].strip() and record["canonical_route"].strip()
