@@ -8,14 +8,14 @@
 ## Completed in this branch
 
 - Editorial foundation: positioning, information architecture, editorial policy, source register, research backlog, claims register, correction backlog, Law 59.21 operational checklist and public-facing website audit.
-- Human-readable English, French and Arabic content bundles covering 12 core page groups.
-- Manifest and SEO metadata for all 36 page/locale combinations.
+- Human-readable English, French and Arabic content bundles covering 17 page groups.
+- Manifest and SEO metadata for all 51 page/locale combinations.
 - Portable JSON Schema and a CMS-neutral structured export at `content/entries.json`.
 - A lightweight validation script at `scripts/validate_content_export.py`.
-- A first reusable multilingual content library at `content/library/reusable-content-library.json`: 15 semantic content modules × 3 locales (45 locale variants).
+- A first reusable multilingual content library at `content/library/reusable-content-library.json`: 34 semantic content modules × 3 locales (102 locale variants).
 - Reusable content schema at `content/schemas/reusable-content-library.schema.json`, authoring/composition guide at `content/library/README.md`, and validator at `scripts/validate_reusable_content.py`.
-- Seven machine-readable page composition maps at `content/library/page-compositions.json`, connecting page-level drafts to reusable modules by stable ID and listing content gaps.
-- Governed fact register at `content/facts/fact-register.csv`: 23 material or volatile claims from v2, each with a source pointer, owner, evidence requirement and publication rule. Reusable modules link to relevant fact IDs, and the module validator checks reference integrity. A validator at `scripts/validate_fact_register.py` checks register completeness and verification-date requirements.
+- 12 machine-readable page composition maps at `content/library/page-compositions.json`, connecting page-level drafts to reusable modules by stable ID and listing content gaps.
+- Governed fact register at `content/facts/fact-register.csv`: 30 material or volatile claims from v2, each with a source pointer, owner, evidence requirement and publication rule. Reusable modules link to relevant fact IDs, and the module validator checks reference integrity. A validator at `scripts/validate_fact_register.py` checks register completeness and verification-date requirements.
 - CI workflow extended to validate the reusable content library alongside the existing page export, legacy inventory and migration plan.
 - Import architecture assessment at `content/architecture/current-site-integration.md`.
 - Legacy route inventory at `content/migration/legacy-route-inventory.csv`: 68 existing page routes and 60 news items (128 referenced JSON files), all flagged for review rather than automatic replacement.
@@ -26,13 +26,13 @@
 
 ## Structured page content
 
-The page-oriented export contains 36 locale records: 12 page groups × 3 locales (en-US, fr-MA, ar-MA). English remains in editorial review; French and Arabic remain in translation review. No record is approved or published.
+The page-oriented export contains 51 locale records: 17 page groups × 3 locales (en-US, fr-MA, ar-MA). English remains in editorial review; French and Arabic remain in translation review. No record is approved or published.
 
-The 12 page groups are: homepage, school, inclusive learning, Anglia Morocco, C.I.T.E., Step To books, adult learning, professional English, teacher development, proctoring, wellbeing and FAQ.
+The 17 page groups are: homepage, school, inclusive learning, Anglia Morocco, C.I.T.E., Step To books, adult learning, professional English, teacher development, proctoring, wellbeing, FAQ, about, admissions, parents, student life and policies.
 
 ## Reusable content coverage
 
-The modular library is a complementary layer, not a replacement for the 12 page narratives. Its first batch covers brand positioning and pillars, K–12, inclusive learning, Anglia examinations, C.I.T.E., Step To resources, adult learning, professional English, proctoring, education consultancy, teacher development, wellbeing and a general contact CTA.
+The modular library is a complementary layer, not a replacement for the 17 page narratives. It now contains 34 modules and 102 locale variants. Its content covers covers brand positioning and pillars, institutional mission/vision/history, K–12, inclusive learning, admissions, parent guidance, fees, curriculum, student life, policies, Anglia examinations, C.I.T.E., Step To resources, adult learning, professional English, proctoring, education consultancy, teacher development, wellbeing and CTAs.
 
 Page templates should compose modules by stable IDs instead of copying the same programme/service description into several pages. Volatile facts (fees, dates, hours, staff roles, availability and partner status) still need a separately governed fact register with source, owner, verification date and review/expiry date before being embedded or reused.
 
@@ -53,10 +53,14 @@ The new content export and reusable library are deliberately separate from the l
 ## Next content work
 
 1. Reconcile the complete v2 page copy against the legacy WordPress export and the new reusable modules, identifying keep/merge/rewrite/archive decisions.
-2. Verify and date-stamp the 22 existing fact-register entries; add primary evidence and review/expiry dates. Expand the register as new material claims are discovered.
-3. Expand the reusable library with institutional story, mission/vision, admissions, parent policies, student life, approved testimonials, detailed Anglia levels and news/article records; extend page composition maps as those modules are reviewed.
+2. Verify and date-stamp the 30 existing fact-register entries; add primary evidence and review/expiry dates. Expand the register as new material claims are discovered.
+3. Continue the reusable library with detailed grade-level curriculum, Anglia exam specifications and centre details, adult diploma disclosures, verified student stories and the article corpus.
 4. Create page compositions that reference modules, then compare them against v2 page narratives to avoid losing useful detail.
 5. Assign content owners and complete subject-matter, legal, partner, safeguarding, rights and translation reviews.
 6. Only then prepare CMS import and staging-only previews.
+
+## Journal reconciliation
+
+The journal review is now documented in `content/migration/journal-content-findings.md` and `content/migration/journal-reconciliation.csv`. It reconciles 60 WordPress export posts, 66 journal index cards, 66 article files, seven crawl-inventory additions and one CCGi source post routed to a separate designed page. The dedicated validator is `scripts/validate_journal_reconciliation.py`.
 
 **Boundary:** this branch is an editorial and content-architecture workspace. The live site and main branch remain untouched.
