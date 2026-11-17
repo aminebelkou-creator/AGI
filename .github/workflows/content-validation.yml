@@ -10,6 +10,7 @@ on:
       - "scripts/audit_legacy_content.py"
       - "scripts/validate_migration_plan.py"
       - "scripts/validate_journal_reconciliation.py"
+      - "scripts/validate_journal_library.py"
       - ".github/workflows/content-validation.yml"
   pull_request:
     paths:
@@ -41,3 +42,5 @@ jobs:
         run: python scripts/validate_migration_plan.py
       - name: Validate journal source and article reconciliation
         run: python scripts/validate_journal_reconciliation.py
+      - name: Validate structured journal content library
+        run: python scripts/validate_journal_library.py
