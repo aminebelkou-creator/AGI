@@ -13,6 +13,7 @@
 - Portable JSON Schema and a CMS-neutral structured export at `content/entries.json`.
 - A lightweight validation script at `scripts/validate_content_export.py`.
 - Import architecture assessment at `content/architecture/current-site-integration.md`.
+- Legacy route inventory at `content/migration/legacy-route-inventory.csv`: 68 existing page routes and 60 news items (128 referenced JSON files), all flagged for review rather than automatic replacement.
 
 ## Structured content coverage
 
@@ -35,7 +36,7 @@ The new content export is deliberately kept separate from the legacy app content
 
 ## Next gates
 
-1. Complete page-by-page reconciliation of the 128 legacy pages and 60 news records against the new content model.
+1. Use `content/migration/legacy-route-inventory.csv` to complete page-by-page reconciliation of the 68 route pages and 60 news records against the new content model.
 2. Build a route/slug/locale mapping and identify duplicates, redirects, obsolete pages and content that must remain.
 3. Complete claim-to-source mapping from primary evidence and assign human owners/review dates.
 4. Obtain native-speaker and subject-owner review; obtain legal and partner approval where required.
