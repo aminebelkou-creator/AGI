@@ -37,7 +37,7 @@ python scripts/validate_reusable_content.py
 1. A page is a composition of content modules; it should reference stable IDs rather than maintain a second copy of the same programme description.
 2. A module may be reused on the homepage, programme landing page, audience page, brochure, social post or email, with channel-appropriate excerpts.
 3. Reuse does not mean every context must show the full body. A future page assembler may select title, summary, body or CTA fields, but must retain the same source ID.
-4. Do not put volatile facts (fees, dates, opening hours, staff roles, availability, partner status) into reusable prose as untracked literals. Store them as separately governed facts with source, owner, verified date, expiry/review date and locale formatting.
+4. Do not put volatile facts (fees, dates, opening hours, staff roles, availability, partner status) into reusable prose as untracked literals. Use `../facts/fact-register.csv`, which records source pointers, owners, verification requirements, review dates and publication rules. Add a fact to page copy only after its status and evidence are approved; localise its display format separately.
 5. Keep qualification, regulatory, partner, clinical, safeguarding and school-authorisation wording subject to the relevant evidence gate.
 6. English is the editorial master for this batch. French and Arabic are localised copy, not automatic machine fallbacks; each translation remains in translation review until checked by a qualified reviewer.
 7. Arabic is Modern Standard Arabic adapted for the Moroccan audience. Any Arabic presentation must set RTL direction at the rendering layer.
