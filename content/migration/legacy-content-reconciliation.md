@@ -79,3 +79,9 @@ The script uses only the Python standard library, reads the existing indexes and
 ## Next implementation unit
 
 Build a detailed route-by-route editorial reconciliation table that captures: audience, purpose, currentness risk, evidence required, owner, target content group, proposed action (retain, consolidate, rewrite, archive candidate) and approval status. The existing 12-page model is only the initial core; it is not a substitute for the full 68-route review.
+
+## Automated verification result
+
+The GitHub Actions run for the corrected audit completed successfully on 17 November 2026. Both checks passed: the 36-record multilingual export validator and the legacy integrity audit. The audit reported 68 routes, 60 news records, 128 referenced JSON files, 128 JSON files present, zero errors and zero warnings. Run: https://github.com/aminebelkou-creator/AGI/actions/runs/43992434639
+
+The companion `legacy-route-review-matrix.csv` contains 68 preliminary triage rows. Its priority flags are based on route/title wording only; it does not inspect or approve the full page body. Human review remains required.
