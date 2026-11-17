@@ -1,0 +1,26 @@
+{
+  "id": "agi.inclusive-learning",
+  "slug": "inclusive-learning",
+  "locale": "en-US",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "editorial-review",
+  "title": "Inclusive learning support",
+  "summary": "AGI's public materials describe small-group learning, individualised planning and collaboration with families. This page should explain educational support actually available, not diagnose learners or promise clinical treatment.",
+  "body": "AGI's public materials describe small-group learning, individualised planning and collaboration with families. This page should explain educational support actually available, not diagnose learners or promise clinical treatment.\n\nA confidential conversation can help the school understand a learner's strengths, learning history and support needs. Where an individual learning plan is used, explain priorities, classroom strategies, agreed adjustments, responsibilities and review dates. If the term IEP is used, explain its meaning within AGI; do not imply identical legal status in every country.\n\nAGI's public page mentions occupational therapy, speech-language pathology and behavioural support. Promote these only after confirming qualified providers, availability, consent, safeguarding and service scope.\n\n**Action:** Request a confidential conversation. **Publication gate:** Confirm services, credentials, fees, referral routes and privacy safeguards.",
+  "seo": {
+    "title": "Inclusive Learning Support | AGI Agadir",
+    "description": "Explore AGI's educational support approach and how families can discuss individual learning needs."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "ltr",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
