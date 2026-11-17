@@ -11,7 +11,7 @@ This directory is the CMS-independent editorial source for the future AGI websit
 ## Current coverage
 The initial core library contains 12 page groups in three locales (36 locale-page entries): homepage, school, inclusive learning, Anglia Morocco, C.I.T.E., Step To books, adult learning, professional English, teacher development, proctoring, wellbeing and FAQ.
 
-See manifest.csv for the page/locale inventory and current editorial state.
+See manifest.csv for the page/locale inventory and current editorial state. The seo/metadata.csv file contains draft title and meta-description suggestions for all 36 locale-page entries.
 
 ## Publication workflow
 - editorial-review: English master awaiting AGI subject-owner review.
