@@ -1,0 +1,26 @@
+{
+  "id": "agi.anglia-morocco",
+  "slug": "anglia-morocco",
+  "locale": "ar-MA",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "translation-review",
+  "title": "Anglia Morocco — امتحانات اللغة الإنجليزية",
+  "summary": "تُعد Anglia Examinations جهة متخصصة في امتحانات اللغة الإنجليزية مقرها إنجلترا. وتعرض موادها الرسمية مساراً من عشرة مستويات للإنجليزية العامة يبدأ بـ First Step وينتهي بـ Mastery (C2)، إلى جانب مسار مستقل من أربعة مستويات للإنجليزية للأعمال. وتشمل مهارات التقييم الاستماع والقراءة والكتابة والتحدث، مع اختلاف مكونات الاختبار بحسب المستوى.",
+  "body": "تُعد Anglia Examinations جهة متخصصة في امتحانات اللغة الإنجليزية مقرها إنجلترا. وتعرض موادها الرسمية مساراً من عشرة مستويات للإنجليزية العامة يبدأ بـ First Step وينتهي بـ Mastery (C2)، إلى جانب مسار مستقل من أربعة مستويات للإنجليزية للأعمال. وتشمل مهارات التقييم الاستماع والقراءة والكتابة والتحدث، مع اختلاف مكونات الاختبار بحسب المستوى.\n\nوتدرج Anglia Examinations مؤسسة AGI في دليل الامتيازات الرسمي بصفتها صاحبة امتيازها بالمغرب منذ سنة 2021. وينبغي وصف الدور المحلي وفق الاتفاق الجاري.\n\nوتشير Anglia إلى أن أعلى أربعة مؤهلات في الإنجليزية العامة معتمدة من خلال AIM Qualifications and Assessment Group وخاضعة لتنظيم Ofqual. ولا ينطبق ذلك تلقائياً على جميع امتحانات Anglia.\n\n**الإجراءات:** اكتشفوا المستويات · اعثروا على مركز · استفسروا عن التسجيل · اكتشفوا كتب Step To.",
+  "seo": {
+    "title": "امتحانات Anglia بالمغرب | AGI",
+    "description": "تعرفوا على امتحانات Anglia ومستوياتها المرجعية وإجراءات التسجيل وموارد التعلم بالمغرب."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "rtl",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
