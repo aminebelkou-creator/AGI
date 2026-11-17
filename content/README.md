@@ -1,37 +1,43 @@
-# AGI Content Foundation
+# AGI multilingual content library
 
-This directory is the CMS-independent editorial source for the future AGI website. It is deliberately separate from the current website implementation in `v2/`, the earlier application in `app/`, and the source exports in `data/`.
+This directory is the CMS-independent editorial source for the future AGI website. It is additive to the existing site and does not replace v2/, docs/ or the historical WordPress export.
 
-## Principles
-- English (`en-US`) is the master language; French (`fr-MA`) and Modern Standard Arabic (`ar-MA`) are linked localisations.
-- Stable content IDs connect translations, claims, media, programmes and related pages.
-- Content status is explicit. A draft is not publication-ready merely because it exists in Git.
-- Legal, accreditation, partner, safeguarding, fee and qualification claims require evidence and named approval.
-- Dynamic information (fees, dates, contacts, availability, staff roles) must have an owner and review/expiry date.
-- This repository is the source of truth for authored content; the future CMS or website consumes it.
+## Editorial languages
+- en/pages.md — English master (US English).
+- fr/pages.md — French localisation for Morocco.
+- ar/pages.md — Modern Standard Arabic, adapted to Moroccan educational terminology; right-to-left.
+- Page boundaries use stable markers such as <!-- page: homepage -->. The marker value is the slug and is consistent across locales.
 
-## Structure
-- `en/`, `fr/`, `ar/`: locale-specific page content.
-- `strategy/`: positioning and information architecture.
-- `governance/`: editorial policy, claims and publication controls.
-- `schemas/`: portable content data contracts.
-- `sources/`: source register and evidence references.
-- `research/`: internal research and audit material; not website copy.
-- `media/`: media register and rights/consent metadata (assets are added only when rights are confirmed).
+## Current coverage
+The initial core library contains 12 page groups in three locales (36 locale-page entries): homepage, school, inclusive learning, Anglia Morocco, C.I.T.E., Step To books, adult learning, professional English, teacher development, proctoring, wellbeing and FAQ.
 
-## Current import
-The first import establishes the three homepage language variants and the core editorial architecture. The wider page drafts and v3 research supplement remain in the separately supplied `AGI_Multilingual_Content_Foundation_v3.zip` and should be migrated into this structure in subsequent content batches. Existing comprehensive website content remains in `v2/`, `docs/` and `data/`; do not overwrite it.
+See manifest.csv for the page/locale inventory and current editorial state.
 
-## Status vocabulary
-`draft`, `subject_review`, `legal_review`, `partner_approval`, `approved`, `scheduled`, `published`, `expired`, `withdrawn`.
+## Publication workflow
+- editorial-review: English master awaiting AGI subject-owner review.
+- translation-review: translated copy awaiting native-speaker review against the approved English master.
+- legal-review: legal, regulatory, qualification or consumer-facing claim awaiting appropriate review.
+- partner-approval: partner-controlled names, logos, credentials or claims awaiting written approval.
+- approved: all relevant reviews complete; ready for CMS import.
+- published: deployed and checked on the live website.
+- archived: superseded content retained for history.
 
-## Before publication
-1. Resolve P0 items in the website correction backlog.
-2. Confirm school authorisation, approved designation and foreign-curriculum permissions with AREF and Moroccan counsel.
-3. Reconcile fees, dates, contracts and refund terms against current approved documents.
-4. Verify partner/awarder roles and all accreditation wording.
-5. Confirm wellbeing scope, provider credentials and safeguarding/referral procedures.
-6. Review EN master, then FR and AR; verify Arabic RTL rendering.
-7. Publish only content whose page status and every referenced claim are approved.
+Never mark a page approved or published based only on this initial migration.
 
-See the repository root README for the current site/build workflow. This directory does not change or deploy the website.
+## Content safety
+- Do not invent fees, dates, staff biographies, outcomes, authorisations, accreditation or testimonials.
+- Keep AGI's role distinct from awarding bodies and partners.
+- Do not state that all Anglia examinations are Ofqual-regulated. The wording in the Anglia page is deliberately limited to the four highest General English qualifications as described by Anglia.
+- C.I.T.E. is an Anglia examination; do not describe it as a teaching licence or standalone teaching qualification.
+- Adult diploma, clinical/wellbeing, inclusive-support and proctoring claims require provider, role, qualification, availability and safeguarding checks.
+- Treat school authorisation, approved grades, foreign-education permissions, fee schedules and contracts as mandatory publication gates.
+- Obtain written consent for identifiable student images, stories and testimonials.
+
+## CMS portability
+The Markdown bundles are the human-readable master. The JSON Schema in schemas/ defines the target structured entry shape. A future importer can split each bundle on page markers and create one content entity per slug and locale. Keep content IDs stable across translations.
+
+## Public repository boundary
+Only website copy and non-confidential editorial rules belong here. Internal legal opinions, contracts, personal data, safeguarding records, credentials, private partner correspondence and unredacted audit evidence must be stored in an access-controlled private location, not this public repository.
+
+## Source and limitations
+This first migration batch is based on the AGI Multilingual Content Foundation v3 editorial package and public-facing source research. It is a content draft, not a legal opinion, regulatory approval, accreditation audit or proof that every described service is currently available.
