@@ -7,6 +7,8 @@ import re
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 LIBRARY = ROOT / "content" / "library" / "reusable-content-library.json"
 SCHEMA = ROOT / "content" / "schemas" / "reusable-content-library.schema.json"
+COMPOSITIONS = ROOT / "content" / "library" / "page-compositions.json"
+PAGE_EXPORT = ROOT / "content" / "entries.json"
 
 data = json.loads(LIBRARY.read_text(encoding="utf-8"))
 json.loads(SCHEMA.read_text(encoding="utf-8"))
@@ -33,4 +35,16 @@ for item in items:
         assert copy["summary"].strip(), (item["id"], locale, "empty summary")
     assert item["locales"]["en-US"]["status"] != "published", "This first batch must not be auto-published"
 
-print(f"PASS: {len(items)} reusable content modules; {len(items) * len(locales)} locale variants; unique IDs and complete editorial states.")
+composition_data = json.loads(COMPOSITIONS.read_text(encoding="utf-8"))
+page_export = json.loads(PAGE_EXPORT.read_text(encoding="utf-8"))
+module_ids = set(ids)
+page_entry_ids = {entry["id"] for entry in page_export["entries"]}
+page_ids = [page["page_id"] for page in composition_data["pages"]]
+assert len(page_ids) == len(set(page_ids)), "Duplicate page composition ID"
+for page in composition_data["pages"]:
+    assert page["existing_page_entry"] in page_entry_ids, (page["page_id"], "unknown page entry")
+    assert page["modules"], (page["page_id"], "no modules")
+    for block in page["modules"]:
+        assert block["module_id"] in module_ids, (page["page_id"], "unknown module", block["module_id"])
+    assert isinstance(page["missing_content"], list)
+print(f"PASS: {len(items)} reusable content modules; {len(items) * len(locales)} locale variants; {len(composition_data['pages'])} page compositions; all module references resolve.")
