@@ -2,11 +2,13 @@
 
 This directory contains reusable editorial modules, not page-specific copies. It is designed to feed multiple page templates, channels and language versions without duplicating the underlying content.
 
-## First content batch
+## Current content coverage
 
 `reusable-content-library.json` currently contains 34 reusable modules and 102 locale variants (34 × English, French and Arabic):
 
-- Brand positioning, brand promise and school–home–community message.
+- Brand positioning, promise, mission, philosophy, vision, founding story and school–home–community message.
+- Founder/leadership profile, admissions journey, application records, placement assessment and fee guidance.
+- Curriculum overview, grade pathways, student life, community service, parent FAQs and policy summaries.
 - K–12 school, inclusive learning and Anglia examinations.
 - C.I.T.E. and Step To learning resources.
 - Adult learning pathway and professional/medical English.
@@ -43,7 +45,7 @@ python scripts/validate_reusable_content.py
 6. English is the editorial master for this batch. French and Arabic are localised copy, not automatic machine fallbacks; each translation remains in translation review until checked by a qualified reviewer.
 7. Arabic is Modern Standard Arabic adapted for the Moroccan audience. Any Arabic presentation must set RTL direction at the rendering layer.
 8. Never change an item's ID because its wording changes. Create a new ID only when the meaning or service itself becomes materially different; retain aliases when a migration requires them.
-9. No item in this first batch is approved or published. Do not treat structural validation as editorial, legal or partner approval.
+9. No module in the current library is approved or published. Do not treat structural validation as editorial, legal or partner approval.
 
 ## Recommended future page assembly
 
