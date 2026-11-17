@@ -1,0 +1,26 @@
+{
+  "id": "agi.anglia-morocco",
+  "slug": "anglia-morocco",
+  "locale": "fr-MA",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "translation-review",
+  "title": "Anglia Morocco — examens d’anglais",
+  "summary": "Anglia Examinations est un organisme d’examens d’anglais établi en Angleterre. Ses informations officielles présentent dix étapes d’anglais général, de First Step à Mastery (C2), ainsi qu’un parcours distinct de quatre niveaux d’anglais des affaires. Les examens évaluent la compréhension orale et écrite ainsi que l’expression orale et écrite ; les composantes varient selon le niveau.",
+  "body": "Anglia Examinations est un organisme d’examens d’anglais établi en Angleterre. Ses informations officielles présentent dix étapes d’anglais général, de First Step à Mastery (C2), ainsi qu’un parcours distinct de quatre niveaux d’anglais des affaires. Les examens évaluent la compréhension orale et écrite ainsi que l’expression orale et écrite ; les composantes varient selon le niveau.\n\nL’annuaire officiel des franchises d’Anglia désigne AGI comme titulaire de sa franchise au Maroc depuis 2021. Le rôle local doit être décrit conformément au contrat en vigueur.\n\nAnglia indique que ses quatre qualifications les plus élevées en anglais général sont accréditées par AIM Qualifications and Assessment Group et réglementées par Ofqual. Cette indication ne concerne pas automatiquement tous les examens Anglia.\n\n**Actions :** Découvrir les niveaux · Trouver un centre · Demander les modalités d’inscription · Découvrir Step To.",
+  "seo": {
+    "title": "Anglia Examinations Morocco | AGI",
+    "description": "Découvrez les examens Anglia au Maroc, les niveaux référencés au CECRL et les modalités d’inscription."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "ltr",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
