@@ -576,6 +576,749 @@
       "evidence_gates": [
         "Confirm current contact channels and routing to the responsible team."
       ]
+    },
+    {
+      "id": "agi.brand.mission",
+      "type": "brand-message",
+      "audiences": [
+        "parents",
+        "partners",
+        "community"
+      ],
+      "channels": [
+        "website",
+        "brochure",
+        "print"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Our mission",
+          "summary": "A strong educational foundation that helps learners become independent thinkers and caring contributors.",
+          "body": "To serve the Agadir region by giving children a strong educational foundation informed by American educational philosophy and practice, so they can grow into independent, critical thinkers and caring, contributing members of society."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Notre mission",
+          "summary": "Offrir une solide base éducative qui aide les apprenants à devenir des penseurs autonomes et des citoyens engagés.",
+          "body": "Servir la région d’Agadir en offrant aux enfants une solide base éducative inspirée de la philosophie et des pratiques éducatives américaines, afin qu’ils deviennent des penseurs autonomes et critiques, ainsi que des personnes attentionnées et actives au sein de la société."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "رسالتنا",
+          "summary": "توفير أساس تعليمي متين يساعد المتعلمين على أن يصبحوا مفكرين مستقلين وأفراداً فاعلين في المجتمع.",
+          "body": "خدمة جهة أكادير من خلال توفير أساس تعليمي متين للأطفال، يستلهم الفلسفة والممارسات التربوية الأمريكية، بما يساعدهم على تنمية التفكير المستقل والنقدي وأن يصبحوا أفراداً مسؤولين ومساهمين بإيجابية في المجتمع."
+        }
+      },
+      "evidence_gates": [
+        "Confirm the mission wording with AGI leadership before approval."
+      ]
+    },
+    {
+      "id": "agi.brand.philosophy",
+      "type": "brand-message",
+      "audiences": [
+        "parents",
+        "partners",
+        "community"
+      ],
+      "channels": [
+        "website",
+        "brochure",
+        "print"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Our educational philosophy",
+          "summary": "Academic growth, discipline, ethical conduct and respect for others.",
+          "body": "AGI’s stated educational philosophy brings together academic excellence, discipline, ethical standards and respect for others. It describes the development of the whole learner — intellectual, social, emotional, physical and personal — alongside respect for humanity and cultural difference."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Notre philosophie éducative",
+          "summary": "Développement scolaire, discipline, éthique et respect d’autrui.",
+          "body": "La philosophie éducative présentée par AGI associe l’exigence scolaire, la discipline, les principes éthiques et le respect d’autrui. Elle met l’accent sur le développement global de l’apprenant — intellectuel, social, émotionnel, physique et personnel — ainsi que sur le respect de l’humanité et de la diversité culturelle."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "فلسفتنا التربوية",
+          "summary": "التحصيل الدراسي والانضباط والسلوك الأخلاقي واحترام الآخرين.",
+          "body": "تجمع الفلسفة التربوية التي تعرضها AGI بين التفوق الدراسي والانضباط والقيم الأخلاقية واحترام الآخرين. كما تؤكد تنمية شخصية المتعلم في أبعادها الفكرية والاجتماعية والعاطفية والبدنية والشخصية، وترسيخ احترام الإنسان والتنوع الثقافي."
+        }
+      },
+      "evidence_gates": [
+        "Confirm the current official philosophy statement and preferred terminology."
+      ]
+    },
+    {
+      "id": "agi.brand.vision",
+      "type": "brand-message",
+      "audiences": [
+        "parents",
+        "partners",
+        "community"
+      ],
+      "channels": [
+        "website",
+        "brochure",
+        "print"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Our vision",
+          "summary": "Lifelong learning, integrity, cultural respect and service to the wider community.",
+          "body": "We envision lifelong learners who pursue excellence, act with integrity and respect cultural diversity, and use their knowledge and abilities to serve their communities in Morocco and the wider world with wisdom and compassion."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Notre vision",
+          "summary": "L’apprentissage tout au long de la vie, l’intégrité, le respect des cultures et l’engagement envers la communauté.",
+          "body": "Nous aspirons à former des apprenants qui poursuivent l’excellence tout au long de leur vie, agissent avec intégrité, respectent la diversité culturelle et mettent leurs connaissances et leurs compétences au service de leurs communautés au Maroc et dans le monde, avec sagesse et compassion."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "رؤيتنا",
+          "summary": "التعلم مدى الحياة والنزاهة واحترام التنوع الثقافي وخدمة المجتمع.",
+          "body": "نتطلع إلى متعلمين يواصلون طلب التميز مدى الحياة، ويتحلون بالنزاهة ويحترمون التنوع الثقافي، ويوظفون معارفهم ومهاراتهم لخدمة مجتمعاتهم في المغرب والعالم بروح من الحكمة والتعاطف."
+        }
+      },
+      "evidence_gates": [
+        "Confirm the vision wording with AGI leadership before approval."
+      ]
+    },
+    {
+      "id": "agi.story.founding",
+      "type": "story",
+      "audiences": [
+        "parents",
+        "students",
+        "partners",
+        "community"
+      ],
+      "channels": [
+        "website",
+        "brochure",
+        "social",
+        "print"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "A school that began with one classroom",
+          "summary": "The founding story of AGI in Agadir, subject to confirmation of the historical details.",
+          "body": "AGI’s existing institutional story traces its beginnings to a small classroom in Agadir in 2013. The founding account describes an ambition to make an American-style educational pathway accessible to families in the region. The story should be completed with confirmed dates, the founding team’s account and archival photographs approved for publication."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Une école née dans une seule salle de classe",
+          "summary": "L’histoire de la création d’AGI à Agadir, sous réserve de confirmation des éléments historiques.",
+          "body": "Le récit institutionnel actuel d’AGI situe ses débuts dans une petite salle de classe à Agadir en 2013. Cette histoire évoque l’ambition de rendre un parcours éducatif de type américain plus accessible aux familles de la région. Le récit devra être complété par des dates confirmées, le témoignage de l’équipe fondatrice et des photographies d’archives autorisées à la publication."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "مدرسة انطلقت من فصل دراسي واحد",
+          "summary": "قصة تأسيس AGI بأكادير، مع ضرورة التحقق من التفاصيل التاريخية قبل اعتمادها.",
+          "body": "تعود البدايات، وفق الرواية المؤسسية الحالية لـAGI، إلى فصل دراسي صغير بمدينة أكادير سنة 2013. وتعكس هذه الرواية طموحاً إلى جعل مسار تعليمي يستلهم النموذج الأمريكي أكثر إتاحة لأسر الجهة. وينبغي استكمال القصة بتواريخ مؤكدة وشهادة الفريق المؤسس وصور أرشيفية مرخص باستخدامها."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-007"
+      ],
+      "evidence_gates": [
+        "Confirm founding year, first cohort, founder account and image rights."
+      ]
+    },
+    {
+      "id": "agi.people.founder-profile",
+      "type": "story",
+      "audiences": [
+        "parents",
+        "partners",
+        "community"
+      ],
+      "channels": [
+        "website",
+        "brochure"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Founder and educational leadership",
+          "summary": "An introduction to AGI’s founder, with current title and biography pending approval.",
+          "body": "AGI’s existing materials identify Julie A. Wilburn as the institution’s founder and describe her involvement in educational leadership and programme development. The public profile should use one current, approved title and a verified biography, distinguishing her institutional responsibilities from any separate roles held with partner organisations."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Fondatrice et direction pédagogique",
+          "summary": "Présentation de la fondatrice d’AGI, dans l’attente de la validation de son titre et de sa biographie actuels.",
+          "body": "Les supports actuels d’AGI identifient Julie A. Wilburn comme fondatrice de l’institution et décrivent son implication dans la direction pédagogique et le développement des programmes. Le profil public devra utiliser un titre actuel approuvé et une biographie vérifiée, en distinguant ses responsabilités au sein de l’institution de ses éventuelles fonctions auprès d’organisations partenaires."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "المؤسسة والقيادة التربوية",
+          "summary": "تقديم مؤسسة AGI، في انتظار اعتماد الصفة المهنية الحالية والسيرة الذاتية.",
+          "body": "تشير المواد الحالية لـAGI إلى Julie A. Wilburn بصفتها مؤسسة المؤسسة، وتصف مشاركتها في القيادة التربوية وتطوير البرامج. وينبغي أن يعتمد التعريف المنشور صفة مهنية حالية وموحدة وسيرة ذاتية متحققاً منها، مع التمييز بين مسؤولياتها داخل المؤسسة وأي مهام أخرى لدى جهات شريكة."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-030"
+      ],
+      "evidence_gates": [
+        "Confirm public title, biography, qualifications, role boundaries, quote and portrait permission."
+      ]
+    },
+    {
+      "id": "agi.admissions.journey",
+      "type": "service-description",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "brochure",
+        "email"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "The admissions journey",
+          "summary": "A clear sequence from first enquiry to a considered enrolment decision.",
+          "body": "The admissions journey begins with an enquiry and a conversation with the school. Families can arrange an individual visit, learn about the current programme and requirements, and ask which assessments and records are needed. The school then reviews the application and explains the next steps, any offer and the applicable fee agreement. The exact process and timing are subject to the current admissions policy."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Les étapes de l’admission",
+          "summary": "Un parcours clair, du premier contact à la décision d’inscription.",
+          "body": "La démarche d’admission commence par une prise de contact et un échange avec l’établissement. Les familles peuvent organiser une visite individuelle, découvrir le programme et les conditions en vigueur, puis vérifier les évaluations et les documents nécessaires. L’établissement examine ensuite le dossier et précise les étapes suivantes, la décision éventuelle et les conditions financières applicables. La procédure et les délais exacts dépendent de la politique d’admission en vigueur."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "مراحل التسجيل",
+          "summary": "مسار واضح يبدأ بالاستفسار وينتهي بدراسة طلب التسجيل واتخاذ القرار.",
+          "body": "تبدأ إجراءات التسجيل بالتواصل مع المؤسسة وإجراء لقاء أولي. ويمكن للأسر ترتيب زيارة فردية والتعرف على البرنامج الدراسي والشروط المعمول بها، والاستفسار عن التقييمات والوثائق المطلوبة. بعد ذلك تدرس المؤسسة الطلب وتوضح الخطوات الموالية والقرار المحتمل والشروط المالية المطبقة. وتظل الإجراءات والآجال الدقيقة خاضعة لسياسة القبول المعتمدة حالياً."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-004",
+        "F-AGI-027"
+      ],
+      "evidence_gates": [
+        "Verify current admissions steps, assessment requirements, timelines, eligibility and fee agreement."
+      ]
+    },
+    {
+      "id": "agi.admissions.documents",
+      "type": "faq-answer",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "email"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Documents to prepare for an application",
+          "summary": "A preliminary guide to the types of records that may be requested; the current list must be confirmed.",
+          "body": "Depending on the learner’s circumstances and the current admissions policy, the application may require proof of age and residence, previous school records, a behaviour or transfer report, and relevant health or immunisation documentation. Families should request the current checklist before sending personal records. AGI should explain why each document is needed, how it will be handled and whom to contact with questions."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Documents à préparer pour une candidature",
+          "summary": "Un guide indicatif des catégories de documents susceptibles d’être demandées ; la liste en vigueur doit être confirmée.",
+          "body": "Selon la situation de l’apprenant et la politique d’admission en vigueur, le dossier peut nécessiter un justificatif d’âge et de résidence, les relevés de scolarité antérieurs, un rapport de comportement ou de transfert, ainsi que certains documents de santé ou de vaccination. Les familles doivent demander la liste actualisée avant de transmettre des données personnelles. AGI doit expliquer la finalité de chaque document, ses modalités de traitement et le contact à solliciter en cas de question."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "الوثائق المطلوبة لإعداد طلب التسجيل",
+          "summary": "دليل أولي لفئات الوثائق التي قد تطلبها المؤسسة، مع ضرورة تأكيد القائمة المعمول بها.",
+          "body": "بحسب وضعية المتعلم وسياسة القبول المعمول بها، قد يتطلب ملف التسجيل وثيقة لإثبات السن والإقامة، وسجلات مدرسية سابقة، وتقريراً عن السلوك أو الانتقال، إضافة إلى بعض الوثائق الصحية أو المتعلقة بالتلقيح. وينبغي للأسر طلب القائمة المحينة قبل إرسال البيانات الشخصية. كما يتعين على AGI توضيح الغرض من كل وثيقة وكيفية معالجتها والجهة التي يمكن التواصل معها للاستفسار."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-027"
+      ],
+      "evidence_gates": [
+        "Confirm current document checklist, lawful basis, data minimisation, retention and privacy notice."
+      ]
+    },
+    {
+      "id": "agi.admissions.placement",
+      "type": "faq-answer",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "email"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Understanding placement and assessment",
+          "summary": "Assessment helps the school understand a learner’s starting point and discuss an appropriate pathway.",
+          "body": "AGI’s admissions materials describe academic and English-language assessment as part of understanding a learner’s prior experience and learning needs. Families should receive an explanation of the assessment format, how results are used, and how any proposed grade or support plan is decided. Placement decisions must follow the current written policy and should not be presented as a guarantee of admission or a particular outcome."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Comprendre le positionnement et l’évaluation",
+          "summary": "L’évaluation aide l’établissement à comprendre le niveau de départ de l’apprenant et à discuter d’un parcours adapté.",
+          "body": "Les supports d’admission d’AGI décrivent des évaluations scolaires et linguistiques destinées à mieux comprendre le parcours antérieur et les besoins d’apprentissage de l’élève. Les familles doivent être informées du format des évaluations, de l’utilisation des résultats et de la manière dont sont décidés le niveau ou l’accompagnement proposé. Les décisions de positionnement doivent respecter la politique écrite en vigueur et ne constituent pas une garantie d’admission ou de résultat particulier."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "فهم التقييم وتحديد المستوى الدراسي",
+          "summary": "يساعد التقييم المؤسسة على فهم مستوى انطلاق المتعلم ومناقشة المسار التعليمي الملائم.",
+          "body": "تشير مواد التسجيل لدى AGI إلى تقييمات دراسية ولغوية تهدف إلى فهم المسار السابق للمتعلم واحتياجاته في التعلم. وينبغي إطلاع الأسر على صيغة التقييم وكيفية استعمال نتائجه والطريقة التي يتم بها تحديد المستوى الدراسي أو أشكال المواكبة المقترحة. ويجب أن تستند قرارات تحديد المستوى إلى السياسة المكتوبة المعمول بها، وألا تقدم باعتبارها ضماناً للقبول أو لنتيجة معينة."
+        }
+      },
+      "evidence_gates": [
+        "Confirm assessment tools, languages, accessibility, decision policy and how results are communicated."
+      ]
+    },
+    {
+      "id": "agi.fees.structure",
+      "type": "faq-answer",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "email",
+        "brochure"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Understanding tuition and fees",
+          "summary": "A practical checklist for families comparing the full cost of a programme.",
+          "body": "Before applying, families should receive a current written fee schedule showing the programme and grade, any annual registration or inscription charge, the tuition amount and payment dates, what is included, additional costs, refund conditions and the effective academic year. Ask the admissions office for the latest approved schedule; older website figures should not be relied on as current prices."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Comprendre les frais de scolarité",
+          "summary": "Une liste pratique pour permettre aux familles d’évaluer le coût complet d’un programme.",
+          "body": "Avant de déposer une candidature, les familles doivent recevoir un barème écrit et actualisé précisant le programme et le niveau, les éventuels frais annuels d’inscription, le montant des frais de scolarité et les échéances de paiement, les prestations incluses, les coûts supplémentaires, les conditions de remboursement et l’année scolaire d’application. Il convient de demander le dernier barème approuvé au service des admissions et de ne pas considérer les anciens montants publiés sur le site comme des tarifs actuels."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "فهم الرسوم الدراسية",
+          "summary": "قائمة عملية تساعد الأسر على معرفة التكلفة الإجمالية للبرنامج الدراسي.",
+          "body": "قبل تقديم طلب التسجيل، ينبغي أن تتوصل الأسر بجدول رسوم مكتوب ومحين يوضح البرنامج والمستوى الدراسي ورسوم التسجيل السنوية إن وجدت ومبلغ الدراسة ومواعيد الأداء والخدمات المشمولة والتكاليف الإضافية وشروط الاسترداد والسنة الدراسية التي تسري خلالها الرسوم. وينبغي طلب آخر جدول معتمد من مصلحة التسجيل، وعدم اعتبار المبالغ القديمة المنشورة بالموقع أسعاراً سارية حالياً."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-001",
+        "F-AGI-002"
+      ],
+      "evidence_gates": [
+        "Obtain current signed fee schedule and reconcile conflicting inclusion statements across v2/admissions.html and v2/fees.html."
+      ]
+    },
+    {
+      "id": "agi.school.curriculum-overview",
+      "type": "programme-description",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "brochure"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "A broad school curriculum",
+          "summary": "An overview of the subject areas described in AGI’s school materials.",
+          "body": "AGI’s school materials describe learning across English language and literature, spelling, mathematics, natural sciences, social studies and history, and foreign-language study, with English-language learning support where appropriate. The subjects, sequence and learning expectations vary by grade and pathway. Families should consult the current grade-level curriculum outline for the academic year in which they are applying."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Un programme scolaire diversifié",
+          "summary": "Un aperçu des domaines d’apprentissage présentés dans les supports scolaires d’AGI.",
+          "body": "Les supports scolaires d’AGI présentent des apprentissages en langue et littérature anglaises, orthographe, mathématiques, sciences naturelles, sciences humaines et histoire, ainsi qu’en langues étrangères, avec un accompagnement linguistique en anglais lorsque cela est approprié. Les matières, leur progression et les attentes varient selon le niveau et le parcours. Les familles doivent consulter le programme détaillé et actualisé correspondant à l’année scolaire de leur candidature."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "منهاج دراسي متنوع",
+          "summary": "نظرة عامة على مجالات التعلم الواردة في المواد التعريفية المدرسية لـAGI.",
+          "body": "تعرض المواد المدرسية لـAGI مجالات تعلم تشمل اللغة الإنجليزية وآدابها والإملاء والرياضيات والعلوم الطبيعية والدراسات الاجتماعية والتاريخ واللغات الأجنبية، مع توفير دعم لغوي في الإنجليزية عند الاقتضاء. وتختلف المواد وتسلسلها وتوقعات التعلم بحسب المستوى والمسار الدراسي. وينبغي للأسر الاطلاع على المنهاج التفصيلي المحين الخاص بالسنة الدراسية التي ترغب في التسجيل خلالها."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-028"
+      ],
+      "evidence_gates": [
+        "Verify current grade-by-grade curriculum maps, adopted standards and languages of instruction."
+      ]
+    },
+    {
+      "id": "agi.school.grade-pathways",
+      "type": "programme-description",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "brochure"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Learning pathways through the school years",
+          "summary": "A progression from early learning through elementary, middle and high-school years.",
+          "body": "AGI’s current school materials organise the learner journey across kindergarten, elementary, middle-school and high-school years. The curriculum, assessment and available graduation pathways should be explained separately for each stage. Families considering upper grades should receive written details of the exact programme, awarding provider and diploma route applicable to their student."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Les parcours au fil des années scolaires",
+          "summary": "Un parcours qui va des premiers apprentissages aux cycles élémentaire, moyen et secondaire.",
+          "body": "Les supports scolaires actuels d’AGI organisent le parcours de l’élève entre la maternelle, le cycle élémentaire, le collège et le lycée. Le programme, l’évaluation et les possibilités de fin d’études doivent être expliqués séparément pour chaque étape. Les familles qui envisagent les niveaux supérieurs doivent recevoir des informations écrites sur le programme exact, l’organisme certificateur et le parcours de diplôme applicable à leur enfant."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "المسارات التعليمية عبر السنوات الدراسية",
+          "summary": "مسار يمتد من التعليم الأولي إلى المراحل الابتدائية والإعدادية والثانوية.",
+          "body": "تنظم المواد المدرسية الحالية لـAGI مسار المتعلم عبر التعليم الأولي والمرحلة الابتدائية والإعدادية والثانوية. وينبغي شرح المنهاج والتقييم ومسارات التخرج المتاحة بصورة مستقلة لكل مرحلة. كما يتعين على الأسر الراغبة في تسجيل أبنائها بالمستويات العليا الحصول على معلومات مكتوبة حول البرنامج المحدد والجهة المانحة للمؤهل ومسار الحصول على الشهادة."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-028",
+        "F-AGI-014"
+      ],
+      "evidence_gates": [
+        "Verify grade availability, diploma routes, awarding providers and exact authorisation/recognition wording."
+      ]
+    },
+    {
+      "id": "agi.student-life.community-service",
+      "type": "policy-summary",
+      "audiences": [
+        "students",
+        "parents"
+      ],
+      "channels": [
+        "website",
+        "brochure"
+      ],
+      "status": "legal-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Learning through community service",
+          "summary": "A draft description of the high-school service-learning requirement, pending policy confirmation.",
+          "body": "AGI’s current materials describe community service as part of the high-school experience, with students taking part in activities intended to benefit the wider community. The exact hour requirement, eligible grades, approved activities, documentation and graduation consequences must be taken from the current written policy before this description is published."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Apprendre par le service à la communauté",
+          "summary": "Une présentation provisoire de l’engagement communautaire au lycée, dans l’attente de la validation de la politique.",
+          "body": "Les supports actuels d’AGI présentent le service à la communauté comme un élément de l’expérience au lycée, à travers des activités destinées à contribuer au bien commun. Le nombre exact d’heures, les niveaux concernés, les activités admises, les justificatifs et les conséquences sur l’obtention du diplôme doivent être repris de la politique écrite en vigueur avant publication."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "التعلم من خلال خدمة المجتمع",
+          "summary": "صياغة أولية حول خدمة المجتمع في المرحلة الثانوية، في انتظار تأكيد السياسة المعتمدة.",
+          "body": "تعرض المواد الحالية لـAGI خدمة المجتمع باعتبارها جزءاً من التجربة التعليمية في المرحلة الثانوية، من خلال أنشطة تهدف إلى الإسهام في خدمة المحيط المجتمعي. ويجب الرجوع إلى السياسة المكتوبة المعمول بها لتحديد عدد الساعات بدقة والمستويات المعنية والأنشطة المقبولة والوثائق المطلوبة وأثر ذلك على التخرج قبل نشر هذا الوصف."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-024"
+      ],
+      "evidence_gates": [
+        "Verify current service-learning policy, grade scope, hours, activity approvals and graduation requirements."
+      ]
+    },
+    {
+      "id": "agi.parents.school-home-partnership",
+      "type": "brand-message",
+      "audiences": [
+        "parents",
+        "students",
+        "community"
+      ],
+      "channels": [
+        "website",
+        "brochure",
+        "social",
+        "print"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "School, home and community",
+          "summary": "A shared commitment to support the learner across school and home.",
+          "body": "Learning does not happen in the classroom alone. AGI’s school–home–community message recognises the role of families, educators and the wider community in a learner’s development. Clear communication and agreed expectations help everyone understand how they can contribute to the student’s progress."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "L’école, la famille et la communauté",
+          "summary": "Un engagement partagé pour accompagner l’apprenant à l’école comme à la maison.",
+          "body": "L’apprentissage ne se déroule pas uniquement en classe. Le message école–famille–communauté d’AGI reconnaît le rôle des familles, des enseignants et de l’environnement social dans le développement de l’apprenant. Une communication claire et des attentes partagées aident chacun à comprendre sa contribution au parcours de l’élève."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "المدرسة والأسرة والمجتمع",
+          "summary": "التزام مشترك بمواكبة المتعلم داخل المدرسة وفي محيطه الأسري والمجتمعي.",
+          "body": "لا يحدث التعلم داخل الفصل الدراسي وحده. وتؤكد رسالة المدرسة والأسرة والمجتمع لدى AGI دور الأسر والمدرسين والمحيط المجتمعي في تنمية المتعلم. ويساعد التواصل الواضح والاتفاق على التوقعات في فهم مساهمة كل طرف في تقدم التلميذ."
+        }
+      },
+      "evidence_gates": [
+        "Confirm official brand motto and preferred wording."
+      ]
+    },
+    {
+      "id": "agi.parents.faq.language-support",
+      "type": "faq-answer",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "email"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "What if my child is still learning English?",
+          "summary": "A question for the admissions team about language level, classroom learning and available support.",
+          "body": "A learner’s current English level is one part of the admissions conversation. Ask the school how language learning is supported in the relevant grade, how progress is assessed and what additional support is currently available. The response should reflect the learner’s needs and the school’s actual staffing and programme capacity; avoid promising a particular outcome."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Et si mon enfant apprend encore l’anglais ?",
+          "summary": "Une question à poser au service des admissions sur le niveau linguistique, les cours et l’accompagnement disponible.",
+          "body": "Le niveau actuel d’anglais de l’apprenant fait partie de l’échange avec le service des admissions. Demandez comment l’apprentissage linguistique est accompagné dans le niveau concerné, comment les progrès sont évalués et quel soutien supplémentaire est actuellement disponible. La réponse doit tenir compte des besoins de l’élève et des capacités réelles de l’établissement ; aucun résultat particulier ne doit être garanti."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "ماذا لو كان طفلي لا يزال يتعلم الإنجليزية؟",
+          "summary": "سؤال يوجه إلى مصلحة التسجيل حول المستوى اللغوي والتعلم داخل الفصل وأشكال الدعم المتاحة.",
+          "body": "يُعد المستوى الحالي للمتعلم في اللغة الإنجليزية أحد العناصر التي تناقش خلال التواصل مع مصلحة التسجيل. وينبغي الاستفسار عن كيفية مواكبة تعلم اللغة في المستوى الدراسي المعني، وطرق تقييم التقدم، وأشكال الدعم الإضافي المتاحة حالياً. ويجب أن تراعي الإجابة احتياجات المتعلم والقدرات الفعلية للمؤسسة، دون ضمان نتيجة محددة."
+        }
+      },
+      "evidence_gates": [
+        "Verify current ESL staffing, grade-level support, assessment method and capacity."
+      ]
+    },
+    {
+      "id": "agi.parents.faq.learning-support",
+      "type": "faq-answer",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "email"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "How is individual learning support discussed?",
+          "summary": "Families can share relevant information and ask which educational supports are actually available.",
+          "body": "Families who believe a learner may need additional educational support should discuss the learner’s strengths, previous school experience and specific needs with the admissions team. The school should explain which supports it can provide, what documentation is necessary, and whether an external specialist referral may be appropriate. Do not imply that clinical assessment or therapy is automatically provided by the school."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Comment discuter d’un accompagnement pédagogique individuel ?",
+          "summary": "Les familles peuvent présenter les informations utiles et demander quels accompagnements éducatifs sont réellement disponibles.",
+          "body": "Les familles qui pensent qu’un apprenant pourrait avoir besoin d’un accompagnement pédagogique supplémentaire sont invitées à discuter de ses points forts, de son parcours scolaire antérieur et de ses besoins précis avec le service des admissions. L’établissement doit expliquer les accompagnements qu’il peut réellement proposer, les documents nécessaires et l’éventuelle pertinence d’une orientation vers un spécialiste externe. Ne pas laisser entendre qu’un diagnostic clinique ou une thérapie est automatiquement assuré par l’établissement."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "كيف تتم مناقشة المواكبة التربوية الفردية؟",
+          "summary": "يمكن للأسر تقديم المعلومات ذات الصلة والاستفسار عن أشكال الدعم التربوي المتاحة فعلياً.",
+          "body": "يمكن للأسر التي ترى أن المتعلم قد يحتاج إلى دعم تربوي إضافي مناقشة نقاط قوته ومساره الدراسي السابق واحتياجاته المحددة مع مصلحة التسجيل. وينبغي للمؤسسة توضيح أشكال المواكبة التي تستطيع توفيرها فعلياً والوثائق اللازمة ومدى الحاجة إلى الإحالة على مختص خارجي. ولا يجوز الإيحاء بأن التشخيص السريري أو العلاج يقدم تلقائياً داخل المؤسسة."
+        }
+      },
+      "evidence_gates": [
+        "Verify available educational support, staff capacity, documentation policy, safeguarding and external referral process."
+      ]
+    },
+    {
+      "id": "agi.policy.attendance-summary",
+      "type": "policy-summary",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "brochure"
+      ],
+      "status": "legal-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Attendance and punctuality",
+          "summary": "A concise route to the current attendance policy and its practical expectations.",
+          "body": "Regular attendance and punctuality support continuity in learning. Families should consult the current AGI attendance policy for reporting an absence, excused and unexcused absences, late arrival, required documentation, attendance calculations and any consequences. The policy summary on the website must match the approved handbook and identify the academic year in force."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Assiduité et ponctualité",
+          "summary": "Un accès synthétique à la politique d’assiduité en vigueur et à ses règles pratiques.",
+          "body": "Une présence régulière et la ponctualité favorisent la continuité des apprentissages. Les familles doivent consulter la politique d’assiduité actuelle d’AGI pour connaître la procédure de signalement d’une absence, les absences justifiées ou non, les retards, les justificatifs requis, le calcul du taux de présence et les éventuelles conséquences. Le résumé publié sur le site doit correspondre au règlement approuvé et préciser l’année scolaire concernée."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "المواظبة والانضباط في الحضور",
+          "summary": "مدخل موجز إلى سياسة الحضور المعمول بها والتزاماتها العملية.",
+          "body": "يساعد الانتظام في الحضور واحترام المواعيد على استمرارية التعلم. وينبغي للأسر الرجوع إلى سياسة الحضور المعتمدة لدى AGI لمعرفة كيفية الإبلاغ عن الغياب والتمييز بين الغياب المبرر وغير المبرر والتأخر والوثائق المطلوبة وطريقة احتساب نسبة الحضور والآثار المحتملة. ويجب أن يطابق الملخص المنشور بالموقع النظام الداخلي المعتمد وأن يحدد السنة الدراسية التي يسري خلالها."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-025"
+      ],
+      "evidence_gates": [
+        "Verify current attendance policy, legal requirements, exceptions, reporting process and effective academic year."
+      ]
+    },
+    {
+      "id": "agi.policy.academic-progression",
+      "type": "policy-summary",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "brochure"
+      ],
+      "status": "legal-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Assessment, grades and academic progression",
+          "summary": "Families should be able to understand how learning is assessed and how progression decisions are made.",
+          "body": "Assessment and progression rules should be explained in clear, age-appropriate language. The current policy should identify grading scales, pass requirements, credit rules, promotion and retention decisions, reassessment options and how families are informed. Any website summary must be consistent with the approved academic handbook and the student’s programme pathway."
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Évaluation, notes et progression scolaire",
+          "summary": "Les familles doivent comprendre comment les apprentissages sont évalués et comment les décisions de progression sont prises.",
+          "body": "Les règles d’évaluation et de progression doivent être expliquées dans un langage clair et adapté à l’âge des élèves. La politique en vigueur doit préciser les barèmes de notation, les exigences de réussite, les règles de crédits, les décisions de passage ou de redoublement, les possibilités de réévaluation et les modalités d’information des familles. Tout résumé publié sur le site doit être cohérent avec le manuel scolaire approuvé et le parcours de l’élève."
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "التقييم والدرجات والانتقال بين المستويات",
+          "summary": "ينبغي تمكين الأسر من فهم طرق تقييم التعلم وكيفية اتخاذ قرارات الانتقال الدراسي.",
+          "body": "يجب شرح قواعد التقييم والانتقال بين المستويات بلغة واضحة ومناسبة لأعمار التلاميذ. وينبغي أن تحدد السياسة المعمول بها سلم التنقيط وشروط النجاح وقواعد احتساب الوحدات وقرارات الانتقال أو التكرار وإمكانيات إعادة التقييم وكيفية إخبار الأسر. كما يجب أن ينسجم أي ملخص منشور بالموقع مع الدليل الدراسي المعتمد والمسار التعليمي للمتعلم."
+        }
+      },
+      "fact_refs": [
+        "F-AGI-026"
+      ],
+      "evidence_gates": [
+        "Verify current grading and progression policy, credit requirements and programme-specific rules."
+      ]
+    },
+    {
+      "id": "agi.cta.school-visit",
+      "type": "call-to-action",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "brochure",
+        "social",
+        "email"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Come and see the school",
+          "summary": "Arrange a conversation and an individual visit before making an admissions decision.",
+          "body": "A visit is an opportunity to see the learning environment, ask questions and understand the current programmes and admissions process. Contact the AGI office to request an appointment and confirm available visiting times.",
+          "cta_label": "Request a school visit"
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Venez découvrir l’établissement",
+          "summary": "Organisez un échange et une visite individuelle avant de prendre une décision d’inscription.",
+          "body": "Une visite permet de découvrir l’environnement d’apprentissage, de poser vos questions et de mieux comprendre les programmes et la procédure d’admission en vigueur. Contactez le bureau d’AGI pour demander un rendez-vous et confirmer les créneaux disponibles.",
+          "cta_label": "Demander une visite"
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "زوروا المؤسسة واكتشفوا فضاء التعلم",
+          "summary": "رتبوا لقاءً وزيارة فردية قبل اتخاذ قرار التسجيل.",
+          "body": "تتيح الزيارة فرصة للتعرف على فضاء التعلم وطرح الأسئلة وفهم البرامج الدراسية وإجراءات التسجيل المعمول بها. يرجى التواصل مع إدارة AGI لطلب موعد والتأكد من أوقات الزيارة المتاحة.",
+          "cta_label": "طلب زيارة للمؤسسة"
+        }
+      },
+      "evidence_gates": [
+        "Confirm current contact channels, appointment process and available visit times."
+      ]
+    },
+    {
+      "id": "agi.cta.admissions-enquiry",
+      "type": "call-to-action",
+      "audiences": [
+        "parents",
+        "students"
+      ],
+      "channels": [
+        "website",
+        "brochure",
+        "social",
+        "email"
+      ],
+      "status": "editorial-review",
+      "locales": {
+        "en-US": {
+          "status": "editorial-review",
+          "title": "Talk to the admissions team",
+          "summary": "Ask about current grade availability, programme fit and the application process.",
+          "body": "Tell the admissions team the learner’s age, current grade and the programme you are interested in. They can explain the current requirements and the next step for your enquiry.",
+          "cta_label": "Contact admissions"
+        },
+        "fr-MA": {
+          "status": "translation-review",
+          "title": "Contactez le service des admissions",
+          "summary": "Renseignez-vous sur les niveaux disponibles, l’adéquation du programme et la procédure de candidature.",
+          "body": "Indiquez au service des admissions l’âge de l’apprenant, son niveau actuel et le programme qui vous intéresse. L’équipe pourra vous expliquer les conditions en vigueur et la prochaine étape de votre demande.",
+          "cta_label": "Contacter les admissions"
+        },
+        "ar-MA": {
+          "status": "translation-review",
+          "title": "تواصلوا مع مصلحة التسجيل",
+          "summary": "استفسروا عن المستويات المتاحة وملاءمة البرنامج وإجراءات الترشح.",
+          "body": "أخبروا مصلحة التسجيل بسن المتعلم ومستواه الدراسي الحالي والبرنامج الذي ترغبون في الاستفسار عنه. وسيعمل الفريق على توضيح الشروط المعمول بها والخطوة الموالية لطلبكم.",
+          "cta_label": "التواصل مع مصلحة التسجيل"
+        }
+      },
+      "evidence_gates": [
+        "Confirm admissions contact routing and current application process."
+      ]
     }
   ]
 }
