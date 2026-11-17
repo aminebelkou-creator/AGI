@@ -18,7 +18,7 @@ CONTENT = ROOT / "app" / "public" / "content"
 PAGES = CONTENT / "pages"
 ROUTE_INDEX = CONTENT / "index.json"
 NEWS_INDEX = CONTENT / "news.json"
-DATE_RE = re.compile(r"^\\d{4}-\\d{2}-\\d{2}$")
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def load_json(path: Path):
