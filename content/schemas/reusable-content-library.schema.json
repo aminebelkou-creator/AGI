@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGI Reusable Content Library",
+  "type": "object",
+  "required": [
+    "format",
+    "version",
+    "editorial_master_locale",
+    "supported_locales",
+    "publication_note",
+    "content_items"
+  ],
+  "properties": {
+    "format": {
+      "const": "agi-reusable-content-library-v1"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "editorial_master_locale": {
+      "const": "en-US"
+    },
+    "supported_locales": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "en-US",
+          "fr-MA",
+          "ar-MA"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "publication_note": {
+      "type": "string"
+    },
+    "content_items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/contentItem"
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "localeContent": {
+      "type": "object",
+      "required": [
+        "status",
+        "title",
+        "summary",
+        "body"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "draft",
+            "editorial-review",
+            "translation-review",
+            "legal-review",
+            "partner-approval",
+            "approved",
+            "published",
+            "archived"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        },
+        "cta_label": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "contentItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "audiences",
+        "channels",
+        "status",
+        "locales",
+        "evidence_gates"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^agi\\.[a-z0-9-]+$"
+        },
+        "type": {
+          "enum": [
+            "brand-message",
+            "brand-pillar",
+            "programme-description",
+            "service-description",
+            "resource-description",
+            "call-to-action",
+            "faq-answer",
+            "policy-summary",
+            "proof-point",
+            "story"
+          ]
+        },
+        "audiences": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "website",
+              "brochure",
+              "social",
+              "email",
+              "directory",
+              "catalogue",
+              "print"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "editorial-review",
+            "translation-review",
+            "legal-review",
+            "partner-approval",
+            "approved",
+            "published",
+            "archived"
+          ]
+        },
+        "locales": {
+          "type": "object",
+          "required": [
+            "en-US",
+            "fr-MA",
+            "ar-MA"
+          ],
+          "properties": {
+            "en-US": {
+              "$ref": "#/$defs/localeContent"
+            },
+            "fr-MA": {
+              "$ref": "#/$defs/localeContent"
+            },
+            "ar-MA": {
+              "$ref": "#/$defs/localeContent"
+            }
+          },
+          "additionalProperties": false
+        },
+        "evidence_gates": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
