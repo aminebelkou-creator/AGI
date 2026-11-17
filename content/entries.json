@@ -1,0 +1,955 @@
+{
+  "format": "agi-content-bundle-v1",
+  "generated_from": [
+    "content/en/pages.md",
+    "content/fr/pages.md",
+    "content/ar/pages.md",
+    "content/manifest.csv",
+    "content/seo/metadata.csv"
+  ],
+  "record_count": 36,
+  "locales": [
+    "en-US",
+    "fr-MA",
+    "ar-MA"
+  ],
+  "publication_note": "Editorial/translation review only. No record is approved or published.",
+  "entries": [
+    {
+      "id": "agi.homepage",
+      "slug": "homepage",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "American Group International — Homepage",
+      "summary": "",
+      "body": "## Education, language and opportunity — connected in Agadir.\nAmerican Group International (AGI) brings together school education, inclusive learning support, English-language learning and assessment, teacher-focused services and wider educational opportunities. Our work is grounded in a simple belief: every learner deserves to be understood, encouraged and given room to grow.\n\n**Primary CTA:** Explore the AGI School · **Secondary CTA:** Discover all programs · **Text CTA:** Book a visit\n\n## Choose your path\n**For families:** Explore the school programme, learning approach, admissions and support available to students and families.  \n**For English learners:** Build English step by step and explore Anglia Examinations, CEFR-referenced levels, preparation resources and exam information.  \n**For teachers:** Explore Anglia C.I.T.E. examinations and separate teacher-development opportunities.  \n**For professionals:** Discuss English learning for workplace communication, business and professional needs.  \n**For adult learners:** Review study pathways, eligibility and the organisation responsible for each qualification.  \n**For education partners:** Enquire about examination centres and institutional collaboration.\n\n## Affordable. Creative. Inclusive.\n**Affordable:** We aim to make learning opportunities accessible and communicate fees and conditions clearly. Ask for the current fee schedule and what each programme includes.  \n**Creative:** We value curiosity, participation and active learning.  \n**Inclusive:** Learners bring different strengths, experiences and support needs. We work with families to understand the learner and identify appropriate educational support.\n\n## School + Home + Community = Student Success.\nA learner's progress is shaped by more than classroom lessons. Families, educators and the wider community all contribute.\n\n## Anglia Morocco — English learning and examinations, step by step.\nAnglia Examinations identifies AGI as its franchise holder for Morocco. Anglia's pathway includes General English and Business English assessments mapped to the CEFR. Awarding and regulatory status differs by examination level; consult the relevant exam page for exact details.\n\n## Start with a conversation.\nIf you are considering the school for your child, exploring an English examination or asking about another programme, contact the relevant team. A visit can help families understand the learning environment and ask questions directly.\n\n**CTA:** Book a school visit · Contact AGI\n\n**Publication gate:** Confirm school legal designation and authorisation, current programme availability, partner-approved wording, contact details and current academic calendar.",
+      "seo": {
+        "title": "American Group International | Education in Agadir",
+        "description": "Explore AGI in Agadir: school education, inclusive learning, English examinations and professional learning."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.homepage",
+      "slug": "homepage",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "American Group International — Page d’accueil",
+      "summary": "",
+      "body": "**Titre SEO :** American Group International | Éducation à Agadir, Maroc  \n**Méta-description :** Découvrez AGI à Agadir : enseignement scolaire, accompagnement pédagogique inclusif, apprentissage et examens d’anglais, développement professionnel des enseignants et parcours de formation pour adultes.\n\n## L’éducation, les langues et les perspectives d’avenir, au cœur d’Agadir.\nAmerican Group International (AGI) réunit des activités d’enseignement scolaire, d’accompagnement pédagogique inclusif, d’apprentissage et d’évaluation de l’anglais, de développement professionnel des enseignants et différentes possibilités de formation. Notre conviction est simple : chaque apprenant mérite d’être compris, encouragé et accompagné dans son parcours.\n\n**Action principale :** Découvrir l’école AGI · **Action secondaire :** Découvrir nos programmes · **Lien :** Prendre rendez-vous pour une visite\n\n## Choisissez votre parcours\n**Pour les familles :** découvrez le programme scolaire, l’approche pédagogique, les admissions et l’accompagnement proposé aux élèves et à leurs familles.  \n**Pour les apprenants en anglais :** progressez étape par étape et découvrez les examens Anglia, les niveaux référencés au CECRL, les ressources de préparation et les modalités d’examen.  \n**Pour les enseignants :** découvrez les examens Anglia C.I.T.E. et les possibilités distinctes de développement professionnel.  \n**Pour les professionnels :** échangez avec notre équipe sur des formations en anglais adaptées à la communication professionnelle et à vos besoins sectoriels.  \n**Pour les adultes en formation :** consultez les parcours, les conditions d’accès et l’organisme responsable de chaque qualification.  \n**Pour les partenaires éducatifs :** renseignez-vous sur les centres d’examen et les collaborations institutionnelles.\n\n## Accessible. Créative. Inclusive.\n**Accessible :** nous souhaitons rendre les possibilités d’apprentissage plus accessibles et communiquer clairement les frais et les conditions. Demandez la grille tarifaire en vigueur et le détail des prestations incluses.  \n**Créative :** nous valorisons la curiosité, la participation et l’apprentissage actif.  \n**Inclusive :** chaque apprenant possède ses propres forces, son expérience et ses besoins d’accompagnement. Nous échangeons avec les familles pour identifier les formes de soutien pédagogique adaptées.\n\n## École + Famille + Communauté = Réussite de l’apprenant.\nLe parcours d’un apprenant ne se limite pas aux cours en classe. Les familles, les enseignants et la communauté contribuent tous à son évolution.\n\n## Anglia Morocco — apprendre l’anglais et progresser étape par étape.\nAnglia Examinations désigne AGI comme titulaire de sa franchise au Maroc. Le parcours Anglia comprend des examens d’anglais général et d’anglais des affaires référencés au CECRL. Le statut de certification et de réglementation varie selon le niveau ; consultez la page de chaque examen pour les informations précises.\n\n## Commençons par un échange.\nVous envisagez l’école pour votre enfant, souhaitez préparer un examen d’anglais ou recherchez des informations sur un autre programme ? Contactez l’équipe concernée. Une visite permet aux familles de découvrir l’environnement d’apprentissage et de poser leurs questions directement.\n\n**Action :** Prendre rendez-vous pour une visite · Contacter AGI\n\n**Condition de publication :** confirmer la désignation juridique et les autorisations de l’école, les programmes actuellement proposés, les formulations approuvées concernant les partenaires, les coordonnées et le calendrier scolaire en vigueur.",
+      "seo": {
+        "title": "American Group International | Éducation à Agadir",
+        "description": "Découvrez AGI à Agadir : école, accompagnement inclusif, examens d’anglais et développement professionnel."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.homepage",
+      "slug": "homepage",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "American Group International — الصفحة الرئيسية",
+      "summary": "",
+      "body": "**الوصف:** اكتشفوا AGI بأكادير: التعليم المدرسي، والمواكبة التربوية الدامجة، وتعلم الإنجليزية وامتحاناتها، والتطوير المهني للمدرسين، ومسارات تعلم الكبار.\n\n## التعليم واللغات وآفاق المستقبل — من أكادير إلى العالم.\nتجمع American Group International (AGI) بين أنشطة التعليم المدرسي، والمواكبة التربوية الدامجة، وتعلم اللغة الإنجليزية وتقييم الكفايات فيها، والخدمات الموجهة للمدرسين، إلى جانب فرص تعليمية أخرى. وتنطلق رؤيتنا من قناعة بسيطة: لكل متعلم الحق في أن يجد من يفهم احتياجاته ويشجعه ويوفر له المجال للنمو والتطور.\n\n**الإجراء الرئيسي:** اكتشفوا مدرسة AGI · **الإجراء الثاني:** اكتشفوا برامجنا · **رابط:** احجزوا موعداً لزيارة المؤسسة\n\n## اختاروا المسار الذي يناسبكم\n**للأسر وأولياء الأمور:** تعرفوا على البرنامج المدرسي والمقاربة التربوية وإجراءات التسجيل وأشكال المواكبة المتاحة للتلاميذ وأسرهم.  \n**لمتعلمي الإنجليزية:** طوروا مستواكم تدريجياً واكتشفوا امتحانات Anglia ومستوياتها المرجعية وفق الإطار الأوروبي المرجعي المشترك للغات وموارد التحضير.  \n**للمدرسين:** تعرفوا على امتحانات Anglia C.I.T.E. وفرص التطوير المهني المستقلة عنها.  \n**للمهنيين:** ناقشوا مع فريقنا برامج تعلم الإنجليزية المرتبطة بالتواصل المهني واحتياجات القطاعات المختلفة.  \n**للكبار الراغبين في التعلم:** اطلعوا على المسارات وشروط الولوج والجهة المسؤولة عن كل مؤهل أو شهادة.  \n**للشركاء والمؤسسات التعليمية:** استفسروا عن مراكز الامتحانات وفرص التعاون المؤسساتي.\n\n## تعليم متاح. تعلم إبداعي. ومواكبة دامجة.\n**تعليم متاح:** نسعى إلى توسيع فرص التعلم مع توضيح الرسوم والشروط. يمكنكم طلب لائحة الرسوم الحالية ومعرفة الخدمات المشمولة في كل برنامج.  \n**تعلم إبداعي:** نولي أهمية للفضول والمشاركة والتعلم النشط.  \n**مواكبة دامجة:** لكل متعلم نقاط قوة وتجارب واحتياجات خاصة. ونتواصل مع الأسر لفهم وضعية المتعلم وتحديد أشكال الدعم التربوي الملائمة.\n\n## المدرسة + الأسرة + المجتمع = نجاح المتعلم.\nلا يقتصر مسار التعلم على ما يجري داخل الفصل؛ فالأسرة والمدرسون والمحيط المجتمعي يساهمون جميعاً في تطور المتعلم.\n\n## Anglia Morocco — تعلم الإنجليزية والتقدم خطوة بعد خطوة.\nتدرج Anglia Examinations مؤسسة AGI بصفتها صاحبة امتيازها بالمغرب. ويشمل مسار امتحانات Anglia اختبارات اللغة الإنجليزية العامة والإنجليزية للأعمال المرتبطة بمستويات الإطار الأوروبي المرجعي المشترك للغات. ويختلف وضع الاعتماد والتنظيم بحسب مستوى الامتحان؛ يرجى الرجوع إلى صفحة كل امتحان للاطلاع على التفاصيل.\n\n## لنبدأ بالتواصل.\nإذا كنتم تفكرون في تسجيل طفلكم بالمؤسسة، أو ترغبون في الاستعداد لامتحان في الإنجليزية، أو تحتاجون إلى معلومات حول برنامج آخر، يمكنكم التواصل مع الفريق المختص. وتتيح الزيارة للأسر فرصة التعرف على فضاء التعلم وطرح الأسئلة مباشرة.\n\n**الإجراء:** احجزوا موعداً للزيارة · تواصلوا مع AGI\n\n**شرط النشر:** التحقق من التسمية القانونية للمؤسسة والتراخيص والبرامج المتاحة حالياً والصياغة المعتمدة للعلاقات مع الشركاء وبيانات الاتصال والتقويم الدراسي المحيّن.",
+      "seo": {
+        "title": "American Group International | التعليم بأكادير",
+        "description": "اكتشفوا AGI بأكادير: التعليم المدرسي والمواكبة الدامجة وامتحانات الإنجليزية والتطوير المهني."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.school",
+      "slug": "school",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "AGI School — overview",
+      "summary": "AGI's public materials describe a school programme in Agadir from kindergarten through Grade 12, using an American curriculum framework. Families should understand the learning environment, grade placement, subjects, assessment, support and admissions.",
+      "body": "AGI's public materials describe a school programme in Agadir from kindergarten through Grade 12, using an American curriculum framework. Families should understand the learning environment, grade placement, subjects, assessment, support and admissions.\n\nPublicly referenced learning areas include English, mathematics, science, history/social studies, Arabic, physical education, reading, spelling and fine arts. The current list, grade-by-grade scope and instructional language must be confirmed by the academic team.\n\nPlacement should be described as an individual review of age, prior records, learning history and the school's approved policy. Do not promise a grade, credit, diploma or transfer outcome before review.\n\n**Action:** Book a visit or submit an admissions enquiry. **Publication gate:** Confirm legal designation, AREF authorisation, foreign-education authorisation where applicable, authorised grades, approved curriculum and current fees.",
+      "seo": {
+        "title": "AGI School | School Education in Agadir",
+        "description": "Learn about AGI School, its educational approach, learning environment, admissions and family visits in Agadir."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.school",
+      "slug": "school",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "École AGI — présentation",
+      "summary": "Les informations publiques d’AGI présentent un programme scolaire à Agadir, de la maternelle à la 12e année, s’appuyant sur un cadre de programme américain. Les familles doivent comprendre l’environnement d’apprentissage, le positionnement, les matières, l’évaluation, l’accompagnement et les admissions.",
+      "body": "Les informations publiques d’AGI présentent un programme scolaire à Agadir, de la maternelle à la 12e année, s’appuyant sur un cadre de programme américain. Les familles doivent comprendre l’environnement d’apprentissage, le positionnement, les matières, l’évaluation, l’accompagnement et les admissions.\n\nLes matières mentionnées publiquement comprennent l’anglais, les mathématiques, les sciences, l’histoire et les sciences sociales, l’arabe, l’éducation physique, la lecture, l’orthographe et les arts. La liste actuelle, la répartition par niveau et les langues d’enseignement doivent être validées par l’équipe pédagogique.\n\nLe positionnement doit être présenté comme une étude individuelle de l’âge, des dossiers antérieurs, du parcours et de la politique approuvée. Ne promettez aucun niveau, crédit, diplôme ou transfert avant examen du dossier.\n\n**Action :** Prendre rendez-vous ou envoyer une demande d’admission. **Avant publication :** confirmer la désignation juridique, l’autorisation AREF, l’autorisation d’enseignement étranger le cas échéant, les niveaux autorisés, le programme approuvé et les frais actuels.",
+      "seo": {
+        "title": "École AGI | Enseignement scolaire à Agadir",
+        "description": "Découvrez l’approche pédagogique, l’environnement d’apprentissage, les admissions et les visites de l’École AGI."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.school",
+      "slug": "school",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "مدرسة AGI — تقديم البرنامج المدرسي",
+      "summary": "تشير المعلومات المنشورة من طرف AGI إلى برنامج مدرسي بأكادير من رياض الأطفال إلى الصف الثاني عشر، يستند إلى إطار المنهاج الأمريكي. وينبغي أن تساعد الصفحة الأسر على فهم بيئة التعلم وتحديد المستوى والمواد التعليمية والتقييم والمواكبة وإجراءات التسجيل.",
+      "body": "تشير المعلومات المنشورة من طرف AGI إلى برنامج مدرسي بأكادير من رياض الأطفال إلى الصف الثاني عشر، يستند إلى إطار المنهاج الأمريكي. وينبغي أن تساعد الصفحة الأسر على فهم بيئة التعلم وتحديد المستوى والمواد التعليمية والتقييم والمواكبة وإجراءات التسجيل.\n\nوتذكر المواد المنشورة مواد من بينها الإنجليزية والرياضيات والعلوم والتاريخ والدراسات الاجتماعية والعربية والتربية البدنية والقراءة والإملاء والفنون. ويتعين على الفريق التربوي تأكيد اللائحة الحالية وتوزيعها حسب المستويات ولغات التدريس.\n\nينبغي تقديم تحديد المستوى باعتباره دراسة فردية تراعي السن والوثائق السابقة والمسار الدراسي والسياسة المعتمدة. ولا ينبغي ضمان مستوى أو وحدات أو شهادة أو تحويل دراسي قبل دراسة الملف.\n\n**الإجراء:** حجز موعد للزيارة أو إرسال طلب معلومات حول التسجيل. **قبل النشر:** التحقق من التسمية القانونية وترخيص الأكاديمية الجهوية والترخيص المتعلق بالتعليم الأجنبي عند الاقتضاء والمستويات المسموح بها والمنهاج المصادق عليه والرسوم الحالية.",
+      "seo": {
+        "title": "مدرسة AGI | التعليم المدرسي بأكادير",
+        "description": "تعرفوا على المقاربة التربوية وبيئة التعلم وإجراءات التسجيل وزيارات مدرسة AGI."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.inclusive-learning",
+      "slug": "inclusive-learning",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "Inclusive learning support",
+      "summary": "AGI's public materials describe small-group learning, individualised planning and collaboration with families. This page should explain educational support actually available, not diagnose learners or promise clinical treatment.",
+      "body": "AGI's public materials describe small-group learning, individualised planning and collaboration with families. This page should explain educational support actually available, not diagnose learners or promise clinical treatment.\n\nA confidential conversation can help the school understand a learner's strengths, learning history and support needs. Where an individual learning plan is used, explain priorities, classroom strategies, agreed adjustments, responsibilities and review dates. If the term IEP is used, explain its meaning within AGI; do not imply identical legal status in every country.\n\nAGI's public page mentions occupational therapy, speech-language pathology and behavioural support. Promote these only after confirming qualified providers, availability, consent, safeguarding and service scope.\n\n**Action:** Request a confidential conversation. **Publication gate:** Confirm services, credentials, fees, referral routes and privacy safeguards.",
+      "seo": {
+        "title": "Inclusive Learning Support | AGI Agadir",
+        "description": "Explore AGI's educational support approach and how families can discuss individual learning needs."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.inclusive-learning",
+      "slug": "inclusive-learning",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "Accompagnement pédagogique inclusif",
+      "summary": "Les informations publiques d’AGI évoquent les petits groupes, la planification individualisée et la coopération avec les familles. Cette page doit expliquer les formes d’accompagnement pédagogique réellement disponibles, sans poser de diagnostic ni promettre de prise en charge clinique.",
+      "body": "Les informations publiques d’AGI évoquent les petits groupes, la planification individualisée et la coopération avec les familles. Cette page doit expliquer les formes d’accompagnement pédagogique réellement disponibles, sans poser de diagnostic ni promettre de prise en charge clinique.\n\nUn échange confidentiel permet de mieux comprendre les points forts, le parcours et les besoins de l’apprenant. Lorsqu’un plan individualisé est utilisé, il doit préciser les priorités, les stratégies pédagogiques, les aménagements convenus, les responsabilités et les dates de révision. Si le terme IEP est utilisé, AGI doit en expliquer le sens dans son dispositif.\n\nLa page publique mentionne l’ergothérapie, l’orthophonie et l’accompagnement comportemental. Ces prestations ne doivent être annoncées qu’après vérification des professionnels, de leurs qualifications, de leur disponibilité, du consentement et des règles de protection.\n\n**Action :** Demander un échange confidentiel. **Avant publication :** confirmer prestations, qualifications, tarifs, orientations et confidentialité.",
+      "seo": {
+        "title": "Accompagnement pédagogique inclusif | AGI",
+        "description": "Découvrez l’accompagnement pédagogique proposé et les échanges possibles avec les familles."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.inclusive-learning",
+      "slug": "inclusive-learning",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "المواكبة التربوية الدامجة",
+      "summary": "تشير المعلومات المنشورة من طرف AGI إلى التعلم ضمن مجموعات صغيرة والتخطيط الفردي والتعاون مع الأسر. وتهدف هذه الصفحة إلى شرح الدعم التربوي المتاح فعلياً، دون تشخيص المتعلمين أو تقديم وعود بعلاج سريري.",
+      "body": "تشير المعلومات المنشورة من طرف AGI إلى التعلم ضمن مجموعات صغيرة والتخطيط الفردي والتعاون مع الأسر. وتهدف هذه الصفحة إلى شرح الدعم التربوي المتاح فعلياً، دون تشخيص المتعلمين أو تقديم وعود بعلاج سريري.\n\nيمكن للقاء سري مع الأسرة أن يساعد على فهم نقاط قوة المتعلم ومساره واحتياجاته. وعندما تعتمد المؤسسة خطة تعلم فردية، ينبغي أن توضح الأولويات والاستراتيجيات التربوية والتيسيرات المتفق عليها والمسؤوليات ومواعيد المراجعة. وإذا استعمل مصطلح IEP، فيجب توضيح معناه ضمن برنامج AGI.\n\nوتذكر الصفحة المنشورة خدمات العلاج الوظيفي وعلاج النطق واللغة والدعم السلوكي. ولا يجوز الإعلان عن هذه الخدمات إلا بعد التحقق من مؤهلات المهنيين والتوفر والموافقة وحماية الأطفال ونطاق الخدمة.\n\n**الإجراء:** طلب لقاء سري مع الفريق التربوي. **قبل النشر:** تأكيد الخدمات والمؤهلات والرسوم ومساطر الإحالة والسرية.",
+      "seo": {
+        "title": "المواكبة التربوية الدامجة | AGI",
+        "description": "اكتشفوا مقاربة AGI في الدعم التربوي وسبل التواصل مع الأسر بشأن احتياجات التعلم."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.anglia-morocco",
+      "slug": "anglia-morocco",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "Anglia Morocco — English examinations",
+      "summary": "Anglia Examinations is an English-language examination organisation based in England. Its official materials describe a ten-step General English pathway from First Step to Mastery (C2) and a separate four-level Business English pathway. General English exams assess listening, reading, writing and speaking; exact components vary by level.",
+      "body": "Anglia Examinations is an English-language examination organisation based in England. Its official materials describe a ten-step General English pathway from First Step to Mastery (C2) and a separate four-level Business English pathway. General English exams assess listening, reading, writing and speaking; exact components vary by level.\n\nAnglia's official franchise directory identifies AGI as its franchise holder for Morocco from 2021. Describe the local role according to the current agreement.\n\nAnglia says its four highest General English qualifications are accredited through AIM Qualifications and Assessment Group and regulated by Ofqual. This does not apply automatically to every Anglia exam. Name the exact qualification, level and awarding body.\n\n**Actions:** Explore levels · Find a centre · Ask about registration · Explore Step To books.",
+      "seo": {
+        "title": "Anglia Examinations Morocco | AGI",
+        "description": "Discover Anglia English examinations in Morocco, CEFR-referenced levels, registration information and learning resources."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.anglia-morocco",
+      "slug": "anglia-morocco",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "Anglia Morocco — examens d’anglais",
+      "summary": "Anglia Examinations est un organisme d’examens d’anglais établi en Angleterre. Ses informations officielles présentent dix étapes d’anglais général, de First Step à Mastery (C2), ainsi qu’un parcours distinct de quatre niveaux d’anglais des affaires. Les examens évaluent la compréhension orale et écrite ainsi que l’expression orale et écrite ; les composantes varient selon le niveau.",
+      "body": "Anglia Examinations est un organisme d’examens d’anglais établi en Angleterre. Ses informations officielles présentent dix étapes d’anglais général, de First Step à Mastery (C2), ainsi qu’un parcours distinct de quatre niveaux d’anglais des affaires. Les examens évaluent la compréhension orale et écrite ainsi que l’expression orale et écrite ; les composantes varient selon le niveau.\n\nL’annuaire officiel des franchises d’Anglia désigne AGI comme titulaire de sa franchise au Maroc depuis 2021. Le rôle local doit être décrit conformément au contrat en vigueur.\n\nAnglia indique que ses quatre qualifications les plus élevées en anglais général sont accréditées par AIM Qualifications and Assessment Group et réglementées par Ofqual. Cette indication ne concerne pas automatiquement tous les examens Anglia.\n\n**Actions :** Découvrir les niveaux · Trouver un centre · Demander les modalités d’inscription · Découvrir Step To.",
+      "seo": {
+        "title": "Anglia Examinations Morocco | AGI",
+        "description": "Découvrez les examens Anglia au Maroc, les niveaux référencés au CECRL et les modalités d’inscription."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.anglia-morocco",
+      "slug": "anglia-morocco",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "Anglia Morocco — امتحانات اللغة الإنجليزية",
+      "summary": "تُعد Anglia Examinations جهة متخصصة في امتحانات اللغة الإنجليزية مقرها إنجلترا. وتعرض موادها الرسمية مساراً من عشرة مستويات للإنجليزية العامة يبدأ بـ First Step وينتهي بـ Mastery (C2)، إلى جانب مسار مستقل من أربعة مستويات للإنجليزية للأعمال. وتشمل مهارات التقييم الاستماع والقراءة والكتابة والتحدث، مع اختلاف مكونات الاختبار بحسب المستوى.",
+      "body": "تُعد Anglia Examinations جهة متخصصة في امتحانات اللغة الإنجليزية مقرها إنجلترا. وتعرض موادها الرسمية مساراً من عشرة مستويات للإنجليزية العامة يبدأ بـ First Step وينتهي بـ Mastery (C2)، إلى جانب مسار مستقل من أربعة مستويات للإنجليزية للأعمال. وتشمل مهارات التقييم الاستماع والقراءة والكتابة والتحدث، مع اختلاف مكونات الاختبار بحسب المستوى.\n\nوتدرج Anglia Examinations مؤسسة AGI في دليل الامتيازات الرسمي بصفتها صاحبة امتيازها بالمغرب منذ سنة 2021. وينبغي وصف الدور المحلي وفق الاتفاق الجاري.\n\nوتشير Anglia إلى أن أعلى أربعة مؤهلات في الإنجليزية العامة معتمدة من خلال AIM Qualifications and Assessment Group وخاضعة لتنظيم Ofqual. ولا ينطبق ذلك تلقائياً على جميع امتحانات Anglia.\n\n**الإجراءات:** اكتشفوا المستويات · اعثروا على مركز · استفسروا عن التسجيل · اكتشفوا كتب Step To.",
+      "seo": {
+        "title": "امتحانات Anglia بالمغرب | AGI",
+        "description": "تعرفوا على امتحانات Anglia ومستوياتها المرجعية وإجراءات التسجيل وموارد التعلم بالمغرب."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.cite",
+      "slug": "cite",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "C.I.T.E. — Certificate for International Teachers of English",
+      "summary": "C.I.T.E. is an Anglia Examinations assessment for people who teach English or are preparing to teach it. Anglia describes it as a test providing evidence of English-language competence relevant to teaching and mapped to the CEFR.",
+      "body": "C.I.T.E. is an Anglia Examinations assessment for people who teach English or are preparing to teach it. Anglia describes it as a test providing evidence of English-language competence relevant to teaching and mapped to the CEFR.\n\nAnglia states that C.I.T.E. is not, by itself, a teaching qualification. Do not market it as a teaching licence, degree or standalone TEFL/TESOL award.\n\nAnglia identifies three versions: C.I.T.E., C.I.T.E. (Young Learners) and C.I.T.E. (Very Young Learners). Check current specifications and recommended levels before publication.\n\n**Action:** Ask Anglia Morocco about the current examination route.",
+      "seo": {
+        "title": "C.I.T.E. English Assessment | Anglia Morocco",
+        "description": "Learn about Anglia's C.I.T.E. English-language assessment for people teaching or preparing to teach English."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.cite",
+      "slug": "cite",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "C.I.T.E. — Certificate for International Teachers of English",
+      "summary": "C.I.T.E. est une évaluation d’Anglia Examinations destinée aux personnes qui enseignent l’anglais ou se préparent à l’enseigner. Anglia la présente comme un examen attestant de compétences linguistiques en anglais utiles dans un contexte d’enseignement et référencé au CECRL.",
+      "body": "C.I.T.E. est une évaluation d’Anglia Examinations destinée aux personnes qui enseignent l’anglais ou se préparent à l’enseigner. Anglia la présente comme un examen attestant de compétences linguistiques en anglais utiles dans un contexte d’enseignement et référencé au CECRL.\n\nAnglia précise que le C.I.T.E. ne constitue pas, à lui seul, une qualification d’enseignant. Ne le présentez pas comme une licence d’enseignement, un diplôme universitaire ou une certification TEFL/TESOL autonome.\n\nAnglia distingue trois versions : C.I.T.E., C.I.T.E. (Young Learners) et C.I.T.E. (Very Young Learners). Vérifiez les spécifications en vigueur.\n\n**Action :** Contacter Anglia Morocco pour connaître les modalités actuelles.",
+      "seo": {
+        "title": "Évaluation C.I.T.E. en anglais | Anglia Morocco",
+        "description": "Découvrez l’examen C.I.T.E. d’Anglia destiné aux personnes qui enseignent ou souhaitent enseigner l’anglais."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.cite",
+      "slug": "cite",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "C.I.T.E. — Certificate for International Teachers of English",
+      "summary": "يُعد C.I.T.E. تقييماً من Anglia Examinations للأشخاص الذين يدرّسون الإنجليزية أو يستعدون لتدريسها. وتصفه Anglia بأنه امتحان يقدم دليلاً على الكفايات اللغوية في الإنجليزية المرتبطة بسياق تدريسها، وهو مرتبط بمستويات الإطار الأوروبي المرجعي المشترك للغات.",
+      "body": "يُعد C.I.T.E. تقييماً من Anglia Examinations للأشخاص الذين يدرّسون الإنجليزية أو يستعدون لتدريسها. وتصفه Anglia بأنه امتحان يقدم دليلاً على الكفايات اللغوية في الإنجليزية المرتبطة بسياق تدريسها، وهو مرتبط بمستويات الإطار الأوروبي المرجعي المشترك للغات.\n\nوتوضح Anglia أن C.I.T.E. ليس في حد ذاته مؤهلاً مهنياً للتدريس. لذلك لا ينبغي تقديمه باعتباره رخصة لمزاولة التدريس أو شهادة جامعية أو مؤهل TEFL/TESOL مستقلاً.\n\nوتحدد Anglia ثلاث صيغ: C.I.T.E. وC.I.T.E. (Young Learners) وC.I.T.E. (Very Young Learners). يرجى مراجعة المواصفات المحيّنة قبل النشر.\n\n**الإجراء:** التواصل مع Anglia Morocco لمعرفة إجراءات الامتحان الحالية.",
+      "seo": {
+        "title": "امتحان C.I.T.E. في الإنجليزية | Anglia Morocco",
+        "description": "تعرفوا على امتحان C.I.T.E. لتقييم الكفايات اللغوية المرتبطة بتدريس الإنجليزية."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.step-to-books",
+      "slug": "step-to-books",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "Step To books and learning resources",
+      "summary": "Anglia Morocco presents Step To as learning and examination-preparation resources for Anglia English examinations. Its public catalogue lists ten named levels, from First Step through Masters (C2), and refers to workbooks, topic-based units, guided practice, audio files, sample papers and teacher guides.",
+      "body": "Anglia Morocco presents Step To as learning and examination-preparation resources for Anglia English examinations. Its public catalogue lists ten named levels, from First Step through Masters (C2), and refers to workbooks, topic-based units, guided practice, audio files, sample papers and teacher guides.\n\nCatalogue fields should include official title, level, edition, ISBN, author/publisher, intended learner, exam mapping, contents, teacher guide, audio/digital rights, price, stock and order terms. Do not mix Step To with AGI school textbooks or assume all resources are included in tuition.\n\n**Action:** Request the current catalogue. **Publication gate:** Confirm editions, ISBNs, stock, prices, distribution rights and approved exam mapping.",
+      "seo": {
+        "title": "Step To English Books | Anglia Morocco",
+        "description": "Explore Step To English learning and examination-preparation resources. Request the current catalogue."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.step-to-books",
+      "slug": "step-to-books",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "Livres Step To et ressources d’apprentissage",
+      "summary": "Anglia Morocco présente Step To comme des ressources d’apprentissage et de préparation aux examens Anglia. Le catalogue public mentionne dix niveaux, de First Step à Masters (C2), ainsi que des cahiers, unités thématiques, exercices guidés, ressources audio, sujets d’exemple et guides de l’enseignant.",
+      "body": "Anglia Morocco présente Step To comme des ressources d’apprentissage et de préparation aux examens Anglia. Le catalogue public mentionne dix niveaux, de First Step à Masters (C2), ainsi que des cahiers, unités thématiques, exercices guidés, ressources audio, sujets d’exemple et guides de l’enseignant.\n\nLe catalogue doit préciser le titre officiel, le niveau, l’édition, l’ISBN, l’auteur/éditeur, le public, la correspondance avec l’examen, le contenu, le guide enseignant, les droits audio/numériques, le prix, le stock et les conditions de commande. Ne confondez pas Step To avec les manuels scolaires d’AGI.\n\n**Action :** Demander le catalogue en vigueur. **Avant publication :** confirmer éditions, ISBN, stock, tarifs, droits de distribution et correspondances approuvées.",
+      "seo": {
+        "title": "Livres Step To | Anglia Morocco",
+        "description": "Découvrez les ressources Step To pour apprendre l’anglais et préparer les examens Anglia."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.step-to-books",
+      "slug": "step-to-books",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "كتب Step To وموارد تعلم الإنجليزية",
+      "summary": "تقدم Anglia Morocco سلسلة Step To باعتبارها موارد للتعلم والتحضير لامتحانات Anglia. ويشير الفهرس المنشور إلى عشرة مستويات من First Step إلى Masters (C2)، وإلى دفاتر تعلم ووحدات موضوعاتية وتدريبات موجهة وموارد صوتية ونماذج امتحانات وأدلة للمدرسين.",
+      "body": "تقدم Anglia Morocco سلسلة Step To باعتبارها موارد للتعلم والتحضير لامتحانات Anglia. ويشير الفهرس المنشور إلى عشرة مستويات من First Step إلى Masters (C2)، وإلى دفاتر تعلم ووحدات موضوعاتية وتدريبات موجهة وموارد صوتية ونماذج امتحانات وأدلة للمدرسين.\n\nينبغي أن يتضمن الفهرس الاسم الرسمي والمستوى والطبعة ورقم ISBN والمؤلف أو الناشر والفئة المستهدفة والامتحان المرتبط والمحتوى ودليل المدرس وحقوق الموارد الصوتية والرقمية والسعر والمخزون وشروط الطلب. ولا ينبغي الخلط بين Step To والكتب المدرسية الخاصة بـ AGI.\n\n**الإجراء:** طلب الفهرس المحيّن. **قبل النشر:** تأكيد الطبعات وأرقام ISBN والمخزون والأسعار وحقوق التوزيع والربط المعتمد.",
+      "seo": {
+        "title": "كتب Step To لتعلم الإنجليزية | Anglia Morocco",
+        "description": "اكتشفوا موارد Step To للتعلم والتحضير لامتحانات Anglia واطلبوا الفهرس المحيّن."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.adult-learning",
+      "slug": "adult-learning",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "Adult learning and secondary education pathways",
+      "summary": "AGI's public website refers to adult high-school completion associated with American Worldwide Academy (AWA). This is a provider-dependent, high-stakes pathway. Before enrolment, disclose the provider's legal identity, accreditation/authorisation and scope, eligibility, credits and subjects, study mode, assessment, transcript/diploma issuer, verification route and recognition limitations.",
+      "body": "AGI's public website refers to adult high-school completion associated with American Worldwide Academy (AWA). This is a provider-dependent, high-stakes pathway. Before enrolment, disclose the provider's legal identity, accreditation/authorisation and scope, eligibility, credits and subjects, study mode, assessment, transcript/diploma issuer, verification route and recognition limitations.\n\nState AGI's exact role: information, referral, recruitment, tutoring, support or proctoring. Do not imply AGI awards the diploma unless it is the authorised awarding institution.\n\n**Action:** Request a pathway review and provider documentation. Do not publish “nationally accredited”, “Florida approved” or guaranteed university outcomes without current primary evidence.",
+      "seo": {
+        "title": "Adult Learning Pathways | AGI",
+        "description": "Ask about adult secondary-education pathways, eligibility, awarding providers and study options."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.adult-learning",
+      "slug": "adult-learning",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "Formation des adultes et parcours de fin d’études secondaires",
+      "summary": "Le site public d’AGI mentionne un parcours de fin d’études secondaires pour adultes associé à American Worldwide Academy (AWA). Ce parcours dépend d’un organisme tiers et concerne une qualification importante. Avant toute inscription, préciser l’identité juridique du prestataire, son accréditation/autorisation et son périmètre, les conditions d’accès, les crédits et matières, les modalités d’étude et d’évaluation, l’organisme qui délivre le relevé et le diplôme, la vérification et les limites de",
+      "body": "Le site public d’AGI mentionne un parcours de fin d’études secondaires pour adultes associé à American Worldwide Academy (AWA). Ce parcours dépend d’un organisme tiers et concerne une qualification importante. Avant toute inscription, préciser l’identité juridique du prestataire, son accréditation/autorisation et son périmètre, les conditions d’accès, les crédits et matières, les modalités d’étude et d’évaluation, l’organisme qui délivre le relevé et le diplôme, la vérification et les limites de reconnaissance.\n\nLe rôle d’AGI doit être explicite : information, orientation, recrutement, tutorat, accompagnement ou surveillance d’examen. Ne laissez pas entendre qu’AGI délivre le diplôme si elle n’est pas l’organisme habilité.\n\n**Action :** Demander une étude du parcours et les documents du prestataire. Ne publiez pas d’affirmation d’accréditation ou de reconnaissance sans preuve primaire actuelle.",
+      "seo": {
+        "title": "Parcours de formation pour adultes | AGI",
+        "description": "Renseignez-vous sur les parcours de fin d’études secondaires, les conditions d’accès et les organismes certificateurs."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.adult-learning",
+      "slug": "adult-learning",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "تعلم الكبار ومسارات استكمال التعليم الثانوي",
+      "summary": "يشير الموقع العمومي لـ AGI إلى مسار لاستكمال التعليم الثانوي للكبار يرتبط بمؤسسة American Worldwide Academy (AWA). ويتعلق الأمر بمسار يعتمد على جهة أخرى وبمؤهل دراسي مهم. قبل التسجيل، يجب توضيح الهوية القانونية للجهة المقدمة للبرنامج ووضع اعتمادها أو ترخيصها ونطاقه وشروط الولوج والوحدات والمواد وطريقة الدراسة والتقييم والجهة التي تصدر كشف الدرجات والشهادة وكيفية التحقق منها وحدود الاعتراف بها.",
+      "body": "يشير الموقع العمومي لـ AGI إلى مسار لاستكمال التعليم الثانوي للكبار يرتبط بمؤسسة American Worldwide Academy (AWA). ويتعلق الأمر بمسار يعتمد على جهة أخرى وبمؤهل دراسي مهم. قبل التسجيل، يجب توضيح الهوية القانونية للجهة المقدمة للبرنامج ووضع اعتمادها أو ترخيصها ونطاقه وشروط الولوج والوحدات والمواد وطريقة الدراسة والتقييم والجهة التي تصدر كشف الدرجات والشهادة وكيفية التحقق منها وحدود الاعتراف بها.\n\nكما يجب تحديد دور AGI بدقة: تقديم المعلومات أو التوجيه أو الوساطة أو الدعم الدراسي أو المواكبة أو مراقبة الامتحان. ولا ينبغي الإيحاء بأن AGI هي الجهة المانحة للشهادة ما لم تكن مخولة بذلك.\n\n**الإجراء:** طلب دراسة للمسار ووثائق الجهة المقدمة له. ويمنع نشر ادعاءات الاعتماد أو الاعتراف دون أدلة أولية وحديثة.",
+      "seo": {
+        "title": "مسارات تعلم الكبار | AGI",
+        "description": "استفسروا عن مسارات استكمال التعليم الثانوي وشروط الولوج والجهة المانحة للشهادة."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.professional-english",
+      "slug": "professional-english",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "Professional and Medical English",
+      "summary": "AGI public materials describe one-to-one, corporate/business and Medical English learning. Position these as English-language programmes for workplace communication, not professional licensing or medical training.",
+      "body": "AGI public materials describe one-to-one, corporate/business and Medical English learning. Position these as English-language programmes for workplace communication, not professional licensing or medical training.\n\nLearning goals may include meetings, presentations, business correspondence, negotiation, client communication and sector-specific vocabulary. Medical English may address healthcare terminology and communication scenarios; it does not qualify a learner to practise medicine or provide clinical advice.\n\nBegin with a needs discussion and placement assessment. Confirm course format, hours, trainer profile, assessment, availability and fees in a written proposal.",
+      "seo": {
+        "title": "Professional & Medical English | AGI",
+        "description": "Discuss tailored English learning for business, workplace communication and healthcare contexts."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.professional-english",
+      "slug": "professional-english",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "Anglais professionnel et anglais médical",
+      "summary": "Les informations publiques d’AGI mentionnent des cours individuels, de l’anglais des affaires et de l’anglais médical. Présentez ces offres comme des formations linguistiques adaptées au monde professionnel, et non comme une formation médicale ou une autorisation d’exercer.",
+      "body": "Les informations publiques d’AGI mentionnent des cours individuels, de l’anglais des affaires et de l’anglais médical. Présentez ces offres comme des formations linguistiques adaptées au monde professionnel, et non comme une formation médicale ou une autorisation d’exercer.\n\nLes objectifs peuvent inclure les réunions, présentations, courriels professionnels, négociations, échanges avec les clients et vocabulaire sectoriel. L’anglais médical peut aborder la terminologie et des situations de communication en santé ; il ne qualifie pas à exercer une profession médicale.\n\nCommencez par une analyse des besoins et une évaluation de positionnement. Confirmez par écrit le format, le volume horaire, le profil du formateur, l’évaluation, les disponibilités et les frais.",
+      "seo": {
+        "title": "Anglais professionnel et médical | AGI",
+        "description": "Échangez sur des formations en anglais adaptées aux besoins professionnels et aux contextes de santé."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.professional-english",
+      "slug": "professional-english",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "الإنجليزية المهنية والإنجليزية الطبية",
+      "summary": "تشير المعلومات المنشورة من طرف AGI إلى دروس فردية وبرامج للإنجليزية في الأعمال والإنجليزية الطبية. وينبغي تقديمها باعتبارها برامج لتعلم اللغة في السياقات المهنية، لا تكويناً طبياً أو ترخيصاً لمزاولة مهنة صحية.",
+      "body": "تشير المعلومات المنشورة من طرف AGI إلى دروس فردية وبرامج للإنجليزية في الأعمال والإنجليزية الطبية. وينبغي تقديمها باعتبارها برامج لتعلم اللغة في السياقات المهنية، لا تكويناً طبياً أو ترخيصاً لمزاولة مهنة صحية.\n\nيمكن أن تشمل أهداف التعلم الاجتماعات والعروض والمراسلات المهنية والتفاوض والتواصل مع العملاء والمصطلحات الخاصة بقطاع معين. وقد تتناول الإنجليزية الطبية المصطلحات الصحية ومواقف التواصل في المجال الصحي، لكنها لا تمنح المتعلم أهلية ممارسة الطب أو تقديم الاستشارات الطبية.\n\nينبغي الانطلاق من تحديد الاحتياجات واختبار المستوى، ثم تأكيد صيغة البرنامج وعدد الساعات ومؤهلات المدرس والتقييم والتوفر والرسوم في عرض مكتوب.",
+      "seo": {
+        "title": "الإنجليزية المهنية والطبية | AGI",
+        "description": "ناقشوا برامج تعلم الإنجليزية للأعمال والتواصل المهني والسياقات الصحية."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.teacher-development",
+      "slug": "teacher-development",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "Teacher development",
+      "summary": "AGI's public materials refer to Anglia C.I.T.E., internships and partner-provided TEFL/TESOL learning. These are distinct offerings. C.I.T.E. is an Anglia examination assessing English competence relevant to teaching; Anglia says it is not itself a teaching qualification.",
+      "body": "AGI's public materials refer to Anglia C.I.T.E., internships and partner-provided TEFL/TESOL learning. These are distinct offerings. C.I.T.E. is an Anglia examination assessing English competence relevant to teaching; Anglia says it is not itself a teaching qualification.\n\nIf Bridge or another provider delivers a TEFL/TESOL course, name that provider and the credential it issues. State AGI's role only as confirmed by a current agreement. For internships, distinguish observation, supervised assistance and supervised teaching practice. Confirm duration, eligibility, mentor, safeguarding and insurance.",
+      "seo": {
+        "title": "Teacher Development | AGI & Anglia Morocco",
+        "description": "Explore C.I.T.E. assessment, supervised placements and partner-delivered teacher-development options."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.teacher-development",
+      "slug": "teacher-development",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "Développement professionnel des enseignants",
+      "summary": "Les informations publiques d’AGI mentionnent l’examen Anglia C.I.T.E., des stages et des formations TEFL/TESOL proposées par des partenaires. Ces offres sont distinctes. Le C.I.T.E. est un examen Anglia évaluant des compétences en anglais utiles dans un contexte d’enseignement ; Anglia précise qu’il ne constitue pas à lui seul une qualification d’enseignant.",
+      "body": "Les informations publiques d’AGI mentionnent l’examen Anglia C.I.T.E., des stages et des formations TEFL/TESOL proposées par des partenaires. Ces offres sont distinctes. Le C.I.T.E. est un examen Anglia évaluant des compétences en anglais utiles dans un contexte d’enseignement ; Anglia précise qu’il ne constitue pas à lui seul une qualification d’enseignant.\n\nSi Bridge ou un autre organisme propose une formation TEFL/TESOL, nommez le prestataire et la certification qu’il délivre. Le rôle d’AGI doit être confirmé par un accord actuel. Pour les stages, distinguez observation, assistance encadrée et pratique pédagogique supervisée. Confirmez durée, admissibilité, tutorat, protection et assurance.",
+      "seo": {
+        "title": "Développement professionnel des enseignants | AGI",
+        "description": "Découvrez l’évaluation C.I.T.E., les stages encadrés et les formations proposées par des partenaires."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.teacher-development",
+      "slug": "teacher-development",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "التطوير المهني للمدرسين",
+      "summary": "تشير المعلومات المنشورة من طرف AGI إلى امتحان Anglia C.I.T.E. والتداريب الميدانية وبرامج TEFL/TESOL التي تقدمها جهات شريكة. وهذه عروض مختلفة ينبغي توضيحها بشكل مستقل. C.I.T.E. امتحان من Anglia لتقييم الكفايات اللغوية في الإنجليزية المرتبطة بسياق تدريسها؛ وتؤكد Anglia أنه لا يشكل في حد ذاته مؤهلاً مهنياً للتدريس.",
+      "body": "تشير المعلومات المنشورة من طرف AGI إلى امتحان Anglia C.I.T.E. والتداريب الميدانية وبرامج TEFL/TESOL التي تقدمها جهات شريكة. وهذه عروض مختلفة ينبغي توضيحها بشكل مستقل. C.I.T.E. امتحان من Anglia لتقييم الكفايات اللغوية في الإنجليزية المرتبطة بسياق تدريسها؛ وتؤكد Anglia أنه لا يشكل في حد ذاته مؤهلاً مهنياً للتدريس.\n\nوإذا قدمت Bridge أو جهة أخرى برنامج TEFL/TESOL، فيجب ذكر مقدم البرنامج والجهة التي تصدر الشهادة. ولا ينبغي تحديد دور AGI إلا وفق اتفاق حديث. وبالنسبة للتداريب، يجب التمييز بين الملاحظة والمساعدة المؤطرة والممارسة التدريسية تحت الإشراف، مع تأكيد المدة وشروط الولوج والتأطير والحماية والتأمين.",
+      "seo": {
+        "title": "التطوير المهني للمدرسين | AGI",
+        "description": "تعرفوا على امتحان C.I.T.E. والتداريب المؤطرة وبرامج التطوير التي تقدمها الجهات الشريكة."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.proctoring",
+      "slug": "proctoring",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "Examination invigilation and proctoring",
+      "summary": "AGI's public materials describe invigilation for some paper-based and online examinations. Candidates must first confirm that their awarding institution accepts AGI as an off-campus venue and that the requested examination can be administered under its rules.",
+      "body": "AGI's public materials describe invigilation for some paper-based and online examinations. Candidates must first confirm that their awarding institution accepts AGI as an off-campus venue and that the requested examination can be administered under its rules.\n\nAGI must confirm room and invigilator availability before accepting a booking. Providing a room or invigilator does not make AGI the awarding organisation and does not guarantee acceptance of the result.\n\nConfirm current hours, fees, cancellation terms, supported providers, identity checks, data retention and security procedures.",
+      "seo": {
+        "title": "Examination Invigilation | AGI Agadir",
+        "description": "Ask about examination invigilation, venue requirements, availability and awarding-body approval."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.proctoring",
+      "slug": "proctoring",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "Surveillance d’examens",
+      "summary": "Les informations publiques d’AGI décrivent un service de surveillance de certains examens sur papier ou en ligne. Le candidat doit d’abord vérifier que son organisme certificateur accepte AGI comme lieu d’examen externe et que l’épreuve peut être organisée conformément à ses règles.",
+      "body": "Les informations publiques d’AGI décrivent un service de surveillance de certains examens sur papier ou en ligne. Le candidat doit d’abord vérifier que son organisme certificateur accepte AGI comme lieu d’examen externe et que l’épreuve peut être organisée conformément à ses règles.\n\nAGI doit confirmer la disponibilité de la salle et du surveillant avant d’accepter le rendez-vous. La mise à disposition d’une salle ne fait pas d’AGI l’organisme certificateur et ne garantit pas l’acceptation du résultat.\n\nConfirmer les horaires, tarifs, annulations, organismes pris en charge, contrôles d’identité, conservation des données et procédures de sécurité.",
+      "seo": {
+        "title": "Surveillance d’examens | AGI Agadir",
+        "description": "Renseignez-vous sur la surveillance d’examens, les conditions d’accueil et l’accord de l’organisme certificateur."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.proctoring",
+      "slug": "proctoring",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "مراقبة الامتحانات",
+      "summary": "تشير المعلومات المنشورة من طرف AGI إلى خدمة مراقبة بعض الامتحانات الورقية والإلكترونية. ويتعين على المترشح التأكد مسبقاً من قبول الجهة المانحة للشهادة لـ AGI كمركز خارجي، ومن إمكانية تنظيم الامتحان وفق قواعدها.",
+      "body": "تشير المعلومات المنشورة من طرف AGI إلى خدمة مراقبة بعض الامتحانات الورقية والإلكترونية. ويتعين على المترشح التأكد مسبقاً من قبول الجهة المانحة للشهادة لـ AGI كمركز خارجي، ومن إمكانية تنظيم الامتحان وفق قواعدها.\n\nويجب على AGI تأكيد توفر القاعة والمراقب قبل قبول الحجز. إن توفير القاعة أو المراقب لا يجعل AGI جهة مانحة للشهادة ولا يضمن قبول النتيجة.\n\nينبغي تأكيد أوقات العمل والرسوم وشروط الإلغاء والجهات المقبولة والتحقق من الهوية ومدة الاحتفاظ بالبيانات وإجراءات الأمن.",
+      "seo": {
+        "title": "مراقبة الامتحانات | AGI أكادير",
+        "description": "استفسروا عن مراقبة الامتحانات وشروط الاستضافة وموافقة الجهة المانحة للشهادة."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.wellbeing",
+      "slug": "wellbeing",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "Student wellbeing and support",
+      "summary": "AGI's public material refers to wellbeing and counselling-related support. Its policy also says school counselling is advisory and does not provide medical diagnosis or clinical therapy. Reconcile these descriptions before publication.",
+      "body": "AGI's public material refers to wellbeing and counselling-related support. Its policy also says school counselling is advisory and does not provide medical diagnosis or clinical therapy. Reconcile these descriptions before publication.\n\nExplain non-clinical pastoral support separately from counselling or clinical therapy. Any professional service must identify the provider, qualifications, service scope, confidentiality limits, consent, safeguarding and referral process. Do not use “therapy”, “treatment” or “diagnosis” for general educational guidance.",
+      "seo": {
+        "title": "Student Wellbeing & Support | AGI",
+        "description": "Understand AGI's student support approach, service scope, confidentiality and referral arrangements."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.wellbeing",
+      "slug": "wellbeing",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "Bien-être et accompagnement des élèves",
+      "summary": "Les informations publiques d’AGI évoquent des services liés au bien-être et à l’accompagnement. Une politique d’AGI précise également que le conseil scolaire est consultatif et ne comprend ni diagnostic médical ni thérapie clinique. Ces descriptions doivent être harmonisées.",
+      "body": "Les informations publiques d’AGI évoquent des services liés au bien-être et à l’accompagnement. Une politique d’AGI précise également que le conseil scolaire est consultatif et ne comprend ni diagnostic médical ni thérapie clinique. Ces descriptions doivent être harmonisées.\n\nPrésentez séparément l’accompagnement éducatif non clinique, le conseil psychologique et les éventuelles prestations cliniques. Tout service professionnel doit identifier l’intervenant, ses qualifications, le périmètre, les limites de confidentialité, le consentement, la protection et les procédures d’orientation. N’employez pas « thérapie », « traitement » ou « diagnostic » pour désigner un accompagnement pédagogique général.",
+      "seo": {
+        "title": "Bien-être et accompagnement des élèves | AGI",
+        "description": "Comprenez l’approche d’AGI en matière d’accompagnement, de confidentialité et d’orientation."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.wellbeing",
+      "slug": "wellbeing",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "رفاه التلاميذ وخدمات المواكبة",
+      "summary": "تشير المعلومات المنشورة من طرف AGI إلى خدمات مرتبطة بالرفاه والإرشاد. كما تفيد إحدى سياسات AGI بأن الإرشاد المدرسي ذو طبيعة استشارية ولا يشمل التشخيص الطبي أو العلاج السريري. وينبغي التوفيق بين هذه الأوصاف قبل النشر.",
+      "body": "تشير المعلومات المنشورة من طرف AGI إلى خدمات مرتبطة بالرفاه والإرشاد. كما تفيد إحدى سياسات AGI بأن الإرشاد المدرسي ذو طبيعة استشارية ولا يشمل التشخيص الطبي أو العلاج السريري. وينبغي التوفيق بين هذه الأوصاف قبل النشر.\n\nيجب التمييز بين المواكبة التربوية غير السريرية والإرشاد النفسي وأي خدمة علاجية سريرية. ويتعين أن تحدد كل خدمة مهنية اسم المتدخل ومؤهلاته ونطاق الخدمة وحدود السرية وشروط الموافقة وحماية الأطفال ومساطر الإحالة. ولا ينبغي استعمال مصطلحات «العلاج» أو «التشخيص» لوصف التوجيه التربوي العام.",
+      "seo": {
+        "title": "رفاه التلاميذ والمواكبة | AGI",
+        "description": "تعرفوا على مقاربة AGI في مواكبة التلاميذ ونطاق الخدمات والسرية والإحالة."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.faq",
+      "slug": "faq",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "editorial-review",
+      "title": "Frequently Asked Questions",
+      "summary": "",
+      "body": "**Is AGI a school or a language centre?** AGI presents several educational activities. Its school activity, Anglia Morocco examination operation and other learning services are distinct.\n\n**Does AGI follow an American curriculum?** AGI's public materials describe an American-curriculum framework. Ask for the currently approved educational project, authorised grades and delivery details.\n\n**Are all Anglia exams Ofqual regulated?** No. Anglia says its four highest General English qualifications are accredited through AIM and regulated by Ofqual. This does not automatically apply to every exam.\n\n**Is C.I.T.E. a teaching licence?** No. Anglia says C.I.T.E. is an examination providing evidence of English competence relevant to teaching; it is not itself a teaching qualification.\n\n**Does AGI issue the adult diploma?** AGI's public materials refer to a pathway associated with AWA. Confirm the awarding provider and AGI's exact role for the current programme.\n\n**Can AGI supervise an external exam?** AGI describes an invigilation service. Candidates must obtain their institution's approval and AGI's availability confirmation.\n\n**How do I get current fees and dates?** Request the current dated schedule from the responsible team; do not rely on archived pages.",
+      "seo": {
+        "title": "Frequently Asked Questions | AGI",
+        "description": "Find answers about AGI's school, Anglia examinations, learning pathways, invigilation and current information."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.faq",
+      "slug": "faq",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "Questions fréquentes",
+      "summary": "",
+      "body": "**AGI est-elle une école ou un centre de langues ?** AGI présente plusieurs activités éducatives. Son activité scolaire, l’activité d’examens Anglia Morocco et les autres services sont distincts.\n\n**AGI suit-elle un programme américain ?** Les informations publiques décrivent un cadre de programme américain. Demandez le projet éducatif approuvé, les niveaux autorisés et les modalités actuelles.\n\n**Tous les examens Anglia sont-ils réglementés par Ofqual ?** Non. Anglia indique que ses quatre qualifications les plus élevées en anglais général sont accréditées par AIM et réglementées par Ofqual. Cela ne concerne pas automatiquement tous les examens.\n\n**Le C.I.T.E. est-il une licence d’enseignement ?** Non. Anglia précise qu’il s’agit d’un examen attestant de compétences en anglais utiles dans un contexte d’enseignement, et non d’une qualification d’enseignant.\n\n**AGI délivre-t-elle le diplôme pour adultes ?** Les informations publiques mentionnent un parcours associé à AWA. L’organisme certificateur et le rôle exact d’AGI doivent être confirmés.\n\n**AGI peut-elle surveiller un examen externe ?** AGI décrit un service de surveillance. Le candidat doit obtenir l’accord de son établissement et la confirmation de disponibilité d’AGI.\n\n**Comment obtenir les tarifs et dates actuels ?** Demandez le calendrier et la grille tarifaire datés à l’équipe responsable.",
+      "seo": {
+        "title": "Questions fréquentes | AGI",
+        "description": "Consultez les réponses sur l’école AGI, les examens Anglia, les parcours de formation et les services."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.faq",
+      "slug": "faq",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-core-pages",
+      "status": "translation-review",
+      "title": "الأسئلة الشائعة",
+      "summary": "",
+      "body": "**هل AGI مدرسة أم مركز للغات؟** تعرض AGI مجموعة من الأنشطة التعليمية. وينبغي التمييز بين نشاطها المدرسي وامتحانات Anglia Morocco وخدمات التعلم الأخرى.\n\n**هل تعتمد AGI المنهاج الأمريكي؟** تشير المعلومات المنشورة إلى إطار للمنهاج الأمريكي. ويمكن طلب المشروع التربوي المصادق عليه والمستويات المسموح بها وكيفية تنفيذ البرنامج حالياً.\n\n**هل تخضع جميع امتحانات Anglia لتنظيم Ofqual؟** لا. تشير Anglia إلى أن أعلى أربعة مؤهلات في الإنجليزية العامة معتمدة من خلال AIM وخاضعة لتنظيم Ofqual، ولا ينطبق ذلك تلقائياً على جميع الامتحانات.\n\n**هل C.I.T.E. رخصة للتدريس؟** لا. توضح Anglia أنه امتحان يقدم دليلاً على الكفايات اللغوية المرتبطة بتدريس الإنجليزية، وليس مؤهلاً مهنياً للتدريس في حد ذاته.\n\n**هل تصدر AGI شهادة التعليم الثانوي للكبار؟** تشير المعلومات المنشورة إلى مسار يرتبط بـ AWA. ويتعين تأكيد الجهة المانحة للشهادة والدور الدقيق لـ AGI.\n\n**هل يمكن لـ AGI مراقبة امتحان خارجي؟** تشير AGI إلى تقديم خدمة مراقبة الامتحانات. ويجب الحصول على موافقة المؤسسة المعنية وتأكيد توفر الخدمة لدى AGI.\n\n**كيف يمكن الحصول على الرسوم والمواعيد الحالية؟** يرجى طلب لائحة الرسوم والتقويم المؤرخين من الفريق المسؤول.",
+      "seo": {
+        "title": "الأسئلة الشائعة | AGI",
+        "description": "إجابات حول مدرسة AGI وامتحانات Anglia ومسارات التعلم والخدمات والمعلومات الحالية."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current facts, programme availability and contact details",
+        "Complete page-specific legal, regulatory and partner checks before publication",
+        "Native-speaker translation review where applicable"
+      ]
+    }
+  ]
+}
