@@ -10,6 +10,10 @@ This directory contains page-ready editorial drafts. These files are content art
 | `AGI-EDITORIAL-COPY-PACK-02.md` | About AGI, admissions, Anglia Morocco, C.I.T.E. and adult diploma pathway | Proposed English copy; review required |
 | `AGI-EDITORIAL-COPY-PACK-02-AR.md` | Arabic localisation of the five pages in Pack 02 | Translation/editorial review required |
 
+## Content governance and production plan
+
+The current end-to-end content roadmap is `content/governance/content-production-roadmap-2026-11.md`. Anglia Morocco source reconciliation is documented in `content/migration/anglia-content-reconciliation.md` and `content/migration/anglia-source-to-content-map.csv`.
+
 ## Editorial workflow
 
 1. Review the English meaning and confirm the page purpose and audience.
