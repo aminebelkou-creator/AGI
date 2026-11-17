@@ -74,7 +74,9 @@ The page-oriented export above remains intact. A complementary modular library h
 - `library/reusable-content-library.json`: 15 semantic modules × 3 locales (45 locale variants) covering brand messages, programme/service descriptions, resources and CTAs.
 - `schemas/reusable-content-library.schema.json`: portable data contract for the modular library.
 - `../scripts/validate_reusable_content.py`: standard-library validator for IDs, locale completeness and editorial states.
+- `facts/fact-register.csv`: 22 volatile or material claims with source pointers, owners, verification requirements and publication rules.
+- `../scripts/validate_fact_register.py`: checks fact IDs, required evidence/ownership fields and verification dates.
 
-Use the page entries for page-level narrative drafts; use the reusable library for shared semantic modules. Do not copy the same programme description into multiple pages. Compose pages by referencing stable module IDs. Volatile facts such as fees, dates, opening hours, staff roles and availability should move into a separately governed fact register before being reused.
+Use the page entries for page-level narrative drafts; use the reusable library for shared semantic modules. Do not copy the same programme description into multiple pages. Compose pages by referencing stable module IDs. Volatile facts such as fees, dates, opening hours, staff roles and availability are tracked in `facts/fact-register.csv`; they must be verified and date-stamped before reuse. The register validator is `../scripts/validate_fact_register.py`.
 
 All new modules remain in editorial/translation review. Validation checks structure only; it does not approve the content.
