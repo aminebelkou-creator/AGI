@@ -1,0 +1,26 @@
+{
+  "id": "agi.school",
+  "slug": "school",
+  "locale": "fr-MA",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "translation-review",
+  "title": "École AGI — présentation",
+  "summary": "Les informations publiques d’AGI présentent un programme scolaire à Agadir, de la maternelle à la 12e année, s’appuyant sur un cadre de programme américain. Les familles doivent comprendre l’environnement d’apprentissage, le positionnement, les matières, l’évaluation, l’accompagnement et les admissions.",
+  "body": "Les informations publiques d’AGI présentent un programme scolaire à Agadir, de la maternelle à la 12e année, s’appuyant sur un cadre de programme américain. Les familles doivent comprendre l’environnement d’apprentissage, le positionnement, les matières, l’évaluation, l’accompagnement et les admissions.\n\nLes matières mentionnées publiquement comprennent l’anglais, les mathématiques, les sciences, l’histoire et les sciences sociales, l’arabe, l’éducation physique, la lecture, l’orthographe et les arts. La liste actuelle, la répartition par niveau et les langues d’enseignement doivent être validées par l’équipe pédagogique.\n\nLe positionnement doit être présenté comme une étude individuelle de l’âge, des dossiers antérieurs, du parcours et de la politique approuvée. Ne promettez aucun niveau, crédit, diplôme ou transfert avant examen du dossier.\n\n**Action :** Prendre rendez-vous ou envoyer une demande d’admission. **Avant publication :** confirmer la désignation juridique, l’autorisation AREF, l’autorisation d’enseignement étranger le cas échéant, les niveaux autorisés, le programme approuvé et les frais actuels.",
+  "seo": {
+    "title": "École AGI | Enseignement scolaire à Agadir",
+    "description": "Découvrez l’approche pédagogique, l’environnement d’apprentissage, les admissions et les visites de l’École AGI."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "ltr",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
