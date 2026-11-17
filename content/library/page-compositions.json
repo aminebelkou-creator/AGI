@@ -1,0 +1,191 @@
+{
+  "format": "agi-page-compositions-v1",
+  "note": "Editorial assembly maps only. They do not approve routes, publish pages or replace existing page drafts.",
+  "pages": [
+    {
+      "page_id": "agi.page.home",
+      "existing_page_entry": "agi.homepage",
+      "route_candidate": "/",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.brand.positioning",
+          "slot": "hero"
+        },
+        {
+          "module_id": "agi.brand.promise",
+          "slot": "brand-pillars"
+        },
+        {
+          "module_id": "agi.brand.community-model",
+          "slot": "learning-approach"
+        },
+        {
+          "module_id": "agi.program.school-k12",
+          "slot": "programme-card"
+        },
+        {
+          "module_id": "agi.program.inclusive-learning",
+          "slot": "programme-card"
+        },
+        {
+          "module_id": "agi.program.anglia-examinations",
+          "slot": "programme-card"
+        },
+        {
+          "module_id": "agi.cta.contact",
+          "slot": "closing-cta"
+        }
+      ],
+      "missing_content": [
+        "approved school facts",
+        "admissions summary",
+        "current contact details",
+        "verified proof points"
+      ]
+    },
+    {
+      "page_id": "agi.page.school",
+      "existing_page_entry": "agi.school",
+      "route_candidate": "/school",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.program.school-k12",
+          "slot": "main-description"
+        },
+        {
+          "module_id": "agi.program.inclusive-learning",
+          "slot": "support-overview"
+        },
+        {
+          "module_id": "agi.brand.community-model",
+          "slot": "learning-approach"
+        }
+      ],
+      "missing_content": [
+        "approved curriculum by grade",
+        "admissions steps",
+        "school calendar",
+        "student life",
+        "approved parent policies",
+        "verified school authorisation and fees"
+      ]
+    },
+    {
+      "page_id": "agi.page.inclusive-learning",
+      "existing_page_entry": "agi.inclusive-learning",
+      "route_candidate": "/inclusive-learning",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.program.inclusive-learning",
+          "slot": "main-description"
+        },
+        {
+          "module_id": "agi.service.wellbeing",
+          "slot": "related-service"
+        }
+      ],
+      "missing_content": [
+        "confirmed service catalogue",
+        "specialist credentials and availability",
+        "safeguarding and referral process",
+        "parent enquiry workflow"
+      ]
+    },
+    {
+      "page_id": "agi.page.anglia",
+      "existing_page_entry": "agi.anglia-morocco",
+      "route_candidate": "/anglia-morocco",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.program.anglia-examinations",
+          "slot": "main-description"
+        },
+        {
+          "module_id": "agi.program.cite",
+          "slot": "teacher-exam"
+        },
+        {
+          "module_id": "agi.program.step-to",
+          "slot": "learning-resources"
+        }
+      ],
+      "missing_content": [
+        "current official exam-level details",
+        "exam formats and fees",
+        "active centres and schedules",
+        "qualification-specific evidence",
+        "book catalogue and rights"
+      ]
+    },
+    {
+      "page_id": "agi.page.teacher-development",
+      "existing_page_entry": "agi.teacher-development",
+      "route_candidate": "/teacher-development",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.service.teacher-development",
+          "slot": "main-description"
+        },
+        {
+          "module_id": "agi.program.cite",
+          "slot": "related-examination"
+        }
+      ],
+      "missing_content": [
+        "current training offers",
+        "provider agreements",
+        "internship details and safeguards",
+        "entry requirements and prices"
+      ]
+    },
+    {
+      "page_id": "agi.page.professional",
+      "existing_page_entry": "agi.professional-english",
+      "route_candidate": "/professional",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.service.professional-english",
+          "slot": "main-description"
+        },
+        {
+          "module_id": "agi.service.proctoring",
+          "slot": "related-service"
+        }
+      ],
+      "missing_content": [
+        "current course catalogue",
+        "trainer profiles",
+        "business pricing and delivery formats",
+        "approved proctoring providers and tariffs"
+      ]
+    },
+    {
+      "page_id": "agi.page.adult-pathways",
+      "existing_page_entry": "agi.adult-learning",
+      "route_candidate": "/adult-pathways",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.program.adult-pathway",
+          "slot": "main-description"
+        },
+        {
+          "module_id": "agi.service.education-consultancy",
+          "slot": "related-service"
+        }
+      ],
+      "missing_content": [
+        "current awarding-provider agreement",
+        "qualification and recognition evidence",
+        "eligibility, curriculum and duration",
+        "current prices and application process"
+      ]
+    }
+  ]
+}
