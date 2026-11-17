@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGI Content Entry",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "locale",
+    "source_locale",
+    "status",
+    "title",
+    "body",
+    "translation_group"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^agi\\.[a-z0-9-]+$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "locale": {
+      "type": "string",
+      "enum": [
+        "en-US",
+        "fr-MA",
+        "ar-MA"
+      ]
+    },
+    "source_locale": {
+      "type": "string",
+      "enum": [
+        "en-US",
+        "fr-MA",
+        "ar-MA"
+      ]
+    },
+    "translation_group": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "editorial-review",
+        "translation-review",
+        "legal-review",
+        "partner-approval",
+        "approved",
+        "published",
+        "archived"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "canonical": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "owner": {
+      "type": "string"
+    },
+    "review_by": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "ltr",
+        "rtl"
+      ]
+    },
+    "publication_gates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
