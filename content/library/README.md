@@ -4,13 +4,13 @@ This directory contains reusable editorial modules, not page-specific copies. It
 
 ## Current content coverage
 
-`reusable-content-library.json` currently contains 34 reusable modules and 102 locale variants (34 × English, French and Arabic):
+`reusable-content-library.json` currently contains 43 reusable modules and 129 locale variants (43 × English, French and Arabic):
 
 - Brand positioning, promise, mission, philosophy, vision, founding story and school–home–community message.
 - Founder/leadership profile, admissions journey, application records, placement assessment and fee guidance.
 - Curriculum overview, grade pathways, student life, community service, parent FAQs and policy summaries.
 - K–12 school, inclusive learning and Anglia examinations.
-- C.I.T.E. and Step To learning resources.
+- Anglia General English levels, Business English, exam formats, CEFR, special arrangements, class formats, placement assessment, qualification recognition, C.I.T.E. and Step To resources.
 - Adult learning pathway and professional/medical English.
 - Examination proctoring, education consultancy, teacher development and wellbeing.
 - A general contact call to action.
@@ -58,6 +58,8 @@ Example only:
 - Teacher development: `agi.service.teacher-development` + the separate C.I.T.E. examination module.
 
 This is a content-composition guide, not a route or navigation approval.
+
+The Anglia-specific editorial findings and content decisions are documented in `../research/anglia-content-audit.md`.
 
 ## Next expansion batches
 
