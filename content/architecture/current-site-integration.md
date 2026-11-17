@@ -12,7 +12,7 @@ The AGI repository already contains a substantial website implementation. The ne
 - The current loader in `app/src/lib/content.ts` fetches one `/content/index.json`, then loads `/content/pages/<file>`.
 - The content index and route navigation are English-first. `app/src/i18n/locales/en.json`, `fr.json` and `ar.json` currently provide interface translations; they do not provide translated versions of every page body.
 - `app/src/pages/ContentPage.tsx` renders page body content with `dir="ltr"`.
-- The current index contains many route entries. The repository tree has 128 page JSON files under `app/public/content/pages/`, including 60 news article JSON files.
+- The current index contains many route entries. The repository tree has 128 page JSON files under `app/public/content/pages/`: 68 route pages and 60 news article JSON files. The route/news inventory is recorded in `content/migration/legacy-route-inventory.csv`.
 
 ## Compatibility gap
 
