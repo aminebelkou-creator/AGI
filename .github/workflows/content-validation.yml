@@ -6,6 +6,7 @@ on:
       - "content/**"
       - "scripts/validate_content_export.py"
       - "scripts/validate_reusable_content.py"
+      - "scripts/validate_fact_register.py"
       - "scripts/audit_legacy_content.py"
       - "scripts/validate_migration_plan.py"
       - ".github/workflows/content-validation.yml"
@@ -14,6 +15,7 @@ on:
       - "content/**"
       - "scripts/validate_content_export.py"
       - "scripts/validate_reusable_content.py"
+      - "scripts/validate_fact_register.py"
       - "scripts/audit_legacy_content.py"
       - "scripts/validate_migration_plan.py"
       - ".github/workflows/content-validation.yml"
@@ -29,6 +31,8 @@ jobs:
         run: python scripts/validate_content_export.py
       - name: Validate reusable multilingual content library
         run: python scripts/validate_reusable_content.py
+      - name: Validate governed website fact register
+        run: python scripts/validate_fact_register.py
       - name: Audit legacy route and news integrity
         run: python scripts/audit_legacy_content.py
       - name: Validate route review and information architecture
