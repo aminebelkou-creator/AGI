@@ -65,3 +65,16 @@ The current app has its own legacy route index and 128 page JSON files (includin
 - [68-route content review](migration/route-content-review.csv)
 - [Proposed information architecture v2](strategy/proposed-information-architecture-v2.md)
 - [Migration review validator](../scripts/validate_migration_plan.py)
+
+## Reusable content layer
+
+The page-oriented export above remains intact. A complementary modular library has now been added for content that should be reused across multiple pages and channels:
+
+- [Reusable content library](library/README.md): content IDs, composition rules, localisation and expansion plan.
+- `library/reusable-content-library.json`: 15 semantic modules × 3 locales (45 locale variants) covering brand messages, programme/service descriptions, resources and CTAs.
+- `schemas/reusable-content-library.schema.json`: portable data contract for the modular library.
+- `../scripts/validate_reusable_content.py`: standard-library validator for IDs, locale completeness and editorial states.
+
+Use the page entries for page-level narrative drafts; use the reusable library for shared semantic modules. Do not copy the same programme description into multiple pages. Compose pages by referencing stable module IDs. Volatile facts such as fees, dates, opening hours, staff roles and availability should move into a separately governed fact register before being reused.
+
+All new modules remain in editorial/translation review. Validation checks structure only; it does not approve the content.
