@@ -5,6 +5,7 @@ on:
     paths:
       - "content/**"
       - "scripts/validate_content_export.py"
+      - "scripts/validate_reusable_content.py"
       - "scripts/audit_legacy_content.py"
       - "scripts/validate_migration_plan.py"
       - ".github/workflows/content-validation.yml"
@@ -12,7 +13,9 @@ on:
     paths:
       - "content/**"
       - "scripts/validate_content_export.py"
+      - "scripts/validate_reusable_content.py"
       - "scripts/audit_legacy_content.py"
+      - "scripts/validate_migration_plan.py"
       - ".github/workflows/content-validation.yml"
 jobs:
   validate:
@@ -24,6 +27,8 @@ jobs:
           python-version: "3.12"
       - name: Validate structured multilingual content
         run: python scripts/validate_content_export.py
+      - name: Validate reusable multilingual content library
+        run: python scripts/validate_reusable_content.py
       - name: Audit legacy route and news integrity
         run: python scripts/audit_legacy_content.py
       - name: Validate route review and information architecture
