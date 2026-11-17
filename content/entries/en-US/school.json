@@ -1,0 +1,26 @@
+{
+  "id": "agi.school",
+  "slug": "school",
+  "locale": "en-US",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "editorial-review",
+  "title": "AGI School — overview",
+  "summary": "AGI's public materials describe a school programme in Agadir from kindergarten through Grade 12, using an American curriculum framework. Families should understand the learning environment, grade placement, subjects, assessment, support and admissions.",
+  "body": "AGI's public materials describe a school programme in Agadir from kindergarten through Grade 12, using an American curriculum framework. Families should understand the learning environment, grade placement, subjects, assessment, support and admissions.\n\nPublicly referenced learning areas include English, mathematics, science, history/social studies, Arabic, physical education, reading, spelling and fine arts. The current list, grade-by-grade scope and instructional language must be confirmed by the academic team.\n\nPlacement should be described as an individual review of age, prior records, learning history and the school's approved policy. Do not promise a grade, credit, diploma or transfer outcome before review.\n\n**Action:** Book a visit or submit an admissions enquiry. **Publication gate:** Confirm legal designation, AREF authorisation, foreign-education authorisation where applicable, authorised grades, approved curriculum and current fees.",
+  "seo": {
+    "title": "AGI School | School Education in Agadir",
+    "description": "Learn about AGI School, its educational approach, learning environment, admissions and family visits in Agadir."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "ltr",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
