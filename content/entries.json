@@ -29,7 +29,16 @@
         "title": "American Group International | Education in Agadir",
         "description": "Explore AGI in Agadir: school education, inclusive learning, English examinations and professional learning."
       },
-      "claims": [],
+      "claims": [
+        "C-001",
+        "C-002",
+        "C-008",
+        "C-009",
+        "C-010",
+        "C-014",
+        "C-015",
+        "C-021"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -55,7 +64,16 @@
         "title": "American Group International | Éducation à Agadir",
         "description": "Découvrez AGI à Agadir : école, accompagnement inclusif, examens d’anglais et développement professionnel."
       },
-      "claims": [],
+      "claims": [
+        "C-001",
+        "C-002",
+        "C-008",
+        "C-009",
+        "C-010",
+        "C-014",
+        "C-015",
+        "C-021"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -81,7 +99,16 @@
         "title": "American Group International | التعليم بأكادير",
         "description": "اكتشفوا AGI بأكادير: التعليم المدرسي والمواكبة الدامجة وامتحانات الإنجليزية والتطوير المهني."
       },
-      "claims": [],
+      "claims": [
+        "C-001",
+        "C-002",
+        "C-008",
+        "C-009",
+        "C-010",
+        "C-014",
+        "C-015",
+        "C-021"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -107,7 +134,15 @@
         "title": "AGI School | School Education in Agadir",
         "description": "Learn about AGI School, its educational approach, learning environment, admissions and family visits in Agadir."
       },
-      "claims": [],
+      "claims": [
+        "C-002",
+        "C-003",
+        "C-004",
+        "C-005",
+        "C-006",
+        "C-007",
+        "C-019"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -133,7 +168,15 @@
         "title": "École AGI | Enseignement scolaire à Agadir",
         "description": "Découvrez l’approche pédagogique, l’environnement d’apprentissage, les admissions et les visites de l’École AGI."
       },
-      "claims": [],
+      "claims": [
+        "C-002",
+        "C-003",
+        "C-004",
+        "C-005",
+        "C-006",
+        "C-007",
+        "C-019"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -159,7 +202,15 @@
         "title": "مدرسة AGI | التعليم المدرسي بأكادير",
         "description": "تعرفوا على المقاربة التربوية وبيئة التعلم وإجراءات التسجيل وزيارات مدرسة AGI."
       },
-      "claims": [],
+      "claims": [
+        "C-002",
+        "C-003",
+        "C-004",
+        "C-005",
+        "C-006",
+        "C-007",
+        "C-019"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -185,7 +236,10 @@
         "title": "Inclusive Learning Support | AGI Agadir",
         "description": "Explore AGI's educational support approach and how families can discuss individual learning needs."
       },
-      "claims": [],
+      "claims": [
+        "C-017",
+        "C-018"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -211,7 +265,10 @@
         "title": "Accompagnement pédagogique inclusif | AGI",
         "description": "Découvrez l’accompagnement pédagogique proposé et les échanges possibles avec les familles."
       },
-      "claims": [],
+      "claims": [
+        "C-017",
+        "C-018"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -237,7 +294,10 @@
         "title": "المواكبة التربوية الدامجة | AGI",
         "description": "اكتشفوا مقاربة AGI في الدعم التربوي وسبل التواصل مع الأسر بشأن احتياجات التعلم."
       },
-      "claims": [],
+      "claims": [
+        "C-017",
+        "C-018"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -263,7 +323,15 @@
         "title": "Anglia Examinations Morocco | AGI",
         "description": "Discover Anglia English examinations in Morocco, CEFR-referenced levels, registration information and learning resources."
       },
-      "claims": [],
+      "claims": [
+        "C-008",
+        "C-009",
+        "C-010",
+        "C-011",
+        "C-012",
+        "C-014",
+        "C-015"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -289,7 +357,15 @@
         "title": "Anglia Examinations Morocco | AGI",
         "description": "Découvrez les examens Anglia au Maroc, les niveaux référencés au CECRL et les modalités d’inscription."
       },
-      "claims": [],
+      "claims": [
+        "C-008",
+        "C-009",
+        "C-010",
+        "C-011",
+        "C-012",
+        "C-014",
+        "C-015"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -315,7 +391,15 @@
         "title": "امتحانات Anglia بالمغرب | AGI",
         "description": "تعرفوا على امتحانات Anglia ومستوياتها المرجعية وإجراءات التسجيل وموارد التعلم بالمغرب."
       },
-      "claims": [],
+      "claims": [
+        "C-008",
+        "C-009",
+        "C-010",
+        "C-011",
+        "C-012",
+        "C-014",
+        "C-015"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -341,7 +425,9 @@
         "title": "C.I.T.E. English Assessment | Anglia Morocco",
         "description": "Learn about Anglia's C.I.T.E. English-language assessment for people teaching or preparing to teach English."
       },
-      "claims": [],
+      "claims": [
+        "C-013"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -367,7 +453,9 @@
         "title": "Évaluation C.I.T.E. en anglais | Anglia Morocco",
         "description": "Découvrez l’examen C.I.T.E. d’Anglia destiné aux personnes qui enseignent ou souhaitent enseigner l’anglais."
       },
-      "claims": [],
+      "claims": [
+        "C-013"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -393,7 +481,9 @@
         "title": "امتحان C.I.T.E. في الإنجليزية | Anglia Morocco",
         "description": "تعرفوا على امتحان C.I.T.E. لتقييم الكفايات اللغوية المرتبطة بتدريس الإنجليزية."
       },
-      "claims": [],
+      "claims": [
+        "C-013"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -419,7 +509,9 @@
         "title": "Step To English Books | Anglia Morocco",
         "description": "Explore Step To English learning and examination-preparation resources. Request the current catalogue."
       },
-      "claims": [],
+      "claims": [
+        "C-015"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -445,7 +537,9 @@
         "title": "Livres Step To | Anglia Morocco",
         "description": "Découvrez les ressources Step To pour apprendre l’anglais et préparer les examens Anglia."
       },
-      "claims": [],
+      "claims": [
+        "C-015"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -471,7 +565,9 @@
         "title": "كتب Step To لتعلم الإنجليزية | Anglia Morocco",
         "description": "اكتشفوا موارد Step To للتعلم والتحضير لامتحانات Anglia واطلبوا الفهرس المحيّن."
       },
-      "claims": [],
+      "claims": [
+        "C-015"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -497,7 +593,9 @@
         "title": "Adult Learning Pathways | AGI",
         "description": "Ask about adult secondary-education pathways, eligibility, awarding providers and study options."
       },
-      "claims": [],
+      "claims": [
+        "C-016"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -523,7 +621,9 @@
         "title": "Parcours de formation pour adultes | AGI",
         "description": "Renseignez-vous sur les parcours de fin d’études secondaires, les conditions d’accès et les organismes certificateurs."
       },
-      "claims": [],
+      "claims": [
+        "C-016"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -549,7 +649,9 @@
         "title": "مسارات تعلم الكبار | AGI",
         "description": "استفسروا عن مسارات استكمال التعليم الثانوي وشروط الولوج والجهة المانحة للشهادة."
       },
-      "claims": [],
+      "claims": [
+        "C-016"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -653,7 +755,11 @@
         "title": "Teacher Development | AGI & Anglia Morocco",
         "description": "Explore C.I.T.E. assessment, supervised placements and partner-delivered teacher-development options."
       },
-      "claims": [],
+      "claims": [
+        "C-013",
+        "C-015",
+        "C-022"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -679,7 +785,11 @@
         "title": "Développement professionnel des enseignants | AGI",
         "description": "Découvrez l’évaluation C.I.T.E., les stages encadrés et les formations proposées par des partenaires."
       },
-      "claims": [],
+      "claims": [
+        "C-013",
+        "C-015",
+        "C-022"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -705,7 +815,11 @@
         "title": "التطوير المهني للمدرسين | AGI",
         "description": "تعرفوا على امتحان C.I.T.E. والتداريب المؤطرة وبرامج التطوير التي تقدمها الجهات الشريكة."
       },
-      "claims": [],
+      "claims": [
+        "C-013",
+        "C-015",
+        "C-022"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -731,7 +845,9 @@
         "title": "Examination Invigilation | AGI Agadir",
         "description": "Ask about examination invigilation, venue requirements, availability and awarding-body approval."
       },
-      "claims": [],
+      "claims": [
+        "C-023"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -757,7 +873,9 @@
         "title": "Surveillance d’examens | AGI Agadir",
         "description": "Renseignez-vous sur la surveillance d’examens, les conditions d’accueil et l’accord de l’organisme certificateur."
       },
-      "claims": [],
+      "claims": [
+        "C-023"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -783,7 +901,9 @@
         "title": "مراقبة الامتحانات | AGI أكادير",
         "description": "استفسروا عن مراقبة الامتحانات وشروط الاستضافة وموافقة الجهة المانحة للشهادة."
       },
-      "claims": [],
+      "claims": [
+        "C-023"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -809,7 +929,9 @@
         "title": "Student Wellbeing & Support | AGI",
         "description": "Understand AGI's student support approach, service scope, confidentiality and referral arrangements."
       },
-      "claims": [],
+      "claims": [
+        "C-018"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -835,7 +957,9 @@
         "title": "Bien-être et accompagnement des élèves | AGI",
         "description": "Comprenez l’approche d’AGI en matière d’accompagnement, de confidentialité et d’orientation."
       },
-      "claims": [],
+      "claims": [
+        "C-018"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -861,7 +985,9 @@
         "title": "رفاه التلاميذ والمواكبة | AGI",
         "description": "تعرفوا على مقاربة AGI في مواكبة التلاميذ ونطاق الخدمات والسرية والإحالة."
       },
-      "claims": [],
+      "claims": [
+        "C-018"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -887,7 +1013,13 @@
         "title": "Frequently Asked Questions | AGI",
         "description": "Find answers about AGI's school, Anglia examinations, learning pathways, invigilation and current information."
       },
-      "claims": [],
+      "claims": [
+        "C-006",
+        "C-010",
+        "C-013",
+        "C-016",
+        "C-023"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -913,7 +1045,13 @@
         "title": "Questions fréquentes | AGI",
         "description": "Consultez les réponses sur l’école AGI, les examens Anglia, les parcours de formation et les services."
       },
-      "claims": [],
+      "claims": [
+        "C-006",
+        "C-010",
+        "C-013",
+        "C-016",
+        "C-023"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
@@ -939,7 +1077,13 @@
         "title": "الأسئلة الشائعة | AGI",
         "description": "إجابات حول مدرسة AGI وامتحانات Anglia ومسارات التعلم والخدمات والمعلومات الحالية."
       },
-      "claims": [],
+      "claims": [
+        "C-006",
+        "C-010",
+        "C-013",
+        "C-016",
+        "C-023"
+      ],
       "sources": [],
       "owner": "AGI editorial team",
       "review_by": null,
