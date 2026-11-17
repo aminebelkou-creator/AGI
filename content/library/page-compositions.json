@@ -186,6 +186,156 @@
         "eligibility, curriculum and duration",
         "current prices and application process"
       ]
+    },
+    {
+      "page_id": "agi.page.about",
+      "existing_page_entry": "agi.about",
+      "route_candidate": "/about",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.brand.mission",
+          "slot": "mission"
+        },
+        {
+          "module_id": "agi.brand.philosophy",
+          "slot": "philosophy"
+        },
+        {
+          "module_id": "agi.brand.vision",
+          "slot": "vision"
+        },
+        {
+          "module_id": "agi.story.founding",
+          "slot": "history"
+        },
+        {
+          "module_id": "agi.people.founder-profile",
+          "slot": "leadership"
+        }
+      ],
+      "missing_content": [
+        "verified legal identity and institutional history",
+        "current leadership biographies and approved portraits",
+        "evidence-backed recognition and partner directory"
+      ]
+    },
+    {
+      "page_id": "agi.page.admissions",
+      "existing_page_entry": "agi.admissions",
+      "route_candidate": "/admissions",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.admissions.journey",
+          "slot": "process"
+        },
+        {
+          "module_id": "agi.admissions.documents",
+          "slot": "document-checklist"
+        },
+        {
+          "module_id": "agi.admissions.placement",
+          "slot": "assessment"
+        },
+        {
+          "module_id": "agi.fees.structure",
+          "slot": "fees-explainer"
+        },
+        {
+          "module_id": "agi.cta.admissions-enquiry",
+          "slot": "closing-cta"
+        }
+      ],
+      "missing_content": [
+        "current academic calendar",
+        "approved fee table and refund rules",
+        "current contact and response workflow",
+        "verified application form and data handling notice"
+      ]
+    },
+    {
+      "page_id": "agi.page.parents",
+      "existing_page_entry": "agi.parents",
+      "route_candidate": "/parents",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.parents.school-home-partnership",
+          "slot": "learning-approach"
+        },
+        {
+          "module_id": "agi.parents.faq.language-support",
+          "slot": "language-support"
+        },
+        {
+          "module_id": "agi.parents.faq.learning-support",
+          "slot": "learning-support"
+        },
+        {
+          "module_id": "agi.admissions.journey",
+          "slot": "admissions-summary"
+        },
+        {
+          "module_id": "agi.cta.school-visit",
+          "slot": "visit-cta"
+        }
+      ],
+      "missing_content": [
+        "approved testimonials and image permissions",
+        "verified parent commitments and service capacity",
+        "current fees and school facts"
+      ]
+    },
+    {
+      "page_id": "agi.page.student-life",
+      "existing_page_entry": "agi.student-life",
+      "route_candidate": "/student-life",
+      "status": "editorial-review",
+      "modules": [
+        {
+          "module_id": "agi.parents.school-home-partnership",
+          "slot": "community"
+        },
+        {
+          "module_id": "agi.school.curriculum-overview",
+          "slot": "learning"
+        },
+        {
+          "module_id": "agi.student-life.community-service",
+          "slot": "community-participation"
+        }
+      ],
+      "missing_content": [
+        "current student activities and annual events",
+        "consented student stories and photographs",
+        "approved service-learning policy and current hours"
+      ]
+    },
+    {
+      "page_id": "agi.page.policies",
+      "existing_page_entry": "agi.policies",
+      "route_candidate": "/policies",
+      "status": "legal-review",
+      "modules": [
+        {
+          "module_id": "agi.policy.attendance-summary",
+          "slot": "attendance"
+        },
+        {
+          "module_id": "agi.policy.academic-progression",
+          "slot": "academic-progression"
+        },
+        {
+          "module_id": "agi.admissions.documents",
+          "slot": "records-and-privacy"
+        }
+      ],
+      "missing_content": [
+        "approved current handbook and policy documents",
+        "effective dates and version history",
+        "legal/privacy/safeguarding review"
+      ]
     }
   ]
 }
