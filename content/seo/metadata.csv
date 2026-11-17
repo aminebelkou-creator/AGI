@@ -1,0 +1,37 @@
+slug,locale,seo_title,meta_description,status
+"homepage","en-US","American Group International | Education in Agadir","Explore AGI in Agadir: school education, inclusive learning, English examinations and professional learning.",draft
+"school","en-US","AGI School | School Education in Agadir","Learn about AGI School, its educational approach, learning environment, admissions and family visits in Agadir.",draft
+"inclusive-learning","en-US","Inclusive Learning Support | AGI Agadir","Explore AGI's educational support approach and how families can discuss individual learning needs.",draft
+"anglia-morocco","en-US","Anglia Examinations Morocco | AGI","Discover Anglia English examinations in Morocco, CEFR-referenced levels, registration information and learning resources.",draft
+"cite","en-US","C.I.T.E. English Assessment | Anglia Morocco","Learn about Anglia's C.I.T.E. English-language assessment for people teaching or preparing to teach English.",draft
+"step-to-books","en-US","Step To English Books | Anglia Morocco","Explore Step To English learning and examination-preparation resources. Request the current catalogue.",draft
+"adult-learning","en-US","Adult Learning Pathways | AGI","Ask about adult secondary-education pathways, eligibility, awarding providers and study options.",draft
+"professional-english","en-US","Professional & Medical English | AGI","Discuss tailored English learning for business, workplace communication and healthcare contexts.",draft
+"teacher-development","en-US","Teacher Development | AGI & Anglia Morocco","Explore C.I.T.E. assessment, supervised placements and partner-delivered teacher-development options.",draft
+"proctoring","en-US","Examination Invigilation | AGI Agadir","Ask about examination invigilation, venue requirements, availability and awarding-body approval.",draft
+"wellbeing","en-US","Student Wellbeing & Support | AGI","Understand AGI's student support approach, service scope, confidentiality and referral arrangements.",draft
+"faq","en-US","Frequently Asked Questions | AGI","Find answers about AGI's school, Anglia examinations, learning pathways, invigilation and current information.",draft
+"homepage","fr-MA","American Group International | Éducation à Agadir","Découvrez AGI à Agadir : école, accompagnement inclusif, examens d’anglais et développement professionnel.",draft
+"school","fr-MA","École AGI | Enseignement scolaire à Agadir","Découvrez l’approche pédagogique, l’environnement d’apprentissage, les admissions et les visites de l’École AGI.",draft
+"inclusive-learning","fr-MA","Accompagnement pédagogique inclusif | AGI","Découvrez l’accompagnement pédagogique proposé et les échanges possibles avec les familles.",draft
+"anglia-morocco","fr-MA","Anglia Examinations Morocco | AGI","Découvrez les examens Anglia au Maroc, les niveaux référencés au CECRL et les modalités d’inscription.",draft
+"cite","fr-MA","Évaluation C.I.T.E. en anglais | Anglia Morocco","Découvrez l’examen C.I.T.E. d’Anglia destiné aux personnes qui enseignent ou souhaitent enseigner l’anglais.",draft
+"step-to-books","fr-MA","Livres Step To | Anglia Morocco","Découvrez les ressources Step To pour apprendre l’anglais et préparer les examens Anglia.",draft
+"adult-learning","fr-MA","Parcours de formation pour adultes | AGI","Renseignez-vous sur les parcours de fin d’études secondaires, les conditions d’accès et les organismes certificateurs.",draft
+"professional-english","fr-MA","Anglais professionnel et médical | AGI","Échangez sur des formations en anglais adaptées aux besoins professionnels et aux contextes de santé.",draft
+"teacher-development","fr-MA","Développement professionnel des enseignants | AGI","Découvrez l’évaluation C.I.T.E., les stages encadrés et les formations proposées par des partenaires.",draft
+"proctoring","fr-MA","Surveillance d’examens | AGI Agadir","Renseignez-vous sur la surveillance d’examens, les conditions d’accueil et l’accord de l’organisme certificateur.",draft
+"wellbeing","fr-MA","Bien-être et accompagnement des élèves | AGI","Comprenez l’approche d’AGI en matière d’accompagnement, de confidentialité et d’orientation.",draft
+"faq","fr-MA","Questions fréquentes | AGI","Consultez les réponses sur l’école AGI, les examens Anglia, les parcours de formation et les services.",draft
+"homepage","ar-MA","American Group International | التعليم بأكادير","اكتشفوا AGI بأكادير: التعليم المدرسي والمواكبة الدامجة وامتحانات الإنجليزية والتطوير المهني.",draft
+"school","ar-MA","مدرسة AGI | التعليم المدرسي بأكادير","تعرفوا على المقاربة التربوية وبيئة التعلم وإجراءات التسجيل وزيارات مدرسة AGI.",draft
+"inclusive-learning","ar-MA","المواكبة التربوية الدامجة | AGI","اكتشفوا مقاربة AGI في الدعم التربوي وسبل التواصل مع الأسر بشأن احتياجات التعلم.",draft
+"anglia-morocco","ar-MA","امتحانات Anglia بالمغرب | AGI","تعرفوا على امتحانات Anglia ومستوياتها المرجعية وإجراءات التسجيل وموارد التعلم بالمغرب.",draft
+"cite","ar-MA","امتحان C.I.T.E. في الإنجليزية | Anglia Morocco","تعرفوا على امتحان C.I.T.E. لتقييم الكفايات اللغوية المرتبطة بتدريس الإنجليزية.",draft
+"step-to-books","ar-MA","كتب Step To لتعلم الإنجليزية | Anglia Morocco","اكتشفوا موارد Step To للتعلم والتحضير لامتحانات Anglia واطلبوا الفهرس المحيّن.",draft
+"adult-learning","ar-MA","مسارات تعلم الكبار | AGI","استفسروا عن مسارات استكمال التعليم الثانوي وشروط الولوج والجهة المانحة للشهادة.",draft
+"professional-english","ar-MA","الإنجليزية المهنية والطبية | AGI","ناقشوا برامج تعلم الإنجليزية للأعمال والتواصل المهني والسياقات الصحية.",draft
+"teacher-development","ar-MA","التطوير المهني للمدرسين | AGI","تعرفوا على امتحان C.I.T.E. والتداريب المؤطرة وبرامج التطوير التي تقدمها الجهات الشريكة.",draft
+"proctoring","ar-MA","مراقبة الامتحانات | AGI أكادير","استفسروا عن مراقبة الامتحانات وشروط الاستضافة وموافقة الجهة المانحة للشهادة.",draft
+"wellbeing","ar-MA","رفاه التلاميذ والمواكبة | AGI","تعرفوا على مقاربة AGI في مواكبة التلاميذ ونطاق الخدمات والسرية والإحالة.",draft
+"faq","ar-MA","الأسئلة الشائعة | AGI","إجابات حول مدرسة AGI وامتحانات Anglia ومسارات التعلم والخدمات والمعلومات الحالية.",draft
