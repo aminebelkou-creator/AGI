@@ -12,10 +12,10 @@
 - Manifest and SEO metadata for all 51 page/locale combinations.
 - Portable JSON Schema and a CMS-neutral structured export at `content/entries.json`.
 - A lightweight validation script at `scripts/validate_content_export.py`.
-- A first reusable multilingual content library at `content/library/reusable-content-library.json`: 34 semantic content modules × 3 locales (102 locale variants).
+- A first reusable multilingual content library at `content/library/reusable-content-library.json`: 43 semantic content modules × 3 locales (129 locale variants).
 - Reusable content schema at `content/schemas/reusable-content-library.schema.json`, authoring/composition guide at `content/library/README.md`, and validator at `scripts/validate_reusable_content.py`.
 - 12 machine-readable page composition maps at `content/library/page-compositions.json`, connecting page-level drafts to reusable modules by stable ID and listing content gaps.
-- Governed fact register at `content/facts/fact-register.csv`: 30 material or volatile claims from v2, each with a source pointer, owner, evidence requirement and publication rule. Reusable modules link to relevant fact IDs, and the module validator checks reference integrity. A validator at `scripts/validate_fact_register.py` checks register completeness and verification-date requirements.
+- Governed fact register at `content/facts/fact-register.csv`: 38 material or volatile claims from v2, each with a source pointer, owner, evidence requirement and publication rule. Reusable modules link to relevant fact IDs, and the module validator checks reference integrity. A validator at `scripts/validate_fact_register.py` checks register completeness and verification-date requirements.
 - CI workflow extended to validate the reusable content library alongside the existing page export, legacy inventory and migration plan.
 - Import architecture assessment at `content/architecture/current-site-integration.md`.
 - Legacy route inventory at `content/migration/legacy-route-inventory.csv`: 68 existing page routes and 60 news items (128 referenced JSON files), all flagged for review rather than automatic replacement.
@@ -32,7 +32,7 @@ The 17 page groups are: homepage, school, inclusive learning, Anglia Morocco, C.
 
 ## Reusable content coverage
 
-The modular library is a complementary layer, not a replacement for the 17 page narratives. It now contains 34 modules and 102 locale variants. Its content covers brand positioning and pillars, institutional mission/vision/history, K–12, inclusive learning, admissions, parent guidance, fees, curriculum, student life, policies, Anglia examinations, C.I.T.E., Step To resources, adult learning, professional English, proctoring, education consultancy, teacher development, wellbeing and CTAs.
+The modular library is a complementary layer, not a replacement for the 17 page narratives. It now contains 43 modules and 129 locale variants. Its content covers brand positioning and pillars, institutional mission/vision/history, K–12, inclusive learning, admissions, parent guidance, fees, curriculum, student life, policies, Anglia examinations, C.I.T.E., Step To resources, adult learning, professional English, proctoring, education consultancy, teacher development, wellbeing, Anglia exam formats, CEFR, special arrangements, class formats, placement, recognition and CTAs.
 
 Page templates should compose modules by stable IDs instead of copying the same programme/service description into several pages. Volatile facts (fees, dates, hours, staff roles, availability and partner status) still need a separately governed fact register with source, owner, verification date and review/expiry date before being embedded or reused.
 
@@ -60,6 +60,8 @@ The new content export and reusable library are deliberately separate from the l
 6. Only then prepare CMS import and staging-only previews.
 
 ## Journal reconciliation
+
+The Anglia content audit is documented in `content/research/anglia-content-audit.md`; it records high-risk copy conflicts and partner/qualification evidence gates.
 
 The journal review is now documented in `content/migration/journal-content-findings.md` and `content/migration/journal-reconciliation.csv`. It reconciles 60 WordPress export posts, 66 journal index cards, 66 article files, seven crawl-inventory additions and one CCGi source post routed to a separate designed page. The dedicated validator is `scripts/validate_journal_reconciliation.py`.
 
