@@ -22,6 +22,13 @@
 - Chichester College Group: https://www.anglia.org/about/chichester-college-group
 - Mastery C2: https://www.anglia.org/exams/mastery
 
+## Anglia C.I.T.E. clarification
+- Official Anglia C.I.T.E. examination description (explicitly states that C.I.T.E. is not itself a teaching qualification): https://www.anglia.org/exams/cite-exam-for-teachers-of-english
+- Anglia General English examination levels and CEFR mapping: https://www.anglia.org/exams/general-english-exams
+- Anglia Business English examination levels: https://www.anglia.org/exams/business-english-exams
+- Anglia CEFR guidance: https://www.anglia.org/exams/cefr
+- Anglia Step To books: https://www.anglia.org/step-to-books
+
 ## Moroccan law
 - Ministry of Justice, Law 59.21 (Official Bulletin 7485, 23 February 2026): https://adala.justice.gov.ma/api/uploads/2026/03/09/ظھير%20شريف%20رقم%201.26.05%20بتنفيذ%20القانون%20رقم%2059.21%20المتعلق%20بالتعليم%20المدرسي-1773062853581.pdf
 - Ministry of National Education copy: https://pw.men.gov.ma/sites/default/files/loi59.21Enseignement-Scolaire.pdf
