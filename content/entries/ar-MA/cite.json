@@ -1,0 +1,26 @@
+{
+  "id": "agi.cite",
+  "slug": "cite",
+  "locale": "ar-MA",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "translation-review",
+  "title": "C.I.T.E. — Certificate for International Teachers of English",
+  "summary": "يُعد C.I.T.E. تقييماً من Anglia Examinations للأشخاص الذين يدرّسون الإنجليزية أو يستعدون لتدريسها. وتصفه Anglia بأنه امتحان يقدم دليلاً على الكفايات اللغوية في الإنجليزية المرتبطة بسياق تدريسها، وهو مرتبط بمستويات الإطار الأوروبي المرجعي المشترك للغات.",
+  "body": "يُعد C.I.T.E. تقييماً من Anglia Examinations للأشخاص الذين يدرّسون الإنجليزية أو يستعدون لتدريسها. وتصفه Anglia بأنه امتحان يقدم دليلاً على الكفايات اللغوية في الإنجليزية المرتبطة بسياق تدريسها، وهو مرتبط بمستويات الإطار الأوروبي المرجعي المشترك للغات.\n\nوتوضح Anglia أن C.I.T.E. ليس في حد ذاته مؤهلاً مهنياً للتدريس. لذلك لا ينبغي تقديمه باعتباره رخصة لمزاولة التدريس أو شهادة جامعية أو مؤهل TEFL/TESOL مستقلاً.\n\nوتحدد Anglia ثلاث صيغ: C.I.T.E. وC.I.T.E. (Young Learners) وC.I.T.E. (Very Young Learners). يرجى مراجعة المواصفات المحيّنة قبل النشر.\n\n**الإجراء:** التواصل مع Anglia Morocco لمعرفة إجراءات الامتحان الحالية.",
+  "seo": {
+    "title": "امتحان C.I.T.E. في الإنجليزية | Anglia Morocco",
+    "description": "تعرفوا على امتحان C.I.T.E. لتقييم الكفايات اللغوية المرتبطة بتدريس الإنجليزية."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "rtl",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
