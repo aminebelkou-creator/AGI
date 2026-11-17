@@ -7,7 +7,7 @@
     "content/manifest.csv",
     "content/seo/metadata.csv"
   ],
-  "record_count": 36,
+  "record_count": 51,
   "locales": [
     "en-US",
     "fr-MA",
@@ -1093,6 +1093,396 @@
         "Verify current facts, programme availability and contact details",
         "Complete page-specific legal, regulatory and partner checks before publication",
         "Native-speaker translation review where applicable"
+      ]
+    },
+    {
+      "id": "agi.about",
+      "slug": "about",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "editorial-review",
+      "title": "About AGI",
+      "summary": "Learn about AGI’s educational purpose, philosophy, history and leadership in Agadir.",
+      "body": "American Group International brings together school education, English-language learning and examinations, teacher development and wider educational pathways. This page introduces the institution’s mission, educational philosophy, vision and founding story, with verified information about its leadership and current activities.\n\nExplore the mission, philosophy and vision modules; read the founding story after historical details are confirmed; and review the current leadership profile only after title and biography approval.",
+      "seo": {
+        "title": "About AGI | AGI",
+        "description": "Learn about AGI’s educational purpose, philosophy, history and leadership in Agadir."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.about",
+      "slug": "about",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "translation-review",
+      "title": "À propos d’AGI",
+      "summary": "Découvrez la vocation éducative, la philosophie, l’histoire et la direction d’AGI à Agadir.",
+      "body": "American Group International réunit l’enseignement scolaire, l’apprentissage et l’évaluation de l’anglais, le développement des enseignants et d’autres parcours éducatifs. Cette page présente la mission, la philosophie éducative, la vision et l’histoire de l’institution, ainsi que des informations vérifiées sur sa direction et ses activités actuelles.\n\nDécouvrez les modules consacrés à la mission, à la philosophie et à la vision ; consultez le récit des origines après confirmation des éléments historiques ; et ne publiez le profil de la direction qu’après validation du titre et de la biographie.",
+      "seo": {
+        "title": "À propos d’AGI | AGI",
+        "description": "Découvrez la vocation éducative, la philosophie, l’histoire et la direction d’AGI à Agadir."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.about",
+      "slug": "about",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "translation-review",
+      "title": "من نحن؟",
+      "summary": "تعرفوا على رسالة AGI وفلسفتها التربوية وتاريخها وقيادتها بأكادير.",
+      "body": "تجمع American Group International بين التعليم المدرسي وتعلم اللغة الإنجليزية وتقييم الكفايات فيها والتطوير المهني للمدرسين ومسارات تعليمية أخرى. تقدم هذه الصفحة رسالة المؤسسة وفلسفتها التربوية ورؤيتها وقصة نشأتها، إلى جانب معلومات متحقق منها حول قيادتها وأنشطتها الحالية.\n\nيمكن الاطلاع على وحدات الرسالة والفلسفة والرؤية، وعلى قصة التأسيس بعد تأكيد تفاصيلها التاريخية، كما لا ينشر تعريف القيادة إلا بعد اعتماد الصفة المهنية والسيرة الذاتية.",
+      "seo": {
+        "title": "من نحن؟ | AGI",
+        "description": "تعرفوا على رسالة AGI وفلسفتها التربوية وتاريخها وقيادتها بأكادير."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.admissions",
+      "slug": "admissions",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "editorial-review",
+      "title": "Admissions and enrolment",
+      "summary": "Understand the admissions conversation, assessment, required records and current fee information.",
+      "body": "Choosing a school is an important decision. AGI’s admissions process begins with an enquiry and a conversation about the learner’s age, previous schooling and educational needs. Families can arrange a visit, ask about assessment and request the current admissions checklist and fee schedule.\n\nThe admissions team should explain each step, the documents required, how personal information is handled and the conditions that apply to the selected programme. All dates, eligibility rules and prices must be checked against the current academic-year documents.",
+      "seo": {
+        "title": "Admissions and enrolment | AGI",
+        "description": "Understand the admissions conversation, assessment, required records and current fee information."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.admissions",
+      "slug": "admissions",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "translation-review",
+      "title": "Admissions et inscription",
+      "summary": "Comprenez les échanges avec le service des admissions, les évaluations, les documents requis et les frais en vigueur.",
+      "body": "Le choix d’un établissement scolaire est une décision importante. La démarche d’admission d’AGI commence par une prise de contact et un échange sur l’âge de l’apprenant, sa scolarité antérieure et ses besoins éducatifs. Les familles peuvent organiser une visite, poser des questions sur les évaluations et demander la liste actualisée des documents ainsi que le barème des frais.\n\nLe service des admissions doit expliquer chaque étape, les documents requis, le traitement des données personnelles et les conditions applicables au programme choisi. Toutes les dates, conditions d’admissibilité et tarifs doivent être vérifiés à partir des documents de l’année scolaire en cours.",
+      "seo": {
+        "title": "Admissions et inscription | AGI",
+        "description": "Comprenez les échanges avec le service des admissions, les évaluations, les documents requis et les frais en vigueur."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.admissions",
+      "slug": "admissions",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "translation-review",
+      "title": "التسجيل والقبول",
+      "summary": "تعرفوا على التواصل مع مصلحة التسجيل والتقييم والوثائق المطلوبة ومعلومات الرسوم المحينة.",
+      "body": "يعد اختيار المؤسسة التعليمية قراراً مهماً. وتبدأ إجراءات القبول لدى AGI بالتواصل الأولي ومناقشة سن المتعلم ومساره الدراسي السابق واحتياجاته التعليمية. ويمكن للأسر ترتيب زيارة والاستفسار عن التقييم وطلب القائمة المحينة للوثائق وجدول الرسوم المعمول به.\n\nيتعين على مصلحة التسجيل توضيح كل مرحلة والوثائق المطلوبة وكيفية معالجة البيانات الشخصية والشروط المرتبطة بالبرنامج المختار. ويجب التحقق من جميع التواريخ وشروط القبول والأسعار بالرجوع إلى الوثائق المعتمدة للسنة الدراسية الجارية.",
+      "seo": {
+        "title": "التسجيل والقبول | AGI",
+        "description": "تعرفوا على التواصل مع مصلحة التسجيل والتقييم والوثائق المطلوبة ومعلومات الرسوم المحينة."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.parents",
+      "slug": "parents",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "editorial-review",
+      "title": "For parents",
+      "summary": "A practical starting point for families exploring AGI and considering a school visit.",
+      "body": "Families need clear information before choosing an educational setting. This page brings together AGI’s educational approach, the school–home partnership, admissions guidance and questions to discuss with the school.\n\nEvery learner has a different history, strengths and support needs. Contact the admissions team to discuss the current programme, available learning support, grade availability and the documents needed for an informed conversation.",
+      "seo": {
+        "title": "For parents | AGI",
+        "description": "A practical starting point for families exploring AGI and considering a school visit."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.parents",
+      "slug": "parents",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "translation-review",
+      "title": "Pour les parents",
+      "summary": "Un point de départ pratique pour les familles qui découvrent AGI et envisagent une visite.",
+      "body": "Les familles ont besoin d’informations claires avant de choisir un établissement éducatif. Cette page réunit l’approche pédagogique d’AGI, le partenariat entre l’école et la famille, les informations sur l’admission et les questions à discuter avec l’établissement.\n\nChaque apprenant possède son propre parcours, ses forces et ses besoins d’accompagnement. Contactez le service des admissions pour échanger sur le programme actuel, les soutiens pédagogiques disponibles, les niveaux ouverts et les documents utiles.",
+      "seo": {
+        "title": "Pour les parents | AGI",
+        "description": "Un point de départ pratique pour les familles qui découvrent AGI et envisagent une visite."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.parents",
+      "slug": "parents",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "translation-review",
+      "title": "معلومات للأسر",
+      "summary": "مدخل عملي للأسر الراغبة في التعرف على AGI والتفكير في زيارة المؤسسة.",
+      "body": "تحتاج الأسر إلى معلومات واضحة قبل اختيار المؤسسة التعليمية. تجمع هذه الصفحة المقاربة التربوية لـAGI والشراكة بين المدرسة والأسرة وإرشادات التسجيل والأسئلة التي يمكن مناقشتها مع المؤسسة.\n\nلكل متعلم مساره ونقاط قوته واحتياجاته الخاصة. يرجى التواصل مع مصلحة التسجيل لمناقشة البرنامج المتاح حالياً وأشكال الدعم التربوي الممكنة والمستويات المفتوحة والوثائق اللازمة لاتخاذ قرار مبني على المعلومات.",
+      "seo": {
+        "title": "معلومات للأسر | AGI",
+        "description": "مدخل عملي للأسر الراغبة في التعرف على AGI والتفكير في زيارة المؤسسة."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.student-life",
+      "slug": "student-life",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "editorial-review",
+      "title": "Student life",
+      "summary": "Explore learning, relationships and participation beyond individual lessons.",
+      "body": "Student life is shaped by the learning environment, relationships with teachers and peers, family involvement and opportunities to participate in the wider community. AGI’s materials describe a school community with learners from different backgrounds and a focus on whole-person development.\n\nThe final page should include current activities, school-year events and approved student stories or photographs. Personal stories and identifiable images require appropriate consent and publication rights.",
+      "seo": {
+        "title": "Student life | AGI",
+        "description": "Explore learning, relationships and participation beyond individual lessons."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.student-life",
+      "slug": "student-life",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "translation-review",
+      "title": "La vie des élèves",
+      "summary": "Découvrez les apprentissages, les relations et la participation au-delà des cours.",
+      "body": "La vie des élèves se construit à travers l’environnement d’apprentissage, les relations avec les enseignants et les camarades, la participation des familles et les occasions de contribuer à la communauté. Les supports d’AGI décrivent une communauté scolaire composée d’apprenants d’horizons différents et attentive au développement global.\n\nLa page finale devra présenter les activités actuelles, les événements de l’année scolaire et des témoignages ou photographies autorisés. Les récits personnels et les images permettant d’identifier un élève nécessitent les consentements et droits de publication appropriés.",
+      "seo": {
+        "title": "La vie des élèves | AGI",
+        "description": "Découvrez les apprentissages, les relations et la participation au-delà des cours."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.student-life",
+      "slug": "student-life",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "translation-review",
+      "title": "الحياة المدرسية",
+      "summary": "اكتشفوا التعلم والعلاقات والمشاركة في الأنشطة خارج الدروس.",
+      "body": "تتشكل الحياة المدرسية من خلال فضاء التعلم والعلاقات مع المدرسين والزملاء ومشاركة الأسر وفرص الإسهام في المحيط المجتمعي. وتصف مواد AGI مجتمعاً مدرسياً يضم متعلمين من خلفيات متنوعة ويولي أهمية لتنمية شخصية المتعلم في مختلف أبعادها.\n\nينبغي أن تتضمن الصفحة النهائية الأنشطة الجارية ومواعيد السنة الدراسية وقصصاً أو صوراً للتلاميذ مرخصاً بنشرها. وتتطلب القصص الشخصية والصور التي تسمح بالتعرف على التلميذ الحصول على الموافقات وحقوق النشر اللازمة.",
+      "seo": {
+        "title": "الحياة المدرسية | AGI",
+        "description": "اكتشفوا التعلم والعلاقات والمشاركة في الأنشطة خارج الدروس."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.policies",
+      "slug": "policies",
+      "locale": "en-US",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "editorial-review",
+      "title": "Policies and family guidance",
+      "summary": "Find the current rules and procedures that support a safe, clear and consistent school experience.",
+      "body": "School policies explain the expectations and procedures that guide daily learning and the relationship between the school and families. Families should be able to consult the current approved documents covering attendance, punctuality, assessment, academic progression, safeguarding, complaints, refunds, media consent and parent responsibilities.\n\nThis page should provide short, plain-language summaries and links to the full policy documents. Each summary must identify its effective academic year and must not replace the approved policy or handbook.",
+      "seo": {
+        "title": "Policies and family guidance | AGI",
+        "description": "Find the current rules and procedures that support a safe, clear and consistent school experience."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.policies",
+      "slug": "policies",
+      "locale": "fr-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "translation-review",
+      "title": "Politiques scolaires et informations aux familles",
+      "summary": "Consultez les règles et procédures en vigueur qui encadrent la vie scolaire.",
+      "body": "Les politiques scolaires précisent les attentes et les procédures qui organisent les apprentissages quotidiens et les relations entre l’établissement et les familles. Les familles doivent pouvoir consulter les documents approuvés et à jour concernant l’assiduité, la ponctualité, l’évaluation, la progression scolaire, la protection des élèves, les réclamations, les remboursements, le droit à l’image et les responsabilités parentales.\n\nCette page doit proposer des résumés simples et des liens vers les documents complets. Chaque résumé doit préciser son année scolaire d’application et ne remplace ni la politique approuvée ni le manuel scolaire.",
+      "seo": {
+        "title": "Politiques scolaires et informations aux familles | AGI",
+        "description": "Consultez les règles et procédures en vigueur qui encadrent la vie scolaire."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "ltr",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
+      ]
+    },
+    {
+      "id": "agi.policies",
+      "slug": "policies",
+      "locale": "ar-MA",
+      "source_locale": "en-US",
+      "translation_group": "agi-expanded-core-pages",
+      "status": "translation-review",
+      "title": "السياسات المدرسية وإرشادات الأسر",
+      "summary": "اطلعوا على القواعد والإجراءات المعمول بها لتنظيم الحياة المدرسية.",
+      "body": "توضح السياسات المدرسية التوقعات والإجراءات التي تؤطر التعلم اليومي والعلاقة بين المؤسسة والأسر. وينبغي أن تتمكن الأسر من الاطلاع على الوثائق المعتمدة والمحينة المتعلقة بالحضور والانضباط في المواعيد والتقييم والانتقال الدراسي وحماية التلاميذ والشكايات واسترداد الرسوم والموافقة على استعمال الصور ومسؤوليات الأسر.\n\nينبغي أن تقدم هذه الصفحة ملخصات مبسطة وروابط إلى الوثائق الكاملة، مع تحديد السنة الدراسية التي يسري خلالها كل ملخص. ولا يحل الملخص محل السياسة المعتمدة أو الدليل المدرسي.",
+      "seo": {
+        "title": "السياسات المدرسية وإرشادات الأسر | AGI",
+        "description": "اطلعوا على القواعد والإجراءات المعمول بها لتنظيم الحياة المدرسية."
+      },
+      "claims": [],
+      "sources": [],
+      "owner": "AGI editorial team",
+      "review_by": null,
+      "direction": "rtl",
+      "publication_gates": [
+        "Editorial owner approval",
+        "Verify current programme facts and dates",
+        "Complete relevant legal, privacy, safeguarding, media-rights and partner checks",
+        "Native-speaker localisation review"
       ]
     }
   ]
