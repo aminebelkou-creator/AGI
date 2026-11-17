@@ -1,0 +1,26 @@
+{
+  "id": "agi.homepage",
+  "slug": "homepage",
+  "locale": "fr-MA",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "translation-review",
+  "title": "American Group International — Page d’accueil",
+  "summary": "",
+  "body": "**Titre SEO :** American Group International | Éducation à Agadir, Maroc  \n**Méta-description :** Découvrez AGI à Agadir : enseignement scolaire, accompagnement pédagogique inclusif, apprentissage et examens d’anglais, développement professionnel des enseignants et parcours de formation pour adultes.\n\n## L’éducation, les langues et les perspectives d’avenir, au cœur d’Agadir.\nAmerican Group International (AGI) réunit des activités d’enseignement scolaire, d’accompagnement pédagogique inclusif, d’apprentissage et d’évaluation de l’anglais, de développement professionnel des enseignants et différentes possibilités de formation. Notre conviction est simple : chaque apprenant mérite d’être compris, encouragé et accompagné dans son parcours.\n\n**Action principale :** Découvrir l’école AGI · **Action secondaire :** Découvrir nos programmes · **Lien :** Prendre rendez-vous pour une visite\n\n## Choisissez votre parcours\n**Pour les familles :** découvrez le programme scolaire, l’approche pédagogique, les admissions et l’accompagnement proposé aux élèves et à leurs familles.  \n**Pour les apprenants en anglais :** progressez étape par étape et découvrez les examens Anglia, les niveaux référencés au CECRL, les ressources de préparation et les modalités d’examen.  \n**Pour les enseignants :** découvrez les examens Anglia C.I.T.E. et les possibilités distinctes de développement professionnel.  \n**Pour les professionnels :** échangez avec notre équipe sur des formations en anglais adaptées à la communication professionnelle et à vos besoins sectoriels.  \n**Pour les adultes en formation :** consultez les parcours, les conditions d’accès et l’organisme responsable de chaque qualification.  \n**Pour les partenaires éducatifs :** renseignez-vous sur les centres d’examen et les collaborations institutionnelles.\n\n## Accessible. Créative. Inclusive.\n**Accessible :** nous souhaitons rendre les possibilités d’apprentissage plus accessibles et communiquer clairement les frais et les conditions. Demandez la grille tarifaire en vigueur et le détail des prestations incluses.  \n**Créative :** nous valorisons la curiosité, la participation et l’apprentissage actif.  \n**Inclusive :** chaque apprenant possède ses propres forces, son expérience et ses besoins d’accompagnement. Nous échangeons avec les familles pour identifier les formes de soutien pédagogique adaptées.\n\n## École + Famille + Communauté = Réussite de l’apprenant.\nLe parcours d’un apprenant ne se limite pas aux cours en classe. Les familles, les enseignants et la communauté contribuent tous à son évolution.\n\n## Anglia Morocco — apprendre l’anglais et progresser étape par étape.\nAnglia Examinations désigne AGI comme titulaire de sa franchise au Maroc. Le parcours Anglia comprend des examens d’anglais général et d’anglais des affaires référencés au CECRL. Le statut de certification et de réglementation varie selon le niveau ; consultez la page de chaque examen pour les informations précises.\n\n## Commençons par un échange.\nVous envisagez l’école pour votre enfant, souhaitez préparer un examen d’anglais ou recherchez des informations sur un autre programme ? Contactez l’équipe concernée. Une visite permet aux familles de découvrir l’environnement d’apprentissage et de poser leurs questions directement.\n\n**Action :** Prendre rendez-vous pour une visite · Contacter AGI\n\n**Condition de publication :** confirmer la désignation juridique et les autorisations de l’école, les programmes actuellement proposés, les formulations approuvées concernant les partenaires, les coordonnées et le calendrier scolaire en vigueur.",
+  "seo": {
+    "title": "American Group International | Éducation à Agadir",
+    "description": "Découvrez AGI à Agadir : école, accompagnement inclusif, examens d’anglais et développement professionnel."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "ltr",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
