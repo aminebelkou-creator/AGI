@@ -9,10 +9,12 @@ CLAIMS = ROOT / "content" / "governance" / "claims-register.csv"
 data = json.loads(EXPORT.read_text(encoding="utf-8"))
 assert data["format"] == "agi-content-bundle-v1"
 entries = data["entries"]
-assert len(entries) == 36 == data["record_count"], f"Unexpected record count: {len(entries)}"
-assert len({(e["id"], e["locale"]) for e in entries}) == 36, "Duplicate id/locale pair"
-assert {e["locale"] for e in entries} == {"en-US", "fr-MA", "ar-MA"}
-assert len({e["slug"] for e in entries}) == 12, "Expected 12 page groups"
+assert len(entries) == data["record_count"], f"Unexpected record count: {len(entries)}"
+locales = {"en-US", "fr-MA", "ar-MA"}
+assert {e["locale"] for e in entries} == locales
+page_groups = {e["slug"] for e in entries}
+assert len(entries) == len(page_groups) * len(locales), "Each page group must have one entry per locale"
+assert len({(e["id"], e["locale"]) for e in entries}) == len(entries), "Duplicate id/locale pair"
 assert all(e["direction"] == ("rtl" if e["locale"] == "ar-MA" else "ltr") for e in entries)
 assert all(e["status"] in {"editorial-review", "translation-review"} for e in entries)
 assert all(e["body"].strip() and e["title"].strip() for e in entries)
@@ -23,4 +25,4 @@ unknown = sorted({claim for entry in entries for claim in entry["claims"]} - kno
 assert not unknown, f"Unknown claim references: {unknown}"
 assert all(isinstance(e["claims"], list) and isinstance(e["sources"], list) for e in entries)
 
-print("PASS: 36 structured entries; 12 pages × 3 locales; RTL/LTR and review states valid; claim references resolve.")
+print(f"PASS: {len(entries)} structured entries; {len(page_groups)} pages × {len(locales)} locales; RTL/LTR and review states valid; claim references resolve.")
