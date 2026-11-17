@@ -15,6 +15,9 @@
 - Import architecture assessment at `content/architecture/current-site-integration.md`.
 - Legacy route inventory at `content/migration/legacy-route-inventory.csv`: 68 existing page routes and 60 news items (128 referenced JSON files), all flagged for review rather than automatic replacement.
 - Human review matrix at `content/migration/page-review-matrix.csv`, assigning required reviewer roles and publication gates across the 12 core page groups.
+- Detailed content review and disposition plan for all 68 legacy routes at `content/migration/route-content-review.csv`, based on inspection of the legacy page bodies and metadata.
+- Proposed target navigation, site tree, CMS content types, localisation and editorial workflow at `content/strategy/proposed-information-architecture-v2.md`.
+- Automated migration-plan validator at `scripts/validate_migration_plan.py`; it confirms all 68 indexed routes have a unique review decision.
 
 ## Structured content coverage
 
@@ -26,7 +29,7 @@ The 12 page groups are: homepage, school, inclusive learning, Anglia Morocco, C.
 
 This is the first structured core content set, not a complete migration of every legacy website page or news item. The existing app currently contains 128 page JSON files, including 60 news article files. Its content loader reads a single English `/content/index.json` and `/content/pages/*.json` store; the en/fr/ar i18n files currently translate interface strings, not the full page corpus.
 
-The new content export is deliberately kept separate from the legacy app content. Do not replace the legacy JSON store or route index with this 12-page core set. The integration assessment describes a safe phased approach.
+The new content export is deliberately kept separate from the legacy app content. Do not replace the legacy JSON store or route index with this 12-page core set. The integration assessment describes a safe phased approach. The 68-route review is now complete as a preliminary content audit and proposed disposition; it is not a factual/legal approval or permission to rewrite/publish.
 
 ## Deliberately not done
 
@@ -37,11 +40,11 @@ The new content export is deliberately kept separate from the legacy app content
 
 ## Next gates
 
-1. Use `content/migration/legacy-route-inventory.csv` to complete page-by-page reconciliation of the 68 route pages and 60 news records against the new content model.
-2. Build a route/slug/locale mapping and identify duplicates, redirects, obsolete pages and content that must remain.
-3. Complete claim-to-source mapping from primary evidence and assign human owners/review dates.
-4. Obtain native-speaker and subject-owner review; obtain legal and partner approval where required.
-5. Implement a non-destructive locale-aware adapter and tests in a separate implementation phase.
-6. Run accessibility, SEO, internal-link, route, locale and build checks before any release proposal.
+1. Review and approve the proposed information architecture and brand boundaries.
+2. Assign named content owners and subject-matter reviewers to each route and service.
+3. Complete source/evidence, pricing, date, qualification, partner, safeguarding, legal and media-rights checks flagged in the route review matrix.
+4. Decide the canonical routes and approve each redirect individually; no redirects have been installed.
+5. Build the isolated CMS pilot and import only a small set of approved sample content.
+6. Prepare a versioned locale-aware adapter and staging-only tests after content and CMS gates are met.
 
 **Boundary:** this branch is an editorial and integration-preparation workspace. The live site and main branch remain untouched.
