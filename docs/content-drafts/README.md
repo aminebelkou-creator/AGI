@@ -7,8 +7,10 @@ This directory contains page-ready editorial drafts. These files are content art
 | File | Scope | Status |
 |---|---|---|
 | `AGI-EDITORIAL-COPY-PACK-01.md` | Homepage, parents and K–12 school | Proposed English copy; review required |
+| `AGI-EDITORIAL-COPY-PACK-01-AR.md` | Arabic localisation of Pack 01 | Arabic localisation; review required |
 | `AGI-EDITORIAL-COPY-PACK-02.md` | About AGI, admissions, Anglia Morocco, C.I.T.E. and adult diploma pathway | Proposed English copy; review required |
 | `AGI-EDITORIAL-COPY-PACK-02-AR.md` | Arabic localisation of the five pages in Pack 02 | Translation/editorial review required |
+| `AGI-EDITORIAL-COPY-PACK-02-FR.md` | French localisation of Pack 02 | French localisation; review required |
 
 ## Content governance and production plan
 
