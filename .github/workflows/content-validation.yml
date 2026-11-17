@@ -1,0 +1,23 @@
+name: AGI content validation
+on:
+  push:
+    branches: [cms-test-smartsite]
+    paths:
+      - "content/**"
+      - "scripts/validate_content_export.py"
+      - ".github/workflows/content-validation.yml"
+  pull_request:
+    paths:
+      - "content/**"
+      - "scripts/validate_content_export.py"
+      - ".github/workflows/content-validation.yml"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate structured multilingual content
+        run: python scripts/validate_content_export.py
