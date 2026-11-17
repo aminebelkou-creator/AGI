@@ -25,7 +25,7 @@ assert len(ids) == len(set(ids)), "Duplicate fact IDs"
 for row in rows:
     assert re.fullmatch(r"F-AGI-[0-9]{3}", row["fact_id"]), row["fact_id"]
     assert row["current_status"] in ALLOWED, (row["fact_id"], row["current_status"])
-    for key in REQUIRED:
+    for key in REQUIRED - {"last_verified_utc", "review_due_utc"}:
         assert row[key].strip(), (row["fact_id"], "empty", key)
     if row["current_status"] == "verified":
         assert row["last_verified_utc"] and row["review_due_utc"], (
