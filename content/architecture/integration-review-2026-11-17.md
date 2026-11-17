@@ -24,7 +24,7 @@ Proceed additively. Keep the existing application and all legacy content intact.
 | Governed facts | 38 facts: 19 unverified, 5 owner-confirmation-required, 11 partner-approval-required, 2 legal-review-required, 1 specialist-review-required |
 | Claims | 23 claims: 7 open, 9 hold, 3 review, 2 explicitly not publishable, and 2 with approved wording/scope |
 | Legacy migration | 68 legacy page routes plus 60 WordPress posts are inventoried; 68 route decisions are present |
-| Service catalogue | 25 records: 8 form workflows marked for end-to-end testing, 1 general-contact workflow needing a test, and 16 support intents needing workflow confirmation |
+| Service catalogue | 28 records: 11 form workflows marked for end-to-end testing and 17 support intents; SUP-01 general contact needs a test, while SUP-02–SUP-17 need workflow confirmation |
 | Current app content | Legacy route index and 128 page JSON files (68 route pages + 60 news files) remain separate from the new editorial export |
 
 These are repository counts, not proof of current operational availability or editorial approval.
@@ -51,11 +51,11 @@ The reusable library has 43 modules, while the 12 page-composition maps collecti
 
 **Required:** resolve the missing-content list page by page; add modules only where a real content gap exists; retain stable module IDs and fact references.
 
-### F-05 — Service catalogue and forms specification do not yet align
+### F-05 — Catalogue completeness is not operational verification
 
-The knowledge base describes 11 named form workflows, but the machine-readable service catalogue currently has only 8 `FORM-xx` rows. The catalogue does not currently include the tutor request, tutor scheduling and document-request entries as distinct form records. The remaining 16 `SUP-xx` records are support intents marked `needs_workflow_confirmation` and `hold`.
+The knowledge base and machine-readable service catalogue align on all 11 specified form workflows: `FORM-01` through `FORM-11`. All 11 are marked `needs_end_to_end_test` and `source_only`, so their presence in the catalogue does not prove that their live destinations, submission handling or staff routing work. The catalogue also contains 17 support intents (`SUP-01` through `SUP-17`): general contact needs a test, while the remaining 16 require workflow confirmation and are held.
 
-**Required:** reconcile the 11 specified forms against the 25-row catalogue and the actual live form destinations. Preserve canonical IDs; do not invent URLs or claim that an external form works until it has been tested end to end.
+**Required:** test each of the 11 form destinations and their complete submission journey in a non-production environment. Confirm the 17 support intents with service owners; do not invent URLs or treat a source-only workflow as operational.
 
 ### F-06 — Current application form API is a storage endpoint, not a request-management system
 
