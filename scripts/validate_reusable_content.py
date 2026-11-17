@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Validate AGI's reusable multilingual content library (Python standard library only)."""
+import csv
 import json
 import pathlib
 import re
@@ -9,6 +10,7 @@ LIBRARY = ROOT / "content" / "library" / "reusable-content-library.json"
 SCHEMA = ROOT / "content" / "schemas" / "reusable-content-library.schema.json"
 COMPOSITIONS = ROOT / "content" / "library" / "page-compositions.json"
 PAGE_EXPORT = ROOT / "content" / "entries.json"
+FACTS = ROOT / "content" / "facts" / "fact-register.csv"
 
 data = json.loads(LIBRARY.read_text(encoding="utf-8"))
 json.loads(SCHEMA.read_text(encoding="utf-8"))
@@ -37,6 +39,11 @@ for item in items:
 
 composition_data = json.loads(COMPOSITIONS.read_text(encoding="utf-8"))
 page_export = json.loads(PAGE_EXPORT.read_text(encoding="utf-8"))
+with FACTS.open(encoding="utf-8", newline="") as handle:
+    known_fact_ids = {row["fact_id"] for row in csv.DictReader(handle)}
+for item in items:
+    for fact_id in item.get("fact_refs", []):
+        assert fact_id in known_fact_ids, (item["id"], "unknown fact reference", fact_id)
 module_ids = set(ids)
 page_entry_ids = {entry["id"] for entry in page_export["entries"]}
 page_ids = [page["page_id"] for page in composition_data["pages"]]
