@@ -54,3 +54,8 @@ This first migration batch is based on the AGI Multilingual Content Foundation v
 - `IMPORT-STATUS.md` records scope, completed work and remaining gates.
 
 The current app has its own legacy route index and 128 page JSON files (including 60 news items). The new 12-page core set does not replace those files. Production export must include only approved records; none of the current records is approved or published.
+
+## Architecture evaluation
+
+- [Headless CMS evaluation](architecture/cms-evaluation.md): recommends an isolated Strapi 5 Community proof of concept, with Payload as the alternative. No CMS has been deployed or selected for production.
+- [Current-site integration assessment](architecture/current-site-integration.md): documents the non-destructive migration approach.
