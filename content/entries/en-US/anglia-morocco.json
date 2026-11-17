@@ -1,0 +1,26 @@
+{
+  "id": "agi.anglia-morocco",
+  "slug": "anglia-morocco",
+  "locale": "en-US",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "editorial-review",
+  "title": "Anglia Morocco — English examinations",
+  "summary": "Anglia Examinations is an English-language examination organisation based in England. Its official materials describe a ten-step General English pathway from First Step to Mastery (C2) and a separate four-level Business English pathway. General English exams assess listening, reading, writing and speaking; exact components vary by level.",
+  "body": "Anglia Examinations is an English-language examination organisation based in England. Its official materials describe a ten-step General English pathway from First Step to Mastery (C2) and a separate four-level Business English pathway. General English exams assess listening, reading, writing and speaking; exact components vary by level.\n\nAnglia's official franchise directory identifies AGI as its franchise holder for Morocco from 2021. Describe the local role according to the current agreement.\n\nAnglia says its four highest General English qualifications are accredited through AIM Qualifications and Assessment Group and regulated by Ofqual. This does not apply automatically to every Anglia exam. Name the exact qualification, level and awarding body.\n\n**Actions:** Explore levels · Find a centre · Ask about registration · Explore Step To books.",
+  "seo": {
+    "title": "Anglia Examinations Morocco | AGI",
+    "description": "Discover Anglia English examinations in Morocco, CEFR-referenced levels, registration information and learning resources."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "ltr",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
