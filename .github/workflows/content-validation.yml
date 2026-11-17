@@ -5,11 +5,13 @@ on:
     paths:
       - "content/**"
       - "scripts/validate_content_export.py"
+      - "scripts/audit_legacy_content.py"
       - ".github/workflows/content-validation.yml"
   pull_request:
     paths:
       - "content/**"
       - "scripts/validate_content_export.py"
+      - "scripts/audit_legacy_content.py"
       - ".github/workflows/content-validation.yml"
 jobs:
   validate:
@@ -21,3 +23,5 @@ jobs:
           python-version: "3.12"
       - name: Validate structured multilingual content
         run: python scripts/validate_content_export.py
+      - name: Audit legacy route and news integrity
+        run: python scripts/audit_legacy_content.py
