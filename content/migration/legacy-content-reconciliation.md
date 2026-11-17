@@ -60,7 +60,7 @@ Time-sensitive titles found in the route inventory include the **2025–2026 Ang
 ## Migration decisions
 
 - Keep all 68 legacy routes and all 60 news items in the existing app until reviewed.
-- Keep news as a separate content type; do not fold news posts into the 12-page core marketing bundle.
+- Keep news as a separate content type; do not fold news posts into the 17-page core marketing bundle.
 - Map legacy routes to new editorial page groups only after comparing the actual body content and intended audience.
 - Treat machine-translated French and Arabic drafts as review material, not publishable translations.
 - Export only explicitly approved content into a future public runtime payload.
@@ -78,10 +78,15 @@ The script uses only the Python standard library, reads the existing indexes and
 
 ## Next implementation unit
 
-Build a detailed route-by-route editorial reconciliation table that captures: audience, purpose, currentness risk, evidence required, owner, target content group, proposed action (retain, consolidate, rewrite, archive candidate) and approval status. The existing 12-page model is only the initial core; it is not a substitute for the full 68-route review.
+Build a detailed route-by-route editorial reconciliation table that captures: audience, purpose, currentness risk, evidence required, owner, target content group, proposed action (retain, consolidate, rewrite, archive candidate) and approval status. The existing 17-page model is only the initial core; it is not a substitute for the full 68-route review.
 
 ## Automated verification result
 
-The GitHub Actions run for the corrected audit completed successfully on 17 November 2026. Both checks passed: the 36-record multilingual export validator and the legacy integrity audit. The audit reported 68 routes, 60 news records, 128 referenced JSON files, 128 JSON files present, zero errors and zero warnings. Run: https://github.com/aminebelkou-creator/AGI/actions/runs/43992434639
+The GitHub Actions run for the corrected audit completed successfully on 17 November 2026. Both checks passed: the 51-record multilingual export validator and the legacy integrity audit. The audit reported 68 routes, 60 news records, 128 referenced JSON files, 128 JSON files present, zero errors and zero warnings. Run: https://github.com/aminebelkou-creator/AGI/actions/runs/43992434639
 
 The companion `legacy-route-review-matrix.csv` contains 68 preliminary triage rows. Its priority flags are based on route/title wording only; it does not inspect or approve the full page body. Human review remains required.
+
+
+## Journal content reconciliation
+
+The static v2 journal is reviewed separately from the React application's 60-item news store. See [journal content findings](journal-content-findings.md) and the [machine-readable journal reconciliation](journal-reconciliation.csv). The current v2 index contains 66 cards and 66 article files: 59 match the WordPress export by source slug/title, seven are additions from the crawl inventory, and one exported CCGi announcement is routed to a standalone designed page outside the index. The validation script is `scripts/validate_journal_reconciliation.py`.
