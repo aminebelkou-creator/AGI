@@ -72,6 +72,7 @@ The page-oriented export above remains intact. A complementary modular library h
 
 - [Reusable content library](library/README.md): content IDs, composition rules, localisation and expansion plan.
 - `library/reusable-content-library.json`: 15 semantic modules × 3 locales (45 locale variants) covering brand messages, programme/service descriptions, resources and CTAs.
+- `library/page-compositions.json`: seven initial page composition maps that reference reusable module IDs and expose missing content.
 - `schemas/reusable-content-library.schema.json`: portable data contract for the modular library.
 - `../scripts/validate_reusable_content.py`: standard-library validator for IDs, locale completeness and editorial states.
 - `facts/fact-register.csv`: 22 volatile or material claims with source pointers, owners, verification requirements and publication rules.
