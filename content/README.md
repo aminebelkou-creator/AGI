@@ -9,7 +9,7 @@ This directory is the CMS-independent editorial source for the future AGI websit
 - Page boundaries use stable markers such as <!-- page: homepage -->. The marker value is the slug and is consistent across locales.
 
 ## Current coverage
-The initial core library contains 17 page groups in three locales (51 locale-page entries): homepage, school, inclusive learning, Anglia Morocco, C.I.T.E., Step To books, adult learning, professional English, teacher development, proctoring, wellbeing and FAQ.
+The page-oriented library contains 17 page groups in three locales (51 locale-page entries): homepage, school, inclusive learning, Anglia Morocco, C.I.T.E., Step To books, adult learning, professional English, teacher development, proctoring, wellbeing, FAQ, about, admissions, parents, student life and policies.
 
 See manifest.csv for the page/locale inventory and current editorial state. The seo/metadata.csv file contains draft title and meta-description suggestions for all 36 locale-page entries.
 
