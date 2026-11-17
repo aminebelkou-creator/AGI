@@ -11,7 +11,7 @@ This directory is the CMS-independent editorial source for the future AGI websit
 ## Current coverage
 The page-oriented library contains 17 page groups in three locales (51 locale-page entries): homepage, school, inclusive learning, Anglia Morocco, C.I.T.E., Step To books, adult learning, professional English, teacher development, proctoring, wellbeing, FAQ, about, admissions, parents, student life and policies.
 
-See manifest.csv for the page/locale inventory and current editorial state. The seo/metadata.csv file contains draft title and meta-description suggestions for all 36 locale-page entries.
+See manifest.csv for the page/locale inventory and current editorial state. The seo/metadata.csv file contains 51 draft title and meta-description rows (17 page groups × 3 locales).
 
 ## Publication workflow
 - editorial-review: English master awaiting AGI subject-owner review.
@@ -46,19 +46,21 @@ This first migration batch is based on the AGI Multilingual Content Foundation v
 
 - `entries.json` is the CMS-neutral structured export (51 records, 17 page groups × 3 locales).
 - `entries/README.md` documents the record model and review-state boundaries.
-- `schemas/content-entry.schema.json` describes the portable entry shape.
+- `schemas/content-entry.schema.json` describes the portable structured-entry shape.
 - `../scripts/validate_content_export.py` checks the structured export using Python's standard library.
 - `architecture/current-site-integration.md` explains why the export is not a drop-in replacement for the current React app content store and defines a non-destructive migration path.
-- `migration/legacy-route-inventory.csv` inventories all 68 current page routes and 60 news items for reconciliation.
-- `migration/page-review-matrix.csv` identifies the subject-owner roles and evidence gates for each core page group.
+- `architecture/integration-review-2026-11-17.md` records the current data counts, evidence gaps, application/form integration findings and phased implementation gates.
+- `migration/legacy-route-inventory.csv` inventories 68 current page routes and 60 news items for reconciliation.
+- `migration/page-review-matrix.csv` identifies subject-owner roles and evidence gates for the core page groups.
 - `IMPORT-STATUS.md` records scope, completed work and remaining gates.
 
-The current app has its own legacy route index and 128 page JSON files (including 60 news items). The new 12-page core set does not replace those files. Production export must include only approved records; none of the current records is approved or published.
+The current app has its own legacy route index and 128 page JSON files (68 route pages and 60 news items). The 17-page structured content set does not replace those files. Production export must include only approved records; none of the current page-export records is approved or published.
 
 ## Architecture evaluation
 
-- [Headless CMS evaluation](architecture/cms-evaluation.md): recommends an isolated Strapi 5 Community proof of concept, with Payload as the alternative. No CMS has been deployed or selected for production.
+- [Headless CMS evaluation](architecture/cms-evaluation.md): recommends an isolated Strapi 5 Community proof of concept, with Payload as the alternative. No CMS has been selected for production.
 - [Current-site integration assessment](architecture/current-site-integration.md): documents the non-destructive migration approach.
+- [Integration review](architecture/integration-review-2026-11-17.md): documents the branch-level reconciliation and recommended next steps.
 
 ## Route review and target site structure
 
@@ -68,14 +70,14 @@ The current app has its own legacy route index and 128 page JSON files (includin
 
 ## Reusable content layer
 
-The page-oriented export above remains intact. A complementary modular library has now been added for content that should be reused across multiple pages and channels:
+The page-oriented export above remains intact. A complementary modular library has been added for content that should be reused across multiple pages and channels:
 
 - [Reusable content library](library/README.md): content IDs, composition rules, localisation and expansion plan.
-- `library/reusable-content-library.json`: 43 semantic modules × 3 locales (129 locale variants) covering brand messages, programme/service descriptions, resources and CTAs.
+- `library/reusable-content-library.json`: 43 semantic modules × 3 locales (129 locale variants).
 - `library/page-compositions.json`: 12 initial page composition maps that reference reusable module IDs and expose missing content.
 - `schemas/reusable-content-library.schema.json`: portable data contract for the modular library.
 - `../scripts/validate_reusable_content.py`: standard-library validator for IDs, locale completeness and editorial states.
-- `facts/fact-register.csv`: 38 volatile or material claims with source pointers, owners, verification requirements and publication rules.
+- `facts/fact-register.csv`: 38 volatile or material facts with source pointers, owners, verification requirements and publication rules.
 - `../scripts/validate_fact_register.py`: checks fact IDs, required evidence/ownership fields and verification dates.
 
 Reusable modules may link to fact IDs through `fact_refs`, and the validator checks that those references resolve. Use the page entries for page-level narrative drafts; use the reusable library for shared semantic modules. Do not copy the same programme description into multiple pages. Compose pages by referencing stable module IDs. Volatile facts such as fees, dates, opening hours, staff roles and availability are tracked in `facts/fact-register.csv`; they must be verified and date-stamped before reuse. The register validator is `../scripts/validate_fact_register.py`.
