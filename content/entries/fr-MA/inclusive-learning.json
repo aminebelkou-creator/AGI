@@ -1,0 +1,26 @@
+{
+  "id": "agi.inclusive-learning",
+  "slug": "inclusive-learning",
+  "locale": "fr-MA",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "translation-review",
+  "title": "Accompagnement pédagogique inclusif",
+  "summary": "Les informations publiques d’AGI évoquent les petits groupes, la planification individualisée et la coopération avec les familles. Cette page doit expliquer les formes d’accompagnement pédagogique réellement disponibles, sans poser de diagnostic ni promettre de prise en charge clinique.",
+  "body": "Les informations publiques d’AGI évoquent les petits groupes, la planification individualisée et la coopération avec les familles. Cette page doit expliquer les formes d’accompagnement pédagogique réellement disponibles, sans poser de diagnostic ni promettre de prise en charge clinique.\n\nUn échange confidentiel permet de mieux comprendre les points forts, le parcours et les besoins de l’apprenant. Lorsqu’un plan individualisé est utilisé, il doit préciser les priorités, les stratégies pédagogiques, les aménagements convenus, les responsabilités et les dates de révision. Si le terme IEP est utilisé, AGI doit en expliquer le sens dans son dispositif.\n\nLa page publique mentionne l’ergothérapie, l’orthophonie et l’accompagnement comportemental. Ces prestations ne doivent être annoncées qu’après vérification des professionnels, de leurs qualifications, de leur disponibilité, du consentement et des règles de protection.\n\n**Action :** Demander un échange confidentiel. **Avant publication :** confirmer prestations, qualifications, tarifs, orientations et confidentialité.",
+  "seo": {
+    "title": "Accompagnement pédagogique inclusif | AGI",
+    "description": "Découvrez l’accompagnement pédagogique proposé et les échanges possibles avec les familles."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "ltr",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
