@@ -12,6 +12,9 @@
 - Manifest and SEO metadata for all 36 page/locale combinations.
 - Portable JSON Schema and a CMS-neutral structured export at `content/entries.json`.
 - A lightweight validation script at `scripts/validate_content_export.py`.
+- A first reusable multilingual content library at `content/library/reusable-content-library.json`: 15 semantic content modules × 3 locales (45 locale variants).
+- Reusable content schema at `content/schemas/reusable-content-library.schema.json`, authoring/composition guide at `content/library/README.md`, and validator at `scripts/validate_reusable_content.py`.
+- CI workflow extended to validate the reusable content library alongside the existing page export, legacy inventory and migration plan.
 - Import architecture assessment at `content/architecture/current-site-integration.md`.
 - Legacy route inventory at `content/migration/legacy-route-inventory.csv`: 68 existing page routes and 60 news items (128 referenced JSON files), all flagged for review rather than automatic replacement.
 - Human review matrix at `content/migration/page-review-matrix.csv`, assigning required reviewer roles and publication gates across the 12 core page groups.
@@ -19,17 +22,23 @@
 - Proposed target navigation, site tree, CMS content types, localisation and editorial workflow at `content/strategy/proposed-information-architecture-v2.md`.
 - Automated migration-plan validator at `scripts/validate_migration_plan.py`; it confirms all 68 indexed routes have a unique review decision.
 
-## Structured content coverage
+## Structured page content
 
-The structured export contains 36 locale records: 12 page groups × 3 locales (en-US, fr-MA, ar-MA). English remains in editorial review; French and Arabic remain in translation review. No record is approved or published.
+The page-oriented export contains 36 locale records: 12 page groups × 3 locales (en-US, fr-MA, ar-MA). English remains in editorial review; French and Arabic remain in translation review. No record is approved or published.
 
 The 12 page groups are: homepage, school, inclusive learning, Anglia Morocco, C.I.T.E., Step To books, adult learning, professional English, teacher development, proctoring, wellbeing and FAQ.
 
+## Reusable content coverage
+
+The modular library is a complementary layer, not a replacement for the 12 page narratives. Its first batch covers brand positioning and pillars, K–12, inclusive learning, Anglia examinations, C.I.T.E., Step To resources, adult learning, professional English, proctoring, education consultancy, teacher development, wellbeing and a general contact CTA.
+
+Page templates should compose modules by stable IDs instead of copying the same programme/service description into several pages. Volatile facts (fees, dates, hours, staff roles, availability and partner status) still need a separately governed fact register with source, owner, verification date and review/expiry date before being embedded or reused.
+
 ## Important distinction: core set vs full site
 
-This is the first structured core content set, not a complete migration of every legacy website page or news item. The existing app currently contains 128 page JSON files, including 60 news article files. Its content loader reads a single English `/content/index.json` and `/content/pages/*.json` store; the en/fr/ar i18n files currently translate interface strings, not the full page corpus.
+This is the first structured content set, not a complete migration of every v2 page, every legacy route or every news item. The existing app currently contains 128 page JSON files, including 60 news article files. The current v2 static site and the old WordPress export remain source material for subsequent content reconciliation.
 
-The new content export is deliberately kept separate from the legacy app content. Do not replace the legacy JSON store or route index with this 12-page core set. The integration assessment describes a safe phased approach. The 68-route review is now complete as a preliminary content audit and proposed disposition; it is not a factual/legal approval or permission to rewrite/publish.
+The new content export and reusable library are deliberately separate from the legacy app content. Do not replace the legacy JSON store or route index with these first content batches. The 68-route review is a preliminary content audit and proposed disposition; it is not factual/legal approval or permission to rewrite/publish.
 
 ## Deliberately not done
 
@@ -37,14 +46,15 @@ The new content export is deliberately kept separate from the legacy app content
 - No WordPress/headless CMS connection or import.
 - No deployment, publication, merge to main, or change to the live website.
 - No claim that legal, regulatory, partner, clinical, qualification or fee statements have been approved.
+- No automatic publication based on schema or CI validation.
 
-## Next gates
+## Next content work
 
-1. Review and approve the proposed information architecture and brand boundaries.
-2. Assign named content owners and subject-matter reviewers to each route and service.
-3. Complete source/evidence, pricing, date, qualification, partner, safeguarding, legal and media-rights checks flagged in the route review matrix.
-4. Decide the canonical routes and approve each redirect individually; no redirects have been installed.
-5. Build the isolated CMS pilot and import only a small set of approved sample content.
-6. Prepare a versioned locale-aware adapter and staging-only tests after content and CMS gates are met.
+1. Reconcile the complete v2 page copy against the legacy WordPress export and the new reusable modules, identifying keep/merge/rewrite/archive decisions.
+2. Build a governed facts register for prices, dates, hours, staff, authorisations, accreditation, partner status and availability.
+3. Expand the reusable library with institutional story, mission/vision, admissions, parent policies, student life, approved testimonials, detailed Anglia levels and news/article records.
+4. Create page compositions that reference modules, then compare them against v2 page narratives to avoid losing useful detail.
+5. Assign content owners and complete subject-matter, legal, partner, safeguarding, rights and translation reviews.
+6. Only then prepare CMS import and staging-only previews.
 
-**Boundary:** this branch is an editorial and integration-preparation workspace. The live site and main branch remain untouched.
+**Boundary:** this branch is an editorial and content-architecture workspace. The live site and main branch remain untouched.
