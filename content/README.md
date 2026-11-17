@@ -49,6 +49,7 @@ This first migration batch is based on the AGI Multilingual Content Foundation v
 - `schemas/content-entry.schema.json` describes the portable entry shape.
 - `../scripts/validate_content_export.py` checks the structured export using Python's standard library.
 - `architecture/current-site-integration.md` explains why the export is not a drop-in replacement for the current React app content store and defines a non-destructive migration path.
+- `migration/legacy-route-inventory.csv` inventories all 68 current page routes and 60 news items for reconciliation.
 - `IMPORT-STATUS.md` records scope, completed work and remaining gates.
 
 The current app has its own legacy route index and 128 page JSON files (including 60 news items). The new 12-page core set does not replace those files. Production export must include only approved records; none of the current records is approved or published.
