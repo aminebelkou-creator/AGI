@@ -4,7 +4,7 @@ This directory contains reusable editorial modules, not page-specific copies. It
 
 ## First content batch
 
-`reusable-content-library.json` currently contains 15 reusable modules and 45 locale variants (15 × English, French and Arabic):
+`reusable-content-library.json` currently contains 34 reusable modules and 102 locale variants (34 × English, French and Arabic):
 
 - Brand positioning, brand promise and school–home–community message.
 - K–12 school, inclusive learning and Anglia examinations.
@@ -13,7 +13,7 @@ This directory contains reusable editorial modules, not page-specific copies. It
 - Examination proctoring, education consultancy, teacher development and wellbeing.
 - A general contact call to action.
 
-This is a first reusable core, not a complete rewrite of all 25 v2 pages, 59 journal articles or the 68 legacy routes. Existing page-level drafts in `content/entries.json` remain intact and are not replaced by these modules.
+This is an expanded reusable core, not a complete rewrite of every v2 page, the 66 journal-index entries or the 68 legacy routes. Existing page-level drafts in `content/entries.json` remain intact and are not replaced by these modules.
 
 ## Data model
 
@@ -59,11 +59,10 @@ This is a content-composition guide, not a route or navigation approval.
 
 ## Next expansion batches
 
-1. Institutional story, mission, vision, leadership and verified history.
-2. Admissions, fees, school calendar, policies and parent resources (volatile facts separated).
-3. Student life, outcomes, testimonials and media-rights-cleared stories.
-4. Anglia exam levels, exam formats, centres, schedules and detailed Step To catalogue.
-5. Adult diploma details, provider disclosures, consultancy partner directory and programme-specific FAQs.
-6. Journal/news records with source, date, author, image rights, category and canonical URL.
+1. Grade-by-grade curriculum and subject descriptions, checked against the current academic programme.
+2. Detailed Anglia exam levels, formats, exam sessions, active centres and Step To catalogue.
+3. Adult diploma disclosures, current awarding-provider information and programme-specific FAQs.
+4. Student-life stories, outcomes and testimonials only where evidence, consent and media rights are documented.
+5. Journal/news records with source URL, publication date, event date, author, image rights, category and canonical URL; follow the reconciliation report before consolidation.
 
 The public repository must contain only publishable editorial material and non-confidential governance metadata. Keep contracts, private correspondence, personal data, safeguarding records and internal legal opinions in access-controlled storage.
