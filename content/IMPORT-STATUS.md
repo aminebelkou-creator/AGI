@@ -32,7 +32,7 @@ The 17 page groups are: homepage, school, inclusive learning, Anglia Morocco, C.
 
 ## Reusable content coverage
 
-The modular library is a complementary layer, not a replacement for the 17 page narratives. It now contains 34 modules and 102 locale variants. Its content covers covers brand positioning and pillars, institutional mission/vision/history, K–12, inclusive learning, admissions, parent guidance, fees, curriculum, student life, policies, Anglia examinations, C.I.T.E., Step To resources, adult learning, professional English, proctoring, education consultancy, teacher development, wellbeing and CTAs.
+The modular library is a complementary layer, not a replacement for the 17 page narratives. It now contains 34 modules and 102 locale variants. Its content covers brand positioning and pillars, institutional mission/vision/history, K–12, inclusive learning, admissions, parent guidance, fees, curriculum, student life, policies, Anglia examinations, C.I.T.E., Step To resources, adult learning, professional English, proctoring, education consultancy, teacher development, wellbeing and CTAs.
 
 Page templates should compose modules by stable IDs instead of copying the same programme/service description into several pages. Volatile facts (fees, dates, hours, staff roles, availability and partner status) still need a separately governed fact register with source, owner, verification date and review/expiry date before being embedded or reused.
 
@@ -40,7 +40,7 @@ Page templates should compose modules by stable IDs instead of copying the same 
 
 This is the first structured content set, not a complete migration of every v2 page, every legacy route or every news item. The existing app currently contains 128 page JSON files, including 60 news article files. The current v2 static site and the old WordPress export remain source material for subsequent content reconciliation.
 
-The new content export and reusable library are deliberately separate from the legacy app content. Do not replace the legacy JSON store or route index with these first content batches. The 68-route review is a preliminary content audit and proposed disposition; it is not factual/legal approval or permission to rewrite/publish.
+The new content export and reusable library are deliberately separate from the legacy app content. Do not replace the legacy JSON store or route index with these first content batches. The 68-route review is a preliminary content audit and proposed disposition; it is not factual/legal approval or permission to rewrite/publish. The journal reconciliation separately covers the 66 journal cards and the 60-post WordPress export.
 
 ## Deliberately not done
 
