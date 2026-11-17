@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGI Historical Journal Content Library",
+  "type": "object",
+  "required": [
+    "format",
+    "version",
+    "publication_note",
+    "counts",
+    "records"
+  ],
+  "properties": {
+    "format": {
+      "const": "agi-journal-content-library-v1"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "publication_note": {
+      "type": "string"
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "wordpress_export",
+        "crawl_inventory",
+        "total"
+      ],
+      "properties": {
+        "wordpress_export": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "crawl_inventory": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "record": {
+      "type": "object",
+      "required": [
+        "id",
+        "source_type",
+        "source_locale",
+        "title",
+        "slug",
+        "published_date",
+        "original_url",
+        "canonical_route",
+        "category",
+        "content_type",
+        "index_status",
+        "editorial_status",
+        "image",
+        "image_rights_status",
+        "related_group_id",
+        "review_notes",
+        "evidence_gates"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^agi\\.journal\\.[a-z0-9-]+$"
+        },
+        "source_type": {
+          "enum": [
+            "wordpress-export",
+            "crawl-inventory"
+          ]
+        },
+        "source_locale": {
+          "enum": [
+            "en-US",
+            "fr-MA",
+            "ar-MA",
+            "und"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slug": {
+          "type": "string",
+          "minLength": 1
+        },
+        "published_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "original_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "canonical_route": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string"
+        },
+        "content_type": {
+          "enum": [
+            "news",
+            "event-page",
+            "gallery",
+            "resource",
+            "profile",
+            "announcement"
+          ]
+        },
+        "index_status": {
+          "type": "boolean"
+        },
+        "editorial_status": {
+          "enum": [
+            "source-captured",
+            "editorial-review",
+            "rights-review",
+            "partner-approval",
+            "legal-review",
+            "archived-candidate",
+            "approved",
+            "published"
+          ]
+        },
+        "body_markdown": {
+          "type": "string"
+        },
+        "body_text": {
+          "type": "string"
+        },
+        "image": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "image_rights_status": {
+          "enum": [
+            "review-required",
+            "approved",
+            "no-image"
+          ]
+        },
+        "related_group_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "review_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_gates": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "body_markdown"
+          ]
+        },
+        {
+          "required": [
+            "body_text"
+          ]
+        }
+      ],
+      "additionalProperties": false
+    }
+  }
+}
