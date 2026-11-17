@@ -96,7 +96,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^agi\\.[a-z0-9-]+$"
+          "pattern": "^agi(?:\\.[a-z0-9-]+)+$"
         },
         "type": {
           "enum": [
