@@ -22,7 +22,7 @@ assert len(items) >= 10, f"Expected a useful initial library, got {len(items)} i
 allowed_status = {"draft", "editorial-review", "translation-review", "legal-review", "partner-approval", "approved", "published", "archived"}
 allowed_types = {"brand-message", "brand-pillar", "programme-description", "service-description", "resource-description", "call-to-action", "faq-answer", "policy-summary", "proof-point", "story"}
 for item in items:
-    assert re.fullmatch(r"agi\\.[a-z0-9-]+", item["id"]), item["id"]
+    assert re.fullmatch(r"agi(?:\\.[a-z0-9-]+)+", item["id"]), item["id"]
     assert item["type"] in allowed_types, (item["id"], item["type"])
     assert item["status"] in allowed_status, (item["id"], item["status"])
     assert set(item["locales"]) == locales, f"Missing locale for {item['id']}"
