@@ -1,0 +1,26 @@
+{
+  "id": "agi.homepage",
+  "slug": "homepage",
+  "locale": "en-US",
+  "source_locale": "en-US",
+  "translation_group": "agi-core-pages",
+  "status": "editorial-review",
+  "title": "American Group International — Homepage",
+  "summary": "",
+  "body": "## Education, language and opportunity — connected in Agadir.\nAmerican Group International (AGI) brings together school education, inclusive learning support, English-language learning and assessment, teacher-focused services and wider educational opportunities. Our work is grounded in a simple belief: every learner deserves to be understood, encouraged and given room to grow.\n\n**Primary CTA:** Explore the AGI School · **Secondary CTA:** Discover all programs · **Text CTA:** Book a visit\n\n## Choose your path\n**For families:** Explore the school programme, learning approach, admissions and support available to students and families.  \n**For English learners:** Build English step by step and explore Anglia Examinations, CEFR-referenced levels, preparation resources and exam information.  \n**For teachers:** Explore Anglia C.I.T.E. examinations and separate teacher-development opportunities.  \n**For professionals:** Discuss English learning for workplace communication, business and professional needs.  \n**For adult learners:** Review study pathways, eligibility and the organisation responsible for each qualification.  \n**For education partners:** Enquire about examination centres and institutional collaboration.\n\n## Affordable. Creative. Inclusive.\n**Affordable:** We aim to make learning opportunities accessible and communicate fees and conditions clearly. Ask for the current fee schedule and what each programme includes.  \n**Creative:** We value curiosity, participation and active learning.  \n**Inclusive:** Learners bring different strengths, experiences and support needs. We work with families to understand the learner and identify appropriate educational support.\n\n## School + Home + Community = Student Success.\nA learner's progress is shaped by more than classroom lessons. Families, educators and the wider community all contribute.\n\n## Anglia Morocco — English learning and examinations, step by step.\nAnglia Examinations identifies AGI as its franchise holder for Morocco. Anglia's pathway includes General English and Business English assessments mapped to the CEFR. Awarding and regulatory status differs by examination level; consult the relevant exam page for exact details.\n\n## Start with a conversation.\nIf you are considering the school for your child, exploring an English examination or asking about another programme, contact the relevant team. A visit can help families understand the learning environment and ask questions directly.\n\n**CTA:** Book a school visit · Contact AGI\n\n**Publication gate:** Confirm school legal designation and authorisation, current programme availability, partner-approved wording, contact details and current academic calendar.",
+  "seo": {
+    "title": "American Group International | Education in Agadir",
+    "description": "Explore AGI in Agadir: school education, inclusive learning, English examinations and professional learning."
+  },
+  "claims": [],
+  "sources": [],
+  "owner": "AGI editorial team",
+  "review_by": null,
+  "direction": "ltr",
+  "publication_gates": [
+    "Editorial owner approval",
+    "Verify current facts, programme availability and contact details",
+    "Complete page-specific legal, regulatory and partner checks before publication",
+    "Native-speaker translation review where applicable"
+  ]
+}
