@@ -111,6 +111,42 @@
         {
           "module_id": "agi.program.step-to",
           "slot": "learning-resources"
+        },
+        {
+          "module_id": "agi.anglia.exam-levels",
+          "slot": "exam-level-ladder"
+        },
+        {
+          "module_id": "agi.anglia.exam-format",
+          "slot": "assessment-components"
+        },
+        {
+          "module_id": "agi.anglia.cefr-framework",
+          "slot": "CEFR-reference"
+        },
+        {
+          "module_id": "agi.anglia.business-english",
+          "slot": "business-english"
+        },
+        {
+          "module_id": "agi.anglia.special-arrangements",
+          "slot": "special-arrangements"
+        },
+        {
+          "module_id": "agi.anglia.class-formats",
+          "slot": "classes"
+        },
+        {
+          "module_id": "agi.anglia.placement-assessment",
+          "slot": "placement-assessment"
+        },
+        {
+          "module_id": "agi.anglia.step-to-series",
+          "slot": "Step-To-resources"
+        },
+        {
+          "module_id": "agi.anglia.recognition",
+          "slot": "recognition-and-progression"
         }
       ],
       "missing_content": [
@@ -118,7 +154,11 @@
         "exam formats and fees",
         "active centres and schedules",
         "qualification-specific evidence",
-        "book catalogue and rights"
+        "book catalogue and rights",
+        "current official exam level specifications and awarding-body documentation",
+        "confirmed assessment fees, class schedules and active examination sessions",
+        "verified Step To catalogue, ISBNs, rights and stock",
+        "approved special-arrangements procedure and centre capabilities"
       ]
     },
     {
