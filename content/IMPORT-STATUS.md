@@ -14,6 +14,7 @@
 - A lightweight validation script at `scripts/validate_content_export.py`.
 - Import architecture assessment at `content/architecture/current-site-integration.md`.
 - Legacy route inventory at `content/migration/legacy-route-inventory.csv`: 68 existing page routes and 60 news items (128 referenced JSON files), all flagged for review rather than automatic replacement.
+- Human review matrix at `content/migration/page-review-matrix.csv`, assigning required reviewer roles and publication gates across the 12 core page groups.
 
 ## Structured content coverage
 
