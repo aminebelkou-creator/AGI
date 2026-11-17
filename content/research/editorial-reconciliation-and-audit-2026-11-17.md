@@ -72,7 +72,7 @@ The route matrix is a triage instrument, not a declaration that every body has b
 
 ## 3. Claims and fact governance
 
-The current registers contain important unresolved items. The claims register has 23 entries; the v2 claims file has 13 entries, with 11 marked open. These are overlapping registers and should be cross-mapped by stable claim ID rather than maintained as independent, contradictory truth sources.
+The current registers contain important unresolved items: 23 claims in the main claims register, 13 in the v2 claims file (11 marked open), and 38 facts in the fact register. The v2 launch checklist currently contains 107 unchecked items and 8 checked items. These sources overlap and should be cross-mapped by stable IDs rather than maintained as independent, contradictory truth sources. A provisional row-by-row crosswalk is in `content/governance/claim-register-crosswalk.csv`; its fact links are candidates for human confirmation, not approved evidence.
 
 Do not publish the following until the specified evidence exists:
 
