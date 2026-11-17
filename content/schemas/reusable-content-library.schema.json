@@ -171,6 +171,14 @@
           "items": {
             "type": "string"
           }
+        },
+        "fact_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^F-AGI-[0-9]{3}$"
+          },
+          "uniqueItems": true
         }
       },
       "additionalProperties": false
