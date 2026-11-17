@@ -141,6 +141,7 @@ The following must not be promoted as current until verified:
 - Canonical content strategy.
 - Claims/facts crosswalk.
 - English and Arabic copy packs 02 and 03.
+- Arabic localisation of AGI copy pack 01 and French localisation of copy pack 02 and 03.
 - Anglia Morocco source-to-content map (64 records).
 - Anglia Morocco reconciliation report.
 - Anglia Morocco English, Arabic and French master copy pack 03.
